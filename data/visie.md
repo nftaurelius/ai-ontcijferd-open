@@ -85,4 +85,6 @@ gemeenten en raadsleden; iedereen die een tool kiest (onafhankelijke bijsluiters
 
 - Beslist op 13/11: de code staat onder MIT; de repo blijft privé en krijgt een publieke spiegel zonder geschiedenis
   en zonder teksten van anderen (zie `data/open-repo.md`).
-- Aanvaardt AI Ontcijferd ooit steun, van wie en onder welke voorwaarden?
+- Aanvaardt AI Ontcijferd ooit steun, van wie en onder welke voorwaarden? Nog open. Voorstel (15/11): vandaag geen
+  steun. Komt er ooit steun, dan staat op `/over` van wie, hoeveel en waarvoor, heeft de gever geen inspraak in de
+  inhoud, en komt ze niet van bedrijven waarover we schrijven.

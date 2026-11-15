@@ -1,0 +1,140 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "die nog niemand onafhankelijk heeft nagemeten",
+    "probleem": "De Google-publicatie bewijst niet dat niemand de scores onafhankelijk heeft gecontroleerd. Google noemt sommige tests juist onafhankelijk, zonder dat die bevestiging hier afzonderlijk beschikbaar is.",
+    "voorstel": "Beperk de conclusie tot het ontbreken van een afzonderlijke onafhankelijke bevestiging van de aangehaalde resultaten."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Wallonië traint dit najaar zo'n 600 ambtenaren in AI.",
+    "probleem": "De samenvatting presenteert een beoogd deelnemersaantal als vaststaand. De bron spreekt over ongeveer 600 deelnemers tegen eind 2026.",
+    "voorstel": "Maak ook in de samenvatting duidelijk dat dit een doelstelling is en gebruik de termijn eind 2026."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Google zet zijn sterkste model open voor betalende gebruikers",
+    "probleem": "‘Zijn sterkste model’ is een kwalificatie van Google, geen onafhankelijk vastgestelde conclusie. Het statuslabel onder de kop maakt die kop zelf niet minder stellig.",
+    "voorstel": "Schrijf de kwalificatie expliciet aan Google toe of schrap haar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "100% recall bij scannen, 95% precisie bij triage",
+    "probleem": "De percentages blijven onbegrijpelijk zonder uitleg van recall, precisie en triage. Ook ontbreekt wat deze interne test niet aantoont: de resultaten bewijzen geen gelijkwaardige prestaties op andere software.",
+    "voorstel": "Leg de meetbegrippen uit en beperk de geldigheid expliciet tot Googles interne test. Vermeld dat omvang en samenstelling daarvan niet worden toegelicht."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De sterkste cyberversie krijgen vooralsnog alleen deelnemers aan het Fairwind Program.",
+    "probleem": "Google beschrijft toegang via Fairwind, maar zegt in de beschikbare broninformatie niet expliciet dat deze versie uitsluitend daar beschikbaar is.",
+    "voorstel": "Schrap ‘alleen’ en beperk de uitspraak tot de toegang via Fairwind die Google beschrijft."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De tokenprijs is laag genoeg om te testen",
+    "probleem": "Dit betaalbaarheidsoordeel heeft geen vergelijkingsbasis, testbudget of gemeten verbruik. De prijs per miljoen tokens zegt op zichzelf niets over de kosten van een bruikbare proef.",
+    "voorstel": "Schrap het betaalbaarheidsoordeel of onderbouw het met een expliciet budget en gemeten taakverbruik."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het model is bedoeld voor complexe, meerstaps taken zoals programmeren en wetenschappelijk onderzoek.",
+    "probleem": "Een relevante kanttekening van Google ontbreekt: volgens het bedrijf blijft Argon de aangewezen keuze voor het merendeel van programmeer- en kenniswerk. Dat nuanceert de noodzaak om Carbon te proberen.",
+    "voorstel": "Neem die positionering van Argon mee en schrijf haar aan Google toe."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Ze draaiden mee in veiligheidstests van Trajectory Labs, dat Epoch vooraf niet had ingelicht.",
+    "probleem": "Deze formulering slaat op alle drie de voorvallen. Alleen het eerste wordt expliciet als onaangekondigd en zonder toestemming beschreven; het derde was een gezamenlijk experiment.",
+    "voorstel": "Koppel het ontbreken van voorafgaande kennisgeving expliciet aan het eerste voorval."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "36.411 aanroepen op een eigen lokeindpunt van Epoch",
+    "probleem": "De bron vermeldt nadrukkelijk dat dit lokeindpunt niet met privégegevens verbonden was. Die kanttekening ontbreekt, waardoor het grote aantal aanroepen ernstiger kan lijken dan deze meting aantoont.",
+    "voorstel": "Vermeld dat het lokeindpunt bedoeld was om verdacht verkeer te meten en geen toegang gaf tot privégegevens."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "zijn in de beschikbare tekst nauwelijks uitgewerkt",
+    "probleem": "Dit beschrijft de redactionele bronverwerking in plaats van het incident. Bovendien kan hiermee niet worden vastgesteld hoe uitvoerig het volledige rapport die voorvallen behandelt.",
+    "voorstel": "Schrap deze lezersgerichte opmerking. Behoud alleen wat Epoch over beide voorvallen zegt en laat verdere controle in het HTML-commentaar staan."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Gemeentelijke websites en loketten moeten rekenen op geautomatiseerd verkeer dat zich als ambtenaar of auditor voordoet.",
+    "probleem": "Een gerichte veiligheidstest tegen Epoch wordt vertaald naar een stellige verwachting voor Vlaamse gemeenten. De bron toont geen aanvallen op gemeentelijke loketten of imitatie van ambtenaren aan.",
+    "voorstel": "Presenteer dit als een mogelijk scenario om in beveiligingsoefeningen te testen, niet als een aangetoonde ontwikkeling bij gemeenten."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "starten op 9 november 2026 een nieuwe opleidingsronde",
+    "probleem": "De dagbrief is gedateerd na de aangekondigde startdatum. De toekomstige formulering is verouderd, terwijl de aankondiging ook niet bewijst dat de sessies daadwerkelijk zijn begonnen.",
+    "voorstel": "Beschrijf 9 november als de aangekondigde startdatum of controleer of de opleidingen inmiddels begonnen zijn."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Dit is een aankondiging van de organisatoren zelf",
+    "probleem": "De herkomst is niet vastgesteld. Het concept erkent in een HTML-commentaar dat de uitgever achter de verkorte link nog onzeker is, maar presenteert die elders als bevestigd.",
+    "voorstel": "Controleer de uitgever en definitieve URL vóór publicatie. Pas daarna de bronvermelding en toeschrijving aan de organisatoren toe."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Over het effect op het werk zegt de bron niets.",
+    "probleem": "Het ontbreken van effectmetingen wordt goed benoemd, maar niet dat het onderwerp op één bron rust. Het label ‘Volgens de maker’ vervangt die vereiste niet.",
+    "voorstel": "Voeg een onafhankelijke bron toe of vermeld expliciet dat er slechts één bron is en geen onafhankelijke bevestiging."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "de video toont geen resultaten voor en na",
+    "probleem": "Alleen de videobeschrijving is beschikbaar. Daaruit valt niet af te leiden wat de video wel of niet toont.",
+    "voorstel": "Controleer de video of beperk de kanttekening tot het ontbreken van een voor-en-na-vergelijking in de beschrijving."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "je stuurt je site mee naar een AI-dienst",
+    "probleem": "De beschrijving specificeert niet welke websitegegevens worden verzonden of hoe de tool technisch werkt. Dit is een niet-onderbouwde uitspraak over de gegevensstroom.",
+    "voorstel": "Controleer de documentatie of formuleer dit als controlepunt: ga na welke gegevens de tool naar welke dienst verstuurt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Dat is bruikbaar voor zelfstandigen die zelf een site beheren en geen ontwerper inschakelen.",
+    "probleem": "De bruikbaarheid wordt als eigen conclusie gepresenteerd, terwijl alleen de promotionele beschrijving van de maker beschikbaar is.",
+    "voorstel": "Presenteer dit hoogstens als mogelijke toepassing en vermeld dat de werking niet onafhankelijk is getest."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "OpenAI zou een ChatGPT Wallet lanceren waarmee agents kunnen betalen via Amex, Mastercard en Visa",
+    "probleem": "Deze inhoud komt uitsluitend uit een Future Tools-radarkop. Van de gelinkte OpenAI-pagina is geen inhoud beschikbaar. Een primaire link naast een onbevestigde radarkop maakt die claim niet onderbouwd.",
+    "voorstel": "Schrap het item totdat de primaire publicatie is gecontroleerd. ‘Zou’ en ‘nog niet bevestigd’ lossen het brongebrek niet op."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "met afrondpercentages van 5 tot 9%",
+    "probleem": "De percentages worden losgemaakt van de genoemde modelconfiguraties. Ook blijft onduidelijk welke pogingen de noemer vormen, wat ‘afronden’ betekent en wat deze test niet meet.",
+    "voorstel": "Laat de percentages weg totdat de testopzet kan worden toegelicht, of vermeld per configuratie de taak, noemer en beperkingen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een artikel in De Morgen zou volgens een post van @lievendoclo een AI-tutor voor elke leerling afwijzen als te vroeg",
+    "probleem": "De inhoudelijke duiding steunt op een samenvatting van een post, niet op gecontroleerde artikelinhoud. De link verwijst bovendien naar de krant en niet naar de post waaraan de claim wordt toegeschreven. Als het artikel betalend is, mag alleen de kop als signaal dienen.",
+    "voorstel": "Controleer toegankelijkheid en herkomst. Gebruik bij een betalend artikel uitsluitend de kop als signaal; neem de inhoudelijke claim niet via een omweg over."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## Gemini 4 Carbon: Google zet zijn sterkste model open voor betalende gebruikers",
+    "probleem": "Bij geen van de drie hoofdonderwerpen staat een hype-meter. Daardoor ontbreekt de gevraagde afweging tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per hoofdonderwerp één van de vijf toegestane standen toe, telkens met één onderbouwende zin. Leid de stand niet rechtstreeks af uit de numerieke triagescores."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Via de API kost het volgens Google",
+    "probleem": "API wordt niet uitgelegd. Ook onder meer tokens invoeren en uitvoeren, DNS-omleiding, prompten, no-codeplatformen, AI Act, GDPR, skill, repository en safety refusal blijven geheel of gedeeltelijk onverklaard.",
+    "voorstel": "Leg noodzakelijke vakwoorden bij het eerste gebruik kort uit en vervang overbodig jargon door gewone Nederlandse woorden."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Teams die al met Gemini werken kunnen Carbon uitproberen voor documentanalyse",
+    "probleem": "De vertaalslag blijft algemeen. Er staat geen concrete Vlaamse werksituatie bij, terwijl juist de bruikbaarheid buiten Googles tests onzeker is.",
+    "voorstel": "Voeg een duidelijk hypothetische taak uit een Vlaamse zaak of organisatie toe, zonder onbewezen prestaties te suggereren."
+  }
+]

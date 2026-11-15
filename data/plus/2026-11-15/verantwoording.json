@@ -1,0 +1,117 @@
+[
+  {
+    "passage": "die nog niemand onafhankelijk heeft nagemeten",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot het ontbreken van een afzonderlijke onafhankelijke bevestiging van Googles resultaten."
+  },
+  {
+    "passage": "Wallonië traint dit najaar zo'n 600 ambtenaren in AI.",
+    "beslissing": "verwerkt",
+    "toelichting": "Samenvatting noemt nu een doelstelling tegen eind 2026."
+  },
+  {
+    "passage": "Google zet zijn sterkste model open voor betalende gebruikers",
+    "beslissing": "verwerkt",
+    "toelichting": "Kop en tekst schrijven 'sterkste model' expliciet aan Google toe."
+  },
+  {
+    "passage": "100% recall bij scannen, 95% precisie bij triage",
+    "beslissing": "verwerkt",
+    "toelichting": "Begrippen uitgelegd, geldigheid beperkt tot Googles interne test; omvang van de test als NAKIJKEN-commentaar."
+  },
+  {
+    "passage": "De sterkste cyberversie krijgen vooralsnog alleen deelnemers aan het Fairwind Program.",
+    "beslissing": "verwerkt",
+    "toelichting": "'Alleen' geschrapt; enkel de beschreven vrijgave via Fairwind blijft staan."
+  },
+  {
+    "passage": "De tokenprijs is laag genoeg om te testen",
+    "beslissing": "verwerkt",
+    "toelichting": "Betaalbaarheidsoordeel geschrapt, vervangen door advies om op een kleine proef te meten."
+  },
+  {
+    "passage": "Het model is bedoeld voor complexe, meerstaps taken zoals programmeren en wetenschappelijk onderzoek.",
+    "beslissing": "verwerkt",
+    "toelichting": "Googles positionering van Argon als keuze voor het merendeel van het werk toegevoegd."
+  },
+  {
+    "passage": "Ze draaiden mee in veiligheidstests van Trajectory Labs, dat Epoch vooraf niet had ingelicht.",
+    "beslissing": "verwerkt",
+    "toelichting": "Ontbreken van toestemming en kennisgeving gekoppeld aan het eerste voorval."
+  },
+  {
+    "passage": "36.411 aanroepen op een eigen lokeindpunt van Epoch",
+    "beslissing": "verwerkt",
+    "toelichting": "Vermeld dat het eindpunt verkeer moest meten en niet met privégegevens verbonden was."
+  },
+  {
+    "passage": "zijn in de beschikbare tekst nauwelijks uitgewerkt",
+    "beslissing": "verwerkt",
+    "toelichting": "Werkwijze-opmerking geschrapt; weergegeven wat Epoch over voorval 2 en 3 zegt."
+  },
+  {
+    "passage": "Gemeentelijke websites en loketten moeten rekenen op geautomatiseerd verkeer dat zich als ambtenaar of auditor voordoet.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven als mogelijk scenario voor beveiligingsoefeningen, met vermelding dat het rapport geen aanvallen op loketten toont."
+  },
+  {
+    "passage": "starten op 9 november 2026 een nieuwe opleidingsronde",
+    "beslissing": "verwerkt",
+    "toelichting": "Beschreven als aangekondigde startdatum, met NAKIJKEN of de sessies gestart zijn."
+  },
+  {
+    "passage": "Dit is een aankondiging van de organisatoren zelf",
+    "beslissing": "verwerkt",
+    "toelichting": "Toeschrijving afgezwakt tot 'een aankondiging'; uitgever en URL blijven als NAKIJKEN, al noemt de brontekst AdN en EAP zelf als lanceerders."
+  },
+  {
+    "passage": "Over het effect op het werk zegt de bron niets.",
+    "beslissing": "verwerkt",
+    "toelichting": "Status naar 'Eén bron' en expliciet vermeld dat onafhankelijke bevestiging ontbreekt."
+  },
+  {
+    "passage": "de video toont geen resultaten voor en na",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot wat de beschrijving wel of niet toont."
+  },
+  {
+    "passage": "je stuurt je site mee naar een AI-dienst",
+    "beslissing": "verwerkt",
+    "toelichting": "Herformuleerd als controlepunt over welke gegevens naar welke dienst gaan."
+  },
+  {
+    "passage": "Dat is bruikbaar voor zelfstandigen die zelf een site beheren en geen ontwerper inschakelen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu een mogelijke toepassing, met vermelding dat de werking niet onafhankelijk is getest."
+  },
+  {
+    "passage": "OpenAI zou een ChatGPT Wallet lanceren waarmee agents kunnen betalen via Amex, Mastercard en Visa",
+    "beslissing": "verwerkt",
+    "toelichting": "Item geschrapt: enkel een radarkop zonder beschikbare primaire inhoud."
+  },
+  {
+    "passage": "met afrondpercentages van 5 tot 9%",
+    "beslissing": "verwerkt",
+    "toelichting": "Percentages weggelaten; vermeld dat testopzet en beperkingen niet bevestigd zijn."
+  },
+  {
+    "passage": "Een artikel in De Morgen zou volgens een post van @lievendoclo een AI-tutor voor elke leerling afwijzen als te vroeg",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven rond de artikelkop, post-claim expliciet als niet nagegaan, met NAKIJKEN over betalend karakter; claim zelf blijft staan omdat de post de bron ervan is."
+  },
+  {
+    "passage": "## Gemini 4 Carbon: Google zet zijn sterkste model open voor betalende gebruikers",
+    "beslissing": "verwerkt",
+    "toelichting": "Hype-meter met één zin uitleg toegevoegd aan alle drie de hoofdonderwerpen."
+  },
+  {
+    "passage": "Via de API kost het volgens Google",
+    "beslissing": "verwerkt",
+    "toelichting": "API, tokens, DNS-omleiding, prompten, no-code, AI Act/GDPR, skill, repository en safety refusal kort uitgelegd."
+  },
+  {
+    "passage": "Teams die al met Gemini werken kunnen Carbon uitproberen voor documentanalyse",
+    "beslissing": "verwerkt",
+    "toelichting": "Hypothetisch voorbeeld van een Vlaams boekhoudkantoor toegevoegd, met advies eerst Argon te testen."
+  }
+]

@@ -13,11 +13,9 @@ data/plus/gebruikt.json
 data/fouten/
 # Werkdocumenten van de verspreiding: contactenboek, kansen en voorstellen (over organisaties, geen publicatie).
 data/verspreiding/
-# Werknotities van de eindredacteur. Ze blijven privé tot Duncan ze heeft nagelezen en hier zelf schrapt.
+# Werknotities die privé blijven (beslist op 15/11/2026): ze worden elke sessie bijgewerkt met de stand van
+# accounts en lopend werk, en raken aan Duncans andere werk. Publiek sinds 15/11: data/open-repo.md,
+# data/verspreidingsplan.md, data/bronnencheck.md en content/materiaal/README.md.
 CLAUDE.md
 data/ideeen.md
 data/plan-plus.md
-data/open-repo.md
-data/verspreidingsplan.md
-data/bronnencheck.md
-content/materiaal/README.md
