@@ -1,0 +1,68 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "en een dag later miljoenen",
+    "probleem": "The Verge schrijft dat het aantal tegen de vorige avond tot miljoenen was gestegen. De bron legt geen interval van één dag na de bekendmaking vast.",
+    "voorstel": "Schrap de tijdsaanduiding ‘een dag later’ of controleer de tijdstippen in de oorspronkelijke melding van Cloudflare."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Voor patiënten in Vlaanderen verandert er nu niets.",
+    "probleem": "Microsoft beschrijft onderzoek en een geplande Amerikaanse patiëntenstudie. De bron onderbouwt geen algemene uitspraak over wat er momenteel voor Vlaamse patiënten verandert.",
+    "voorstel": "Beperk de conclusie tot wat ontbreekt: Microsoft meldt geen toepassing of patiëntenstudie in Vlaanderen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Dat geldt alleen binnen Microsofts eigen test met bestaande gevallen.",
+    "probleem": "Hiermee bevestigt de tekst de voorafgaande claim dat AI artsen overtreft tegen de helft van de kosten. Microsoft noemt verschillende kostenvergelijkingen. Het concrete resultaat onder de helft van de kosten betreft een configuratie met 81% nauwkeurigheid tegenover niet nader omschreven vergelijkingssystemen. Elders erkent het concept terecht dat onduidelijk is of artsen die referentie zijn.",
+    "voorstel": "Bevestig de slogan niet als één eenduidig testresultaat. Onderscheid de nauwkeurigheidsvergelijking met artsen van de kostenclaim en vermeld bij die laatste de configuratie, 81% nauwkeurigheid en onduidelijke referentiegroep."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Op alledaagse spoedgevallen is het 80% tegenover 47%",
+    "probleem": "De bron gaat specifiek over geselecteerde gevallen uit MIMIC-IV-ED, een gegevensverzameling over Amerikaanse spoedzorg. ‘Alledaagse spoedgevallen’ maakt daarvan een algemener resultaat dan is aangetoond, zeker voor Vlaamse lezers.",
+    "voorstel": "Vermeld de Amerikaanse herkomst en de gegevensverzameling. Maak duidelijk dat deze score geen gemeten prestatie op een Vlaamse spoeddienst is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "dan zegt de score van de leverancier weinig over jouw situatie",
+    "probleem": "De auteurs zeggen dat resultaten niet gegarandeerd overdraagbaar zijn tussen contexten. Daaruit volgt niet dat een leveranciersscore per definitie weinig zegt.",
+    "voorstel": "Beperk de conclusie tot het ontbreken van een garantie en de noodzaak om de agent in de beoogde gemeentelijke toepassing te testen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Onderschat — Het krijgt weinig aandacht",
+    "probleem": "De bron bevat geen gegevens over hoeveel aandacht agent-evaluatie krijgt. Ook de vergelijking dat deze vragen meer opleveren dan een benchmarkscore wordt niet aangetoond. De hype-stand rust daardoor op een onbewezen aandachtstekort.",
+    "voorstel": "Overweeg ‘Terecht’, met een uitleg over het belang van evaluatie in de concrete gebruikscontext. Behoud ‘Onderschat’ alleen als de verhouding tussen aandacht en verwachte Vlaamse impact onderbouwd kan worden."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Overroepen — Een aantal medewerkers met toegang zegt niets over resultaat",
+    "probleem": "Dit is een terechte beperking van het Uber-bericht, maar geen onderbouwing voor overmatige aandacht. Het bericht claimt geen gemeten productiviteitswinst. Een leveranciersbron en ontbrekende resultaatcijfers maken een uitrol niet automatisch overroepen.",
+    "voorstel": "Overweeg ‘Terecht’ voor het beperkte nieuwsfeit van een brede uitrol. Motiveer de stand vanuit de verwachte betekenis voor Vlaamse werkgevers, zonder onbewezen rendement te suggereren."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Vraag dus wie getest heeft, in welke omstandigheden en of ook gekeken is naar hoe de agent tot het resultaat kwam.",
+    "probleem": "De Vlaamse vertaalslag blijft een algemene aankoopchecklist. Een belangrijke bronkanttekening ontbreekt: testen of een agent werk zelfstandig overneemt is iets anders dan testen of medewerkers er beter mee werken.",
+    "voorstel": "Neem dat onderscheid op in de bevinding voor lokale overheden. Adviseer een concreet, uitdrukkelijk hypothetisch gemeentelijk gebruiksgeval waarin zowel zelfstandige taakuitvoering als samenwerking met een medewerker wordt beoordeeld."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Onafhankelijke testers hebben geld en toegang tot modellen nodig.",
+    "probleem": "De samenvatting laat twee wezenlijke voorwaarden uit de bron weg: kunnen onderzoeken zonder vrees voor vergelding en bevindingen transparant kunnen delen. Daarmee wordt onafhankelijkheid vooral als een middelenprobleem voorgesteld.",
+    "voorstel": "Vermeld ook de vrijheid om onderzoeksvragen te kiezen en resultaten zonder druk openbaar te maken."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Die rapporten zijn hier niet zelf gelinkt.",
+    "probleem": "Dit beschrijft een tekort in de redactionele afwerking in plaats van de inhoudelijke zekerheid voor de lezer.",
+    "voorstel": "Behoud de inhoudelijke melding dat het overzicht op één medium steunt. Zet de opdracht om primaire rapporten te linken uitsluitend in een HTML-commentaar."
+  },
+  {
+    "ernst": "klein",
+    "passage": "De tekst noemt \"minder dan de helft van de kosten van vergelijkbare systemen\".",
+    "probleem": "‘De tekst’ maakt onnodig onduidelijk wie deze kostenclaim doet. Het gaat om Microsoft, niet om een onafhankelijke vaststelling.",
+    "voorstel": "Noem Microsoft rechtstreeks als afzender van de kostenclaim."
+  }
+]

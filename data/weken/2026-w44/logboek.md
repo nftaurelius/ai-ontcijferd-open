@@ -1,0 +1,7 @@
+- Tips van de eindredactie meegenomen: 1.
+- Verkenner en triage: 12 kandidaat-onderwerpen uit de periode 24/10 tot 30/10/2026.
+- Analist: koos de onderwerpen en schreef het concept.
+- Vertaler: maakte de tekst leesbaar voor leken (vaktermen uitgelegd: 6).
+- Tegenspreker: bevindingen 18, waarvan kritiek 4.
+- Revisie: 18 bevindingen verwerkt, 0 gemotiveerd niet.
+- Concept voor een LinkedIn-post klaargezet (data/weken/<week>/linkedin.md).

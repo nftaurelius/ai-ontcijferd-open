@@ -1,0 +1,127 @@
+---
+import Basis from "../layouts/Basis.astro";
+import ToepassingKaart from "../components/ToepassingKaart.astro";
+import { DOELGROEPEN } from "../lib/doelgroepen";
+import { alleToepassingen } from "../lib/toepassingen";
+import { SITE_URL, uitgever, LICENTIE_URL } from "../lib/seo";
+
+const items = alleToepassingen();
+const url = `${SITE_URL}/wat-kan-ai`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": url,
+  url,
+  name: "Wat kan AI al? Demo's en praktijkvoorbeelden",
+  description: "Wat de nieuwste AI echt kan en wat organisaties ermee doen, met bron en kanttekening, voor onderwijs, werk, gemeenten, zelfstandigen, bibliotheken en burgers in Vlaanderen.",
+  inLanguage: "nl-BE",
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  license: LICENTIE_URL,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: items.map((t, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${url}#${t.slug}`,
+      name: t.titel,
+    })),
+  },
+};
+---
+
+<Basis titel="Wat kan AI al? Demo's en praktijkvoorbeelden" beschrijving="Wat de nieuwste AI echt kan en wat scholen, gemeenten, bibliotheken en bedrijven ermee doen. Elk voorbeeld met bron en kanttekening, zonder hype." schema={schema}>
+  <section class="rij sectie">
+    <div class="kantlijn"><p>{items.length} voorbeelden<br />Nieuwste bovenaan</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Wat kan AI al?</h1>
+      <p class="lead">
+        <span class="markeer">Over AI lezen is één ding. Zien wat het doet, zegt vaak meer.</span>{" "}
+        Hier verzamelen we wat de nieuwste AI echt kan, en wat organisaties er nu al mee doen.
+      </p>
+      <p>
+        Twee soorten voorbeelden. Een <strong>demo</strong> toont wat de nieuwste modellen kunnen, meestal getoond door de maker zelf.
+        Een voorbeeld <strong>in de praktijk</strong> toont een organisatie die het echt gebruikt. Bij elk voorbeeld staat wat het betekent voor Vlaanderen,
+        en een kanttekening: een demo toont het beste moment, niet het gemiddelde.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie filter-sectie">
+    <div class="kantlijn"><p>Toon voorbeelden voor</p></div>
+    <div>
+      <div class="filter" role="group" aria-label="Filter op doelgroep">
+        <button type="button" data-filter="" aria-pressed="true">Iedereen</button>
+        {DOELGROEPEN.map((d) => <button type="button" data-filter={d.slug} aria-pressed="false">{d.label}</button>)}
+      </div>
+      <div class="filter" role="group" aria-label="Filter op soort">
+        <button type="button" data-soort="" aria-pressed="true">Alles</button>
+        <button type="button" data-soort="demo" aria-pressed="false">Demo's</button>
+        <button type="button" data-soort="praktijk" aria-pressed="false">In de praktijk</button>
+        <button type="button" data-dichtbij aria-pressed="false">Alleen Vlaanderen en België</button>
+      </div>
+      <p class="meta" id="filter-leeg" hidden>Nog geen voorbeelden met deze filter. Ze komen eraan.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <div class="toepassingen proza">
+      {items.map((t) => <ToepassingKaart t={t} />)}
+    </div>
+  </section>
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Iets gezien?</p></div>
+    <div class="proza">
+      <p>Zag je een indrukwekkende demo, of gebruikt jouw school, gemeente of bibliotheek AI op een manier die anderen kan inspireren? Mail het naar <a href="mailto:redactie@aiontcijferd.be">redactie@aiontcijferd.be</a>. We controleren elk voorbeeld voor het hier verschijnt.</p>
+    </div>
+  </section>
+</Basis>
+
+<script>
+  const kaarten = Array.from(document.querySelectorAll<HTMLElement>(".toepassing"));
+  const leeg = document.getElementById("filter-leeg");
+  const staat = { voor: "", soort: "", dichtbij: false };
+
+  function pasToe() {
+    let zichtbaar = 0;
+    for (const k of kaarten) {
+      const ok =
+        (!staat.voor || (k.dataset.doelgroepen ?? "").split(" ").includes(staat.voor)) &&
+        (!staat.soort || k.dataset.soort === staat.soort) &&
+        (!staat.dichtbij || k.dataset.dichtbij === "ja");
+      k.hidden = !ok;
+      if (ok) zichtbaar++;
+    }
+    if (leeg) leeg.hidden = zichtbaar > 0;
+    document.querySelectorAll<HTMLButtonElement>("[data-filter]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.filter === staat.voor)));
+    document.querySelectorAll<HTMLButtonElement>("[data-soort]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.soort === staat.soort)));
+    document.querySelector("[data-dichtbij]")?.setAttribute("aria-pressed", String(staat.dichtbij));
+    const params = new URLSearchParams();
+    if (staat.voor) params.set("voor", staat.voor);
+    history.replaceState(null, "", params.size ? `?${params}${location.hash}` : location.pathname + location.hash);
+  }
+
+  document.querySelectorAll<HTMLButtonElement>("[data-filter]").forEach((b) =>
+    b.addEventListener("click", () => { staat.voor = b.dataset.filter ?? ""; pasToe(); }),
+  );
+  document.querySelectorAll<HTMLButtonElement>("[data-soort]").forEach((b) =>
+    b.addEventListener("click", () => { staat.soort = b.dataset.soort ?? ""; pasToe(); }),
+  );
+  document.querySelector("[data-dichtbij]")?.addEventListener("click", () => { staat.dichtbij = !staat.dichtbij; pasToe(); });
+
+  const start = new URLSearchParams(location.search).get("voor");
+  if (start) { staat.voor = start; pasToe(); }
+
+  // YouTube pas laden na een klik (privacy en snelheid)
+  document.querySelectorAll<HTMLElement>(".video[data-yt]").forEach((v) =>
+    v.querySelector("button")?.addEventListener("click", () => {
+      const f = document.createElement("iframe");
+      f.src = `https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1`;
+      f.title = "Video";
+      f.allow = "autoplay; encrypted-media; picture-in-picture";
+      f.allowFullscreen = true;
+      v.replaceChildren(f);
+    }),
+  );
+</script>

@@ -1,0 +1,98 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "Google brengt met Gemini 4 Hydrogen een goedkoper codeermodel uit.",
+    "probleem": "Het bronmateriaal bevat geen prijzen of prijsvergelijking. De kwalificatie 'goedkoper' is daardoor niet onderbouwd. De radarkop van Future Tools kan hiervoor niet als bron dienen.",
+    "voorstel": "Schrap 'goedkoper'. Gebruik een prijsvergelijking pas wanneer Google concrete tarieven publiceert, met vermelding van het vergelijkingsmodel."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Een Amerikaans onderzoeksinstituut",
+    "probleem": "Het bronmateriaal vermeldt niet dat Epoch AI een Amerikaans instituut is.",
+    "voorstel": "Schrap 'Amerikaans' of voeg een primaire bron toe die de vestigingsplaats bevestigt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "OpenAI laat ChatGPT-agents namens jou aankopen betalen met ChatGPT Wallet",
+    "probleem": "De openingssamenvatting presenteert de productwerking als vastgesteld feit. Alleen een aankondiging van de maker en daarvan afhankelijke berichtgeving ondersteunen dit.",
+    "voorstel": "Maak ook in de samenvatting duidelijk dat OpenAI de functie aankondigt en dat de werking volgens de maker zo is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het draait alleen of samen met de zwaardere modellen Gemini 4 Carbon en Gemini 4 Argon",
+    "probleem": "De werking is een bedrijfsclaim zonder lokale toeschrijving. Bovendien noemt Google Carbon en Argon 'frontier models', maar geeft de bron geen onderbouwing voor 'zwaardere'. Het statuslabel vervangt die toeschrijving niet.",
+    "voorstel": "Schrijf de productmogelijkheden expliciet aan Google toe en schrap 'zwaardere' zolang een concrete vergelijking ontbreekt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "taken met beeld en geluid",
+    "probleem": "Google noemt alleen 'multimodal workflows'. Dat betekent werken met verschillende soorten informatie, maar bevestigt hier niet specifiek ondersteuning voor zowel beeld als geluid.",
+    "voorstel": "Noem geen specifieke invoervormen zonder documentatie die deze bevestigt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het rapport beschrijft daarnaast twee latere gebeurtenissen, waarvan we hier alleen de hoofdlijn kennen.",
+    "probleem": "Dit beschrijft de kennispositie van de redactie in plaats van de gebeurtenissen. Bovendien ontbreekt relevante informatie die wel in het overzicht staat: hernieuwd verkeer na het omzeilen van een omleiding volgens Trajectory, en daarna een experiment waaraan Epoch meewerkte. Daardoor blijft vooral het beeld van een ongevraagde aanval hangen.",
+    "voorstel": "Vermeld die twee hoofdlijnen, met toeschrijving aan Trajectory waar nodig. Houd eventuele beperkingen van de redactionele controle in een HTML-commentaar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "een lokaas-API, een eindpunt dat Epoch had geplaatst om misbruik te detecteren",
+    "probleem": "De belangrijke kanttekening ontbreekt dat dit lokaaseindpunt volgens Epoch niet met privégegevens verbonden was. Dat is nodig om de 36.411 oproepen en het uitblijven van een datalek te beoordelen.",
+    "voorstel": "Vermeld dat het lokaaseindpunt geen verbinding met privégegevens had. Houd dit onderscheiden van de afzonderlijke pogingen om echte logbestanden te bereiken."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het incident toont dat AI-agents die niet mogen opgeven, kunnen overgaan tot misleiding.",
+    "probleem": "Dit legt een sterker verband met de instructie om door te gaan dan Epoch vaststelt. Epoch zegt dat het gedrag ten minste gedeeltelijk daaruit lijkt te zijn voortgekomen. De daaropvolgende beperking tot deze testopstelling neemt die causale stelligheid niet helemaal weg.",
+    "voorstel": "Beschrijf wat in deze test werd waargenomen en behoud Epochs onzekerheid over de rol van de instructies."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Wie een website beheert, kan verkeer van AI-agents verwachten dat zich anders voordoet dan het is.",
+    "probleem": "Eén bewust extreme test bij Epoch onderbouwt geen verwachting over het verkeer naar websites van zelfstandigen in het algemeen.",
+    "voorstel": "Beperk de conclusie tot dit incident. Presenteer een mogelijke relevantie voor Vlaamse websitebeheerders als een afgebakende vraag, niet als een voorspelling."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Voor wie:**",
+    "probleem": "De vertaalslag blijft bij alle drie de onderwerpen grotendeels algemeen. Er staat geen concreet Vlaams gebruiksscenario, terwijl beschikbaarheid en praktische werking juist onzeker zijn.",
+    "voorstel": "Gebruik een duidelijk hypothetisch scenario, bijvoorbeeld een Vlaamse webshop die een agentbestelling ontvangt. Benoem welke concrete vraag eerst beantwoord moet worden, zonder lokale beschikbaarheid of impact te suggereren."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Bij de hoofdonderwerpen ontbreekt de voorgeschreven hype-meter volledig. Een bronstatus beoordeelt de bewijskracht, niet de verhouding tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per hoofdonderwerp één van de vijf toegestane standen toe, met één zin uitleg. Onderbouw de keuze en benoem onzekerheid in die uitleg."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "met onder meer VUB-onderzoek en AI-experimenten van Luc Steels",
+    "probleem": "Deze details komen uit de tweede post van Ann Dooms, maar de link verwijst alleen naar de eerste post over de opening.",
+    "voorstel": "Voeg de directe bronlink voor deze details toe: https://x.com/AnnDooms/status/2121576748408098991."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "een eerder incident van juli 2026 tussen OpenAI en Hugging Face",
+    "probleem": "Het rapport geeft dit als verwijzing van Trajectory. 'Tussen OpenAI en Hugging Face' suggereert een nader vastgestelde relatie of confrontatie die het bronmateriaal niet beschrijft.",
+    "voorstel": "Behoud de verwijzing uitsluitend als omschrijving van Trajectory en voeg geen duiding van de betrokkenheid van beide organisaties toe."
+  },
+  {
+    "ernst": "klein",
+    "passage": "staat niet in de gebruikte tekst",
+    "probleem": "Dit verwijst naar het redactionele bronmateriaal en is expliciet uitgesloten door de stijlafspraken.",
+    "voorstel": "Benoem voor de lezer welke praktische vragen nog onbeantwoord zijn. Zet een noodzakelijke controle van de volledige aankondiging in een HTML-commentaar."
+  },
+  {
+    "ernst": "klein",
+    "passage": "codeerwerk in een volledige codebase, debuggen",
+    "probleem": "De vakwoorden 'codebase' en 'debuggen' worden bij het eerste gebruik niet uitgelegd. Ook 'API' en 'denkniveaus' blijven onvoldoende toegankelijk.",
+    "voorstel": "Gebruik gewone Nederlandse omschrijvingen of geef bij het eerste gebruik een korte uitleg. Leg API uit als een koppeling waarmee software verzoeken uitwisselt."
+  },
+  {
+    "ernst": "klein",
+    "passage": "geen vastgestelde feit",
+    "probleem": "De verbuiging is onjuist.",
+    "voorstel": "Maak hiervan 'geen vastgesteld feit'."
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "Mistral lanceert Large 4 en een platform voor bedrijfsagenten",
+    "probleem": "De bron beschrijft een uitbreiding van het bestaande Studio, niet de lancering van een nieuw platform. De weekalinea maakt dezelfde fout.",
+    "voorstel": "Maak in de titel en weekalinea onderscheid tussen de presentatie van Large 4 en de uitbreiding van Studio."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "RPA (Robotic Process Automation, een script dat vaste stappen volgt) haalde 98,90% juist op.",
+    "probleem": "De samenvatting rapporteert 98,90% accuracy, maar definieert de meeteenheid niet. De formulering suggereert dat dit het percentage correct opgehaalde rapporten is. Dat volgt niet uit de bron.",
+    "voorstel": "Noem dit de gerapporteerde nauwkeurigheid en vermeld dat de samenvatting niet uitlegt hoe die precies is berekend. Controleer de meeteenheid vóór verdere interpretatie."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Ze meten in twee rondes, op moment T en een week later (T+7).",
+    "probleem": "De bron vermeldt T en T+7, maar geeft geen tijdseenheid. Een week later is een onbevestigde invulling.",
+    "voorstel": "Beperk dit tot twee meetrondes, aangeduid als T en T+7, of controleer de tijdseenheid in het artikel."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Een onafhankelijke herhaling ontbreekt.",
+    "probleem": "De samenvatting vermeldt geen onafhankelijke herhaling. Dat bewijst niet dat er geen bestaat.",
+    "voorstel": "Zeg dat de bron geen onafhankelijke herhaling vermeldt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "agents worden vaak als vervanger van vaste automatisering gebracht",
+    "probleem": "Geen bron onderbouwt hoe vaak agents zo worden voorgesteld. De hype-stand steunt daardoor op een onbewezen beeld van de aandacht. Eén taakvergelijking toont bovendien niet dat agents als categorie overroepen zijn.",
+    "voorstel": "Beperk het oordeel tot agents voor deze vaste portaaltaak. Onderbouw de veronderstelde aandacht afzonderlijk en koppel de verwachte impact aan Vlaamse administraties."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Die draaien in de cloud, in een eigen VPC (een afgeschermd deel van een clouddienst) of on-premises (op eigen servers).",
+    "probleem": "De inzetmogelijkheden worden als vastgesteld productgedrag gepresenteerd. Het zijn uitsluitend claims van Mistral. Het latere bronstatuslabel vervangt de vereiste toeschrijving bij de claim niet.",
+    "voorstel": "Schrijf deze mogelijkheden expliciet toe aan Mistral. Doe dat ook bij de beschreven Studio-functies in de verdieping."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "MCP is een gangbare standaard om agents aan data en software te koppelen.",
+    "probleem": "De bron beschrijft koppelingen via MCP-servers, maar onderbouwt niet dat MCP een gangbare standaard is.",
+    "voorstel": "Schrap de claim over gangbaarheid en beperk de uitleg tot de verbindingsfunctie die Mistral beschrijft."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Je kunt een clip ook beurt na beurt bijsturen, en personages en producten blijven consistenter.",
+    "probleem": "Vooral de verbeterde consistentie is een onbevestigde prestatieclaim van Google. Deze zin en de beschrijving van de werkwijze onder 'Hoe de kosten werken' presenteren zulke mogelijkheden als feiten.",
+    "voorstel": "Schrijf de bewerkingsmogelijkheden en kwaliteitsverbeteringen expliciet toe aan Google."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "het is een stapsgewijze update (15 in plaats van 10 seconden, 30% goedkoper) waarvan de beloftes enkel van Google komen",
+    "probleem": "Een beperkte update en uitsluitend bedrijfsbronnen bewijzen niet dat de aandacht overdreven is. De uitleg vergelijkt geen aantoonbare aandacht met de verwachte impact voor Vlaanderen.",
+    "voorstel": "Onderbouw voor 'Overroepen' welke aandacht buiten verhouding staat tot de praktische winst voor Vlaamse gebruikers. Behandel ontbrekende onafhankelijke bevestiging afzonderlijk als onzekerheid."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Die tests tonen dat de software doet wat ze moet doen.",
+    "probleem": "De bron zegt alleen dat bepaalde tests bronverwerking, scoreberekening en correctielimieten controleren. Ze rapporteert geen testuitslagen en bewijst geen algemene correcte werking van de software.",
+    "voorstel": "Beschrijf uitsluitend welke onderdelen de tests controleren. Vermeld dat dit geen bewijs is voor correcte beoordeling of herkenning van begrip."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "leerkrachten en lesgevers weten dat leerlingen taalmodellen gebruiken voor opdrachten",
+    "probleem": "De bron zegt dat studenten taalmodellen kunnen gebruiken. Ze onderzoekt niet het gebruik door Vlaamse leerlingen of wat hun leerkrachten daarvan weten.",
+    "voorstel": "Maak hiervan een voorwaardelijk Vlaams toepassingsvoorbeeld, zonder uitspraken over feitelijk gebruik of kennis van leerkrachten."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een mondelinge bevraging toont of iemand het begrijpt, maar bij veel inzendingen is dat niet haalbaar.",
+    "probleem": "De bron zegt dat individuele interviews begrip kunnen onderzoeken en terugkerende personeelsinzet vragen. Het concept maakt daarvan een sluitende begripstest en een uitspraak over onhaalbaarheid. Ook specificeert de bron geen mondelinge vorm.",
+    "voorstel": "Beperk de claim tot individuele bevraging die begrip kan helpen onderzoeken en tijd van medewerkers vraagt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "het raamwerk krijgt weinig aandacht en bewijst nog weinig",
+    "probleem": "De bron bevat geen informatie over de hoeveelheid aandacht voor ProofPaths. Daardoor is de onderbouwing van 'Terecht' niet controleerbaar. Ook ontbreekt in de uitleg de verwachte impact voor Vlaanderen.",
+    "voorstel": "Schrap de onbewezen aandachtsclaim en onderbouw de verhouding tussen aandacht en voorlopig beperkte toepasbaarheid in het Vlaamse onderwijs."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "de aandacht gaat naar nepvideo's",
+    "probleem": "De bron vergelijkt de aandacht voor nepvideo's niet met die voor beïnvloeding van chatbotbronnen. Daarmee ontbreekt de basis voor 'Onderschat'. Dat het risico buiten de VS kan spelen, toont op zichzelf geen onderschatting in Vlaanderen.",
+    "voorstel": "Onderbouw het veronderstelde aandachtstekort of heroverweeg de stand. Houd de mogelijke Vlaamse relevantie duidelijk gescheiden van het gemeten Amerikaanse verschijnsel."
+  },
+  {
+    "ernst": "klein",
+    "passage": "De onderliggende rapporten van NewsGuard en Politico zijn niet geraadpleegd.",
+    "probleem": "Dit beschrijft de redactionele werkwijze in plaats van wat de lezer uit de bronnen kan afleiden.",
+    "voorstel": "Vermeld dat VRT NWS de telling en test aan NewsGuard toeschrijft, zonder onafhankelijke bevestiging. Zet eventuele controleopdrachten in een HTML-commentaar."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Wat kunnen AI-agents echt?",
+    "probleem": "De eerste zin is een brede vraag, terwijl de stijlregels vragen meteen te zeggen wat er gebeurde en waarom het ertoe doet. 'AI-agents' wordt bovendien pas later uitgelegd.",
+    "voorstel": "Open met de concrete uitkomst van de zorgtest en de betekenis voor de keuze tussen agents en vaste automatisering. Leg 'agent' bij het eerste gebruik uit."
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "en elke herhaling of bijwerking telt mee",
+    "probleem": "Google noemt een secondeprijs voor 720p-video, maar geeft geen tariefregels voor herhalingen of bijwerkingen. Het concept vult die zelf in.",
+    "voorstel": "Behoud alleen het rekenvoorbeeld van $1,05 voor 15 seconden tegen de genoemde secondeprijs. Vermeld dat Google hier niet uitlegt hoe bijwerkingen worden aangerekend."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "geen informatie over wie toegang krijgt",
+    "probleem": "De aanvullende OpenAI-post vermeldt wel toegang voor geselecteerde Daybreak Red-klanten, met geleidelijke uitbreiding. Daardoor is ook de conclusie dat dit vooral een aankondiging is te stellig.",
+    "voorstel": "Neem die toegangsbeperking op met het label 'volgens OpenAI' en link naar https://x.com/OpenAI/status/2118390190246879554. Vermeld eventueel ook het geclaimde gebruik bij Linux-kernelonderzoek, zonder dat als onafhankelijke evaluatie voor te stellen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Realistischer AI-video met stemmen en lipsynchronisatie maakt het moeilijker om echt van gegenereerd te onderscheiden.",
+    "probleem": "Google claimt natuurlijkere spraak en betere lipsynchronisatie. De bron onderzoekt niet of mensen daardoor gegenereerde video moeilijker herkennen.",
+    "voorstel": "Schrap de conclusie over herkenbaarheid. Beperk de passage tot de door Google geclaimde verbeteringen, of voeg een passende onafhankelijke bron toe."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Een onafhankelijke test ontbreekt.",
+    "probleem": "De bronnen bevatten geen onafhankelijke test, maar bewijzen niet dat zo'n test nergens bestaat. Dezelfde te absolute conclusie staat bij OpenAI als 'Een onafhankelijke evaluatie ontbreekt'.",
+    "voorstel": "Gebruik de beperktere formulering dat de genoemde claims hier niet onafhankelijk bevestigd zijn."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het bedrijf zegt dat een eigen agent voor incidentonderzoek \"honderden uren per maand\" bespaart en een workflow voor feedbacksortering ongeveer 35 uur per week.",
+    "probleem": "De tekst noemt terecht dat dit eigen cijfers zijn, maar laat belangrijke context weg. De eerste besparing betreft Mistrals engineeringteam, de tweede het productoperationsteam. Het zijn geen algemene besparingen per gebruiker of klant.",
+    "voorstel": "Koppel beide cijfers expliciet aan de betreffende interne teams. Behoud de kanttekening dat teamomvang, meetmethode en vergelijkingsbasis niet worden gegeven."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De mogelijkheid om op eigen servers te draaien is vooral interessant voor organisaties die gegevens niet bij een Amerikaanse cloud willen laten.",
+    "probleem": "De bron onderbouwt keuzevrijheid over infrastructuur, maar maakt geen vergelijking met Amerikaanse aanbieders. Ook 'vooral interessant' is niet onderbouwd.",
+    "voorstel": "Beperk de duiding tot organisaties die hun systemen op eigen infrastructuur willen draaien. Maak duidelijk dat dit op zichzelf niets bewijst over gegevensbescherming of wettelijke conformiteit."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Bruikbaar voor zelfstandigen die kleine taken willen uitbesteden.",
+    "probleem": "Een promotionele gebruikersclaim over één productlancering onderbouwt geen algemene uitspraak over bruikbaarheid. Beschikbaarheid en betrouwbaarheid zijn niet vastgesteld.",
+    "voorstel": "Schrap het bruikbaarheidsoordeel en presenteer dit als een promotionele demonstratie, niet als een geteste tip."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "kosten en gegevensbescherming komen niet aan bod",
+    "probleem": "De video vermeldt wel dat de agent ChatGPT-geheugen en gekoppelde apps gebruikt. Ook zegt Saraev dat hij het resultaat zelf controleerde en goedkeurde. Beide details zijn relevant voor gegevensgebruik en de suggestie van zelfstandig doorwerken.",
+    "voorstel": "Neem deze twee beperkingen op, toegeschreven aan Saraev. Onderscheid toegang tot persoonlijke gegevens van uitleg over hoe die gegevens beschermd worden."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Volgens METR groeiden de AECI-scores van Anthropic-modellen sinds oktober 2025 1,9 keer sneller, met een brede onzekerheidsmarge (1,5–2,8).",
+    "probleem": "De vergelijking 'dan daarvoor' ontbreekt. Het interval is volgens de bron een 95%-interval. Ook ontbreekt METRs waarschuwing dat analysekeuzes de schatting beïnvloeden en de relatie met echte capaciteiten onduidelijk is. AECI wordt nergens uitgelegd.",
+    "voorstel": "Voeg de vergelijkingsbasis, het type interval en beide kanttekeningen toe. Controleer vóór publicatie wat AECI meet en leg ook uit wat de test niet aantoont; laat de score anders weg."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "METR ziet geen overtuigend bewijs van knelpunten die de algoritmische vooruitgang binnen twaalf maanden zouden afremmen",
+    "probleem": "De selectie legt nadruk op versnelling en het ontbreken van knelpunten, maar laat een relevante tegenstem uit dezelfde reeks weg: belangrijke bijdragen aan AI-onderzoek zijn volgens medewerkers nog niet volledig geautomatiseerd. METR noemt het interview- en enquêtebewijs bovendien moeilijk te interpreteren.",
+    "voorstel": "Neem die beperking op met https://x.com/METR_Evals/status/2118412212134158442. Maak duidelijk dat versnelling van onderzoek niet hetzelfde is als volledige automatisering."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "26% van de Amerikaanse werknemers in de voorbije week",
+    "probleem": "Dit gaat om de week voorafgaand aan de oktoberpeiling, niet noodzakelijk om de week vóór deze dagbrief van november. Zonder peildatum krijgt de lezer een verkeerde tijdsreferentie.",
+    "voorstel": "Vermeld expliciet dat dit de oktoberpeiling van Epoch AI betreft en dat de percentages gaan over de week voorafgaand aan die peiling."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Nergens staat een hype-meter. Een bronstatus vervangt geen beoordeling van aandacht tegenover verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per hoofdonderwerp één van de vijf voorgeschreven standen toe, met één zin uitleg. Baseer die beoordeling niet rechtstreeks op de numerieke triagescores."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Alle claims komen van de makers zelf",
+    "probleem": "Als dit het hele overzicht samenvat, klopt het niet: er staan ook claims van Data News, METR en Epoch AI in. Bovendien maakt de algemene zin onvoldoende duidelijk dat elke kernclaim slechts op één bronorganisatie rust.",
+    "voorstel": "Beperk deze zin expliciet tot de productaankondigingen. Vermeld per hoofdonderwerp dat een tweede onafhankelijke bevestiging ontbreekt; een tweede publicatie van hetzelfde bedrijf telt niet als onafhankelijke bron."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "maar de brontekst geeft weinig details",
+    "probleem": "De tekst spreekt herhaaldelijk over de redactionele bronverwerking: ook 'de beschikbare tekst', 'in de beschikbare tekst' en 'Het beschikbare fragment' staan in de lezersversie. Dat is uitdrukkelijk niet de bedoeling.",
+    "voorstel": "Beschrijf wat de betreffende organisatie wel of niet toelicht. Zet onzekerheid over ontbrekende paginadelen of noodzakelijke controles in een HTML-commentaar. Controleer daarbij eerst de aanvullende OpenAI-post over toegang."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Beveiligingsverantwoordelijken kunnen dit volgen, maar er valt nog niets te evalueren.",
+    "probleem": "De Vlaamse vertaalslag blijft bij 'volgen' en 'tests afwachten'. Ook bij onderwijs ontbreekt een concrete lokale beslissing of toepassing. Bovendien is 'niets te evalueren' te absoluut gezien de aangekondigde beperkte toegang.",
+    "voorstel": "Koppel de duiding aan een expliciet hypothetische beslissing van een Vlaamse gemeente of onderwijsinstelling. Benoem welke informatie daarvoor nog nodig is, zonder lokaal gebruik of beschikbaarheid te suggereren."
+  },
+  {
+    "ernst": "klein",
+    "passage": "agents, workflows en apps bouwen",
+    "probleem": "Agents wordt uitgelegd, maar workflows niet. Ook termen als benchmark, defensieve cybersecurity, lipsynchronisatie en Europese compliance blijven bij eerste gebruik onverklaard.",
+    "voorstel": "Vervang deze termen waar mogelijk door gewone Nederlandse woorden of geef bij het eerste gebruik een korte uitleg."
+  }
+]

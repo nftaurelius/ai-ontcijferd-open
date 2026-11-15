@@ -1,0 +1,92 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "Robots.txt is het tekstbestand in de root van een website waarin je aangeeft wat crawlers (programma's die websites automatisch uitlezen) mogen doen.",
+    "probleem": "De technische definitie wordt niet gedragen door de gekoppelde OpenAI-bron. Die vermeldt alleen een gedeeld signaal voor trainingsvoorkeuren. 'Mogen doen' kan bovendien klinken als technisch afgedwongen toegangsbeheer.",
+    "voorstel": "Voeg een technische primaire bron toe voor de definitie en verduidelijk dat het om instructies gaat, niet om een technische blokkade. Vervang of verklaar 'root'."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Wat het wel belooft: één instelling in plaats van een aparte regel per aanbieder.",
+    "probleem": "De OpenAI-bron belooft een gedeeld signaal, maar noemt deze concrete vervanging niet. Die uitleg staat wel in het artikel van Search Engine Roundtable. De huidige formulering schrijft haar ten onrechte rechtstreeks aan OpenAI toe.",
+    "voorstel": "Koppel deze uitleg aan Search Engine Roundtable en vermeld dat deelname vrijwillig is en bestaande aanbiederspecifieke instellingen daarnaast blijven bestaan."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "dan kan één regel in robots.txt straks volstaan om je voorkeur voor AI-training kenbaar te maken",
+    "probleem": "Een gedeeld signaal of één handeling is niet noodzakelijk letterlijk één regel. Bovendien ontbreekt hier de beperking tot deelnemende aanbieders, die eerder wel correct wordt genoemd.",
+    "voorstel": "Vermijd een exact aantal regels. Beperk het praktische voordeel expliciet tot deelnemende aanbieders en maak duidelijk dat de concrete implementatie nog moet worden nagekeken."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Het bericht noemt ook niet welke andere aanbieders meedoen, en het zegt niet wanneer het signaal werkt of wat er met reeds verzamelde data gebeurt.",
+    "probleem": "De beschikbare OpenAI-brontekst bestaat uit één zin. Daarmee is niet vast te stellen dat het volledige bericht deze informatie nergens vermeldt.",
+    "voorstel": "Controleer het volledige bericht voordat je deze afwezigheidsclaims publiceert. Zet de controlepunten voorlopig uitsluitend in een HTML-commentaar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het bericht noemt in het aangeleverde fragment geen concrete maatregelen, cijfers of data.",
+    "probleem": "Dit beschrijft de interne werkwijze en schendt expliciet de stijlregel. De beperkte beschikbare tekst rechtvaardigt ook niet de daaropvolgende conclusie dat de praktische betekenis in de volledige publicatie onduidelijk blijft.",
+    "voorstel": "Verplaats deze beperking naar het bestaande HTML-commentaar. Publiceer alleen de bevestigde aankondiging totdat de volledige bron is gecontroleerd."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Wacht op de eerste rapportage voordat je dit in een schoolbeleid rond AI-gebruik opneemt.",
+    "probleem": "De bron onderbouwt niet waarom een school op rapportage moet wachten. Een rapportagebelofte zegt op zichzelf evenmin welke waarborgen bruikbaar zijn voor leerlingen. Dit maakt de Vlaamse vertaalslag stelliger dan het bewijs toelaat.",
+    "voorstel": "Schrap het wachtadvies. Benoem als concrete beleidsvraag welke maatregelen voor leerlingen gelden en welke controle daarop bestaat, zonder een publicatiemoment als voldoende voorwaarde voor schoolbeleid te presenteren."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "ouders van tieners die ChatGPT gebruiken, kunnen vooralsnaaar alleen op de belofte van het bedrijf afgaan.",
+    "probleem": "'Alleen' sluit andere informatie en bestaande bescherming uit, terwijl de bron daar niets over zegt. De beperkte onderbouwing van deze aankondiging wordt zo een algemene uitspraak over wat ouders kunnen weten.",
+    "voorstel": "Beperk de kanttekening tot het ontbreken van onafhankelijke bevestiging van deze specifieke aankondiging. Corrigeer ook 'vooralsnaaar'."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Bij beide hoofdonderwerpen ontbreekt de hype-meter. Het bronstatuslabel vervangt geen oordeel over aandacht tegenover verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per hoofdonderwerp één van de vijf toegestane standen toe, met één zin uitleg. Onderbouw die afweging afzonderlijk; de triagescores zijn geen bewijs voor de verhouding tussen aandacht en impact."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Google zou het gedeelde AIPREF-signaal voor AI-training in robots.txt begin 2027 ondersteunen",
+    "probleem": "De timing klopt met bron 3, maar een wezenlijke kanttekening ontbreekt: het voorstel is nog in ontwikkeling en de invoering is vrijwillig. De bron bevat ook een tegenstem over de reikwijdte bij gebruikersgestuurde toepassingen.",
+    "voorstel": "Benoem minstens de voorlopige en vrijwillige status. Neem bij verdere uitwerking ook het bezwaar over de reikwijdte mee, met duidelijke toeschrijving aan de geciteerde deelnemer."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "de beoordeling van Britse bouw- en renovatieaanvragen tot 58% kan verkorten",
+    "probleem": "De bron beperkt de claim tot 'householder'-aanvragen. Het concept verbreedt die tot Britse bouw- en renovatieaanvragen in het algemeen. Ook ontbreken de vergelijkingsbasis en testomstandigheden van de 58%.",
+    "voorstel": "Behoud de specifieke aanvraagcategorie en verifieer de betekenis ervan. Vermeld dat vergelijkingsbasis en testopzet niet zijn gespecificeerd, of laat het percentage weg totdat die context beschikbaar is. Maak duidelijk dat het een tijdsclaim is, geen bewijs van betere beoordelingen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Anthropic publiceert onderzoek waarin duizenden Claude-agents een monitor voor trainingsdata proberen te omzeilen",
+    "probleem": "De samenvatting laat het belangrijkste gemelde resultaat weg: de agents ontwikkelden volgens Anthropic onschuldig ogende data die ongewenst gedrag aanleerde. Daardoor verdwijnt wat dit onderzoek onderscheidt van een algemene ontwijkingstest.",
+    "voorstel": "Vermeld het gemelde resultaat met expliciete toeschrijving aan Anthropic. Houd de mogelijke verbetering van toekomstige monitors als verwachting, niet als aangetoond effect."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Ethan Mollick zegt dat AI de migratie van verouderde bedrijfssoftware, een markt van ongeveer 30 miljard dollar per jaar, sneller en goedkoper maakt.",
+    "probleem": "De bron baseert zich op gesprekken met oudere bedrijven en spreekt over afgebakende migratieprojecten. Het concept maakt daarvan een algemene effectclaim. Voor de marktschatting ontbreken peiljaar, geografische afbakening en onderliggende berekening.",
+    "voorstel": "Behoud het anekdotische karakter en de beperking tot afgebakende projecten. Schrap de marktschatting totdat de herkomst en context gecontroleerd zijn."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De maker verwijst bovendien naar een eigen partnerlink voor een ander product.",
+    "probleem": "De beschrijving bevat een persoonlijke Clay-link met extra credits, maar vermeldt geen partnerovereenkomst of vergoeding. De commerciële relatie wordt hier als vastgesteld feit gepresenteerd.",
+    "voorstel": "Beschrijf alleen de zichtbare promotielink en aanbieding. Noem het pas een partnerlink wanneer die relatie expliciet is bevestigd."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Bruikbaar voor Vlaamse zelfstandigen die offertes, leads of administratie met Claude willen stroomlijnen.",
+    "probleem": "De beschreven categorieën ondersteunen deze mogelijke toepassingen, maar de makerbeschrijving bewijst niet dat de werkwijze bruikbaar is. De slotwaarschuwing om dit niet als beoordeling te lezen botst met dit eigen bruikbaarheidsoordeel.",
+    "voorstel": "Presenteer de toepassingen als mogelijke aanknopingspunten voor zelfstandigen, niet als vastgestelde bruikbaarheid. Behoud de kanttekeningen over kosten en gegevensbescherming."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Dertien nieuwe Claude-skills voor kleine bedrijven.",
+    "probleem": "Meerdere vakwoorden blijven bij eerste gebruik onverklaard: onder meer 'skills', 'plug-in', 'leads', 'operations', 'AIPREF' en 'Claude-agents'. Dat belemmert de geïnteresseerde leek.",
+    "voorstel": "Geef telkens een korte, brongetrouwe uitleg of gebruik een gewoon Nederlands alternatief. Introduceer robots.txt al bij de eerste vermelding met een korte uitleg."
+  }
+]

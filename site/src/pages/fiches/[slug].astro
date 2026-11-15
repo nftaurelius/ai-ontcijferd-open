@@ -1,0 +1,39 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { alleFiches, type Fiche } from "../../lib/fiches";
+import { datumLeesbaar } from "../../lib/edities";
+import { LICENTIE_URL, SITE_URL, auteur, uitgever } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return alleFiches().map((f) => ({ params: { slug: f.slug }, props: { f } }));
+}
+const { f } = Astro.props as { f: Fiche };
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: f.titel,
+  description: f.samenvatting,
+  dateModified: f.bijgewerkt,
+  inLanguage: "nl-BE",
+  url: `${SITE_URL}/fiches/${f.slug}`,
+  author: { "@id": auteur["@id"], "@type": "Person", name: auteur.name },
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  license: LICENTIE_URL,
+  isAccessibleForFree: true,
+};
+---
+
+<Basis titel={f.titel} beschrijving={f.samenvatting} schema={schema}>
+  <article class="rij sectie fiche">
+    <div class="kantlijn">
+      <p>Voor: {f.voor.join(", ")}<br />Bijgewerkt {datumLeesbaar(f.bijgewerkt)}</p>
+      <p class="niet-printen"><button class="knop" type="button" onclick="window.print()">Afdrukken</button></p>
+    </div>
+    <div class="proza">
+      <h1 style="margin-top:0">{f.titel}</h1>
+      <p class="lead">{f.samenvatting}</p>
+      <Fragment set:html={f.html} />
+      <p class="meta">Bron: AI Ontcijferd, aiontcijferd.be/fiches/{f.slug}. Vrij te gebruiken onder CC BY 4.0.</p>
+    </div>
+  </article>
+</Basis>

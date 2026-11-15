@@ -1,0 +1,111 @@
+---
+import Basis from "../../../layouts/Basis.astro";
+import Inhoud from "../../../components/Inhoud.astro";
+import Inschrijven from "../../../components/Inschrijven.astro";
+import { kaderVlaanderen, markeerEerste } from "../../../lib/opmaak";
+import { alleDagbrieven, type Dagbrief } from "../../../lib/plus";
+import { datumLeesbaar } from "../../../lib/edities";
+import { LICENTIE_URL, SITE_URL, auteur, uitgever } from "../../../lib/seo";
+
+export function getStaticPaths() {
+  return alleDagbrieven().map((dag) => ({ params: { datum: dag.datum }, props: { dag } }));
+}
+
+const { dag } = Astro.props as { dag: Dagbrief };
+const url = `${SITE_URL}/plus/dag/${dag.datum}`;
+const titel = `Dagbrief · ${datumLeesbaar(dag.datum)}`;
+const inhoud = [
+  ...dag.items.map((i) => ({ href: `#${i.slug}`, tekst: i.titel, extra: i.status })),
+  ...(dag.proberen ? [{ href: "#proberen", tekst: "Om te proberen" }] : []),
+  ...(dag.radar ? [{ href: "#radar", tekst: "Uit de radar" }] : []),
+];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "@id": url,
+  mainEntityOfPage: url,
+  headline: titel,
+  description: dag.kortTekst.slice(0, 300),
+  datePublished: dag.datum,
+  inLanguage: "nl-BE",
+  author: { "@id": auteur["@id"], "@type": "Person", name: auteur.name, url: auteur.url },
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name, logo: uitgever.logo },
+  license: LICENTIE_URL,
+  isAccessibleForFree: true,
+};
+---
+
+<Basis titel={titel} beschrijving={dag.kortTekst.slice(0, 160)} type="article" schema={schema} gepubliceerd={dag.datum}>
+  <article>
+    <header class="rij sectie">
+      <div class="kantlijn">
+        <p class="kantlijn-kop">Dagbrief</p>
+        <p>{datumLeesbaar(dag.datum)} · <a href="/plus">alle dagbrieven</a></p>
+        <p class="pagina-uitleg">Elke dag de belangrijkste AI-berichten. Per bericht zie je hoe zeker het is: Bevestigd, Volgens de maker of Eén bron.</p>
+      </div>
+      <div>
+        <h1 style="font-size:2.2rem;margin:0 0 1.25rem">{titel}</h1>
+        <p class="lead" set:html={markeerEerste(dag.kort)} />
+        <Inhoud titel="In deze dagbrief" items={inhoud} />
+      </div>
+    </header>
+
+    {dag.items.map((i, n) => (
+      <section class="rij sectie onderwerp" id={i.slug}>
+        <aside class="kantlijn alleen-breed">
+          {i.labels.length > 0 && (
+            <ul class="labels" aria-label="Voor wie">{i.labels.map((l) => <li>{l}</li>)}</ul>
+          )}
+          {i.status && <p class="status" data-status={i.status}>{i.status}</p>}
+        </aside>
+        <div class="proza">
+          <p class="onderwerp-nr"><span>{n + 1}</span> Bericht {n + 1} van {dag.items.length}</p>
+          <h2>{i.titel}</h2>
+          {(i.labels.length > 0 || i.status) && (
+            <div class="onderwerp-meta alleen-gsm">
+              {i.status && <p class="status" data-status={i.status}>{i.status}</p>}
+              {i.labels.length > 0 && <ul class="labels" aria-label="Voor wie">{i.labels.map((l) => <li>{l}</li>)}</ul>}
+            </div>
+          )}
+          <Fragment set:html={kaderVlaanderen(i.html)} />
+        </div>
+      </section>
+    ))}
+
+    {dag.oordeel && (
+      <section class="rij sectie">
+        <div class="kantlijn"><p>Van de eindredacteur</p></div>
+        <div class="inschatting proza"><h2>Kort oordeel</h2><Fragment set:html={dag.oordeel} /><p class="handtekening">Duncan Panis</p></div>
+      </section>
+    )}
+
+    {dag.proberen && (
+      <section class="rij sectie" id="proberen">
+        <div class="kantlijn"><p>Demo's van makers, met kanttekening</p></div>
+        <div class="proza rubriek"><h2>Om te proberen</h2><Fragment set:html={dag.proberen} /></div>
+      </section>
+    )}
+
+    {dag.radar && (
+      <section class="rij sectie" id="radar">
+        <div class="kantlijn"><p>Signalen op X en YouTube, nog niet bevestigd</p></div>
+        <div class="proza rubriek"><h2>Uit de radar</h2><Fragment set:html={dag.radar} /></div>
+      </section>
+    )}
+
+    <section class="rij sectie klein">
+      <div class="kantlijn"><p>Transparantie</p></div>
+      <div class="proza"><h2>Zo is dit gemaakt</h2><Fragment set:html={dag.gemaakt} /></div>
+    </section>
+
+    <section class="rij sectie klein">
+      <div class="kantlijn"><p>Fout gezien? <a href="/correcties">Meld het</a></p></div>
+      <div class="proza"><h2>Bronnen</h2><Fragment set:html={dag.bronnen} /></div>
+    </section>
+  </article>
+
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <div><Inschrijven /></div>
+  </section>
+</Basis>

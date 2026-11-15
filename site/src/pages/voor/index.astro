@@ -1,0 +1,27 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { DOELGROEPEN, onderwerpenVoor } from "../../lib/doelgroepen";
+import { aantal } from "../../lib/tekst";
+---
+
+<Basis titel="Voor jou: AI-nieuws per doelgroep" beschrijving="Volg alleen wat AI betekent voor jouw sector: onderwijs, werk, lokale overheden, zelfstandigen, bibliotheken of burgers. Elk met een eigen RSS-feed.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Kies je lijn</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Voor jou</h1>
+      <p class="lead">Niet alles is voor iedereen even belangrijk. Kies je doelgroep en zie alleen de onderwerpen die jou raken. Elke lijn heeft een eigen RSS-feed.</p>
+    </div>
+  </section>
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <ul class="editielijst">
+      {DOELGROEPEN.map((d) => (
+        <li>
+          <a href={`/voor/${d.slug}`}>{d.label}</a>
+          <p style="margin:0.25rem 0 0">{d.vraag}</p>
+          <p class="meta" style="margin:0.2rem 0 0">{aantal(onderwerpenVoor(d.label).length, "onderwerp", "onderwerpen")} · <a href={`/voor/${d.slug}/rss.xml`}>RSS</a></p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Basis>

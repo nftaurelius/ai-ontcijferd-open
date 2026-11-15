@@ -1,0 +1,22 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { alleEdities } from "../lib/edities";
+const laatste = alleEdities()[0];
+---
+
+<Basis titel="Je bent ingeschreven" beschrijving="Je inschrijving op de nieuwsbrief van AI Ontcijferd is bevestigd.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Nieuwsbrief</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Je bent ingeschreven</h1>
+      <p class="lead"><span class="markeer">Welkom. Vanaf nu krijg je elke week de Stand van AI in je mailbox.</span></p>
+      <div class="vlaanderen">
+        <p class="vlaanderen-kop">Eén ding nog: zorg dat hij aankomt</p>
+        <p>Voeg <strong>redactie@aiontcijferd.be</strong> toe aan je contactpersonen. Zo belandt de nieuwsbrief niet bij je ongewenste e-mail. Vind je hem toch in je spam? Markeer hem dan als "Geen ongewenste e-mail" of "Geen spam".</p>
+      </div>
+      <p>Vijf minuten lezen: wat er gebeurde, wat ruis is, en wat het betekent voor jou. Uitschrijven kan onderaan elke mail.</p>
+      {laatste && <p>Niet wachten? Lees de <a href={`/edities/${laatste.week}`}>laatste editie</a>, of kijk <a href="/wat-kan-ai">wat AI al kan</a>.</p>}
+      <p>Een vraag over AI die je beantwoord wilt zien? <a href="/vragen">Stel ze hier</a>.</p>
+    </div>
+  </section>
+</Basis>

@@ -1,0 +1,2295 @@
+<!doctype html>
+<html lang="nl-BE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://aiontcijferd.be/plakcheck">
+<title>Plakcheck en Urenrekening | AI Ontcijferd</title>
+<meta name="description" content="Mag dit in een chatbot, en loont het dan nog? Een gratis check van AI Ontcijferd die volledig in je browser draait en niets verstuurt.">
+<style>
+:root{
+  --papier:#F4F6F5;
+  --blad:#FFFFFF;
+  --inkt:#10243A;
+  --inkt-zacht:#44566A;
+  --lijn:#C5CED6;
+  --stift:#FFE066;
+  --stift-licht:#FFF6CC;
+  --rood:#A8201A;
+  --amber:#F2A900;
+  --groen:#1B6B3A;
+  --focus:#1D5FD1;
+  --serif:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--papier);
+  color:var(--inkt);
+  font-family:var(--serif);
+  font-size:1.0625rem;
+  line-height:1.6;
+}
+a{color:var(--inkt);text-underline-offset:.15em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.15;margin:0;font-weight:700}
+p{margin:0 0 1rem}
+ul,ol{margin:0 0 1rem;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.alleen-lezer{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--inkt);color:#fff;padding:.6rem 1rem;border-radius:0 0 6px 6px;font-family:var(--sans);z-index:10}
+.skip:focus{top:0}
+
+.smal,.breed{max-width:70rem;margin-inline:auto;padding-inline:1rem}
+.smal > *{max-width:46rem}
+
+/* Kop */
+.kop{padding-top:2rem;padding-bottom:1.5rem}
+.merk{font-family:var(--sans);font-weight:700;font-size:1rem;margin:0 0 1.5rem}
+.merk a{text-decoration:none;border-bottom:3px solid var(--stift)}
+.kop h1{font-size:clamp(2rem,6.2vw,3.4rem);letter-spacing:-.015em;max-width:17ch;margin-bottom:1rem}
+.lede{font-size:1.2rem;line-height:1.5;max-width:38rem}
+.privacy{
+  font-family:var(--sans);font-size:1rem;line-height:1.5;
+  background:var(--stift);padding:.9rem 1rem;border-radius:6px;margin:1.5rem 0 0;
+}
+.stand{font-family:var(--sans);font-size:.9rem;color:var(--inkt-zacht);margin:.75rem 0 0}
+
+/* Delen */
+section{padding-top:2.5rem}
+h2{font-size:clamp(1.6rem,4.2vw,2.2rem);margin-bottom:.75rem}
+h3{font-size:1.3rem;margin:1.75rem 0 .6rem}
+.intro{max-width:38rem}
+
+/* Vragen */
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.vraag{margin-top:2rem}
+.vraag > legend{font-family:var(--serif);font-weight:700;font-size:1.45rem;line-height:1.2;padding:0;margin-bottom:.35rem;display:flex;gap:.6rem;align-items:baseline}
+.nr{
+  flex:none;display:inline-grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:50%;
+  background:var(--inkt);color:#fff;font-family:var(--sans);font-size:1rem;font-weight:700;transform:translateY(-.1rem);
+}
+.hint{font-family:var(--sans);font-size:.95rem;color:var(--inkt-zacht);margin:0 0 .8rem}
+.keuzes{display:grid;gap:.5rem}
+.keuze{
+  display:grid;grid-template-columns:auto 1fr;column-gap:.8rem;align-items:start;
+  padding:.8rem .9rem;background:var(--blad);border:1px solid var(--lijn);border-radius:6px;cursor:pointer;
+  font-family:var(--sans);
+}
+.keuze input{width:1.3rem;height:1.3rem;margin:.15rem 0 0;accent-color:var(--inkt)}
+.keuze .titel{display:block;font-weight:600;line-height:1.35}
+.keuze .vb{display:block;font-size:.93rem;color:var(--inkt-zacht);line-height:1.4;margin-top:.15rem}
+.keuze.gekozen{border-color:var(--inkt);box-shadow:inset 4px 0 0 var(--inkt);background:var(--stift-licht)}
+.keuze.gekozen .vb{color:var(--inkt)}
+
+.eigenschap{margin-top:1rem;padding:.9rem;background:var(--blad);border:1px solid var(--lijn);border-radius:6px}
+.eigenschap > legend{float:left;width:100%;padding:0;font-family:var(--sans);font-weight:600;line-height:1.35;margin-bottom:.2rem}
+.eigenschap .sub{clear:both;font-family:var(--sans);font-size:.93rem;color:var(--inkt-zacht);margin:0 0 .7rem}
+.drie{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--inkt);border-radius:6px;overflow:hidden;max-width:26rem}
+.drie label{position:relative;display:grid}
+.drie input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.drie span{display:flex;align-items:center;justify-content:center;gap:.3em;min-height:44px;height:100%;padding:.45rem .3rem;font-family:var(--sans);font-weight:600;font-size:.95rem;line-height:1.2;text-align:center;border-left:2px solid var(--inkt);background:var(--blad)}
+.drie label:first-child span{border-left:0}
+.drie input:checked + span{background:var(--inkt);color:#fff}
+.drie input:checked + span::before{content:"\2713";flex:none}
+.drie input:focus-visible + span{outline:3px solid var(--focus);outline-offset:-4px}
+
+/* Oordeel */
+.oordeel{margin-top:2rem}
+.oordeel.leeg{font-family:var(--sans);border:2px dashed var(--lijn);border-radius:6px;padding:1.2rem;color:var(--inkt-zacht)}
+.oordeel.leeg p{margin:0}
+.band{padding:1.4rem 1.2rem;border-radius:6px 6px 0 0}
+.band.rood{background:var(--rood);color:#fff}
+.band.oranje{background:var(--amber);color:var(--inkt)}
+.band.groen{background:var(--groen);color:#fff}
+.band-label{display:flex;align-items:center;gap:.6rem;font-family:var(--sans);font-weight:700;font-size:1rem;margin:0 0 .5rem}
+.vorm{display:inline-block;width:1.15rem;height:1.15rem;background:currentColor;flex:none}
+.oranje .vorm{clip-path:polygon(50% 0,100% 100%,0 100%)}
+.groen .vorm{border-radius:50%}
+.band h3{font-size:clamp(1.9rem,6vw,2.8rem);margin:0 0 .4rem;letter-spacing:-.01em}
+.band .zwaarste{font-family:var(--sans);margin:0;font-size:1rem}
+.oordeel-inhoud{background:var(--blad);border:1px solid var(--lijn);border-top:0;border-radius:0 0 6px 6px;padding:.2rem 1.2rem 1.2rem}
+.oordeel-inhoud h4{font-size:1.15rem;margin:1.3rem 0 .5rem}
+.alt{display:grid;gap:.5rem;list-style:none;padding:0;margin:0 0 .8rem}
+.alt li{margin:0;font-family:var(--sans);display:grid;grid-template-columns:auto 1fr;gap:.6rem;align-items:start;line-height:1.4}
+.chip{display:inline-flex;align-items:center;gap:.35rem;font-family:var(--sans);font-weight:700;font-size:.85rem;padding:.2rem .5rem;border-radius:4px;white-space:nowrap}
+.chip .vorm{width:.7rem;height:.7rem}
+.chip.rood{background:var(--rood);color:#fff}
+.chip.oranje{background:var(--amber);color:var(--inkt)}
+.chip.groen{background:var(--groen);color:#fff}
+.klein{font-family:var(--sans);font-size:.92rem;color:var(--inkt-zacht);line-height:1.5}
+
+/* Urenrekening */
+.koppel{font-family:var(--sans);background:var(--blad);border-left:6px solid var(--inkt);padding:1rem;border-radius:0 6px 6px 0;margin:1.2rem 0 0;max-width:44rem}
+.koppel p{margin:0 0 .7rem}
+.koppel p:last-child{margin:0}
+.reken-raster{display:grid;gap:2rem;margin-top:1.5rem}
+@media (min-width:58rem){
+  .reken-raster{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:start;gap:3rem}
+  .reken-uit{position:sticky;top:1rem}
+}
+.velden{display:grid;gap:1.1rem}
+@media (min-width:30rem){.velden{grid-template-columns:1fr 1fr}}
+.veld{display:flex;flex-direction:column;gap:.25rem;font-family:var(--sans)}
+.veld.vol{grid-column:1/-1}
+@supports (grid-template-rows:subgrid){
+  .veld{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:.25rem;align-content:start}
+  .veld label{align-self:end}
+}
+.veld label{font-weight:600;line-height:1.3}
+.veld input,.veld select{
+  font:inherit;color:var(--inkt);background:var(--blad);
+  padding:.6rem .7rem;border:1px solid var(--inkt-zacht);border-radius:6px;min-height:44px;width:100%;
+}
+.veld input{max-width:11rem;font-variant-numeric:tabular-nums}
+.veld .hulp{font-size:.9rem;color:var(--inkt-zacht);line-height:1.4;margin:0}
+.groepkop{grid-column:1/-1;font-family:var(--serif);font-size:1.15rem;font-weight:700;margin:.6rem 0 -.2rem;padding-top:.9rem;border-top:1px solid var(--lijn)}
+.groepkop:first-child{border-top:0;padding-top:0;margin-top:0}
+.scenario{margin-top:1.4rem}
+.scenario legend{font-family:var(--sans);font-weight:600;padding:0;margin-bottom:.4rem}
+
+.ticket{background:var(--blad);border:1px solid var(--lijn);border-top:6px solid var(--inkt);border-radius:0 0 6px 6px;padding:1.2rem}
+.ticket h3{margin:0 0 .2rem;font-size:1.35rem}
+.ticket .onder{font-family:var(--sans);font-size:.92rem;color:var(--inkt-zacht);margin:0 0 1rem}
+.balken{font-family:var(--sans);font-size:.92rem;margin:0 0 1.2rem}
+.balkrij{display:grid;grid-template-columns:5.6rem 1fr auto;gap:.6rem;align-items:center;margin-bottom:.45rem}
+.balk{display:flex;height:1.25rem;background:var(--papier);border-radius:3px;overflow:hidden}
+.balk span{display:block;height:100%}
+.seg-zonder,.seg-ai{background:var(--inkt)}
+.seg-nakijk{background:repeating-linear-gradient(135deg,var(--inkt) 0 3px,#8FA0B3 3px 6px)}
+.seg-voorb{background:var(--stift);box-shadow:inset 0 0 0 1px var(--inkt)}
+.legenda{display:flex;flex-wrap:wrap;gap:.3rem 1rem;margin:.5rem 0 0;padding:0;list-style:none;color:var(--inkt-zacht)}
+.legenda li{display:flex;align-items:center;gap:.35rem;margin:0}
+.legenda i{display:inline-block;width:.9rem;height:.9rem;border-radius:2px}
+.rekening{width:100%;border-collapse:collapse;font-family:var(--sans);font-variant-numeric:tabular-nums}
+.rekening caption{text-align:left;font-weight:600;padding-bottom:.3rem}
+.rekening th{text-align:left;font-weight:600;padding:.6rem .6rem .6rem 0;vertical-align:top}
+.rekening th small{display:block;font-weight:400;font-size:.88rem;color:var(--inkt-zacht);line-height:1.35}
+.rekening td{text-align:right;padding:.6rem 0;white-space:nowrap;vertical-align:top}
+.rekening tbody tr + tr th,.rekening tbody tr + tr td{border-top:1px dashed var(--lijn)}
+.rekening tfoot th,.rekening tfoot td{border-top:3px double var(--inkt);font-family:var(--serif);font-size:1.45rem;font-weight:700;padding-top:.8rem}
+.gemarkeerd{background:linear-gradient(transparent 52%,var(--stift) 52%);padding:0 .15em}
+.besluit{font-size:1.15rem;line-height:1.45;margin:1.2rem 0 .8rem}
+.scen-tabel{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:.95rem;font-variant-numeric:tabular-nums;margin-top:.4rem}
+.scen-tabel th,.scen-tabel td{padding:.45rem .3rem;border-bottom:1px solid var(--lijn);text-align:right}
+.scen-tabel th:first-child,.scen-tabel td:first-child{text-align:left;padding-left:0}
+.scen-tabel thead th{font-weight:600;color:var(--inkt-zacht);font-size:.88rem;vertical-align:bottom}
+.scen-tabel tr.actief td{font-weight:700}
+
+/* Knoppen */
+.knoppen{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+.knop{
+  font-family:var(--sans);font-weight:600;font-size:1rem;line-height:1.2;min-height:44px;padding:.65rem 1rem;
+  border:2px solid var(--inkt);border-radius:6px;background:var(--inkt);color:#fff;cursor:pointer;
+}
+.knop.licht{background:transparent;color:var(--inkt)}
+.knop:hover{background:#1B3A5C;color:#fff}
+.uitvoer{font-family:var(--sans);margin-top:.5rem}
+.uitvoer label{display:block;font-weight:600;margin-bottom:.25rem}
+.uitvoer input,.uitvoer textarea{width:100%;font:inherit;font-size:.9rem;padding:.55rem;border:1px solid var(--inkt-zacht);border-radius:6px;background:var(--blad);color:var(--inkt)}
+.uitvoer textarea{min-height:10rem;font-family:ui-monospace,Consolas,monospace}
+
+/* Fiche */
+.fiche{background:var(--blad);border:1px solid var(--lijn);border-radius:6px;padding:1.2rem}
+.fiche h3{margin-top:1.2rem}
+.fiche h3:first-of-type{margin-top:.4rem}
+.fiche dl{display:grid;grid-template-columns:1fr;gap:.1rem .8rem;margin:0 0 .6rem;font-family:var(--sans)}
+@media (min-width:34rem){.fiche dl{grid-template-columns:13rem 1fr}}
+.fiche dt{font-weight:600}
+.fiche dd{margin:0 0 .4rem}
+.fiche .datum{font-family:var(--sans);font-size:.92rem;color:var(--inkt-zacht);margin:0}
+
+/* Bronnen */
+.bronlijst{list-style:none;padding:0;margin:0 0 1rem;display:grid;gap:.6rem}
+.bronlijst li{margin:0;background:var(--blad);border:1px solid var(--lijn);border-radius:6px;padding:.8rem .9rem;font-family:var(--sans);line-height:1.45}
+.bronlijst .wat{font-weight:600;display:block}
+.bronlijst .meta{display:block;font-size:.9rem;color:var(--inkt-zacht);margin-top:.3rem;overflow-wrap:anywhere}
+.badge{display:inline-block;font-family:var(--sans);font-weight:700;font-size:.78rem;padding:.12rem .45rem;border-radius:4px;vertical-align:.08em;white-space:nowrap}
+.badge.ok{color:var(--groen);box-shadow:inset 0 0 0 1.5px var(--groen);background:var(--blad)}
+.badge.na{background:var(--stift);color:var(--inkt)}
+.badge.oud{background:var(--inkt);color:#fff}
+details{background:var(--blad);border:1px solid var(--lijn);border-radius:6px;padding:.2rem .9rem;margin-bottom:.6rem}
+summary{font-family:var(--sans);font-weight:600;padding:.6rem 0;cursor:pointer;min-height:44px;display:flex;align-items:center;gap:.5rem}
+details[open] summary{border-bottom:1px solid var(--lijn);margin-bottom:.9rem}
+pre{background:var(--papier);padding:.8rem;border-radius:6px;overflow:auto;font-size:.85rem;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere}
+
+/* Transparantie en voet */
+.transparantie{background:var(--blad);border:1px solid var(--lijn);border-radius:6px;padding:1.2rem}
+.transparantie h2{font-size:1.6rem}
+.voet{font-family:var(--sans);font-size:.9rem;color:var(--inkt-zacht);padding-top:2rem;padding-bottom:3rem}
+
+/* Testpaneel */
+#testpaneel{position:fixed;inset:0;z-index:50;background:rgba(16,36,58,.55);padding:1rem;overflow:auto}
+#testpaneel[hidden]{display:none}
+.testblad{background:var(--blad);max-width:46rem;margin:0 auto;padding:1.2rem;border-radius:6px;font-family:var(--sans)}
+.testblad h2{font-size:1.5rem}
+.testlijst{list-style:none;padding:0;margin:.8rem 0;font-size:.93rem}
+.testlijst li{padding:.35rem 0;border-bottom:1px solid var(--lijn);margin:0}
+.testlijst .ok{color:var(--groen);font-weight:700}
+.testlijst .fout{color:var(--rood);font-weight:700}
+
+/* Ingesloten weergave */
+.ingesloten .kop{padding-top:1rem}
+.ingesloten .kop h1{font-size:clamp(1.6rem,5vw,2.3rem)}
+.ingesloten #insluiten{display:none}
+
+@media (prefers-reduced-motion:no-preference){
+  .keuze,.knop{transition:background-color .12s,border-color .12s}
+}
+@media print{
+  body{background:#fff;font-size:11pt}
+  .geen-print,.skip,#plakcheck,#urenrekening,#bronnen,#insluiten,#testpaneel,.knoppen,.uitvoer,.privacy{display:none !important}
+  section{padding-top:1rem}
+  .kop{padding:0}
+  .kop h1{font-size:20pt;max-width:none}
+  .fiche,.transparantie{border:0;padding:0}
+  .chip{box-shadow:inset 0 0 0 1px #000;background:#fff !important;color:#000 !important}
+  a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#start">Naar de eerste vraag</a>
+
+<header class="kop smal">
+  <p class="merk"><a href="https://aiontcijferd.be/" target="_top" rel="noopener">AI Ontcijferd</a></p>
+  <h1>Mag dit in een chatbot? En loont het dan nog?</h1>
+  <p class="lede">De Plakcheck zegt of je gegevens in een AI-tool horen. De Urenrekening rekent na of het je nog tijd oplevert als je het veilig doet.</p>
+  <p class="privacy"><strong>Deze tool leest niets en verstuurt niets.</strong> Je kiest alleen categorieën en cijfers. Alles wordt in je eigen browser berekend en niets wordt bewaard. Plak dus ook hier geen gegevens.</p>
+  <p class="stand" id="stand"></p>
+</header>
+
+<main id="start">
+  <noscript>
+    <p class="smal"><strong>Deze tool heeft JavaScript nodig.</strong> Alles wordt in je browser berekend; zonder JavaScript kan dat niet.</p>
+  </noscript>
+
+  <section id="plakcheck" class="smal" aria-labelledby="h-plakcheck">
+    <h2 id="h-plakcheck">Deel 1. De Plakcheck</h2>
+    <p class="intro">Vier vragen over wat je wilt invoeren en waar. Je krijgt een kleur, de redenen en wat je eerst moet regelen.</p>
+    <form id="f-plak" novalidate></form>
+    <div id="oordeel" class="oordeel leeg"></div>
+    <p class="alleen-lezer" role="status" aria-live="polite" id="oordeel-live"></p>
+  </section>
+
+  <section id="urenrekening" class="breed" aria-labelledby="h-reken">
+    <h2 id="h-reken">Deel 2. De Urenrekening</h2>
+    <p class="intro">Veilig werken kost soms extra minuten of een duurder account. Vul één soort taak in die je vaak doet en kijk wat er na een jaar overblijft.</p>
+    <div id="koppel" class="koppel"></div>
+    <div class="reken-raster">
+      <form id="f-reken" class="reken-in" novalidate></form>
+      <div class="reken-uit" id="reken-uit"></div>
+    </div>
+  </section>
+
+  <section id="samenvatting" class="smal" aria-labelledby="h-fiche">
+    <h2 id="h-fiche">Je samenvatting</h2>
+    <p class="intro geen-print">Om af te drukken, te bewaren als pdf of door te sturen naar wie beslist.</p>
+    <div class="knoppen geen-print">
+      <button type="button" class="knop" id="k-print">Afdrukken of bewaren als pdf</button>
+      <button type="button" class="knop licht" id="k-link">Maak een link met deze instellingen</button>
+      <button type="button" class="knop licht" id="k-tekst">Kopieer als tekst</button>
+    </div>
+    <p class="klein geen-print">De link bevat alleen je keuzes en cijfers, in het stuk na het hekje, dat je browser niet naar een server stuurt. Hij wordt pas gemaakt als je op de knop drukt.</p>
+    <div class="uitvoer geen-print" id="uitvoer" hidden></div>
+    <p class="alleen-lezer" role="status" aria-live="polite" id="kopie-live"></p>
+    <div class="fiche" id="fiche"></div>
+  </section>
+
+  <section id="bronnen" class="smal" aria-labelledby="h-bronnen">
+    <h2 id="h-bronnen">Feiten en bronnen</h2>
+    <p class="intro" id="bron-intro"></p>
+    <div id="bron-inhoud"></div>
+  </section>
+
+  <section id="transparantie-blok" class="smal" aria-labelledby="h-trans">
+    <div class="transparantie" id="transparantie">
+      <h2 id="h-trans">Wie maakte dit, en hoe</h2>
+      <div id="trans-inhoud"></div>
+    </div>
+  </section>
+
+  <section id="insluiten" class="smal geen-print" aria-labelledby="h-insluiten">
+    <h2 id="h-insluiten" class="alleen-lezer">Insluiten</h2>
+    <details>
+      <summary>Zet deze tool op je eigen site</summary>
+      <p>Scholen, besturen, bibliotheken en verenigingen mogen deze tool gratis insluiten. Kopieer de code hieronder. Ook ingesloten verstuurt de tool niets.</p>
+      <pre id="insluit-code"></pre>
+      <p class="klein">Wil je dat het kader automatisch meegroeit met de inhoud? Zet dan dit stukje op je eigen pagina. De tool geeft alleen zijn hoogte door, niets anders.</p>
+      <pre id="insluit-script"></pre>
+    </details>
+  </section>
+</main>
+
+<footer class="voet smal">
+  <p id="voet-tekst"></p>
+</footer>
+
+<section id="testpaneel" hidden aria-labelledby="h-test">
+  <div class="testblad">
+    <h2 id="h-test" tabindex="-1">Testpaneel</h2>
+    <p class="klein">Verborgen paneel voor de redactie. Openen en sluiten: Ctrl+Shift+T, Alt+Shift+T of #test achter het adres. Sluiten kan ook met Escape.</p>
+    <div class="knoppen">
+      <button type="button" class="knop" id="k-test-opnieuw">Tests opnieuw uitvoeren</button>
+      <button type="button" class="knop licht" id="k-test-sluit">Sluiten</button>
+    </div>
+    <div id="test-uit"></div>
+  </div>
+</section>
+
+<!--
+  CONFIGURATIE. Alles wat kan veranderen staat in dit ene blok: prijzen, wat aanbieders
+  met invoer doen, regels en cijfers, en de aannames van de redactie.
+  Elk item heeft een bron, een datum "laatstGecontroleerd" en een status.
+  status "gecontroleerd"   = op die datum nagekeken. "gecontroleerdDoor" zegt door wie:
+                             "model" (het AI-model las de officiële bron zelf) of
+                             "eindredacteur" (bevestigd door de menselijke eindredacteur).
+  status "TE CONTROLEREN"  = alleen secundaire bronnen gezien, of niet nagekeken.
+  "meerBronnen" is optioneel: extra bronnen als lijst van { naam, url }.
+-->
+<script type="application/json" id="ao-config">
+{
+  "meta": {
+    "tool": "Plakcheck en Urenrekening",
+    "versie": "1.0.1",
+    "configBijgewerktOp": "2026-11-12",
+    "canonicalUrl": "https://aiontcijferd.be/plakcheck",
+    "canonicalUrlUitleg": "Het adres van de pagina op aiontcijferd.be waar de tool staat. Deellinks wijzen hierheen. Leeg betekent: het adres waarop de pagina nu draait.",
+    "insluitUrl": "https://aiontcijferd.be/plakcheck/app/",
+    "insluitUrlUitleg": "Het adres van de kale tool, zonder de rest van de site. Andere sites sluiten dit in. Leeg betekent: hetzelfde als canonicalUrl.",
+    "houdbaarheidDagen": {
+      "prijzen": 60,
+      "aanbieders": 90,
+      "feiten": 180
+    },
+    "toegestaneStatussen": [
+      "gecontroleerd",
+      "TE CONTROLEREN"
+    ],
+    "toegestaneControleurs": [
+      "model",
+      "eindredacteur"
+    ]
+  },
+  "redactie": {
+    "uitgever": "AI Ontcijferd",
+    "site": "https://aiontcijferd.be/",
+    "eindredacteur": "Duncan Panis",
+    "nagekekenDoorEindredacteurOp": "2026-11-12",
+    "gebouwdMet": "Claude Fable 5.2 van Anthropic",
+    "gebouwdOp": "2026-11-11"
+  },
+  "aannames": {
+    "uitleg": "Dit zijn keuzes van de redactie, geen feiten. Ze staan hier zodat ze op één plek aan te passen zijn.",
+    "scenarios": [
+      {
+        "id": "voorzichtig",
+        "naam": "Voorzichtig",
+        "factor": 0.5,
+        "uitleg": "De helft van de gewonnen tijd wordt nuttig werk."
+      },
+      {
+        "id": "verwacht",
+        "naam": "Verwacht",
+        "factor": 0.75,
+        "uitleg": "Drie kwart van de gewonnen tijd wordt nuttig werk."
+      },
+      {
+        "id": "optimistisch",
+        "naam": "Optimistisch",
+        "factor": 1,
+        "uitleg": "Elke gewonnen minuut wordt nuttig werk."
+      }
+    ],
+    "standaardScenario": "verwacht",
+    "anonimiserenMinutenPerTaak": 3,
+    "standaardRekening": {
+      "n": 1,
+      "taken": 10,
+      "zonder": 20,
+      "met": 8,
+      "nakijk": 5,
+      "voorb": 0,
+      "uur": 47,
+      "weken": 44,
+      "lic": 23,
+      "opl": 2,
+      "eenm": 0
+    },
+    "standaardPrijsId": "chatgpt-plus"
+  },
+  "wisselkoers": {
+    "id": "usd-eur",
+    "usdNaarEur": 0.88,
+    "bron": "Richtkoers van de redactie, bevestigd door de eindredacteur (uitgangspunt: koers van het derde kwartaal van 2026)",
+    "bronUrl": "https://geotoolbox.ai/fr/blog/prix-claude",
+    "laatstGecontroleerd": "2026-11-12",
+    "status": "gecontroleerd",
+    "gecontroleerdDoor": "eindredacteur"
+  },
+  "prijzen": [
+    {
+      "id": "chatgpt-plus",
+      "naam": "ChatGPT Plus",
+      "soort": "particulier",
+      "bedrag": 23,
+      "munt": "EUR",
+      "btw": "inclusief btw",
+      "opmerking": "Bedrag bevestigd door de eindredacteur.",
+      "bron": "OpenAI, prijspagina ChatGPT",
+      "bronUrl": "https://chatgpt.com/nl-NL/pricing/",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "eindredacteur"
+    },
+    {
+      "id": "chatgpt-business",
+      "naam": "ChatGPT Business",
+      "soort": "zakelijk",
+      "bedrag": 25,
+      "munt": "USD",
+      "btw": "exclusief btw",
+      "opmerking": "Per gebruiker bij maandelijkse facturering, 20 dollar bij jaarlijkse. Minstens 2 gebruikers. De prijs kan per land en munt verschillen.",
+      "bron": "OpenAI Help Center, Wat is ChatGPT Business",
+      "bronUrl": "https://help.openai.com/nl-nl/articles/8792828-wat-is-chatgpt-business",
+      "laatstGecontroleerd": "2026-11-10",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "claude-pro",
+      "naam": "Claude Pro",
+      "soort": "particulier",
+      "bedrag": 20,
+      "munt": "USD",
+      "btw": "exclusief belasting",
+      "opmerking": "Bij maandelijkse betaling. 17 dollar per maand bij jaarbetaling.",
+      "bron": "Anthropic, prijspagina Claude",
+      "bronUrl": "https://claude.com/pricing",
+      "laatstGecontroleerd": "2026-11-11",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "claude-team",
+      "naam": "Claude Team (standaardplaats)",
+      "soort": "zakelijk",
+      "bedrag": 25,
+      "munt": "USD",
+      "btw": "exclusief belasting",
+      "opmerking": "Per plaats bij maandelijkse betaling, 20 dollar bij jaarbetaling. Voor teams van 2 tot 150.",
+      "bron": "Anthropic, prijspagina Claude",
+      "bronUrl": "https://claude.com/pricing",
+      "laatstGecontroleerd": "2026-11-11",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "google-ai-pro",
+      "naam": "Google AI Pro (Gemini)",
+      "soort": "particulier",
+      "bedrag": 21.99,
+      "munt": "EUR",
+      "btw": "btw niet vermeld bij het bedrag",
+      "opmerking": "Belgische prijspagina. Of het bedrag btw bevat, stond er niet bij.",
+      "bron": "Google, abonnementen voor Gemini (België)",
+      "bronUrl": "https://gemini.google/be/subscriptions/",
+      "laatstGecontroleerd": "2026-11-10",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "m365-standard-copilot",
+      "naam": "Microsoft 365 Business Standard met Copilot",
+      "soort": "zakelijk",
+      "bedrag": 20.36,
+      "munt": "EUR",
+      "btw": "exclusief btw",
+      "opmerking": "Per gebruiker per maand bij jaarlijkse betaling. Bevat Microsoft 365 zelf, dus vergelijk niet één op één met een los AI-abonnement.",
+      "bron": "Microsoft België, vergelijking Microsoft 365 voor bedrijven",
+      "bronUrl": "https://www.microsoft.com/nl-be/microsoft-365/compare-all-microsoft-office-products?tab=2",
+      "laatstGecontroleerd": "2026-11-10",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "m365-premium-copilot",
+      "naam": "Microsoft 365 Business Premium met Copilot",
+      "soort": "zakelijk",
+      "bedrag": 27.73,
+      "munt": "EUR",
+      "btw": "exclusief btw",
+      "opmerking": "Per gebruiker per maand bij jaarlijkse betaling. Bevat Microsoft 365 zelf.",
+      "bron": "Microsoft België, vergelijking Microsoft 365 voor bedrijven",
+      "bronUrl": "https://www.microsoft.com/nl-be/microsoft-365/compare-all-microsoft-office-products?tab=2",
+      "laatstGecontroleerd": "2026-11-10",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "m365-copilot-los",
+      "naam": "Microsoft 365 Copilot Business (los, boven op je licentie)",
+      "soort": "zakelijk",
+      "bedrag": 18.2,
+      "munt": "EUR",
+      "btw": "exclusief btw",
+      "opmerking": "Adviesprijs, bevestigd door de eindredacteur. Je hebt er een Microsoft 365 Business-licentie bij nodig.",
+      "bron": "VanRoey (wederverkoper), prijsupdate Microsoft 365 2026",
+      "bronUrl": "https://www.vanroey.be/en/microsoft-365-price-update-2026/",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "eindredacteur"
+    },
+    {
+      "id": "mistral-pro",
+      "naam": "Mistral Le Chat Pro",
+      "soort": "particulier",
+      "bedrag": 14.99,
+      "munt": "EUR",
+      "btw": "exclusief btw",
+      "opmerking": "Europese aanbieder. Bedrag bevestigd door de eindredacteur.",
+      "bron": "Mistral, prijspagina",
+      "bronUrl": "https://www.mistral.ai/pricing",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "eindredacteur"
+    },
+    {
+      "id": "mistral-team",
+      "naam": "Mistral Le Chat Team",
+      "soort": "zakelijk",
+      "bedrag": 24.99,
+      "munt": "EUR",
+      "btw": "exclusief btw",
+      "opmerking": "Per gebruiker bij maandelijkse facturering. Bedrag bevestigd door de eindredacteur.",
+      "bron": "Mistral, prijspagina",
+      "bronUrl": "https://www.mistral.ai/pricing",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "eindredacteur"
+    }
+  ],
+  "aanbieders": [
+    {
+      "id": "openai-particulier",
+      "naam": "ChatGPT: Free, Go, Plus en Pro",
+      "bewering": "Je invoer kan gebruikt worden om modellen te trainen. Je kunt dat uitzetten in de instellingen. Geef je met een duimpje feedback op een antwoord, dan kan dat gesprek toch gebruikt worden, ook na het uitzetten.",
+      "bron": "OpenAI Help Center, How your data is used to improve model performance",
+      "bronUrl": "https://help.openai.com/en/articles/5722486-how-openai-uses-data-to-improve-model-performance",
+      "laatstGecontroleerd": "2026-11-11",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "openai-zakelijk",
+      "naam": "ChatGPT: Business, Enterprise en Edu",
+      "bewering": "Invoer en uitvoer worden standaard niet gebruikt om modellen te verbeteren.",
+      "bron": "OpenAI Help Center, How your data is used to improve model performance",
+      "bronUrl": "https://help.openai.com/en/articles/5722486-how-openai-uses-data-to-improve-model-performance",
+      "laatstGecontroleerd": "2026-11-10",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "anthropic-particulier",
+      "naam": "Claude: Free, Pro, Max en Ultra",
+      "bewering": "De prijspagina vermeldt bij training: opt-out. Training staat dus aan tot je het zelf uitzet.",
+      "bron": "Anthropic, prijspagina Claude (vergelijkingstabel)",
+      "bronUrl": "https://claude.com/pricing",
+      "laatstGecontroleerd": "2026-11-11",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "anthropic-zakelijk",
+      "naam": "Claude: Team en Enterprise",
+      "bewering": "Standaard geen training op je inhoud.",
+      "bron": "Anthropic, prijspagina Claude (vergelijkingstabel)",
+      "bronUrl": "https://claude.com/pricing",
+      "laatstGecontroleerd": "2026-11-11",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "google-particulier",
+      "naam": "Gemini met een persoonlijk Google-account",
+      "bewering": "Gesprekken kunnen bewaard worden, door menselijke beoordelaars gelezen worden en gebruikt worden om de dienst te verbeteren. Je regelt dat via de activiteitsinstelling. Alleen in secundaire bronnen gezien.",
+      "bron": "Google, Privacyhub voor Gemini-apps",
+      "bronUrl": "https://support.google.com/gemini/answer/13594961",
+      "laatstGecontroleerd": "2026-11-10",
+      "status": "TE CONTROLEREN",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "google-zakelijk",
+      "naam": "Gemini in Google Workspace",
+      "bewering": "Je inhoud wordt niet door mensen nagekeken en niet gebruikt om generatieve modellen te trainen buiten je eigen domein, tenzij met toestemming.",
+      "bron": "Google Workspace, Generative AI in Google Workspace Privacy Hub",
+      "bronUrl": "https://support.google.com/a/answer/15706919?hl=en",
+      "laatstGecontroleerd": "2026-11-10",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "microsoft-particulier",
+      "naam": "Copilot met een persoonlijk Microsoft-account",
+      "bewering": "Gesprekken kunnen voor training gebruikt worden, met een instelling om dat uit te zetten. Het kan per land verschillen. Alleen in secundaire bronnen gezien.",
+      "bron": "Microsoft Support, Privacy FAQ for Microsoft Copilot",
+      "bronUrl": "https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot",
+      "laatstGecontroleerd": "2026-11-10",
+      "status": "TE CONTROLEREN",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "microsoft-zakelijk",
+      "naam": "Microsoft 365 Copilot en Copilot Chat voor organisaties",
+      "bewering": "Vragen, antwoorden en gegevens waar Copilot via Microsoft Graph bij kan, worden niet gebruikt om de basismodellen te trainen. Microsoft treedt op als verwerker onder zijn verwerkersovereenkomst. Voor zoekopdrachten op het web via Bing is Microsoft zelf verantwoordelijke.",
+      "bron": "Microsoft Learn, Enterprise data protection in Microsoft Copilot and Microsoft Copilot Chat",
+      "bronUrl": "https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "mistral",
+      "naam": "Mistral Le Chat",
+      "bewering": "Niet nagekeken tijdens de bouw. Lees de voorwaarden van je abonnement.",
+      "bron": "Mistral, prijspagina",
+      "bronUrl": "https://www.mistral.ai/pricing",
+      "laatstGecontroleerd": "2026-11-10",
+      "status": "TE CONTROLEREN",
+      "gecontroleerdDoor": "model"
+    }
+  ],
+  "feiten": [
+    {
+      "id": "avg-verwerkersovereenkomst",
+      "onderwerp": "Verwerkersovereenkomst",
+      "bewering": "Laat een organisatie persoonsgegevens verwerken door een externe dienst, dan moet die verwerking geregeld zijn in een overeenkomst of andere rechtshandeling die de verwerker bindt (artikel 28, lid 3 AVG).",
+      "bron": "Europees Comité voor gegevensbescherming (EDPB), gids voor kmo's",
+      "bronUrl": "https://edpb.europa.eu/sme-data-protection-guide/data-breaches_nl",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model",
+      "meerBronnen": [
+        {
+          "naam": "AVG, artikel 28, lid 3, op EUR-Lex",
+          "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32016R0679"
+        }
+      ]
+    },
+    {
+      "id": "avg-datalek-72u",
+      "onderwerp": "Datalek melden",
+      "bewering": "Een datalek meld je zonder onredelijke vertraging en, indien mogelijk, binnen 72 uur aan de toezichthouder, tenzij een risico voor personen onwaarschijnlijk is (artikel 33, lid 1 AVG).",
+      "bron": "Europees Comité voor gegevensbescherming (EDPB), gids voor kmo's",
+      "bronUrl": "https://www.edpb.europa.eu/sme/assess-the-risks/data-breaches_nl",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model",
+      "meerBronnen": [
+        {
+          "naam": "AVG, artikel 33, lid 1, op EUR-Lex",
+          "url": "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32016R0679"
+        }
+      ]
+    },
+    {
+      "id": "vtc-melding",
+      "onderwerp": "Datalek bij Vlaamse besturen en scholen",
+      "bewering": "Vlaamse bestuursinstanties melden een gegevenslek aan de Vlaamse Toezichtcommissie, binnen 72 uur na de vaststelling; een voormelding binnen die termijn volstaat om te beginnen. Gemeenten, OCMW's en provincies vallen daaronder. Volgens de commissie kunnen ook bijna alle onderwijsinstellingen eronder vallen, als ze aan de criteria voldoen. Andere organisaties melden aan de Gegevensbeschermingsautoriteit.",
+      "bron": "Vlaamse Toezichtcommissie, Gegevenslek melden",
+      "bronUrl": "https://www.vlaanderen.be/vlaamse-toezichtcommissie/verplichtingen-bij-het-verwerken-van-persoonsgegevens/gegevenslek-melden",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model",
+      "meerBronnen": [
+        {
+          "naam": "Vlaamse Toezichtcommissie, Is uw organisatie een Vlaamse bestuursinstantie",
+          "url": "https://www.vlaanderen.be/vlaamse-toezichtcommissie/is-uw-organisatie-een-vlaamse-bestuursinstantie"
+        }
+      ]
+    },
+    {
+      "id": "avg-huishoudelijk",
+      "onderwerp": "Privégebruik",
+      "bewering": "De AVG geldt niet voor verwerking door een natuurlijke persoon bij een zuiver persoonlijke of huishoudelijke activiteit (artikel 2, lid 2, c). De Plakcheck steunt hierop bij de keuze voor mezelf of mijn gezin. Voor de aanbieder van de dienst geldt de AVG wel.",
+      "bron": "Verordening (EU) 2016/679 (AVG), artikel 2 en overweging 18, Nederlandse tekst op EUR-Lex",
+      "bronUrl": "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32016R0679",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "avg-bijzondere-categorieen",
+      "onderwerp": "Gevoelige gegevens",
+      "bewering": "Artikel 9 AVG verbiedt in beginsel de verwerking van bijzondere categorieën: ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, vakbondslidmaatschap, genetische gegevens, biometrische gegevens om iemand te identificeren, gezondheid, en seksueel gedrag of seksuele gerichtheid. De tool gebruikt gevoelig ruimer dan die juridische term: ook rijksregisternummers, financiële gegevens, evaluaties en gegevens over kinderen vallen eronder. Dat is een keuze van de redactie.",
+      "bron": "Verordening (EU) 2016/679 (AVG), artikel 9, lid 1, Nederlandse tekst op EUR-Lex",
+      "bronUrl": "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32016R0679",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "avg-dpia",
+      "onderwerp": "Effectbeoordeling",
+      "bewering": "Houdt een verwerking waarschijnlijk een hoog risico in voor de rechten en vrijheden van personen, in het bijzonder met nieuwe technologieën, dan voert de verantwoordelijke vooraf een gegevensbeschermingseffectbeoordeling (DPIA) uit (artikel 35, lid 1 AVG).",
+      "bron": "Verordening (EU) 2016/679 (AVG), artikel 35, lid 1, Nederlandse tekst op EUR-Lex",
+      "bronUrl": "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32016R0679",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "particulier-geen-overeenkomst",
+      "onderwerp": "Abonnementen voor particulieren",
+      "bewering": "Bij OpenAI, Anthropic, Google en Microsoft hoort de verwerkersovereenkomst bij de zakelijke producten: ChatGPT Business, Enterprise en Edu en de API; Claude for Work en de API; Google Workspace; Copilot voor organisaties. Anthropic verwijst particuliere abonnementen uitdrukkelijk naar aparte voorwaarden. Bij de andere drie volgt het uit het toepassingsgebied: hun pagina's noemen alleen zakelijke producten. Mistral is niet nagekeken.",
+      "bron": "OpenAI, Business data privacy, security, and compliance",
+      "bronUrl": "https://openai.com/business-data/",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model",
+      "meerBronnen": [
+        {
+          "naam": "Anthropic, How do I view and sign your Data Processing Addendum",
+          "url": "https://support.claude.com/en/articles/7996862-how-do-i-view-and-sign-your-data-processing-addendum-dpa"
+        },
+        {
+          "naam": "Google Workspace, Privacy compliance and records",
+          "url": "https://knowledge.workspace.google.com/admin/compliance/privacy-compliance-and-records-for-google-workspace-and-cloud-identity"
+        },
+        {
+          "naam": "Microsoft Learn, Enterprise data protection in Copilot",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection"
+        }
+      ]
+    },
+    {
+      "id": "aiact-omnibus",
+      "onderwerp": "AI Act: nieuwe data na de omnibus",
+      "bewering": "Verordening (EU) 2026/1744 van 8 juli 2026 verscheen op 24 juli 2026 in het Publicatieblad en is sinds 27 juli 2026 in werking. De verplichtingen voor AI met een hoog risico gelden vanaf 2 december 2027 (bijlage III) en 2 augustus 2028 (bijlage I). Bestaande hoogrisicosystemen bij overheden moeten uiterlijk op 2 augustus 2030 in orde zijn. Nieuwe verboden op AI die zonder toestemming intieme beelden of beelden van kindermisbruik maakt, gelden vanaf 2 december 2026. Aanbieders van oudere generatieve systemen moeten hun uitvoer uiterlijk dan als AI-gemaakt markeren.",
+      "bron": "Publicatieblad van de EU, Verordening (EU) 2026/1744, artikelen 111 en 113 zoals gewijzigd (Engelse tekst)",
+      "bronUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202601744",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "aiact-geletterdheid",
+      "onderwerp": "AI Act: AI-geletterdheid",
+      "bewering": "Artikel 4 van de AI Act vraagt sinds 27 juli 2026 dat aanbieders en gebruikers van AI-systemen maatregelen nemen om AI-geletterdheid te ondersteunen. Voordien moesten ze zelf voor een toereikend niveau zorgen. De plicht is dus afgezwakt, niet geschrapt.",
+      "bron": "Publicatieblad van de EU, Verordening (EU) 2026/1744, nieuw artikel 4 (Engelse tekst)",
+      "bronUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202601744",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "loonkost-belgie",
+      "onderwerp": "Wat een uur werk kost",
+      "bewering": "De gemiddelde loonkost per uur in België was 47,10 euro in 2023 (bedrijven met minstens tien werknemers). De rekening start daarom met 47 euro; je kunt dat bedrag zelf aanpassen. Voor 2025 publiceerde Eurostat geen Belgische schatting.",
+      "bron": "Eurostat, geciteerd door VRT NWS (27 maart 2024)",
+      "bronUrl": "https://www.vrt.be/vrtnws/en/2024/03/27/labour-costs-in-belgium-are-the-third-highest-in-the-eu/",
+      "laatstGecontroleerd": "2026-11-12",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "eindredacteur"
+    }
+  ],
+  "verder": [
+    {
+      "naam": "Kenniscentrum Data & Maatschappij: tools rond de AI Act en AI-geletterdheid",
+      "url": "https://data-en-maatschappij.ai/tools"
+    },
+    {
+      "naam": "Europese Commissie: AI Act Compliance Checker",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/eu-ai-act-compliance-checker"
+    },
+    {
+      "naam": "Safeonweb@work: cyberveiligheid voor Belgische organisaties",
+      "url": "https://atwork.safeonweb.be/"
+    }
+  ]
+}
+</script>
+
+<script>
+(function () {
+'use strict';
+
+/* =====================================================================
+   LOGICA. Zuivere functies zonder DOM, zodat ze te testen zijn.
+   ===================================================================== */
+var AO = {};
+
+AO.CATEGORIEEN = [
+  { id: 'publiek', titel: 'Openbare of algemene tekst', kort: 'openbare of algemene tekst', vb: 'Een persbericht, een lesidee zonder namen, een vraag over een formule in Excel.' },
+  { id: 'intern', titel: 'Interne werkinformatie zonder personen', kort: 'interne werkinformatie zonder personen', vb: 'Een verslag zonder namen, een planning, een ontwerp van een beleidstekst.' },
+  { id: 'vertrouwelijk', titel: 'Vertrouwelijke bedrijfsinformatie', kort: 'vertrouwelijke bedrijfsinformatie', vb: 'Contracten, offertes van leveranciers, prijsafspraken, strategische plannen, broncode.' },
+  { id: 'persoon', titel: 'Gewone persoonsgegevens', kort: 'gewone persoonsgegevens', vb: 'Namen, e-mailadressen, een klantenlijst, punten van leerlingen, een sollicitatiebrief.' },
+  { id: 'gevoelig', titel: 'Gevoelige persoonsgegevens', kort: 'gevoelige persoonsgegevens', vb: 'Gezondheid of zorg, een rijksregisternummer, schulden of inkomen, een evaluatie of tuchtdossier, gegevens over kinderen.' },
+  { id: 'geheim', titel: 'Gegevens onder beroepsgeheim of geheimhouding', kort: 'gegevens onder beroepsgeheim of geheimhouding', vb: 'Een cliëntdossier van een boekhouder, arts of advocaat, of alles waarvoor je een geheimhoudingsclausule tekende.' },
+  { id: 'sleutels', titel: 'Wachtwoorden, codes en sleutels', kort: 'wachtwoorden, codes en sleutels', vb: 'Wachtwoorden, pincodes, API-sleutels, de gegevens van een bankkaart.' }
+];
+AO.CONTEXTEN = [
+  { id: 'werk', titel: 'Voor mijn werk, mijn zaak of mijn organisatie', kort: 'voor werk of organisatie', vb: 'Ook als vrijwilliger of bestuurder van een vereniging.' },
+  { id: 'prive', titel: 'Voor mezelf of mijn gezin', kort: 'privé', vb: 'Een brief begrijpen, een reis plannen, je eigen administratie.' }
+];
+AO.ACCOUNTS = [
+  { id: 'gratis', titel: 'Een gratis account, of zonder aanmelden', kort: 'gratis account', vb: '' },
+  { id: 'betaald_particulier', titel: 'Een betaald abonnement op mijn eigen naam', kort: 'betaald abonnement voor particulieren', vb: 'Ook als je werkgever het terugbetaalt.' },
+  { id: 'zakelijk', titel: 'Een account dat mijn organisatie beheert', kort: 'account beheerd door de organisatie', vb: 'Je meldt je aan met je werk- of schooladres en een beheerder regelt de instellingen.' },
+  { id: 'lokaal', titel: 'Een model op mijn eigen toestel of onze eigen server', kort: 'lokaal model', vb: 'Er gaat niets naar een externe dienst.' },
+  { id: 'weetniet', titel: 'Dat weet ik niet', kort: 'onbekend account', vb: '' }
+];
+AO.EIGENSCHAPPEN = [
+  { id: 't', titel: 'Wat ik invoer, wordt niet gebruikt om modellen te trainen.', kort: 'Geen training op je invoer', sub: 'Standaard zo ingesteld, of door jou of je beheerder uitgezet.' },
+  { id: 'd', titel: 'Er is een verwerkersovereenkomst met de aanbieder.', kort: 'Verwerkersovereenkomst', sub: 'Het contract dat de AVG eist zodra een dienst persoonsgegevens verwerkt voor je organisatie.' },
+  { id: 'o', titel: 'Mijn organisatie heeft deze tool goedgekeurd voor dit soort gegevens.', kort: 'Goedgekeurd door de organisatie', sub: 'Ben je zelfstandige, dan ben jij de organisatie: heb je er bewust over beslist?' }
+];
+AO.ANTWOORDEN = [
+  { id: 'ja', naam: 'Ja' },
+  { id: 'nee', naam: 'Nee' },
+  { id: 'weetniet', naam: 'Weet ik niet' }
+];
+AO.RANG = { groen: 0, oranje: 1, rood: 2 };
+AO.KLEUR = {
+  groen: { naam: 'Groen', kop: 'Dit kan.' },
+  oranje: { naam: 'Oranje', kop: 'Eerst iets regelen.' },
+  rood: { naam: 'Rood', kop: 'Niet op deze manier.' }
+};
+
+AO.REDENEN = {
+  SLEUTELS: 'Wachtwoorden, codes en sleutels horen in geen enkel chatvenster, ook niet in een goedgekeurde of lokale tool. Wie het gesprek later kan lezen, kan ermee binnen.',
+  PUBLIEK: 'Openbare of algemene tekst zonder namen kan in elke tool. Er staat niets in dat iemand kan schaden.',
+  LOKAAL: 'Een model op je eigen toestel of server stuurt niets naar een externe dienst. Het risico verschuift naar het toestel: wie kan erbij, en gaat de gespreksgeschiedenis mee in een cloudback-up?',
+  INTERN_OK: 'Interne informatie zonder personen, in een account dat je invoer niet voor training gebruikt: het risico is beperkt.',
+  TRAINING_AAN: 'Je invoer kan gebruikt worden om modellen te trainen. Wat erin zit, haal je er niet meer uit.',
+  TRAINING_ONBEKEND: 'Je weet niet of je invoer voor training wordt gebruikt. Zoek dat uit voor je iets invoert dat niet openbaar is.',
+  VERTROUWELIJK_OK: 'Vertrouwelijke informatie, zonder training en met akkoord van je organisatie: dat is een verdedigbare keuze.',
+  VERTROUWELIJK_PRIVE_OK: 'Het gaat om je eigen vertrouwelijke informatie en je invoer wordt niet voor training gebruikt. De keuze is aan jou.',
+  NIET_GOEDGEKEURD: 'Je organisatie heeft deze tool niet goedgekeurd voor dit soort gegevens.',
+  GOEDKEURING_ONBEKEND: 'Je weet niet of je organisatie deze tool toelaat voor dit soort gegevens.',
+  PERSOON_WERK_OK: 'Er is een verwerkersovereenkomst, je invoer wordt niet voor training gebruikt en je organisatie is akkoord. De basis is in orde.',
+  GEEN_DPA: 'Er is geen verwerkersovereenkomst. Die is verplicht zodra een externe dienst persoonsgegevens verwerkt voor je organisatie (artikel 28 AVG).',
+  DPA_ONBEKEND: 'Je weet niet of er een verwerkersovereenkomst is. Zonder mag het niet, dus dat moet je eerst weten.',
+  PRIVE_OK: 'Je gebruikt dit privé en je invoer wordt niet voor training gebruikt. De regels voor organisaties gelden hier niet; de keuze is aan jou.',
+  PRIVE_RISICO: 'Privé beslis je zelf, maar wat je invoert, staat daarna bij een bedrijf. Gaat het over iemand anders, dan beslis je ook voor die persoon.',
+  PRIVE_GEVOELIG: 'Het zijn gevoelige gegevens. Privé mag je ze delen, maar ze blijven bij de aanbieder staan en je kunt dat niet terugdraaien.',
+  GEVOELIG_PARTICULIER: 'Gevoelige gegevens van anderen horen niet in een account dat je organisatie niet beheert, ook niet als je ervoor betaalt.',
+  GEVOELIG_STRENG: 'Bij gevoelige gegevens telt "weet ik niet" als nee. Overeenkomst, training en goedkeuring moeten alle drie vaststaan.',
+  GEVOELIG_VOORWAARDEN: 'Alles wat deze tool kan nagaan, is in orde. Groen wordt het toch niet: bij gevoelige gegevens beslist je organisatie, vaak met een DPO of een beroepsregel, en niet een webtool.',
+  GEHEIM: 'Beroepsgeheim en geheimhoudingsclausules gelden in elke tool. Of een AI-dienst is toegelaten, staat in je beroepsregels of je contract, niet in de voorwaarden van de aanbieder.',
+  GEHEIM_PARTICULIER: 'Gegevens onder beroepsgeheim of geheimhouding horen niet in een account dat je organisatie niet beheert. Dat geldt ook thuis.',
+  GEHEIM_AFSPRAKEN: 'Voor gegevens onder geheimhouding moeten overeenkomst, training en goedkeuring alle drie vaststaan. Minstens één ontbreekt of is onbekend.'
+};
+
+AO.STAPPEN = {
+  NOOIT: 'Haal wachtwoorden, codes en sleutels uit je tekst. Stond er al een in een gesprek? Wijzig het wachtwoord of trek de sleutel in.',
+  NAKIJKEN: 'Lees na wat de tool teruggeeft. Jij blijft verantwoordelijk voor wat je doorstuurt.',
+  TRAINING_UIT: 'Zet in de instellingen uit dat je gesprekken voor training gebruikt worden, of kies een account waar dat standaard uit staat. Onderaan staat per aanbieder waar je het nakijkt.',
+  ANONIMISEER: 'Haal namen, nummers, adressen en herkenbare details weg voor je iets invoert. Schrijf "leerling A" of "klant 1".',
+  MINIMALISEER: 'Voer alleen in wat de taak nodig heeft. Een samenvatting van een dossier heeft geen rijksregisternummer nodig.',
+  VRAAG_DPA: 'Vraag je ICT-dienst, DPO of leverancier of er een verwerkersovereenkomst is, en bewaar het antwoord.',
+  ZAKELIJK_ACCOUNT: 'Gebruik hiervoor een account dat je organisatie beheert en waarvoor een verwerkersovereenkomst bestaat, niet je persoonlijke account.',
+  VRAAG_GOEDKEURING: 'Vraag wie bij jullie over ICT of gegevensbescherming gaat of deze tool hiervoor mag. Ben je zelfstandige, beslis dan zelf en schrijf je keuze op.',
+  DPO: 'Leg dit gebruik voor aan je DPO of aan wie instaat voor gegevensbescherming. Bij gevoelige gegevens kan een effectbeoordeling (DPIA) nodig zijn.',
+  BEROEPSREGELS: 'Kijk na wat je beroepsorganisatie of je contract zegt over AI-diensten voor je iets invoert.',
+  TOESTEL: 'Beveilig het toestel: schermvergrendeling, een versleutelde schijf, en kijk na of de gespreksgeschiedenis in een cloudback-up belandt.',
+  AL_GEBEURD: 'Al ingevoerd? Meld het aan je DPO of leidinggevende. Een organisatie moet een mogelijk datalek binnen 72 uur beoordelen en zo nodig melden.'
+};
+
+AO.ALTERNATIEVEN = {
+  anoniem: 'Als je eerst anonimiseert',
+  traininguit: 'Als je training uitzet en dat zeker weet',
+  beheerd: 'In een account van je organisatie waar overeenkomst, training en goedkeuring vaststaan',
+  lokaal: 'Met een model op je eigen toestel of server'
+};
+
+function bevat(lijst, x) { return lijst.indexOf(x) !== -1; }
+function uniek(lijst) {
+  var uit = [];
+  lijst.forEach(function (x) { if (!bevat(uit, x)) uit.push(x); });
+  return uit;
+}
+function idsVan(lijst) { return lijst.map(function (x) { return x.id; }); }
+function zoek(lijst, id) {
+  for (var i = 0; i < lijst.length; i++) { if (lijst[i].id === id) return lijst[i]; }
+  return null;
+}
+AO.zoek = zoek;
+
+function trainingReden(t) { return t === 'nee' ? 'TRAINING_AAN' : 'TRAINING_ONBEKEND'; }
+function goedkeuringReden(o) { return o === 'nee' ? 'NIET_GOEDGEKEURD' : 'GOEDKEURING_ONBEKEND'; }
+
+/* Beoordeelt één categorie. Geeft kleur, redenen en stappen terug. */
+AO.beoordeelCategorie = function (cat, inv) {
+  var t = inv.e.t, d = inv.e.d, o = inv.e.o, c = inv.c;
+  var lokaal = inv.a === 'lokaal';
+  var beheerd = inv.a === 'zakelijk';
+  var werk = c === 'werk';
+  function uit(kleur, redenen, stappen) { return { cat: cat, kleur: kleur, redenen: redenen, stappen: stappen }; }
+  var red, st, kleur;
+
+  if (cat === 'sleutels') return uit('rood', ['SLEUTELS'], ['NOOIT']);
+  if (cat === 'publiek') return uit('groen', ['PUBLIEK'], ['NAKIJKEN']);
+
+  if (cat === 'intern') {
+    if (lokaal) return uit('groen', ['LOKAAL'], ['NAKIJKEN']);
+    if (t === 'ja') return uit('groen', ['INTERN_OK'], ['NAKIJKEN']);
+    return uit('oranje', [trainingReden(t)], ['TRAINING_UIT']);
+  }
+
+  if (cat === 'vertrouwelijk') {
+    if (lokaal) return uit('groen', ['LOKAAL'], ['TOESTEL', 'NAKIJKEN']);
+    if (t === 'nee') return uit('rood', ['TRAINING_AAN'], ['TRAINING_UIT', 'ZAKELIJK_ACCOUNT']);
+    if (t === 'weetniet') return uit('oranje', ['TRAINING_ONBEKEND'], ['TRAINING_UIT']);
+    if (!werk) return uit('groen', ['VERTROUWELIJK_PRIVE_OK'], ['NAKIJKEN']);
+    if (o === 'ja') return uit('groen', ['VERTROUWELIJK_OK'], ['NAKIJKEN']);
+    return uit('oranje', [goedkeuringReden(o)], ['VRAAG_GOEDKEURING']);
+  }
+
+  if (cat === 'persoon') {
+    if (lokaal) return uit('groen', ['LOKAAL'], ['TOESTEL', 'MINIMALISEER']);
+    if (!werk) {
+      if (t === 'ja') return uit('groen', ['PRIVE_OK'], ['MINIMALISEER']);
+      return uit('oranje', ['PRIVE_RISICO', trainingReden(t)], ['ANONIMISEER', 'TRAINING_UIT']);
+    }
+    red = []; st = []; kleur = 'groen';
+    if (d === 'nee') { kleur = 'rood'; red.push('GEEN_DPA'); }
+    if (t === 'nee') { kleur = 'rood'; red.push('TRAINING_AAN'); }
+    if (d === 'weetniet') { if (kleur !== 'rood') kleur = 'oranje'; red.push('DPA_ONBEKEND'); }
+    if (t === 'weetniet') { if (kleur !== 'rood') kleur = 'oranje'; red.push('TRAINING_ONBEKEND'); }
+    if (kleur === 'groen') {
+      if (o === 'ja') return uit('groen', ['PERSOON_WERK_OK'], ['MINIMALISEER', 'NAKIJKEN']);
+      return uit('oranje', [goedkeuringReden(o)], ['VRAAG_GOEDKEURING', 'MINIMALISEER']);
+    }
+    st.push('ANONIMISEER');
+    if (d === 'nee') st.push('ZAKELIJK_ACCOUNT');
+    if (d === 'weetniet') st.push('VRAAG_DPA');
+    if (t !== 'ja') st.push('TRAINING_UIT');
+    if (kleur === 'rood') st.push('AL_GEBEURD');
+    return uit(kleur, red, st);
+  }
+
+  if (cat === 'gevoelig') {
+    if (lokaal) {
+      if (werk && o !== 'ja') return uit('oranje', ['LOKAAL', goedkeuringReden(o)], ['VRAAG_GOEDKEURING', 'TOESTEL']);
+      return uit('groen', ['LOKAAL'], ['TOESTEL', 'MINIMALISEER']);
+    }
+    if (!werk) {
+      if (t === 'ja') return uit('oranje', ['PRIVE_GEVOELIG'], ['ANONIMISEER', 'MINIMALISEER']);
+      return uit('rood', ['PRIVE_GEVOELIG', trainingReden(t)], ['ANONIMISEER', 'TRAINING_UIT']);
+    }
+    if (!beheerd) return uit('rood', ['GEVOELIG_PARTICULIER'], ['ZAKELIJK_ACCOUNT', 'ANONIMISEER', 'AL_GEBEURD']);
+    if (d === 'ja' && t === 'ja' && o === 'ja') return uit('oranje', ['GEVOELIG_VOORWAARDEN'], ['MINIMALISEER', 'DPO']);
+    red = ['GEVOELIG_STRENG']; st = ['ANONIMISEER'];
+    if (d === 'nee') red.push('GEEN_DPA');
+    if (d === 'weetniet') red.push('DPA_ONBEKEND');
+    if (t !== 'ja') red.push(trainingReden(t));
+    if (o !== 'ja') red.push(goedkeuringReden(o));
+    if (d !== 'ja') st.push('VRAAG_DPA');
+    if (t !== 'ja') st.push('TRAINING_UIT');
+    if (o !== 'ja') st.push('VRAAG_GOEDKEURING');
+    st.push('AL_GEBEURD');
+    return uit('rood', red, st);
+  }
+
+  if (cat === 'geheim') {
+    if (lokaal) return uit('oranje', ['GEHEIM', 'LOKAAL'], ['BEROEPSREGELS', 'TOESTEL']);
+    if (!beheerd) return uit('rood', ['GEHEIM_PARTICULIER'], ['BEROEPSREGELS', 'ZAKELIJK_ACCOUNT']);
+    if (d === 'ja' && t === 'ja' && o === 'ja') return uit('oranje', ['GEHEIM'], ['BEROEPSREGELS', 'MINIMALISEER']);
+    return uit('rood', ['GEHEIM_AFSPRAKEN', 'GEHEIM'], ['BEROEPSREGELS', 'VRAAG_GOEDKEURING']);
+  }
+  return null;
+};
+
+/* Volledig oordeel. Geeft null terug zolang een vraag onbeantwoord is. */
+AO.beoordeel = function (inv) {
+  if (!inv || !inv.g || !inv.g.length || !inv.c || !inv.a || !inv.e) return null;
+  var volgorde = idsVan(AO.CATEGORIEEN);
+  var delen = [];
+  inv.g.forEach(function (cat) {
+    var deel = AO.beoordeelCategorie(cat, inv);
+    if (deel) delen.push(deel);
+  });
+  if (!delen.length) return null;
+  delen.sort(function (a, b) {
+    var verschil = AO.RANG[b.kleur] - AO.RANG[a.kleur];
+    return verschil !== 0 ? verschil : volgorde.indexOf(b.cat) - volgorde.indexOf(a.cat);
+  });
+  var kleur = delen[0].kleur;
+  var tellend = kleur === 'groen' ? delen : delen.filter(function (x) { return x.kleur !== 'groen'; });
+  var redenen = [], stappen = [];
+  tellend.forEach(function (x) {
+    redenen = redenen.concat(x.redenen);
+    stappen = stappen.concat(x.stappen);
+  });
+  return { kleur: kleur, zwaarste: delen[0].cat, redenen: uniek(redenen), stappen: uniek(stappen), delen: delen };
+};
+
+/* Welke eigenschappen doen ertoe bij deze keuzes? */
+AO.zichtbareEigenschappen = function (inv) {
+  if (!inv) return ['t'];
+  var geheim = bevat(inv.g || [], 'geheim');
+  if (inv.a === 'lokaal') return inv.c === 'werk' ? ['o'] : [];
+  if (inv.c === 'werk' || geheim) return ['t', 'd', 'o'];
+  return ['t'];
+};
+
+function kopie(inv) {
+  return { g: inv.g.slice(), c: inv.c, a: inv.a, e: { t: inv.e.t, d: inv.e.d, o: inv.e.o } };
+}
+
+/* Wat zou het oordeel verbeteren? Geeft alleen echte verbeteringen terug. */
+AO.alternatieven = function (inv) {
+  var huidig = AO.beoordeel(inv);
+  if (!huidig || huidig.kleur === 'groen') return [];
+  var lijst = [];
+  function probeer(id, variant) {
+    var r = AO.beoordeel(variant);
+    if (r && AO.RANG[r.kleur] < AO.RANG[huidig.kleur]) lijst.push({ id: id, kleur: r.kleur });
+  }
+  var v;
+  if (bevat(inv.g, 'persoon') || bevat(inv.g, 'gevoelig')) {
+    v = kopie(inv);
+    v.g = uniek(inv.g.map(function (x) { return (x === 'persoon' || x === 'gevoelig') ? 'intern' : x; }));
+    probeer('anoniem', v);
+  }
+  if (inv.a !== 'lokaal' && inv.e.t !== 'ja') {
+    v = kopie(inv); v.e.t = 'ja';
+    probeer('traininguit', v);
+  }
+  if (inv.c === 'werk' || bevat(inv.g, 'geheim')) {
+    v = kopie(inv); v.a = 'zakelijk'; v.e = { t: 'ja', d: 'ja', o: 'ja' };
+    probeer('beheerd', v);
+  }
+  if (inv.a !== 'lokaal') {
+    v = kopie(inv); v.a = 'lokaal';
+    probeer('lokaal', v);
+  }
+  return lijst;
+};
+
+/* Wat neemt de Urenrekening over van de Plakcheck? */
+AO.koppeling = function (inv, cfg) {
+  var res = AO.beoordeel(inv);
+  if (!res) return { soort: 'leeg' };
+  if (res.kleur === 'groen') return { soort: 'groen' };
+  var ids = idsVan(AO.alternatieven(inv));
+  if (bevat(ids, 'anoniem')) return { soort: 'anoniem', minuten: cfg.aannames.anonimiserenMinutenPerTaak };
+  if (bevat(ids, 'beheerd')) return { soort: 'beheerd' };
+  if (bevat(ids, 'traininguit')) return { soort: 'traininguit' };
+  if (bevat(ids, 'lokaal')) return { soort: 'lokaal' };
+  return { soort: 'geen' };
+};
+
+/* ---- Getallen ---- */
+AO.parseGetal = function (x) {
+  if (typeof x === 'number') return isFinite(x) ? x : null;
+  if (typeof x !== 'string') return null;
+  var s = x.replace(/\s/g, '').replace(',', '.');
+  if (s === '') return null;
+  var n = Number(s);
+  return isFinite(n) ? n : null;
+};
+AO.schoon = function (x, min, max, std) {
+  var n = AO.parseGetal(x);
+  if (n === null) return std;
+  if (n < min) return min;
+  if (n > max) return max;
+  return n;
+};
+AO.VELDEN = {
+  n: { min: 1, max: 100000, geheel: true },
+  taken: { min: 0, max: 10000 },
+  zonder: { min: 0, max: 100000 },
+  met: { min: 0, max: 100000 },
+  nakijk: { min: 0, max: 100000 },
+  voorb: { min: 0, max: 100000 },
+  uur: { min: 0, max: 10000 },
+  weken: { min: 0, max: 52 },
+  lic: { min: 0, max: 100000 },
+  opl: { min: 0, max: 10000 },
+  eenm: { min: 0, max: 100000000 }
+};
+AO.schoneRekening = function (r, std) {
+  var uit = {};
+  Object.keys(AO.VELDEN).forEach(function (k) {
+    var v = AO.VELDEN[k];
+    var basis = std && typeof std[k] === 'number' ? std[k] : v.min;
+    var n = AO.schoon(r ? r[k] : null, v.min, v.max, basis);
+    uit[k] = v.geheel ? Math.round(n) : n;
+  });
+  return uit;
+};
+
+/* ---- De rekening ---- */
+AO.reken = function (invoer, factor) {
+  var r = AO.schoneRekening(invoer, null);
+  var metTotaal = r.met + r.nakijk + r.voorb;
+  var nettoPerTaak = r.zonder - metTotaal;
+  var minPerWeekPp = nettoPerTaak * r.taken;
+  var urenJaarBruto = minPerWeekPp / 60 * r.weken * r.n;
+  /* Verlies telt volledig; alleen winst wordt met de scenariofactor verminderd. */
+  var toegepast = urenJaarBruto > 0 ? factor : 1;
+  var urenJaar = urenJaarBruto * toegepast;
+  var baten = urenJaar * r.uur;
+  var kostLicentie = r.lic * 12 * r.n;
+  var kostOpleiding = r.opl * r.uur * r.n;
+  var kosten = kostLicentie + kostOpleiding + r.eenm;
+  return {
+    invoer: r, metTotaal: metTotaal, nettoPerTaak: nettoPerTaak, minPerWeekPp: minPerWeekPp,
+    urenJaarBruto: urenJaarBruto, urenJaar: urenJaar, factor: toegepast, baten: baten,
+    kostLicentie: kostLicentie, kostOpleiding: kostOpleiding, kostEenmalig: r.eenm,
+    kosten: kosten, saldo: baten - kosten
+  };
+};
+
+/* Hoeveel minuten per week per persoon moet je echt winnen om uit de kosten te komen? */
+AO.breakEvenMinuten = function (invoer, factor) {
+  var uit = AO.reken(invoer, factor);
+  var r = uit.invoer;
+  var noemer = r.uur * r.weken * r.n * factor;
+  if (!(noemer > 0)) return null;
+  return uit.kosten / noemer * 60;
+};
+
+AO.besluit = function (invoer, cfg) {
+  var sc = cfg.aannames.scenarios;
+  var voorzichtig = AO.reken(invoer, zoek(sc, 'voorzichtig').factor);
+  var verwacht = AO.reken(invoer, zoek(sc, 'verwacht').factor);
+  if (verwacht.nettoPerTaak <= 0) return 'LANGER';
+  if (verwacht.saldo <= 0) return 'VERLIES';
+  if (voorzichtig.saldo <= 0) return 'KWETSBAAR';
+  return 'ROBUUST';
+};
+AO.BESLUITEN = {
+  LANGER: 'Met AI duurt deze taak even lang of langer dan zonder, zodra je nakijken en voorbereiden meetelt. Dan is er niets om terug te verdienen.',
+  VERLIES: 'Met deze cijfers kost het meer dan het opbrengt.',
+  KWETSBAAR: 'Het loont alleen als de tijdwinst echt is. Meet ze een maand voor je een jaar vastlegt.',
+  ROBUUST: 'Ook in het voorzichtige scenario blijft er iets over.'
+};
+
+/* ---- Config ---- */
+AO.naarEuro = function (prijs, cfg) {
+  if (!prijs) return null;
+  if (prijs.munt === 'EUR') return prijs.bedrag;
+  if (prijs.munt === 'USD') return Math.round(prijs.bedrag * cfg.wisselkoers.usdNaarEur * 100) / 100;
+  return null;
+};
+AO.dagenTussen = function (isoVan, isoTot) {
+  var a = Date.parse(isoVan + 'T00:00:00Z'), b = Date.parse(isoTot + 'T00:00:00Z');
+  if (isNaN(a) || isNaN(b)) return null;
+  return Math.round((b - a) / 86400000);
+};
+AO.isVerouderd = function (iso, dagen, vandaagIso) {
+  var d = AO.dagenTussen(iso, vandaagIso);
+  return d === null ? true : d > dagen;
+};
+AO.vandaagIso = function (datum) {
+  var d = datum || new Date();
+  function twee(n) { return n < 10 ? '0' + n : String(n); }
+  return d.getFullYear() + '-' + twee(d.getMonth() + 1) + '-' + twee(d.getDate());
+};
+AO.alleItems = function (cfg) {
+  var lijst = [];
+  (cfg.prijzen || []).forEach(function (x) { lijst.push({ groep: 'prijzen', item: x }); });
+  (cfg.aanbieders || []).forEach(function (x) { lijst.push({ groep: 'aanbieders', item: x }); });
+  (cfg.feiten || []).forEach(function (x) { lijst.push({ groep: 'feiten', item: x }); });
+  if (cfg.wisselkoers) lijst.push({ groep: 'prijzen', item: cfg.wisselkoers });
+  return lijst;
+};
+AO.telStatus = function (cfg) {
+  var alles = AO.alleItems(cfg);
+  var na = alles.filter(function (x) { return x.item.status === 'TE CONTROLEREN'; }).length;
+  return { totaal: alles.length, teControleren: na };
+};
+AO.valideerConfig = function (cfg) {
+  var fouten = [];
+  if (!cfg || typeof cfg !== 'object') return ['Config ontbreekt of is geen object.'];
+  if (!cfg.meta || !cfg.meta.versie) fouten.push('meta.versie ontbreekt.');
+  var toegestaan = (cfg.meta && cfg.meta.toegestaneStatussen) || [];
+  var gezien = {};
+  AO.alleItems(cfg).forEach(function (x) {
+    var it = x.item, naam = x.groep + '/' + (it.id || '(zonder id)');
+    if (!it.id) fouten.push(naam + ': id ontbreekt.');
+    if (it.id && gezien[it.id]) fouten.push(naam + ': id komt twee keer voor.');
+    gezien[it.id] = true;
+    if (!it.bron) fouten.push(naam + ': bron ontbreekt.');
+    if (typeof it.bronUrl !== 'string') fouten.push(naam + ': bronUrl ontbreekt (mag leeg zijn).');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(it.laatstGecontroleerd || '')) fouten.push(naam + ': laatstGecontroleerd is geen datum (jjjj-mm-dd).');
+    if (!bevat(toegestaan, it.status)) fouten.push(naam + ': status is niet toegestaan.');
+    if (it.gecontroleerdDoor && !bevat(cfg.meta.toegestaneControleurs || [], it.gecontroleerdDoor)) fouten.push(naam + ': gecontroleerdDoor is niet toegestaan.');
+    (it.meerBronnen || []).forEach(function (b) { if (!b || !b.naam || typeof b.url !== 'string') fouten.push(naam + ': meerBronnen is onvolledig.'); });
+  });
+  (cfg.prijzen || []).forEach(function (p) {
+    if (typeof p.bedrag !== 'number' || p.bedrag < 0) fouten.push('prijzen/' + p.id + ': bedrag is geen positief getal.');
+    if (p.munt !== 'EUR' && p.munt !== 'USD') fouten.push('prijzen/' + p.id + ': munt moet EUR of USD zijn.');
+    if (p.soort !== 'particulier' && p.soort !== 'zakelijk') fouten.push('prijzen/' + p.id + ': soort moet particulier of zakelijk zijn.');
+  });
+  if (!cfg.wisselkoers || !(cfg.wisselkoers.usdNaarEur > 0)) fouten.push('wisselkoers.usdNaarEur ontbreekt.');
+  var sc = (cfg.aannames && cfg.aannames.scenarios) || [];
+  ['voorzichtig', 'verwacht', 'optimistisch'].forEach(function (id) {
+    var s = zoek(sc, id);
+    if (!s) fouten.push('aannames.scenarios: ' + id + ' ontbreekt.');
+    else if (!(s.factor > 0 && s.factor <= 1)) fouten.push('aannames.scenarios/' + id + ': factor moet tussen 0 en 1 liggen.');
+  });
+  if (!cfg.aannames || !cfg.aannames.standaardRekening) fouten.push('aannames.standaardRekening ontbreekt.');
+  return fouten;
+};
+
+/* ---- Staat en deellink ---- */
+AO.standaardStaat = function (cfg) {
+  return {
+    g: [], c: '', a: '', e: { t: 'weetniet', d: 'weetniet', o: 'weetniet' },
+    r: AO.schoneRekening(cfg.aannames.standaardRekening, cfg.aannames.standaardRekening),
+    sc: cfg.aannames.standaardScenario,
+    p: cfg.aannames.standaardPrijsId || ''
+  };
+};
+AO.normaliseerStaat = function (ruw, cfg) {
+  var std = AO.standaardStaat(cfg);
+  if (!ruw || typeof ruw !== 'object') return std;
+  var cats = idsVan(AO.CATEGORIEEN), antw = idsVan(AO.ANTWOORDEN);
+  var uit = std;
+  if (Array.isArray(ruw.g)) uit.g = uniek(ruw.g.filter(function (x) { return bevat(cats, x); }));
+  if (bevat(idsVan(AO.CONTEXTEN), ruw.c)) uit.c = ruw.c;
+  if (bevat(idsVan(AO.ACCOUNTS), ruw.a)) uit.a = ruw.a;
+  if (ruw.e && typeof ruw.e === 'object') {
+    ['t', 'd', 'o'].forEach(function (k) { if (bevat(antw, ruw.e[k])) uit.e[k] = ruw.e[k]; });
+  }
+  if (ruw.r && typeof ruw.r === 'object') uit.r = AO.schoneRekening(ruw.r, std.r);
+  if (zoek(cfg.aannames.scenarios, ruw.sc)) uit.sc = ruw.sc;
+  if (ruw.p === '' || ruw.p === 'gratis' || zoek(cfg.prijzen, ruw.p)) uit.p = ruw.p;
+  return uit;
+};
+var LETTER = { ja: 'j', nee: 'n', weetniet: 'w' };
+var VAN_LETTER = { j: 'ja', n: 'nee', w: 'weetniet' };
+var REKEN_VOLGORDE = ['n', 'taken', 'zonder', 'met', 'nakijk', 'voorb', 'uur', 'weken', 'lic', 'opl', 'eenm'];
+function naarB64(tekst) {
+  return btoa(tekst).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+function vanB64(code) {
+  var s = code.replace(/-/g, '+').replace(/_/g, '/');
+  while (s.length % 4) s += '=';
+  return atob(s);
+}
+AO.codeerStaat = function (staat) {
+  var compact = {
+    v: 1, g: staat.g, c: staat.c, a: staat.a,
+    e: LETTER[staat.e.t] + LETTER[staat.e.d] + LETTER[staat.e.o],
+    r: REKEN_VOLGORDE.map(function (k) { return staat.r[k]; }),
+    sc: staat.sc, p: staat.p
+  };
+  return naarB64(JSON.stringify(compact));
+};
+AO.decodeerStaat = function (code, cfg) {
+  try {
+    if (typeof code !== 'string' || !/^[A-Za-z0-9_-]+$/.test(code)) return null;
+    var o = JSON.parse(vanB64(code));
+    if (!o || o.v !== 1) return null;
+    var ruw = { g: o.g, c: o.c, a: o.a, e: {}, r: {}, sc: o.sc, p: o.p };
+    if (typeof o.e === 'string' && o.e.length === 3) {
+      ruw.e = { t: VAN_LETTER[o.e.charAt(0)], d: VAN_LETTER[o.e.charAt(1)], o: VAN_LETTER[o.e.charAt(2)] };
+    }
+    if (Array.isArray(o.r)) REKEN_VOLGORDE.forEach(function (k, i) { ruw.r[k] = o.r[i]; });
+    return AO.normaliseerStaat(ruw, cfg);
+  } catch (fout) {
+    return null;
+  }
+};
+
+/* ---- Opmaak van getallen (zonder DOM) ---- */
+AO.euro = function (n) {
+  var afgerond = Math.round(n);
+  var s = String(Math.abs(afgerond)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  return (afgerond < 0 ? '− ' : '') + '€ ' + s;
+};
+AO.getal = function (n, decimalen) {
+  var d = typeof decimalen === 'number' ? decimalen : 1;
+  var f = Math.pow(10, d);
+  var afgerond = Math.round(n * f) / f;
+  var delen = String(Math.abs(afgerond)).split('.');
+  delen[0] = delen[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  return (afgerond < 0 ? '−' : '') + delen.join(',');
+};
+var MAANDEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+AO.datumTekst = function (iso) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+  if (!m) return String(iso || '');
+  return Number(m[3]) + ' ' + MAANDEN[Number(m[2]) - 1] + ' ' + m[1];
+};
+
+/* ---- Samenvatting als platte tekst ---- */
+AO.samenvattingTekst = function (staat, cfg, vandaagIso) {
+  var regels = [];
+  var res = AO.beoordeel(staat);
+  var sc = zoek(cfg.aannames.scenarios, staat.sc) || cfg.aannames.scenarios[0];
+  var uit = AO.reken(staat.r, sc.factor);
+  var be = AO.breakEvenMinuten(staat.r, sc.factor);
+  regels.push('Plakcheck en Urenrekening van AI Ontcijferd');
+  regels.push('Datum: ' + AO.datumTekst(vandaagIso));
+  regels.push('');
+  regels.push('PLAKCHECK');
+  if (res) {
+    regels.push('Gegevens: ' + staat.g.map(function (id) { return zoek(AO.CATEGORIEEN, id).kort; }).join('; '));
+    regels.push('Context: ' + zoek(AO.CONTEXTEN, staat.c).kort);
+    regels.push('Account: ' + zoek(AO.ACCOUNTS, staat.a).kort);
+    AO.zichtbareEigenschappen(staat).forEach(function (k) {
+      regels.push(zoek(AO.EIGENSCHAPPEN, k).kort + ': ' + zoek(AO.ANTWOORDEN, staat.e[k]).naam.toLowerCase());
+    });
+    regels.push('Oordeel: ' + AO.KLEUR[res.kleur].naam.toUpperCase() + '. ' + AO.KLEUR[res.kleur].kop);
+    regels.push('Waarom:');
+    res.redenen.forEach(function (c) { regels.push('- ' + AO.REDENEN[c]); });
+    regels.push('Wat nu:');
+    res.stappen.forEach(function (c) { regels.push('- ' + AO.STAPPEN[c]); });
+  } else {
+    regels.push('Nog niet ingevuld.');
+  }
+  regels.push('');
+  regels.push('URENREKENING, JAAR 1 (scenario ' + sc.naam.toLowerCase() + ')');
+  regels.push('Per taak: ' + AO.getal(uit.invoer.zonder) + ' min zonder AI, ' + AO.getal(uit.metTotaal) + ' min met AI (inclusief nakijken en voorbereiden).');
+  regels.push('Gewonnen tijd: ' + AO.getal(uit.urenJaar) + ' uur, goed voor ' + AO.euro(uit.baten));
+  regels.push('Kosten: ' + AO.euro(uit.kosten) + ' (licenties ' + AO.euro(uit.kostLicentie) + ', opleiding ' + AO.euro(uit.kostOpleiding) + ', eenmalig ' + AO.euro(uit.kostEenmalig) + ')');
+  regels.push('Saldo: ' + AO.euro(uit.saldo));
+  if (be !== null) regels.push('Nodig om uit de kosten te komen: ' + AO.getal(be) + ' minuten winst per persoon per week. Ingevuld: ' + AO.getal(uit.minPerWeekPp) + ' minuten.');
+  regels.push(AO.BESLUITEN[AO.besluit(staat.r, cfg)]);
+  regels.push('');
+  regels.push('Dit is een eerste check, geen juridisch of financieel advies. Stand van de gegevens: ' + AO.datumTekst(cfg.meta.configBijgewerktOp) + '.');
+  return regels.join('\n');
+};
+
+/* =====================================================================
+   TESTS. Draaien in het verborgen testpaneel (Ctrl+Shift+T).
+   ===================================================================== */
+AO.voerTestsUit = function (cfg) {
+  var uit = [];
+  function test(naam, fn) {
+    try { fn(); uit.push({ naam: naam, geslaagd: true, melding: '' }); }
+    catch (fout) { uit.push({ naam: naam, geslaagd: false, melding: String((fout && fout.message) || fout) }); }
+  }
+  function gelijk(a, b, uitleg) {
+    if (a !== b) throw new Error((uitleg ? uitleg + ': ' : '') + 'verwacht ' + JSON.stringify(b) + ', kreeg ' + JSON.stringify(a));
+  }
+  function bijna(a, b, uitleg) {
+    if (!(Math.abs(a - b) < 1e-6)) throw new Error((uitleg ? uitleg + ': ' : '') + 'verwacht ' + b + ', kreeg ' + a);
+  }
+  function waar(x, uitleg) { if (!x) throw new Error(uitleg || 'verwacht waar'); }
+  function inv(g, c, a, t, d, o) {
+    return { g: g, c: c, a: a, e: { t: t || 'weetniet', d: d || 'weetniet', o: o || 'weetniet' } };
+  }
+  function kleur(i) { var r = AO.beoordeel(i); return r ? r.kleur : null; }
+  var REK = { n: 1, taken: 10, zonder: 20, met: 8, nakijk: 5, voorb: 0, uur: 60, weken: 40, lic: 20, opl: 0, eenm: 0 };
+  function rek(wijzig) {
+    var r = {}; Object.keys(REK).forEach(function (k) { r[k] = REK[k]; });
+    Object.keys(wijzig || {}).forEach(function (k) { r[k] = wijzig[k]; });
+    return r;
+  }
+
+  /* Plakcheck */
+  test('Wachtwoorden zijn altijd rood, ook lokaal en met alles in orde', function () {
+    gelijk(kleur(inv(['sleutels'], 'werk', 'zakelijk', 'ja', 'ja', 'ja')), 'rood');
+    gelijk(kleur(inv(['sleutels'], 'prive', 'lokaal', 'ja', 'ja', 'ja')), 'rood');
+  });
+  test('Openbare tekst is groen, ook in een gratis account zonder zekerheid', function () {
+    gelijk(kleur(inv(['publiek'], 'werk', 'gratis')), 'groen');
+  });
+  test('Interne informatie: groen zonder training, anders oranje', function () {
+    gelijk(kleur(inv(['intern'], 'werk', 'gratis', 'ja')), 'groen');
+    gelijk(kleur(inv(['intern'], 'werk', 'gratis', 'weetniet')), 'oranje');
+    gelijk(kleur(inv(['intern'], 'werk', 'gratis', 'nee')), 'oranje');
+  });
+  test('Persoonsgegevens voor werk zonder verwerkersovereenkomst zijn rood', function () {
+    gelijk(kleur(inv(['persoon'], 'werk', 'gratis', 'ja', 'nee', 'ja')), 'rood');
+    waar(bevat(AO.beoordeel(inv(['persoon'], 'werk', 'gratis', 'ja', 'nee', 'ja')).redenen, 'GEEN_DPA'), 'reden GEEN_DPA ontbreekt');
+  });
+  test('Persoonsgegevens voor werk: groen als alle drie vaststaan', function () {
+    gelijk(kleur(inv(['persoon'], 'werk', 'zakelijk', 'ja', 'ja', 'ja')), 'groen');
+  });
+  test('Persoonsgegevens voor werk: oranje als goedkeuring onbekend is', function () {
+    gelijk(kleur(inv(['persoon'], 'werk', 'zakelijk', 'ja', 'ja', 'weetniet')), 'oranje');
+    gelijk(kleur(inv(['persoon'], 'werk', 'zakelijk', 'ja', 'weetniet', 'ja')), 'oranje');
+  });
+  test('Gevoelige gegevens voor werk in een particulier account zijn rood', function () {
+    gelijk(kleur(inv(['gevoelig'], 'werk', 'betaald_particulier', 'ja', 'ja', 'ja')), 'rood');
+    gelijk(kleur(inv(['gevoelig'], 'werk', 'gratis', 'ja', 'ja', 'ja')), 'rood');
+  });
+  test('Gevoelige gegevens voor werk worden nooit groen in een externe dienst', function () {
+    gelijk(kleur(inv(['gevoelig'], 'werk', 'zakelijk', 'ja', 'ja', 'ja')), 'oranje');
+  });
+  test('Gevoelige gegevens: "weet ik niet" telt als nee', function () {
+    gelijk(kleur(inv(['gevoelig'], 'werk', 'zakelijk', 'ja', 'weetniet', 'ja')), 'rood');
+    gelijk(kleur(inv(['gevoelig'], 'werk', 'zakelijk', 'weetniet', 'ja', 'ja')), 'rood');
+  });
+  test('Gevoelige gegevens privé: oranje zonder training, anders rood', function () {
+    gelijk(kleur(inv(['gevoelig'], 'prive', 'gratis', 'ja')), 'oranje');
+    gelijk(kleur(inv(['gevoelig'], 'prive', 'gratis', 'nee')), 'rood');
+    gelijk(kleur(inv(['gevoelig'], 'prive', 'gratis', 'weetniet')), 'rood');
+  });
+  test('Lokaal model: persoonsgegevens groen, gevoelig voor werk oranje zonder goedkeuring', function () {
+    gelijk(kleur(inv(['persoon'], 'werk', 'lokaal')), 'groen');
+    gelijk(kleur(inv(['gevoelig'], 'werk', 'lokaal', 'ja', 'ja', 'nee')), 'oranje');
+    gelijk(kleur(inv(['gevoelig'], 'werk', 'lokaal', 'ja', 'ja', 'ja')), 'groen');
+  });
+  test('Geheimhouding geldt ook thuis en wordt nooit groen', function () {
+    gelijk(kleur(inv(['geheim'], 'prive', 'gratis', 'ja', 'ja', 'ja')), 'rood');
+    gelijk(kleur(inv(['geheim'], 'werk', 'zakelijk', 'ja', 'ja', 'ja')), 'oranje');
+    gelijk(kleur(inv(['geheim'], 'werk', 'lokaal', 'ja', 'ja', 'ja')), 'oranje');
+  });
+  test('Bij meerdere soorten gegevens telt de zwaarste', function () {
+    var r = AO.beoordeel(inv(['publiek', 'intern', 'sleutels'], 'werk', 'zakelijk', 'ja', 'ja', 'ja'));
+    gelijk(r.kleur, 'rood'); gelijk(r.zwaarste, 'sleutels');
+    waar(!bevat(r.redenen, 'PUBLIEK'), 'groene redenen horen niet in een rood oordeel');
+  });
+  test('Onvolledige invoer geeft geen oordeel', function () {
+    gelijk(AO.beoordeel(inv([], 'werk', 'gratis')), null);
+    gelijk(AO.beoordeel(inv(['publiek'], '', 'gratis')), null);
+    gelijk(AO.beoordeel(inv(['publiek'], 'werk', '')), null);
+    gelijk(AO.beoordeel(null), null);
+  });
+  test('Elke combinatie geeft een geldige kleur met minstens één reden en één stap', function () {
+    var n = 0;
+    idsVan(AO.CATEGORIEEN).forEach(function (g) {
+      idsVan(AO.CONTEXTEN).forEach(function (c) {
+        idsVan(AO.ACCOUNTS).forEach(function (a) {
+          idsVan(AO.ANTWOORDEN).forEach(function (t) {
+            idsVan(AO.ANTWOORDEN).forEach(function (d) {
+              idsVan(AO.ANTWOORDEN).forEach(function (o) {
+                var r = AO.beoordeel(inv([g], c, a, t, d, o)); n++;
+                waar(r && AO.RANG.hasOwnProperty(r.kleur), 'geen kleur bij ' + [g, c, a, t, d, o].join('/'));
+                waar(r.redenen.length > 0 && r.stappen.length > 0, 'lege uitleg bij ' + [g, c, a, t, d, o].join('/'));
+                r.redenen.forEach(function (code) { waar(AO.REDENEN[code], 'onbekende reden ' + code); });
+                r.stappen.forEach(function (code) { waar(AO.STAPPEN[code], 'onbekende stap ' + code); });
+              });
+            });
+          });
+        });
+      });
+    });
+    gelijk(n, 7 * 2 * 5 * 27, 'aantal combinaties');
+  });
+  test('Meer zekerheid maakt het oordeel nooit slechter', function () {
+    var orde = ['nee', 'weetniet', 'ja'];
+    idsVan(AO.CATEGORIEEN).forEach(function (g) {
+      idsVan(AO.CONTEXTEN).forEach(function (c) {
+        idsVan(AO.ACCOUNTS).forEach(function (a) {
+          orde.forEach(function (t) { orde.forEach(function (d) { orde.forEach(function (o) {
+            var basis = AO.RANG[kleur(inv([g], c, a, t, d, o))];
+            [['t', t], ['d', d], ['o', o]].forEach(function (paar) {
+              var i = orde.indexOf(paar[1]);
+              if (i === orde.length - 1) return;
+              var beter = { t: t, d: d, o: o }; beter[paar[0]] = orde[i + 1];
+              var nieuw = AO.RANG[kleur(inv([g], c, a, beter.t, beter.d, beter.o))];
+              waar(nieuw <= basis, 'slechter na verbetering van ' + paar[0] + ' bij ' + [g, c, a, t, d, o].join('/'));
+            });
+          }); }); });
+        });
+      });
+    });
+  });
+  test('Alternatieven zijn altijd echte verbeteringen; anonimiseren helpt bij persoonsgegevens', function () {
+    var i = inv(['persoon'], 'werk', 'gratis', 'ja', 'nee', 'nee');
+    var alts = AO.alternatieven(i);
+    waar(bevat(idsVan(alts), 'anoniem'), 'anoniem ontbreekt');
+    alts.forEach(function (a) { waar(AO.RANG[a.kleur] < AO.RANG[kleur(i)], 'alternatief is geen verbetering'); });
+    gelijk(AO.alternatieven(inv(['publiek'], 'werk', 'gratis')).length, 0, 'groen heeft geen alternatieven');
+    gelijk(AO.alternatieven(inv(['sleutels'], 'werk', 'gratis')).length, 0, 'sleutels hebben geen uitweg');
+  });
+  test('Zichtbare eigenschappen volgen context en account', function () {
+    gelijk(AO.zichtbareEigenschappen(inv(['persoon'], 'werk', 'gratis')).join(''), 'tdo');
+    gelijk(AO.zichtbareEigenschappen(inv(['persoon'], 'prive', 'gratis')).join(''), 't');
+    gelijk(AO.zichtbareEigenschappen(inv(['geheim'], 'prive', 'gratis')).join(''), 'tdo');
+    gelijk(AO.zichtbareEigenschappen(inv(['persoon'], 'werk', 'lokaal')).join(''), 'o');
+    gelijk(AO.zichtbareEigenschappen(inv(['persoon'], 'prive', 'lokaal')).length, 0);
+  });
+  test('Koppeling: anonimiseren levert extra minuten uit de config', function () {
+    var k = AO.koppeling(inv(['persoon'], 'werk', 'gratis', 'ja', 'nee', 'nee'), cfg);
+    gelijk(k.soort, 'anoniem'); gelijk(k.minuten, cfg.aannames.anonimiserenMinutenPerTaak);
+    gelijk(AO.koppeling(inv(['publiek'], 'werk', 'gratis'), cfg).soort, 'groen');
+    gelijk(AO.koppeling(inv(['sleutels'], 'werk', 'gratis'), cfg).soort, 'geen');
+    gelijk(AO.koppeling(inv([], '', ''), cfg).soort, 'leeg');
+  });
+
+  /* Urenrekening */
+  test('Rekening: bekend voorbeeld klopt tot op de euro', function () {
+    var u = AO.reken(rek(), 1);
+    gelijk(u.nettoPerTaak, 7); gelijk(u.minPerWeekPp, 70);
+    bijna(u.urenJaar, 70 / 60 * 40); bijna(u.baten, 2800); gelijk(u.kosten, 240); bijna(u.saldo, 2560);
+  });
+  test('Rekening: verlies wordt niet verzacht door de scenariofactor', function () {
+    var u = AO.reken(rek({ met: 15, nakijk: 10 }), 0.5);
+    gelijk(u.nettoPerTaak, -5); gelijk(u.factor, 1);
+    bijna(u.baten, -5 * 10 / 60 * 40 * 60); waar(u.saldo < -u.kosten + 1e-9, 'saldo moet onder de kosten zakken');
+  });
+  test('Rekening: break-even in minuten per week', function () {
+    bijna(AO.breakEvenMinuten(rek(), 1), 6);
+    bijna(AO.breakEvenMinuten(rek(), 0.5), 12);
+    gelijk(AO.breakEvenMinuten(rek({ uur: 0 }), 1), null, 'zonder uurkost geen break-even');
+    bijna(AO.breakEvenMinuten(rek({ lic: 0 }), 1), 0);
+  });
+  test('Rekening: wie precies de break-even wint, eindigt op nul', function () {
+    var r = rek({ opl: 3, eenm: 150, n: 4 });
+    var be = AO.breakEvenMinuten(r, 0.75);
+    var r2 = rek({ opl: 3, eenm: 150, n: 4, taken: 1, zonder: be, met: 0, nakijk: 0, voorb: 0 });
+    bijna(AO.reken(r2, 0.75).saldo, 0);
+  });
+  test('Rekening: dubbel zoveel gebruikers verdubbelt baten en licenties', function () {
+    var a = AO.reken(rek(), 0.75), b = AO.reken(rek({ n: 2 }), 0.75);
+    bijna(b.baten, 2 * a.baten); bijna(b.kostLicentie, 2 * a.kostLicentie);
+  });
+  test('Rekening: voorzichtig is nooit beter dan verwacht, verwacht nooit beter dan optimistisch', function () {
+    var sc = cfg.aannames.scenarios;
+    var v = AO.reken(rek(), zoek(sc, 'voorzichtig').factor).saldo;
+    var w = AO.reken(rek(), zoek(sc, 'verwacht').factor).saldo;
+    var o = AO.reken(rek(), zoek(sc, 'optimistisch').factor).saldo;
+    waar(v <= w && w <= o, 'volgorde van scenario\'s klopt niet');
+  });
+  test('Rekening: extra voorbereidingstijd verlaagt het saldo', function () {
+    waar(AO.reken(rek({ voorb: 3 }), 1).saldo < AO.reken(rek(), 1).saldo);
+    gelijk(AO.reken(rek({ voorb: 3 }), 1).nettoPerTaak, 4);
+  });
+  test('Besluit volgt de cijfers', function () {
+    gelijk(AO.besluit(rek(), cfg), 'ROBUUST');
+    gelijk(AO.besluit(rek({ met: 20 }), cfg), 'LANGER');
+    gelijk(AO.besluit(rek({ lic: 5000 }), cfg), 'VERLIES');
+    gelijk(AO.besluit(rek({ lic: 140 }), cfg), 'KWETSBAAR');
+  });
+  test('Invoer: komma, onzin en negatieve getallen worden opgevangen', function () {
+    gelijk(AO.parseGetal('12,5'), 12.5); gelijk(AO.parseGetal(' 1 000 '), 1000);
+    gelijk(AO.parseGetal('abc'), null); gelijk(AO.parseGetal(''), null); gelijk(AO.parseGetal(NaN), null);
+    gelijk(AO.schoon('-4', 0, 100, 7), 0); gelijk(AO.schoon('999', 0, 100, 7), 100); gelijk(AO.schoon('x', 0, 100, 7), 7);
+    var s = AO.schoneRekening({ n: 2.6, taken: -1, weken: 80 }, null);
+    gelijk(s.n, 3); gelijk(s.taken, 0); gelijk(s.weken, 52);
+  });
+
+  /* Deellink */
+  test('Deellink: coderen en decoderen geeft dezelfde staat terug', function () {
+    var s = AO.standaardStaat(cfg);
+    s.g = ['persoon', 'gevoelig']; s.c = 'werk'; s.a = 'zakelijk'; s.e = { t: 'ja', d: 'nee', o: 'weetniet' };
+    s.r.taken = 12.5; s.r.voorb = 3; s.sc = 'voorzichtig'; s.p = 'claude-team';
+    gelijk(JSON.stringify(AO.decodeerStaat(AO.codeerStaat(s), cfg)), JSON.stringify(s));
+  });
+  test('Deellink: onzin of een geknoeide link geeft null en nooit een fout', function () {
+    gelijk(AO.decodeerStaat('!!!', cfg), null);
+    gelijk(AO.decodeerStaat('', cfg), null);
+    gelijk(AO.decodeerStaat('abc', cfg), null);
+    gelijk(AO.decodeerStaat(naarB64('{"v":2}'), cfg), null);
+    gelijk(AO.decodeerStaat(null, cfg), null);
+  });
+  test('Deellink: onbekende waarden worden geweigerd en getallen begrensd', function () {
+    var code = naarB64(JSON.stringify({ v: 1, g: ['persoon', '<script>', 'persoon'], c: 'elders', a: 'gratis', e: 'jxz', r: [-5, 1e12, 'a'], sc: 'gok', p: 'bestaat-niet' }));
+    var s = AO.decodeerStaat(code, cfg);
+    gelijk(s.g.join(','), 'persoon'); gelijk(s.c, ''); gelijk(s.a, 'gratis');
+    gelijk(s.e.t, 'ja'); gelijk(s.e.d, 'weetniet'); gelijk(s.r.n, 1); gelijk(s.r.taken, 10000);
+    gelijk(s.r.zonder, cfg.aannames.standaardRekening.zonder);
+    gelijk(s.sc, cfg.aannames.standaardScenario);
+  });
+
+  /* Config */
+  test('Config: elk feit en elke prijs heeft bron, datum en status', function () {
+    var fouten = AO.valideerConfig(cfg);
+    gelijk(fouten.length, 0, fouten.join(' | '));
+  });
+  test('Config: de controle merkt een item zonder bron of met foute status op', function () {
+    var kapot = JSON.parse(JSON.stringify(cfg));
+    kapot.prijzen[0].bron = ''; kapot.feiten[0].status = 'misschien'; kapot.feiten[1].laatstGecontroleerd = 'gisteren';
+    gelijk(AO.valideerConfig(kapot).length, 3);
+  });
+  test('Config: wie controleerde en extra bronnen worden nagekeken', function () {
+    var kapot = JSON.parse(JSON.stringify(cfg));
+    kapot.prijzen[0].gecontroleerdDoor = 'de buurman'; kapot.feiten[0].meerBronnen = [{ naam: '' }];
+    gelijk(AO.valideerConfig(kapot).length, 2);
+  });
+  test('Config: dollarprijzen worden omgerekend met de wisselkoers uit de config', function () {
+    var nep = { wisselkoers: { usdNaarEur: 0.88 } };
+    gelijk(AO.naarEuro({ bedrag: 20, munt: 'USD' }, nep), 17.6);
+    gelijk(AO.naarEuro({ bedrag: 23, munt: 'EUR' }, nep), 23);
+    gelijk(AO.naarEuro({ bedrag: 5, munt: 'GBP' }, nep), null);
+  });
+  test('Config: verouderde gegevens worden herkend', function () {
+    gelijk(AO.isVerouderd('2026-11-11', 60, '2026-12-01'), false);
+    gelijk(AO.isVerouderd('2026-11-11', 60, '2027-02-01'), true);
+    gelijk(AO.isVerouderd('geen datum', 60, '2026-12-01'), true);
+    gelijk(AO.dagenTussen('2026-11-11', '2026-11-12'), 1);
+  });
+  test('Opmaak: euro, getallen en datums in het Nederlands', function () {
+    gelijk(AO.euro(1234.4), '€ 1.234'); gelijk(AO.euro(-50), '− € 50');
+    gelijk(AO.getal(14.26), '14,3'); gelijk(AO.getal(1500, 0), '1.500');
+    gelijk(AO.datumTekst('2026-11-11'), '11 november 2026');
+  });
+  test('Samenvatting als tekst bevat oordeel, saldo en voorbehoud', function () {
+    var s = AO.standaardStaat(cfg);
+    s.g = ['persoon']; s.c = 'werk'; s.a = 'gratis';
+    var tekst = AO.samenvattingTekst(s, cfg, '2026-11-11');
+    waar(tekst.indexOf('Oordeel: ORANJE') !== -1, 'oordeel ontbreekt');
+    waar(tekst.indexOf('Saldo:') !== -1, 'saldo ontbreekt');
+    waar(tekst.indexOf('geen juridisch') !== -1, 'voorbehoud ontbreekt');
+    waar(AO.samenvattingTekst(AO.standaardStaat(cfg), cfg, '2026-11-11').indexOf('Nog niet ingevuld') !== -1);
+  });
+  return uit;
+};
+
+if (typeof module !== 'undefined' && module.exports) module.exports = AO;
+if (typeof window !== 'undefined') window.AOPlakcheck = AO;
+if (typeof document === 'undefined') return;
+
+/* =====================================================================
+   INTERFACE
+   ===================================================================== */
+var cfg;
+try {
+  cfg = JSON.parse(document.getElementById('ao-config').textContent);
+} catch (fout) {
+  var kapot = document.createElement('p');
+  kapot.className = 'smal';
+  kapot.textContent = 'De configuratie van deze tool kon niet gelezen worden. Meld dit aan de redactie van AI Ontcijferd.';
+  document.getElementById('start').insertBefore(kapot, document.getElementById('start').firstChild);
+  return;
+}
+
+var staat = AO.standaardStaat(cfg);
+var vandaag = AO.vandaagIso();
+var ingesloten = false;
+try { ingesloten = window.self !== window.top; } catch (fout2) { ingesloten = true; }
+if (/[?&]embed=1\b/.test(location.search)) ingesloten = true;
+if (ingesloten) document.documentElement.className += ' ingesloten';
+
+function $(id) { return document.getElementById(id); }
+function el(tag, attrs, kinderen) {
+  var n = document.createElement(tag);
+  if (attrs) {
+    Object.keys(attrs).forEach(function (k) {
+      var v = attrs[k];
+      if (v === null || v === undefined || v === false) return;
+      if (k === 'class') n.className = v;
+      else if (k === 'text') n.textContent = v;
+      else if (v === true) n.setAttribute(k, '');
+      else n.setAttribute(k, String(v));
+    });
+  }
+  (kinderen || []).forEach(function (kind) {
+    if (kind === null || kind === undefined) return;
+    n.appendChild(typeof kind === 'string' ? document.createTextNode(kind) : kind);
+  });
+  return n;
+}
+function leeg(n) { while (n.firstChild) n.removeChild(n.firstChild); }
+function lijst(tag, teksten) {
+  return el(tag, null, teksten.map(function (t) { return el('li', { text: t }); }));
+}
+function chip(kleur) {
+  return el('span', { class: 'chip ' + kleur }, [el('span', { class: 'vorm', 'aria-hidden': 'true' }), AO.KLEUR[kleur].naam]);
+}
+function bronLink(url, tekst) {
+  if (!url) return document.createTextNode(tekst);
+  return el('a', { href: url, target: '_blank', rel: 'noopener noreferrer', text: tekst });
+}
+function basisAdres() {
+  if (cfg.meta.canonicalUrl) return cfg.meta.canonicalUrl;
+  return location.href.split('#')[0].split('?')[0];
+}
+
+/* ---- Deel 1: formulier ---- */
+function keuzeRij(soort, naam, optie) {
+  var id = naam + '-' + optie.id;
+  var invoer = el('input', { type: soort, name: naam, value: optie.id, id: id });
+  var tekst = el('span', null, [el('span', { class: 'titel', text: optie.titel })]);
+  if (optie.vb) tekst.appendChild(el('span', { class: 'vb', text: optie.vb }));
+  return el('label', { class: 'keuze', for: id }, [invoer, tekst]);
+}
+function vraag(nr, titel, hint, soort, naam, opties) {
+  var kinderen = [el('legend', null, [el('span', { class: 'nr', 'aria-hidden': 'true', text: String(nr) }), el('span', null, [el('span', { class: 'alleen-lezer', text: 'Vraag ' + nr + ': ' }), titel])])];
+  if (hint) kinderen.push(el('p', { class: 'hint', text: hint }));
+  kinderen.push(el('div', { class: 'keuzes' }, opties.map(function (o) { return keuzeRij(soort, naam, o); })));
+  return el('fieldset', { class: 'vraag', id: 'vraag-' + naam }, kinderen);
+}
+function bouwPlakcheck() {
+  var f = $('f-plak');
+  f.appendChild(vraag(1, 'Wat wil je invoeren?', 'Kruis alles aan wat in je tekst of bestand voorkomt. Het zwaarste telt.', 'checkbox', 'g', AO.CATEGORIEEN));
+  f.appendChild(vraag(2, 'Voor wie doe je dit?', '', 'radio', 'c', AO.CONTEXTEN));
+  f.appendChild(vraag(3, 'In welk account?', 'Kies het account waarin je de gegevens zou invoeren, niet het merk.', 'radio', 'a', AO.ACCOUNTS));
+  var v4 = el('fieldset', { class: 'vraag', id: 'vraag-e' }, [
+    el('legend', null, [el('span', { class: 'nr', 'aria-hidden': 'true', text: '4' }), el('span', null, [el('span', { class: 'alleen-lezer', text: 'Vraag 4: ' }), 'Wat weet je zeker over dat account?'])]),
+    el('p', { class: 'hint', text: 'Gok niet. "Weet ik niet" is een eerlijk antwoord; de tool zegt dan wat je moet uitzoeken.' })
+  ]);
+  AO.EIGENSCHAPPEN.forEach(function (eig) {
+    var drie = el('div', { class: 'drie' }, AO.ANTWOORDEN.map(function (antw) {
+      return el('label', null, [
+        el('input', { type: 'radio', name: 'e-' + eig.id, value: antw.id }),
+        el('span', { text: antw.naam })
+      ]);
+    }));
+    v4.appendChild(el('fieldset', { class: 'eigenschap', id: 'eig-' + eig.id }, [
+      el('legend', { text: eig.titel }), el('p', { class: 'sub', text: eig.sub }), drie
+    ]));
+  });
+  v4.appendChild(el('p', { class: 'hint', id: 'eig-geen', text: 'Bij een model op je eigen toestel gaat er niets naar een aanbieder. Hier valt niets na te kijken.' }));
+  f.appendChild(v4);
+  f.addEventListener('submit', function (ev) { ev.preventDefault(); });
+  f.addEventListener('change', function () { leesPlakcheck(); toonAlles(); });
+}
+function leesPlakcheck() {
+  var f = $('f-plak');
+  staat.g = [];
+  Array.prototype.forEach.call(f.querySelectorAll('input[name="g"]'), function (i) { if (i.checked) staat.g.push(i.value); });
+  var c = f.querySelector('input[name="c"]:checked'); staat.c = c ? c.value : '';
+  var a = f.querySelector('input[name="a"]:checked'); staat.a = a ? a.value : '';
+  ['t', 'd', 'o'].forEach(function (k) {
+    var gekozen = f.querySelector('input[name="e-' + k + '"]:checked');
+    staat.e[k] = gekozen ? gekozen.value : 'weetniet';
+  });
+}
+function zetPlakcheck() {
+  var f = $('f-plak');
+  Array.prototype.forEach.call(f.querySelectorAll('input'), function (i) {
+    if (i.name === 'g') i.checked = staat.g.indexOf(i.value) !== -1;
+    else if (i.name === 'c') i.checked = staat.c === i.value;
+    else if (i.name === 'a') i.checked = staat.a === i.value;
+    else if (i.name.indexOf('e-') === 0) i.checked = staat.e[i.name.slice(2)] === i.value;
+  });
+}
+function werkKeuzesBij() {
+  Array.prototype.forEach.call(document.querySelectorAll('.keuze'), function (rij) {
+    var i = rij.querySelector('input');
+    if (i.checked) rij.classList.add('gekozen'); else rij.classList.remove('gekozen');
+  });
+  var zichtbaar = AO.zichtbareEigenschappen(staat);
+  ['t', 'd', 'o'].forEach(function (k) { $('eig-' + k).hidden = zichtbaar.indexOf(k) === -1; });
+  $('eig-geen').hidden = zichtbaar.length !== 0;
+}
+
+/* ---- Deel 1: oordeel ---- */
+var laatsteLive = '';
+function toonOordeel() {
+  var doel = $('oordeel');
+  leeg(doel);
+  var res = AO.beoordeel(staat);
+  if (!res) {
+    doel.className = 'oordeel leeg';
+    var mist = [];
+    if (!staat.g.length) mist.push('1');
+    if (!staat.c) mist.push('2');
+    if (!staat.a) mist.push('3');
+    doel.appendChild(el('p', { text: 'Het antwoord verschijnt hier. Nog te beantwoorden: vraag ' + mist.join(', ').replace(/, ([^,]*)$/, ' en $1') + '.' }));
+    laatsteLive = '';
+    return;
+  }
+  doel.className = 'oordeel';
+  var k = AO.KLEUR[res.kleur];
+  doel.appendChild(el('div', { class: 'band ' + res.kleur }, [
+    el('p', { class: 'band-label' }, [el('span', { class: 'vorm', 'aria-hidden': 'true' }), k.naam]),
+    el('h3', { text: k.kop }),
+    el('p', { class: 'zwaarste', text: 'Het zwaarste in je selectie: ' + AO.zoek(AO.CATEGORIEEN, res.zwaarste).kort + '.' })
+  ]));
+  var inhoud = el('div', { class: 'oordeel-inhoud' });
+  inhoud.appendChild(el('h4', { text: 'Waarom' }));
+  inhoud.appendChild(lijst('ul', res.redenen.map(function (c) { return AO.REDENEN[c]; })));
+  inhoud.appendChild(el('h4', { text: 'Wat nu' }));
+  inhoud.appendChild(lijst('ol', res.stappen.map(function (c) { return AO.STAPPEN[c]; })));
+  var alts = AO.alternatieven(staat);
+  if (alts.length) {
+    inhoud.appendChild(el('h4', { text: 'Wat verandert het antwoord' }));
+    inhoud.appendChild(el('ul', { class: 'alt' }, alts.map(function (a) {
+      return el('li', null, [chip(a.kleur), el('span', { text: AO.ALTERNATIEVEN[a.id] + ': ' + AO.KLEUR[a.kleur].kop.toLowerCase() })]);
+    })));
+    if (alts.some(function (a) { return a.id === 'anoniem'; })) {
+      inhoud.appendChild(el('p', { class: 'klein', text: 'Anonimiseren is moeilijker dan het lijkt. In een kleine klas, een klein team of een dorp maakt een functie, een datum of een detail iemand al herkenbaar.' }));
+    }
+  }
+  inhoud.appendChild(el('p', { class: 'klein', text: 'Dit is een eerste check op basis van wat je aanklikt, geen juridisch advies. De tool kent je contract en je organisatie niet. Bij twijfel beslist je DPO of ICT-verantwoordelijke.' }));
+  doel.appendChild(inhoud);
+  var live = 'Oordeel: ' + k.naam + '. ' + k.kop;
+  if (live !== laatsteLive) { $('oordeel-live').textContent = live; laatsteLive = live; }
+}
+
+/* ---- Deel 2: formulier ---- */
+var VELDTEKST = [
+  { kop: 'De taak' },
+  { k: 'taken', label: 'Taken per persoon per week', hulp: 'Bijvoorbeeld tien mails, verslagen of samenvattingen.', stap: '1' },
+  { k: 'n', label: 'Aantal mensen dat de tool gebruikt', hulp: '', stap: '1' },
+  { k: 'zonder', label: 'Minuten per taak zonder AI', hulp: '', stap: '1' },
+  { k: 'met', label: 'Minuten per taak met AI', hulp: 'De vraag formuleren, wachten en het antwoord overnemen.', stap: '1' },
+  { k: 'nakijk', label: 'Minuten nakijken en verbeteren per taak', hulp: 'Feiten controleren, toon bijsturen, fouten eruit halen. Zet dit niet op nul.', stap: '1' },
+  { k: 'voorb', label: 'Minuten voorbereiden per taak', hulp: 'Anonimiseren, gegevens weglaten, het juiste account openen.', stap: '1' },
+  { kop: 'Wat het kost' },
+  { k: 'uur', label: 'Wat een uur werk kost, in euro', hulp: 'De loonkost voor de werkgever, of je eigen uurtarief. De startwaarde is de gemiddelde Belgische loonkost (zie bronnen).', stap: '1' },
+  { k: 'weken', label: 'Werkweken per jaar', hulp: 'Zonder vakantie en feestdagen.', stap: '1' },
+  { prijs: true },
+  { k: 'lic', label: 'Licentie per persoon per maand, in euro', hulp: '', stap: '0.01' },
+  { k: 'opl', label: 'Uren opleiding en inwerken per persoon', hulp: 'Eenmalig, in het eerste jaar.', stap: '0.5' },
+  { k: 'eenm', label: 'Andere eenmalige kosten, in euro', hulp: 'Installatie, advies, een overeenkomst laten nakijken.', stap: '1' }
+];
+function bouwRekening() {
+  var f = $('f-reken');
+  var velden = el('div', { class: 'velden' });
+  VELDTEKST.forEach(function (v) {
+    if (v.kop) { velden.appendChild(el('h3', { class: 'groepkop', text: v.kop })); return; }
+    if (v.prijs) {
+      var sel = el('select', { id: 'r-prijs', 'aria-describedby': 'r-prijs-hulp' });
+      sel.appendChild(el('option', { value: '', text: 'Eigen bedrag' }));
+      sel.appendChild(el('option', { value: 'gratis', text: 'Gratis account: 0 euro' }));
+      [['particulier', 'Abonnementen voor particulieren'], ['zakelijk', 'Zakelijke abonnementen']].forEach(function (groep) {
+        var og = el('optgroup', { label: groep[1] });
+        cfg.prijzen.filter(function (p) { return p.soort === groep[0]; }).forEach(function (p) {
+          var tekst = p.naam + ': ' + AO.getal(AO.naarEuro(p, cfg), 2) + ' euro' + (p.status === 'TE CONTROLEREN' || p.munt !== 'EUR' ? ' (richtprijs)' : '');
+          og.appendChild(el('option', { value: p.id, text: tekst }));
+        });
+        sel.appendChild(og);
+      });
+      velden.appendChild(el('div', { class: 'veld vol' }, [
+        el('label', { for: 'r-prijs', text: 'Kies een richtprijs, of vul hieronder je eigen bedrag in' }),
+        sel,
+        el('p', { class: 'hulp', id: 'r-prijs-hulp' })
+      ]));
+      return;
+    }
+    var grens = AO.VELDEN[v.k];
+    var invoer = el('input', { type: 'number', inputmode: 'decimal', id: 'r-' + v.k, name: v.k, min: grens.min, max: grens.max, step: v.stap, 'aria-describedby': v.hulp ? 'r-' + v.k + '-hulp' : null });
+    var kinderen = [el('label', { for: 'r-' + v.k, text: v.label }), invoer];
+    if (v.hulp) kinderen.push(el('p', { class: 'hulp', id: 'r-' + v.k + '-hulp', text: v.hulp }));
+    velden.appendChild(el('div', { class: 'veld' }, kinderen));
+  });
+  f.appendChild(velden);
+  var scen = el('fieldset', { class: 'scenario' }, [
+    el('legend', { text: 'Hoeveel van de gewonnen tijd wordt nuttig werk?' }),
+    el('div', { class: 'keuzes' }, cfg.aannames.scenarios.map(function (s) {
+      return keuzeRij('radio', 'sc', { id: s.id, titel: s.naam, vb: s.uitleg });
+    }))
+  ]);
+  f.appendChild(scen);
+  f.addEventListener('submit', function (ev) { ev.preventDefault(); });
+  f.addEventListener('input', function (ev) {
+    var t = ev.target;
+    if (t.name && AO.VELDEN[t.name]) {
+      var grens = AO.VELDEN[t.name];
+      var n = AO.schoon(t.value, grens.min, grens.max, grens.min);
+      staat.r[t.name] = grens.geheel ? Math.round(n) : n;
+      if (t.name === 'lic') { staat.p = ''; $('r-prijs').value = ''; }
+      toonRekening(); toonKoppeling(); toonFiche(); werkPrijsHulpBij();
+    }
+  });
+  f.addEventListener('change', function (ev) {
+    var t = ev.target;
+    if (t.id === 'r-prijs') {
+      staat.p = t.value;
+      if (t.value === 'gratis') staat.r.lic = 0;
+      else if (t.value) staat.r.lic = AO.naarEuro(AO.zoek(cfg.prijzen, t.value), cfg);
+      $('r-lic').value = staat.r.lic;
+    } else if (t.name === 'sc') {
+      staat.sc = t.value;
+    } else if (t.name && AO.VELDEN[t.name]) {
+      t.value = staat.r[t.name];
+    }
+    toonAlles();
+  });
+}
+function zetRekening() {
+  Object.keys(AO.VELDEN).forEach(function (k) { $('r-' + k).value = staat.r[k]; });
+  $('r-prijs').value = staat.p;
+  Array.prototype.forEach.call(document.querySelectorAll('input[name="sc"]'), function (i) { i.checked = i.value === staat.sc; });
+}
+function werkPrijsHulpBij() {
+  var doel = $('r-prijs-hulp');
+  leeg(doel);
+  var p = AO.zoek(cfg.prijzen, staat.p);
+  if (!p) {
+    doel.textContent = staat.p === 'gratis' ? 'Gratis is zelden gratis: kijk in de Plakcheck wat het account met je invoer doet.' : 'Prijzen veranderen vaak. De lijst met bronnen en datums staat onderaan.';
+    return;
+  }
+  var stukken = [p.btw.charAt(0).toUpperCase() + p.btw.slice(1) + '. ' + p.opmerking + ' '];
+  if (p.munt === 'USD') stukken.push('Omgerekend uit ' + AO.getal(p.bedrag, 2) + ' dollar tegen een richtkoers. ');
+  doel.appendChild(document.createTextNode(stukken.join('')));
+  doel.appendChild(document.createTextNode('Bron: '));
+  doel.appendChild(bronLink(p.bronUrl, p.bron));
+  doel.appendChild(document.createTextNode(', laatst gecontroleerd op ' + AO.datumTekst(p.laatstGecontroleerd) + doorTekst(p) + '. '));
+  doel.appendChild(statusBadge(p, 'prijzen'));
+}
+
+/* ---- Deel 2: koppeling met de Plakcheck ---- */
+function toonKoppeling() {
+  var doel = $('koppel');
+  leeg(doel);
+  var k = AO.koppeling(staat, cfg);
+  var tekst = {
+    leeg: 'Vul eerst de Plakcheck in, dan weet je wat veilig werken hier vraagt. Of reken meteen met je eigen cijfers.',
+    groen: 'De Plakcheck geeft groen. Reken met het account dat je nu gebruikt.',
+    beheerd: 'Veilig werken betekent hier: een account dat je organisatie beheert. Reken met een zakelijke prijs, niet met je eigen abonnement.',
+    traininguit: 'Veilig werken betekent hier: training uitzetten. Dat kost niets extra, dus reken met het account dat je nu gebruikt.',
+    lokaal: 'Veilig werken kan hier alleen met een lokaal model. Reken dan met nul euro licentie, en zet de kost van het toestel en het beheer bij de eenmalige kosten.',
+    geen: 'Voor deze gegevens bestaat geen veilige werkwijze met een chatbot. Reken met een taak waarin ze niet voorkomen.'
+  };
+  if (k.soort === 'anoniem') {
+    doel.appendChild(el('p', { text: 'Veilig werken betekent hier: eerst anonimiseren. Dat kost tijd bij elke taak, en die tijd hoort in de rekening.' }));
+    if (staat.r.voorb < k.minuten) {
+      var knop = el('button', { type: 'button', class: 'knop licht', text: 'Tel ' + k.minuten + ' minuten voorbereiden per taak mee' });
+      knop.addEventListener('click', function () {
+        staat.r.voorb = k.minuten; $('r-voorb').value = k.minuten; toonAlles(); $('r-voorb').focus();
+      });
+      doel.appendChild(el('p', null, [knop]));
+    } else {
+      doel.appendChild(el('p', { class: 'klein', text: 'Je rekent nu met ' + AO.getal(staat.r.voorb) + ' minuten voorbereiden per taak.' }));
+    }
+    return;
+  }
+  doel.appendChild(el('p', { text: tekst[k.soort] }));
+}
+
+/* ---- Deel 2: uitkomst ---- */
+function balkRij(naam, segmenten, totaal, max) {
+  var beschrijving = naam + ': ' + AO.getal(totaal) + ' minuten';
+  var balk = el('div', { class: 'balk', role: 'img', 'aria-label': beschrijving });
+  segmenten.forEach(function (s) {
+    if (s.min > 0) balk.appendChild(el('span', { class: s.klasse, style: 'width:' + (max > 0 ? (s.min / max * 100).toFixed(2) : 0) + '%' }));
+  });
+  return el('div', { class: 'balkrij' }, [el('span', { text: naam }), balk, el('span', { text: AO.getal(totaal) + ' min' })]);
+}
+function rij(naam, detail, bedrag) {
+  var th = el('th', { scope: 'row' }, [naam]);
+  if (detail) th.appendChild(el('small', { text: detail }));
+  return el('tr', null, [th, el('td', { text: bedrag })]);
+}
+function toonRekening() {
+  var doel = $('reken-uit');
+  leeg(doel);
+  var sc = AO.zoek(cfg.aannames.scenarios, staat.sc);
+  var u = AO.reken(staat.r, sc.factor);
+  var r = u.invoer;
+  var ticket = el('div', { class: 'ticket' });
+  ticket.appendChild(el('h3', { text: 'De rekening na één jaar' }));
+  ticket.appendChild(el('p', { class: 'onder', text: 'Scenario ' + sc.naam.toLowerCase() + ': ' + sc.uitleg.charAt(0).toLowerCase() + sc.uitleg.slice(1) }));
+
+  var max = Math.max(r.zonder, u.metTotaal);
+  var balken = el('div', { class: 'balken' }, [
+    balkRij('Zonder AI', [{ klasse: 'seg-zonder', min: r.zonder }], r.zonder, max),
+    balkRij('Met AI', [{ klasse: 'seg-ai', min: r.met }, { klasse: 'seg-nakijk', min: r.nakijk }, { klasse: 'seg-voorb', min: r.voorb }], u.metTotaal, max),
+    el('ul', { class: 'legenda' }, [
+      el('li', null, [el('i', { class: 'seg-ai', 'aria-hidden': 'true' }), 'werken: ' + AO.getal(r.met) + ' min']),
+      el('li', null, [el('i', { class: 'seg-nakijk', 'aria-hidden': 'true' }), 'nakijken: ' + AO.getal(r.nakijk) + ' min']),
+      el('li', null, [el('i', { class: 'seg-voorb', 'aria-hidden': 'true' }), 'voorbereiden: ' + AO.getal(r.voorb) + ' min'])
+    ])
+  ]);
+  ticket.appendChild(balken);
+  var perTaak = u.nettoPerTaak > 0 ? 'Per taak win je ' + AO.getal(u.nettoPerTaak) + ' minuten.'
+    : (u.nettoPerTaak < 0 ? 'Per taak verlies je ' + AO.getal(-u.nettoPerTaak) + ' minuten.' : 'Per taak win je niets.');
+  ticket.appendChild(el('p', { text: perTaak }));
+
+  var tabel = el('table', { class: 'rekening' });
+  tabel.appendChild(el('caption', { class: 'alleen-lezer', text: 'Baten en kosten in het eerste jaar' }));
+  var teken = u.baten >= 0 ? '+ ' : '';
+  var tijdNaam = u.urenJaar >= 0 ? 'Gewonnen tijd' : 'Verloren tijd';
+  var tbody = el('tbody', null, [
+    rij(tijdNaam, AO.getal(Math.abs(u.urenJaar)) + ' uur per jaar, aan ' + AO.euro(r.uur) + ' per uur', teken + AO.euro(u.baten)),
+    rij('Licenties', r.n + ' ' + (r.n === 1 ? 'persoon' : 'personen') + ', 12 maanden aan ' + AO.getal(r.lic, 2) + ' euro', AO.euro(-u.kostLicentie)),
+    rij('Opleiding en inwerken', AO.getal(r.opl) + ' uur per persoon', AO.euro(-u.kostOpleiding)),
+    rij('Andere eenmalige kosten', '', AO.euro(-u.kostEenmalig))
+  ]);
+  tabel.appendChild(tbody);
+  tabel.appendChild(el('tfoot', null, [el('tr', null, [
+    el('th', { scope: 'row', text: 'Saldo' }),
+    el('td', null, [el('span', { class: 'gemarkeerd', text: AO.euro(u.saldo) })])
+  ])]));
+  ticket.appendChild(tabel);
+
+  ticket.appendChild(el('p', { class: 'besluit' }, [el('strong', { text: AO.BESLUITEN[AO.besluit(staat.r, cfg)] })]));
+
+  var be = AO.breakEvenMinuten(staat.r, sc.factor);
+  if (be === null) {
+    ticket.appendChild(el('p', { text: 'Zonder uurkost of werkweken valt niet te berekenen wanneer je uit de kosten bent.' }));
+  } else {
+    ticket.appendChild(el('p', null, [
+      'Om uit de kosten te komen moet elke gebruiker minstens ',
+      el('strong', { text: AO.getal(be) + ' minuten per week' }),
+      ' winnen. Met jouw cijfers is dat ',
+      el('strong', { text: AO.getal(u.minPerWeekPp) + ' minuten' }), '.'
+    ]));
+  }
+
+  var scenTabel = el('table', { class: 'scen-tabel' }, [
+    el('caption', { class: 'alleen-lezer', text: 'Saldo per scenario' }),
+    el('thead', null, [el('tr', null, [
+      el('th', { scope: 'col', text: 'Scenario' }), el('th', { scope: 'col', text: 'Uren per jaar' }), el('th', { scope: 'col', text: 'Saldo jaar 1' })
+    ])]),
+    el('tbody', null, cfg.aannames.scenarios.map(function (s) {
+      var x = AO.reken(staat.r, s.factor);
+      return el('tr', { class: s.id === staat.sc ? 'actief' : null }, [
+        el('td', { text: s.naam }), el('td', { text: AO.getal(x.urenJaar) }), el('td', { text: AO.euro(x.saldo) })
+      ]);
+    }))
+  ]);
+  ticket.appendChild(scenTabel);
+  ticket.appendChild(el('p', { class: 'klein', style: 'margin:1rem 0 0', text: 'Tijd is pas geld als je er iets anders mee doet. Deze rekening telt geen betere of slechtere kwaliteit mee, geen fouten die er toch door glippen en geen energieverbruik. Het is een schatting met jouw cijfers, geen financieel advies.' }));
+  doel.appendChild(ticket);
+}
+
+/* ---- Samenvatting ---- */
+function toonFiche() {
+  var doel = $('fiche');
+  leeg(doel);
+  doel.appendChild(el('p', { class: 'datum', text: 'Opgemaakt op ' + AO.datumTekst(vandaag) + ' met de Plakcheck en Urenrekening van AI Ontcijferd. Stand van prijzen en regels: ' + AO.datumTekst(cfg.meta.configBijgewerktOp) + '.' }));
+  doel.appendChild(el('h3', { text: 'Plakcheck' }));
+  var res = AO.beoordeel(staat);
+  if (!res) {
+    doel.appendChild(el('p', { text: 'Nog niet ingevuld.' }));
+  } else {
+    var dl = el('dl');
+    function paar(dt, dd) { dl.appendChild(el('dt', { text: dt })); dl.appendChild(typeof dd === 'string' ? el('dd', { text: dd }) : el('dd', null, [dd])); }
+    paar('Gegevens', staat.g.map(function (id) { return AO.zoek(AO.CATEGORIEEN, id).kort; }).join('; '));
+    paar('Context', AO.zoek(AO.CONTEXTEN, staat.c).kort);
+    paar('Account', AO.zoek(AO.ACCOUNTS, staat.a).kort);
+    AO.zichtbareEigenschappen(staat).forEach(function (k) {
+      paar(AO.zoek(AO.EIGENSCHAPPEN, k).kort, AO.zoek(AO.ANTWOORDEN, staat.e[k]).naam.toLowerCase());
+    });
+    paar('Oordeel', el('span', null, [chip(res.kleur), ' ' + AO.KLEUR[res.kleur].kop]));
+    doel.appendChild(dl);
+    doel.appendChild(el('p', null, [el('strong', { text: 'Waarom' })]));
+    doel.appendChild(lijst('ul', res.redenen.map(function (c) { return AO.REDENEN[c]; })));
+    doel.appendChild(el('p', null, [el('strong', { text: 'Wat nu' })]));
+    doel.appendChild(lijst('ol', res.stappen.map(function (c) { return AO.STAPPEN[c]; })));
+  }
+  var sc = AO.zoek(cfg.aannames.scenarios, staat.sc);
+  var u = AO.reken(staat.r, sc.factor), r = u.invoer;
+  doel.appendChild(el('h3', { text: 'Urenrekening, jaar 1' }));
+  var dl2 = el('dl');
+  function paar2(dt, dd) { dl2.appendChild(el('dt', { text: dt })); dl2.appendChild(el('dd', { text: dd })); }
+  paar2('Taak', r.taken + ' per persoon per week, ' + r.n + ' ' + (r.n === 1 ? 'persoon' : 'personen') + ', ' + AO.getal(r.weken) + ' werkweken');
+  paar2('Zonder AI', AO.getal(r.zonder) + ' minuten per taak');
+  paar2('Met AI', AO.getal(u.metTotaal) + ' minuten per taak (' + AO.getal(r.met) + ' werken, ' + AO.getal(r.nakijk) + ' nakijken, ' + AO.getal(r.voorb) + ' voorbereiden)');
+  paar2('Scenario', sc.naam + ': ' + sc.uitleg);
+  paar2(u.urenJaar >= 0 ? 'Gewonnen tijd' : 'Verloren tijd', AO.getal(Math.abs(u.urenJaar)) + ' uur, of ' + AO.euro(u.baten) + ' aan ' + AO.euro(r.uur) + ' per uur');
+  paar2('Kosten', AO.euro(u.kosten) + ' (licenties ' + AO.euro(u.kostLicentie) + ', opleiding ' + AO.euro(u.kostOpleiding) + ', eenmalig ' + AO.euro(u.kostEenmalig) + ')');
+  paar2('Saldo', AO.euro(u.saldo));
+  var be = AO.breakEvenMinuten(staat.r, sc.factor);
+  if (be !== null) paar2('Nodig om uit de kosten te komen', AO.getal(be) + ' minuten winst per persoon per week (ingevuld: ' + AO.getal(u.minPerWeekPp) + ')');
+  doel.appendChild(dl2);
+  doel.appendChild(el('p', null, [el('strong', { text: AO.BESLUITEN[AO.besluit(staat.r, cfg)] })]));
+  doel.appendChild(el('p', { class: 'klein', style: 'margin:0', text: 'Dit is een eerste check met de keuzes en cijfers van de invuller. Het is geen juridisch of financieel advies.' }));
+}
+
+/* ---- Bronnen ---- */
+function statusBadge(item, groep) {
+  var doos = el('span');
+  if (item.status === 'gecontroleerd') doos.appendChild(el('span', { class: 'badge ok', text: 'gecontroleerd' }));
+  else doos.appendChild(el('span', { class: 'badge na', text: 'TE CONTROLEREN' }));
+  var dagen = cfg.meta.houdbaarheidDagen[groep];
+  if (AO.isVerouderd(item.laatstGecontroleerd, dagen, vandaag)) {
+    doos.appendChild(document.createTextNode(' '));
+    doos.appendChild(el('span', { class: 'badge oud', text: 'ouder dan ' + dagen + ' dagen' }));
+  }
+  return doos;
+}
+function doorTekst(item) {
+  if (item.status !== 'gecontroleerd') return '';
+  if (item.gecontroleerdDoor === 'eindredacteur') return ' door de eindredacteur';
+  if (item.gecontroleerdDoor === 'model') return ' door het AI-model';
+  return '';
+}
+function bronItem(titel, tekst, item, groep) {
+  var meta = el('span', { class: 'meta' }, [(item.meerBronnen && item.meerBronnen.length ? 'Bronnen: ' : 'Bron: '), bronLink(item.bronUrl, item.bron)]);
+  (item.meerBronnen || []).forEach(function (b) {
+    meta.appendChild(document.createTextNode('; '));
+    meta.appendChild(bronLink(b.url, b.naam));
+  });
+  meta.appendChild(document.createTextNode('. Laatst gecontroleerd op ' + AO.datumTekst(item.laatstGecontroleerd) + doorTekst(item) + '. '));
+  meta.appendChild(statusBadge(item, groep));
+  return el('li', null, [el('span', { class: 'wat', text: titel }), el('span', { text: tekst }), meta]);
+}
+function toonBronnen() {
+  var tel = AO.telStatus(cfg);
+  $('bron-intro').textContent = 'Alles wat kan veranderen, staat hier met bron en datum, en met wie het nakeek: het AI-model of de eindredacteur. ' + (tel.teControleren === 0 ? 'Alle ' + tel.totaal + ' gegevens zijn nagekeken.' : tel.teControleren + ' van de ' + tel.totaal + ' gegevens ' + (tel.teControleren === 1 ? 'is' : 'zijn') + ' nog niet nagekeken. Die zijn gemarkeerd, en het oordeel van de Plakcheck hangt er niet van af.');
+  var doel = $('bron-inhoud');
+  leeg(doel);
+
+  var d1 = el('details', null, [el('summary', { text: 'Waar je nakijkt wat een aanbieder met je invoer doet' })]);
+  d1.appendChild(el('ul', { class: 'bronlijst' }, cfg.aanbieders.map(function (a) { return bronItem(a.naam, a.bewering, a, 'aanbieders'); })));
+  doel.appendChild(d1);
+
+  var d2 = el('details', null, [el('summary', { text: 'Richtprijzen van abonnementen' })]);
+  var prijsItems = cfg.prijzen.map(function (p) {
+    var bedrag = AO.getal(p.bedrag, 2) + (p.munt === 'USD' ? ' dollar' : ' euro') + ' per gebruiker per maand, ' + p.btw + '. ';
+    return bronItem(p.naam, bedrag + p.opmerking, p, 'prijzen');
+  });
+  prijsItems.push(bronItem('Wisselkoers dollar naar euro', 'De tool rekent met ' + AO.getal(cfg.wisselkoers.usdNaarEur, 2) + ' euro per dollar. Dollarprijzen zijn daardoor altijd richtprijzen.', cfg.wisselkoers, 'prijzen'));
+  d2.appendChild(el('ul', { class: 'bronlijst' }, prijsItems));
+  doel.appendChild(d2);
+
+  var d3 = el('details', null, [el('summary', { text: 'Regels en cijfers waarop de tool steunt' })]);
+  d3.appendChild(el('ul', { class: 'bronlijst' }, cfg.feiten.map(function (f) { return bronItem(f.onderwerp, f.bewering, f, 'feiten'); })));
+  doel.appendChild(d3);
+
+  var d4 = el('details', null, [el('summary', { text: 'En de AI Act?' })]);
+  d4.appendChild(el('p', { text: 'Voor gewoon chatbotgebruik weegt vooral de privacywet, de AVG. De AI Act komt erbij als je AI inzet om over mensen te beslissen, bijvoorbeeld bij sollicitanten, leerlingen of steunaanvragen. Daarvoor bestaan betere hulpmiddelen dan dit:' }));
+  d4.appendChild(el('ul', null, cfg.verder.map(function (v) { return el('li', null, [bronLink(v.url, v.naam)]); })));
+  doel.appendChild(d4);
+}
+
+/* ---- Transparantie, insluiten, voet ---- */
+function toonTransparantie() {
+  var doel = $('trans-inhoud');
+  leeg(doel);
+  var red = cfg.redactie;
+  doel.appendChild(el('p', null, ['Deze tool is van ', bronLink(red.site, red.uitgever), ', een Vlaamse site die AI-ontwikkelingen analyseert. Eindredacteur: ' + red.eindredacteur + '.']));
+  doel.appendChild(el('p', { text: 'De tool is ontworpen en geprogrammeerd door een AI-model, ' + red.gebouwdMet + ', in opdracht van de eindredacteur, op ' + AO.datumTekst(red.gebouwdOp) + '. Het model zocht ook de bronnen op en schreef de teksten.' }));
+  doel.appendChild(el('p', null, [el('strong', { text: red.nagekekenDoorEindredacteurOp ? 'De eindredacteur heeft deze versie nagekeken op ' + AO.datumTekst(red.nagekekenDoorEindredacteurOp) + '.' : 'De eindredacteur heeft deze versie nog niet nagekeken.' })]));
+  doel.appendChild(el('p', { text: 'Een belang om te kennen: Anthropic, de maker van het model, verkoopt zelf abonnementen die in de prijslijst staan. Het oordeel van de Plakcheck hangt daarom nooit af van een merk, alleen van eigenschappen die je zelf kunt nakijken.' }));
+  doel.appendChild(el('h3', { text: 'Wat deze tool niet is' }));
+  doel.appendChild(lijst('ul', [
+    'Geen juridisch advies. De tool kent je contract, je sector en je organisatie niet.',
+    'Geen scanner. De tool leest je tekst niet en kan dus niet zien wat er werkelijk in staat.',
+    'Geen veiligheidsaudit en geen effectbeoordeling (DPIA).',
+    'Geen financieel advies. De rekening is zo goed als de cijfers die je invult.',
+    'Geen garantie dat prijzen en voorwaarden nog kloppen. Daarom staat bij elk gegeven een datum.'
+  ]));
+  doel.appendChild(el('h3', { text: 'Hoe het technisch zit' }));
+  doel.appendChild(lijst('ul', [
+    'Alles draait in je browser. Er zijn geen cookies, geen opslag, geen statistieken en geen externe bestanden of lettertypes.',
+    'De pagina heeft een beveiligingsinstelling (Content Security Policy) die elke verbinding naar buiten blokkeert.',
+    'Een deellink bevat je keuzes in het stuk na het hekje. Dat stuk stuurt een browser niet mee naar de server.',
+    'Staat de tool in een kader op een andere site, dan geeft hij alleen zijn hoogte door aan die pagina.'
+  ]));
+  doel.appendChild(el('p', { class: 'klein', style: 'margin:0', text: 'Versie ' + cfg.meta.versie + '. Gegevens bijgewerkt op ' + AO.datumTekst(cfg.meta.configBijgewerktOp) + '. Fout gezien? Meld het via ' + red.site.replace(/^https?:\/\//, '').replace(/\/$/, '') + '.' }));
+}
+function toonInsluiten() {
+  var adres = (cfg.meta.insluitUrl || basisAdres()) + '?embed=1';
+  $('insluit-code').textContent = '<iframe src="' + adres + '" title="Plakcheck en Urenrekening van AI Ontcijferd" style="width:100%;border:0" height="2400" loading="lazy"></iframe>';
+  $('insluit-script').textContent = '<script>\nwindow.addEventListener("message", function (e) {\n  if (!e.data || e.data.type !== "ao-plakcheck-hoogte") return;\n  var kaders = document.querySelectorAll("iframe");\n  for (var i = 0; i < kaders.length; i++) {\n    if (kaders[i].contentWindow === e.source) kaders[i].height = e.data.hoogte;\n  }\n});\n<\/script>';
+}
+function toonVasteTekst() {
+  $('stand').textContent = 'Prijzen en regels bijgewerkt op ' + AO.datumTekst(cfg.meta.configBijgewerktOp) + '. Geen juridisch advies.';
+  var voet = $('voet-tekst');
+  leeg(voet);
+  voet.appendChild(document.createTextNode('Plakcheck en Urenrekening, een gratis tool van '));
+  voet.appendChild(bronLink(cfg.redactie.site, cfg.redactie.uitgever));
+  voet.appendChild(document.createTextNode('. Versie ' + cfg.meta.versie + '.'));
+}
+
+/* ---- Delen ---- */
+function toonUitvoer(labelTekst, waarde, meerRegels) {
+  var doel = $('uitvoer');
+  leeg(doel);
+  var veld = meerRegels ? el('textarea', { id: 'uitvoer-veld', readonly: true, rows: '10' }) : el('input', { id: 'uitvoer-veld', type: 'text', readonly: true });
+  veld.value = waarde;
+  doel.appendChild(el('label', { for: 'uitvoer-veld', text: labelTekst }));
+  doel.appendChild(veld);
+  doel.hidden = false;
+  veld.focus();
+  veld.select();
+}
+function kopieer(tekst, labelTekst, meerRegels) {
+  toonUitvoer(labelTekst, tekst, meerRegels);
+  var gelukt = function () { $('kopie-live').textContent = 'Gekopieerd naar het klembord.'; $('uitvoer').querySelector('label').textContent = labelTekst + ' (gekopieerd)'; };
+  var mislukt = function () { $('kopie-live').textContent = 'Kopiëren lukte niet automatisch. De tekst staat geselecteerd in het veld.'; };
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(tekst).then(gelukt, mislukt);
+    else mislukt();
+  } catch (fout) { mislukt(); }
+}
+function bouwDelen() {
+  $('k-print').addEventListener('click', function () { window.print(); });
+  $('k-link').addEventListener('click', function () {
+    kopieer(basisAdres() + '#p=' + AO.codeerStaat(staat), 'Link met je instellingen', false);
+  });
+  $('k-tekst').addEventListener('click', function () {
+    kopieer(AO.samenvattingTekst(staat, cfg, vandaag), 'Samenvatting als tekst', true);
+  });
+}
+
+/* ---- Testpaneel ---- */
+function toonTests() {
+  var doel = $('test-uit');
+  leeg(doel);
+  var resultaten = AO.voerTestsUit(cfg);
+  var goed = resultaten.filter(function (r) { return r.geslaagd; }).length;
+  doel.appendChild(el('p', { id: 'test-samenvatting' }, [el('strong', { text: goed + ' van ' + resultaten.length + ' tests geslaagd.' })]));
+  doel.appendChild(el('ul', { class: 'testlijst' }, resultaten.map(function (r) {
+    return el('li', null, [
+      el('span', { class: r.geslaagd ? 'ok' : 'fout', text: r.geslaagd ? 'Geslaagd' : 'MISLUKT' }),
+      ' ' + r.naam + (r.melding ? ' (' + r.melding + ')' : '')
+    ]);
+  })));
+  var fouten = AO.valideerConfig(cfg);
+  var tel = AO.telStatus(cfg);
+  doel.appendChild(el('h3', { text: 'Configuratie' }));
+  doel.appendChild(el('p', { text: fouten.length ? 'Problemen in de configuratie: ' + fouten.join(' ') : 'De configuratie is volledig: elk item heeft bron, datum en status.' }));
+  doel.appendChild(el('p', { text: tel.teControleren + ' van de ' + tel.totaal + ' items staan op TE CONTROLEREN.' }));
+  var oud = AO.alleItems(cfg).filter(function (x) { return AO.isVerouderd(x.item.laatstGecontroleerd, cfg.meta.houdbaarheidDagen[x.groep], vandaag); });
+  doel.appendChild(el('p', { text: oud.length ? 'Verouderd: ' + oud.map(function (x) { return x.item.id; }).join(', ') + '.' : 'Geen enkel item is ouder dan zijn houdbaarheid.' }));
+}
+var focusVoorTest = null;
+function wisselTestpaneel(open) {
+  var paneel = $('testpaneel');
+  var moetOpen = typeof open === 'boolean' ? open : paneel.hidden;
+  if (moetOpen) {
+    focusVoorTest = document.activeElement;
+    paneel.hidden = false;
+    toonTests();
+    $('h-test').focus();
+  } else {
+    paneel.hidden = true;
+    if (focusVoorTest && focusVoorTest.focus) focusVoorTest.focus();
+  }
+}
+function bouwTestpaneel() {
+  document.addEventListener('keydown', function (ev) {
+    var toets = (ev.key || '').toLowerCase();
+    if (toets === 't' && ev.shiftKey && (ev.ctrlKey || ev.metaKey || ev.altKey)) { ev.preventDefault(); wisselTestpaneel(); return; }
+    if (toets === 'escape' && !$('testpaneel').hidden) wisselTestpaneel(false);
+  });
+  $('k-test-sluit').addEventListener('click', function () { wisselTestpaneel(false); });
+  $('k-test-opnieuw').addEventListener('click', toonTests);
+}
+
+/* ---- Alles samen ---- */
+function toonAlles() {
+  werkKeuzesBij();
+  toonOordeel();
+  toonKoppeling();
+  toonRekening();
+  werkPrijsHulpBij();
+  toonFiche();
+}
+function leesHash() {
+  var m = /[#&]p=([A-Za-z0-9_-]+)/.exec(location.hash);
+  if (!m) return false;
+  var gelezen = AO.decodeerStaat(m[1], cfg);
+  if (!gelezen) return false;
+  staat = gelezen;
+  return true;
+}
+function meldHoogte() {
+  if (!ingesloten || !window.parent || window.parent === window) return;
+  try { window.parent.postMessage({ type: 'ao-plakcheck-hoogte', hoogte: document.documentElement.scrollHeight }, '*'); } catch (fout) { /* geen ouder om aan te melden */ }
+}
+
+bouwPlakcheck();
+bouwRekening();
+bouwDelen();
+bouwTestpaneel();
+leesHash();
+zetPlakcheck();
+zetRekening();
+toonVasteTekst();
+toonBronnen();
+toonTransparantie();
+toonInsluiten();
+toonAlles();
+
+window.addEventListener('hashchange', function () {
+  if (/(^#|&)test\b/.test(location.hash)) { wisselTestpaneel(true); return; }
+  if (leesHash()) { zetPlakcheck(); zetRekening(); toonAlles(); }
+});
+if (/(^#|&)test\b/.test(location.hash) || /[?&]test=1\b/.test(location.search)) wisselTestpaneel(true);
+if (ingesloten) {
+  meldHoogte();
+  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(meldHoogte).observe(document.body);
+  else window.addEventListener('resize', meldHoogte);
+}
+})();
+</script>
+</body>
+</html>

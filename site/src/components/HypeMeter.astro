@@ -1,0 +1,23 @@
+---
+import { HYPE_STANDEN, type Hype } from "../lib/edities";
+
+interface Props {
+  hype: Hype;
+  compact?: boolean;
+}
+const { hype, compact = false } = Astro.props;
+---
+
+<figure class="hype" aria-label={`Hype-meter: ${hype.stand}`}>
+  {!compact && <div><span class="hype-stand">{hype.stand}</span></div>}
+  <div class="hype-schaal" aria-hidden="true">
+    {HYPE_STANDEN.map((_, i) => <span data-actief={i === hype.index ? "" : undefined} />)}
+  </div>
+  {!compact && (
+    <div class="hype-uiteinden" aria-hidden="true">
+      <span>overroepen</span>
+      <span>onderschat</span>
+    </div>
+  )}
+  {!compact && hype.uitleg && <p class="hype-uitleg">{hype.uitleg}</p>}
+</figure>

@@ -1,0 +1,87 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import HypeMeter from "../../components/HypeMeter.astro";
+import { DOELGROEPEN, onderwerpenVoor, type Doelgroep } from "../../lib/doelgroepen";
+import { aantal } from "../../lib/tekst";
+import { alleFiches } from "../../lib/fiches";
+import { toepassingenVoor } from "../../lib/toepassingen";
+import { datumLeesbaar } from "../../lib/edities";
+import { plusVoor } from "../../lib/plus";
+
+export function getStaticPaths() {
+  return DOELGROEPEN.map((d) => ({ params: { slug: d.slug }, props: { d } }));
+}
+
+const { d } = Astro.props as { d: Doelgroep };
+const items = onderwerpenVoor(d.label);
+const fiches = alleFiches().filter((f) => f.voor.includes(d.label));
+const voorbeelden = toepassingenVoor(d.label);
+const plus = plusVoor(d.label).slice(0, 8);
+---
+
+<Basis titel={`AI voor ${d.label.toLowerCase()}`} beschrijving={`Wat betekent AI voor ${d.wie} in Vlaanderen? Alle onderwerpen uit de Stand van AI voor ${d.label.toLowerCase()}, zonder hype.`}>
+  <section class="rij sectie">
+    <div class="kantlijn"><p><a href="/voor">Voor jou</a><br /><a href={`/voor/${d.slug}/rss.xml`}>RSS voor deze lijn</a></p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">AI voor {d.label.toLowerCase()}</h1>
+      <p class="lead">{d.vraag} Hier vind je elk onderwerp uit de Stand van AI dat {d.wie} raakt.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>{aantal(items.length, "onderwerp", "onderwerpen")}</p></div>
+    <div>
+      {items.length === 0 ? (
+        <p>Nog geen onderwerpen voor deze doelgroep. Ze verschijnen hier vanzelf zodra een editie jou raakt.</p>
+      ) : (
+        <ul class="onderwerpenlijst">
+          {items.map(({ editie, onderwerp }) => (
+            <li>
+              <div>{onderwerp.hype ? <HypeMeter hype={onderwerp.hype} compact /> : null}<span class="meta">{onderwerp.hype?.stand}</span></div>
+              <div>
+                <a href={`/edities/${editie.week}#${onderwerp.slug}`}>{onderwerp.titel}</a>
+                <p class="meta" style="margin:0.2rem 0 0">{datumLeesbaar(editie.datum)}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+
+  {plus.length > 0 && (
+    <section class="rij sectie">
+      <div class="kantlijn"><p>Recent in <a href="/plus">Plus</a><br />de dagbrief</p></div>
+      <ul class="editielijst">
+        {plus.map(({ dag, item }) => (
+          <li>
+            <a href={`/plus/dag/${dag.datum}#${item.slug}`}>{item.titel}</a>
+            <p class="meta" style="margin:0.2rem 0 0">{datumLeesbaar(dag.datum)}{item.status && ` · ${item.status}`}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {voorbeelden.length > 0 && (
+    <section class="rij sectie">
+      <div class="kantlijn"><p>Wat kan AI al?<br /><a href={`/wat-kan-ai?voor=${d.slug}`}>Alle voorbeelden</a></p></div>
+      <ul class="editielijst">
+        {voorbeelden.slice(0, 6).map((t) => (
+          <li><a href={`/wat-kan-ai#${t.slug}`}>{t.titel}</a><p class="meta" style="margin:0.2rem 0 0">{t.soort === "demo" ? "Demo" : "In de praktijk"} · {t.wie}</p></li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {fiches.length > 0 && (
+    <section class="rij sectie">
+      <div class="kantlijn"><p>Praktisch</p></div>
+      <ul class="editielijst">
+        {fiches.map((f) => (
+          <li><a href={`/fiches/${f.slug}`}>{f.titel}</a><p style="margin:0.25rem 0 0">{f.samenvatting}</p></li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Basis>

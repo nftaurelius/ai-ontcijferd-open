@@ -1,0 +1,82 @@
+[
+  {
+    "passage": "een einde aan ongewenste automatische verlengingen en gratis proefperiodes die in een abonnement veranderen",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar de bronformulering: proefperiodes die consumenten in een abonnement vastzetten."
+  },
+  {
+    "passage": "Ook komen er beperkingen op gepersonaliseerde advertenties en prijzen gericht op minderjarigen.",
+    "beslissing": "verwerkt",
+    "toelichting": "'Oneerlijke' toegevoegd en geformuleerd als wat de Commissie wil beperken."
+  },
+  {
+    "passage": "je krijgt een uitschakelbare optie tegen verslavende ontwerpkenmerken",
+    "beslissing": "verwerkt",
+    "toelichting": "Beide gevolgen voorwaardelijk gemaakt en verduidelijkt dat je ontwerpkenmerken kunt uitschakelen."
+  },
+  {
+    "passage": "De kop van de bron over AI-agenten en chatbots vind je in de tekst niet terug.",
+    "beslissing": "verwerkt",
+    "toelichting": "Verwijzing naar de kop geschrapt; er staat nu alleen dat de mededeling geen AI-agent- of chatbotregels beschrijft."
+  },
+  {
+    "passage": "De test meet hoe goed het model bekende oorzaken van genetische verschillen terugvindt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beschreven als het terugvinden van causale varianten die genactiviteit beïnvloeden, in de TenK10K-dataset."
+  },
+  {
+    "passage": "30% tegenover 16% juist geïdentificeerde causale varianten",
+    "beslissing": "verwerkt",
+    "toelichting": "Vergelijkingsbasis (aangepaste voorganger) en aard van de maat benoemd; fout-positieven als nakijkpunt in het commentaar, omdat de bronbeschrijving afgekapt is."
+  },
+  {
+    "passage": "Het is getraind op meer dan 100 miljoen individuele celprofielen uit 68 weefsels.",
+    "beslissing": "verwerkt",
+    "toelichting": "Trainingsomvang en beschikbaarheid expliciet aan DeepMind toegeschreven."
+  },
+  {
+    "passage": "OpenAI vermeldt niet welke onderzoekers of instellingen het geld krijgen, binnen welke termijn, en of de resultaten openbaar worden.",
+    "beslissing": "verwerkt",
+    "toelichting": "Passage geschrapt en als controlepunt in het redactiecommentaar gezet."
+  },
+  {
+    "passage": "Het bedrag is bescheiden naast het eigen budget van een bedrijf van deze omvang.",
+    "beslissing": "verwerkt",
+    "toelichting": "Geschrapt wegens ontbrekende bron voor de vergelijking."
+  },
+  {
+    "passage": "Voorlopig bestaan ze niet.",
+    "beslissing": "verwerkt",
+    "toelichting": "Bestaansclaim geschrapt; de schooltoepassing is nu uitdrukkelijk een denkbare toepassing."
+  },
+  {
+    "passage": "## OpenAI trekt 2 miljoen dollar uit voor onderzoek naar AI en kinderveiligheid",
+    "beslissing": "verwerkt",
+    "toelichting": "Kop en inleiding spreken nu van een toezegging door OpenAI."
+  },
+  {
+    "passage": "**Status:** Eén bron",
+    "beslissing": "verwerkt",
+    "toelichting": "Per hoofdonderwerp een hype-meterstand met één zin uitleg toegevoegd."
+  },
+  {
+    "passage": "**Burgers:** je merkt hier niets rechtstreeks van.",
+    "beslissing": "verwerkt",
+    "toelichting": "Duidelijk hypothetische Vlaamse voorbeelden toegevoegd (webshop, onderzoeksgroep, school) die niet verder gaan dan de bronnen."
+  },
+  {
+    "passage": "Hij baseert zich op een post van Andrej Karpathy over drie factoren",
+    "beslissing": "verwerkt",
+    "toelichting": "De verwijzing naar Karpathy en de drie factoren zijn nu aan Marchese toegeschreven."
+  },
+  {
+    "passage": "genexpressie",
+    "beslissing": "verwerkt",
+    "toelichting": "Genexpressie, causale varianten, micro-tools, codingagents, AI-companions, Lean en AVG krijgen een korte uitleg bij eerste gebruik."
+  },
+  {
+    "passage": "van Arvind Narayanan vindt een algemeen verbod op AI-companions voor tieners waarschijnlijk te bot (nog niet bevestigd)",
+    "beslissing": "verwerkt",
+    "toelichting": "Als mening gelabeld met zijn argument; het label 'nog niet bevestigd' is voor deze post vervallen."
+  }
+]

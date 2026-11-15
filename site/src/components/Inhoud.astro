@@ -1,0 +1,33 @@
+---
+// Inhoudstafel bovenaan een lange pagina: in één oogopslag wat er komt, en er meteen naartoe springen.
+// Op de gsm verschijnt een knop "Inhoud" zodra je voorbij de inhoudstafel gescrold bent.
+interface Props {
+  titel?: string;
+  items: { href: string; tekst: string; extra?: string }[];
+}
+const { titel = "In deze editie", items } = Astro.props;
+---
+
+{items.length > 1 && (
+  <>
+    <nav class="inhoud" id="inhoud" aria-label={titel}>
+      <p class="inhoud-titel">{titel}</p>
+      <ol>
+        {items.map((i) => (
+          <li><a href={i.href}>{i.tekst}</a>{i.extra && <span class="meta"> · {i.extra}</span>}</li>
+        ))}
+      </ol>
+    </nav>
+    <a class="naar-inhoud" href="#inhoud" data-naar-inhoud hidden>↑ Inhoud</a>
+  </>
+)}
+
+<script>
+  const knop = document.querySelector<HTMLElement>("[data-naar-inhoud]");
+  const inhoud = document.getElementById("inhoud");
+  if (knop && inhoud && "IntersectionObserver" in window) {
+    new IntersectionObserver(([e]) => {
+      knop.hidden = e.isIntersecting || e.boundingClientRect.top > 0;
+    }).observe(inhoud);
+  }
+</script>

@@ -1,0 +1,48 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { alleTermen, type Term } from "../../lib/jargon";
+import { SITE_URL } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return alleTermen().map((t) => ({ params: { slug: t.slug }, props: { t } }));
+}
+
+const { t } = Astro.props as { t: Term };
+const andere = alleTermen().filter((x) => x.slug !== t.slug);
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  name: t.term,
+  description: t.uitleg_leek,
+  inDefinedTermSet: `${SITE_URL}/jargon`,
+  url: `${SITE_URL}/jargon/${t.slug}`,
+};
+---
+
+<Basis titel={`Wat is ${t.term}? Uitleg in gewoon Nederlands`} beschrijving={`${t.term}: ${t.uitleg_leek}`.slice(0, 160)} schema={schema}>
+  <article class="rij sectie">
+    <div class="kantlijn"><p><a href="/jargon">Jargonfilter</a></p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Wat is {t.term}?</h1>
+      <p class="lead"><span class="markeer">{t.uitleg_leek}</span></p>
+      {t.voorbeeld && (
+        <>
+          <h2>Een voorbeeld</h2>
+          <p>{t.voorbeeld}</p>
+        </>
+      )}
+      {t.verdieping && (
+        <>
+          <h2>Voor wie meer wil weten</h2>
+          <p>{t.verdieping}</p>
+        </>
+      )}
+    </div>
+  </article>
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Andere termen</p></div>
+    <p class="meta" style="line-height:2">
+      {andere.map((x, i) => (<><a href={`/jargon/${x.slug}`}>{x.term}</a>{i < andere.length - 1 ? " · " : ""}</>))}
+    </p>
+  </section>
+</Basis>

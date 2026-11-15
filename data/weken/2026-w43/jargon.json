@@ -1,0 +1,37 @@
+[
+  {
+    "term": "Kwetsbaarheid",
+    "uitleg_leek": "Een fout in software waar een aanvaller misbruik van kan maken om binnen te dringen of schade aan te richten.",
+    "voorbeeld": "Een fout in PHP maakte dat websites van overheidsdiensten preventief offline gehaald werden."
+  },
+  {
+    "term": "PHP",
+    "uitleg_leek": "Een programmeertaal waarop een groot deel van het web draait, onder meer WordPress en Wikipedia.",
+    "voorbeeld": "Draait de website van je gemeente op WordPress, dan draait ze ook op PHP."
+  },
+  {
+    "term": "Patch",
+    "uitleg_leek": "Een update die een fout in software herstelt.",
+    "voorbeeld": "Je webbouwer installeert de patch zodat de site niet meer via dit lek aangevallen kan worden."
+  },
+  {
+    "term": "Code uitvoeren op afstand",
+    "uitleg_leek": "Een aanvaller laat op jouw server zijn eigen programmacode draaien, zonder dat hij fysiek toegang heeft.",
+    "voorbeeld": "Via zo'n fout kan iemand een webshop overnemen vanop een andere continent."
+  },
+  {
+    "term": "Benchmark",
+    "uitleg_leek": "Een vaste set opdrachten waarmee je AI-systemen met elkaar vergelijkt, zoals een examen.",
+    "voorbeeld": "Microsoft testte zijn systeem op 304 moeilijke gevallen uit een medisch tijdschrift."
+  },
+  {
+    "term": "AI-agent",
+    "uitleg_leek": "Een AI-systeem dat zelfstandig meerdere stappen uitvoert en daarbij hulpmiddelen gebruikt.",
+    "voorbeeld": "Een agent die voor een stadsdienst zelf informatie opzoekt, een overzicht maakt en dat doorstuurt."
+  },
+  {
+    "term": "Open source",
+    "uitleg_leek": "Software waarvan de code openbaar is en door vrijwilligers en bedrijven samen onderhouden wordt.",
+    "voorbeeld": "PHP wordt onderhouden door een kleine groep ontwikkelaars, terwijl miljoenen sites erop draaien."
+  }
+]

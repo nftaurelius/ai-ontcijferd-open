@@ -1,0 +1,22 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { NASLAG } from "../lib/site";
+---
+
+<Basis titel="Naslag" beschrijving="Altijd bij de hand: het AI Act-kompas, de jargonfilter, praktische fiches en de terugblik op onze hype-meter.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Altijd bij de hand</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Naslag</h1>
+      <p class="lead">Wat niet elke week verandert, maar wel handig is om terug te vinden.</p>
+    </div>
+  </section>
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <ul class="tegels">
+      {NASLAG.map((n) => (
+        <li><a href={n.href}>{n.tekst}</a><p>{n.uitleg}</p></li>
+      ))}
+    </ul>
+  </section>
+</Basis>

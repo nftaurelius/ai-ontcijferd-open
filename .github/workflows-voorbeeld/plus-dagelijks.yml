@@ -1,0 +1,88 @@
+name: Plus — dagbrief
+
+# Draait na de dagelijkse verkenner en triage. Publiceert de dagbrief automatisch op /plus als de
+# controle geen open problemen meer ziet; anders een pull request voor Duncan (samenvoegen = publiceren).
+on:
+  workflow_run:
+    workflows: ["Dagelijks — verkenner en triage"]
+    types: [completed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: pijplijn
+  cancel-in-progress: false
+
+jobs:
+  dagbrief:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Datum
+        id: dag
+        run: echo "datum=$(TZ=Europe/Brussels date +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Al een dagbrief voor vandaag?
+        id: al
+        run: |
+          if git ls-remote --exit-code --heads origin "dagbrief/${{ steps.dag.outputs.datum }}" >/dev/null \
+             || [ -f "content/plus/dag/${{ steps.dag.outputs.datum }}.md" ]; then
+            echo "klaar=ja" >> "$GITHUB_OUTPUT"; echo "Er is al een dagbrief voor vandaag; overgeslagen."
+          fi
+
+      - name: Dagbrief schrijven en controleren
+        if: steps.al.outputs.klaar != 'ja'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AIO_KOSTEN_PAD: data/plus/kosten.csv
+        run: python -m pipeline.dagbrief
+
+      - name: Werkbestanden bewaren op main (gebruikte items, kosten, bronmateriaal)
+        if: always() && steps.al.outputs.klaar != 'ja'
+        run: |
+          git config user.name "ai-ontcijferd-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/plus data/fouten || true
+          git diff --cached --quiet || git commit -m "Plus: werkbestanden dagbrief ${{ steps.dag.outputs.datum }}"
+          git pull --rebase --autostash origin main
+          git push
+
+      - name: Mag de dagbrief automatisch online?
+        id: vrij
+        if: steps.al.outputs.klaar != 'ja'
+        run: echo "ja=$(cat data/plus/${{ steps.dag.outputs.datum }}/vrijgeven.txt 2>/dev/null || echo nee)" >> "$GITHUB_OUTPUT"
+
+      - name: Publiceren (rechtstreeks op main, als Duncan zodat Vercel bouwt)
+        if: steps.vrij.outputs.ja == 'ja' && hashFiles(format('content/plus/dag/{0}.md', steps.dag.outputs.datum)) != ''
+        run: |
+          git config user.name "nftaurelius"
+          git config user.email "129065880+nftaurelius@users.noreply.github.com"
+          git add content/plus/dag/${{ steps.dag.outputs.datum }}.md
+          git commit -m "Plus dagbrief ${{ steps.dag.outputs.datum }} (automatisch gepubliceerd)"
+          git pull --rebase --autostash origin main
+          git push
+
+      - name: Pull request (wacht op Duncan; samenvoegen = publiceren)
+        if: steps.vrij.outputs.ja != 'ja' && steps.al.outputs.klaar != 'ja' && hashFiles(format('content/plus/dag/{0}.md', steps.dag.outputs.datum)) != ''
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: dagbrief/${{ steps.dag.outputs.datum }}
+          title: "Plus dagbrief ${{ steps.dag.outputs.datum }} (samenvoegen = publiceren)"
+          body-path: data/plus/${{ steps.dag.outputs.datum }}/pr.md
+          commit-message: "Plus dagbrief ${{ steps.dag.outputs.datum }}"
+          add-paths: content/plus/dag
+          labels: plus

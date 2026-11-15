@@ -1,0 +1,288 @@
+# Bronnenlijst AI Ontcijferd
+#
+# Velden per bron:
+#   type          primair | meting | beleid | vlaams | radar | duiding  (zie redactiestatuut)
+#   methode       rss (feed) of pagina (overzichtspagina, links worden eruit gehaald)
+#   link_patroon  (pagina) reguliere expressie waaraan een artikellink moet voldoen
+#   trefwoorden   optioneel: alleen items bewaren waarvan de titel een trefwoord bevat
+#   max_per_run   optioneel: maximum nieuwe items per run voor deze bron
+#   alleen_koppen true = betaalmuur of auteursrecht: nooit de volledige tekst ophalen
+#   actief        false = bron staat in de lijst maar wordt niet opgehaald
+#
+# De workflow "Bronnencheck" test elke maandag alle bronnen. Nieuwe kandidaten
+# test je met de workflow "Probe" (adressen invullen, resultaat in data/probe.md).
+
+ai_trefwoorden: &ai [" AI", "AI ", "AI-", "artificiële", "kunstmatige", "ChatGPT", "chatbot",
+                     "algoritme", "taalmodel", "Gemini", "Claude", "OpenAI", "Copilot", "deepfake"]
+
+bronnen:
+  # --- Primair: de labs zelf ---
+  - id: openai
+    naam: OpenAI
+    type: primair
+    methode: rss
+    url: https://openai.com/news/rss.xml
+  - id: anthropic
+    naam: Anthropic
+    type: primair
+    methode: pagina
+    url: https://www.anthropic.com/news
+    link_patroon: ^https://www\.anthropic\.com/news/[^/?#]+$
+  - id: google-deepmind
+    naam: Google DeepMind
+    type: primair
+    methode: rss
+    url: https://deepmind.google/blog/rss.xml
+  - id: google-ai
+    naam: Google AI-blog
+    type: primair
+    methode: rss
+    url: https://blog.google/technology/ai/rss/
+  - id: meta-ai
+    naam: Meta AI
+    type: primair
+    methode: pagina
+    url: https://ai.meta.com/blog/
+    link_patroon: ^https://ai\.meta\.com/blog/[^/?#]+/?$
+  - id: mistral
+    naam: Mistral AI
+    type: primair
+    methode: pagina
+    url: https://mistral.ai/news
+    link_patroon: ^https://mistral\.ai/news/[^/?#]+/?$
+  - id: xai
+    naam: xAI
+    type: primair
+    methode: pagina
+    url: https://x.ai/news
+    link_patroon: ^https://x\.ai/news/[^/?#]+/?$
+
+  # --- Onderzoek en onafhankelijke meting ---
+  - id: arxiv-cs-ai
+    naam: arXiv cs.AI
+    type: primair
+    methode: rss
+    url: https://rss.arxiv.org/rss/cs.AI
+    max_per_run: 20
+    opmerking: Hoog volume; triage laat alleen papers door die elders opgepikt worden.
+  - id: epoch-ai
+    naam: Epoch AI
+    type: meting
+    methode: rss
+    url: https://epoch.ai/atom.xml
+  - id: artificial-analysis
+    naam: Artificial Analysis
+    type: meting
+    methode: pagina
+    url: https://artificialanalysis.ai/articles
+    link_patroon: ^https://artificialanalysis\.ai/articles/[^/?#]+/?$
+    actief: false
+    opmerking: Eerst gebruiksvoorwaarden nakijken voor automatisch ophalen.
+
+  # --- Beleid ---
+  - id: eu-digital
+    naam: Europese Commissie (digitaal beleid)
+    type: beleid
+    methode: pagina
+    url: https://digital-strategy.ec.europa.eu/en/news
+    link_patroon: ^https://digital-strategy\.ec\.europa\.eu/en/news/[^/?#]+$
+    trefwoorden: [" AI", "AI ", "artificial", "AI Act", "AI Office"]
+    actief: false
+    opmerking: Blokkeert automatische toegang (HTTP 403). Alternatief nog te zoeken; intussen manueel volgen.
+  - id: digitaal-vlaanderen
+    naam: Digitaal Vlaanderen
+    type: beleid
+    methode: pagina
+    url: https://www.vlaanderen.be/digitaal-vlaanderen/nieuws
+    link_patroon: ^https://www\.vlaanderen\.be/digitaal-vlaanderen/nieuws/[^/?#]+$
+    actief: false
+    opmerking: Nieuws wordt met JavaScript geladen. Volg via de AI-nieuwsbrief van Digitaal Vlaanderen.
+  - id: vlaio
+    naam: VLAIO (thema AI)
+    type: beleid
+    methode: pagina
+    url: https://www.vlaio.be/nl/nieuws?thema=194
+    link_patroon: ^https://www\.vlaio\.be/nl/nieuws/[^/?#]+$
+    actief: false
+    opmerking: Blokkeert automatische toegang (HTTP 403), ook de RSS-feed.
+  - id: bosa
+    naam: FOD BOSA
+    type: beleid
+    methode: pagina
+    url: https://bosa.belgium.be/nl/news
+    link_patroon: ^https://bosa\.belgium\.be/nl/news/[^/?#]+$
+    trefwoorden: *ai
+
+  # --- Vlaamse context ---
+  - id: vrt-nws
+    naam: VRT NWS
+    type: vlaams
+    methode: rss
+    url: https://www.vrt.be/vrtnws/nl.rss.articles.xml
+    trefwoorden: *ai
+  - id: data-news
+    naam: Data News
+    type: vlaams
+    methode: rss
+    url: https://datanews.knack.be/feed/
+    trefwoorden: *ai
+  - id: de-tijd
+    naam: De Tijd (tech)
+    type: vlaams
+    methode: pagina
+    url: https://www.tijd.be/tech-media.html
+    link_patroon: ^https://www\.tijd\.be/tech-media/.+\.html$
+    trefwoorden: *ai
+    alleen_koppen: true
+    actief: false
+    opmerking: Blokkeert automatische toegang (HTTP 403).
+  - id: de-standaard
+    naam: De Standaard
+    type: vlaams
+    methode: rss
+    url: https://www.standaard.be/rss
+    trefwoorden: *ai
+    alleen_koppen: true
+  - id: imec
+    naam: imec
+    type: vlaams
+    methode: pagina
+    url: https://www.imec-int.com/nl/pers
+    link_patroon: ^https://www\.imec-int\.com/nl/(pers|artikels)/[^/?#]+$
+    actief: false
+    opmerking: Nieuwspagina niet gevonden (HTTP 404). Juiste adres nog te zoeken.
+  - id: kenniscentrum-dm
+    naam: Kenniscentrum Data & Maatschappij
+    type: vlaams
+    methode: pagina
+    url: https://data-en-maatschappij.ai/nieuws
+    link_patroon: ^https://data-en-maatschappij\.ai/nieuws/[^/?#]+$
+  - id: mediawijs
+    naam: Mediawijs
+    type: vlaams
+    methode: pagina
+    url: https://www.mediawijs.be/nl/nieuws
+    link_patroon: ^https://www\.mediawijs\.be/nl/artikels/[^/?#]+$
+    trefwoorden: *ai
+  - id: cultuurconnect
+    naam: Cultuurconnect
+    type: vlaams
+    methode: pagina
+    url: https://www.cultuurconnect.be/nieuws
+    link_patroon: ^https://www\.cultuurconnect\.be/nieuws/[^/?#]+$
+    actief: false
+    opmerking: Nieuwsberichten worden met JavaScript geladen.
+  - id: statbel
+    naam: Statbel
+    type: vlaams
+    methode: pagina
+    url: https://statbel.fgov.be/nl/nieuws
+    link_patroon: ^https://statbel\.fgov\.be/nl/nieuws/[^/?#]+$
+    trefwoorden: [" AI", "AI ", "artificiële", "ICT", "digitaal"]
+  - id: klasse
+    naam: Klasse
+    type: vlaams
+    methode: pagina
+    url: https://www.klasse.be/
+    link_patroon: ^https://www\.klasse\.be/\d+/[^/?#]+/?$
+    trefwoorden: *ai
+
+  # --- Radar ---
+  - id: futuretools
+    naam: Future Tools (radar)
+    type: radar
+    methode: pagina
+    url: https://futuretools.io/news
+    link_patroon: utm_source=futuretools\.io
+    extern: true
+    max_per_run: 40
+    opmerking: Links wijzen naar de oorspronkelijke bron; die wordt als bron gebruikt, nooit Future Tools zelf.
+
+  # --- Duiding (enthousiast en kritisch) ---
+  - id: ai-snake-oil
+    naam: AI Snake Oil (kritisch)
+    type: duiding
+    methode: rss
+    url: https://www.aisnakeoil.com/feed
+  - id: import-ai
+    naam: Import AI (Jack Clark, medeoprichter Anthropic)
+    type: duiding
+    methode: rss
+    url: https://jack-clark.net/feed/
+    opmerking: Auteur werkt bij Anthropic; bij gebruik vermelden.
+
+  # --- Video-radar (AI Ontcijferd Plus) ---
+  # YouTube-kanalen zijn een radar, nooit een bron: de dagbrief zoekt het oorspronkelijke
+  # bericht op (links in de videobeschrijving) en vermeldt een video alleen als signaal.
+  # methode youtube: "kanaal" is de @handle; de verkenner zoekt het kanaal-id zelf op
+  # (bewaard in data/youtube-kanalen.json) en leest de openbare feed van het kanaal.
+  # rol: nieuws (dagelijks nieuws) | techniek (werkwijzen, workflows, agents) | denker (duiding, visie)
+  - id: yt-theaigrid
+    naam: TheAIGRID (YouTube)
+    type: video
+    rol: nieuws
+    methode: youtube
+    kanaal: "@TheAiGrid"
+  - id: yt-aisearch
+    naam: AI Search (YouTube)
+    type: video
+    rol: nieuws
+    methode: youtube
+    kanaal: "@theAIsearch"
+  - id: yt-mattwolfe
+    naam: Matt Wolfe (YouTube)
+    type: video
+    rol: nieuws
+    methode: youtube
+    kanaal: "@mreflow"
+    opmerking: Maker van Future Tools; zelfde regel als die radar.
+  - id: yt-worldofai
+    naam: WorldofAI (YouTube)
+    type: video
+    rol: nieuws
+    methode: youtube
+    kanaal: "@intheworldofai"
+  - id: yt-robonuggets
+    naam: RoboNuggets (YouTube)
+    type: video
+    rol: techniek
+    methode: youtube
+    kanaal: "@RoboNuggets"
+  - id: yt-jack
+    naam: Jack (YouTube, @Itssssss_Jack)
+    type: video
+    rol: techniek
+    methode: youtube
+    kanaal: "@Itssssss_Jack"
+  - id: yt-rileybrown
+    naam: Riley Brown (YouTube)
+    type: video
+    rol: techniek
+    methode: youtube
+    kanaal: "@rileybrownai"
+  - id: yt-austinmarchese
+    naam: Austin Marchese (YouTube)
+    type: video
+    rol: techniek
+    methode: youtube
+    kanaal: "@austin.marchese"
+  - id: yt-nicksaraev
+    naam: Nick Saraev (YouTube)
+    type: video
+    rol: techniek
+    methode: youtube
+    kanaal: "@nicksaraev"
+    opmerking: Veel automatisering voor bureaus en verkoop; filter op wat een Vlaamse zelfstandige of dienst echt kan gebruiken.
+  - id: yt-nateherk
+    naam: Nate Herk (YouTube)
+    type: video
+    rol: techniek
+    methode: youtube
+    kanaal: "@nateherk"
+  - id: yt-daveshap
+    naam: David Shapiro (YouTube)
+    type: video
+    rol: denker
+    methode: youtube
+    kanaal: "@DaveShap"
+    opmerking: Uitgesproken voorspellingen (AGI, post-arbeidseconomie); altijd als standpunt brengen, nooit als feit.

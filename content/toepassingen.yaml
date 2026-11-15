@@ -1,0 +1,211 @@
+# Wat kan AI al? Demo's en praktijkvoorbeelden.
+#
+# soort:        demo (wat de nieuwste AI kan, vaak getoond door de maker)
+#               praktijk (een organisatie gebruikt het echt)
+# doelgroepen:  Onderwijs, Werk, Lokale overheden, Zelfstandigen, Bibliotheken, Burgers
+# dichtbij:     true als het in Vlaanderen of België gebeurt
+# video:        optioneel. YouTube-link wordt ingebed (pas na een klik), andere links (X, LinkedIn) worden een knop.
+# kanttekening: verplicht. Wat de demo of het voorbeeld niet toont, of waar je op moet letten.
+# Nieuwste bovenaan.
+
+toepassingen:
+  - titel: "Belfius laat AI-agents de eigen systemen aanvallen"
+    slug: aikido-belfius-ai-hackers
+    soort: praktijk
+    datum: 2026-08-05
+    wie: Belfius en Aikido Security (Gent)
+    waar: Brussel en Gent
+    dichtbij: true
+    doelgroepen: [Werk, Lokale overheden, Zelfstandigen]
+    wat: >-
+      Het Gentse beveiligingsbedrijf Aikido Security en Belfius bouwen samen de "Aikido Machine": een eigen AI-server in het datacenter van de bank.
+      Daarop zetten ze meer dan 200 AI-agents in die dag en nacht zoeken naar zwakke plekken in de systemen van Belfius, zoals ethische hackers dat doen.
+      Het systeem is niet aan één AI-model gebonden en kiest per taak het model dat het best past.
+    waarom: >-
+      Aanvallers gebruiken AI al om sneller lekken te vinden. Als verdediger kun je hetzelfde doen, en dan continu in plaats van één keer per jaar een test.
+      Dat de server in het eigen datacenter staat, is belangrijk voor organisaties die hun gegevens niet naar een cloud willen sturen.
+    kanttekening: >-
+      Het gaat om een aankondiging van augustus 2026: het persbericht spreekt in de toekomende tijd en geeft geen startdatum en geen resultaten.
+      Het zegt ook niet hoe mensen toezicht houden op de agents of wie de gevonden lekken dicht.
+      Voor een gemeente of kmo is zo'n eigen systeem nog niet beschikbaar; de partners willen er later een product van maken voor de financiële sector en andere streng gereguleerde sectoren.
+    bron:
+      titel: "Aikido en Belfius bouwen samen de volgende generatie cyberbeveiliging"
+      url: https://www.belfius.be/about-us/dam/corporate/press-room/press-articles/downloads/nl/2026/Persbericht_Aikido_en_Belfius_bouwen_samen_de_volgende_generatie_cyberbeveiliging_05_%2008_2026.pdf
+      uitgever: Belfius (persbericht)
+
+  - titel: "Een AI-model schrijft bruikbare rapporten, voor minder geld"
+    slug: opus-5-5-kenniswerk
+    soort: demo
+    datum: 2026-09-25
+    wie: Anthropic (Claude Opus 5.5)
+    waar: Verenigde Staten
+    dichtbij: false
+    doelgroepen: [Werk, Zelfstandigen]
+    wat: >-
+      Claude Opus 5.5 kan documenten van honderden pagina's tegelijk lezen en lange rapporten schrijven.
+      Volgens de maker haalde het model bij kenniswerk, zoals bedrijfsrapporten, 16 van de 18 keer de eigen kwaliteitsdrempel.
+      De vorige topmodellen haalden die drempel geen enkele keer. Het model is per woord goedkoper dan zijn voorganger.
+    waarom: >-
+      Rapporten, beleidsnota's en offertes schrijven is een groot deel van het werk op kantoren, bij gemeenten en bij zelfstandigen.
+      Dat soort werk kan een model steeds beter voorbereiden. Jij blijft nodig om te controleren en te beslissen.
+    kanttekening: >-
+      De kwaliteitsclaim komt uit de eigen tests van de maker en is niet onafhankelijk nagekeken.
+      Voor vragen over cyberveiligheid en biologie valt het model terug op een ouder model.
+      Een goedkopere prijs per woord betekent niet altijd een goedkopere taak: het model denkt lang na en gebruikt dus veel woorden.
+    bron:
+      titel: "Claude Opus 5.5 Leaps Forward"
+      url: https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward
+      uitgever: The Batch (DeepLearning.AI)
+
+  - titel: "Uber geeft 30.000 medewerkers een AI-assistent"
+    slug: uber-chatgpt-work
+    soort: praktijk
+    datum: 2026-10-22
+    wie: Uber
+    waar: wereldwijd
+    dichtbij: false
+    doelgroepen: [Werk]
+    wat: >-
+      Uber rolt ChatGPT Work uit bij meer dan 30.000 medewerkers.
+      Teams gebruiken het voor opzoekwerk, data-analyse, presentaties en complexe werkprocessen.
+    waarom: >-
+      Dit is wat AI-geletterdheid in de praktijk betekent: iedereen toegang geven en laten ontdekken wat het in de eigen job kan.
+      Vlaamse werkgevers en overheden kunnen hetzelfde doen, met een zakelijk abonnement en duidelijke afspraken over gegevens.
+    kanttekening: >-
+      Het bericht komt van OpenAI, de leverancier. Er zijn geen cijfers over wat het oplevert of kost, en geen onafhankelijke bevestiging.
+    bron:
+      titel: "Uber brings ChatGPT Work to all employees with OpenAI"
+      url: https://openai.com/index/uber-chatgpt-work-rollout
+      uitgever: OpenAI
+
+  - titel: "Bibliotheek De Krook spoort AI-boeken in de collectie op"
+    slug: de-krook-ai-boeken
+    soort: praktijk
+    datum: 2026-04-13
+    wie: Bibliotheek De Krook (Gent)
+    waar: Gent
+    dichtbij: true
+    doelgroepen: [Bibliotheken, Burgers]
+    wat: >-
+      Volgens De Standaard belandden honderden met AI gemaakte boeken in Vlaamse bibliotheken. De Krook sloeg in december 2025 alarm bij andere bibliotheken, Cultuurconnect en VVBAD.
+      De leverancier haalde de titels uit zijn webshop. Vermoedelijke AI-boeken krijgen een duidelijke melding in de catalogus van bibliotheek.be, en het personeel krijgt opleiding om AI-inhoud te herkennen.
+    waarom: >-
+      AI verandert niet alleen hoe mensen informatie zoeken, maar ook wat er op de plank belandt.
+      Collectievorming vraagt nu een extra controle, en bibliotheken kunnen dat beter samen aanpakken dan elk apart.
+    kanttekening: >-
+      Het gaat om enkele tientallen titels op tienduizenden aankopen per jaar in Gent. Een AI-boek is niet per definitie slecht:
+      De Krook koopt het als het echt iets toevoegt. Herkennen blijft moeilijk; een sluitende test bestaat niet.
+    bron:
+      titel: "Antwoord op mondelinge vraag over AI-boeken in de bibliotheek (2026_MV_00317)"
+      url: https://raadpleegomgeving.stad.gent/document/69e1d5e01589e27b5ffc0ec1
+      uitgever: Stad Gent
+
+  - titel: "Een op de vier leraren in het lager onderwijs gebruikt al AI"
+    slug: leraren-gebruiken-ai
+    soort: praktijk
+    datum: 2026-06-12
+    wie: Vlaamse scholen
+    waar: Vlaanderen
+    dichtbij: true
+    doelgroepen: [Onderwijs]
+    wat: >-
+      Ongeveer een kwart van de leraren in het lager onderwijs en bijna de helft in het secundair gebruikt AI.
+      De Vlaamse regering trekt 10 miljoen euro uit zodat de vijf Vlaamse universiteiten een gezamenlijke aanpak uitwerken, met een veilige basis voor alle scholen.
+      Denk aan hulp bij lesvoorbereiding, sneller feedback geven en leerachterstanden opsporen.
+    waarom: >-
+      Leraren wachten niet op een kader: ze gebruiken AI nu al.
+      Een gedeelde, veilige omgeving voorkomt dat elke school zelf moet uitzoeken welke tools mogen.
+    kanttekening: >-
+      Richtlijnen ontbreken nog, en welke toepassingen eerst getest worden, ligt nog niet vast.
+      Wat leerlingen er echt beter van leren, is nog niet gemeten.
+    bron:
+      titel: "Vlaamse universiteiten krijgen 10 miljoen euro om AI-beleid voor onderwijs uit te werken"
+      url: https://www.vrt.be/vrtnws/nl/2026/06/11/vlaamse-universiteiten-krijgen-10-miljoen-euro-om-ai-beleid-voor/
+      uitgever: VRT NWS
+
+  - titel: "Een AI-model vindt duizenden onbekende lekken in software"
+    slug: mythos-preview-lekken
+    soort: demo
+    datum: 2026-04-08
+    wie: Anthropic (Claude Mythos Preview)
+    waar: Verenigde Staten
+    dichtbij: false
+    doelgroepen: [Lokale overheden, Zelfstandigen]
+    wat: >-
+      Volgens Anthropic vond Claude Mythos Preview duizenden ernstige, nog onbekende kwetsbaarheden in elk groot besturingssysteem en elke grote browser.
+      Een van de fouten zat al 27 jaar in OpenBSD. Volgens de maker brak het model zelfstandig uit de beveiliging van een browser door vier lekken te combineren.
+    waarom: >-
+      Wat AI vindt, kunnen aanvallers ook vinden. Gemeenten en bedrijven met oude software of websites die niet up-to-date zijn, lopen meer risico.
+      Updates snel installeren wordt belangrijker dan ooit.
+    kanttekening: >-
+      De cijfers komen van de maker zelf en zijn niet onafhankelijk geteld. Het model is niet publiek beschikbaar: alleen grote techbedrijven en beveiligingspartners kregen toegang (Project Glasswing).
+    bron:
+      titel: "Anthropic's Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems"
+      url: https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html
+      uitgever: The Hacker News
+
+  - titel: "AI bij borstkankerscreening vindt 29 procent meer kankers"
+    slug: masai-borstkankerscreening
+    soort: praktijk
+    datum: 2025-02-06
+    wie: Zweedse borstkankerscreening (MASAI-studie)
+    waar: Zweden
+    dichtbij: false
+    doelgroepen: [Burgers]
+    wat: >-
+      In de grote Zweedse MASAI-studie las AI mee met de radiologen bij borstkankerscreening.
+      Bij ongeveer 106.000 vrouwen werden zo 29 procent meer kankers gevonden, met nauwelijks meer vals alarm, en hadden radiologen 44 procent minder leeswerk.
+      De resultaten verschenen in The Lancet Digital Health.
+    waarom: >-
+      Dit is een van de best onderbouwde voorbeelden van AI in de zorg: een gerandomiseerde studie op grote schaal, geen demo.
+      Het toont waar AI echt helpt: als tweede paar ogen, met de arts die beslist.
+    kanttekening: >-
+      Het gaat om één type onderzoek in één land. Of het Belgische screeningsprogramma hetzelfde resultaat haalt, moet nog blijken.
+    bron:
+      titel: "AI can enhance breast cancer screening performance (MASAI)"
+      url: https://healthcare-in-europe.com/en/news/ai-enhance-breast-cancer-screening-performance-masai.html
+      uitgever: Healthcare in Europe
+
+  - titel: "VDAB stelt jobs voor met AI, maar laat mensen beslissen"
+    slug: vdab-ai
+    soort: praktijk
+    datum: 2026-10-27
+    wie: VDAB
+    waar: Vlaanderen
+    dichtbij: true
+    doelgroepen: [Werk, Burgers, Lokale overheden]
+    wat: >-
+      VDAB gebruikt AI om jobs voor te stellen op basis van je competenties of interesses, om vaardigheden in cv's en vacatures te herkennen, en om in te schatten hoe groot de kans is dat iemand binnen zes maanden werk vindt.
+      Een onafhankelijke ethische raad met externe experts adviseert over elke toepassing.
+    waarom: >-
+      Een Vlaamse overheidsdienst die al jaren AI gebruikt en publiek uitlegt welke toepassingen draaien en waarvoor.
+      Dat is een bruikbaar voorbeeld voor elke gemeente of organisatie die AI wil inzetten in dienstverlening.
+    kanttekening: >-
+      VDAB zegt dat AI nooit in de plaats van mensen beslist, maar hoe de inschatting van de kans op werk de begeleiding beïnvloedt, staat niet op de pagina.
+      De datum hier is de dag waarop we de pagina nakeken; VDAB vermeldt niet sinds wanneer elke toepassing draait.
+    bron:
+      titel: "Artificiële intelligentie (AI) bij VDAB"
+      url: https://www.vdab.be/vdab/artificiele-intelligentie
+      uitgever: VDAB
+
+  - titel: "Amsterdam bouwt een eigen chatbot voor zijn ambtenaren"
+    slug: chatamsterdam
+    soort: praktijk
+    datum: 2025-05-07
+    wie: Gemeente Amsterdam
+    waar: Nederland
+    dichtbij: false
+    doelgroepen: [Lokale overheden]
+    wat: >-
+      Amsterdam bouwde ChatAmsterdam: een AI-assistent waarmee ambtenaren teksten schrijven, samenvatten en documenten analyseren.
+      In een proefperiode van een half jaar gebruikten 800 ambtenaren het, goed voor meer dan 34.000 vragen. Gegevens blijven binnen de gemeente,
+      en een filter houdt vragen met persoonsgegevens of risico op etnisch profileren tegen. Ongeveer 7 procent van de vragen bleek riskant.
+    waarom: >-
+      Dit is een concreet model voor Vlaamse steden en gemeenten: in plaats van ChatGPT te verbieden of te negeren, een veilig alternatief aanbieden.
+    kanttekening: >-
+      De chatbot draait nog op een model van OpenAI; de stad wil daar minder afhankelijk van worden. Een kleine gemeente kan dit niet alleen bouwen:
+      samenwerken of een gedeelde dienst ligt meer voor de hand.
+    bron:
+      titel: "Eigen AI-assistent voor Amsterdamse ambtenaren"
+      url: https://www.binnenlandsbestuur.nl/digitaal/eigen-ai-assistent-voor-amsterdamse-ambtenaren
+      uitgever: Binnenlands Bestuur

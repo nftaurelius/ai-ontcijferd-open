@@ -1,0 +1,82 @@
+[
+  {
+    "passage": "Mistral lanceert Large 4 en een platform voor bedrijfsagenten (titel en weekalinea)",
+    "beslissing": "verwerkt",
+    "toelichting": "Titel en weekalinea onderscheiden nu de presentatie van Large 4 van de uitbreiding van het bestaande Studio."
+  },
+  {
+    "passage": "RPA ... haalde 98,90% juist op.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar 'nauwkeurigheid van 98,90%' met de vermelding dat de berekening niet wordt uitgelegd; 'juist op' is geschrapt."
+  },
+  {
+    "passage": "Ze meten in twee rondes, op moment T en een week later (T+7).",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot de meetrondes T en T+7, met de vermelding dat een tijdseenheid ontbreekt; de invulling 'een week' is geschrapt."
+  },
+  {
+    "passage": "Een onafhankelijke herhaling ontbreekt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu 'wordt niet vermeld', zodat er geen negatief bewijs wordt beweerd."
+  },
+  {
+    "passage": "agents worden vaak als vervanger van vaste automatisering gebracht",
+    "beslissing": "verwerkt",
+    "toelichting": "Aandachtsclaim geschrapt; stand veranderd naar Terecht, beperkt tot deze vaste portaaltaak."
+  },
+  {
+    "passage": "Die draaien in de cloud, in een eigen VPC ... of on-premises",
+    "beslissing": "verwerkt",
+    "toelichting": "Inzetmogelijkheden en Studio-functies in de verdieping zijn nu expliciet aan Mistral toegeschreven."
+  },
+  {
+    "passage": "MCP is een gangbare standaard om agents aan data en software te koppelen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Gangbaarheidsclaim geschrapt; uitleg beperkt tot de koppelfunctie zoals Mistral die beschrijft."
+  },
+  {
+    "passage": "Je kunt een clip ook beurt na beurt bijsturen, en personages en producten blijven consistenter.",
+    "beslissing": "verwerkt",
+    "toelichting": "Mogelijkheden, kwaliteitsverbeteringen en werkwijze onder 'Hoe de kosten werken' zijn nu 'volgens Google'."
+  },
+  {
+    "passage": "het is een stapsgewijze update ... waarvan de beloftes enkel van Google komen",
+    "beslissing": "verwerkt",
+    "toelichting": "Aandacht kon niet worden onderbouwd, dus stand veranderd naar Terecht; ontbrekende onafhankelijke bevestiging staat apart als onzekerheid."
+  },
+  {
+    "passage": "Die tests tonen dat de software doet wat ze moet doen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door een beschrijving van wat de tests controleren, met de kanttekening dat dit geen bewijs is voor correcte beoordeling."
+  },
+  {
+    "passage": "leerkrachten en lesgevers weten dat leerlingen taalmodellen gebruiken voor opdrachten",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door wat de auteurs stellen plus een voorwaardelijk Vlaams voorbeeld van een lesgever met veel inzendingen."
+  },
+  {
+    "passage": "Een mondelinge bevraging toont of iemand het begrijpt, maar bij veel inzendingen is dat niet haalbaar.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot individuele bevraging die begrip kan helpen onderzoeken en tijd van medewerkers vraagt."
+  },
+  {
+    "passage": "het raamwerk krijgt weinig aandacht en bewijst nog weinig",
+    "beslissing": "verwerkt",
+    "toelichting": "Aandachtsclaim geschrapt; uitleg koppelt nu het echte probleem aan de beperkte toepasbaarheid in het Vlaamse onderwijs."
+  },
+  {
+    "passage": "de aandacht gaat naar nepvideo's",
+    "beslissing": "verwerkt",
+    "toelichting": "Aandachtsvergelijking geschrapt; stand veranderd naar Terecht en de Amerikaanse bevinding gescheiden van mogelijke Vlaamse relevantie."
+  },
+  {
+    "passage": "De onderliggende rapporten van NewsGuard en Politico zijn niet geraadpleegd.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door toeschrijving aan NewsGuard via VRT NWS; de controleopdracht staat nu in een HTML-commentaar."
+  },
+  {
+    "passage": "Wat kunnen AI-agents echt?",
+    "beslissing": "verwerkt",
+    "toelichting": "Weekalinea opent nu met de uitkomst van de zorgtest en legt 'AI-agent' bij het eerste gebruik uit."
+  }
+]

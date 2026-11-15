@@ -1,0 +1,1388 @@
+/* AI Ontcijferd — huisstijl
+   Leesbare tekst in Literata, interface en metadata in Atkinson Hyperlegible.
+   Eén signatuur: de gele markeerstift (Vlaams leeuwengeel) voor wat ertoe doet. */
+
+@import "@fontsource-variable/literata/index.css";
+@import "@fontsource-variable/literata/wght-italic.css";
+@import "@fontsource/atkinson-hyperlegible-next/400.css";
+@import "@fontsource/atkinson-hyperlegible-next/700.css";
+
+:root {
+  --papier: #f2f3ef;
+  --vlak: #e8eae4;
+  --inkt: #20262b;
+  --grijs: #5c6368;
+  --lijn: #cfd3cc;
+  --geel: #ffd400;
+  --markeer: rgba(255, 212, 0, 0.55);
+  --link: #1d3fa8;
+
+  --tekst: "Literata Variable", Georgia, serif;
+  --ui: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+
+  --kantlijn: 12rem;
+  --kolom: 40rem;
+  --tussen: 3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papier: #171b1e;
+    --vlak: #20262a;
+    --inkt: #e6e8e3;
+    --grijs: #9ba2a6;
+    --lijn: #353c41;
+    --markeer: rgba(255, 212, 0, 0.32);
+    --link: #9db4ff;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--papier);
+  color: var(--inkt);
+  font-family: var(--tekst);
+  font-size: 112.5%;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--geel);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--tekst);
+  line-height: 1.2;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1em;
+}
+
+/* De markeerstift */
+.markeer {
+  background: linear-gradient(transparent 52%, var(--markeer) 52%, var(--markeer) 92%, transparent 92%);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* ---------------------------------------------------------------- raster */
+
+.pagina {
+  max-width: calc(var(--kantlijn) + var(--tussen) + var(--kolom) + 4rem);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.rij {
+  display: grid;
+  grid-template-columns: var(--kantlijn) minmax(0, var(--kolom));
+  column-gap: var(--tussen);
+}
+
+.kantlijn {
+  font-family: var(--ui);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--grijs);
+  padding-top: 0.35rem;
+}
+
+@media (max-width: 60rem) {
+  .pagina {
+    padding: 0 1rem;
+  }
+  .rij {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .kantlijn {
+    padding-top: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* ---------------------------------------------------------------- kop en voet */
+
+.kop {
+  border-bottom: 1px solid var(--lijn);
+  padding: 1.25rem 0 1rem;
+  margin-bottom: 3rem;
+}
+.kop .rij {
+  align-items: baseline;
+}
+.woordmerk {
+  font-family: var(--tekst);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--inkt);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.woordmerk .ai {
+  padding: 0 0.12em;
+  margin-right: 0.12em;
+}
+.menu {
+  font-family: var(--ui);
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+.menu a {
+  color: var(--inkt);
+  text-decoration: none;
+}
+.menu a[aria-current="page"],
+.menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--geel);
+  text-decoration-thickness: 3px;
+}
+
+.voet {
+  border-top: 1px solid var(--lijn);
+  margin-top: 5rem;
+  padding: 1.5rem 0 3rem;
+  font-family: var(--ui);
+  font-size: 0.85rem;
+  color: var(--grijs);
+}
+.voet a {
+  color: var(--grijs);
+}
+.voetlinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+}
+
+/* ---------------------------------------------------------------- tekstblokken */
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.meta {
+  font-family: var(--ui);
+  font-size: 0.85rem;
+  color: var(--grijs);
+}
+
+.sectie {
+  margin-bottom: 3.5rem;
+}
+.sectie > div > h2:first-child,
+.sectie h2 {
+  margin-top: 0;
+  font-size: 1.45rem;
+}
+
+.proza h3 {
+  font-size: 1.1rem;
+}
+.proza strong {
+  font-weight: 650;
+}
+.proza blockquote {
+  margin: 0 0 1em;
+  padding-left: 1rem;
+  border-left: 3px solid var(--lijn);
+  color: var(--grijs);
+}
+
+/* Uitklapbare verdieping */
+details {
+  margin: 1.25rem 0;
+  border-top: 1px solid var(--lijn);
+  border-bottom: 1px solid var(--lijn);
+}
+summary {
+  font-family: var(--ui);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.6rem 0;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.2em;
+  font-weight: 700;
+}
+details[open] summary::before {
+  content: "−";
+}
+details > *:not(summary) {
+  font-size: 0.95rem;
+}
+
+/* Labels */
+.labels {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.4rem;
+}
+.labels li {
+  border: 1px solid var(--lijn);
+  border-radius: 1rem;
+  padding: 0.05rem 0.55rem;
+  font-size: 0.75rem;
+  color: var(--inkt);
+  background: var(--papier);
+}
+
+/* ---------------------------------------------------------------- hype-meter */
+
+.hype {
+  margin: 0;
+}
+.hype-schaal {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+  margin: 0.35rem 0 0.25rem;
+}
+.hype-schaal span {
+  height: 0.6rem;
+  background: var(--vlak);
+  border: 1px solid var(--lijn);
+}
+.hype-schaal span[data-actief] {
+  background: var(--geel);
+  border-color: var(--inkt);
+}
+.hype-uiteinden {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+}
+.hype-stand {
+  font-weight: 700;
+  color: var(--inkt);
+}
+.hype-uitleg {
+  margin-top: 0.4rem;
+}
+
+/* ---------------------------------------------------------------- bijzondere secties */
+
+.inschatting {
+  background: var(--vlak);
+  padding: 1.5rem 1.75rem;
+  border-left: 4px solid var(--geel);
+}
+.inschatting h2 {
+  margin-top: 0;
+}
+.handtekening {
+  font-family: var(--ui);
+  font-size: 0.85rem;
+  color: var(--grijs);
+  margin: 0;
+}
+
+.klein {
+  font-size: 0.9rem;
+}
+.klein h2 {
+  font-size: 1.1rem;
+}
+
+/* ---------------------------------------------------------------- lijsten */
+
+.editielijst {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.editielijst li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--lijn);
+}
+.editielijst a {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--inkt);
+  text-decoration: none;
+}
+.editielijst a:hover {
+  text-decoration: underline;
+}
+/* een link in de grijze regel onder de titel (bv. RSS) is een gewone link, geen titel */
+.editielijst .meta a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--grijs);
+  text-decoration: underline;
+}
+
+.onderwerpenlijst {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+.onderwerpenlijst li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--lijn);
+}
+.onderwerpenlijst .hype-schaal {
+  margin-top: 0.55rem;
+}
+@media (max-width: 30rem) {
+  .onderwerpenlijst li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
+/* Inschrijven */
+.inschrijven {
+  border: 1px solid var(--inkt);
+  padding: 1.5rem 1.75rem;
+}
+.inschrijven h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+}
+.inschrijven form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.inschrijven input[type="email"] {
+  flex: 1 1 14rem;
+  font: inherit;
+  font-family: var(--ui);
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--inkt);
+  background: var(--papier);
+  color: var(--inkt);
+}
+.knop {
+  font-family: var(--ui);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.1rem;
+  background: var(--geel);
+  color: #20262b;
+  border: 1px solid var(--inkt);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.knop:hover {
+  background: #ffe24d;
+}
+
+/* Jargonfilter */
+.jargon dt {
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-top: 2rem;
+  scroll-margin-top: 1rem;
+}
+.jargon dd {
+  margin: 0.35rem 0 0;
+}
+.jargon .voorbeeld {
+  font-style: italic;
+  color: var(--grijs);
+}
+.alfabet {
+  font-family: var(--ui);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ---------------------------------------------------------------- tijdlijn (AI Act-kompas) */
+
+.tijdlijn {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid var(--lijn);
+}
+.tijdlijn li {
+  position: relative;
+  padding: 0 0 1.25rem 1.25rem;
+}
+.tijdlijn li::before {
+  content: "";
+  position: absolute;
+  left: -0.45rem;
+  top: 0.4rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--papier);
+  border: 2px solid var(--grijs);
+}
+.tijdlijn li[data-status="komt"]::before {
+  background: var(--geel);
+  border-color: var(--inkt);
+}
+.tijdlijn p {
+  margin: 0;
+}
+.tijdlijn-datum {
+  font-family: var(--ui);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ---------------------------------------------------------------- fiches */
+
+.fiche .contains-task-list,
+.fiche ul:has(> li > input[type="checkbox"]) {
+  list-style: none;
+  padding-left: 0;
+}
+.fiche input[type="checkbox"] {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0 0.5rem 0 0;
+  vertical-align: -0.15rem;
+  accent-color: var(--inkt);
+}
+
+@media print {
+  .kop,
+  .voet,
+  .niet-printen,
+  .kantlijn {
+    display: none !important;
+  }
+  .rij {
+    grid-template-columns: 1fr;
+  }
+  html {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+  a {
+    color: #000;
+  }
+}
+
+/* Wat kan AI al? */
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  font-family: var(--ui);
+}
+.filter button {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--lijn);
+  border-radius: 1rem;
+  background: var(--papier);
+  color: var(--inkt);
+  cursor: pointer;
+}
+.filter button[aria-pressed="true"] {
+  background: var(--geel);
+  border-color: var(--inkt);
+  color: #20262b;
+  font-weight: 700;
+}
+.toepassing {
+  border-top: 1px solid var(--lijn);
+  padding: 1.5rem 0 0.5rem;
+}
+.toepassing:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.toepassing h2 {
+  margin: 0.3rem 0 0.8rem;
+  font-size: 1.35rem;
+}
+.toepassing h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+.toepassing h2 a:hover {
+  text-decoration: underline;
+}
+.toepassing-kop {
+  margin: 0;
+}
+.soort {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.05rem 0.45rem;
+  margin-right: 0.4rem;
+  border: 1px solid var(--inkt);
+  color: var(--inkt);
+}
+.soort[data-soort="demo"] {
+  background: var(--markeer);
+}
+.kanttekening {
+  border-left: 3px solid var(--geel);
+  padding-left: 0.9rem;
+}
+.video {
+  margin: 0 0 1rem;
+}
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.video .meta {
+  margin: 0.35rem 0 0;
+}
+
+/* Plus: status van een onderwerp in de dagbrief */
+.status {
+  display: inline-block;
+  margin: 0.5rem 0 0;
+  padding: 0.1rem 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+.status[data-status="Bevestigd"] {
+  background: var(--markeer);
+  border-color: transparent;
+}
+
+/* ---------------------------------------------------------------- overzicht (nov. 2026)
+   Feedback: de site was niet overzichtelijk. Minder menu-items, een inhoudstafel
+   bovenaan lange pagina's, de dagbrief zichtbaar op de startpagina. */
+
+/* Kopje in de kantlijn: wat staat hier? */
+.kantlijn-kop {
+  font-weight: 700;
+  color: var(--inkt);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  margin-bottom: 0.4rem;
+}
+
+/* De twee ritmes op de startpagina */
+.ritme {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--ui);
+  font-size: 0.95rem;
+}
+.ritme li {
+  padding: 0.45rem 0 0.45rem 0.9rem;
+  border-left: 3px solid var(--geel);
+  margin-bottom: 0.4rem;
+}
+
+/* Inhoudstafel */
+.inhoud {
+  font-family: var(--ui);
+  font-size: 0.92rem;
+  border-top: 1px solid var(--lijn);
+  border-bottom: 1px solid var(--lijn);
+  padding: 0.75rem 0 0.5rem;
+  margin: 1.5rem 0 0;
+}
+.inhoud-titel {
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--grijs);
+  margin: 0 0 0.4rem;
+}
+.inhoud ol {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+.inhoud li {
+  margin-bottom: 0.3rem;
+}
+.inhoud .meta {
+  font-size: 0.8rem;
+}
+
+/* Onderwerpen van een dagbrief als lijst in plaats van titels met schuine strepen */
+.dagonderwerpen {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+.dagonderwerpen li {
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--lijn);
+}
+.dagonderwerpen li:last-child {
+  border-bottom: 1px solid var(--lijn);
+}
+.dagonderwerpen a {
+  margin-right: 0.5rem;
+}
+.dagonderwerpen .status {
+  margin: 0;
+  font-family: var(--ui);
+  font-size: 0.72rem;
+  vertical-align: 0.1em;
+}
+.klein-lijst {
+  margin: 0.4rem 0 0;
+}
+ul.klein-lijst {
+  list-style: none;
+  padding-left: 0;
+}
+.klein-lijst li {
+  padding: 0.25rem 0 0.25rem 1rem;
+  border: 0 !important;
+  position: relative;
+  font-size: 0.95rem;
+}
+.klein-lijst li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.85em;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--geel);
+}
+.dossiertip {
+  margin: 1.25rem 0 0;
+  padding: 0.9rem 1.1rem;
+  background: var(--vlak);
+}
+.dossiertip a {
+  font-weight: 600;
+}
+
+/* Tegels: naslag en "altijd bij de hand" in twee kolommen */
+.tegels {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+.tegels li {
+  border: 1px solid var(--lijn);
+  padding: 1rem 1.1rem;
+}
+.tegels a {
+  font-weight: 650;
+  font-size: 1.1rem;
+  color: var(--inkt);
+}
+.tegels p {
+  margin: 0.3rem 0 0;
+  font-size: 0.92rem;
+  color: var(--grijs);
+}
+
+/* ---------------------------------------------------------------- gsm: navigatie */
+
+.gsm-menu,
+.alleen-gsm {
+  display: none;
+}
+
+@media (max-width: 60rem) {
+  .alleen-breed {
+    display: none;
+  }
+  .alleen-gsm {
+    display: block;
+  }
+
+  /* De kop blijft bereikbaar: weg bij naar beneden lezen, terug bij omhoog scrollen */
+  .kop {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--papier);
+    padding: 0.7rem 0;
+    margin-bottom: 1.75rem;
+    transition: transform 0.2s ease;
+  }
+  .kop.kop-weg {
+    transform: translateY(-100%);
+  }
+  .kop .rij {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .kop .menu {
+    display: none;
+  }
+
+  .gsm-menu {
+    display: block;
+    font-family: var(--ui);
+  }
+  .gsm-menu summary {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0;
+    font-size: 0.85rem;
+  }
+  .gsm-menu summary::before {
+    display: none;
+  }
+  .gsm-menu-nu {
+    color: var(--grijs);
+    font-weight: 400;
+  }
+  .gsm-menu-knop {
+    border: 1px solid var(--inkt);
+    padding: 0.35rem 0.75rem;
+    background: var(--geel);
+    color: #20262b;
+  }
+  .gsm-menu[open] .gsm-menu-knop {
+    background: var(--papier);
+    color: var(--inkt);
+  }
+  .gsm-menu > nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: var(--papier);
+    border-bottom: 3px solid var(--inkt);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    padding: 0.25rem 1rem 1rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+  .gsm-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .gsm-menu li a {
+    display: block;
+    padding: 0.75rem 0 0.75rem 0.8rem;
+    border-bottom: 1px solid var(--lijn);
+    border-left: 4px solid transparent;
+    color: var(--inkt);
+    text-decoration: none;
+  }
+  .gsm-menu li a[aria-current="page"] {
+    border-left-color: var(--geel);
+  }
+  .gsm-menu li strong {
+    display: block;
+    font-size: 1rem;
+  }
+  .gsm-menu li span {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--grijs);
+    line-height: 1.4;
+  }
+  .gsm-menu-voet {
+    display: flex;
+    gap: 1.25rem;
+    margin: 0.9rem 0 0;
+    font-size: 0.85rem;
+  }
+  .gsm-menu-voet a {
+    color: var(--grijs);
+  }
+}
+
+/* ---------------------------------------------------------------- welk soort pagina is dit? */
+
+.pagina-uitleg {
+  margin-top: 0.5rem;
+  max-width: 22rem;
+}
+@media (max-width: 60rem) {
+  .pagina-uitleg {
+    max-width: none;
+  }
+}
+
+/* ---------------------------------------------------------------- onderwerpen herkenbaar opdelen */
+
+.onderwerp {
+  border-top: 3px solid var(--inkt);
+  padding-top: 1.5rem;
+}
+.onderwerp-nr {
+  font-family: var(--ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--grijs);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.6rem;
+}
+.onderwerp-nr span {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  background: var(--geel);
+  color: #20262b;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  border: 1px solid var(--inkt);
+}
+.onderwerp .proza h2 {
+  margin-bottom: 0.9rem;
+}
+.onderwerp-meta {
+  background: var(--vlak);
+  padding: 0.75rem 0.9rem;
+  margin: 0 0 1.25rem;
+  font-family: var(--ui);
+  font-size: 0.85rem;
+}
+.onderwerp-meta .labels {
+  margin-bottom: 0.5rem;
+}
+.onderwerp-meta .status {
+  margin: 0 0 0.5rem;
+}
+.onderwerp-meta .hype-uitleg {
+  margin: 0.4rem 0 0;
+  color: var(--grijs);
+}
+
+/* Vaste rubrieken (ruis, woord, lezersvraag, om te proberen, radar) als kader */
+.rubriek {
+  border: 1px solid var(--lijn);
+  border-top: 4px solid var(--geel);
+  padding: 1.1rem 1.4rem 0.4rem;
+}
+.rubriek h2 {
+  font-size: 1.2rem !important;
+  margin-top: 0;
+}
+@media (max-width: 60rem) {
+  .rubriek {
+    padding: 1rem 1rem 0.3rem;
+  }
+  .inschatting {
+    padding: 1.25rem 1rem;
+  }
+}
+
+/* Knop terug naar de inhoudstafel */
+.naar-inhoud {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 15;
+  font-family: var(--ui);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.55rem 0.9rem;
+  background: var(--inkt);
+  color: var(--papier);
+  text-decoration: none;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+.naar-inhoud[hidden] {
+  display: none;
+}
+.inhoud {
+  scroll-margin-top: 5rem;
+}
+.onderwerp,
+.sectie[id] {
+  scroll-margin-top: 4.5rem;
+}
+
+/* Inschrijfblok springt eruit */
+.inschrijven {
+  background: rgba(255, 212, 0, 0.14);
+  border: 1px solid var(--inkt);
+  border-top: 5px solid var(--geel);
+}
+.inschrijven h2::before {
+  content: "✉";
+  display: inline-block;
+  margin-right: 0.45rem;
+  font-family: var(--ui);
+}
+@media (max-width: 60rem) {
+  .inschrijven {
+    padding: 1.25rem 1rem;
+  }
+}
+
+/* Het Vlaamse blok: waarom het ertoe doet, voor wie */
+.vlaanderen {
+  border-left: 4px solid var(--geel);
+  background: var(--vlak);
+  padding: 0.9rem 1.1rem 0.2rem;
+  margin: 0 0 1.25rem;
+}
+.vlaanderen-kop {
+  font-family: var(--ui);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.5rem;
+}
+.vlaanderen ul {
+  padding-left: 1.1rem;
+}
+@media (max-width: 60rem) {
+  .vlaanderen {
+    padding: 0.8rem 0.9rem 0.1rem;
+  }
+}
+
+/* Het gsm-menu is een <details>: zonder de lijnen van de uitklapblokken */
+.gsm-menu {
+  border: 0;
+  margin: 0;
+}
+.gsm-menu > nav {
+  font-size: 1rem;
+}
+
+/* ---------------------------------------------------------------- nieuwsbrief: duidelijke oproep */
+
+.visueel-verborgen {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.inschrijven-kicker {
+  font-family: var(--ui);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.3rem;
+}
+.inschrijven h2::before {
+  content: none;
+}
+.inschrijven h2 {
+  font-size: 1.45rem;
+}
+.inschrijven-voordelen {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  font-family: var(--ui);
+  font-size: 0.95rem;
+}
+.inschrijven-voordelen li {
+  padding: 0.2rem 0 0.2rem 1.6rem;
+  position: relative;
+}
+.inschrijven-voordelen li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  line-height: 1.15rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--inkt);
+  color: var(--papier);
+}
+.inschrijven input[type="email"] {
+  font-size: 1.05rem;
+  padding: 0.75rem 0.85rem;
+  border-width: 2px;
+}
+.knop-groot {
+  font-size: 1.05rem;
+  padding: 0.8rem 1.4rem;
+}
+@media (max-width: 40rem) {
+  .inschrijven form .knop {
+    flex-basis: 100%;
+  }
+}
+
+/* Korte oproep, midden in een pagina */
+.inschrijven-kort {
+  padding: 1rem 1.1rem;
+  margin: 1.75rem 0 0.5rem;
+  border: 1px solid var(--inkt);
+  border-left: 6px solid var(--geel);
+  border-top-width: 1px;
+}
+.inschrijven-kort .inschrijven-kort-tekst {
+  font-family: var(--ui);
+  font-size: 0.95rem;
+  margin: 0;
+}
+.inschrijven-kort form {
+  margin-top: 0.6rem;
+}
+.inschrijven-kort input[type="email"] {
+  font-size: 1rem;
+  padding: 0.55rem 0.7rem;
+  border-width: 1px;
+}
+
+/* Knop in de kop */
+.menu {
+  align-items: center;
+}
+.kop-knop {
+  font-weight: 700;
+  background: var(--geel);
+  color: #20262b !important;
+  border: 1px solid var(--inkt);
+  padding: 0.3rem 0.75rem;
+  text-decoration: none !important;
+  margin-left: auto;
+}
+.kop-knop:hover {
+  background: #ffe24d;
+}
+.kop-mail {
+  display: none;
+}
+@media (max-width: 60rem) {
+  .kop-mail {
+    display: inline-grid;
+    place-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    color: var(--inkt);
+    border: 1px solid var(--inkt);
+  }
+  .gsm-menu-nu {
+    display: none;
+  }
+  .gsm-menu-nieuwsbrief {
+    display: block;
+    margin-top: 0.9rem;
+    text-align: center;
+  }
+}
+
+/* Voorbeeld van de mail op /nieuwsbrief */
+.mailvoorbeeld iframe {
+  width: 100%;
+  height: 46rem;
+  border: 1px solid var(--lijn);
+  background: #e8eae4;
+}
+
+/* ---------------------------------------------------------------- gratis: tools en lesmateriaal */
+
+/* Een tool in een kader, over de volle breedte van de pagina */
+.tool-kader {
+  margin: 0 0 1rem;
+}
+.tool-kader iframe {
+  display: block;
+  width: 100%;
+  min-height: 40rem;
+  border: 1px solid var(--lijn);
+  background: #f4f6f5;
+}
+.tool-apart {
+  margin: 0.4rem 0 0;
+}
+
+/* Kaarten met een tool of een pakket */
+.aanbod {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.aanbod > li {
+  border-top: 1px solid var(--lijn);
+  padding: 1.25rem 0 0.5rem;
+}
+.aanbod > li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.aanbod h2 {
+  margin: 0.3rem 0 0.4rem;
+  font-size: 1.45rem;
+}
+.aanbod h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+.aanbod h2 a:hover {
+  text-decoration: underline;
+}
+.aanbod-soort {
+  font-family: var(--ui);
+  font-size: 0.8rem;
+  color: var(--grijs);
+  margin: 0;
+}
+.aanbod-vraag {
+  font-size: 1.15rem;
+  font-style: italic;
+  margin: 0 0 0.5rem;
+}
+
+/* Drie of zes stappen */
+.stappen {
+  counter-reset: stap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+.stappen li {
+  counter-increment: stap;
+  position: relative;
+  padding-left: 2.6rem;
+}
+.stappen li::before {
+  content: counter(stap);
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: grid;
+  place-items: center;
+  font-family: var(--ui);
+  font-weight: 700;
+  background: var(--geel);
+  color: #20262b;
+  border: 1px solid var(--inkt);
+}
+
+/* Pakketten in voorbereiding */
+.komend {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+.komend li {
+  border-left: 3px solid var(--lijn);
+  padding-left: 0.9rem;
+}
+.komend p {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  color: var(--grijs);
+}
+
+/* Download op de pagina van een pakket */
+.downloadblok {
+  background: var(--vlak);
+  padding: 1.1rem 1.2rem 0.4rem;
+  margin: 1.5rem 0 2rem;
+}
+.downloadblok .meta {
+  margin: 0.5rem 0 0;
+}
+.downloadblok-kop {
+  font-size: 1rem !important;
+  font-family: var(--ui) !important;
+  margin: 1.25rem 0 0.4rem !important;
+}
+.bestanden {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.8rem;
+}
+.bestanden li {
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--lijn);
+}
+.bestanden li p {
+  margin: 0.15rem 0 0;
+  font-size: 0.92rem;
+}
+.bestanden a {
+  font-family: var(--ui);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* Prompt en code om te kopiëren */
+.prompt,
+.codeblok pre {
+  display: block;
+  width: 100%;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  background: var(--vlak);
+  color: var(--inkt);
+  border: 1px solid var(--lijn);
+  padding: 0.8rem;
+  margin: 0.4rem 0 0.6rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.prompt {
+  resize: vertical;
+}
+.codeblok {
+  margin: 0 0 1.25rem;
+}
+.knop-klein {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.8rem;
+}
+.naamsvermelding {
+  border-left: 6px solid var(--geel);
+  background: var(--vlak);
+  padding: 0.8rem 1rem;
+  font-family: var(--ui);
+  font-size: 0.95rem;
+}
+
+/* Gratis tool op de startpagina */
+.toolpromo {
+  border: 1px solid var(--inkt);
+  border-left: 6px solid var(--geel);
+  padding: 1.1rem 1.2rem;
+}
+.toolpromo h2 {
+  margin: 0.2rem 0 0.5rem !important;
+  font-size: 1.45rem;
+}
+.toolpromo p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------- toegankelijkheid: naar de inhoud */
+
+.sla-menu-over {
+  position: absolute;
+  left: 0.75rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.6rem 0.9rem;
+  background: var(--geel);
+  color: #20262b;
+  font-family: var(--ui);
+  font-weight: 600;
+  text-decoration: none;
+}
+.sla-menu-over:focus {
+  top: 0.75rem;
+}
+main:focus {
+  outline: none;
+}
+
+.inschrijven-kort-privacy {
+  flex-basis: 100%;
+  margin: 0.4rem 0 0;
+}
+
+/* ---------------------------------------------------------------- cijfertabel (verbruik) */
+
+.tabelrol {
+  overflow-x: auto;
+}
+.cijfertabel {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--ui);
+  font-size: 0.9rem;
+}
+.cijfertabel th,
+.cijfertabel td {
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  border-top: 1px solid var(--lijn);
+  text-align: left;
+  vertical-align: top;
+}
+.cijfertabel thead th {
+  border-top: 0;
+  color: var(--grijs);
+  font-weight: 400;
+}
+.cijfertabel tbody th {
+  font-weight: 600;
+}
+.cijfertabel .getal {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}

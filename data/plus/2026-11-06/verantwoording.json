@@ -1,0 +1,82 @@
+[
+  {
+    "passage": "en elke herhaling of bijwerking telt mee",
+    "beslissing": "verwerkt",
+    "toelichting": "Geschrapt; alleen het rekenvoorbeeld van $1,05 blijft en er staat dat Google de aanrekening van bijwerkingen niet uitlegt."
+  },
+  {
+    "passage": "geen informatie over wie toegang krijgt",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegang voor geselecteerde Daybreak Red-klanten en het Linux-kernelgebruik staan erin, toegeschreven aan OpenAI met link naar de X-post, en de stellige conclusie 'vooral een aankondiging' is geschrapt."
+  },
+  {
+    "passage": "Realistischer AI-video met stemmen en lipsynchronisatie maakt het moeilijker om echt van gegenereerd te onderscheiden.",
+    "beslissing": "verwerkt",
+    "toelichting": "Geschrapt; de passage beperkt zich tot Googles claims en vermeldt dat de bron herkenbaarheid niet onderzoekt."
+  },
+  {
+    "passage": "Een onafhankelijke test ontbreekt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door de formulering dat de claims niet onafhankelijk bevestigd zijn, ook bij OpenAI."
+  },
+  {
+    "passage": "Het bedrijf zegt dat een eigen agent voor incidentonderzoek \"honderden uren per maand\" bespaart en een workflow voor feedbacksortering ongeveer 35 uur per week.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beide cijfers zijn gekoppeld aan Mistrals engineeringteam en productoperationsteam, met behoud van de kanttekening over ontbrekende context."
+  },
+  {
+    "passage": "De mogelijkheid om op eigen servers te draaien is vooral interessant voor organisaties die gegevens niet bij een Amerikaanse cloud willen laten.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vergelijking met Amerikaanse aanbieders geschrapt en vervangen door de melding dat eigen infrastructuur op zichzelf niets bewijst over gegevensbescherming of conformiteit."
+  },
+  {
+    "passage": "Bruikbaar voor zelfstandigen die kleine taken willen uitbesteden.",
+    "beslissing": "verwerkt",
+    "toelichting": "Bruikbaarheidsoordeel geschrapt en het item beschreven als promotionele demonstratie, niet als geteste tip."
+  },
+  {
+    "passage": "kosten en gegevensbescherming komen niet aan bod",
+    "beslissing": "verwerkt",
+    "toelichting": "Geheugen- en appgebruik en Saraevs eigen controle zijn toegevoegd, met onderscheid tussen toegang tot gegevens en uitleg over bescherming."
+  },
+  {
+    "passage": "Volgens METR groeiden de AECI-scores van Anthropic-modellen sinds oktober 2025 1,9 keer sneller, met een brede onzekerheidsmarge (1,5–2,8).",
+    "beslissing": "verwerkt",
+    "toelichting": "Omdat de bron niet uitlegt wat AECI meet, is de score weggelaten en blijven METRs kanttekeningen over analysekeuzes en benchmarks staan, met een NAKIJKEN-commentaar."
+  },
+  {
+    "passage": "METR ziet geen overtuigend bewijs van knelpunten die de algoritmische vooruitgang binnen twaalf maanden zouden afremmen",
+    "beslissing": "verwerkt",
+    "toelichting": "Het tegenwicht over niet-volledige automatisering en moeilijk interpreteerbaar bewijs is toegevoegd met de link naar de betreffende post."
+  },
+  {
+    "passage": "26% van de Amerikaanse werknemers in de voorbije week",
+    "beslissing": "verwerkt",
+    "toelichting": "De tekst vermeldt nu dat het de oktoberpeiling betreft en de week voorafgaand aan die peiling."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Per hoofdonderwerp is een hype-meterstand met één zin uitleg toegevoegd, naast de bronstatus."
+  },
+  {
+    "passage": "Alle claims komen van de makers zelf",
+    "beslissing": "verwerkt",
+    "toelichting": "De zin is beperkt tot de productaankondigingen en vermeldt dat een onafhankelijke bevestiging ontbreekt; per onderwerp staat dat ook, met een NAKIJKEN-commentaar over OpenAI-bronnen."
+  },
+  {
+    "passage": "maar de brontekst geeft weinig details",
+    "beslissing": "verwerkt",
+    "toelichting": "Alle verwijzingen naar brontekst, beschikbare tekst en fragment zijn vervangen door wat de organisatie zegt of niet bevestigd is, en de noodzakelijke controles staan in HTML-commentaar."
+  },
+  {
+    "passage": "Beveiligingsverantwoordelijken kunnen dit volgen, maar er valt nog niets te evalueren.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door hypothetische beslissingen van een Vlaamse gemeente en een hogeschool, met benoeming van de ontbrekende informatie en zonder lokale beschikbaarheid te suggereren."
+  },
+  {
+    "passage": "agents, workflows en apps bouwen",
+    "beslissing": "verwerkt",
+    "toelichting": "Workflows, benchmark, defensieve cybersecurity, lipsynchronisatie en compliance zijn bij eerste gebruik uitgelegd of vervangen door gewone woorden."
+  }
+]

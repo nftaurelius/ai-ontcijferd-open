@@ -1,0 +1,128 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "zijn gemeten met de hoogste inspanningsstand van elk model",
+    "probleem": "Anthropic vermeldt expliciet uitzonderingen op deze regel. De tabel noemt onder meer Medium effort voor Gemini bij FrontierCode en High effort voor Fable bij de Remote Labor Index.",
+    "voorstel": "Neem het voorbehoud 'tenzij anders vermeld' over en vermeld de afwijkende instellingen bij vergelijkingen waarvoor ze relevant zijn."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "kan testen of de duurdere variant het meerwerk waard is",
+    "probleem": "Het is onduidelijk waarmee de prijs wordt vergeleken. De aangehaalde Anthropic-bron geeft geen prijs voor Opus 5.5. Fable en Mythos kosten volgens die bron evenveel, en versie 5.2 is juist goedkoper dan 5.1.",
+    "voorstel": "Schrap 'duurdere' of voeg een gecontroleerde prijsvergelijking toe met een expliciet genoemd model. Onderscheid de tokenprijs van de kosten per taak."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Voor lessen informatica of wetenschap is dit vooral een signaal dat modellen complexer werk aankunnen.",
+    "probleem": "Hier worden bedrijfsclaims alsnog vertaald naar een algemene capaciteitsvaststelling. De bron toont geen onderzoek naar gebruik in lessen of prestaties van leerlingen.",
+    "voorstel": "Behoud de toeschrijving aan Anthropic en maak duidelijk dat de tests geen onderwijswaarde aantonen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Het cijfer gaat over grote ondernemingen.",
+    "probleem": "Data News vermeldt CIO's, maar zegt niets over de grootte van hun organisaties. Ook 'wat grote bedrijven vrezen' voegt een niet-onderbouwde afbakening toe.",
+    "voorstel": "Schrap de beperking tot grote ondernemingen. Vermeld dat de samenstelling van de bevraagde groep niet wordt toegelicht."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Wie AI inzet bij selectie of beoordeling, valt onder de strengere regels voor hoogrisicosystemen en moet kunnen uitleggen hoe een beslissing tot stand kwam.",
+    "probleem": "De bron spreekt over bepaalde hoogrisicosystemen, niet over iedere inzet van AI bij selectie of beoordeling. Ze onderbouwt evenmin deze algemene juridische uitlegverplichting voor elke werkgever.",
+    "voorstel": "Beperk de uitspraak tot wat The Brussels Times meldt. Controleer de toepasselijke categorieën, uitzonderingen, verplichtingen en ingangsdata in de verordening voordat je concreet juridisch advies geeft."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Datacenters: online verzet is groot, maar vooral emotioneel gevoed",
+    "probleem": "Het onderzoek vindt meer interactie bij emotioneel of politiek geformuleerde posts. Dat bewijst niet dat het verzet hoofdzakelijk door emoties wordt veroorzaakt. De grootste inhoudelijke categorieën gaan juist over grondstoffen en besluitvorming.",
+    "voorstel": "Laat de kop het onderscheid weergeven tussen inhoudelijke bezwaren en de berichten die de meeste aandacht krijgen. Vermijd een causale verklaring voor het verzet."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een preprint op arXiv analyseert 798 Reddit-posts en 102.328 reacties over datacenters",
+    "probleem": "Een belangrijke methodologische kanttekening ontbreekt: de onderzoekers lieten standpunten classificeren door een taalmodel. Het abstract rapporteert daarbij een prestatie ten opzichte van de overeenstemming tussen menselijke beoordelaars.",
+    "voorstel": "Vermeld de automatische classificatie en de mogelijkheid van classificatiefouten. Als je de gerapporteerde 83% gebruikt, leg dan uit dat dit geen gewone nauwkeurigheidsscore is."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Het onderzoek gaat over Reddit, een kleine en niet representatieve groep, en vooral over de Verenigde Staten.",
+    "probleem": "Het abstract specificeert geen geografische verdeling van de Reddit-gegevens en geen omvang van de gebruikersgroep. De Amerikaanse projectenschatting bewijst niet dat de onderzochte discussies vooral Amerikaans zijn. Representativiteit wordt evenmin onderzocht in het abstract.",
+    "voorstel": "Beperk de vaststelling tot de onderzochte Reddit-discussies. Zeg dat het abstract geen representativiteit voor inwoners of Vlaamse gemeenten aantoont en geen geografische verdeling geeft."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Ze leggen niet uit hoe die schatting tot stand kwam.",
+    "probleem": "Alleen het abstract is beschikbaar als inhoudelijke onderzoeksbron. Dat het abstract geen berekening geeft, bewijst niet dat de auteurs die nergens uitleggen. Ook 'Een Vlaamse vergelijking staat er niet in' en de stellige uitspraak over ontbrekende collegiale toetsing gaan verder dan wat de bron vaststelt.",
+    "voorstel": "Beperk deze uitspraken expliciet tot het abstract. Controleer de volledige publicatie en publicatiestatus voordat je conclusies trekt over ontbrekende onderbouwing of toetsing."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De bezwaren vallen in vier groepen",
+    "probleem": "De percentages horen bij door de onderzoekers geclusterde argumenten tegen datacenters. De formulering laat onduidelijk of het om personen, posts of argumenten gaat en kan als verdeling van alle bezwaren worden gelezen.",
+    "voorstel": "Benoem dat het om clusters van tegenargumenten in deze analyse gaat. Controleer de noemer voordat je de percentages opneemt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Online discussies tonen vooral het luidste standpunt, niet de technische kern.",
+    "probleem": "Deze conclusie veralgemeent één onderzoek naar Reddit-discussies over datacenters tot online discussies in het algemeen. Bovendien bevatte de onderzochte discussie wel technische zorgen, alleen in reacties met minder interactie.",
+    "voorstel": "Beperk de conclusie tot deze dataset en maak onderscheid tussen aanwezigheid van technische argumenten en hun zichtbaarheid."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Het artikel meldt geen bevindingen over wat AI met kinderen doet.",
+    "probleem": "Het abstract presenteert een onderzoeksplatform en noemt geen zulke bevindingen. Daarmee is niet vastgesteld wat het volledige artikel wel of niet rapporteert.",
+    "voorstel": "Beperk de uitspraak tot het abstract. Maak hetzelfde onderscheid bij andere uitspraken over de volledige publicatie."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "GS1 beheert zelf de standaarden die het aanprijst en organiseert een event over het thema.",
+    "probleem": "De bron noemt een congres van LD&Co en RetailDetail waar een GS1-medewerker spreekt. Ze zegt niet dat GS1 het evenement organiseert.",
+    "voorstel": "Corrigeer de rol van GS1 naar spreker op het evenement. Behoud de kanttekening over het belang bij de aanbevolen standaarden zonder een organisatierol toe te voegen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De maker noemt drie gratis bibliotheken",
+    "probleem": "De videotitel noemt open-sourceprojecten, maar de beschrijving bevestigt niet dat alle gebruik gratis is. Open source en gratis zijn geen uitwisselbare begrippen.",
+    "voorstel": "Schrap 'gratis' totdat de licenties en eventuele betaalde onderdelen bij de projecten zelf zijn gecontroleerd."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "waarmee modelworkloads op de onderzoeksinfrastructuur binnen 35 seconden na een besluit worden gestopt",
+    "probleem": "De radarbron zegt dat modeloutput binnen 35 seconden stopt na een besluit om een job te stoppen of te pauzeren. De tekst maakt daarvan het volledig stoppen van workloads, een ruimere technische claim.",
+    "voorstel": "Houd de claim bij het stoppen van modeloutput en behoud de toeschrijving aan OpenAI."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Meta introduceert Muse Ember, een klein model voor agentwerk met een contextvenster van 1 miljoen tokens",
+    "probleem": "De productspecificatie komt uitsluitend van Meta. 'Nog niet bevestigd' aan het einde maakt niet duidelijk dat de capaciteit een claim van de maker is.",
+    "voorstel": "Schrijf expliciet dat het model volgens Meta dit contextvenster heeft en dat onafhankelijke bevestiging ontbreekt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Prof. Bart Preneel koppelt de recordgolf aan Belgische cyberaanvallen aan krachtige AI-modellen, volgens De Standaard",
+    "probleem": "De beschikbare inhoud komt van een bericht van @CosicBe, niet uit een gecontroleerde tekst van De Standaard. De bronvermelding schuift de claim door naar de krant. Bovendien mag inhoud van betalende media volgens de bronregels niet via een samenvatting worden overgenomen.",
+    "voorstel": "Controleer een rechtstreeks toegankelijke primaire bron voor Preneels uitspraak. Gebruik van een betalend artikel uitsluitend de gecontroleerde kop als signaal, of schrap dit radarbericht."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Eén bron",
+    "probleem": "Nergens staat een hype-meter. Een bronstatus vervangt niet de verplichte beoordeling van aandacht tegenover verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per behandeld onderwerp één toegestane stand toe, met één zin uitleg. Onderbouw de keuze; de triagescores zijn geen vervanging voor die afweging."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Voor wie:**",
+    "probleem": "De doelgroepblokken geven meestal algemene adviezen. Vooral bij Claude, Gartner en GS1 ontbreekt een concrete Vlaamse toepassing waarmee de lezer de relevantie kan beoordelen.",
+    "voorstel": "Voeg waar nuttig een duidelijk hypothetische toepassing toe, bijvoorbeeld een Vlaamse webwinkel die productvarianten controleert. Presenteer zulke voorbeelden niet als gemeten praktijkresultaat."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Verder: Gartner waarschuwt dat AI-risico's sneller groeien dan de waarde",
+    "probleem": "De samenvatting laat weg dat het om een gerapporteerde inschatting van CIO's gaat. Daardoor klinkt de waarschuwing meer als een vastgestelde ontwikkeling dan de verdere tekst rechtvaardigt.",
+    "voorstel": "Laat ook in de samenvatting blijken dat Gartner een perceptie onder CIO's rapporteert."
+  },
+  {
+    "ernst": "klein",
+    "passage": "bias in algoritmen",
+    "probleem": "Meerdere vakwoorden krijgen bij het eerste gebruik geen uitleg. Naast 'bias' geldt dat onder meer voor 'open-source', 'speltheoretische analyse', 'dark patterns', 'AI-companions', 'contextvenster' en 'IPO'.",
+    "voorstel": "Vervang deze termen door gewone woorden of geef bij het eerste gebruik een korte uitleg."
+  }
+]

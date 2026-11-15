@@ -1,0 +1,97 @@
+[
+  {
+    "passage": "Google heeft Gemini 4 Hydrogen gelanceerd, een snel en goedkoop model...",
+    "beslissing": "verwerkt",
+    "toelichting": "Samenvatting schrijft claims aan Google en Nvidia toe en schrapt 'goedkoop'."
+  },
+  {
+    "passage": "legde Outlook, Teams en Copilot urenlang plat",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door 'verstoorde ... urenlang', zoals VRT het beschrijft."
+  },
+  {
+    "passage": "De winst van één punt ligt bovendien dicht bij de meetonzekerheid.",
+    "beslissing": "verwerkt",
+    "toelichting": "Geschrapt; vermeld dat de bronnen geen onzekerheidsmarge geven."
+  },
+  {
+    "passage": "Een post van Artificial Analysis zelf zou dat bevestigen...",
+    "beslissing": "verwerkt",
+    "toelichting": "51 (standaard) en 54 (xhigh) onderscheiden; de post bevestigt 51 tegenover 50 niet."
+  },
+  {
+    "passage": "Die index is een samengestelde score van een derde partij en meet vooral prestaties op testtaken",
+    "beslissing": "verwerkt",
+    "toelichting": "Ongeverifieerde uitleg geschrapt; bronnen leggen de meting niet uit, met nakijknoot voor de eindredactie."
+  },
+  {
+    "passage": "Teams die al met de Gemini API werken, kunnen volgens Google sneller en goedkoper...",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot vergelijking met Gemini 3.8 Flash en de beschreven tests; kostenbelofte geschrapt."
+  },
+  {
+    "passage": "welke talen er bovenop de \"ondersteunde AI Mode-talen\" bijkomen",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven: de bron noemt geen talen en maakt de impact voor Nederlands onduidelijk."
+  },
+  {
+    "passage": "Dat zijn geen gemeten storingen, maar het geeft de omvang weer.",
+    "beslissing": "verwerkt",
+    "toelichting": "Dienst (Outlook) en tijdstip toegevoegd; benoemd als meldingsvolume."
+  },
+  {
+    "passage": "Twee kranten van De Standaard publiceerden er koppen over",
+    "beslissing": "verwerkt",
+    "toelichting": "Passage geschrapt; de betaalmuurartikelen staan alleen in een nakijknoot."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Bij Google en Nvidia staat nu dat onafhankelijke bevestiging ontbreekt."
+  },
+  {
+    "passage": "Projecten vanaf 25 MW moeten vooraf een partnerschapscontract met het Gewest sluiten",
+    "beslissing": "verwerkt",
+    "toelichting": "Uitzondering voor uitsluitend eigen gebruik toegevoegd."
+  },
+  {
+    "passage": "Strategische industrieterreinen zijn voortaan verboden terrein",
+    "beslissing": "verwerkt",
+    "toelichting": "'Voortaan' geschrapt, beschrijving van het kader met nakijknoot over de ingangsdatum."
+  },
+  {
+    "passage": "Toch speelt in Vlaanderen dezelfde spanning tussen datacenters en bedrijven die op een netaansluiting wachten.",
+    "beslissing": "verwerkt",
+    "toelichting": "Geschrapt; er is geen Vlaamse bron, het Waalse kader staat als beleidsvoorbeeld."
+  },
+  {
+    "passage": "Dit is de eigen beschrijving van de makers, zonder onafhankelijke evaluatie.",
+    "beslissing": "verwerkt",
+    "toelichting": "Waarschuwing van de makers over pedagogische onbetrouwbaarheid toegevoegd, met de kanttekening dat oplossing niet is aangetoond."
+  },
+  {
+    "passage": "Artificial Analysis meldt dat Gemini 4 Hydrogen 54 scoort op zijn index",
+    "beslissing": "verwerkt",
+    "toelichting": "xhigh vermeld, 'ongeveer een derde' behouden en genoteerd dat de kostenbasis ontbreekt."
+  },
+  {
+    "passage": "de nieuwe robotica-test AA-Robotics v0.1 met 75 punten",
+    "beslissing": "verwerkt",
+    "toelichting": "Taakvoorbeeld en ontbrekende scoreschaal/methode benoemd."
+  },
+  {
+    "passage": "Nathan Lambert reageert op forensisch bewijs dat Chinese labs modellen bouwden...",
+    "beslissing": "verwerkt",
+    "toelichting": "Expliciet toegeschreven aan de post; onderliggend bewijs niet bevestigd."
+  },
+  {
+    "passage": "## Google lanceert Gemini 4 Hydrogen, ook in Google Search",
+    "beslissing": "verwerkt",
+    "toelichting": "Hype-meter met één zin uitleg toegevoegd bij elk uitgewerkt onderwerp."
+  },
+  {
+    "passage": "de baselinestromen voor het silicon-interposerplatform van de NanoIC-pilootlijn",
+    "beslissing": "verwerkt",
+    "toelichting": "Toepassing voor ontwerpers vooropgezet, interposer, API en open source kort uitgelegd; MW is een gangbare eenheid en blijft ongewijzigd."
+  }
+]

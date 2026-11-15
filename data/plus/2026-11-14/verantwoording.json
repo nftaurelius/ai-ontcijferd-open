@@ -1,0 +1,82 @@
+[
+  {
+    "passage": "Google brengt met Gemini 4 Hydrogen een goedkoper codeermodel uit.",
+    "beslissing": "verwerkt",
+    "toelichting": "'Goedkoper' geschrapt omdat de Google-blog geen prijzen noemt; nu 'een model voor alledaags codeerwerk'."
+  },
+  {
+    "passage": "Een Amerikaans onderzoeksinstituut",
+    "beslissing": "verwerkt",
+    "toelichting": "'Amerikaans' geschrapt omdat het rapport de vestigingsplaats niet vermeldt."
+  },
+  {
+    "passage": "OpenAI laat ChatGPT-agents namens jou aankopen betalen met ChatGPT Wallet",
+    "beslissing": "verwerkt",
+    "toelichting": "Samenvatting zegt nu dat OpenAI de functie aankondigt en dat agents volgens het bedrijf betalen."
+  },
+  {
+    "passage": "Het draait alleen of samen met de zwaardere modellen Gemini 4 Carbon en Gemini 4 Argon",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegeschreven aan Google, 'zwaardere' vervangen door Googles eigen term 'frontier models'."
+  },
+  {
+    "passage": "taken met beeld en geluid",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door Googles 'multimodal workflows', uitgelegd als verschillende soorten invoer, zonder beeld of geluid te noemen."
+  },
+  {
+    "passage": "Het rapport beschrijft daarnaast twee latere gebeurtenissen, waarvan we hier alleen de hoofdlijn kennen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Redactionele zin vervangen door de twee hoofdlijnen (DNS-omleiding volgens Trajectory, samenwerking met Epoch); beperking staat in HTML-commentaar."
+  },
+  {
+    "passage": "een lokaas-API, een eindpunt dat Epoch had geplaatst om misbruik te detecteren",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegevoegd dat het lokaaseindpunt niet met privégegevens verbonden was, apart van de pogingen om echte logs te lezen."
+  },
+  {
+    "passage": "Het incident toont dat AI-agents die niet mogen opgeven, kunnen overgaan tot misleiding.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar wat in de test is waargenomen, met Epochs voorbehoud dat het gedrag 'ten minste gedeeltelijk' uit de instructie lijkt voort te komen."
+  },
+  {
+    "passage": "Wie een website beheert, kan verkeer van AI-agents verwachten dat zich anders voordoet dan het is.",
+    "beslissing": "verwerkt",
+    "toelichting": "Voorspelling vervangen door een open vraag, met de aantekening dat het om één extreme test gaat."
+  },
+  {
+    "passage": "**Voor wie:**",
+    "beslissing": "verwerkt",
+    "toelichting": "Hypothetische scenario's toegevoegd (Vlaamse webshop met agentbestelling) en de onbeantwoorde vragen benoemd, zonder lokale impact te beweren."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Per hoofdonderwerp een hype-meterstand met één zin uitleg toegevoegd."
+  },
+  {
+    "passage": "met onder meer VUB-onderzoek en AI-experimenten van Luc Steels",
+    "beslissing": "verwerkt",
+    "toelichting": "Directe link naar de vervolgpost toegevoegd en de details daaraan toegeschreven."
+  },
+  {
+    "passage": "een eerder incident van juli 2026 tussen OpenAI en Hugging Face",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven als omschrijving van Trajectory: 'het OpenAI-Hugging Face-incident van juli 2026', zonder duiding van de relatie."
+  },
+  {
+    "passage": "staat niet in de gebruikte tekst",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door 'is niet beschreven' en de controle van de volledige aankondiging naar een HTML-commentaar verplaatst."
+  },
+  {
+    "passage": "codeerwerk in een volledige codebase, debuggen",
+    "beslissing": "verwerkt",
+    "toelichting": "Vakwoorden vervangen of uitgelegd: repository, fouten opsporen, API, denkniveaus."
+  },
+  {
+    "passage": "geen vastgestelde feit",
+    "beslissing": "verwerkt",
+    "toelichting": "Gecorrigeerd naar 'geen vastgesteld feit'."
+  }
+]

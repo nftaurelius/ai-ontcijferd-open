@@ -1,0 +1,61 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { alleTermen } from "../lib/jargon";
+import { SITE_URL } from "../lib/seo";
+
+const termen = alleTermen();
+const letters = [...new Set(termen.map((t) => t.term[0].toUpperCase()))];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": `${SITE_URL}/jargon`,
+  name: "Jargonfilter van AI Ontcijferd",
+  description: "AI-vaktermen in gewoon Nederlands uitgelegd.",
+  inLanguage: "nl-BE",
+  hasDefinedTerm: termen.map((t) => ({
+    "@type": "DefinedTerm",
+    name: t.term,
+    description: t.uitleg_leek,
+    url: `${SITE_URL}/jargon/${t.slug}`,
+  })),
+};
+---
+
+<Basis titel="Jargonfilter: AI-termen in gewoon Nederlands" beschrijving="Wat is een AI-agent, een benchmark of een hallucinatie? AI-vaktermen in gewoon Nederlands uitgelegd, met een voorbeeld uit het dagelijkse leven." schema={schema}>
+  <section class="rij sectie">
+    <div class="kantlijn"><p>{termen.length} termen, groeit elke week</p></div>
+    <div>
+      <h1 style="margin-top:0">Jargonfilter</h1>
+      <p class="lead">AI-vaktermen in gewoon Nederlands. Eerst een uitleg voor iedereen, dan een voorbeeld, en voor wie meer wil een verdieping.</p>
+      <nav class="alfabet" aria-label="Ga naar letter">
+        {letters.map((l) => <a href={`#letter-${l}`}>{l}</a>)}
+      </nav>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <dl class="jargon proza">
+      {termen.map((t, i) => (
+        <>
+          <dt id={t.slug}>
+            {(i === 0 || termen[i - 1].term[0].toUpperCase() !== t.term[0].toUpperCase()) && (
+              <span id={`letter-${t.term[0].toUpperCase()}`} />
+            )}
+            <a href={`/jargon/${t.slug}`} style="color:inherit;text-decoration:none">{t.term}</a>
+          </dt>
+          <dd>
+            <p>{t.uitleg_leek}</p>
+            {t.voorbeeld && <p class="voorbeeld">{t.voorbeeld}</p>}
+            {t.verdieping && (
+              <details>
+                <summary>Verdieping</summary>
+                <p>{t.verdieping}</p>
+              </details>
+            )}
+          </dd>
+        </>
+      ))}
+    </dl>
+  </section>
+</Basis>

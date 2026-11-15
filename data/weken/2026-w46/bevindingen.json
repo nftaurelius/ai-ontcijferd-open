@@ -1,0 +1,152 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "Hydrogen draait nu in Google Search voor alle gebruikers.",
+    "probleem": "De samenvatting presenteert Googles uitrolclaim als onafhankelijk vastgesteld feit. De bron bevestigt niet afzonderlijk de beschikbaarheid in België of het Nederlands.",
+    "voorstel": "Schrijf ook in de samenvatting dat dit volgens Google zo is. Behoud de onzekerheid over de lokale beschikbaarheid."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "maar het zijn wereldwijde schattingen zonder zichtbare methode.",
+    "probleem": "Alleen de banenraming wordt wereldwijd genoemd. De geografische reikwijdte van de 86% CIO's is onbekend. Ook is niet vastgesteld dat dit percentage een schatting is in plaats van een enquêteresultaat.",
+    "voorstel": "Maak onderscheid tussen de wereldwijde banenprognose en het percentage CIO's waarvoor steekproef, geografische dekking en methode niet bekend zijn."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "het sterkste model.",
+    "probleem": "Google noemt Carbon zijn eigen sterkste model. Het concept laat zowel die beperkte vergelijking als de toeschrijving weg. Ook 'een snellere en goedkopere variant' presenteert de positionering van Hydrogen zonder duidelijke vergelijking of toeschrijving.",
+    "voorstel": "Schrijf dat Carbon volgens Google zijn sterkste model is. Schrijf de snelheidsclaim aan Google toe en specificeer waarmee de prijs wordt vergeleken."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De cyberversie is enkel toegankelijk via het Fairwind Program, voor beveiligingsverdedigers.",
+    "probleem": "Google beschrijft toegang via Fairwind, maar zegt niet dat dit de enige toegangsroute is. 'Enkel' maakt de claim sterker dan de bron.",
+    "voorstel": "Schrap 'enkel' en beperk de passage tot de door Google beschreven toegang via Fairwind."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "volgens Google 57% tegenover 18,2% op Terminal-Bench 4.1",
+    "probleem": "Bij Terminal-Bench, CursorBench, WANDR en AutomationBench ontbreekt wat de test meet en niet meet. Bij de Intelligence Index wordt alleen gezegd dat de uitleg ontbreekt. Daardoor zijn de scores niet inhoudelijk te wegen.",
+    "voorstel": "Voeg per behouden test een onderbouwde omschrijving en beperking toe. Schrap scores waarvoor die context niet kan worden vastgesteld en zet de verificatie in een HTML-commentaar."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Carbon en Argon kosten $2 en $10 per miljoen tokens als introductieprijs.",
+    "probleem": "De zin kan worden gelezen alsof Carbon $2 kost en Argon $10. Beide modellen hebben volgens Google dezelfde tarieven: $2 voor invoer en $10 voor uitvoer.",
+    "voorstel": "Benoem expliciet input-tokens en output-tokens en vermeld dat beide tarieven voor beide modellen gelden."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Overroepen — het zijn wereldwijde prognoses zonder zichtbare methode, en de koppen zeggen meer dan de cijfers.",
+    "probleem": "De twee Gartner-berichten zijn niet allebei aantoonbaar wereldwijde prognoses. Bovendien volgen de koppen de weergegeven claims: meer banen erbij dan eraf, en risico's die volgens CIO's sneller groeien. De kritiek op de koppen is niet aangetoond. De uitleg vergelijkt ook niet de aandacht met de verwachte Vlaamse impact.",
+    "voorstel": "Schrap de niet-onderbouwde kritiek op de koppen. Onderbouw de stand met aandacht en verwachte Vlaamse impact; ontbrekende methode alleen bewijst niet dat iets overroepen is."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Het onderliggende Gartner-materiaal hebben we niet kunnen inzien.",
+    "probleem": "Dit beschrijft de redactionele werkwijze. Bovendien worden elders ontbrekende details in korte samenvattingen behandeld alsof vaststaat dat de volledige publicaties ze niet bevatten. Dat geldt ook voor uitspraken over het volledige OpenAI-onderzoek en de financieringsvoorwaarden.",
+    "voorstel": "Beperk de zichtbare tekst tot welke methode of voorwaarden nog niet zijn vastgesteld. Zet controles van volledige publicaties in HTML-commentaar en beweer niet dat informatie in een volledige bron ontbreekt zonder dat te hebben gecontroleerd."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "10 miljoen erbij tegenover bijna 9 miljoen eraf is een klein verschil op wereldschaal.",
+    "probleem": "De bron zegt 'meer dan 10 miljoen', niet precies 10 miljoen. 'Klein op wereldschaal' krijgt bovendien geen vergelijkingsbasis. Het nettoverschil kan de omvang van de afzonderlijke verschuivingen verhullen.",
+    "voorstel": "Behoud 'meer dan' en schrap het waardeoordeel 'klein' zolang een onderbouwde vergelijkingsbasis ontbreekt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "de data komen van één platform. Freelancers die via hun eigen netwerk werken, zitten er niet in.",
+    "probleem": "De OpenAI-samenvatting noemt samenwerking met Upwork, maar beschrijft geen databronnen of steekproef. Daaruit volgt niet dat uitsluitend platformdata zijn gebruikt of dat andere freelancers uitgesloten zijn.",
+    "voorstel": "Schrap beide feitelijke claims. Maak de dekking van platformwerk en werk via eigen netwerken een open methodologische vraag."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Bedrijven die freelancers inhuren, kunnen verwachten dat opdrachten met AI-onderdelen meer kosten.",
+    "probleem": "Grotere projectbudgetten betekenen niet dat vergelijkbare opdrachten duurder worden. De bron noemt ook meer uren en geeft geen controle voor omvang, type opdracht of tarief. Het achteraf noemen van een aanname onderbouwt de verwachting niet.",
+    "voorstel": "Schrap de kostenverwachting. Maak duidelijk dat de samenvatting geen conclusie toelaat over tarieven of de prijs van vergelijkbaar werk."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Terecht — het raakt zelfstandigen rechtstreeks, maar de details van het onderzoek zijn nog niet nagegaan.",
+    "probleem": "De uitleg veronderstelt rechtstreekse relevantie voor Vlaamse zelfstandigen terwijl landen, methode en opdrachtcategorieën onbekend zijn. Ze beschrijft bovendien de werkwijze en vergelijkt geen aandacht met impact.",
+    "voorstel": "Onderbouw de stand met de mogelijke Vlaamse impact en benoem de onbekende overdraagbaarheid. Verplaats het nakijken van onderzoeksdetails naar een HTML-commentaar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "OpenAI stopt 2 miljoen dollar in onderzoek naar AI en de veiligheid van kinderen",
+    "probleem": "De bron meldt een toezegging. De formulering suggereert dat de financiering al daadwerkelijk wordt besteed.",
+    "voorstel": "Benoem dit als een toezegging van OpenAI van 2 miljoen dollar, niet als bewezen uitgekeerde of bestede financiering."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "waarmee onderzoekers kinderen veilig met chatbots kunnen laten werken.",
+    "probleem": "De AYO-auteurs beschrijven een platform dat voor veilig onderzoek is ontworpen. Dat is geen aangetoonde veiligheidsgarantie. Het concept presenteert ook de privacybescherming als bewezen eigenschap.",
+    "voorstel": "Schrijf de veiligheids- en privacyclaims toe aan de auteurs. Benoem de beschreven maatregelen, waaronder instelbare leeftijdsgebonden beveiliging en toezicht door onderzoekers, zonder veiligheid te garanderen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Scholen beslissen dus grotendeels zonder hard bewijs.",
+    "probleem": "De auteurs zeggen dat weinig bekend is over ontwikkelingseffecten en dat onderzoek sterk op enquêtes leunt. Zij onderzoeken niet waarop scholen hun beslissingen baseren. Enquêteonderzoek is bovendien niet hetzelfde als geen bewijs.",
+    "voorstel": "Schrap de conclusie over schoolbeslissingen. Beperk de claim tot de door de auteurs beschreven kennislacune over ontwikkelingseffecten."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het gaat om twee losse bronnen.",
+    "probleem": "Deze formulering maakt niet duidelijk dat de bronnen verschillende claims behandelen en elkaar niet onafhankelijk bevestigen. Ook bij het datacenteronderzoek ontbreekt de expliciete melding dat de resultaten op één studie berusten.",
+    "voorstel": "Zeg dat de financiering alleen door OpenAI wordt gemeld en de platformeigenschappen door de AYO-auteurs. Vermeld bij de datacenterresultaten expliciet dat onafhankelijke bevestiging ontbreekt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Terecht — beide initiatieven zijn bescheiden en leveren pas later bewijs op.",
+    "probleem": "'Bescheiden' heeft geen vergelijkingsbasis. Dat deze initiatieven later daadwerkelijk bewijs opleveren, staat niet vast. De uitleg weegt evenmin de aandacht tegenover de verwachte Vlaamse impact.",
+    "voorstel": "Maak toekomstige onderzoeksopbrengsten voorwaardelijk. Onderbouw de omvang en de hype-stand, of laat het oordeel wachten op voldoende informatie."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "en het gaat om Amerikaanse projecten.",
+    "probleem": "Het abstract geeft een Amerikaanse context voor het bedrag van 64 miljard dollar. Het specificeert niet dat alle onderzochte Reddit-discussies uitsluitend Amerikaanse projecten betreffen.",
+    "voorstel": "Presenteer de geografische afbakening van de Reddit-steekproef als onbekend totdat de methode is gecontroleerd. Noem de Amerikaanse context alleen bij de bijbehorende schatting."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De bezwaren gaan vooral over verbruik en schaarste van water en stroom (42,8%)",
+    "probleem": "De 42,8% hoort bij de bredere categorie verbruik en schaarste van hulpbronnen. Water en stroom worden als voorbeelden van technische zorgen genoemd, niet als exclusieve inhoud van die categorie. Ook is de noemer van het percentage niet uitgelegd.",
+    "voorstel": "Behoud de brede categorie en presenteer water en stroom als voorbeelden. Verifieer waarop de percentages precies zijn berekend voordat je ze als aandeel van bezwaren weergeeft."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Het model haalde 83% van wat twee menselijke beoordelaars onderling halen.",
+    "probleem": "De bron noemt geen aantal van twee beoordelaars. De score betreft overeenstemming bij het classificeren van standpunten ten opzichte van de onderlinge overeenstemming van menselijke beoordelaars, niet algemene modelprestatie of 83% juistheid.",
+    "voorstel": "Schrap 'twee'. Leg uit welke overeenstemming wordt vergeleken en dat dit geen maat is voor representativiteit van Reddit of de juistheid van de geuite bezwaren."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Dat is een schatting van henzelf.",
+    "probleem": "Het abstract noemt een geschat bedrag van 64 miljard dollar, maar zegt niet wie de schatting heeft gemaakt. Het concept schrijft die zonder bewijs aan de auteurs toe.",
+    "voorstel": "Zeg dat de auteurs deze schatting aanhalen. Controleer de oorspronkelijke bron voordat je de auteurs als makers ervan noemt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Onderschat — weinig aandacht voor een Amerikaans patroon dat ook hier relevant kan worden, al onderzoekt de studie dat niet.",
+    "probleem": "De bron meet geen hoeveelheid media-aandacht en ondersteunt dus niet 'weinig aandacht'. De uitsluitend Amerikaanse afbakening van de steekproef is evenmin vastgesteld. Daarmee rust de hype-stand op twee onbewezen aannames.",
+    "voorstel": "Onderbouw de aandacht en geografische reikwijdte voordat je 'Onderschat' handhaaft. Kies niet automatisch een andere stand zolang ook daarvoor de vergelijking tussen aandacht en Vlaamse impact ontbreekt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Daar kan een gemeente zelf iets aan doen, bijvoorbeeld met vroegere en openere inspraak.",
+    "probleem": "De studie biedt aanknopingspunten voor participatie, maar toont niet aan dat eerdere inspraak verzet vermindert. De formulering suggereert bovendien dat een gemeente zowel hulpbronnenschaarste als vergunningsproblemen zelf kan oplossen.",
+    "voorstel": "Presenteer eerdere inspraak als een mogelijke toepassing, niet als bewezen oplossing. Gebruik een voorwaardelijk Vlaams voorbeeld en onderscheid inspraak van bevoegdheden over water, stroom en vergunningen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Of dat in de praktijk ook betere antwoorden geeft, is niet onafhankelijk getest.",
+    "probleem": "Het ontbreken van een onafhankelijke test in de bronnen bewijst niet dat zo'n test nergens bestaat. Dezelfde fout zit in 'Of dat meer bezoekers oplevert voor een Vlaamse webshop, is niet gemeten'.",
+    "voorstel": "Beperk beide uitspraken tot de bewijslast: Google levert hier geen onafhankelijk bewijs voor betere antwoorden of meer webshopbezoekers."
+  },
+  {
+    "ernst": "klein",
+    "passage": "24% minder quota",
+    "probleem": "'Quota' wordt niet uitgelegd en is geen vanzelfsprekende maat voor kosten of rekenwerk. Ook termen als 'denkstand' en 'open-source taalmodel' blijven zonder voldoende uitleg bij eerste gebruik.",
+    "voorstel": "Leg de termen bij eerste gebruik kort uit. Controleer wat Google met quota meet en stel quotaverbruik niet gelijk aan tokenkosten."
+  }
+]

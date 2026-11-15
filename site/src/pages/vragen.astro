@@ -1,0 +1,32 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { CONTACT_EMAIL } from "../lib/site";
+import { alleEdities } from "../lib/edities";
+
+const beantwoord = alleEdities().filter((e) => e.lezersvraag);
+---
+
+<Basis titel="Stel je vraag over AI" beschrijving="Heb je een vraag over AI, voor je werk, je school, je gemeente of jezelf? Stel ze aan AI Ontcijferd. Elke week beantwoorden we er één in de Stand van AI.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Lezersvragen</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Stel je vraag over AI</h1>
+      <p class="lead">Wat wil jij weten over AI? Elke week beantwoorden we één vraag van een lezer in de Stand van AI.</p>
+      <p>
+        Mail je vraag naar <a href={`mailto:${CONTACT_EMAIL}?subject=Lezersvraag`}>{CONTACT_EMAIL}</a>. Zeg erbij of we je voornaam mogen vermelden; anders blijft
+        de vraag anoniem. Hoe concreter de vraag, hoe bruikbaarder het antwoord: "Mag mijn school ChatGPT gebruiken met leerlingen van twaalf?" werkt beter dan "Is AI gevaarlijk?".
+      </p>
+    </div>
+  </section>
+
+  {beantwoord.length > 0 && (
+    <section class="rij sectie">
+      <div class="kantlijn"><p>Eerder beantwoord</p></div>
+      <ul class="editielijst">
+        {beantwoord.map((e) => (
+          <li><a href={`/edities/${e.week}#lezersvraag`}>{e.lezersvraagTitel || e.titel}</a></li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Basis>

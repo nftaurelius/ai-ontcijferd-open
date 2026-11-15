@@ -1,0 +1,57 @@
+[
+  {
+    "passage": "en een dag later miljoenen",
+    "beslissing": "verwerkt",
+    "toelichting": "De bron zegt alleen dat het aantal 'by last night' tot miljoenen steeg; het interval van één dag is geschrapt en het tijdstip staat in een nakijkopmerking."
+  },
+  {
+    "passage": "Voor patiënten in Vlaanderen verandert er nu niets.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door wat de bron wel zegt: Microsoft meldt geen toepassing of patiëntenstudie in Vlaanderen, alleen een geplande studie in Boston."
+  },
+  {
+    "passage": "Dat geldt alleen binnen Microsofts eigen test met bestaande gevallen.",
+    "beslissing": "verwerkt",
+    "toelichting": "De ruis-alinea splitst nu de nauwkeurigheidsvergelijking van de kostenclaim (één configuratie, 81%, onduidelijke referentiegroep, geschatte kosten)."
+  },
+  {
+    "passage": "Op alledaagse spoedgevallen is het 80% tegenover 47%",
+    "beslissing": "verwerkt",
+    "toelichting": "Herkomst (MIMIC-IV-ED, Amerikaanse spoedzorg) toegevoegd, met de duidelijke kanttekening dat dit geen Vlaamse spoeddienst meet."
+  },
+  {
+    "passage": "dan zegt de score van de leverancier weinig over jouw situatie",
+    "beslissing": "verwerkt",
+    "toelichting": "Afgezwakt tot 'geen garantie' en het advies om de agent in de beoogde toepassing te testen."
+  },
+  {
+    "passage": "Onderschat — Het krijgt weinig aandacht",
+    "beslissing": "verwerkt",
+    "toelichting": "De bron zegt niets over de aandacht voor agent-evaluatie, dus de stand is Terecht met uitleg vanuit het nut voor aankoopbeslissingen."
+  },
+  {
+    "passage": "Overroepen — Een aantal medewerkers met toegang zegt niets over resultaat",
+    "beslissing": "verwerkt",
+    "toelichting": "Stand is Terecht; de beperking (geen resultaatcijfers) blijft vermeld, maar is geen bewijs voor overmatige aandacht."
+  },
+  {
+    "passage": "Vraag dus wie getest heeft, in welke omstandigheden en of ook gekeken is naar hoe de agent tot het resultaat kwam.",
+    "beslissing": "verwerkt",
+    "toelichting": "Onderscheid automatiseren versus ondersteunen van medewerkers toegevoegd, met een uitdrukkelijk denkbeeldig gemeentelijk voorbeeld."
+  },
+  {
+    "passage": "Onafhankelijke testers hebben geld en toegang tot modellen nodig.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vrijheid om vragen te kiezen, werken zonder vrees voor vergelding en transparant delen van bevindingen toegevoegd."
+  },
+  {
+    "passage": "Die rapporten zijn hier niet zelf gelinkt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Zin geschrapt uit de lezerstekst; de opdracht om primaire rapporten te linken staat nu in het HTML-commentaar."
+  },
+  {
+    "passage": "De tekst noemt \"minder dan de helft van de kosten van vergelijkbare systemen\".",
+    "beslissing": "verwerkt",
+    "toelichting": "Microsoft is nu rechtstreeks de afzender, met configuratie en 81% erbij en de kanttekening dat het geen onafhankelijke vaststelling is."
+  }
+]

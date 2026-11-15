@@ -1,0 +1,19 @@
+{
+  "framework": "astro",
+  "buildCommand": "astro build",
+  "outputDirectory": "dist",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ../content",
+  "redirects": [
+    {
+      "source": "/:pad*",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-ontcijferd.vercel.app"
+        }
+      ],
+      "destination": "https://aiontcijferd.be/:pad*",
+      "permanent": true
+    }
+  ]
+}

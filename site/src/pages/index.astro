@@ -1,0 +1,147 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { inkorten } from "../lib/tekst";
+import HypeMeter from "../components/HypeMeter.astro";
+import Inschrijven from "../components/Inschrijven.astro";
+import { alleEdities, datumLeesbaar, weekNummer } from "../lib/edities";
+import { alleDagbrieven, alleDossiers } from "../lib/plus";
+import { markeerEerste, splitsTitel } from "../lib/opmaak";
+import { NASLAG } from "../lib/site";
+import { alleTools } from "../lib/tools";
+import { beschikbarePakketten } from "../lib/materiaal";
+
+const edities = alleEdities();
+const laatste = edities[0];
+const eerdere = edities.slice(1, 6);
+const dag = alleDagbrieven()[0];
+const dagOnderwerpen = dag ? (dag.items.length ? dag.items.map((i) => ({ titel: i.titel, slug: i.slug, status: i.status })) : splitsTitel(dag.titel).map((t) => ({ titel: t, slug: "", status: "" }))) : [];
+const dossier = alleDossiers()[0];
+const gratisTool = alleTools()[0];
+const aantalPakketten = beschikbarePakketten().length;
+---
+
+<Basis>
+  <section class="rij sectie">
+    <div class="kantlijn">
+      <p>Door Duncan Panis</p>
+    </div>
+    <div>
+      <h1 style="font-size:2.3rem;margin:0 0 0.75rem">AI zonder hype.</h1>
+      <p class="lead" style="margin-bottom:1.25rem">
+        Wat er in AI gebeurt, zonder ruis en zonder jargon, en wat het betekent voor Vlaanderen.
+      </p>
+      <ul class="ritme" aria-label="Hoe je ons leest">
+        <li><strong>Elke vrijdag</strong> <a href="/edities">de Stand van AI</a>: de week in vijf minuten.</li>
+        <li><strong>Elke dag</strong> <a href="/plus">een korte dagbrief</a>, en af en toe een dossier dat één ontwikkeling grondig uitlegt.</li>
+      </ul>
+      <Inschrijven variant="kort" />
+    </div>
+  </section>
+
+  {laatste ? (
+    <section class="rij sectie" aria-labelledby="deze-week">
+      <div class="kantlijn">
+        <p class="kantlijn-kop" id="deze-week">Deze week</p>
+        <p>{weekNummer(laatste.week)}<br />{datumLeesbaar(laatste.datum)}</p>
+      </div>
+      <div>
+        <h2 style="font-size:1.6rem;margin-top:0"><a href={`/edities/${laatste.week}`} style="color:inherit;text-decoration:none">{laatste.titel}</a></h2>
+        <p class="lead" set:html={markeerEerste(laatste.kern)} />
+        <ul class="onderwerpenlijst" aria-label="Onderwerpen deze week">
+          {laatste.onderwerpen.map((o) => (
+            <li>
+              <div>{o.hype ? <HypeMeter hype={o.hype} compact /> : null}<span class="meta">{o.hype?.stand}</span></div>
+              <a href={`/edities/${laatste.week}#${o.slug}`}>{o.titel}</a>
+            </li>
+          ))}
+        </ul>
+        <a class="knop" href={`/edities/${laatste.week}`}>Lees de hele editie</a>
+      </div>
+    </section>
+  ) : (
+    <section class="rij sectie">
+      <div class="kantlijn"><p class="kantlijn-kop">Deze week</p></div>
+      <div>
+        <p class="lead">De eerste Stand van AI verschijnt binnenkort, op een vrijdag. Schrijf je in en je mist hem niet.</p>
+      </div>
+    </section>
+  )}
+
+  {dag && (
+    <section class="rij sectie" aria-labelledby="vandaag">
+      <div class="kantlijn">
+        <p class="kantlijn-kop" id="vandaag">Laatste dagbrief</p>
+        <p>{datumLeesbaar(dag.datum)}<br /><a href="/plus">Alle dagbrieven</a></p>
+      </div>
+      <div>
+        <ul class="dagonderwerpen" aria-label="Onderwerpen in de dagbrief">
+          {dagOnderwerpen.map((o) => (
+            <li>
+              <a href={`/plus/dag/${dag.datum}${o.slug ? `#${o.slug}` : ""}`}>{o.titel}</a>
+              {o.status && <span class="status" data-status={o.status}>{o.status}</span>}
+            </li>
+          ))}
+        </ul>
+        {dossier && (
+          <p class="dossiertip">
+            <span class="meta">Dossier · {datumLeesbaar(dossier.datum)}</span><br />
+            <a href={`/plus/dossiers/${dossier.slug}`}>{dossier.titel}</a>
+          </p>
+        )}
+      </div>
+    </section>
+  )}
+
+  {gratisTool && (
+    <section class="rij sectie" aria-labelledby="gratis-tool">
+      <div class="kantlijn">
+        <p class="kantlijn-kop" id="gratis-tool">Gratis tool</p>
+        <p><a href="/gratis">Alles wat gratis is</a></p>
+      </div>
+      <div class="toolpromo">
+        <p class="aanbod-soort">{gratisTool.naam}</p>
+        <h2><a href={`/${gratisTool.slug}`} style="color:inherit;text-decoration:none">{gratisTool.vraag}</a></h2>
+        <p>{gratisTool.uitleg}</p>
+        <p><a class="knop" href={`/${gratisTool.slug}`}>Doe de {gratisTool.korteNaam}</a></p>
+        <p class="meta">
+          {aantalPakketten > 0
+            ? <>Ook gratis: <a href="/materiaal">{aantalPakketten} open {aantalPakketten === 1 ? "lespakket" : "lespakketten"}</a> om zelf te geven.</>
+            : <>Binnenkort ook gratis: <a href="/materiaal">open lespakketten en een AI-cursus</a> om zelf te geven.</>}
+        </p>
+      </div>
+    </section>
+  )}
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Nieuwsbrief</p></div>
+    <div><Inschrijven /></div>
+  </section>
+
+  <section class="rij sectie" aria-labelledby="bij-de-hand">
+    <div class="kantlijn"><p class="kantlijn-kop" id="bij-de-hand">Altijd bij de hand</p></div>
+    <ul class="tegels">
+      <li><a href="/voor">Voor jou</a><p>Alleen wat AI betekent voor onderwijs, werk, gemeenten, zelfstandigen, bibliotheken of burgers.</p></li>
+      <li><a href="/wat-kan-ai">Wat kan AI al?</a><p>Demo's en praktijkvoorbeelden, met bron en kanttekening.</p></li>
+      {NASLAG.slice(0, 2).map((n) => (
+        <li><a href={n.href}>{n.tekst}</a><p>{n.uitleg}</p></li>
+      ))}
+    </ul>
+  </section>
+
+  {eerdere.length > 0 && (
+    <section class="rij sectie">
+      <div class="kantlijn"><p class="kantlijn-kop">Eerdere edities</p></div>
+      <div>
+        <ul class="editielijst">
+          {eerdere.map((e) => (
+            <li>
+              <a href={`/edities/${e.week}`}>{e.titel}</a>
+              <p class="meta" style="margin:0.2rem 0 0">{inkorten(e.kernTekst, 180)}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="meta" style="margin-top:1rem"><a href="/edities">Alle edities</a></p>
+      </div>
+    </section>
+  )}
+</Basis>

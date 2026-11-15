@@ -1,0 +1,116 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "Google heeft Gemini 4 Hydrogen gelanceerd, een snel en goedkoop model dat meteen in Google Search voor alle gebruikers beschikbaar is.",
+    "probleem": "De samenvatting presenteert Googles claims over prestaties en beschikbaarheid als vaststaande feiten. 'Goedkoop' mist bovendien een onderbouwde vergelijking.",
+    "voorstel": "Schrijf de claims expliciet aan Google toe en schrap 'goedkoop' zolang een vergelijkbare prijsbasis ontbreekt. Schrijf ook Huangs vertrek in de samenvatting toe aan Nvidia."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "legde Outlook, Teams en Copilot urenlang plat",
+    "probleem": "VRT beschrijft diensten die verstoord en moeilijk tot niet bereikbaar waren. 'Plat' suggereert een volledige uitval van alle genoemde diensten.",
+    "voorstel": "Gebruik 'verstoorde Outlook, Teams en Copilot urenlang'."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De winst van één punt ligt bovendien dicht bij de meetonzekerheid.",
+    "probleem": "Geen van de bronnen geeft een onzekerheidsmarge. Deze statistische duiding is niet onderbouwd.",
+    "voorstel": "Schrap de uitspraak. Vermeld eventueel dat de bronnen geen onzekerheidsmarge geven en dat de betekenis van het verschil daardoor niet te beoordelen is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een post van Artificial Analysis zelf zou dat bevestigen, maar dat is een signaal en geen bron.",
+    "probleem": "De genoemde post rapporteert 54 bij de hoogste redeneerinstelling, niet de vergelijking van 51 tegenover 50. Bovendien is een bericht van de testmaker wel een primaire bron voor diens eigen mededeling; het publicatieplatform maakt het niet automatisch bronloos.",
+    "voorstel": "Maak onderscheid tussen 51 bij de standaardinstelling en 54 bij de hoogste instelling. Zeg expliciet dat de post de vergelijking van 51 tegenover 50 niet bevestigt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Die index is een samengestelde score van een derde partij en meet vooral prestaties op testtaken",
+    "probleem": "De bronnen noemen de index en scores, maar bevatten geen beschrijving van de samenstelling of meetmethode. De uitleg is daardoor niet controleerbaar vanuit de bronnen.",
+    "voorstel": "Onderbouw de uitleg met de methodologie van Artificial Analysis. Zeg tot dan dat de bronnen niet toelichten welke vaardigheden de index precies meet."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Teams die al met de Gemini API werken, kunnen volgens Google sneller en goedkoper taken laten uitvoeren",
+    "probleem": "De vergelijking geldt niet aantoonbaar voor alle bestaande Gemini-gebruikers. Google vergelijkt snelheid en tokenverbruik bij specifieke taken met Gemini 3.8 Flash; minder tokens bewijzen zonder tariefvergelijking geen lagere totale kosten.",
+    "voorstel": "Noem Gemini 3.8 Flash als vergelijkingsbasis en beperk de claim tot de beschreven tests. Schrap de algemene belofte van goedkoper werken."
+  },
+  {
+    "ernst": "klein",
+    "passage": "welke talen er bovenop de \"ondersteunde AI Mode-talen\" bijkomen",
+    "probleem": "Google kondigt geen extra talen aan. De bron spreekt over beter taalbegrip binnen de al ondersteunde talen.",
+    "voorstel": "Benoem alleen dat de bron de ondersteunde talen niet opsomt en daardoor niet duidelijk maakt wat de aankondiging voor Nederlandstalige gebruikers betekent."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Dat zijn geen gemeten storingen, maar het geeft de omvang weer.",
+    "probleem": "Het aantal gebruikersmeldingen meet niet de totale omvang van de storing. Bovendien ontbreken de context dat de ruim 130.000 meldingen Outlook betroffen en dat VRT dit aantal rond 19 uur Belgische tijd situeert.",
+    "voorstel": "Voeg dienst en tijdstip toe. Benoem het als meldingsvolume, niet als maat voor het aantal getroffen gebruikers of organisaties."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Twee kranten van De Standaard publiceerden er koppen over",
+    "probleem": "Het gaat om twee artikelen van één krant, niet om twee kranten. De passage kan ten onrechte meerdere onafhankelijke bevestigingen suggereren. Links naar de koppen ontbreken.",
+    "voorstel": "Schrap deze passage over de werkwijze. Als de koppen inhoudelijk relevant zijn, benoem en link ze als twee artikelen van De Standaard."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Bij Google en Nvidia maakt dit label wel de herkomst duidelijk, maar niet expliciet dat onafhankelijke bevestiging van de kernclaim ontbreekt. Twee Google-publicaties zijn geen onafhankelijke bronnen van elkaar. Bij Primer staat deze beperking wel duidelijk.",
+    "voorstel": "Vermeld bij Google en Nvidia expliciet dat de kernclaim nog niet onafhankelijk is bevestigd. Behandel de twee betaalmuurkoppen niet als bevestiging van alle details van de bestuurswissel."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Projecten vanaf 25 MW moeten vooraf een partnerschapscontract met het Gewest sluiten",
+    "probleem": "De bron noemt een expliciete uitzondering voor infrastructuur die uitsluitend voor eigen gebruik van een bedrijf of organisatie dient. Die uitzondering ontbreekt bij deze verplichting.",
+    "voorstel": "Neem de uitzondering voor uitsluitend eigen gebruik op bij de drempel van 25 MW."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Strategische industrieterreinen zijn voortaan verboden terrein",
+    "probleem": "21News meldt een aangenomen kader en beschrijft wat projecten zullen moeten doen. De bron geeft geen datum van juridische inwerkingtreding. 'Voortaan' suggereert dat het verbod al geldt.",
+    "voorstel": "Beschrijf wat het nieuwe kader bepaalt zonder onmiddellijke inwerkingtreding te claimen. Laat de ingangsdatum controleren via het officiële besluit."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Toch speelt in Vlaanderen dezelfde spanning tussen datacenters en bedrijven die op een netaansluiting wachten.",
+    "probleem": "De bron beschrijft uitsluitend de Waalse situatie. Voor deze feitelijke claim over Vlaanderen ontbreekt een bron.",
+    "voorstel": "Schrap de claim of voeg een Vlaamse bron toe. Presenteer het Waalse kader voorlopig alleen als een concreet beleidsvoorbeeld dat Vlaamse gemeenten kunnen bekijken."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Dit is de eigen beschrijving van de makers, zonder onafhankelijke evaluatie.",
+    "probleem": "De tekst noemt het ontbreken van evaluatie, maar laat de inhoudelijke waarschuwing van de makers weg: generatieve modellen zijn op zichzelf pedagogisch onbetrouwbaar, helpen te snel en kunnen van het leerdoel afwijken.",
+    "voorstel": "Neem die waarschuwing op en verduidelijk dat Primers ontwerp deze problemen probeert te beperken, zonder dat de bron aantoont dat ze opgelost zijn."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Artificial Analysis meldt dat Gemini 4 Hydrogen 54 scoort op zijn index",
+    "probleem": "De hoogste redeneerinstelling ontbreekt, waardoor 54 onverklaard naast de eerdere 51 staat. De bron zegt bovendien 'ongeveer een derde' van de kosten, niet exact een derde. De kostenbasis is niet toegelicht.",
+    "voorstel": "Vermeld de hoogste redeneerinstelling en behoud 'ongeveer'. Leg de kostenbasis uit als die controleerbaar is; schrap anders de kostenvergelijking."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "de nieuwe robotica-test AA-Robotics v0.1 met 75 punten",
+    "probleem": "De verplichte uitleg ontbreekt over wat de test meet en niet meet. De bron geeft een taakvoorbeeld, maar geen volledige methodologie of scoreschaal. De score kan daardoor als algemene robotvaardigheid worden gelezen.",
+    "voorstel": "Beschrijf het beschikbare taakvoorbeeld en de ontbrekende testcontext, of laat de score weg totdat de methodologie gecontroleerd is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Nathan Lambert reageert op forensisch bewijs dat Chinese labs modellen bouwden op exportverboden Nvidia Blackwell-chips",
+    "probleem": "De formulering presenteert het bewijs en de overtreding als vaststaand, terwijl alleen een samenvatting van Lamberts reactie beschikbaar is. '(Nog niet bevestigd)' maakt die stelligheid niet voldoende ongedaan.",
+    "voorstel": "Schrijf de bewering expliciet toe aan de post en verduidelijk dat het onderliggende bewijs niet onafhankelijk is bevestigd."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## Google lanceert Gemini 4 Hydrogen, ook in Google Search",
+    "probleem": "In het volledige concept ontbreken hype-meters. Daardoor ontbreekt de gevraagde afweging tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per uitgewerkt onderwerp één van de vijf toegestane standen toe, telkens met één zin uitleg. Onderbouw de afweging en benoem onzekerheid waar aandacht of Vlaamse impact onvoldoende vaststaat."
+  },
+  {
+    "ernst": "klein",
+    "passage": "de baselinestromen voor het silicon-interposerplatform van de NanoIC-pilootlijn",
+    "probleem": "Deze radarzin bevat meerdere onverklaarde vaktermen en laat juist de concrete toepassing uit de bron weg: ontwerpers kunnen hiermee de verpakking en verbinding van AI-chips modelleren. Ook elders blijven termen als API, MW en open source onverklaard.",
+    "voorstel": "Schrap onnodige technische labels of leg ze bij het eerste gebruik kort uit. Geef bij imec voorrang aan wat ontwerpers ermee kunnen doen."
+  }
+]

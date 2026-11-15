@@ -1,0 +1,67 @@
+name: Plus — dossier
+
+# Start met de hand: Actions -> "Plus — dossier" -> Run workflow.
+on:
+  workflow_dispatch:
+    inputs:
+      titel:
+        description: "Titel of onderwerp van het dossier"
+        required: true
+      urls:
+        description: "Bron-urls, gescheiden door spaties (oorspronkelijke artikels, geen X-links)"
+        required: false
+        default: ""
+      trefwoorden:
+        description: "Trefwoorden om verwante items uit de verkenner te halen, gescheiden door komma's"
+        required: false
+        default: ""
+      notitie:
+        description: "Jouw invalshoek of vraag voor de schrijver"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: pijplijn
+  cancel-in-progress: false
+
+jobs:
+  dossier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Dossier schrijven, tegenspreken en reviseren
+        id: dossier
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AIO_KOSTEN_PAD: data/plus/kosten.csv
+          AIO_TITEL: ${{ inputs.titel }}
+          AIO_URLS: ${{ inputs.urls }}
+          AIO_TREFWOORDEN: ${{ inputs.trefwoorden }}
+          AIO_NOTITIE: ${{ inputs.notitie }}
+        run: |
+          python -m pipeline.dossier
+          echo "slug=$(python -c 'import os; from pipeline.dossier import slug; print(slug(os.environ["AIO_TITEL"]))')" >> "$GITHUB_OUTPUT"
+
+      - name: Pull request voor de eindredactie
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: dossier/${{ steps.dossier.outputs.slug }}
+          title: "Plus dossier: ${{ inputs.titel }} (concept)"
+          body-path: data/plus/dossiers/${{ steps.dossier.outputs.slug }}/pr.md
+          commit-message: "Concept-dossier: ${{ inputs.titel }}"
+          add-paths: |
+            content/plus/dossiers
+            data/plus
+          labels: eindredactie

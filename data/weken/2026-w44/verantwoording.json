@@ -1,0 +1,92 @@
+[
+  {
+    "passage": "Hoe die AI moet helpen, zegt de regering pas in 2027.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven tot de aangekondigde timing voor doelen en bespaarplannen, met toeschrijving aan Engadget."
+  },
+  {
+    "passage": "zo'n 16 procent van het personeel",
+    "beslissing": "verwerkt",
+    "toelichting": "Percentage geschrapt omdat de noemer nergens wordt uitgelegd; de primaire bron moet het eerst bevestigen (NAKIJKEN)."
+  },
+  {
+    "passage": "Dat moet in 2027 900 miljoen euro opleveren en in 2035 3,5 miljard euro.",
+    "beslissing": "verwerkt",
+    "toelichting": "Bedragen nu als besparingsdoelen 'tegen' 2027 en 2035 gepresenteerd, met vermelding dat de bijdrage van banen en AI niet wordt uitgesplitst."
+  },
+  {
+    "passage": "twee media melden hetzelfde, maar beide steunen op één aankondiging",
+    "beslissing": "verwerkt",
+    "toelichting": "The Star is nu enkel een kopsignaal en de tekst zegt expliciet dat een onafhankelijke bevestiging ontbreekt."
+  },
+  {
+    "passage": "Overroepen — de topscores komen van de maker zelf en het model is nog niet breed beschikbaar.",
+    "beslissing": "verwerkt",
+    "toelichting": "Uitleg (en die van het Nederlandse item) vergelijkt nu aandacht met de verwachte Vlaamse impact; Overroepen blijft staan omdat toegang en onafhankelijke tests voorlopig ontbreken."
+  },
+  {
+    "passage": "volgens de maker het sterkste model tot nu toe",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot 'Googles sterkste model'."
+  },
+  {
+    "passage": "Artificial Analysis Intelligence Index (een ranglijst die AI-modellen vergelijkt), met een score van 59",
+    "beslissing": "verwerkt",
+    "toelichting": "Score en rangpositie geschrapt omdat er geen bron is die uitlegt wat de index meet; terugplaatsen kan met een methodologische bron (NAKIJKEN)."
+  },
+  {
+    "passage": "gemeenten en intercommunales draaien op software met lekken",
+    "beslissing": "verwerkt",
+    "toelichting": "Ongestaafde vaststelling geschrapt en vervangen door een expliciet hypothetisch voorbeeld."
+  },
+  {
+    "passage": "Ze meten niet hoe het model werkt op de eigen, rommelige code van een gemeente.",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu vermeld dat SEC-bench Pro echte software gebruikt en 'rommelige' weggelaten; de beperking is dat er geen prestaties voor een specifieke gemeentelijke omgeving zijn aangetoond."
+  },
+  {
+    "passage": "het valsspelen op Terminal-Bench 4.0 daalde tot 0,0% geslaagde pogingen",
+    "beslissing": "verwerkt",
+    "toelichting": "Onderscheid tussen geslaagd valsspelen (0,0%) en pogingen (0,4%) toegevoegd, met uitleg over wat de test wel en niet aantoont en een Mistral-bron voor de testomschrijving."
+  },
+  {
+    "passage": "Dat zijn interne metingen, vergeleken met Gemini 4 Argon.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vergelijkingsbasis geschrapt; de tekst zegt nu dat Google die bij deze cijfers niet expliciet vermeldt."
+  },
+  {
+    "passage": "Google evalueerde zonder beveiligingslagen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Gevolg toegevoegd: de scores bewijzen niet dat gebruikers met beveiliging aan dezelfde prestaties krijgen, en Google past de guardrails nog aan."
+  },
+  {
+    "passage": "De bron zegt daar niets over.",
+    "beslissing": "verwerkt",
+    "toelichting": "Onderscheid gemaakt tussen ontbrekende informatie over Nederlands/Vlaamse toepassingen en het ontbreken van een concrete releasedatum ('zo snel mogelijk')."
+  },
+  {
+    "passage": "uitgever Maarten Vanhoof",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door 'Maarten Vanhoof van de Groep Algemene Uitgevers', zoals VRT hem identificeert."
+  },
+  {
+    "passage": "Cultuurminister Caroline Gennez (Vooruit) wordt gevraagd een dwingend wettelijk kader te maken.",
+    "beslissing": "verwerkt",
+    "toelichting": "Oproep toegeschreven aan Van Reybrouck, met behoud van Belgisch en Europees niveau."
+  },
+  {
+    "passage": "wat Van Reybrouck over de Europese richtlijn zegt, hebben we niet afzonderlijk gecontroleerd",
+    "beslissing": "verwerkt",
+    "toelichting": "Werkwijzetaal geschrapt; de tekst zegt nu dat VRT de richtlijn niet noemt en presenteert de etiketteringsplicht als bewering van Van Reybrouck."
+  },
+  {
+    "passage": "Vanhoof erkent dat de omvang \"moeilijk in te schatten\" is.",
+    "beslissing": "verwerkt",
+    "toelichting": "Citaten teruggebracht tot één per bron (slogan bij VRT, 'simpler, smart and smaller' bij Engadget, geen bij Google) en de rest geparafraseerd."
+  },
+  {
+    "passage": "Voor Vlaamse gemeenten en steden is dat voorlopig een signaal, geen voorbeeld om te kopiëren.",
+    "beslissing": "verwerkt",
+    "toelichting": "Concreet gemaakt met een expliciet hypothetische beslissing over vacatures, zonder het Nederlandse plan een taak toe te schrijven."
+  }
+]

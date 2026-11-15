@@ -1,0 +1,5 @@
+- Verkenner en triage: 6 kandidaat-onderwerpen uit de periode 17/10 tot 23/10/2026.
+- Analist: koos de onderwerpen en schreef het concept.
+- Vertaler: maakte de tekst leesbaar voor leken (vaktermen uitgelegd: 7).
+- Tegenspreker: bevindingen 11, waarvan kritiek 3.
+- Revisie: 11 bevindingen verwerkt, 0 gemotiveerd niet.

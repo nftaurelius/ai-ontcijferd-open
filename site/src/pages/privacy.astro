@@ -1,0 +1,126 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { CONTACT_EMAIL } from "../lib/site";
+
+// Pas deze datum aan bij elke inhoudelijke wijziging van de tekst hieronder.
+const BIJGEWERKT = "13 november 2026";
+---
+
+<Basis titel="Privacy" beschrijving="Welke gegevens AI Ontcijferd verwerkt: je e-mailadres voor de nieuwsbrief en bezoekcijfers zonder cookies. Geen advertenties, geen profielen.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Jouw gegevens</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Privacy</h1>
+      <p class="lead">
+        <span class="markeer">AI Ontcijferd verzamelt zo weinig mogelijk.</span>{" "}
+        Je e-mailadres als je je inschrijft op de nieuwsbrief, en bezoekcijfers zonder cookies. Geen advertenties, geen
+        profielen, geen verkoop van gegevens.
+      </p>
+      <p>
+        Duncan Panis, eindredacteur van AI Ontcijferd, is verantwoordelijk voor wat er met je gegevens gebeurt. Met een
+        vraag of een verzoek kun je terecht op <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Als je je inschrijft</p></div>
+    <div class="proza">
+      <h2>De nieuwsbrief</h2>
+      <ul>
+        <li><strong>Wat:</strong> je e-mailadres en het tijdstip waarop je je inschreef en bevestigde.</li>
+        <li><strong>Waarvoor:</strong> om je de nieuwsbrief te sturen. Nergens anders voor.</li>
+        <li><strong>Op welke grond:</strong> je toestemming. Je inschrijving telt pas nadat je ze bevestigt via een mail.</li>
+        <li>
+          <strong>Via wie:</strong> Brevo (Sendinblue SAS, Parijs). Brevo bewaart de adressenlijst en verstuurt de mails
+          in onze opdracht.
+        </li>
+        <li>
+          <strong>Wat Brevo bijhoudt:</strong> of een nieuwsbrief geopend wordt en op welke links geklikt wordt. Zo zien
+          we welke onderwerpen gelezen worden.
+        </li>
+        <li>
+          <strong>Hoe lang:</strong> tot je je uitschrijft. Dat kan met één klik onderaan elke nieuwsbrief. Wil je dat
+          we je adres ook volledig wissen, mail ons dan.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Als je de site bezoekt</p></div>
+    <div class="proza">
+      <h2>Bezoekcijfers zonder cookies</h2>
+      <p>
+        De site plaatst geen cookies en bewaart niets in je browser. We tellen bezoeken met Vercel Web Analytics. Dat
+        noteert de bezochte pagina, de site waar je vandaan kwam, het land, het soort toestel, het besturingssysteem en
+        de browser. Bezoekers worden geteld met een code die uit het verzoek wordt afgeleid en na een dag vervalt. Je
+        bent dus niet te volgen van dag tot dag of van site tot site, en wij zien alleen totalen.{" "}
+        <a href="https://vercel.com/docs/analytics/privacy-policy">Zo beschrijft Vercel het zelf</a> (Engels).
+      </p>
+      <p>
+        De site staat bij Vercel, een Amerikaans bedrijf. Zoals elke webserver verwerkt Vercel bij elk bezoek je
+        IP-adres, om de pagina te kunnen tonen en misbruik tegen te gaan.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Als je ons mailt</p></div>
+    <div class="proza">
+      <h2>Mails en lezersvragen</h2>
+      <p>
+        Je mail komt aan bij Combell (België) en wordt doorgestuurd naar de mailbox van de eindredacteur. We bewaren je
+        bericht zolang dat nodig is om te antwoorden.
+      </p>
+      <p>
+        Een <a href="/vragen">lezersvraag</a> die we in een editie beantwoorden, verschijnt anoniem, tenzij je zegt dat
+        je voornaam erbij mag. De vraag zelf gaat door onze keten van AI-modellen (van Anthropic en OpenAI), zonder je
+        naam of e-mailadres. Zet dus geen persoonlijke gegevens in de vraag zelf.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Als je een tool gebruikt</p></div>
+    <div class="proza">
+      <h2>Plakcheck en Urenrekening</h2>
+      <p>
+        De <a href="/plakcheck">tools</a> draaien volledig in je browser. Wat je aanklikt of invult, verlaat je toestel
+        niet en wordt nergens bewaard. Maak je een deellink, dan zitten je keuzes en cijfers in die link zelf: wie de
+        link krijgt, ziet ze.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Wat we niet doen</p></div>
+    <div class="proza">
+      <h2>Geen cookies, geen advertenties, geen trackers</h2>
+      <ul>
+        <li>Geen cookies en geen cookiebanner, want er valt niets te weigeren.</li>
+        <li>Geen advertenties en geen trackers van advertentienetwerken of sociale media.</li>
+        <li>Geen lettertypes, video's of scripts die van andere sites geladen worden.</li>
+        <li>We verkopen of delen je gegevens niet.</li>
+      </ul>
+      <p>Klik je op een link naar een andere site, dan geldt daar het beleid van die site.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Wat je kunt vragen</p></div>
+    <div class="proza">
+      <h2>Je rechten</h2>
+      <p>
+        Je mag vragen welke gegevens we van je hebben, ze laten verbeteren of wissen, het gebruik laten beperken, er
+        bezwaar tegen maken, ze opvragen in een leesbaar formaat, en je toestemming intrekken. Mail naar{" "}
+        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>; je krijgt binnen een maand antwoord.
+      </p>
+      <p>
+        Ben je niet tevreden met het antwoord, dan kun je een klacht indienen bij de{" "}
+        <a href="https://www.gegevensbeschermingsautoriteit.be">Gegevensbeschermingsautoriteit</a>.
+      </p>
+      <p class="meta">Laatst bijgewerkt op {BIJGEWERKT}.</p>
+    </div>
+  </section>
+</Basis>

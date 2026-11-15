@@ -1,0 +1,4 @@
+# Lezersvragen. Elke week beantwoordt de editie hoogstens één open vraag.
+# Velden: vraag, van (voornaam of "anoniem", alleen met toestemming), ontvangen (datum),
+#         beantwoord_in (vult de pijplijn in)
+vragen: []

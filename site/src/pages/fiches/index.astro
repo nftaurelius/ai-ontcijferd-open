@@ -1,0 +1,27 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { alleFiches } from "../../lib/fiches";
+const fiches = alleFiches();
+---
+
+<Basis titel="Praktische AI-fiches" beschrijving="Praktische checklists over AI voor scholen, gemeenten, kmo's en werkgevers. Gratis, printbaar en vrij te gebruiken onder CC BY 4.0.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Gratis, printbaar, vrij te gebruiken</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Fiches</h1>
+      <p class="lead">Korte, praktische checklists om morgen mee aan de slag te gaan. Druk ze af, deel ze, neem ze over in je eigen nieuwsbrief: dat mag, met vermelding van AI Ontcijferd.</p>
+    </div>
+  </section>
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <ul class="editielijst">
+      {fiches.map((f) => (
+        <li>
+          <a href={`/fiches/${f.slug}`}>{f.titel}</a>
+          <p style="margin:0.25rem 0 0">{f.samenvatting}</p>
+          <p class="meta" style="margin:0.2rem 0 0">Voor: {f.voor.join(", ")}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Basis>

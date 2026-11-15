@@ -1,0 +1,75 @@
+---
+// Inschrijfformulier voor de nieuwsbrief (Brevo, lijst "Nieuwsbrief AI Ontcijferd").
+// FORMULIER_ACTIE is de action-url uit Brevo: Marketing → Forms → "Inschrijven website
+// aiontcijferd.be" → Share → Simple HTML. Het formulier post naar een verborgen iframe,
+// zodat de lezer op de site blijft. Brevo stuurt daarna een bevestigingsmail (double opt-in);
+// na de klik daarin komt de lezer op /ingeschreven.
+const FORMULIER_ACTIE =
+  "https://ea44266d.sibforms.com/serve/MUIFAOU2Yg8lC_6FDTGlsZ-WS8E0vGu0t38wjLM4cmc9pzeXokmd1kVuX8JL0SBNWZDtB5xh-K1KgW2XIlsQOz3cZcJ_7u09U-QKSGhvRyuCT5mno0OY4bhJmjgA1TP32MWtpEz-EodDYVTFNeqVU9jx62WtIT7WkYJHkyfvpY-v8iEgaaVhd4yGtq26hcil7NrQno_QOuPjRkU3pw==";
+import { alleEdities } from "../lib/edities";
+
+interface Props {
+  /** groot: volledig blok met wat je krijgt. kort: één regel, voor midden in een pagina. */
+  variant?: "groot" | "kort";
+}
+const { variant = "groot" } = Astro.props;
+const laatste = alleEdities()[0];
+const id = `inschrijven-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+{variant === "kort" ? (
+  <section class="inschrijven inschrijven-kort" aria-labelledby={`${id}-titel`}>
+    <p class="inschrijven-kort-tekst" id={`${id}-titel`}><strong>Liever elke vrijdag in je mailbox?</strong> Vijf minuten, gratis.</p>
+    <form class="inschrijfformulier" action={FORMULIER_ACTIE} method="post" target={`${id}-doel`}>
+      <label class="visueel-verborgen" for={`${id}-email`}>E-mailadres</label>
+      <input id={`${id}-email`} type="email" name="EMAIL" required autocomplete="email" placeholder="jij@voorbeeld.be" />
+      <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+      <input type="hidden" name="locale" value="nl" />
+      <input type="hidden" name="html_type" value="simple" />
+      <button class="knop" type="submit">Schrijf me in</button>
+    </form>
+    <p class="inschrijf-bedankt" role="status" hidden>
+      <strong>Bijna klaar.</strong> Klik op de knop in de mail van redactie@aiontcijferd.be om te bevestigen. Niets gekregen? Kijk in je spam.
+    </p>
+    <iframe name={`${id}-doel`} title="Inschrijving verzenden" hidden style="display:none"></iframe>
+    <p class="meta inschrijven-kort-privacy">We gebruiken je adres alleen voor de nieuwsbrief. <a href="/privacy">Privacy</a></p>
+  </section>
+) : (
+  <section class="inschrijven" id="nieuwsbrief" aria-labelledby={`${id}-titel`}>
+    <p class="inschrijven-kicker">Gratis nieuwsbrief</p>
+    <h2 id={`${id}-titel`}>Elke vrijdag de Stand van AI in je mailbox</h2>
+    <ul class="inschrijven-voordelen">
+      <li>De belangrijkste AI-ontwikkelingen van de week, in vijf minuten</li>
+      <li>Wat ze betekenen voor Vlaanderen, met een hype-meter per onderwerp</li>
+      <li>Gratis, en uitschrijven kan met één klik</li>
+    </ul>
+    <form class="inschrijfformulier" action={FORMULIER_ACTIE} method="post" target={`${id}-doel`}>
+      <label class="meta" for={`${id}-email`} style="flex-basis:100%">Je e-mailadres</label>
+      <input id={`${id}-email`} type="email" name="EMAIL" required autocomplete="email" placeholder="jij@voorbeeld.be" />
+      <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
+      <input type="hidden" name="locale" value="nl" />
+      <input type="hidden" name="html_type" value="simple" />
+      <button class="knop knop-groot" type="submit">Schrijf me gratis in</button>
+    </form>
+    <p class="inschrijf-bedankt" role="status" hidden>
+      <strong>Bijna klaar.</strong> Je krijgt zo een mail van redactie@aiontcijferd.be. Klik op de knop daarin om je inschrijving te bevestigen. Niets gekregen? Kijk in je ongewenste e-mail en voeg redactie@aiontcijferd.be toe aan je contactpersonen.
+    </p>
+    <iframe name={`${id}-doel`} title="Inschrijving verzenden" hidden style="display:none"></iframe>
+    <p class="meta" style="margin:0.8rem 0 0">
+      {laatste && <><a href="/nieuwsbrief">Bekijk hoe de nieuwsbrief eruitziet</a> · </>}We gebruiken je adres alleen hiervoor (<a href="/privacy">privacy</a>). Liever <a href="/rss.xml">RSS</a>?
+    </p>
+  </section>
+)}
+
+<script>
+  document.querySelectorAll<HTMLFormElement>(".inschrijfformulier").forEach((form) => {
+    form.addEventListener("submit", () => {
+      const bedankt = form.parentElement?.querySelector<HTMLElement>(".inschrijf-bedankt");
+      // het verzoek vertrekt naar het verborgen iframe; toon meteen de bevestiging
+      setTimeout(() => {
+        form.hidden = true;
+        if (bedankt) bedankt.hidden = false;
+      }, 50);
+    });
+  });
+</script>

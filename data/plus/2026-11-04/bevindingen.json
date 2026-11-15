@@ -1,0 +1,92 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "Google zet AI-tools in zijn schoolsoftware voor leerlingen in de VS standaard uit",
+    "probleem": "Data News meldt een aangekondigde maatregel: Google zal de tools uitschakelen. De bron bevestigt niet dat de nieuwe standaardinstelling al geldt.",
+    "voorstel": "Maak zowel in de samenvatting als in het artikel duidelijk dat Google de wijziging aankondigt. Controleer de ingangsdatum vóór publicatie."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Twee nieuwe onderzoeken wegen af wanneer AI-automatisering loont",
+    "probleem": "Alleen de RPA-studie vergelijkt prestaties en kosten. ProofPaths beschrijft een beoordelingssysteem en technische tests, maar onderzoekt niet of automatisering loont.",
+    "voorstel": "Presenteer ProofPaths niet als een kosten-batenonderzoek. Onderscheid de vergelijkende automatiseringsstudie van het voorgestelde onderwijssysteem."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Beide bronnen komen uit dezelfde Google-verklaring",
+    "probleem": "Data News verwijst via The New York Times naar een Google-verklaring. Het bronmateriaal toont niet aan dat de Google-blog op precies diezelfde verklaring berust.",
+    "voorstel": "Beperk de vaststelling tot wat vaststaat: beide berichten steunen op communicatie van Google, en de blog bevestigt de standaardinstelling 'uit' niet."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "RPA (Robotic Process Automation, een script dat vaste stappen afwerkt) haalde 98,90% nauwkeurigheid.",
+    "probleem": "Het cijfer klopt, maar de betekenis van nauwkeurigheid blijft onduidelijk. Het abstract definieert de meeteenheid niet en meldt daarnaast voor beide systemen 100% geslaagde stappen. Het onderzoek beoordeelt het ophalen van verslagen, niet de medische juistheid ervan.",
+    "voorstel": "Benoem wat de test wel en niet meet. Vermeld dat het abstract niet preciseert hoe nauwkeurigheid is berekend en stel geslaagde stappen niet gelijk aan correct opgehaalde informatie."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Voor een stabiele, repetitieve taak is een vast script vaak goedkoper en betrouwbaarder dan een AI-agent, ook in zorgadministratie.",
+    "probleem": "Eén vergelijking tussen twee implementaties in één portaal onderbouwt geen algemene frequentieclaim als 'vaak'. De eerdere kanttekening over de beperkte studie wordt hier weer losgelaten.",
+    "voorstel": "Beperk de conclusie tot deze proef. Maak van de bredere vertaalslag een advies om een vast script als vergelijkingspunt mee te testen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Kies een AI-agent pas als de software waarmee je werkt vaak verandert",
+    "probleem": "De studie test geen veranderende interface. Ze onderbouwt dus niet wanneer een zelfstandige wél een AI-agent moet kiezen. Aanpasbaarheid is in het abstract een belofte, geen aangetoond voordeel.",
+    "voorstel": "Adviseer beide oplossingen op de eigen taak te vergelijken, inclusief wijzigingen en onderhoud. Benoem expliciet dat deze studie het voordeel bij veranderende software niet heeft getest."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Biotech en farma blijven een sector waar AI-kennis en data-analyse de profielen in onderzoeksafdelingen veranderen.",
+    "probleem": "De UCB-bron meldt een samenwerking, maar niets over veranderende functieprofielen, aanwervingen of vereiste vaardigheden. Dit is een onbewezen arbeidsmarktclaim en geen concrete Vlaamse vertaalslag.",
+    "voorstel": "Schrap de claim of voeg een bron toe die zulke veranderingen bij UCB of Vlaamse onderzoeksafdelingen aantoont. Beperk de relevantie anders tot de aangekondigde samenwerking van het Belgische bedrijf."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het beschikbare bericht noemt geen financiële voorwaarden, geen concrete geneesmiddelen en geen meetbare winst in tijd.",
+    "probleem": "De bronweergave stopt midden in een zin. Daardoor is niet vast te stellen wat het volledige bericht wel of niet noemt. 'Het beschikbare bericht' verwijst bovendien naar de redactionele beschikbaarheid in plaats van naar een duidelijk afgebakende bron.",
+    "voorstel": "Controleer het volledige bericht of de primaire UCB-aankondiging voordat je deze afwezigheden vaststelt. Houd het controlepunt tot dan alleen in een HTML-commentaar."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Gewone benchmarks tellen alleen de ene door mensen aangeduide vaardigheid als juist en al het andere als fout.",
+    "probleem": "Het abstract spreekt over enkele door mensen aangeduide positieve voorbeelden, niet noodzakelijk precies één. De formulering maakt de bestaande beoordelingsmethode onjuist eenvoudiger.",
+    "voorstel": "Gebruik 'de door mensen aangeduide vaardigheden' en behoud de kanttekening dat andere vaardigheden in die binaire beoordeling als fout gelden."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De beste systemen gebruiken minstens 42 keer, meestal honderden keren, meer parameters dan de basismodellen die ze verslaan.",
+    "probleem": "De auteurs beperken deze vaststelling tot ingezonden systemen waarvan zij de omvang konden bepalen. Die belangrijke beperking ontbreekt. Ook zijn parameters, de instelbare waarden van een model, niet hetzelfde als gemeten kosten of rekentijd.",
+    "voorstel": "Herstel de beperking tot systemen waarvan de omvang kon worden vastgesteld. Leg parameters uit en voorkom dat de verhouding als een kostenmeting wordt gelezen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Mistral meldt dat 133 agents met Mistral Large 4 in een test een recente kwetsbaarheid (CVE) in Django vonden, bevestigden en patchten",
+    "probleem": "De bron verdeelt de rollen anders: de 133 agents onderzochten en bevestigden de kwetsbaarheid; daarna voerde Le Chonk de reparatie uit. Het concept schrijft ook het patchen aan de groep toe. CVE is bovendien een identificatie voor een bekende kwetsbaarheid, niet de kwetsbaarheid zelf.",
+    "voorstel": "Behoud de afzonderlijke rollen uit de bron of laat het aantal en de uitvoerder van de reparatie weg. Maak duidelijk dat de proef een kwetsbaarheid met een bestaande CVE-identificatie betrof."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Mistral zegt dat Mistral Large 4 beschikbaar is in Open Math OS",
+    "probleem": "De bron beperkt de beschikbaarheid tot goedgekeurde teams. Zonder die beperking lijkt het aanbod voor iedereen toegankelijk.",
+    "voorstel": "Voeg toe dat de toegang volgens Mistral voor goedgekeurde teams is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Bij ProofPaths vermeldt dit label wel de herkomst, maar niet expliciet dat onafhankelijke bevestiging ontbreekt. Bij WorkRB zegt 'Eén bron' evenmin uitdrukkelijk dat de onderzoeksconclusies niet onafhankelijk bevestigd zijn.",
+    "voorstel": "Vermeld bij beide onderzoeken expliciet dat de conclusies hier uitsluitend op de publicatie van de auteurs steunen en niet onafhankelijk bevestigd zijn."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## Vandaag in het kort",
+    "probleem": "Het concept bevat nergens een hype-meter. Daardoor ontbreekt de gevraagde afweging tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per hoofdonderwerp één van de vijf toegestane standen toe, met één verklarende zin. Onderbouw de verhouding tussen aandacht en impact; de triagescores zijn daarvoor op zichzelf onvoldoende."
+  },
+  {
+    "ernst": "klein",
+    "passage": "aan de hand van de rubric van de docent",
+    "probleem": "Rubric wordt niet uitgelegd. Ook elders blijven vakwoorden zoals frontiermodel, benchmarks en computationele technieken bij hun eerste gebruik onverklaard.",
+    "voorstel": "Vervang rubric door beoordelingsschema of geef een korte uitleg. Controleer de overige vakwoorden systematisch op een begrijpelijke toelichting bij het eerste gebruik."
+  }
+]

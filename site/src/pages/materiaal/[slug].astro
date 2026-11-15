@@ -1,0 +1,126 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import Inschrijven from "../../components/Inschrijven.astro";
+import { beschikbarePakketten, LICENTIES, SOORTEN, grootte, totaleGrootte, naamsvermelding, personalisatiePrompt, type Pakket } from "../../lib/materiaal";
+import { datumLeesbaar } from "../../lib/edities";
+import { SITE_URL, auteur, uitgever } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return beschikbarePakketten().map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Pakket };
+const lic = LICENTIES[p.licentie];
+const url = `${SITE_URL}/materiaal/${p.slug}`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": p.soort === "cursus" ? "Course" : "LearningResource",
+  "@id": url,
+  url,
+  name: p.titel,
+  description: p.samenvatting,
+  inLanguage: "nl-BE",
+  learningResourceType: SOORTEN[p.soort],
+  ...(p.niveau ? { educationalLevel: p.niveau } : {}),
+  ...(p.deelnemers ? { audience: { "@type": "Audience", audienceType: p.deelnemers } } : {}),
+  version: p.versie,
+  ...(p.bijgewerkt ? { dateModified: p.bijgewerkt } : {}),
+  isAccessibleForFree: true,
+  license: lic.url,
+  author: { "@id": auteur["@id"], "@type": "Person", name: p.maker },
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  ...(p.soort === "cursus" ? { provider: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name } } : {}),
+};
+---
+
+<Basis titel={`${p.titel} · Open lesmateriaal`} beschrijving={`${p.samenvatting} Gratis te downloaden en aan te passen, ${p.licentie}.`} schema={schema}>
+  <article>
+    <section class="rij sectie">
+      <div class="kantlijn">
+        <p class="kantlijn-kop">{SOORTEN[p.soort]}</p>
+        <p>
+          {p.deelnemers && <>Voor: {p.deelnemers}<br /></>}
+          {p.duur && <>Duur: {p.duur}<br /></>}
+          {p.niveau && <>Niveau: {p.niveau}<br /></>}
+          Versie {p.versie}<br />
+          {p.bijgewerkt && <>Bijgewerkt {datumLeesbaar(p.bijgewerkt)}<br /></>}
+          <a rel="license" href={lic.url}>{p.licentie}</a>
+        </p>
+        <p><a href="/materiaal">Alle pakketten</a></p>
+      </div>
+      <div class="proza">
+        <h1 style="margin-top:0">{p.titel}</h1>
+        <p class="lead">{p.samenvatting}</p>
+        {p.voor.length > 0 && <p class="meta">Om te geven in: {p.voor.join(", ").toLowerCase()}.</p>}
+
+        <div class="downloadblok">
+          <a class="knop knop-groot" href={p.zipUrl} download={p.zipNaam}>Download het hele pakket</a>
+          <p class="meta">Eén zip-bestand van {grootte(totaleGrootte(p))}, met een LEESMIJ over de licentie en de prompt om het aan te passen.</p>
+          <h2 class="downloadblok-kop">Of download de bestanden apart</h2>
+          <ul class="bestanden">
+            {p.bestanden.map((b) => (
+              <li>
+                <a href={b.url} download={b.naam}>{b.naam}</a>
+                <span class="meta"> · {b.formaat}, {grootte(b.bytes)}</span>
+                {b.omschrijving && <p>{b.omschrijving}</p>}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {p.html && <Fragment set:html={p.html} />}
+      </div>
+    </section>
+
+    <section class="rij sectie" id="aanpassen">
+      <div class="kantlijn"><p class="kantlijn-kop">Maak het van jou</p></div>
+      <div class="proza">
+        <h2>Pas het aan met AI</h2>
+        <ol>
+          <li>Open een AI-assistent die bestanden aanneemt, het liefst het account van je organisatie.</li>
+          <li>Voeg de bestanden uit de zip toe en plak de prompt hieronder.</li>
+          <li>Vul de stukken tussen [haakjes] in. Zet er geen namen of gegevens van echte deelnemers in.</li>
+          <li>Kijk alles na wat de assistent met [NAKIJKEN] markeert, en geef de sessie één keer op proef.</li>
+        </ol>
+        <label class="meta" for="prompt">De prompt</label>
+        <textarea id="prompt" class="prompt" readonly rows="16">{personalisatiePrompt(p)}</textarea>
+        <p><button type="button" class="knop" data-kopieer="prompt">Kopieer de prompt</button></p>
+        <p class="meta">
+          Twijfel je of je iets in een chatbot mag zetten? Doe eerst de <a href="/plakcheck">Plakcheck</a>. Meer uitleg in{" "}
+          <a href="/materiaal/gebruiken">Zo gebruik je een pakket</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="rij sectie" id="naamsvermelding">
+      <div class="kantlijn"><p class="kantlijn-kop">Licentie</p></div>
+      <div class="proza">
+        <h2>Wat mag je ermee?</h2>
+        <p>{lic.kort}</p>
+        <p>Zet deze regel in je eigen versie, bijvoorbeeld op de laatste dia of onderaan het werkblad:</p>
+        <p class="naamsvermelding" id="regel">{naamsvermelding(p)}</p>
+        <p><button type="button" class="knop" data-kopieer="regel">Kopieer de naamsvermelding</button></p>
+        <p class="meta">Volledige licentie: <a rel="license" href={lic.url}>{lic.naam}</a>.</p>
+      </div>
+    </section>
+  </article>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Nieuwe versies</p></div>
+    <div>
+      <p>Verbeterde versies en nieuwe pakketten melden we in de nieuwsbrief.</p>
+      <Inschrijven variant="kort" />
+    </div>
+  </section>
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Fout gezien?</p></div>
+    <div class="proza">
+      <p>Mail het naar <a href="mailto:redactie@aiontcijferd.be">redactie@aiontcijferd.be</a>, met de naam van het pakket en het versienummer ({p.versie}).</p>
+    </div>
+  </section>
+</Basis>
+
+<script>
+  import { koppelKopieerknoppen } from "../../scripts/kopieer";
+  koppelKopieerknoppen();
+</script>

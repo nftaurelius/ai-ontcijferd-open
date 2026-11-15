@@ -1,0 +1,37 @@
+[
+  {
+    "term": "Token",
+    "uitleg_leek": "Een token is een stukje tekst, ongeveer een woord of een deel van een woord, waarin een AI-model tekst telt. Bedrijven rekenen hun prijs vaak per miljoen tokens aan.",
+    "voorbeeld": "Een lang e-mailantwoord van een chatbot bestaat uit honderden tokens."
+  },
+  {
+    "term": "Benchmark",
+    "uitleg_leek": "Een vaste test waarmee je AI-modellen met elkaar vergelijkt op dezelfde opdrachten. Een score zegt alleen iets over wat die test meet.",
+    "voorbeeld": "Terminal-Bench test hoe goed een model taken in een programmeeromgeving uitvoert."
+  },
+  {
+    "term": "Preprint",
+    "uitleg_leek": "Een onderzoeksartikel dat openbaar staat maar nog niet door andere wetenschappers is beoordeeld.",
+    "voorbeeld": "De studie over Reddit en datacenters staat als preprint op arXiv."
+  },
+  {
+    "term": "Open source",
+    "uitleg_leek": "Software waarvan de code vrij te bekijken en te gebruiken is.",
+    "voorbeeld": "Onderzoekers kunnen het AYO-platform zelf installeren en aanpassen."
+  },
+  {
+    "term": "Query fan-out",
+    "uitleg_leek": "Een zoektechniek waarbij één vraag wordt opgesplitst in meerdere deelvragen die tegelijk worden opgezocht.",
+    "voorbeeld": "Een vraag over een gezinsvakantie wordt apart opgezocht voor vervoer, verblijf en activiteiten."
+  },
+  {
+    "term": "CIO",
+    "uitleg_leek": "De topverantwoordelijke voor IT en digitale systemen in een bedrijf of organisatie.",
+    "voorbeeld": "De CIO van een groot ziekenhuis beslist mee of er een AI-assistent komt."
+  },
+  {
+    "term": "Taalmodel",
+    "uitleg_leek": "Een AI-systeem dat tekst leest en schrijft, getraind op enorme hoeveelheden tekst.",
+    "voorbeeld": "De onderzoekers gebruikten een taalmodel om duizenden Reddit-reacties te sorteren."
+  }
+]

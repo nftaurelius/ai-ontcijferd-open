@@ -1,0 +1,98 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "met een einde aan ongewenste automatische verlengingen en gratis proefperiodes die in een abonnement veranderen",
+    "probleem": "De Commissie spreekt over proefperiodes die abonnementsvallen worden, niet over een verbod op elke proefperiode die overgaat in een abonnement.",
+    "voorstel": "Beperk de claim tot ongewenste automatische verlengingen en proefperiodes die consumenten in een abonnement vastzetten."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Ook komen er beperkingen op gepersonaliseerde advertenties en prijzen gericht op minderjarigen.",
+    "probleem": "De bron beperkt dit tot oneerlijke gepersonaliseerde advertenties en prijzen. Die kwalificatie ontbreekt, waardoor het voorgestelde bereik groter lijkt.",
+    "voorstel": "Neem 'oneerlijke' over en blijf duidelijk maken dat het om voorgestelde beperkingen gaat."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "je krijgt een uitschakelbare optie tegen verslavende ontwerpkenmerken",
+    "probleem": "De lezersrubriek presenteert een voorgesteld recht als zekerheid. Hetzelfde gebeurt bij 'webshops en appmakers moeten', ondanks de eerdere waarschuwing dat er nog geen wet is.",
+    "voorstel": "Formuleer beide gevolgen voorwaardelijk: als het voorstel in deze vorm wordt aangenomen. Verduidelijk ook dat je ontwerpkenmerken kunt uitschakelen, niet de optie zelf."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De kop van de bron over AI-agenten en chatbots vind je in de tekst niet terug.",
+    "probleem": "De titel over AI-agenten en chatbots hoort bij het X-signaal, niet bij de gelinkte Commissiemededeling. De passage schrijft die kop ten onrechte aan de officiële bron toe en bespreekt bovendien de bronverwerking.",
+    "voorstel": "Schrap de vergelijking met de kop. Vermeld uitsluitend dat de Commissiemededeling geen bepalingen over AI-agenten en chatbots beschrijft."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De test meet hoe goed het model bekende oorzaken van genetische verschillen terugvindt.",
+    "probleem": "Dit beschrijft de test verkeerd. De bron gaat over genetische varianten die genexpressie beïnvloeden, niet over oorzaken waardoor genetische verschillen ontstaan.",
+    "voorstel": "Beschrijf dat de test meet hoeveel causale varianten die genactiviteit beïnvloeden het model terugvindt in de TenK10K-dataset, volgens DeepMind."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "30% tegenover 16% juist geïdentificeerde causale varianten",
+    "probleem": "De vergelijking vermeldt niet dat het oorspronkelijke AlphaGenome voor deze test was aangepast met gegevens van individuele cellen. Ook kan 'juist geïdentificeerde' worden gelezen als nauwkeurigheid van alle voorspellingen, terwijl de bron het terugvinden van varianten bespreekt.",
+    "voorstel": "Benoem de aangepaste voorganger als vergelijkingsbasis en leg uit dat het gaat om het aandeel teruggevonden causale varianten. Vermeld dat de beschikbare beschrijving onvoldoende informatie geeft over fout-positieve voorspellingen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het is getraind op meer dan 100 miljoen individuele celprofielen uit 68 weefsels.",
+    "probleem": "Dit is een bedrijfsclaim die als vastgesteld feit wordt gebracht. Het statuslabel en de latere algemene kanttekening vervangen de vereiste bronattributie bij deze claim niet.",
+    "voorstel": "Schrijf expliciet dat deze trainingsomvang volgens DeepMind geldt. Houd ook de beschreven mogelijkheden en beschikbaarheid herkenbaar toegeschreven aan de maker."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "OpenAI vermeldt niet welke onderzoekers of instellingen het geld krijgen, binnen welke termijn, en of de resultaten openbaar worden.",
+    "probleem": "De twee beschikbare zinnen ondersteunen alleen dat deze details daarin niet staan. Ze bewijzen niet dat OpenAI ze nergens op de volledige pagina of elders vermeldt. De bestaande redactieopmerking bevestigt dat dit nog moet worden gecontroleerd.",
+    "voorstel": "Controleer de volledige aankondiging voordat je deze afwezigheid als feit publiceert. Schrap de passage zolang die controle niet is gebeurd."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Het bedrag is bescheiden naast het eigen budget van een bedrijf van deze omvang.",
+    "probleem": "Er is geen bron voor het budget, de relevante bedrijfsomvang of een vergelijkingsbedrag. Daardoor is 'bescheiden' een ongefundeerd waardeoordeel.",
+    "voorstel": "Schrap deze vergelijking. Voeg alleen budgetcontext toe als die met een passende bron en periode kan worden onderbouwd."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Voorlopig bestaan ze niet.",
+    "probleem": "De bron zegt dat het onderzoek gedeelde meetinstrumenten ondersteunt. Daaruit volgt niet dat zulke instrumenten nog niet bestaan. Ook de specifieke toepassing om chatbots voor leerlingen te beoordelen wordt niet genoemd.",
+    "voorstel": "Schrap de bestaansclaim en beperk de toepassing tot het genoemde meten van risico's en kansen voor jongeren. Presenteer een mogelijke schooltoepassing hoogstens als expliciet voorwaardelijk voorbeeld."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## OpenAI trekt 2 miljoen dollar uit voor onderzoek naar AI en kinderveiligheid",
+    "probleem": "De kop presenteert de toezegging zonder bronattributie. De eerste alinea corrigeert dat wel, maar de kop kan zelfstandig worden gelezen.",
+    "voorstel": "Maak ook in de kop duidelijk dat OpenAI dit bedrag toezegt, in plaats van een uitgevoerde investering te suggereren."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Eén bron",
+    "probleem": "Bij geen van de drie hoofdonderwerpen staat een hype-meter. Een bronstatus zegt niets over de verhouding tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per hoofdonderwerp één van de vijf toegestane standen toe, met één zin uitleg. Baseer die op aandacht tegenover verwachte Vlaamse impact, niet op de numerieke triagescore."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Burgers:** je merkt hier niets rechtstreeks van.",
+    "probleem": "De Vlaamse vertaalslag blijft bij de hoofdonderwerpen grotendeels beperkt tot algemene doelgroepzinnen of de afwezigheid van directe gevolgen. Een concrete Vlaamse toepassing of afweging ontbreekt.",
+    "voorstel": "Voeg een duidelijk hypothetisch voorbeeld toe van een Vlaamse webshop of school, gekoppeld aan wat de bron daadwerkelijk ondersteunt. Verzin geen lokale gebruikers of onderzoeksprojecten."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Hij baseert zich op een post van Andrej Karpathy over drie factoren",
+    "probleem": "De oorspronkelijke post van Karpathy is niet beschikbaar. Alleen Marchese beschrijft die inhoud. De tekst neemt zijn weergave over alsof die rechtstreeks is gecontroleerd.",
+    "voorstel": "Schrijf dat Marchese zich naar eigen zeggen op Karpathy baseert en schrijf de drie factoren toe aan zijn videobeschrijving."
+  },
+  {
+    "ernst": "klein",
+    "passage": "genexpressie",
+    "probleem": "Meerdere vakwoorden worden bij eerste gebruik niet uitgelegd, waaronder genexpressie, causale varianten, micro-tools, codingagents, AI-companions en Lean. Ook AVG blijft onverklaard.",
+    "voorstel": "Vervang deze termen door gewone taal of voeg telkens een korte uitleg toe. Onderbouw technische definities waar nodig met een geschikte bron."
+  },
+  {
+    "ernst": "klein",
+    "passage": "van Arvind Narayanan vindt een algemeen verbod op AI-companions voor tieners waarschijnlijk te bot (nog niet bevestigd)",
+    "probleem": "Dit is een toegeschreven beleidsopvatting, geen feit dat onafhankelijk bevestigd moet worden. De relevante onderbouwing uit de samenvatting ontbreekt: te weinig aandacht voor prikkels voor sociaal bevorderlijk chatbotontwerp.",
+    "voorstel": "Label dit als een mening en vermeld kort zijn argument. Gebruik 'niet onafhankelijk bevestigd' alleen voor controleerbare feitelijke claims."
+  }
+]

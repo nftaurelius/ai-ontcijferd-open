@@ -1,0 +1,60 @@
+name: Publieke spiegel
+
+# Zet een gefilterde kopie van deze repo in de publieke repo (zonder geschiedenis,
+# zonder teksten van anderen). Doet niets zolang de variabele SPIEGEL_REPO niet is ingesteld.
+# Instellen: zie data/open-repo.md.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "40 15 * * *"   # elke dag, na de dagbrief (pushes van de pijplijn starten deze workflow niet altijd zelf)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: spiegel
+  cancel-in-progress: false
+
+jobs:
+  spiegel:
+    if: ${{ github.repository == 'nftaurelius/ai-ontcijferd' && vars.SPIEGEL_REPO != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Spiegel bouwen en controleren
+        run: bash spiegel/maak.sh "$RUNNER_TEMP/spiegel"
+
+      - name: Naar de publieke repo
+        env:
+          SPIEGEL_TOKEN: ${{ secrets.SPIEGEL_TOKEN }}
+          SPIEGEL_REPO: ${{ vars.SPIEGEL_REPO }}
+        run: |
+          set -euo pipefail
+          if [ -z "${SPIEGEL_TOKEN}" ]; then
+            echo "::warning::Het secret SPIEGEL_TOKEN ontbreekt nog. De spiegel is gebouwd en gecontroleerd, maar niet gepubliceerd."
+            exit 0
+          fi
+          publiek="$RUNNER_TEMP/publiek"
+          mkdir -p "$publiek" && cd "$publiek"
+          git init -q -b main
+          git remote add origin "https://x-access-token:${SPIEGEL_TOKEN}@github.com/${SPIEGEL_REPO}.git"
+          # Bestaat de publieke repo al met inhoud, bouw dan verder op haar laatste commit.
+          if git fetch -q --depth 1 origin main 2>/dev/null; then
+            git reset -q --soft FETCH_HEAD
+          fi
+          # De werkmap wordt exact de nieuwe spiegel.
+          cp -a "$RUNNER_TEMP/spiegel/." .
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen voor de spiegel."
+            exit 0
+          fi
+          git -c user.name="ai-ontcijferd-bot" -c user.email="actions@users.noreply.github.com" \
+            commit -q -m "Spiegel van $(date -u +%Y-%m-%d)"
+          git push -q origin main
+          echo "Spiegel bijgewerkt: https://github.com/${SPIEGEL_REPO}"

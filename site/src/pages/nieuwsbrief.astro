@@ -1,0 +1,30 @@
+---
+import Basis from "../layouts/Basis.astro";
+import Inschrijven from "../components/Inschrijven.astro";
+import { alleEdities, weekNummer } from "../lib/edities";
+
+const laatste = alleEdities()[0];
+---
+
+<Basis titel="Nieuwsbrief" beschrijving="Elke vrijdag de Stand van AI in je mailbox: de belangrijkste AI-ontwikkelingen van de week en wat ze betekenen voor Vlaanderen. Gratis.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Nieuwsbrief</p><p>Elke vrijdag, gratis</p></div>
+    <div>
+      <h1 style="margin-top:0">Mis geen enkele Stand van AI</h1>
+      <p class="lead">Elke vrijdag lezen we wat de AI-labs, onderzoekers en beleidsmakers deden. Je krijgt de drie à vijf onderwerpen die ertoe doen, met wat ze betekenen voor Vlaanderen en hoeveel hype erin zit.</p>
+      <Inschrijven />
+    </div>
+  </section>
+
+  {laatste && (
+    <section class="rij sectie">
+      <div class="kantlijn">
+        <p class="kantlijn-kop">Zo ziet hij eruit</p>
+        <p>De nieuwsbrief van {weekNummer(laatste.week)}.<br /><a href={`/mail/${laatste.week}.html`}>Open in een nieuw venster</a></p>
+      </div>
+      <div class="mailvoorbeeld">
+        <iframe src={`/mail/${laatste.week}.html`} title={`Voorbeeld: de nieuwsbrief van ${weekNummer(laatste.week)}`} loading="lazy"></iframe>
+      </div>
+    </section>
+  )}
+</Basis>

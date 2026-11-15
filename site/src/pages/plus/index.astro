@@ -1,0 +1,71 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import Inschrijven from "../../components/Inschrijven.astro";
+import { alleDagbrieven, alleDossiers } from "../../lib/plus";
+import { datumLeesbaar } from "../../lib/edities";
+import { DOELGROEPEN } from "../../lib/doelgroepen";
+import { splitsTitel } from "../../lib/opmaak";
+
+const dagen = alleDagbrieven();
+const dagNaam = (iso: string) => {
+  const t = new Date(iso + "T12:00:00").toLocaleDateString("nl-BE", { weekday: "long", day: "numeric", month: "long" });
+  return t.charAt(0).toUpperCase() + t.slice(1);
+};
+const dossiers = alleDossiers();
+---
+
+<Basis titel="Plus" beschrijving="AI Ontcijferd Plus: elke dag een dagbrief met het AI-nieuws en wat het betekent voor jou, plus dossiers die één ontwikkeling grondig uitleggen.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Elke dag<br /><a href="/plus/rss.xml">RSS</a></p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">AI Ontcijferd Plus</h1>
+      <p class="lead">De Stand van AI blijft je wekelijkse overzicht. Plus gaat dieper en sneller: elke dag een dagbrief, en dossiers die één ontwikkeling grondig uitleggen.</p>
+      <p>Elk onderwerp in de dagbrief krijgt een status: <strong>Bevestigd</strong> (twee onafhankelijke bronnen), <strong>Volgens de maker</strong> of <strong>Eén bron</strong>. Wat enkel op X of YouTube rondgaat, staat apart onder "Uit de radar": een signaal, nog geen nieuws.</p>
+      <p>Volg alleen wat jou raakt: {DOELGROEPEN.map((d, i) => <>{i > 0 && ", "}<a href={`/voor/${d.slug}`}>{d.label.toLowerCase()}</a></>)}. Elke lijn heeft een eigen RSS-feed.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Dagbrieven</p></div>
+    <div>
+      {dagen.length === 0 ? (
+        <p>De eerste dagbrief verschijnt binnenkort.</p>
+      ) : (
+        <ul class="editielijst">
+          {dagen.slice(0, 30).map((d) => (
+            <li>
+              <a href={`/plus/dag/${d.datum}`}>{dagNaam(d.datum)}</a>
+              <ul class="dagonderwerpen klein-lijst">
+                {(d.items.length ? d.items.map((i) => i.titel) : splitsTitel(d.titel)).map((t) => <li>{t}</li>)}
+              </ul>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Dossiers</p></div>
+    <div>
+      {dossiers.length === 0 ? (
+        <p>Het eerste dossier verschijnt binnenkort.</p>
+      ) : (
+        <ul class="editielijst">
+          {dossiers.map((d) => (
+            <li>
+              <p class="meta" style="margin:0 0 0.2rem">{datumLeesbaar(d.datum)}{d.hype && ` · Hype-meter: ${d.hype.stand}`}</p>
+              <a href={`/plus/dossiers/${d.slug}`}>{d.titel}</a>
+              <p style="margin:0.3rem 0 0">{d.samenvatting}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <div><Inschrijven /></div>
+  </section>
+</Basis>

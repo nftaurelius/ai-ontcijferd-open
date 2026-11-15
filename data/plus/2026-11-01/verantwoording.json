@@ -1,0 +1,77 @@
+[
+  {
+    "passage": "Robots.txt is het tekstbestand in de root van een website waarin je aangeeft wat crawlers mogen doen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Definitie herschreven zonder 'root' en 'mogen doen', met vermelding dat het een verzoek is; een technische primaire bron is als NAKIJKEN-punt toegevoegd omdat die niet beschikbaar was."
+  },
+  {
+    "passage": "Wat het wel belooft: één instelling in plaats van een aparte regel per aanbieder.",
+    "beslissing": "verwerkt",
+    "toelichting": "Uitleg nu toegeschreven aan Search Engine Roundtable, met vermelding dat deelname vrijwillig is en bestaande instellingen blijven werken."
+  },
+  {
+    "passage": "dan kan één regel in robots.txt straks volstaan om je voorkeur voor AI-training kenbaar te maken",
+    "beslissing": "verwerkt",
+    "toelichting": "Exact aantal regels geschrapt en beperkt tot deelnemende aanbieders, met vermelding dat de precieze invulling nog niet vastligt."
+  },
+  {
+    "passage": "Het bericht noemt ook niet welke andere aanbieders meedoen, en het zegt niet wanneer het signaal werkt of wat er met reeds verzamelde data gebeurt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Afwezigheidsclaims geschrapt uit de lopende tekst en als controlepunt in het HTML-commentaar gezet."
+  },
+  {
+    "passage": "Het bericht noemt in het aangeleverde fragment geen concrete maatregelen, cijfers of data.",
+    "beslissing": "verwerkt",
+    "toelichting": "Zin die de werkwijze beschrijft is geschrapt en naar het HTML-commentaar verplaatst."
+  },
+  {
+    "passage": "Wacht op de eerste rapportage voordat je dit in een schoolbeleid rond AI-gebruik opneemt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Wachtadvies geschrapt en vervangen door de concrete beleidsvraag over maatregelen en controle."
+  },
+  {
+    "passage": "ouders van tieners die ChatGPT gebruiken, kunnen vooralsnaaar alleen op de belofte van het bedrijf afgaan.",
+    "beslissing": "verwerkt",
+    "toelichting": "'Alleen' geschrapt, kanttekening beperkt tot het ontbreken van onafhankelijke bevestiging van deze aankondiging en de typefout hersteld."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Bij beide hoofdonderwerpen is een hype-meter met exact één stand en één zin uitleg toegevoegd."
+  },
+  {
+    "passage": "Google zou het gedeelde AIPREF-signaal voor AI-training in robots.txt begin 2027 ondersteunen",
+    "beslissing": "verwerkt",
+    "toelichting": "Voorlopige en vrijwillige status toegevoegd, plus het bezwaar van een werkgroepdeelnemer met toeschrijving aan Nate Hake."
+  },
+  {
+    "passage": "de beoordeling van Britse bouw- en renovatieaanvragen tot 58% kan verkorten",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot 'householder'-aanvragen, uitdrukkelijk als tijdsclaim van de maker gepresenteerd; de ontbrekende vergelijkingsbasis staat in het NAKIJKEN-commentaar."
+  },
+  {
+    "passage": "Anthropic publiceert onderzoek waarin duizenden Claude-agents een monitor voor trainingsdata proberen te omzeilen",
+    "beslissing": "verwerkt",
+    "toelichting": "Gemeld resultaat toegevoegd met toeschrijving aan Anthropic en de verbetering van monitors als verwachting geformuleerd."
+  },
+  {
+    "passage": "Ethan Mollick zegt dat AI de migratie van verouderde bedrijfssoftware, een markt van ongeveer 30 miljard dollar per jaar, sneller en goedkoper maakt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Marktschatting geschrapt; het anekdotische karakter en de beperking tot afgebakende projecten zijn behouden."
+  },
+  {
+    "passage": "De maker verwijst bovendien naar een eigen partnerlink voor een ander product.",
+    "beslissing": "verwerkt",
+    "toelichting": "Alleen de zichtbare Clay-link met extra gratis credits wordt beschreven, zonder de commerciële relatie als feit te stellen."
+  },
+  {
+    "passage": "Bruikbaar voor Vlaamse zelfstandigen die offertes, leads of administratie met Claude willen stroomlijnen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven als mogelijk aanknopingspunt, met de opmerking dat de video de werking niet bewijst; kanttekeningen over kosten en gegevensbescherming zijn behouden."
+  },
+  {
+    "passage": "Dertien nieuwe Claude-skills voor kleine bedrijven.",
+    "beslissing": "verwerkt",
+    "toelichting": "Skills, plug-in, leads en operations zijn uitgelegd of vervangen door gewoon Nederlands; AIPREF, IETF en Claude-agents zijn bij eerste gebruik in één bijzin verklaard."
+  }
+]

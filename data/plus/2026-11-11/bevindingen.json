@@ -1,0 +1,134 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "Kenniswerkers met een Google-abonnement krijgen toegang tot Carbon",
+    "probleem": "Dit verruimt de toegang tot alle Google-abonnementen. Google noemt specifiek Google AI Ultra en betalende ontwikkelaars en bedrijven via de genoemde zakelijke kanalen.",
+    "voorstel": "Beperk de consumentenclaim tot Google AI Ultra-abonnees en vermeld dat de toegang wordt uitgerold."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De prijs is $2 per miljoen input-tokens en $10 per miljoen output-tokens.",
+    "probleem": "Google noemt dit een introductieprijs. Die beperking ontbreekt, terwijl de tekst de prijs gebruikt voor aankoopadvies en vergelijking.",
+    "voorstel": "Vermeld dat dit volgens Google introductietarieven zijn."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Die benchmarks (gestandaardiseerde taaktests) meten hoe vaak een model een afgebakende taak goed afrondt",
+    "probleem": "Google beschrijft hier geen afzonderlijke meetmethoden voor CursorBench, WANDR en AutomationBench. De tekst stelt zonder onderbouwing dat alle drie dezelfde soort slaagfrequentie meten. Ook de stellige uitsluiting van Nederlands wordt niet onderbouwd.",
+    "voorstel": "Beperk de uitleg tot de genoemde taakgebieden. Zeg dat de resultaten geen prestaties binnen jouw organisatie aantonen. Controleer de testdocumentatie voordat je specifieke meetmethoden of taalbeperkingen noemt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De cijfers over cyberbeveiliging komen uit een interne test van Google.",
+    "probleem": "Dit trekt de herkomst van enkele cijfers door naar alle cyberresultaten. Google noemt daarnaast externe benchmarks, vroege testers en tests op opensourcecode. Alleen de genoemde Project Fortify-scores worden expliciet aan een interne benchmark gekoppeld.",
+    "voorstel": "Beperk de kwalificatie 'interne test' tot de Project Fortify-resultaten, of schrap deze algemene zin."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Fable 5.2 wint daar op de meeste testen",
+    "probleem": "De tabel bevat ook resultaten van Mythos, ontbrekende concurrentiescores en verschillende testinstellingen. Anthropic vermeldt bovendien dat CyScenarioBench per laboratorium unieke taken gebruikt. De samenvatting maakt de onderlinge vergelijking te uniform.",
+    "voorstel": "Maak onderscheid tussen Fable- en Mythos-resultaten en vermeld dat niet alle scores rechtstreeks vergelijkbaar zijn. Beperk uitspraken over winnen tot vergelijkbare tabelrijen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Op AutomationBench scoort Gemini 4 Carbon hoger (53,9% tegen 51,4%).",
+    "probleem": "De percentages zijn correct overgenomen, maar in dit onderdeel ontbreekt wat AutomationBench specifiek meet. 'Taken in gecontroleerde omgevingen' is daarvoor te algemeen.",
+    "voorstel": "Vermeld dat AutomationBench bedrijfswerkstromen test en dat de scores geen bewezen productiviteitswinst in een Vlaams bedrijf betekenen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "het goedkopere Opus 5.5",
+    "probleem": "Anthropic raadt Opus 5.5 inderdaad aan voor de meeste programmeer- en kennistaken, maar de bron geeft geen prijs van Opus 5.5.",
+    "voorstel": "Schrap 'goedkopere' of voeg een primaire prijsbron toe."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "dus alleen bij zware opdrachten is de meerprijs te verantwoorden",
+    "probleem": "Uit hogere tokenprijzen volgt niet wanneer de meerprijs economisch verantwoord is. Daarvoor ontbreken gegevens over tokenverbruik, benodigde pogingen, kwaliteit en tijdwinst.",
+    "voorstel": "Maak hiervan een afwegingsvraag: toets of de extra kwaliteit of tijdwinst bij jouw opdrachten opweegt tegen de totale kosten."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Volgens cyberveiligheidsspecialist Veerle Peeters, geciteerd door [Trends]",
+    "probleem": "De bron koppelt Peeters expliciet aan het pleidooi voor een mentaliteitswijziging en budgetverschuiving. De voorafgaande claim over meer cyberaanvallen staat niet expliciet op haar naam. Ook de kop en de kwalificatie 'één mening' bouwen op die onbewezen toeschrijving voort.",
+    "voorstel": "Schrijf de stijgingsclaim toe aan Trends en beperk Peeters' standpunt tot het pleidooi dat daadwerkelijk aan haar wordt toegeschreven."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het oorzakelijk verband tussen AI en de stijging is één mening, niet een gemeten feit.",
+    "probleem": "Dat de korte bron geen meetgegevens noemt, bewijst niet dat de uitspraak uitsluitend een mening is. De tekst kan alleen vaststellen dat de onderbouwing hier niet wordt gegeven.",
+    "voorstel": "Zeg dat Trends bij deze claim geen cijfers of onderzoek noemt waarmee het oorzakelijke verband kan worden beoordeeld."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Google schrijft dat Carbon vooral bedoeld is om kwetsbaarheden te vinden en te herstellen",
+    "probleem": "Google presenteert Carbon voor veel meer toepassingen. De specifieke cyberbeschrijving noemt bovendien niet alleen vinden en herstellen, maar ook het uitbuiten van kwetsbaarheden. Dat laatste ontbreekt juist in een alinea over dubbel gebruik.",
+    "voorstel": "Beperk de uitspraak tot Carbon voor cyberbeveiliging en vermeld ook het testen van het uitbuiten van kwetsbaarheden. Houd Googles defensieve positionering herkenbaar als bedrijfsclaim."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Het fragment geeft geen cijfers",
+    "probleem": "De tekst spreekt over de redactionele werkwijze in plaats van over wat de bron zegt. Hetzelfde gebeurt bij 'Het fragment geeft geen concrete raad' en 'het beschikbare deel'.",
+    "voorstel": "Benoem welke informatie Trends of het beursbericht niet geeft. Zet controles waarvoor de volledige publicatie nodig is uitsluitend in een HTML-commentaar."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Gegevens van Upwork gaan bovendien over een internationaal platform, niet over de Vlaamse markt.",
+    "probleem": "De samenvatting beschrijft geen dataset, geografische afbakening of methode. Daardoor kan niet worden vastgesteld welke markt de onderzochte gegevens vertegenwoordigen.",
+    "voorstel": "Zeg dat de samenvatting niet vermeldt welke landen zijn onderzocht en dus geen specifieke conclusie over Vlaanderen toelaat."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het onderzoek suggereert dat het loont om AI-kennis te combineren met je eigen vak",
+    "probleem": "De bron meldt nieuwe vaardigheidscombinaties en grotere AI-projecten. Dat toont niet aan dat individuele freelancers door bijscholing meer verdienen of meer opdrachten krijgen.",
+    "voorstel": "Beperk de conclusie tot veranderende gevraagde vaardigheden. Presenteer bijscholing als mogelijke afweging, niet als aangetoond rendement."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "\"Baseline\" is hier de vorige versie van Googles eigen model, geen concurrent.",
+    "probleem": "Google schrijft alleen 'previous baselines' en identificeert die hier niet. Dat het uitsluitend om de vorige eigen modelversie gaat en niet om concurrenten, staat er niet.",
+    "voorstel": "Vermeld dat Google de vergelijkingsmodellen hier niet specificeert. Pas ook 'dan eerdere versies' in de voorgaande alinea aan."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Over 200 uiteenlopende taken zou het model 30% tot 100% beter scoren",
+    "probleem": "De bron spreekt specifiek over een hoger slagingspercentage, afhankelijk van het taaktype. 'Beter scoren' verbergt wat is gemeten en kan als algemene kwaliteitswinst worden gelezen.",
+    "voorstel": "Benoem het slagingspercentage, de afhankelijkheid van het taaktype en de onvoldoende gespecificeerde vergelijkingsbasis. Maak duidelijk dat dit geen stijging met 30 tot 100 procentpunten betekent."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "AI-servers vragen volgens de tekst meer stroom en betere koeling dan gewone datacenters",
+    "probleem": "De bron spreekt over hogere vermogensdichtheid, niet over het totale stroomverbruik van ieder AI-datacenter. Bovendien vergelijkt de zin servers met complete datacenters.",
+    "voorstel": "Benoem hogere vermogensdichtheid als meer benodigd elektrisch vermogen per ruimte-eenheid. Trek zonder projectspecificaties geen conclusie over het totale verbruik in Machelen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "maar daarover is nog niets bekend",
+    "probleem": "Dat de vacaturesite geen informatie over stroomnet, koeling en vergunningen geeft, betekent niet dat hierover nergens informatie bekend is.",
+    "voorstel": "Beperk de uitspraak tot wat deze bron niet vermeldt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Bij Machelen verwijst dit label naar een bedrijfsclaim waarvoor alleen een secundair bericht is gelinkt. Een primaire verklaring is niet gecontroleerd. Ook bij verschillende andere dossiers wordt niet expliciet gezegd dat onafhankelijke bevestiging ontbreekt; een makerslabel alleen maakt dat niet volledig duidelijk.",
+    "voorstel": "Label Machelen als één bron en benoem de vacaturesite als herkomst. Vermeld bij kernclaims zonder twee onafhankelijke bronnen expliciet dat onafhankelijke bevestiging ontbreekt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## Vandaag in het kort",
+    "probleem": "In het hele concept ontbreekt de voorgeschreven hype-meter. Daardoor ontbreken zowel de stand als de uitleg over aandacht tegenover verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per uitgewerkt onderwerp één van de vijf toegestane standen toe, met één onderbouwende zin. Behandel de triagescores niet automatisch als publiceerbare hype-standen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Grotere organisaties die al met IBM of Microsoft werken, kunnen vragen wat dit aanbod voor hen verandert.",
+    "probleem": "Dit is algemeen leveranciersadvies, geen concrete Vlaamse vertaalslag. Ook bij de modelintroducties blijven de voorbeelden grotendeels beperkt tot brede beroepsgroepen.",
+    "voorstel": "Maak de relevantie concreet met een duidelijk hypothetische taak bij een Vlaamse onderneming of gemeente. Benoem wat daarvoor nog onbekend is, zonder een bestaande klant of toepassing te suggereren."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Studie: LLM-rechters vinden Grokipedia minder neutraal dan Wikipedia",
+    "probleem": "LLM wordt bij het eerste gebruik niet uitgelegd. Ook termen als backdoor, trigger, preview en companions blijven in de radar zonder Nederlandse uitleg.",
+    "voorstel": "Gebruik 'taalmodellen als beoordelaars' en vervang of verklaar de andere vaktermen kort bij hun eerste gebruik."
+  }
+]

@@ -1,0 +1,119 @@
+---
+import Basis from "../layouts/Basis.astro";
+import Inschrijven from "../components/Inschrijven.astro";
+import { alleTools } from "../lib/tools";
+import { allePakketten, SOORTEN } from "../lib/materiaal";
+import { alleFiches } from "../lib/fiches";
+import { datumLeesbaar } from "../lib/edities";
+import { LICENTIE_URL, SITE_URL, uitgever } from "../lib/seo";
+
+const tools = alleTools();
+const pakketten = allePakketten();
+const beschikbaar = pakketten.filter((p) => p.status === "beschikbaar");
+const komend = pakketten.filter((p) => p.status !== "beschikbaar");
+const fiches = alleFiches();
+const url = `${SITE_URL}/gratis`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": url,
+  url,
+  name: "Gratis tools en open lesmateriaal over AI",
+  inLanguage: "nl-BE",
+  isAccessibleForFree: true,
+  license: LICENTIE_URL,
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+---
+
+<Basis titel="Gratis tools en open lesmateriaal over AI" beschrijving="Gratis tools, lespakketten, een AI-cursus en praktische fiches van AI Ontcijferd. Zonder account, vrij te gebruiken en aan te passen onder Creative Commons." schema={schema}>
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Zonder account<br />Vrij te gebruiken</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Gratis en open</h1>
+      <p class="lead">
+        <span class="markeer">Alles op deze pagina is gratis, zonder account, en je mag het overnemen.</span>{" "}
+        Tools om meteen te gebruiken, en lesmateriaal dat je met AI op maat van je eigen organisatie maakt.
+      </p>
+      <p>
+        Bibliotheken, scholen, gemeenten, bedrijven en verenigingen mogen alles gebruiken, aanpassen en verder delen onder een
+        Creative Commons-licentie. De enige voorwaarde: vermeld AI Ontcijferd.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie" aria-labelledby="h-tools">
+    <div class="kantlijn"><p class="kantlijn-kop" id="h-tools">Tools</p><p>Draaien in je browser</p></div>
+    <div>
+      <ul class="aanbod">
+        {tools.map((t) => (
+          <li>
+            <p class="aanbod-soort"><span class="soort">Tool</span> Bijgewerkt {datumLeesbaar(t.bijgewerkt)}</p>
+            <h2><a href={`/${t.slug}`}>{t.naam}</a></h2>
+            <p class="aanbod-vraag">{t.vraag}</p>
+            <p>{t.uitleg}</p>
+            <a class="knop" href={`/${t.slug}`}>Doe de {t.korteNaam}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="rij sectie" aria-labelledby="h-materiaal">
+    <div class="kantlijn"><p class="kantlijn-kop" id="h-materiaal">Lesmateriaal</p><p>Downloaden en aanpassen</p></div>
+    <div class="proza">
+      <h2 style="margin-top:0"><a href="/materiaal" style="color:inherit">Open lespakketten en de AI-cursus</a></h2>
+      <p>
+        Draaiboeken, presentaties en werkbladen voor workshops en lezingen over AI, en een volledige AI-cursus. Download een pakket,
+        geef het aan je eigen AI-assistent met de prompt die we meegeven, en je hebt een versie voor jouw publiek.
+      </p>
+      {beschikbaar.length > 0 ? (
+        <ul class="klein-lijst">
+          {beschikbaar.map((p) => (
+            <li><a href={`/materiaal/${p.slug}`}>{p.titel}</a> <span class="meta">· {SOORTEN[p.soort]}</span></li>
+          ))}
+        </ul>
+      ) : (
+        <p>
+          <strong>Het eerste pakket verschijnt binnenkort.</strong>
+          {komend.length > 0 && ` In voorbereiding: ${komend.map((p) => p.titel).join(", ")}.`}
+        </p>
+      )}
+      <p>
+        <a class="knop" href="/materiaal">Bekijk het lesmateriaal</a>{" "}
+        <a href="/materiaal/gebruiken" style="margin-left:0.75rem">Zo pas je een pakket aan met AI</a>
+      </p>
+    </div>
+  </section>
+
+  {fiches.length > 0 && (
+    <section class="rij sectie" aria-labelledby="h-fiches">
+      <div class="kantlijn"><p class="kantlijn-kop" id="h-fiches">Fiches</p><p>Printbaar</p></div>
+      <div class="proza">
+        <h2 style="margin-top:0"><a href="/fiches" style="color:inherit">Praktische fiches</a></h2>
+        <p>Korte checklists om morgen mee aan de slag te gaan.</p>
+        <ul class="klein-lijst">
+          {fiches.map((f) => <li><a href={`/fiches/${f.slug}`}>{f.titel}</a></li>)}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Nieuw materiaal</p></div>
+    <div>
+      <p>Nieuwe tools en pakketten melden we in de nieuwsbrief.</p>
+      <Inschrijven variant="kort" />
+    </div>
+  </section>
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Waarom gratis</p></div>
+    <div class="proza">
+      <p>
+        AI-geletterdheid hoort niet achter een betaalmuur. Wat we maken voor workshops en lezingen, delen we hier zodat niemand het opnieuw hoeft te schrijven.
+        De inhoud valt onder <a rel="license" href={LICENTIE_URL}>CC BY 4.0</a>, tenzij bij een pakket iets anders staat.
+      </p>
+    </div>
+  </section>
+</Basis>

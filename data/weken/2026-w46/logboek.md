@@ -1,0 +1,6 @@
+- Verkenner en triage: 12 kandidaat-onderwerpen uit de periode 07/11 tot 13/11/2026.
+- Analist: koos de onderwerpen en schreef het concept.
+- Vertaler: maakte de tekst leesbaar voor leken (vaktermen uitgelegd: 7).
+- Tegenspreker: bevindingen 25, waarvan kritiek 11.
+- Revisie: 25 bevindingen verwerkt, 0 gemotiveerd niet.
+- Concept voor een LinkedIn-post klaargezet (data/weken/<week>/linkedin.md).

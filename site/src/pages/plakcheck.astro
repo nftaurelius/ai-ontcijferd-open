@@ -1,0 +1,164 @@
+---
+// Landingspagina van de Plakcheck en Urenrekening. De tool zelf staat als één zelfstandig
+// bestand in public/plakcheck/app/index.html (strenge Content Security Policy, geen netwerkverkeer)
+// en wordt hier in een kader getoond. Deellinks (#p=...) worden doorgegeven aan het kader.
+import Basis from "../layouts/Basis.astro";
+import Inschrijven from "../components/Inschrijven.astro";
+import { tool } from "../lib/tools";
+import { datumLeesbaar } from "../lib/edities";
+import { LICENTIE_URL, SITE_URL, uitgever } from "../lib/seo";
+
+const t = tool("plakcheck");
+const url = `${SITE_URL}/plakcheck`;
+const app = "/plakcheck/app/";
+const insluitCode = `<iframe src="${SITE_URL}${app}?embed=1" title="Plakcheck en Urenrekening van AI Ontcijferd" style="width:100%;border:0" height="2400" loading="lazy"></iframe>`;
+const insluitScript = `<script>
+window.addEventListener("message", function (e) {
+  if (!e.data || e.data.type !== "ao-plakcheck-hoogte") return;
+  var kaders = document.querySelectorAll("iframe");
+  for (var i = 0; i < kaders.length; i++) {
+    if (kaders[i].contentWindow === e.source) kaders[i].height = e.data.hoogte;
+  }
+});
+<\/script>`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": url,
+  url,
+  name: t.naam,
+  description: t.uitleg,
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "Elke recente browser",
+  browserRequirements: "JavaScript",
+  inLanguage: "nl-BE",
+  softwareVersion: t.versie,
+  dateModified: t.bijgewerkt,
+  isAccessibleForFree: true,
+  offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  license: LICENTIE_URL,
+};
+---
+
+<Basis titel="Plakcheck: mag dit in een chatbot? En loont het dan nog?" beschrijving="Gratis tool van AI Ontcijferd. Vier vragen zeggen of je gegevens in een AI-tool horen, een rekensom zegt of het je dan nog tijd oplevert. Draait in je browser en verstuurt niets." schema={schema}>
+  <section class="rij sectie">
+    <div class="kantlijn">
+      <p class="kantlijn-kop">Gratis tool</p>
+      <p>Versie {t.versie}<br />Prijzen en regels bijgewerkt op {datumLeesbaar(t.bijgewerkt)}</p>
+    </div>
+    <div class="proza">
+      <h1 style="margin-top:0">Plakcheck en Urenrekening</h1>
+      <p class="lead">
+        <span class="markeer">Mag je dit in een chatbot plakken? En levert AI je dan nog tijd op?</span>{" "}
+        Vier vragen en een rekensom. Gratis, zonder account.
+      </p>
+      <p>
+        De tool draait volledig in je browser. Hij leest geen tekst, verstuurt niets en bewaart niets: je kiest alleen soorten gegevens en vult cijfers in.
+        Je krijgt een kleur, de redenen, wat je eerst moet regelen en wat het je na een jaar oplevert.
+      </p>
+    </div>
+  </section>
+
+  <section class="tool-kader" aria-label="De tool">
+    <iframe id="tool" src={`${app}?embed=1`} title="Plakcheck en Urenrekening" allow="clipboard-write" height="2400"></iframe>
+    <script is:inline>
+      // Een deellink (#p=...) meteen doorgeven aan het kader, voor het laadt.
+      (function () {
+        var kader = document.getElementById("tool");
+        if (kader && location.hash) kader.src = "/plakcheck/app/?embed=1" + location.hash;
+      })();
+    </script>
+    <noscript><p class="meta">Deze tool heeft JavaScript nodig. <a href={app}>Open de tool apart</a>.</p></noscript>
+    <p class="meta tool-apart">Werkt het kader niet goed? <a href={app}>Open de tool op een aparte pagina</a>.</p>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Voor wie</p></div>
+    <div class="proza">
+      <p>
+        Voor iedereen die AI gebruikt of wil gebruiken: medewerkers en leidinggevenden, zelfstandigen, leraren, gemeenten, bibliotheken en verenigingen.
+        Ook voor thuis, want de Plakcheck houdt rekening met privégebruik.
+      </p>
+      <p>
+        Het oordeel hangt nooit af van een merk, alleen van eigenschappen die je zelf kunt nakijken: wordt je invoer gebruikt om modellen te trainen,
+        is er een verwerkersovereenkomst, en heeft je organisatie de tool goedgekeurd?
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Hou het bij</p></div>
+    <div class="proza">
+      <p>
+        Prijzen en voorwaarden van AI-diensten veranderen vaak. Bij elk gegeven in de tool staat een bron en de datum waarop we het nakeken.
+        Wat ouder wordt, markeert de tool zelf. De huidige stand is van <strong>{datumLeesbaar(t.bijgewerkt)}</strong>.
+      </p>
+      {t.teControleren > 0 && (
+        <p>
+          {t.teControleren} van de {t.totaalGegevens} gegevens zijn nog niet tegen de officiële bron gelegd. Ze zijn in de tool gemarkeerd onder "Feiten en bronnen",
+          en het oordeel van de Plakcheck hangt er niet van af.
+        </p>
+      )}
+      <p>Wil je weten wanneer de tool verandert, of wanneer er nieuwe gratis tools en lespakketten bijkomen? Dat lees je in de nieuwsbrief.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Nieuwsbrief</p></div>
+    <div><Inschrijven variant="kort" /></div>
+  </section>
+
+  <section class="rij sectie" id="insluiten">
+    <div class="kantlijn"><p class="kantlijn-kop">Op je eigen site</p></div>
+    <div class="proza">
+      <h2>Zet de Plakcheck op je eigen site</h2>
+      <p>
+        Scholen, besturen, bibliotheken, bedrijven en verenigingen mogen de tool gratis op hun eigen site of intranet zetten.
+        Ook ingesloten verstuurt hij niets. Kopieer deze code:
+      </p>
+      <div class="codeblok">
+        <pre id="code-kader">{insluitCode}</pre>
+        <button type="button" class="knop knop-klein" data-kopieer="code-kader">Kopieer de code</button>
+      </div>
+      <p>Wil je dat het kader automatisch meegroeit met de inhoud? Zet dan ook dit stukje op dezelfde pagina. De tool geeft alleen zijn hoogte door, niets anders.</p>
+      <div class="codeblok">
+        <pre id="code-script">{insluitScript}</pre>
+        <button type="button" class="knop knop-klein" data-kopieer="code-script">Kopieer het script</button>
+      </div>
+      <p class="meta">Gebruik je de tool in een opleiding of op een intranet? Laat het ons gerust weten via <a href="mailto:redactie@aiontcijferd.be">redactie@aiontcijferd.be</a>.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Hoe dit gemaakt is</p></div>
+    <div class="proza">
+      <p>
+        De tool is ontworpen en geprogrammeerd door een AI-model, Claude Fable 5.2 van Anthropic, in opdracht van de eindredacteur.
+        {t.nagekekenOp ? ` De eindredacteur keek deze versie na op ${datumLeesbaar(t.nagekekenOp)}.` : " De eindredacteur heeft deze versie nog niet nagekeken."}
+        Anthropic verkoopt zelf abonnementen die in de prijslijst staan; daarom hangt het oordeel nooit af van een merk.
+        Meer over onze werkwijze lees je in <a href="/zo-werken-we">Zo werken we</a>.
+      </p>
+      <p>
+        De tool zelf doet geen enkel netwerkverzoek: een beveiligingsinstelling in de pagina blokkeert elke verbinding naar buiten.
+        Deze pagina eromheen telt bezoeken zoals de rest van aiontcijferd.be.
+      </p>
+      <p>Dit is een eerste check, geen juridisch of financieel advies.</p>
+    </div>
+  </section>
+</Basis>
+
+<script>
+  import { koppelKopieerknoppen } from "../scripts/kopieer";
+  // Het kader laten meegroeien met de inhoud van de tool.
+  const kader = document.getElementById("tool") as HTMLIFrameElement | null;
+  window.addEventListener("message", (e) => {
+    if (!kader || e.source !== kader.contentWindow) return;
+    if (e.data?.type === "ao-plakcheck-hoogte" && typeof e.data.hoogte === "number") kader.height = String(Math.ceil(e.data.hoogte));
+  });
+  // Een nieuwe deellink in de adresbalk ook in het kader openen.
+  window.addEventListener("hashchange", () => {
+    if (kader && location.hash) kader.src = "/plakcheck/app/?embed=1" + location.hash;
+  });
+  koppelKopieerknoppen();
+</script>

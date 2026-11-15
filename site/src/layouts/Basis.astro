@@ -1,0 +1,126 @@
+---
+import "../styles/global.css";
+import { LICENTIE_URL, websiteSchema } from "../lib/seo";
+import { MENU } from "../lib/site";
+
+interface Props {
+  titel?: string;
+  beschrijving?: string;
+  type?: "website" | "article";
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+  gepubliceerd?: string;
+}
+
+const {
+  titel,
+  beschrijving = "AI zonder hype. Wekelijkse analyse van wat er in AI gebeurt en wat het betekent voor Vlaanderen. Door Duncan Panis.",
+  type = "website",
+  schema,
+  gepubliceerd,
+} = Astro.props;
+const volledigeTitel = titel ? `${titel} · AI Ontcijferd` : "AI Ontcijferd — AI zonder hype";
+const pad = Astro.url.pathname.replace(/\/$/, "") || "/";
+const actief = (m: (typeof MENU)[number]) => [m.href, ...m.ook].some((h) => pad === h || pad.startsWith(h + "/"));
+const canoniek = new URL(Astro.url.pathname, Astro.site);
+const ogAfbeelding = new URL("/og.png", Astro.site);
+const schemas = [websiteSchema(), ...(schema ? (Array.isArray(schema) ? schema : [schema]) : [])];
+---
+
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{volledigeTitel}</title>
+    <meta name="description" content={beschrijving} />
+    <meta name="author" content="Duncan Panis" />
+    <link rel="canonical" href={canoniek} />
+    <link rel="license" href={LICENTIE_URL} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title="AI Ontcijferd" href="/rss.xml" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta property="og:site_name" content="AI Ontcijferd" />
+    <meta property="og:title" content={volledigeTitel} />
+    <meta property="og:description" content={beschrijving} />
+    <meta property="og:url" content={canoniek} />
+    <meta property="og:type" content={type} />
+    <meta property="og:locale" content="nl_BE" />
+    <meta property="og:image" content={ogAfbeelding} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    {gepubliceerd && <meta property="article:published_time" content={gepubliceerd} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    <script defer src="/_vercel/insights/script.js"></script>
+  </head>
+  <body>
+    <a class="sla-menu-over" href="#hoofdinhoud">Naar de inhoud</a>
+    <header class="kop" data-kop>
+      <div class="pagina rij">
+        <a class="woordmerk" href="/"><span class="ai markeer">AI</span>Ontcijferd</a>
+        <nav class="menu" aria-label="Hoofdmenu">
+          {MENU.map((m) => (
+            <a href={m.href} aria-current={actief(m) ? "page" : undefined}>{m.tekst}</a>
+          ))}
+          <a class="kop-knop" href="/nieuwsbrief" aria-current={pad === "/nieuwsbrief" ? "page" : undefined}>Gratis nieuwsbrief</a>
+        </nav>
+        <a class="kop-mail" href="/nieuwsbrief" aria-label="Gratis nieuwsbrief"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" /><path d="M3 6l9 7 9-7" /></svg></a>
+        <details class="gsm-menu">
+          <summary aria-label="Menu"><span class="gsm-menu-nu">{MENU.find(actief)?.tekst ?? (pad === "/" ? "Start" : "Menu")}</span><span class="gsm-menu-knop" aria-hidden="true">Menu</span></summary>
+          <nav aria-label="Hoofdmenu (gsm)">
+            <ul>
+              <li><a href="/" aria-current={pad === "/" ? "page" : undefined}><strong>Start</strong><span>Het nieuwste van deze week en vandaag.</span></a></li>
+              {MENU.map((m) => (
+                <li><a href={m.href} aria-current={actief(m) ? "page" : undefined}><strong>{m.tekst}</strong><span>{m.uitleg}</span></a></li>
+              ))}
+            </ul>
+            <a class="knop gsm-menu-nieuwsbrief" href="/nieuwsbrief">✉ Elke vrijdag in je mailbox: schrijf je gratis in</a>
+            <p class="gsm-menu-voet"><a href="/zo-werken-we">Zo werken we</a><a href="/over">Over</a><a href="/vragen">Stel een vraag</a><a href="/privacy">Privacy</a></p>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main class="pagina" id="hoofdinhoud" tabindex="-1">
+      <slot />
+    </main>
+
+    <footer class="voet">
+      <div class="pagina rij">
+        <p>AI zonder hype. Door Duncan Panis.</p>
+        <div>
+          <p>Gemaakt met AI-agents, nagelezen door een mens.</p>
+          <p>
+            Vrij te gebruiken onder <a rel="license" href={LICENTIE_URL}>CC BY 4.0</a>: overnemen mag, met vermelding van
+            AI Ontcijferd en een link.
+          </p>
+          <p class="voetlinks">
+            <a href="/nieuwsbrief">Nieuwsbrief</a><a href="/over">Over</a><a href="/zo-werken-we">Zo werken we</a><a href="/vragen">Stel een vraag</a><a href="/naslag">Naslag</a><a href="/correcties">Correcties</a><a href="/privacy">Privacy</a><a href="/rss.xml">RSS</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Gsm: de kop schuift weg als je naar beneden leest en komt terug zodra je omhoog scrolt.
+      const kop = document.querySelector<HTMLElement>("[data-kop]");
+      const menu = kop?.querySelector<HTMLDetailsElement>(".gsm-menu");
+      let vorige = window.scrollY;
+      window.addEventListener(
+        "scroll",
+        () => {
+          const y = window.scrollY;
+          if (!kop || menu?.open) return;
+          kop.classList.toggle("kop-weg", y > vorige && y > 120);
+          vorige = y;
+        },
+        { passive: true },
+      );
+      document.addEventListener("click", (e) => {
+        if (menu?.open && !menu.contains(e.target as Node)) menu.open = false;
+      });
+      menu?.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => (menu.open = false)));
+    </script>
+  </body>
+</html>

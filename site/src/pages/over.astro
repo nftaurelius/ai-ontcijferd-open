@@ -1,0 +1,55 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { CONTACT_EMAIL, LINKEDIN } from "../lib/site";
+import { LICENTIE_URL } from "../lib/seo";
+---
+
+<Basis titel="Over" beschrijving="Over AI Ontcijferd en Duncan Panis.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Waarom dit bestaat</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Over AI Ontcijferd</h1>
+      <p class="lead">AI verandert sneller dan de meeste mensen kunnen volgen. Wie niet weet waar te beginnen, wordt verrast door wat AI overneemt.</p>
+      <p>
+        Vlaamse media brengen AI vaak als gadget of als angstverhaal. Wat ontbreekt, is iemand die de ontwikkelingen aan de
+        top volgt en vertaalt naar wat ze hier betekenen: in de klas, op het werk, bij de gemeente, in de bibliotheek en
+        thuis. Dat doet AI Ontcijferd, elke week, zonder hype.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Eindredacteur</p></div>
+    <div class="proza">
+      <h2>Duncan Panis</h2>
+      <p>
+        Duncan Panis is AI frontier analyst. Hij volgt wat de grote AI-labs, onderzoekers en beleidsmakers doen en vertaalt
+        het naar betekenis voor Vlaanderen. Hij geeft ook lezingen en workshops over AI-geletterdheid.
+      </p>
+      <p>
+        Contact: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+        {LINKEDIN && <>, of via <a href={LINKEDIN}>LinkedIn</a></>}
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie" id="geld">
+    <div class="kantlijn"><p>Geld en belangen</p></div>
+    <div class="proza">
+      <h2>Wie betaalt dit?</h2>
+      <p>
+        Alles op deze site is gratis. Er zijn geen advertenties, geen gesponsorde inhoud en geen links waaraan we
+        verdienen. Duncan Panis betaalt de kosten zelf: de domeinnaam, de hosting en het gebruik van de AI-modellen.
+      </p>
+      <p>
+        De redactieketen gebruikt betaalde modellen van Anthropic, OpenAI en xAI. We zijn dus klant bij bedrijven
+        waarover we schrijven. Geen van hen betaalt ons en geen van hen heeft inspraak in wat hier verschijnt. Hoeveel
+        de keten verbruikt, staat op <a href="/zo-werken-we#verbruik">Zo werken we</a>.
+      </p>
+      <p>
+        Alles wat hier staat, mag je overnemen en aanpassen onder <a rel="license" href={LICENTIE_URL}>CC BY 4.0</a>.
+        Wat we met je gegevens doen, lees je op de pagina <a href="/privacy">Privacy</a>.
+      </p>
+    </div>
+  </section>
+</Basis>

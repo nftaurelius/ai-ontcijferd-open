@@ -1,0 +1,107 @@
+[
+  {
+    "passage": "zijn gemeten met de hoogste inspanningsstand van elk model",
+    "beslissing": "verwerkt",
+    "toelichting": "Voorbehoud 'tenzij anders vermeld' toegevoegd, met de afwijkende standen voor Fable en Gemini bij FrontierCode en de RLI."
+  },
+  {
+    "passage": "kan testen of de duurdere variant het meerwerk waard is",
+    "beslissing": "verwerkt",
+    "toelichting": "'Duurdere' geschrapt; de vergelijking met Opus 5.5 staat nu neutraal en de prijsclaim blijft beperkt tot Anthropic's eigen vergelijking met 5.1."
+  },
+  {
+    "passage": "Voor lessen informatica of wetenschap is dit vooral een signaal dat modellen complexer werk aankunnen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door de vaststelling dat de tests niets zeggen over gebruik in de klas of leerresultaten."
+  },
+  {
+    "passage": "Het cijfer gaat over grote ondernemingen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperking tot grote bedrijven geschrapt; vermeld dat de samenstelling van de bevraagde groep niet wordt toegelicht."
+  },
+  {
+    "passage": "Wie AI inzet bij selectie of beoordeling, valt onder de strengere regels voor hoogrisicosystemen en moet kunnen uitleggen hoe een beslissing tot stand kwam.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar 'kan vallen onder' en de uitlegbaarheid toegeschreven aan Unia's Brauns, met nakijknotitie voor de verordening."
+  },
+  {
+    "passage": "Datacenters: online verzet is groot, maar vooral emotioneel gevoed",
+    "beslissing": "verwerkt",
+    "toelichting": "Kop gewijzigd naar het onderscheid tussen verzet in volume en aandacht voor politiek geladen posts, zonder causale uitspraak."
+  },
+  {
+    "passage": "Een preprint op arXiv analyseert 798 Reddit-posts en 102.328 reacties over datacenters",
+    "beslissing": "verwerkt",
+    "toelichting": "Automatische classificatie door een taalmodel en de 83%-maatstaf toegevoegd, met uitleg dat dit geen gewone nauwkeurigheid is."
+  },
+  {
+    "passage": "Het onderzoek gaat over Reddit, een kleine en niet representatieve groep, en vooral over de Verenigde Staten.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot wat het abstract zegt: geen geografische verdeling, geen representativiteitsonderzoek, geen Vlaamse gegevens."
+  },
+  {
+    "passage": "Ze leggen niet uit hoe die schatting tot stand kwam.",
+    "beslissing": "verwerkt",
+    "toelichting": "Uitspraken over ontbrekende uitleg en toetsing expliciet tot het abstract beperkt, met nakijknotitie."
+  },
+  {
+    "passage": "De bezwaren vallen in vier groepen",
+    "beslissing": "verwerkt",
+    "toelichting": "Benoemd als clusters van tegenargumenten en vermeld dat de noemer in het abstract onduidelijk is."
+  },
+  {
+    "passage": "Online discussies tonen vooral het luidste standpunt, niet de technische kern.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot deze Reddit-dataset en onderscheid gemaakt tussen aanwezigheid en zichtbaarheid van technische argumenten."
+  },
+  {
+    "passage": "Het artikel meldt geen bevindingen over wat AI met kinderen doet.",
+    "beslissing": "verwerkt",
+    "toelichting": "Omgezet naar 'het abstract meldt geen bevindingen'."
+  },
+  {
+    "passage": "GS1 beheert zelf de standaarden die het aanprijst en organiseert een event over het thema.",
+    "beslissing": "verwerkt",
+    "toelichting": "Rol gecorrigeerd naar GS1-medewerker als spreker op een congres van LD&Co en RetailDetail; het belang bij de standaarden blijft benoemd."
+  },
+  {
+    "passage": "De maker noemt drie gratis bibliotheken",
+    "beslissing": "verwerkt",
+    "toelichting": "'Gratis' geschrapt en vervangen door open-sourceprojecten, met nakijknotitie over licenties."
+  },
+  {
+    "passage": "waarmee modelworkloads op de onderzoeksinfrastructuur binnen 35 seconden na een besluit worden gestopt",
+    "beslissing": "verwerkt",
+    "toelichting": "Claim teruggebracht tot het stoppen van modeloutput na een besluit, toegeschreven aan OpenAI."
+  },
+  {
+    "passage": "Meta introduceert Muse Ember, een klein model voor agentwerk met een contextvenster van 1 miljoen tokens",
+    "beslissing": "verwerkt",
+    "toelichting": "Contextvenster nu expliciet 'volgens Meta' met vermelding dat onafhankelijke bevestiging ontbreekt."
+  },
+  {
+    "passage": "Prof. Bart Preneel koppelt de recordgolf aan Belgische cyberaanvallen aan krachtige AI-modellen, volgens De Standaard",
+    "beslissing": "verwerkt",
+    "toelichting": "Preneel-claim geschrapt; enkel de kop van het betalende artikel blijft als signaal, met nakijknotitie."
+  },
+  {
+    "passage": "**Status:** Eén bron",
+    "beslissing": "verwerkt",
+    "toelichting": "Per onderwerp een hype-meterstand uit de vijf toegestane met één zin uitleg toegevoegd."
+  },
+  {
+    "passage": "**Voor wie:**",
+    "beslissing": "verwerkt",
+    "toelichting": "Duidelijk hypothetische Vlaamse voorbeelden toegevoegd bij Claude, Gartner en GS1, niet als praktijkresultaat gepresenteerd."
+  },
+  {
+    "passage": "Verder: Gartner waarschuwt dat AI-risico's sneller groeien dan de waarde",
+    "beslissing": "verwerkt",
+    "toelichting": "Samenvatting benoemt nu dat het om wat 86% van de CIO's volgens Gartner ziet gaat."
+  },
+  {
+    "passage": "bias in algoritmen",
+    "beslissing": "verwerkt",
+    "toelichting": "Vakwoorden (bias, open-source, speltheoretisch, dark patterns, AI-companions, contextvenster, IPO) bij eerste gebruik kort uitgelegd."
+  }
+]

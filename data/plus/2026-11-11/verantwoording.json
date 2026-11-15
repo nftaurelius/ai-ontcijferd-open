@@ -1,0 +1,112 @@
+[
+  {
+    "passage": "Kenniswerkers met een Google-abonnement krijgen toegang tot Carbon",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot Google AI Ultra-abonnees, met vermelding dat de uitrol gefaseerd verloopt."
+  },
+  {
+    "passage": "De prijs is $2 per miljoen input-tokens en $10 per miljoen output-tokens.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vermeld dat Google dit introductietarieven noemt, en dat de prijs kan veranderen."
+  },
+  {
+    "passage": "Die benchmarks (gestandaardiseerde taaktests) meten hoe vaak een model een afgebakende taak goed afrondt",
+    "beslissing": "verwerkt",
+    "toelichting": "Uitleg beperkt tot Googles taakgebieden; de stellige uitspraak over het Nederlands en de slaagfrequentie is geschrapt."
+  },
+  {
+    "passage": "De cijfers over cyberbeveiliging komen uit een interne test van Google.",
+    "beslissing": "verwerkt",
+    "toelichting": "Kwalificatie 'interne benchmark' beperkt tot de Project Fortify-scores."
+  },
+  {
+    "passage": "Fable 5.2 wint daar op de meeste testen",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu beperkt tot rijen met een Carbon-score, met vermelding van Mythos-scores, ontbrekende scores en niet-vergelijkbare instellingen."
+  },
+  {
+    "passage": "Op AutomationBench scoort Gemini 4 Carbon hoger (53,9% tegen 51,4%).",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegevoegd dat Anthropic de test als 'business workflows' labelt en dat dit geen bewezen productiviteitswinst betekent."
+  },
+  {
+    "passage": "het goedkopere Opus 5.5",
+    "beslissing": "verwerkt",
+    "toelichting": "'Goedkopere' geschrapt omdat de bron geen prijs van Opus 5.5 geeft."
+  },
+  {
+    "passage": "dus alleen bij zware opdrachten is de meerprijs te verantwoorden",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven als afwegingsvraag over kwaliteit, tijdwinst en totale kosten."
+  },
+  {
+    "passage": "Volgens cyberveiligheidsspecialist Veerle Peeters, geciteerd door [Trends]",
+    "beslissing": "verwerkt",
+    "toelichting": "Stijgingsclaim toegeschreven aan Trends, Peeters beperkt tot het pleidooi; kop en status aangepast."
+  },
+  {
+    "passage": "Het oorzakelijk verband tussen AI en de stijging is één mening, niet een gemeten feit.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door de vaststelling dat Trends bij deze claim geen cijfers of onderzoek noemt."
+  },
+  {
+    "passage": "Google schrijft dat Carbon vooral bedoeld is om kwetsbaarheden te vinden en te herstellen",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot cyberresultaten, inclusief het uitbuiten van kwetsbaarheden, en als bedrijfsclaim gemarkeerd."
+  },
+  {
+    "passage": "Het fragment geeft geen cijfers",
+    "beslissing": "verwerkt",
+    "toelichting": "Werkwijze-taal vervangen door wat Trends niet vermeldt; controles staan alleen nog in HTML-commentaar."
+  },
+  {
+    "passage": "Gegevens van Upwork gaan bovendien over een internationaal platform, niet over de Vlaamse markt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door de vaststelling dat de samenvatting geen landen noemt en dus geen conclusie over Vlaanderen toelaat."
+  },
+  {
+    "passage": "Het onderzoek suggereert dat het loont om AI-kennis te combineren met je eigen vak",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot veranderende gevraagde vaardigheden; bijscholing als afweging zonder aangetoond rendement."
+  },
+  {
+    "passage": "\"Baseline\" is hier de vorige versie van Googles eigen model, geen concurrent.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vermeld dat Google de 'previous baselines' niet specificeert; ook 'eerdere versies' in de alinea hierboven aangepast."
+  },
+  {
+    "passage": "Over 200 uiteenlopende taken zou het model 30% tot 100% beter scoren",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar hoger slagingspercentage per taaktype, met onduidelijke vergelijkingsbasis en onbekend of het relatief is."
+  },
+  {
+    "passage": "AI-servers vragen volgens de tekst meer stroom en betere koeling dan gewone datacenters",
+    "beslissing": "verwerkt",
+    "toelichting": "Omgezet naar hogere vermogensdichtheid en expliciet geen conclusie over het totale verbruik in Machelen."
+  },
+  {
+    "passage": "maar daarover is nog niets bekend",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot wat deze bron niet vermeldt."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Machelen is nu 'Eén bron' met de vacaturesite als herkomst; bij andere makersdossiers staat expliciet dat onafhankelijke bevestiging ontbreekt."
+  },
+  {
+    "passage": "## Vandaag in het kort",
+    "beslissing": "verwerkt",
+    "toelichting": "Hype-meter met één van de vijf standen en één uitleg-zin toegevoegd per uitgewerkt onderwerp; de intro is ook aangepast omdat 'dezelfde dag' niet uit de bronnen volgt."
+  },
+  {
+    "passage": "Grotere organisaties die al met IBM of Microsoft werken, kunnen vragen wat dit aanbod voor hen verandert.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door een expliciet hypothetisch voorbeeld bij een Vlaamse gemeente of onderneming, met wat nog onbekend is; bij Gemini ook een hypothetisch voorbeeld toegevoegd."
+  },
+  {
+    "passage": "Studie: LLM-rechters vinden Grokipedia minder neutraal dan Wikipedia",
+    "beslissing": "verwerkt",
+    "toelichting": "Kop gebruikt 'taalmodellen als beoordelaars'; backdoor, trigger, preview en companions in de radar kort uitgelegd."
+  }
+]

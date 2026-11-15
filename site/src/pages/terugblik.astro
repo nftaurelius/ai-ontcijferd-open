@@ -1,0 +1,56 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Basis from "../layouts/Basis.astro";
+import HypeMeter from "../components/HypeMeter.astro";
+import { alleEdities, datumLeesbaar } from "../lib/edities";
+
+// Terugblikken staan in content/terugblik.json: [{ "week": "2026-w43", "onderwerp": "<slug>",
+//   "oordeel": "klopte" | "te streng" | "te mild" | "nog open", "toelichting": "...", "datum": "2027-01-15" }]
+type Terugblik = { week: string; onderwerp: string; oordeel: string; toelichting: string; datum: string };
+const pad = path.resolve(process.cwd(), "../content/terugblik.json");
+const terugblikken: Terugblik[] = fs.existsSync(pad) ? JSON.parse(fs.readFileSync(pad, "utf-8")) : [];
+const zoek = (week: string, slug: string) => terugblikken.find((t) => t.week === week && t.onderwerp === slug);
+
+const rijen = alleEdities().flatMap((e) => e.onderwerpen.filter((o) => o.hype).map((o) => ({ e, o, t: zoek(e.week, o.slug) })));
+const beoordeeld = rijen.filter((r) => r.t && r.t.oordeel !== "nog open");
+const klopte = beoordeeld.filter((r) => r.t!.oordeel === "klopte").length;
+---
+
+<Basis titel="Terugblik: hadden we gelijk?" beschrijving="Elk oordeel van de hype-meter van AI Ontcijferd, en elk kwartaal een eerlijke terugblik: wie had gelijk, en waar zaten we ernaast?">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Ons track record</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Terugblik: hadden we gelijk?</h1>
+      <p class="lead">
+        <span class="markeer">Een bullshitfilter moet zelf ook afgerekend kunnen worden.</span> Hier staat elk oordeel van onze hype-meter.
+        Elk kwartaal kijken we terug: klopte het, waren we te streng, of te mild?
+      </p>
+      {beoordeeld.length > 0 ? (
+        <p>Tot nu toe beoordeeld: {beoordeeld.length} oordelen, waarvan {klopte} klopten.</p>
+      ) : (
+        <p>De eerste terugblik volgt na drie maanden. Tot dan staan hier de oordelen zoals we ze gaven.</p>
+      )}
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>{rijen.length} oordelen</p></div>
+    <ul class="onderwerpenlijst">
+      {rijen.map(({ e, o, t }) => (
+        <li>
+          <div><HypeMeter hype={o.hype!} compact /><span class="meta">{o.hype!.stand}</span></div>
+          <div>
+            <a href={`/edities/${e.week}#${o.slug}`}>{o.titel}</a>
+            <p class="meta" style="margin:0.2rem 0 0">{datumLeesbaar(e.datum)}</p>
+            {t ? (
+              <p style="margin:0.35rem 0 0"><strong>Terugblik ({datumLeesbaar(t.datum)}): {t.oordeel}.</strong> {t.toelichting}</p>
+            ) : (
+              <p class="meta" style="margin:0.35rem 0 0">Terugblik volgt.</p>
+            )}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Basis>

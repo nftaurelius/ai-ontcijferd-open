@@ -1,0 +1,77 @@
+[
+  {
+    "passage": "Google zet AI-tools in zijn schoolsoftware voor leerlingen in de VS standaard uit",
+    "beslissing": "verwerkt",
+    "toelichting": "Samenvatting en artikel spreken nu van een aankondiging ('kondigt aan', 'zal'), met NAKIJKEN-commentaar voor de ingangsdatum."
+  },
+  {
+    "passage": "Twee nieuwe onderzoeken wegen af wanneer AI-automatisering loont",
+    "beslissing": "verwerkt",
+    "toelichting": "De samenvatting scheidt nu de vergelijkende RPA-studie van het voorgestelde ProofPaths-systeem."
+  },
+  {
+    "passage": "Beide bronnen komen uit dezelfde Google-verklaring",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot 'steunen op communicatie van Google' en de vaststelling dat de blog de standaard 'uit' niet meldt."
+  },
+  {
+    "passage": "RPA (Robotic Process Automation, een script dat vaste stappen afwerkt) haalde 98,90% nauwkeurigheid.",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegevoegd wat de test meet en niet meet, dat nauwkeurigheid niet is gedefinieerd en dat geslaagde stappen niet gelijk zijn aan correcte informatie."
+  },
+  {
+    "passage": "Voor een stabiele, repetitieve taak is een vast script vaak goedkoper en betrouwbaarder dan een AI-agent, ook in zorgadministratie.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven tot advies om een script als vergelijkingspunt te testen, beperkt tot wat deze proef liet zien."
+  },
+  {
+    "passage": "Kies een AI-agent pas als de software waarmee je werkt vaak verandert",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door advies beide opties te vergelijken, met vermelding dat de studie veranderende software niet testte."
+  },
+  {
+    "passage": "Biotech en farma blijven een sector waar AI-kennis en data-analyse de profielen in onderzoeksafdelingen veranderen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Onbewezen arbeidsmarktclaim geschrapt; relevantie beperkt tot de aangekondigde samenwerking."
+  },
+  {
+    "passage": "Het beschikbare bericht noemt geen financiële voorwaarden, geen concrete geneesmiddelen en geen meetbare winst in tijd.",
+    "beslissing": "verwerkt",
+    "toelichting": "De negatieve vaststelling is geschrapt uit de lezerstekst en verplaatst naar een NAKIJKEN-commentaar."
+  },
+  {
+    "passage": "Gewone benchmarks tellen alleen de ene door mensen aangeduide vaardigheid als juist en al het andere als fout.",
+    "beslissing": "verwerkt",
+    "toelichting": "Gewijzigd naar 'de enkele door mensen aangeduide vaardigheden', in lijn met het abstract ('a few')."
+  },
+  {
+    "passage": "De beste systemen gebruiken minstens 42 keer, meestal honderden keren, meer parameters dan de basismodellen die ze verslaan.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperking tot systemen waarvan de omvang bepaald kon worden hersteld, parameters uitgelegd en de verhouding als omvang en niet als kost gekaderd."
+  },
+  {
+    "passage": "Mistral meldt dat 133 agents met Mistral Large 4 in een test een recente kwetsbaarheid (CVE) in Django vonden, bevestigden en patchten",
+    "beslissing": "verwerkt",
+    "toelichting": "Rollen gescheiden: agents brachten in kaart en bevestigden, Le Chonk repareerde; CVE uitgelegd als ID."
+  },
+  {
+    "passage": "Mistral zegt dat Mistral Large 4 beschikbaar is in Open Math OS",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegevoegd dat de toegang voor goedgekeurde teams is."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Bij ProofPaths en WorkRB staat nu expliciet dat de conclusies niet onafhankelijk bevestigd zijn."
+  },
+  {
+    "passage": "## Vandaag in het kort",
+    "beslissing": "verwerkt",
+    "toelichting": "Hype-meter 'Terecht' toegevoegd voor het hoofdonderwerp (Google), met één zin uitleg; voor de overige items bewust niet ingevuld en gemarkeerd voor de eindredactie."
+  },
+  {
+    "passage": "aan de hand van de rubric van de docent",
+    "beslissing": "verwerkt",
+    "toelichting": "Rubric uitgelegd als beoordelingsschema; ook frontiermodel, benchmarks, parameters en computationele technieken kregen een korte uitleg."
+  }
+]

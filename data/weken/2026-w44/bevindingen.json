@@ -1,0 +1,110 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "Hoe die AI moet helpen, zegt de regering pas in 2027.",
+    "probleem": "De bron meldt dat het kabinet in het eerste kwartaal van 2027 doelen en bespaarplannen wil presenteren. Dat bewijst niet dat het voordien geen uitleg zal geven. Bovendien wordt een aangekondigde planning als zekerheid weergegeven.",
+    "voorstel": "Beperk dit tot de aangekondigde timing voor doelen en bespaarplannen, met toeschrijving aan Engadget."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "zo'n 16 procent van het personeel",
+    "probleem": "Het percentage staat uitsluitend in de Engadget-kop. De bron verduidelijkt niet welke personeelsgroep de noemer vormt. De formulering kan daardoor worden gelezen als 16 procent van alle Nederlandse overheidsmedewerkers.",
+    "voorstel": "Controleer de personeelsafbakening in de primaire aankondiging. Laat het percentage weg zolang die context ontbreekt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Dat moet in 2027 900 miljoen euro opleveren en in 2035 3,5 miljard euro.",
+    "probleem": "Door de aansluiting op de banenafbouw lijkt die afbouw het volledige bedrag op te leveren. Engadget beschrijft besparingsdoelen van de bredere kostenoperatie. Ook is 'in 2027' stelliger dan het oorspronkelijke 'by 2027'.",
+    "voorstel": "Presenteer de bedragen als besparingsdoelen van de bredere operatie tegen 2027 en 2035. Maak duidelijk dat de bijdrage van personeelsafbouw en AI niet wordt uitgesplitst."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "twee media melden hetzelfde, maar beide steunen op één aankondiging",
+    "probleem": "Van The Star is alleen een titel beschikbaar. Daaruit blijkt niet op welke bronnen het artikel steunt. De gedeelde bronbasis wordt dus zonder onderbouwing vastgesteld.",
+    "voorstel": "Benoem The Star uitsluitend als een tweede kopsignaal. Vermeld expliciet dat een tweede onafhankelijke bevestiging van de kernclaim ontbreekt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Overroepen — de topscores komen van de maker zelf en het model is nog niet breed beschikbaar.",
+    "probleem": "Deze uitleg beoordeelt de bewijskracht en beschikbaarheid, niet de aandacht tegenover de verwachte impact voor Vlaanderen. Ook de Nederlandse hype-meter beoordeelt vooral de koppeling tussen AI en besparingen. Onzeker bewijs maakt iets niet automatisch overroepen.",
+    "voorstel": "Onderbouw bij beide onderwerpen waarom de aandacht groter is dan de aannemelijke Vlaamse impact. Handhaaf Overroepen alleen als die vergelijking verdedigbaar wordt gemaakt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "volgens de maker het sterkste model tot nu toe",
+    "probleem": "Google schrijft 'our strongest model'. Het concept laat die afbakening weg en maakt daarvan een claim over alle modellen.",
+    "voorstel": "Beperk de claim tot Googles eigen modellen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Artificial Analysis Intelligence Index (een ranglijst die AI-modellen vergelijkt), met een score van 59",
+    "probleem": "De uitleg zegt niet welke vaardigheden de index meet, wat de score betekent of wat buiten de test valt. De latere uitleg over cybertests verduidelijkt deze afzonderlijke index niet.",
+    "voorstel": "Voeg een toegankelijke methodologische bron toe en leg bereik en beperkingen uit. Schrap anders de score en rangpositie."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "gemeenten en intercommunales draaien op software met lekken",
+    "probleem": "Dit is een feitelijke uitspraak over Vlaamse organisaties waarvoor geen bron wordt gegeven. Google beschrijft geen Vlaamse gemeenten of intercommunales.",
+    "voorstel": "Schrap de vaststelling of onderbouw ze met een relevante bron. Een duidelijk hypothetische gemeentelijke toepassing kan wel als voorbeeld dienen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Ze meten niet hoe het model werkt op de eigen, rommelige code van een gemeente.",
+    "probleem": "De bron noemt bij SEC-bench Pro expliciet kwetsbaarheden in echte software. De tegenstelling tussen een gecontroleerde test en 'rommelige code' kan suggereren dat alleen nette oefencode werd getest.",
+    "voorstel": "Vermeld dat de test echte software gebruikt, maar geen aangetoonde prestaties voor een specifieke Vlaamse gemeentelijke omgeving oplevert. Laat de ongefundeerde kwalificatie 'rommelige' weg."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "het valsspelen op Terminal-Bench 4.0 daalde tot 0,0% geslaagde pogingen",
+    "probleem": "De bron onderscheidt geslaagd valsspelen van pogingen daartoe: die pogingen bleven op 0,4%. Dat ontbreekt. Ook wordt niet uitgelegd wat Terminal-Bench test en wat deze nulscore niet aantoont.",
+    "voorstel": "Neem het onderscheid tussen geslaagd valsspelen en pogingen op. Verduidelijk dat nul waargenomen successen in deze test geen garantie op foutloos gedrag buiten de test is. Voeg voor de testomschrijving een methodologische bron toe of laat de score weg."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Dat zijn interne metingen, vergeleken met Gemini 4 Argon.",
+    "probleem": "Google situeert de veiligheidsverbeteringen tegenover eerder werk aan Argon, maar noemt bij de daling van bijna 80% en de valsspeelcijfers niet expliciet de vergelijkingsbasis. Het concept vult die voor beide metingen in.",
+    "voorstel": "Schrap de specifieke vergelijkingsbasis totdat het veiligheidsrapport die bevestigt. Benoem dat de aankondiging de referentie voor deze cijfers niet expliciet vermeldt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Google evalueerde zonder beveiligingslagen.",
+    "probleem": "De relevante consequentie blijft onbenoemd: deze prestaties zijn gemeten zonder de veiligheidsbeperkingen waarmee Google het model wil aanbieden. De scores bewijzen dus niet dat gebruikers dezelfde prestaties krijgen.",
+    "voorstel": "Verbind de testvoorwaarde expliciet aan die beperking. Vermeld ook dat Google vóór bredere toegang nog feedback verzamelt en de beveiliging bijstelt."
+  },
+  {
+    "ernst": "klein",
+    "passage": "De bron zegt daar niets over.",
+    "probleem": "Over brede beschikbaarheid zegt Google wel iets: ontwikkelaars, bedrijven en consumenten moeten zo snel mogelijk volgen. Wat ontbreekt, is een concrete datum.",
+    "voorstel": "Maak onderscheid tussen ontbrekende informatie over Nederlands en Vlaamse toepassingen enerzijds, en een ontbrekende releasedatum anderzijds."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "uitgever Maarten Vanhoof",
+    "probleem": "VRT identificeert Vanhoof als iemand van de Groep Algemene Uitgevers, niet als uitgever. Het concept kent hem een niet-onderbouwde beroepsrol toe.",
+    "voorstel": "Gebruik de identificatie uit VRT: Maarten Vanhoof van de Groep Algemene Uitgevers."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Cultuurminister Caroline Gennez (Vooruit) wordt gevraagd een dwingend wettelijk kader te maken.",
+    "probleem": "De bron beschrijft Van Reybroucks oproep om voor een kader op Belgisch en Europees niveau te zorgen. Het concept laat die bestuursniveaus weg en kan suggereren dat de Vlaamse minister dit zelf kan vaststellen.",
+    "voorstel": "Schrijf de oproep toe aan Van Reybrouck en behoud de Belgische en Europese niveaus."
+  },
+  {
+    "ernst": "klein",
+    "passage": "wat Van Reybrouck over de Europese richtlijn zegt, hebben we niet afzonderlijk gecontroleerd",
+    "probleem": "Dit beschrijft de redactionele werkwijze in plaats van wat de lezer over de bron moet weten. De inhoudelijke beperking is dat VRT geen specifieke richtlijn identificeert.",
+    "voorstel": "Benoem dat VRT niet vermeldt welke richtlijn wordt bedoeld. Houd de controleopdracht in het HTML-commentaar en presenteer de etiketteringsplicht niet als vastgesteld recht."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Vanhoof erkent dat de omvang \"moeilijk in te schatten\" is.",
+    "probleem": "De limiet van één kort citaat per bron wordt overschreden. Bij VRT staan naast deze woorden ook de campagneslogan en 'Schending van het auteursrecht' tussen aanhalingstekens. Ook Engadget en Google worden elk meermaals rechtstreeks geciteerd.",
+    "voorstel": "Behoud per bron hoogstens één citaat van minder dan vijftien woorden. Parafraseer de overige uitspraken, ook waar een vertaald citaat wordt gebruikt."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Voor Vlaamse gemeenten en steden is dat voorlopig een signaal, geen voorbeeld om te kopiëren.",
+    "probleem": "De Vlaamse vertaalslag blijft algemeen. Er wordt geen concrete gemeentelijke taak of beslissituatie benoemd waarop een lezer de analyse kan toepassen.",
+    "voorstel": "Maak de relevantie concreet met een expliciet hypothetische personeels- of begrotingsbeslissing. Schrijf geen taak aan het Nederlandse AI-plan toe die de bron niet noemt."
+  }
+]

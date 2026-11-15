@@ -1,0 +1,159 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { LICENTIES, personalisatiePrompt } from "../../lib/materiaal";
+import { SITE_URL, uitgever } from "../../lib/seo";
+
+const url = `${SITE_URL}/materiaal/gebruiken`;
+const by = LICENTIES["CC BY 4.0"];
+const stappen = [
+  "Kies een pakket en download de zip",
+  "Open een AI-assistent die bestanden aanneemt",
+  "Voeg de bestanden toe en plak de prompt",
+  "Lees het voorstel en geef akkoord",
+  "Kijk het resultaat na",
+  "Laat de naamsvermelding staan",
+];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": url,
+  url,
+  name: "Een open lespakket van AI Ontcijferd aanpassen met AI",
+  inLanguage: "nl-BE",
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  step: stappen.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s })),
+};
+---
+
+<Basis titel="Zo gebruik je een open lespakket" beschrijving="Een lespakket van AI Ontcijferd downloaden, met AI aanpassen aan je eigen organisatie en publiek, en correct vermelden. Uitleg in zes stappen, met de prompt." schema={schema}>
+  <section class="rij sectie">
+    <div class="kantlijn"><p><a href="/materiaal">Open lesmateriaal</a><br />Handleiding</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Zo gebruik je een pakket</h1>
+      <p class="lead">
+        <span class="markeer">Een pakket is een vertrekpunt, geen keurslijf.</span>{" "}
+        In zes stappen maak je er een sessie van voor jouw organisatie en jouw publiek.
+      </p>
+      <p>
+        Je hebt geen technische kennis nodig. Wel een AI-assistent die bestanden kan lezen, zoals ChatGPT, Claude, Gemini, Copilot of Le Chat,
+        en een half uur om het resultaat na te kijken.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Stap 1</p></div>
+    <div class="proza">
+      <h2>{stappen[0]}</h2>
+      <p>
+        Op de pagina van elk pakket staat wat erin zit, voor wie het is en hoe lang een sessie duurt. Met de grote knop download je alles in één zip.
+        Die bevat de bestanden en een LEESMIJ met de licentie, de naamsvermelding en de prompt. Je kunt de bestanden ook apart downloaden.
+      </p>
+      <p>Pak de zip uit: klik er met de rechtermuisknop op en kies <em>Alles uitpakken</em> (Windows), of dubbelklik erop (Mac).</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Stap 2</p></div>
+    <div class="proza">
+      <h2>{stappen[1]}</h2>
+      <p>
+        Gebruik bij voorkeur het account van je organisatie. Het pakket zelf is openbaar, dus dat mag in elke tool.
+        Wat je erbij vertelt over je organisatie en je publiek, misschien niet: zet er nooit namen of gegevens van echte deelnemers in.
+        Twijfel je? Doe de <a href="/plakcheck">Plakcheck</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Stap 3</p></div>
+    <div class="proza">
+      <h2>{stappen[2]}</h2>
+      <p>
+        Sleep de bestanden in het gesprek, of gebruik de knop om bestanden toe te voegen. Plak daarna de prompt en vul de stukken tussen [haakjes] in.
+        Op de pagina van elk pakket staat een versie waarin de titel, de versie en wat specifiek is voor dat pakket al ingevuld zijn. Dit is de algemene versie:
+      </p>
+      <textarea id="prompt" class="prompt" readonly rows="18">{personalisatiePrompt()}</textarea>
+      <p><button type="button" class="knop" data-kopieer="prompt">Kopieer de prompt</button></p>
+      <p class="meta">
+        Is het pakket groot, of neemt je assistent niet alle bestanden tegelijk aan? Begin dan met het draaiboek, en doe de presentatie en de werkbladen daarna,
+        in hetzelfde gesprek.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Stap 4</p></div>
+    <div class="proza">
+      <h2>{stappen[3]}</h2>
+      <p>
+        De prompt vraagt de assistent om eerst te zeggen wat hij wil veranderen, en pas na jouw akkoord aan de bestanden te beginnen.
+        Zo stuur je bij voor er veel werk verloren gaat. Vraag gerust om iets te schrappen, te vereenvoudigen of een voorbeeld te vervangen door iets uit je eigen gemeente.
+      </p>
+      <p>
+        Kan je assistent geen Word- of PowerPoint-bestanden maken? Vraag dan de aangepaste tekst per dia of per pagina, en zet die zelf in de bestanden uit het pakket.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Stap 5</p></div>
+    <div class="proza">
+      <h2>{stappen[4]}</h2>
+      <ul>
+        <li><strong>Feiten:</strong> AI kan overtuigend fout zijn. Lees alles na wat de assistent toevoegde, en zeker wat hij met [NAKIJKEN] markeerde.</li>
+        <li><strong>Tools en prijzen:</strong> knoppen, namen en abonnementen van AI-tools veranderen snel. Klik de oefeningen zelf één keer door.</li>
+        <li><strong>Toon:</strong> klinkt het als jij, en als je organisatie? Een sessie die je zelf niet gelooft, geef je niet goed.</li>
+        <li><strong>Proef:</strong> geef de sessie één keer aan een collega of een vriend voor je ze aan een groep geeft.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="rij sectie" id="licentie">
+    <div class="kantlijn"><p class="kantlijn-kop">Stap 6</p></div>
+    <div class="proza">
+      <h2>{stappen[5]}</h2>
+      <p>
+        De pakketten vallen onder <a rel="license" href={by.url}>{by.naam}</a>, tenzij bij een pakket iets anders staat. {by.kort}
+      </p>
+      <p>Op de pagina van elk pakket staat een regel die je kunt kopiëren. Hij ziet er zo uit:</p>
+      <p class="naamsvermelding">Gebaseerd op "[titel]" (versie [nummer]) van AI Ontcijferd, aiontcijferd.be/materiaal/[pakket], CC BY 4.0. Aangepast door [naam van je organisatie].</p>
+      <p>Zet hem waar mensen hem zien: op de laatste dia, onderaan een werkblad of in de beschrijving van je activiteit.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie" id="vragen">
+    <div class="kantlijn"><p class="kantlijn-kop">Vragen</p></div>
+    <div class="proza">
+      <h2>Vaak gesteld</h2>
+      <h3>Mag ik geld vragen voor een sessie met dit materiaal?</h3>
+      <p>Ja. De licentie laat dat toe, ook voor bedrijven en zelfstandige opleiders. Vermeld wel waar het materiaal vandaan komt.</p>
+      <h3>Mag ik het logo van AI Ontcijferd gebruiken?</h3>
+      <p>
+        Nee. De licentie geldt voor de inhoud, niet voor onze naam en ons logo. Zet je eigen naam op je versie en gebruik de naamsvermelding:
+        zo is duidelijk dat je op ons materiaal verder bouwde, zonder dat het lijkt alsof wij jouw versie maakten of goedkeurden.
+      </p>
+      <h3>Moet ik mijn aangepaste versie delen?</h3>
+      <p>
+        Bij CC BY 4.0 niet. Staat er bij een pakket CC BY-SA 4.0, dan moet je een versie die je verder verspreidt onder dezelfde licentie delen.
+        We horen het wel graag als je iets maakte dat anderen kan helpen.
+      </p>
+      <h3>Welke AI-assistent werkt het best?</h3>
+      <p>
+        Elke recente assistent die bestanden leest, kan het. Belangrijker dan het merk is het account: met een account van je organisatie weet je beter
+        wat er met je invoer gebeurt. Wat je moet nakijken, staat in de <a href="/plakcheck">Plakcheck</a>.
+      </p>
+      <h3>Ik vond een fout. Wat nu?</h3>
+      <p>
+        Mail het naar <a href="mailto:redactie@aiontcijferd.be">redactie@aiontcijferd.be</a>, met de naam van het pakket en het versienummer.
+        We verbeteren het pakket en verhogen het versienummer, zodat je ziet dat er een nieuwe versie is.
+      </p>
+      <p class="meta">Dit is geen juridisch advies. De volledige voorwaarden staan in de licentietekst van Creative Commons.</p>
+    </div>
+  </section>
+</Basis>
+
+<script>
+  import { koppelKopieerknoppen } from "../../scripts/kopieer";
+  koppelKopieerknoppen();
+</script>

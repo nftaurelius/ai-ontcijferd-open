@@ -1,0 +1,74 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "Vanaf 7 november zet xAI (Grok) standaard een onzichtbaar watermerk op tekst die via de API wordt geleverd",
+    "probleem": "De samenvatting veralgemeent de aankondiging naar alle API-tekst. De documentatie noemt zeven specifieke modellen. Ook ontbreekt hier de toeschrijving aan de maker.",
+    "voorstel": "Beperk de claim tot zeven Grok-modellen en vermeld dat dit volgens de maker vanaf 7 november 2026 gebeurt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "OpenAI lanceert een test voor alledaagse taken, maar de details ontbreken nog.",
+    "probleem": "De beschikbare introductiezin bevat geen details, maar bewijst niet dat OpenAI die nog niet heeft gepubliceerd. De samenvatting maakt van beperkte informatie een uitspraak over de volledige publicatie.",
+    "voorstel": "Schrap de claim dat details ontbreken totdat de volledige publicatie is gecontroleerd. Behoud die controle als HTML-commentaar."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De tekst zegt niet hoe de taken worden gescoord, welke modellen zijn getest of wat de resultaten zijn.",
+    "probleem": "Alleen de introductiezin is beschikbaar. Daarmee zijn ook de volgende uitspraken over ontbrekende Belgische diensten, Nederlandse taken en Vlaamse procedures niet te staven. Het bestaande HTML-commentaar lost deze stellige uitspraken in de zichtbare tekst niet op.",
+    "voorstel": "Controleer de volledige OpenAI-publicatie voordat je beschrijft welke informatie ontbreekt. Schrap deze uitspraken zolang die controle niet is gebeurd."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Wat de test niet meet, zoals betrouwbaarheid in jouw gemeente, is niet beschreven.",
+    "probleem": "Hier wordt betrouwbaarheid in een gemeente als uitgesloten testonderwerp voorgesteld. De introductie zegt niets over die afbakening.",
+    "voorstel": "Maak alleen het beperktere punt dat de introductie geen basis biedt om conclusies te trekken over betrouwbaarheid bij Vlaamse gemeentelijke procedures."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Tot onafhankelijk onderzoek verschijnt, is dit een bedrijf dat zijn eigen product beoordeelt.",
+    "probleem": "De formulering veronderstelt dat onafhankelijk onderzoek nog niet bestaat. Dat is niet vastgesteld. Bovendien ontbreekt de relevante toelichting uit OpenAI's radarpost: volgens het bedrijf is LifeVal gebaseerd op gebruikersfeedback en wordt de test al een jaar gebruikt.",
+    "voorstel": "Beperk de conclusie tot het ontbreken van onafhankelijke bevestiging bij de hier besproken claims. Voeg eventueel de gebruikersfeedback en het eerdere gebruik toe, uitdrukkelijk volgens OpenAI en met een link naar de post."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "dat AI het vullen van zulke sites goedkoper maakt",
+    "probleem": "VRT schrijft dat AI het makkelijker maakt om snel hele websites met artikels te vullen. De bron doet geen uitspraak over de kosten.",
+    "voorstel": "Vervang 'goedkoper' door de door VRT gedragen formulering over makkelijker en sneller vullen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "VRT NWS meldt dat chatbots bij vragen over Amerikaanse kandidaten vaak partijgebonden nepkrantensites als bron gebruiken.",
+    "probleem": "Dit klinkt als een algemene frequentieclaim over chatbots. De 48 procent betreft de onderzochte vragen; VRT vermeldt hier niet hoeveel vragen, welke modellen of welke testperiode het betrof.",
+    "voorstel": "Beperk de samenvatting tot de onderzochte chatbotantwoorden. Vermeld bij het percentage dat VRT de steekproefomvang, modellen en testperiode niet specificeert."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Zet je het watermerk uit, dan ben je zelf verantwoordelijk voor eventuele verplichte vermeldingen.",
+    "probleem": "Dit presenteert een bevestiging die de leverancier bij uitschakelen verlangt als een zelfstandig vastgestelde juridische conclusie. De documentatie onderbouwt niet hoe de wettelijke verantwoordelijkheden precies verdeeld zijn.",
+    "voorstel": "Schrijf dat de maker je bij uitschakelen laat bevestigen dat een uitzondering geldt en dat je verantwoordelijkheid aanvaardt voor toepasselijke verplichtingen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Bij alle drie de hoofdonderwerpen ontbreekt een hype-meter. De statuslabels vervangen geen oordeel over de verhouding tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per hoofdonderwerp één van de vijf toegestane standen toe, met één zin uitleg. Onderbouw het oordeel en benoem de onzekerheid; de huidige bronnen dragen geen vanzelfsprekende stand."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Het onderzoek zelf hebben we niet kunnen nakijken",
+    "probleem": "Dit beschrijft de redactionele werkwijze in plaats van de grenzen van de bron.",
+    "voorstel": "Beschrijf welke methodologische informatie VRT niet vermeldt. Zet de opdracht om het oorspronkelijke onderzoek te controleren in een HTML-commentaar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Gebruiken inwoners assistenten voor administratie, dan raakt dat je loketten",
+    "probleem": "De Vlaamse vertaalslag blijft abstract. Er staat niet welke concrete gemeentelijke handeling of welk risico voor een loket wordt bedoeld.",
+    "voorstel": "Gebruik een uitdrukkelijk hypothetisch voorbeeld, zoals een inwoner die een assistent vraagt welke documenten nodig zijn voor een gemeentelijke aanvraag. Verbind daaraan geen onbewezen claim over LifeVals dekking."
+  },
+  {
+    "ernst": "klein",
+    "passage": "een grootschalige replicatie van oudere LLM-onderzoeken",
+    "probleem": "De radar bevat meerdere onverklaarde vakwoorden: replicatie, LLM, hallucineren, AI-agent en quantumchemie-solver. Ook 'midterms' en 'races' blijven eerder in de tekst onverklaard.",
+    "voorstel": "Vervang jargon door gewone woorden of leg het bij het eerste gebruik kort uit. Benoem bijvoorbeeld het herhalen van onderzoek, taalmodellen, verzonnen informatie en Amerikaanse tussentijdse verkiezingen."
+  }
+]

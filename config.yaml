@@ -1,0 +1,97 @@
+# AI Ontcijferd — instellingen van de pijplijn
+# Wijzig hier modellen, limieten en tijdzone. Geen sleutels in dit bestand:
+# API-sleutels staan als "secrets" in GitHub (zie README).
+
+tijdzone: Europe/Brussels
+
+modellen:
+  # Dagelijkse triage: veel items, eenvoudige taak -> goedkoop model
+  # effort: low|medium|high (hoeveel het model nadenkt; denken telt mee in max_tokens)
+  triage:
+    leverancier: anthropic
+    model: claude-haiku-5-5
+    effort: low
+    max_tokens: 16000
+  # Wekelijkse analyse en vertaling: weinig, maar zware taken -> sterk model
+  analist:
+    leverancier: anthropic
+    model: claude-sonnet-5-5
+    effort: high
+    max_tokens: 48000
+  vertaler:
+    leverancier: anthropic
+    model: claude-sonnet-5-5
+    effort: medium
+    max_tokens: 32000
+  # Tegenspreker: bewust een ANDERE leverancier dan de analist
+  tegenspreker:
+    leverancier: openai
+    model: gpt-6-astra   # technische naam van GPT-6 Astra
+    max_tokens: 16000
+
+  # --- AI Ontcijferd Plus ---
+  # Dagbrief: elke ochtend, korter werk dan de weekeditie -> sterk model, minder denktijd
+  dagbrief:
+    leverancier: anthropic
+    model: claude-sonnet-5-5
+    effort: medium
+    max_tokens: 32000
+  # Dagcontrole: tweede leverancier, zoals de tegenspreker. Kies hier gerust een goedkoper
+  # OpenAI-model; de dagbrief is korter en heeft geen hype-meter.
+  dagcontrole:
+    leverancier: openai
+    model: gpt-6-astra
+    max_tokens: 12000
+  # Dossiers: zelfde zware keten als de weekeditie
+  dossier:
+    leverancier: anthropic
+    model: claude-sonnet-5-5
+    effort: high
+    max_tokens: 48000
+  # X-radar: Grok zoekt op X (tool x_search). Sleutel: XAI_API_KEY in GitHub.
+  # Zonder sleutel slaat de verkenner deze stap gewoon over.
+  xradar:
+    leverancier: xai
+    model: grok-4.7      # nakijken op docs.x.ai: welk model x_search ondersteunt
+    max_tokens: 8000
+
+limieten:
+  # Harde plafonds per run, bovenop de uitgavenlimiet in de API-consoles
+  max_items_per_dag: 300          # wat de verkenner maximaal bewaart
+  max_per_bron: 12                # per bron per run, zodat geen enkele bron de rest verdringt
+  triage_batch: 25                # items per triage-oproep
+  kandidaten_per_week: 12         # beste items die de analist te zien krijgt
+  max_kandidaten_per_bron: 3      # spreiding: hoogstens zoveel kandidaten van hetzelfde domein
+  max_tekens_per_bron: 6000       # ingekorte brontekst per kandidaat
+  max_oproepen_per_run: 20        # noodrem op het aantal modeloproepen
+
+triage:
+  min_relevantie: 3               # 0-5; daaronder valt een item af
+  dagen_terug: 7                  # venster voor de weekeditie
+
+plus:
+  dagbrief_items: 8               # hoogstens zoveel onderwerpen in een dagbrief
+  radar_items: 5                  # hoogstens zoveel onbevestigde signalen onderaan
+  uren_terug: 30                  # venster: items opgehaald in de laatste N uur
+  min_relevantie: 3
+  max_tekens_per_bron: 5000
+  max_oproepen_dagbrief: 6        # noodrem voor de dagbrief (schrijven, controle, revisie)
+
+# X-radar: een zoekopdracht per groep accounts (hoogstens 20 per groep, beperking van x_search).
+# Kosten: xAI rekent per opgehaalde post (sinds 21/09/2026: 5 dollar per 1.000 posts),
+# dus houd max_posts laag. Accounts nakijken met de workflow Probe als een groep leeg blijft.
+xradar:
+  max_posts: 25                   # gevraagd per groep; het model haalt er meestal minder
+  groepen:
+    - naam: labs
+      handles: [OpenAI, AnthropicAI, GoogleDeepMind, GoogleAI, MistralAI, xai, AIatMeta,
+                deepseek_ai, Alibaba_Qwen, MSFTResearch, nvidia, huggingface]
+    - naam: meting en duiding
+      handles: [EpochAIResearch, ArtificialAnlys, METR_Evals, emollick, random_walker,
+                sayashk, simonw, GaryMarcus, jackclarkSF, natolambert]
+    - naam: veiligheid en beleid
+      handles: [CISACyber, ENISA_EU, EU_Commission, wiz_io, CloudflareSecurity]
+  # Zonder accountfilter: Vlaamse en Belgische berichten over AI
+  vrij:
+    - naam: dichtbij
+      vraag: "Berichten van de afgelopen 24 uur over AI in Vlaanderen of België (overheid, onderwijs, bedrijven, bibliotheken), in het Nederlands, Frans of Engels."

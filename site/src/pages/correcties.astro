@@ -1,0 +1,43 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Basis from "../layouts/Basis.astro";
+import { CONTACT_EMAIL } from "../lib/site";
+
+type Correctie = { datum: string; editie: string; was: string; is: string };
+const pad = path.resolve(process.cwd(), "../content/correcties.json");
+const correcties: Correctie[] = fs.existsSync(pad) ? JSON.parse(fs.readFileSync(pad, "utf-8")) : [];
+correcties.sort((a, b) => b.datum.localeCompare(a.datum));
+---
+
+<Basis titel="Correcties" beschrijving="Alle correcties op AI Ontcijferd, met wat er stond en wat er nu staat.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Fout gezien?</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Correcties</h1>
+      <p>
+        Zie je een fout? Mail naar <a href={`mailto:${CONTACT_EMAIL}?subject=Correctie`}>{CONTACT_EMAIL}</a> met de link
+        en wat er niet klopt. We kijken elke melding binnen twee dagen na.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>{correcties.length === 0 ? "Nog geen correcties" : `${correcties.length} correcties`}</p></div>
+    <div class="proza">
+      {correcties.length === 0 ? (
+        <p>Er zijn nog geen correcties. Als we ons vergissen, staat het hier.</p>
+      ) : (
+        <ul class="editielijst">
+          {correcties.map((c) => (
+            <li>
+              <p class="meta" style="margin:0">{c.datum}, <a href={c.editie.startsWith("plus/") ? `/${c.editie}` : `/edities/${c.editie}`}>{c.editie.startsWith("plus/dag/") ? `Plus-dagbrief ${c.editie.slice(9)}` : c.editie}</a></p>
+              <p style="margin:0.3rem 0 0">Er stond: {c.was}</p>
+              <p style="margin:0.2rem 0 0">Nu: {c.is}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+</Basis>

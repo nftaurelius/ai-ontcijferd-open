@@ -1,0 +1,28 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { alleEdities, datumLeesbaar, weekNummer } from "../../lib/edities";
+
+const edities = alleEdities();
+---
+
+<Basis titel="Edities" beschrijving="Alle edities van de Stand van AI, de wekelijkse analyse van AI Ontcijferd.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Archief</p></div>
+    <div>
+      <h1 style="margin-top:0">Alle edities</h1>
+      {edities.length === 0 ? (
+        <p>Er is nog geen editie verschenen. De eerste Stand van AI komt binnenkort, op een vrijdag.</p>
+      ) : (
+        <ul class="editielijst">
+          {edities.map((e) => (
+            <li>
+              <p class="meta" style="margin:0 0 0.2rem">{weekNummer(e.week)}, {datumLeesbaar(e.datum)}</p>
+              <a href={`/edities/${e.week}`}>{e.titel}</a>
+              <p style="margin:0.3rem 0 0">{e.onderwerpen.map((o) => o.titel).join(" / ")}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+</Basis>

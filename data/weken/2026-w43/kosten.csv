@@ -1,0 +1,5 @@
+tijd,rol,leverancier,model,tokens_in,tokens_uit,proefdraai
+2026-10-26T17:20:57+01:00,analist,anthropic,claude-sonnet-5-5,9607,18439,nee
+2026-10-26T17:21:27+01:00,vertaler,anthropic,claude-sonnet-5-5,7308,5951,nee
+2026-10-26T17:22:13+01:00,tegenspreker,openai,gpt-6-astra,7995,1813,nee
+2026-10-26T17:23:09+01:00,analist,anthropic,claude-sonnet-5-5,16700,9790,nee

@@ -1,0 +1,42 @@
+[
+  {
+    "term": "RPA (Robotic Process Automation)",
+    "uitleg_leek": "Een script dat vaste stappen op een computer telkens op dezelfde manier uitvoert, zoals klikken en gegevens kopiëren. Het gebruikt geen AI om te beslissen.",
+    "voorbeeld": "Een script haalt elke maandag dezelfde labrapporten uit een vast webportaal."
+  },
+  {
+    "term": "AI-agent",
+    "uitleg_leek": "Een AI-systeem dat zelf meerdere stappen uitvoert om een taak af te werken, in plaats van maar één vraag te beantwoorden.",
+    "voorbeeld": "Een agent zoekt een incident uit, raadpleegt documenten en vraagt toestemming voor een gevoelige actie."
+  },
+  {
+    "term": "F1-score",
+    "uitleg_leek": "Een score die zowel meeweegt hoeveel van het juiste gevonden is als hoeveel van wat gevonden is ook klopt. Hoe dichter bij 100%, hoe beter.",
+    "voorbeeld": "Een script met 98% F1 mist weinig rapporten en haalt weinig verkeerde op."
+  },
+  {
+    "term": "VPC",
+    "uitleg_leek": "Een afgeschermd, privaat deel van een clouddienst, enkel toegankelijk voor één organisatie.",
+    "voorbeeld": "Een intercommunale houdt haar dossiers in een eigen afgeschermd stuk cloud."
+  },
+  {
+    "term": "On-premises",
+    "uitleg_leek": "Software die op de eigen servers van een organisatie draait, niet bij een externe cloudaanbieder.",
+    "voorbeeld": "Een stad laat een AI-systeem draaien op servers in het eigen stadhuis."
+  },
+  {
+    "term": "MCP",
+    "uitleg_leek": "Een gangbare standaard om AI-agents te verbinden met data en software, zodat ze die kunnen gebruiken.",
+    "voorbeeld": "Een coderingsagent krijgt via MCP toegang tot een platform als Mistral Studio."
+  },
+  {
+    "term": "SynthID",
+    "uitleg_leek": "Een onzichtbaar watermerk dat Google in AI-gemaakte beelden stopt, zodat ze later als AI-beeld herkend kunnen worden.",
+    "voorbeeld": "Een AI-reclamespot draagt een verborgen merkteken dat met een tool uitgelezen kan worden."
+  },
+  {
+    "term": "Pink slime",
+    "uitleg_leek": "Een nieuwssite die zich voordoet als onafhankelijk lokaal medium, maar financieel of politiek aan een actiegroep hangt.",
+    "voorbeeld": "Een site met een lokaal klinkende naam brengt enkel nieuws dat één partij goed uitkomt."
+  }
+]

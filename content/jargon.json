@@ -1,0 +1,157 @@
+[
+  {
+    "term": "AI Act",
+    "uitleg_leek": "De Europese wet die regels oplegt aan AI-systemen, strenger naarmate het risico groter is. Een chatbot krijgt andere regels dan een systeem dat beslist wie een uitkering krijgt.",
+    "voorbeeld": "Een gemeente die AI wil inzetten om aanvragen te beoordelen, moet volgens de AI Act extra controles inbouwen.",
+    "verdieping": "De wet deelt AI in risiconiveaus in: verboden toepassingen, hoog risico, beperkt risico en minimaal risico. De verplichtingen treden gefaseerd in werking."
+  },
+  {
+    "term": "AI-agent",
+    "uitleg_leek": "Een AI-systeem dat niet alleen antwoordt, maar zelf stappen zet om een taak af te werken: iets opzoeken, een bestand aanpassen, een mail opstellen.",
+    "voorbeeld": "Je vraagt een agent om een vergadering te plannen; hij bekijkt agenda's, stelt een tijdstip voor en verstuurt de uitnodiging na jouw akkoord.",
+    "verdieping": "Agents combineren een taalmodel met gereedschappen (tools) en een lus: plannen, uitvoeren, resultaat bekijken, bijsturen. Hoe meer ze zelfstandig doen, hoe belangrijker toezicht en grenzen worden."
+  },
+  {
+    "term": "Benchmark",
+    "uitleg_leek": "Een gestandaardiseerde test om AI-modellen met elkaar te vergelijken, zoals een examen dat elk model aflegt.",
+    "voorbeeld": "Als een bedrijf zegt dat zijn model \"het beste ter wereld\" is, bedoelt het meestal: het scoort het hoogst op een bepaalde benchmark.",
+    "verdieping": "Een benchmark meet maar één ding. Een hoge score op wiskundetoetsen zegt weinig over hoe goed een model een beleidsnota samenvat. Modellen kunnen ook (bewust of onbewust) op benchmarks getraind zijn."
+  },
+  {
+    "term": "Contextvenster",
+    "uitleg_leek": "Hoeveel tekst een AI-model tegelijk kan 'zien' en gebruiken in één gesprek: jouw vraag, de documenten die je meegeeft en het eigen antwoord.",
+    "voorbeeld": "Met een groot contextvenster kan je een volledig jaarverslag in één keer laten samenvatten.",
+    "verdieping": "Het venster wordt uitgedrukt in tokens. Een groter venster betekent niet automatisch dat het model alles even goed onthoudt: informatie in het midden van lange teksten raakt soms ondergesneeuwd."
+  },
+  {
+    "term": "Frontiermodel",
+    "uitleg_leek": "Een van de krachtigste AI-modellen van het moment, gemaakt door een handvol grote labs zoals OpenAI, Anthropic en Google DeepMind.",
+    "voorbeeld": "Als een nieuw frontiermodel uitkomt, verschuift wat AI in het algemeen kan: taken die vorig jaar onmogelijk waren, lukken plots wel.",
+    "verdieping": "Frontiermodellen vragen enorme rekenkracht en investeringen. Daarom zijn ze ook het onderwerp van specifieke veiligheidsregels en evaluaties."
+  },
+  {
+    "term": "Hallucinatie",
+    "uitleg_leek": "Wanneer een AI-model iets verzint en het overtuigend brengt als feit: een niet-bestaand boek, een fout cijfer, een verzonnen bron.",
+    "voorbeeld": "Je vraagt om drie wetenschappelijke artikels over een onderwerp, en één ervan blijkt niet te bestaan.",
+    "verdieping": "Taalmodellen voorspellen waarschijnlijke tekst; ze controleren niet vanzelf of iets klopt. Nieuwere modellen hallucineren minder, maar nooit nul. Controleer daarom altijd bronnen bij belangrijke beslissingen."
+  },
+  {
+    "term": "Open gewichten",
+    "uitleg_leek": "Een AI-model waarvan de maker de 'gewichten' (het getrainde model zelf) vrijgeeft, zodat iedereen het kan downloaden en op eigen computers kan draaien.",
+    "voorbeeld": "Een Vlaamse school kan een model met open gewichten op een eigen server draaien, zodat leerlingengegevens het gebouw niet verlaten.",
+    "verdieping": "Open gewichten zijn niet hetzelfde als volledig open source: de trainingsdata en -methode blijven vaak geheim. Het voordeel is controle en privacy, het risico dat misbruik moeilijker te stoppen is."
+  },
+  {
+    "term": "Rekenkracht",
+    "uitleg_leek": "De computercapaciteit die nodig is om AI-modellen te trainen en te gebruiken, vooral in grote datacenters vol gespecialiseerde chips.",
+    "voorbeeld": "Wanneer een land investeert in een supercomputer voor AI, investeert het in rekenkracht.",
+    "verdieping": "Rekenkracht (in het Engels 'compute') is een van de grootste drijvers van vooruitgang in AI, en een strategisch thema: wie de chips en datacenters heeft, bepaalt mee wat mogelijk is."
+  },
+  {
+    "term": "Taalmodel",
+    "uitleg_leek": "Een AI-systeem dat getraind is op enorme hoeveelheden tekst en daardoor tekst kan begrijpen en schrijven. ChatGPT, Claude en Gemini zijn gebouwd op taalmodellen.",
+    "voorbeeld": "Wanneer je een vraag stelt aan een chatbot, schrijft het taalmodel het antwoord woord voor woord.",
+    "verdieping": "Je leest ook vaak LLM, van 'large language model'. Moderne taalmodellen werken ook met beeld, geluid en code, en kunnen gereedschappen gebruiken."
+  },
+  {
+    "term": "Token",
+    "uitleg_leek": "Het stukje tekst waarin een AI-model rekent: vaak een woord of een deel van een woord. Prijzen en limieten van AI-diensten worden in tokens uitgedrukt.",
+    "voorbeeld": "Het woord 'bibliotheek' kan voor een model uit twee of drie tokens bestaan.",
+    "verdieping": "Nederlandse tekst gebruikt doorgaans meer tokens dan dezelfde Engelse tekst, waardoor hetzelfde werk in het Nederlands iets duurder kan uitvallen."
+  },
+  {
+    "term": "Kwetsbaarheid",
+    "uitleg_leek": "Een fout in software waar een aanvaller misbruik van kan maken om binnen te dringen of schade aan te richten.",
+    "voorbeeld": "Een fout in PHP maakte dat websites van overheidsdiensten preventief offline gehaald werden."
+  },
+  {
+    "term": "PHP",
+    "uitleg_leek": "Een programmeertaal waarop een groot deel van het web draait, onder meer WordPress en Wikipedia.",
+    "voorbeeld": "Draait de website van je gemeente op WordPress, dan draait ze ook op PHP."
+  },
+  {
+    "term": "Patch",
+    "uitleg_leek": "Een update die een fout in software herstelt.",
+    "voorbeeld": "Je webbouwer installeert de patch zodat de site niet meer via dit lek aangevallen kan worden."
+  },
+  {
+    "term": "Code uitvoeren op afstand",
+    "uitleg_leek": "Een aanvaller laat op jouw server zijn eigen programmacode draaien, zonder dat hij fysiek toegang heeft.",
+    "voorbeeld": "Via zo'n fout kan iemand een webshop overnemen vanop een andere continent."
+  },
+  {
+    "term": "Open source",
+    "uitleg_leek": "Software waarvan de code openbaar is en door vrijwilligers en bedrijven samen onderhouden wordt.",
+    "voorbeeld": "PHP wordt onderhouden door een kleine groep ontwikkelaars, terwijl miljoenen sites erop draaien."
+  },
+  {
+    "term": "Artificial Analysis Intelligence Index",
+    "uitleg_leek": "Een ranglijst van het onafhankelijke bureau Artificial Analysis die AI-modellen vergelijkt met één gecombineerde score over negen tests.",
+    "voorbeeld": "Eind oktober 2026 stond Gemini 4 Carbon bovenaan met 59 punten, net voor Claude Opus 5.5 met 58."
+  },
+  {
+    "term": "Tokens",
+    "uitleg_leek": "Kleine stukjes tekst waarin een AI-model woorden opdeelt. Aanbieders rekenen hun prijs vaak per miljoen tokens aan.",
+    "voorbeeld": "Carbon kost 2 dollar per miljoen invoertokens, dus per miljoen tekststukjes die je het model geeft."
+  },
+  {
+    "term": "Scrapen",
+    "uitleg_leek": "Automatisch grote hoeveelheden tekst van websites uitlezen en opslaan.",
+    "voorbeeld": "Volgens de boekensector scrapen AI-bedrijven websites om hun modellen te trainen."
+  },
+  {
+    "term": "Opt-out",
+    "uitleg_leek": "Een regeling waarbij je zelf moet aangeven dat je iets niet wilt. Zonder jouw melding mag het gewoon.",
+    "voorbeeld": "Auteurs kunnen zich nu alleen uitschrijven, terwijl ze eerst toestemming willen geven."
+  },
+  {
+    "term": "RPA (Robotic Process Automation)",
+    "uitleg_leek": "Een script dat vaste stappen op een computer telkens op dezelfde manier uitvoert, zoals klikken en gegevens kopiëren. Het gebruikt geen AI om te beslissen.",
+    "voorbeeld": "Een script haalt elke maandag dezelfde labrapporten uit een vast webportaal."
+  },
+  {
+    "term": "F1-score",
+    "uitleg_leek": "Een score die zowel meeweegt hoeveel van het juiste gevonden is als hoeveel van wat gevonden is ook klopt. Hoe dichter bij 100%, hoe beter.",
+    "voorbeeld": "Een script met 98% F1 mist weinig rapporten en haalt weinig verkeerde op."
+  },
+  {
+    "term": "VPC",
+    "uitleg_leek": "Een afgeschermd, privaat deel van een clouddienst, enkel toegankelijk voor één organisatie.",
+    "voorbeeld": "Een intercommunale houdt haar dossiers in een eigen afgeschermd stuk cloud."
+  },
+  {
+    "term": "On-premises",
+    "uitleg_leek": "Software die op de eigen servers van een organisatie draait, niet bij een externe cloudaanbieder.",
+    "voorbeeld": "Een stad laat een AI-systeem draaien op servers in het eigen stadhuis."
+  },
+  {
+    "term": "MCP",
+    "uitleg_leek": "Een gangbare standaard om AI-agents te verbinden met data en software, zodat ze die kunnen gebruiken.",
+    "voorbeeld": "Een coderingsagent krijgt via MCP toegang tot een platform als Mistral Studio."
+  },
+  {
+    "term": "SynthID",
+    "uitleg_leek": "Een onzichtbaar watermerk dat Google in AI-gemaakte beelden stopt, zodat ze later als AI-beeld herkend kunnen worden.",
+    "voorbeeld": "Een AI-reclamespot draagt een verborgen merkteken dat met een tool uitgelezen kan worden."
+  },
+  {
+    "term": "Pink slime",
+    "uitleg_leek": "Een nieuwssite die zich voordoet als onafhankelijk lokaal medium, maar financieel of politiek aan een actiegroep hangt.",
+    "voorbeeld": "Een site met een lokaal klinkende naam brengt enkel nieuws dat één partij goed uitkomt."
+  },
+  {
+    "term": "Preprint",
+    "uitleg_leek": "Een onderzoeksartikel dat openbaar staat maar nog niet door andere wetenschappers is beoordeeld.",
+    "voorbeeld": "De studie over Reddit en datacenters staat als preprint op arXiv."
+  },
+  {
+    "term": "Query fan-out",
+    "uitleg_leek": "Een zoektechniek waarbij één vraag wordt opgesplitst in meerdere deelvragen die tegelijk worden opgezocht.",
+    "voorbeeld": "Een vraag over een gezinsvakantie wordt apart opgezocht voor vervoer, verblijf en activiteiten."
+  },
+  {
+    "term": "CIO",
+    "uitleg_leek": "De topverantwoordelijke voor IT en digitale systemen in een bedrijf of organisatie.",
+    "voorbeeld": "De CIO van een groot ziekenhuis beslist mee of er een AI-assistent komt."
+  }
+]

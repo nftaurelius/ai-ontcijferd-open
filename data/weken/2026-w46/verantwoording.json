@@ -1,0 +1,127 @@
+[
+  {
+    "passage": "Hydrogen draait nu in Google Search voor alle gebruikers.",
+    "beslissing": "verwerkt",
+    "toelichting": "De samenvatting zegt nu dat dit volgens Google zo is, en de lokale beschikbaarheid blijft als open punt staan."
+  },
+  {
+    "passage": "maar het zijn wereldwijde schattingen zonder zichtbare methode.",
+    "beslissing": "verwerkt",
+    "toelichting": "Onderscheid gemaakt tussen de wereldwijde banenprognose en het percentage CIO's, waarvan dekking en methode niet vastgesteld zijn."
+  },
+  {
+    "passage": "het sterkste model.",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegeschreven aan Google en de positionering van Hydrogen herleid tot wat Google zegt; de prijsvergelijking met Carbon en Argon staat nu expliciet bij de tarieven."
+  },
+  {
+    "passage": "De cyberversie is enkel toegankelijk via het Fairwind Program",
+    "beslissing": "verwerkt",
+    "toelichting": "'Enkel' geschrapt; alleen nog beschreven dat Google Carbon via Fairwind aan beveiligingsverdedigers beschikbaar stelde."
+  },
+  {
+    "passage": "volgens Google 57% tegenover 18,2% op Terminal-Bench 4.1",
+    "beslissing": "verwerkt",
+    "toelichting": "Scores zonder vaststelbare context geschrapt (index, Terminal-Bench, quota-cijfers) en in een commentaar gezet; Carbon-rangschikkingen blijven met Googles eigen omschrijving van de tests en de beperking dat niet staat wat ze niet meten."
+  },
+  {
+    "passage": "Carbon en Argon kosten $2 en $10 per miljoen tokens als introductieprijs.",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu expliciet input- en output-tokens benoemd, met vermelding dat beide tarieven voor beide modellen gelden."
+  },
+  {
+    "passage": "Overroepen — het zijn wereldwijde prognoses zonder zichtbare methode, en de koppen zeggen meer dan de cijfers.",
+    "beslissing": "verwerkt",
+    "toelichting": "Kritiek op de koppen geschrapt en de uitleg herschreven als aandacht tegenover wat de cijfers voor Vlaanderen aantonen; de stand blijft behouden, met een commentaar om hem te heroverwegen."
+  },
+  {
+    "passage": "Het onderliggende Gartner-materiaal hebben we niet kunnen inzien.",
+    "beslissing": "verwerkt",
+    "toelichting": "Zin geschrapt, ontbrekende details staan nu als open vragen en de controle op de volledige publicaties zit in HTML-commentaar."
+  },
+  {
+    "passage": "10 miljoen erbij tegenover bijna 9 miljoen eraf is een klein verschil op wereldschaal.",
+    "beslissing": "verwerkt",
+    "toelichting": "'Meer dan 10 miljoen' hersteld en het oordeel 'klein' vervangen door de beperking van nettocijfers."
+  },
+  {
+    "passage": "de data komen van één platform. Freelancers die via hun eigen netwerk werken, zitten er niet in.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beide feitelijke claims geschrapt en omgezet in een open vraag over de dekking van het onderzoek."
+  },
+  {
+    "passage": "Bedrijven die freelancers inhuren, kunnen verwachten dat opdrachten met AI-onderdelen meer kosten.",
+    "beslissing": "verwerkt",
+    "toelichting": "Kostenverwachting geschrapt en vervangen door de vaststelling dat de bron niets zegt over tarieven of de prijs van vergelijkbaar werk."
+  },
+  {
+    "passage": "Terecht — het raakt zelfstandigen rechtstreeks, maar de details van het onderzoek zijn nog niet nagegaan.",
+    "beslissing": "verwerkt",
+    "toelichting": "Uitleg herschreven rond mogelijke Vlaamse impact en onbekende overdraagbaarheid; het nakijken staat nu in HTML-commentaar."
+  },
+  {
+    "passage": "OpenAI stopt 2 miljoen dollar in onderzoek naar AI en de veiligheid van kinderen",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu geformuleerd als toezegging van OpenAI, niet als uitgekeerd of besteed bedrag."
+  },
+  {
+    "passage": "waarmee onderzoekers kinderen veilig met chatbots kunnen laten werken.",
+    "beslissing": "verwerkt",
+    "toelichting": "Veiligheids- en privacyclaims zijn toegeschreven aan de auteurs, met de beschreven maatregelen en zonder garantie."
+  },
+  {
+    "passage": "Scholen beslissen dus grotendeels zonder hard bewijs.",
+    "beslissing": "verwerkt",
+    "toelichting": "Conclusie geschrapt; alleen de door de auteurs beschreven kennislacune en het gebruik van enquêtes blijven staan."
+  },
+  {
+    "passage": "Het gaat om twee losse bronnen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Verduidelijkt wie wat meldt en dat geen van beide onafhankelijk bevestigd is; ook bij de datacenterstudie staat nu dat het om één studie gaat."
+  },
+  {
+    "passage": "Terecht — beide initiatieven zijn bescheiden en leveren pas later bewijs op.",
+    "beslissing": "verwerkt",
+    "toelichting": "'Bescheiden' geschrapt en de uitleg gebaseerd op de aard van de initiatieven en de beperkte directe impact voor Vlaanderen."
+  },
+  {
+    "passage": "en het gaat om Amerikaanse projecten.",
+    "beslissing": "verwerkt",
+    "toelichting": "De Amerikaanse context geldt nu alleen voor de 64 miljard dollar; de geografie van de Reddit-steekproef staat als onbekend."
+  },
+  {
+    "passage": "De bezwaren gaan vooral over verbruik en schaarste van water en stroom (42,8%)",
+    "beslissing": "verwerkt",
+    "toelichting": "De brede categorie behouden met water en stroom als voorbeelden, en vermeld dat de noemer van de percentages niet vaststaat."
+  },
+  {
+    "passage": "Het model haalde 83% van wat twee menselijke beoordelaars onderling halen.",
+    "beslissing": "verwerkt",
+    "toelichting": "'Twee' geschrapt en uitgelegd welke overeenstemming wordt vergeleken en wat de score niet meet."
+  },
+  {
+    "passage": "Dat is een schatting van henzelf.",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu 'de auteurs halen een schatting aan', met de oorsprong van de schatting als te controleren punt."
+  },
+  {
+    "passage": "Onderschat — weinig aandacht voor een Amerikaans patroon dat ook hier relevant kan worden, al onderzoekt de studie dat niet.",
+    "beslissing": "verwerkt",
+    "toelichting": "Er is geen onderbouwing voor 'weinig aandacht' of een grote Vlaamse impact, dus de stand is Terecht geworden met een uitleg over de beperkte aangetoonde relevantie."
+  },
+  {
+    "passage": "Daar kan een gemeente zelf iets aan doen, bijvoorbeeld met vroegere en openere inspraak.",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu voorwaardelijk geformuleerd, met het signaal van de auteurs over late inspraak en de vermelding dat bevoegdheden en effect niet zijn onderzocht."
+  },
+  {
+    "passage": "Of dat in de praktijk ook betere antwoorden geeft, is niet onafhankelijk getest.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beide uitspraken (query fan-out en webshopbezoekers) beperkt tot het ontbreken van onafhankelijk bewijs bij Google."
+  },
+  {
+    "passage": "24% minder quota",
+    "beslissing": "verwerkt",
+    "toelichting": "De quota-cijfers en de denkstand-passage zijn geschrapt en 'open-source taalmodel' wordt nu bij eerste gebruik uitgelegd."
+  }
+]

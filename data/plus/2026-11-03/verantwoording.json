@@ -1,0 +1,62 @@
+[
+  {
+    "passage": "Vanaf 7 november zet xAI (Grok) standaard een onzichtbaar watermerk op tekst die via de API wordt geleverd",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot zeven modellen, 7 november 2026 en toegeschreven aan de maker."
+  },
+  {
+    "passage": "OpenAI lanceert een test voor alledaagse taken, maar de details ontbreken nog.",
+    "beslissing": "verwerkt",
+    "toelichting": "Claim over ontbrekende details geschrapt; controle staat als HTML-commentaar."
+  },
+  {
+    "passage": "De tekst zegt niet hoe de taken worden gescoord, welke modellen zijn getest of wat de resultaten zijn.",
+    "beslissing": "verwerkt",
+    "toelichting": "Stellige uitspraak over ontbrekende informatie geschrapt; controle als commentaar."
+  },
+  {
+    "passage": "Wat de test niet meet, zoals betrouwbaarheid in jouw gemeente, is niet beschreven.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door het beperktere punt dat de bronnen geen conclusie over Vlaamse gemeentelijke procedures toelaten."
+  },
+  {
+    "passage": "Tot onafhankelijk onderzoek verschijnt, is dit een bedrijf dat zijn eigen product beoordeelt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven tot het ontbreken van onafhankelijke bevestiging, aangevuld met OpenAI's eigen toelichting uit de radarpost."
+  },
+  {
+    "passage": "dat AI het vullen van zulke sites goedkoper maakt",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door VRT's formulering over makkelijker en sneller vullen."
+  },
+  {
+    "passage": "VRT NWS meldt dat chatbots bij vragen over Amerikaanse kandidaten vaak partijgebonden nepkrantensites als bron gebruiken.",
+    "beslissing": "verwerkt",
+    "toelichting": "Samenvatting beperkt tot het onderzoek met 48 procent; ontbrekende methodedetails vermeld in de tekst."
+  },
+  {
+    "passage": "Zet je het watermerk uit, dan ben je zelf verantwoordelijk voor eventuele verplichte vermeldingen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar wat de maker bij uitschakelen laat bevestigen."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Per hoofdonderwerp een hype-meterstand met één zin uitleg toegevoegd, met benoemde onzekerheid."
+  },
+  {
+    "passage": "Het onderzoek zelf hebben we niet kunnen nakijken",
+    "beslissing": "verwerkt",
+    "toelichting": "Werkwijzezin vervangen door wat VRT niet vermeldt; controleopdracht als HTML-commentaar."
+  },
+  {
+    "passage": "Gebruiken inwoners assistenten voor administratie, dan raakt dat je loketten",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door een expliciet hypothetisch voorbeeld zonder claim over LifeVals dekking."
+  },
+  {
+    "passage": "een grootschalige replicatie van oudere LLM-onderzoeken",
+    "beslissing": "verwerkt",
+    "toelichting": "Jargon vervangen of kort uitgelegd in de radar; 'midterms' staat al uitgelegd en 'races' is behouden als citaat-term uit VRT."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "term": "Benchmark",
+    "uitleg_leek": "Een gestandaardiseerde test waarmee je AI-modellen op dezelfde taken met elkaar vergelijkt. De score zegt alleen iets over die ene opgave.",
+    "voorbeeld": "Google meet met een benchmark hoe goed Carbon kwetsbaarheden in code vindt."
+  },
+  {
+    "term": "Artificial Analysis Intelligence Index",
+    "uitleg_leek": "Een ranglijst die AI-modellen met een gecombineerde score vergelijkt. Google meldt zelf dat Carbon bovenaan staat.",
+    "voorbeeld": "Carbon haalt volgens Google 59 punten op versie 5.0 van die index."
+  },
+  {
+    "term": "Tokens",
+    "uitleg_leek": "Kleine stukjes tekst waarin een AI-model woorden opdeelt. Aanbieders rekenen hun prijs vaak per miljoen tokens aan.",
+    "voorbeeld": "Carbon kost 2 dollar per miljoen invoertokens, dus per miljoen tekststukjes die je het model geeft."
+  },
+  {
+    "term": "Patch",
+    "uitleg_leek": "Een reparatie die een gat of fout in software dicht.",
+    "voorbeeld": "Een gemeente installeert een patch om een lek in haar software te dichten."
+  },
+  {
+    "term": "Scrapen",
+    "uitleg_leek": "Automatisch grote hoeveelheden tekst van websites uitlezen en opslaan.",
+    "voorbeeld": "Volgens de boekensector scrapen AI-bedrijven websites om hun modellen te trainen."
+  },
+  {
+    "term": "Opt-out",
+    "uitleg_leek": "Een regeling waarbij je zelf moet aangeven dat je iets niet wilt. Zonder jouw melding mag het gewoon.",
+    "voorbeeld": "Auteurs kunnen zich nu alleen uitschrijven, terwijl ze eerst toestemming willen geven."
+  }
+]

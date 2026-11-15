@@ -1,0 +1,25 @@
+# Tips van de eindredactie: artikels die Duncan zelf aanbrengt voor een komende editie.
+# De weekeditie neemt elke tip uit de week mee als kandidaat met voorrang.
+# Velden: url (oorspronkelijk artikel, liefst geen X-link), titel, datum (van het nieuws),
+#         notitie (waarom interessant), extra_bronnen (optioneel), gebruikt_in (vult de pijplijn in)
+tips:
+- url: https://itdaily.com/blogs/security/ccb-more-cyber-incidents-in-belgium/
+  titel: 'CCB: Belgische bedrijven meldden in negen maanden meer cyberincidenten dan
+    in heel 2025'
+  datum: 2026-10-15
+  notitie: 'Aangebracht vanuit een ideeëndrop over AI en cyberveiligheid. CCB-rapport
+    "Stormy Weather": 588 meldingen tussen 1 januari en 28 september 2026, tegenover
+    556 in heel 2025. Volgens het CCB helpt AI aanvallers om sneller kwetsbaarheden
+    te vinden en overtuigender phishing te schrijven. Het CCB werkt aan een Frontier
+    AI Hub met aanbevelingen voor eind 2026. Dichtbij, raakt lokale overheden en zelfstandigen.
+    Rapport zelf nog niet gevonden op ccb.belgium.be.'
+  extra_bronnen:
+  - https://www.brusselstimes.com/2364134/belgian-businesses-report-more-cyber-incidents-in-nine-months-than-in-all-of-2025
+- url: https://www.engadget.com/2297180/dutch-government-to-cut-16-percent-of-workforce-as-part-of-ai-efficiency-push/
+  titel: Nederlandse overheid wil 25.000 ambtenarenjobs schrappen met AI
+  datum: 2026-10-26
+  notitie: Aangebracht door Duncan (gezien als trending op X). Buurland, publieke
+    sector, werk. Wat betekent dit voor Vlaamse en lokale overheden?
+  extra_bronnen:
+  - https://www.thestar.com.my/tech/tech-news/2026/10/27/dutch-government-plans-to-cut-25000-jobs-in-ai-led-overhaul
+  gebruikt_in: 2026-w44

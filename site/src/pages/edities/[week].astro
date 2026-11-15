@@ -1,0 +1,129 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import HypeMeter from "../../components/HypeMeter.astro";
+import Inschrijven from "../../components/Inschrijven.astro";
+import Inhoud from "../../components/Inhoud.astro";
+import { kaderVlaanderen, markeerEerste } from "../../lib/opmaak";
+import { alleEdities, datumLeesbaar, weekNummer, type Editie } from "../../lib/edities";
+import { LICENTIE_URL, SITE_URL, auteur, uitgever } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return alleEdities().map((editie) => ({ params: { week: editie.week }, props: { editie } }));
+}
+
+const { editie } = Astro.props as { editie: Editie };
+const url = `${SITE_URL}/edities/${editie.week}`;
+const inhoud = [
+  ...editie.onderwerpen.map((o) => ({ href: `#${o.slug}`, tekst: o.titel, extra: o.hype?.stand })),
+  ...(editie.ruis ? [{ href: "#ruis", tekst: "Ruis van de week" }] : []),
+  ...(editie.lezersvraag ? [{ href: "#lezersvraag", tekst: "Lezersvraag" }] : []),
+  ...(editie.woord ? [{ href: "#woord", tekst: "Woord van de week" }] : []),
+  { href: "#inschatting", tekst: "Mijn inschatting" },
+  { href: "#bronnen", tekst: "Bronnen" },
+];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "@id": url,
+  mainEntityOfPage: url,
+  headline: editie.titel,
+  description: editie.kernTekst.slice(0, 300),
+  datePublished: editie.datum,
+  dateModified: editie.datum,
+  inLanguage: "nl-BE",
+  image: [`${SITE_URL}/og.png`],
+  author: { "@id": auteur["@id"], "@type": "Person", name: auteur.name, url: auteur.url },
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name, logo: uitgever.logo },
+  license: LICENTIE_URL,
+  isAccessibleForFree: true,
+  about: editie.onderwerpen.map((o) => ({ "@type": "Thing", name: o.titel })),
+  keywords: ["AI", "artificiële intelligentie", "Vlaanderen", ...editie.labels].join(", "),
+};
+---
+
+<Basis titel={editie.titel} beschrijving={editie.kernTekst.slice(0, 160)} type="article" schema={schema} gepubliceerd={editie.datum}>
+  <article>
+    <header class="rij sectie">
+      <div class="kantlijn">
+        <p class="kantlijn-kop">Weekeditie</p>
+        <p>{weekNummer(editie.week)} · {datumLeesbaar(editie.datum)}</p>
+        <p class="pagina-uitleg">Elke vrijdag de belangrijkste AI-ontwikkelingen van de week, met een hype-meter per onderwerp.</p>
+      </div>
+      <div>
+        <h1 style="font-size:2.2rem;margin:0 0 1.25rem">{editie.titel}</h1>
+        <p class="lead" set:html={markeerEerste(editie.kern)} />
+        <Inhoud items={inhoud} />
+      </div>
+    </header>
+
+    {editie.onderwerpen.map((o, n) => (
+      <section class="rij sectie onderwerp" id={o.slug}>
+        <aside class="kantlijn alleen-breed">
+          {o.labels.length > 0 && (
+            <ul class="labels" aria-label="Voor wie">
+              {o.labels.map((l) => <li>{l}</li>)}
+            </ul>
+          )}
+          {o.hype && <HypeMeter hype={o.hype} />}
+        </aside>
+        <div class="proza">
+          <p class="onderwerp-nr"><span>{n + 1}</span> Onderwerp {n + 1} van {editie.onderwerpen.length}</p>
+          <h2>{o.titel}</h2>
+          {(o.labels.length > 0 || o.hype) && (
+            <div class="onderwerp-meta alleen-gsm">
+              {o.labels.length > 0 && <ul class="labels" aria-label="Voor wie">{o.labels.map((l) => <li>{l}</li>)}</ul>}
+              {o.hype && <HypeMeter hype={o.hype} />}
+            </div>
+          )}
+          <Fragment set:html={kaderVlaanderen(o.html)} />
+          {n === 0 && editie.onderwerpen.length > 1 && <Inschrijven variant="kort" />}
+        </div>
+      </section>
+    ))}
+
+    {editie.ruis && (
+      <section class="rij sectie" id="ruis">
+        <div class="kantlijn"><p>Overroepen en weinig onderbouwd</p></div>
+        <div class="proza rubriek"><h2>Ruis van de week</h2><Fragment set:html={editie.ruis} /></div>
+      </section>
+    )}
+
+    {editie.lezersvraag && (
+      <section class="rij sectie" id="lezersvraag">
+        <div class="kantlijn"><p>Jouw vraag? <a href="/vragen">Stel ze</a></p></div>
+        <div class="proza rubriek"><h2>Lezersvraag</h2><Fragment set:html={editie.lezersvraag} /></div>
+      </section>
+    )}
+
+    {editie.woord && (
+      <section class="rij sectie" id="woord">
+        <div class="kantlijn"><p>Uit de <a href="/jargon">jargonfilter</a></p></div>
+        <div class="proza rubriek"><h2>Woord van de week</h2><Fragment set:html={editie.woord} /></div>
+      </section>
+    )}
+
+    <section class="rij sectie" id="inschatting">
+      <div class="kantlijn"><p>Ondertekend oordeel van de eindredacteur</p></div>
+      <div class="inschatting proza">
+        <h2>Mijn inschatting</h2>
+        <Fragment set:html={editie.inschatting} />
+        <p class="handtekening">Duncan Panis</p>
+      </div>
+    </section>
+
+    <section class="rij sectie klein">
+      <div class="kantlijn"><p>Transparantie</p></div>
+      <div class="proza"><h2>Zo is dit gemaakt</h2><Fragment set:html={editie.gemaakt} /></div>
+    </section>
+
+    <section class="rij sectie klein" id="bronnen">
+      <div class="kantlijn"><p>Fout gezien? <a href="/correcties">Meld het</a></p></div>
+      <div class="proza"><h2>Bronnen</h2><Fragment set:html={editie.bronnen} /></div>
+    </section>
+  </article>
+
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <div><Inschrijven /></div>
+  </section>
+</Basis>

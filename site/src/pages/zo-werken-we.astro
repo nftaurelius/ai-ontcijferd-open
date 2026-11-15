@@ -1,0 +1,122 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { HYPE_STANDEN, datumLeesbaar } from "../lib/edities";
+import { verbruik, leesbaarGetal } from "../lib/verbruik";
+
+const gebruik = verbruik();
+
+const rollen = [
+  { rol: "Verkenner", wanneer: "Elke dag", taak: "Haalt nieuwe berichten op uit een vaste lijst bronnen: AI-labs, onderzoek, Europese en Vlaamse overheid, Vlaamse media en kritische duiders." },
+  { rol: "Triage", wanneer: "Elke dag", taak: "Een snel AI-model scoort elk bericht: hoe belangrijk is dit voor Vlaanderen, en hoeveel hype zit erin?" },
+  { rol: "Analist", wanneer: "Elke week", taak: "Kiest de drie tot vijf belangrijkste onderwerpen, leest de oorspronkelijke bronnen en schrijft een concept." },
+  { rol: "Vertaler", wanneer: "Elke week", taak: "Maakt de tekst leesbaar voor wie geen AI-specialist is en legt elk vakwoord uit." },
+  { rol: "Tegenspreker", wanneer: "Elke week", taak: "Een AI-model van een ándere maker controleert elke bewering tegen haar bron en zoekt overdrijving. Modellen van dezelfde maker delen vaak dezelfde blinde vlekken." },
+  { rol: "Eindredacteur", wanneer: "Elke week", taak: "Duncan Panis leest alles na, corrigeert, schrijft zelf \"Mijn inschatting\" en beslist of de editie verschijnt." },
+];
+---
+
+<Basis titel="Zo werken we" beschrijving="Hoe AI Ontcijferd gemaakt wordt: AI-agents doen het meeste werk, een mens beslist. Volledig transparant.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Transparantie</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Zo werken we</h1>
+      <p class="lead">
+        <span class="markeer">AI Ontcijferd wordt grotendeels gemaakt door AI-agents, met een mens als eindredacteur.</span>
+        Dat zeggen we niet in de kleine lettertjes, maar bij elk stuk. Deze pagina legt uit hoe het werkt.
+      </p>
+      <p>
+        We doen dit bewust zo. Wie wil begrijpen wat AI kan, heeft baat bij een voorbeeld dat je kan nakijken. Je ziet hier
+        wat AI goed doet (veel lezen, ordenen, eerste versies schrijven) en waar een mens nodig blijft (oordelen, kiezen,
+        verantwoordelijkheid nemen).
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>De keten, van bron tot editie</p></div>
+    <div class="proza">
+      <h2>Zes rollen</h2>
+      <ol>
+        {rollen.map((r) => (
+          <li><strong>{r.rol}</strong> <span class="meta">({r.wanneer.toLowerCase()})</span>. {r.taak}</li>
+        ))}
+      </ol>
+      <p>Onder elke editie staat een kort blok "Zo is dit gemaakt" met de gebruikte modellen en wat de tegenspreker vond.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Elke ochtend</p></div>
+    <div class="proza">
+      <h2>Plus: dagbrief en dossiers</h2>
+      <p>Naast de weekeditie maakt dezelfde keten elke dag een <a href="/plus">dagbrief</a>. Een schrijver maakt het concept, een model van een andere leverancier controleert het tegen de bronnen, en een revisie verwerkt wat die controle vindt. Ziet de controle daarna geen open problemen meer, dan verschijnt de dagbrief automatisch. Zo niet, dan leest de eindredacteur hem eerst na. De dagbrief heeft geen hype-meter, wel een status per onderwerp: bevestigd, volgens de maker, of één bron.</p>
+      <p>We volgen ook YouTube-kanalen en berichten op X. Die gebruiken we als radar, nooit als bron: we zoeken het oorspronkelijke bericht op. Vinden we dat niet, dan staat het signaal apart onder "Uit de radar", met de vermelding dat het nog niet bevestigd is.</p>
+      <p>Dossiers leggen één ontwikkeling grondig uit. Ze doorlopen de volledige keten, met tegenspreker, en krijgen net als de weekeditie een ondertekende inschatting.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Wat we beloven</p></div>
+    <div class="proza">
+      <h2>Bronregels</h2>
+      <ul>
+        <li>Elke bewering heeft een bron die je zelf kan openen. Zonder bron geen bewering.</li>
+        <li>Oorspronkelijke bronnen wegen het zwaarst: de aankondiging zelf, het onderzoek zelf, de wettekst zelf.</li>
+        <li>Wat een bedrijf over zijn eigen product zegt, krijgt het label "volgens de maker", tot een onafhankelijke bron het bevestigt.</li>
+        <li>Bij een score of benchmark zeggen we wat de test meet, en wat niet.</li>
+        <li>De kernclaim van een onderwerp steunt op minstens twee onafhankelijke bronnen, of we zeggen dat het er maar één is.</li>
+        <li>Geen gesponsorde inhoud. Geen partijpolitiek: beleid beschrijven we feitelijk.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Het bullshitfilter</p></div>
+    <div class="proza">
+      <h2>De hype-meter</h2>
+      <p>Elk onderwerp krijgt een stand. Die vergelijkt de aandacht die iets krijgt met de impact die we verwachten voor Vlaanderen.</p>
+      <ul>
+        {HYPE_STANDEN.map((s) => <li>{s}</li>)}
+      </ul>
+      <p>Elke stand krijgt één zin uitleg. De tegenspreker kan een stand aanvechten; de eindredacteur beslist.</p>
+    </div>
+  </section>
+
+  {gebruik.rijen.length > 0 && (
+    <section class="rij sectie" id="verbruik">
+      <div class="kantlijn"><p>Wat de keten verbruikt</p></div>
+      <div class="proza">
+        <h2>Het verbruik, in cijfers</h2>
+        <p>
+          Elke oproep van een AI-model wordt gelogd. Van {gebruik.van && datumLeesbaar(gebruik.van)} tot {gebruik.tot && datumLeesbaar(gebruik.tot)} deed
+          de keten {gebruik.totaal.oproepen.toLocaleString("nl-BE")} oproepen. De modellen lazen samen {leesbaarGetal(gebruik.totaal.tokensIn)} tokens
+          en schreven er {leesbaarGetal(gebruik.totaal.tokensUit)}. Een <a href="/jargon/token">token</a> is een stukje van een woord.
+        </p>
+        <div class="tabelrol">
+          <table class="cijfertabel">
+            <thead>
+              <tr><th scope="col">Rol</th><th scope="col">Model</th><th scope="col" class="getal">Oproepen</th><th scope="col" class="getal">Gelezen</th><th scope="col" class="getal">Geschreven</th></tr>
+            </thead>
+            <tbody>
+              {gebruik.rijen.map((r) => (
+                <tr><th scope="row">{r.rol}</th><td>{r.modellen.join(", ")}</td><td class="getal">{r.oproepen.toLocaleString("nl-BE")}</td><td class="getal">{leesbaarGetal(r.tokensIn)}</td><td class="getal">{leesbaarGetal(r.tokensUit)}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="meta">Deze tabel wordt bij elke nieuwe versie van de site opnieuw berekend uit de logbestanden van de keten. Proefdraaien tellen niet mee.</p>
+      </div>
+    </section>
+  )}
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Fouten</p></div>
+    <div class="proza">
+      <h2>Als we ons vergissen</h2>
+      <p>
+        We verbeteren fouten snel en zichtbaar, met een correctienoot onder het stuk. Alle correcties staan ook op{" "}
+        <a href="/correcties">één pagina</a>. Komt een fout uit de agentketen, dan passen we de instructies of controles aan.
+      </p>
+    </div>
+  </section>
+</Basis>

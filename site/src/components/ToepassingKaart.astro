@@ -1,0 +1,38 @@
+---
+import { DOELGROEPEN } from "../lib/doelgroepen";
+import { datumLeesbaar } from "../lib/edities";
+import { videoBron, youtubeId, type Toepassing } from "../lib/toepassingen";
+
+interface Props {
+  t: Toepassing;
+}
+const { t } = Astro.props;
+const slugs = t.doelgroepen
+  .map((d) => DOELGROEPEN.find((g) => g.label.toLowerCase() === d.toLowerCase())?.slug)
+  .filter(Boolean)
+  .join(" ");
+const yt = youtubeId(t.video);
+---
+
+<article class="toepassing" id={t.slug} data-doelgroepen={slugs} data-soort={t.soort} data-dichtbij={t.dichtbij ? "ja" : "nee"}>
+  <p class="meta toepassing-kop">
+    <span class="soort" data-soort={t.soort}>{t.soort === "demo" ? "Demo" : "In de praktijk"}</span>
+    {t.wie} · {t.waar}{t.dichtbij ? " · dichtbij" : ""} · {datumLeesbaar(t.datum)}
+  </p>
+  <h2><a href={`#${t.slug}`}>{t.titel}</a></h2>
+
+  {yt ? (
+    <div class="video" data-yt={yt}>
+      <button type="button" class="knop video-knop">▶ Speel de video af</button>
+      <p class="meta">De video komt van YouTube en laadt pas als je op de knop drukt.</p>
+    </div>
+  ) : t.video ? (
+    <p><a class="knop" href={t.video} rel="noopener" target="_blank">▶ Bekijk de video op {videoBron(t.video)}</a></p>
+  ) : null}
+
+  <p>{t.wat}</p>
+  <p><strong>Wat betekent het voor Vlaanderen?</strong> {t.waarom}</p>
+  <p class="kanttekening"><strong>{t.soort === "demo" ? "Wat de demo niet toont:" : "Kanttekening:"}</strong> {t.kanttekening}</p>
+  <ul class="labels">{t.doelgroepen.map((d) => <li>{d}</li>)}</ul>
+  <p class="meta">Bron: <a href={t.bron.url} rel="noopener">{t.bron.titel}</a>, {t.bron.uitgever}</p>
+</article>
