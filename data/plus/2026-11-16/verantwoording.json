@@ -1,0 +1,62 @@
+[
+  {
+    "passage": "een nieuw AI-topmodel in 2024 gemiddeld elke 92 dagen verscheen",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar nieuwe topscores op de Progress Index, met 'tot nu toe' voor 2026; de definitie van de index staat niet in de bron en is als nakijkpunt gemarkeerd."
+  },
+  {
+    "passage": "Het scoort 43 op de Intelligence Index van Artificial Analysis, die dit zelf meet.",
+    "beslissing": "verwerkt",
+    "toelichting": "Testinstelling 'xhigh reasoning' en vergelijking met Qwen3.8 Max en Kimi K3.1 Pro toegevoegd; de bron laat niet toe uit te leggen wat de index meet, dat staat er nu eerlijk bij."
+  },
+  {
+    "passage": "van de 270 beroepen in de Amerikaanse census van 1950 er nog maar één verdwenen is",
+    "beslissing": "verwerkt",
+    "toelichting": "Mollicks woord 'obsoleet' behouden en 'Amerikaanse' geschrapt; controle als nakijkpunt gemarkeerd."
+  },
+  {
+    "passage": "voor België 1,20 miljard dollar aan AI-investeringen",
+    "beslissing": "verwerkt",
+    "toelichting": "Item geschrapt omdat periode, editie en definitie ontbreken."
+  },
+  {
+    "passage": "De update geldt voor modellen met hardwareversie 4.0 of hoger.",
+    "beslissing": "verwerkt",
+    "toelichting": "Voorwaarde Tesla Assisted Driving toegevoegd, ook in het advies aan burgers."
+  },
+  {
+    "passage": "bij onoplettendheid een zogeheten \"full strike\"",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperking 'tijdens een manoeuvre van het systeem' hersteld, ook in het advies."
+  },
+  {
+    "passage": "geen onafhankelijke evaluatie",
+    "beslissing": "verwerkt",
+    "toelichting": "Onderscheid gemaakt tussen de eigen tests van de RDW en het ontbreken van een tweede bron over de resultaten."
+  },
+  {
+    "passage": "De winst is dus klein.",
+    "beslissing": "verwerkt",
+    "toelichting": "Oordeel geschrapt en beide verschillen (2,5 en 9,3 procentpunt) afzonderlijk benoemd, met vermelding dat een onzekerheidsmarge ontbreekt."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Hype-meter met één zin uitleg toegevoegd bij beide hoofdonderwerpen; de stand is een redactionele inschatting en staat als nakijkpunt."
+  },
+  {
+    "passage": "Zo'n systeem laat zien hoe inwoners jouw AI-beleid kunnen lezen en betwisten.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door een uitdrukkelijk hypothetisch voorbeeld rond AI bij aanwerving en verduidelijkt dat het om een voorstel op papier gaat."
+  },
+  {
+    "passage": "met een contextvenster van 1 miljoen tokens",
+    "beslissing": "verwerkt",
+    "toelichting": "Contextvenster, tokens, peer review, typegoedkeuring en TCMV bij eerste gebruik uitgelegd of voluit geschreven."
+  },
+  {
+    "passage": "Onderzoekers hebben een prototype gebouwd waarmee burgers AI-regels van overheden kunnen opzoeken, bevragen en herschrijven.",
+    "beslissing": "verwerkt",
+    "toelichting": "Openingszin spreekt nu van een voorstel tot wijziging in plaats van herschrijven."
+  }
+]

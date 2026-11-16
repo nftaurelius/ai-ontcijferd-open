@@ -1,4 +1,4 @@
-# Bronnencheck 2026-11-09 14:25
+# Bronnencheck 2026-11-16 14:11
 
 | Bron | Methode | Items | Status |
 | --- | --- | --- | --- |
@@ -12,21 +12,21 @@
 | arXiv cs.AI | rss | 20 | OK |
 | Epoch AI | rss | 12 | OK |
 | Artificial Analysis | pagina | 12 | UIT (bewust) — OK |
-| Europese Commissie (digitaal beleid) | pagina | 1 | UIT (bewust) — OK |
+| Europese Commissie (digitaal beleid) | pagina | 2 | UIT (bewust) — OK |
 | Digitaal Vlaanderen | pagina | 0 | UIT (bewust) — LEEG |
 | VLAIO (thema AI) | pagina | 0 | UIT (bewust) — FOUT: HTTPError 403 Client Error: Forbidden for url: https://www.vlaio.be/nl/nieuws?thema=194 |
-| FOD BOSA | pagina | 1 | OK |
+| FOD BOSA | pagina | 0 | OK (vandaag geen AI-titels) |
 | VRT NWS | rss | 0 | OK (vandaag geen AI-titels) |
-| Data News | rss | 2 | OK |
+| Data News | rss | 4 | OK |
 | De Tijd (tech) | pagina | 0 | UIT (bewust) — FOUT: HTTPError 403 Client Error: Forbidden for url: https://www.tijd.be/tech-media.html |
 | De Standaard | rss | 1 | OK |
 | imec | pagina | 0 | UIT (bewust) — FOUT: HTTPError 404 Client Error: Not Found for url: https://www.imec-int.com/nl/pers |
 | Kenniscentrum Data & Maatschappij | pagina | 12 | OK |
 | Mediawijs | pagina | 0 | OK (vandaag geen AI-titels) |
-| Cultuurconnect | pagina | 0 | UIT (bewust) — LEEG |
+| Cultuurconnect | pagina | 12 | UIT (bewust) — OK |
 | Statbel | pagina | 0 | OK (vandaag geen AI-titels) |
 | Klasse | pagina | 0 | OK (vandaag geen AI-titels) |
-| Future Tools (radar) | pagina | 28 | OK |
+| Future Tools (radar) | pagina | 36 | OK |
 | AI Snake Oil (kritisch) | rss | 12 | OK |
 | Import AI (Jack Clark, medeoprichter Anthropic) | rss | 10 | OK |
 | TheAIGRID (YouTube) | youtube | 12 | OK |

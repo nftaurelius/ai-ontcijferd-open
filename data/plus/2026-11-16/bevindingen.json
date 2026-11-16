@@ -1,0 +1,74 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "een nieuw AI-topmodel in 2024 gemiddeld elke 92 dagen verscheen",
+    "probleem": "De bron telt nieuwe topscores op de Progress Index, niet de verschijning van nieuwe topmodellen. Bovendien geldt het cijfer voor 2026 alleen voor het verstreken deel van dat jaar.",
+    "voorstel": "Beschrijf de intervallen tussen nieuwe topscores, vermeld de Progress Index en voeg voor 2026 'tot nu toe' toe. Leg uit wat de index meet en niet meet; controleer die definitie vóór publicatie."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het scoort 43 op de Intelligence Index van Artificial Analysis, die dit zelf meet.",
+    "probleem": "De score geldt volgens de bron bij de instelling 'xhigh reasoning'. Die testvoorwaarde ontbreekt. Ook ontbreken de verplichte uitleg over wat de test meet en niet meet en een vergelijkingspunt voor de score.",
+    "voorstel": "Vermeld de testinstelling en de vergelijking met Qwen3.8 Max uit dezelfde bron. Controleer de definitie en beperkingen van de index, of laat de score weg."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "van de 270 beroepen in de Amerikaanse census van 1950 er nog maar één verdwenen is",
+    "probleem": "Mollick noemt één beroep 'obsoleet'. Dat betekent niet noodzakelijk dat het volledig verdwenen is. De samenvatting specificeert bovendien niet dat het om de Amerikaanse volkstelling gaat.",
+    "voorstel": "Behoud Mollicks beperktere kwalificatie en schrijf niet dat het beroep verdwenen is. Controleer welke volkstelling hij bedoelt voordat je 'Amerikaanse' toevoegt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "voor België 1,20 miljard dollar aan AI-investeringen",
+    "probleem": "De periode, rapporteditie en definitie van investeringen ontbreken. Daardoor is niet duidelijk wat het bedrag voor België voorstelt. 'Nog niet bevestigd' vervangt die noodzakelijke cijfercontext niet.",
+    "voorstel": "Controleer de oorspronkelijke tabel in het AI Index Report op periode, eenheid en investeringscategorie. Laat het bedrag weg zolang die context ontbreekt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De update geldt voor modellen met hardwareversie 4.0 of hoger.",
+    "probleem": "De bron stelt twee voorwaarden: Tesla Assisted Driving én hardwareversie 4.0 of hoger. Het concept laat de eerste weg, ook in het advies aan burgers, en vergroot daarmee de doelgroep ten onrechte.",
+    "voorstel": "Neem op beide plaatsen de voorwaarde op dat de Tesla ook met Tesla Assisted Driving is uitgerust."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "bij onoplettendheid een zogeheten \"full strike\"",
+    "probleem": "De bron beperkt deze wijziging tot onoplettendheid tijdens een manoeuvre van het systeem. Het concept maakt daarvan een algemene regel.",
+    "voorstel": "Behoud de beperking 'tijdens een manoeuvre van het systeem'."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "geen onafhankelijke evaluatie",
+    "probleem": "Deze formulering verwart het ontbreken van onafhankelijke bevestiging van het bericht met de onafhankelijkheid van de beoordeling. De RDW meldt juist zelf te hebben getest. Dat Tesla de beoordeling aanvroeg, bewijst niet dat die beoordeling niet onafhankelijk was.",
+    "voorstel": "Maak onderscheid tussen de eigen tests van de toezichthouder en het ontbreken van een tweede onafhankelijke bron over de resultaten. Trek geen conclusie over de onafhankelijkheid van de beoordeling."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De winst is dus klein.",
+    "probleem": "Het oordeel maakt niet duidelijk welke vergelijking bedoeld wordt. De winst tegenover de sterkste vergelijkingsmethode is 2,5 procentpunt; tegenover de versie zonder herhaald zoeken is dat 9,3 procentpunt. De bron geeft geen onzekerheidsmarge waarmee de betekenis van die verschillen kan worden beoordeeld.",
+    "voorstel": "Benoem beide verschillen afzonderlijk en vermijd een algemeen oordeel over hun omvang of betekenis zonder verdere onderbouwing."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Bij beide hoofdonderwerpen ontbreekt de voorgeschreven hype-meter. Een bronstatus beoordeelt niet hoe de aandacht zich verhoudt tot de verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per hoofdonderwerp één van de vijf toegestane standen toe, met één zin uitleg. Onderbouw de verhouding tussen aandacht en Vlaamse impact en benoem onzekerheid."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Zo'n systeem laat zien hoe inwoners jouw AI-beleid kunnen lezen en betwisten.",
+    "probleem": "De Vlaamse vertaalslag blijft algemeen. Er is geen concrete lokale toepassing uitgewerkt, terwijl ondersteuning van Belgische documenten juist onbekend is. Ook kan 'betwisten' klinken als een formele bezwaarprocedure, die de bron niet beschrijft.",
+    "voorstel": "Gebruik een uitdrukkelijk hypothetisch voorbeeld rond AI bij gemeentelijke aanwerving, aansluitend bij de bron. Maak duidelijk dat het om tekst begrijpen en een herziening opstellen gaat, niet om aangetoonde ondersteuning van een Vlaamse bezwaarprocedure."
+  },
+  {
+    "ernst": "klein",
+    "passage": "met een contextvenster van 1 miljoen tokens",
+    "probleem": "Zowel 'contextvenster' als 'tokens' blijft onverklaard. Ook 'peer review', 'typegoedkeuring' en 'TCMV' worden elders niet bij het eerste gebruik uitgelegd.",
+    "voorstel": "Geef elk vakwoord bij de eerste vermelding een korte uitleg. Schrijf de naam van TCMV voluit; die staat in de bron."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Onderzoekers hebben een prototype gebouwd waarmee burgers AI-regels van overheden kunnen opzoeken, bevragen en herschrijven.",
+    "probleem": "'AI-regels herschrijven' kan suggereren dat burgers daarmee geldende regels aanpassen. De bron beschrijft het opstellen van een voorgestelde herziening.",
+    "voorstel": "Maak ook in de openingszin duidelijk dat gebruikers wijzigingsvoorstellen opstellen, niet de geldende regels zelf veranderen."
+  }
+]
