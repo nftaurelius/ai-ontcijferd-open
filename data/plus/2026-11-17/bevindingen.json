@@ -1,0 +1,104 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "Oostende rekent op AI om 20,7 miljoen euro te besparen.",
+    "probleem": "Deze samenvatting wekt de indruk dat AI het volledige besparingsbedrag moet opleveren. Volgens VRT gaat het om een pakket maatregelen. Het aandeel van AI is onbekend.",
+    "voorstel": "Maak ook in de samenvatting duidelijk dat AI slechts één onderdeel van het besparingsplan is."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "studenten worden willekeurig verdeeld over groepen",
+    "probleem": "Het abstract vermeldt randomisering, maar niet wat willekeurig werd toegewezen. Dat kunnen studenten zijn, maar bijvoorbeeld ook docenten of lesgroepen.",
+    "voorstel": "Leg randomisering uit zonder de toewijzingseenheid vast te leggen. Controleer die eenheid in het onderzoek voordat je studenten noemt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het resultaat pleit ervoor dat docenten zelf mee bepalen hoe AI in hun les wordt ingezet, in plaats van een tool van bovenaf op te leggen.",
+    "probleem": "Het abstract beschrijft geen rechtstreekse vergelijking tussen docentgestuurde en centraal opgelegde AI. Eerder onderzoek naar andere tools bewijst niet dat zeggenschap van docenten het verschil veroorzaakt.",
+    "voorstel": "Presenteer docentbetrokkenheid als een mogelijke les, niet als bewezen betere aanpak. Benoem dat de vergelijkingsgroep in het abstract niet wordt beschreven."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "een artikel dat nog niet door vakgenoten is beoordeeld",
+    "probleem": "De arXiv-vermelding bevestigt niet dat er nog geen beoordeling door vakgenoten heeft plaatsgevonden. Ook bij het tweede onderzoek wordt de publicatiestatus zonder verdere onderbouwing vastgesteld.",
+    "voorstel": "Beperk je tot de vaststelling dat de onderzoeken op arXiv staan, of controleer hun beoordelings- en publicatiestatus."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De stad noemt als aanleiding 271 miljoen euro schulden en ongeveer 20 miljoen euro minder uit het Gemeentefonds van Vlaanderen.",
+    "probleem": "De chronologie raakt verloren. Volgens VRT was de hervorming al bijna afgerond toen de besparing op het Gemeentefonds bekend werd. Die was dus extra druk, niet de oorspronkelijke aanleiding.",
+    "voorstel": "Onderscheid de schulden als aanleiding van de later aangekondigde vermindering uit het Gemeentefonds. Vermeld dat die circa 20 miljoen euro over de komende jaren gaat."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een softwarebibliotheek die audio ongemerkt dubbel codeerde, liet één model kinderen als dertigers en veertigers inschatten.",
+    "probleem": "Van de drie centrale faalwijzen wordt alleen deze concreet uitgelegd. Het abstract beschrijft ook een vervangend model dat geen leeftijden meer gaf, en tegenstrijdige antwoorden op dezelfde opname. Die bevindingen zijn belangrijk voor de conclusie over controle van de hele keten.",
+    "voorstel": "Vermeld ook de modelvervanging en de tegenstrijdige leeftijdsantwoorden, eventueel zeer beknopt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Geen van de fouten gaf een waarschuwing of foutcode, dus gewone monitoring zou ze missen.",
+    "probleem": "De bron koppelt dit aan de drie beschreven faalwijzen. De formulering maakt daarvan een algemene uitspraak over alle verkeerde leeftijdsinschattingen en alle gewone monitoring.",
+    "voorstel": "Beperk de conclusie tot de beschreven faalwijzen en schrijf haar toe aan de auteurs. Leg uit dat controle op foutcodes en uitvoerformaat deze problemen niet zichtbaar maakte."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "classificeerden de modellen kinderen in 2,5% tot 42,5% van de antwoorden als ouder dan 13",
+    "probleem": "De tekst benoemt wat werd gemeten, maar niet voldoende wat deze percentages niet aantonen. Het gaat om antwoorden op opnamen uit twee verzamelingen, niet om vastgestelde foutpercentages van leeftijdscontrole bij werkende AI-diensten.",
+    "voorstel": "Voeg die begrenzing toe. Laat de aanbeveling voor ouders niet suggereren dat concrete consumentendiensten zijn getest."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Opleidingen informatica krijgen vragen van studenten over hun toekomstperspectief.",
+    "probleem": "De bruikbare krantenkop zegt alleen dat studenten zich zorgen maken. Hij onderbouwt niet dat opleidingen zulke vragen ontvangen. Ook de daaropvolgende claim dat werkgevers een onzekere jonge instroom zien, staat niet in de bron.",
+    "voorstel": "Schrap beide feitelijke gevolgclaims of maak er expliciet mogelijke aandachtspunten voor opleidingen en werkgevers van."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Alleen de kop is hier als signaal bruikbaar",
+    "probleem": "Dit beschrijft de redactionele werkwijze in plaats van de inhoud voor de lezer.",
+    "voorstel": "Beperk de passage tot wat de kop wel en niet aantoont: zorgen bij studenten, maar geen omvang of bewijs van banenverlies."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "zonder de eerder bekendgemaakte incidenten",
+    "probleem": "Dit kan betekenen dat er bij de onderzochte run geen incidenten waren. De bron zegt alleen dat bekende incidenten buiten de reikwijdte van de beoordeling vallen. Die beperking staat bovendien in een andere METR-post dan de gelinkte.",
+    "voorstel": "Zeg expliciet dat de pilot de bekende incidenten niet onderzoekt en link ook naar https://x.com/METR_Evals/status/2122361050456801698."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "volgens het bedrijf ruim 60% lagere kosten per taak",
+    "probleem": "De vergelijking met Qwen3.8-Max ontbreekt. Daardoor heeft het percentage geen referentiepunt. De bron specificeert evenmin welke taken en testvoorwaarden deze kostenclaim dragen.",
+    "voorstel": "Noem Qwen3.8-Max als vergelijkingsbasis en benoem dat taken en testvoorwaarden niet worden toegelicht."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "open modellen bij ondernemingen in vijf maanden naar 30% tokenaandeel gingen",
+    "probleem": "De samenvatting vermeldt een stijging vanaf bijna nul, maar die context ontbreekt. Belangrijker: de bron maakt niet duidelijk welke ondernemingen of welk gebruik de cijfers dekken. De passage kan als een marktaandeel voor alle ondernemingen worden gelezen.",
+    "voorstel": "Vermeld het beginpunt en begrens de claim tot de cijfers waarop Lambert reageert. Benoem dat de dekking daarvan niet duidelijk is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "wetenschappers in een studie met meer dan 1.800 deelnemers bijna een verdubbeling van hun productiviteit rapporteren",
+    "probleem": "De zelfrapportage en bedrijfsattributie staan er terecht, maar de selectie van deelnemers ontbreekt. Het ging om deelnemers aan OpenAI's eigen ChatGPT for Academic Researchers-programma, niet om een beschreven representatieve groep wetenschappers.",
+    "voorstel": "Noem het programma en verduidelijk dat gerapporteerde productiviteit geen onafhankelijk gemeten productiviteitswinst is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Eén bron",
+    "probleem": "De bronstatus is zichtbaar, maar een hype-meter ontbreekt bij alle uitgewerkte onderwerpen. Daardoor ontbreekt de gevraagde afweging tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per uitgewerkt onderwerp één toegestane stand toe met één zin uitleg. De triagescores zijn geen vervanging voor die afweging."
+  },
+  {
+    "ernst": "klein",
+    "passage": "een beperkte alignment-pilot met OpenAI rond de grootste RL-run",
+    "probleem": "Alignment en RL-run worden niet uitgelegd. Ook proctored examens, spraakcorpora, embedded assessments, tokens en contextvenster blijven elders onvertaald of onverklaard.",
+    "voorstel": "Gebruik gewone Nederlandse omschrijvingen of leg elk vakwoord bij het eerste gebruik kort uit."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Scholen die AI-tools voor jonge kinderen overwegen, doen er goed aan te vragen hoe de leverancier leeftijdscontrole test.",
+    "probleem": "Dit is een bruikbaar aandachtspunt, maar blijft algemeen. Buiten Oostende krijgt de Vlaamse vertaalslag geen concreet gebruiksscenario.",
+    "voorstel": "Maak minstens één onderwijsaanbeveling concreet met een duidelijk hypothetische situatie in een Vlaamse school, zonder werkelijk gebruik door een school te suggereren."
+  }
+]

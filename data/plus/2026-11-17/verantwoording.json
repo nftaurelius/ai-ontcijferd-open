@@ -1,0 +1,87 @@
+[
+  {
+    "passage": "Oostende rekent op AI om 20,7 miljoen euro te besparen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Samenvatting en kop noemen AI nu één van de maatregelen in een pakket."
+  },
+  {
+    "passage": "studenten worden willekeurig verdeeld over groepen",
+    "beslissing": "verwerkt",
+    "toelichting": "Randomisering wordt uitgelegd als willekeurige toewijzing van deelnemers of groepen, zonder de eenheid vast te leggen; extra nakijkpunt toegevoegd."
+  },
+  {
+    "passage": "Het resultaat pleit ervoor dat docenten zelf mee bepalen hoe AI in hun les wordt ingezet, in plaats van een tool van bovenaf op te leggen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven als conclusie van de auteurs en mogelijke les; ontbrekende vergelijkingsgroep benoemd."
+  },
+  {
+    "passage": "een artikel dat nog niet door vakgenoten is beoordeeld",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door de vaststelling dat het op arXiv staat en dat de pagina niets zegt over beoordeling, ook bij het tweede onderzoek."
+  },
+  {
+    "passage": "De stad noemt als aanleiding 271 miljoen euro schulden en ongeveer 20 miljoen euro minder uit het Gemeentefonds van Vlaanderen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Schulden als reden voor de hervorming en de latere Gemeentefondsbesparing van circa 20 miljoen over de komende jaren zijn nu onderscheiden."
+  },
+  {
+    "passage": "Een softwarebibliotheek die audio ongemerkt dubbel codeerde, liet één model kinderen als dertigers en veertigers inschatten.",
+    "beslissing": "verwerkt",
+    "toelichting": "Alle drie de faalwijzen staan er nu beknopt in."
+  },
+  {
+    "passage": "Geen van de fouten gaf een waarschuwing of foutcode, dus gewone monitoring zou ze missen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot de drie beschreven faalwijzen en toegeschreven aan de auteurs, met uitleg over foutcodes en uitvoerformaat."
+  },
+  {
+    "passage": "classificeerden de modellen kinderen in 2,5% tot 42,5% van de antwoorden als ouder dan 13",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegevoegd dat het om antwoorden op opnamen uit twee verzamelingen gaat, niet om foutpercentages van consumentendiensten; de burgersuitleg is bijgesteld."
+  },
+  {
+    "passage": "Opleidingen informatica krijgen vragen van studenten over hun toekomstperspectief.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beide gevolgclaims geschrapt en vervangen door als mogelijkheid geformuleerde aandachtspunten."
+  },
+  {
+    "passage": "Alleen de kop is hier als signaal bruikbaar",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar wat de kop wel en niet aantoont, zonder werkwijzeverwijzing; alleen de betaalmuur wordt kort genoemd om uit te leggen waarom we enkel de kop weergeven."
+  },
+  {
+    "passage": "zonder de eerder bekendgemaakte incidenten",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu expliciet dat de pilot de bekende incidenten niet dekt, met link naar de tweede METR-post."
+  },
+  {
+    "passage": "volgens het bedrijf ruim 60% lagere kosten per taak",
+    "beslissing": "verwerkt",
+    "toelichting": "Vergelijking met Qwen3.8-Max toegevoegd en vermeld dat taken en testvoorwaarden niet worden toegelicht."
+  },
+  {
+    "passage": "open modellen bij ondernemingen in vijf maanden naar 30% tokenaandeel gingen",
+    "beslissing": "verwerkt",
+    "toelichting": "Beginpunt 'bijna nul' toegevoegd en onduidelijke dekking van de cijfers benoemd."
+  },
+  {
+    "passage": "wetenschappers in een studie met meer dan 1.800 deelnemers bijna een verdubbeling van hun productiviteit rapporteren",
+    "beslissing": "verwerkt",
+    "toelichting": "Programma genoemd en gemarkeerd als zelfrapportage, niet als onafhankelijk gemeten winst."
+  },
+  {
+    "passage": "**Status:** Eén bron",
+    "beslissing": "verwerkt",
+    "toelichting": "Per uitgewerkt onderwerp is één hype-meterstand met één zin uitleg toegevoegd; standen staan ter controle in een nakijkcommentaar."
+  },
+  {
+    "passage": "een beperkte alignment-pilot met OpenAI rond de grootste RL-run",
+    "beslissing": "verwerkt",
+    "toelichting": "Alignment, RL-run, embedded assessments, tokens, contextvenster, spraakcorpora en proctored examens zijn nu kort uitgelegd."
+  },
+  {
+    "passage": "Scholen die AI-tools voor jonge kinderen overwegen, doen er goed aan te vragen hoe de leverancier leeftijdscontrole test.",
+    "beslissing": "verwerkt",
+    "toelichting": "Concreet, expliciet hypothetisch voorbeeld van een Vlaamse basisschool met een voorleesassistent toegevoegd."
+  }
+]
