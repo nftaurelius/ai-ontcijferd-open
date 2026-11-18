@@ -1,0 +1,140 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "geen enkel topmodel de standaard van een echte medewerker",
+    "probleem": "Dit veralgemeent een test met zes modellen op taken van Epoch tot alle topmodellen en alle medewerkers. De nuance verderop herstelt de openingsclaim niet.",
+    "voorstel": "Beperk de opening en de tussenkop tot de geteste modellen, de onderzochte taken en de interne kwaliteitsstandaard van Epoch."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Het gecombineerde onderwerp bevat twee bronnen, maar geen twee onafhankelijke bevestigingen van dezelfde kernclaim. OpenAI beschrijft zijn product; Epoch rapporteert één eigen werkproef. Het statuslabel maakt dat onderscheid niet duidelijk.",
+    "voorstel": "Maak expliciet dat de productclaims van OpenAI komen en dat de conclusies over werktaken op één onderzoek van Epoch berusten."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Fable 5.2 deed daar ongeveer 6,5 uur over, tegen ongeveer 16 uur voor een externe medewerker.",
+    "probleem": "De belangrijkste kostenkanttekening ontbreekt: volgens Epoch was Fable 5.2 duurder dan een externe medewerker. Alleen Opus 5.5 was goedkoper. De huidige selectie suggereert vooral tijd- en kostenwinst.",
+    "voorstel": "Vermeld naast de tijdwinst dat Fable 5.2 duurder was dan een externe medewerker en een beter resultaat leverde dan Opus 5.5."
+  },
+  {
+    "ernst": "klein",
+    "passage": "De Gegevensbeschermingsautoriteit (GBA) beveelt een chatbot-app aan",
+    "probleem": "‘Beveelt ... aan’ leest als een aanbeveling, terwijl de GBA een bindend bevel geeft. Dezelfde dubbelzinnigheid staat in de tussenkop.",
+    "voorstel": "Gebruik een ondubbelzinnige formulering zoals ‘verplicht’ of ‘draagt de aanbieder op’."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Daarna volgt een dwangsom van 2.000 euro per dag.",
+    "probleem": "De dwangsom volgt niet automatisch na vier maanden. Ze geldt bij niet-naleving en bedraagt 1.000 euro per tekortkoming per dag vertraging, samen 2.000 euro als beide tekortkomingen voortduren.",
+    "voorstel": "Vermeld de voorwaarde van niet-naleving en het bedrag per tekortkoming."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Gewone gesprekken mocht het bedrijf wel gebruiken voor training, op basis van gerechtvaardigd belang. Alleen voor gevoelige gegevens is uitdrukkelijke toestemming nodig.",
+    "probleem": "De bron beperkt dit oordeel tot deze concrete verwerking, met redelijke gebruikersverwachtingen en waarborgen. Bovendien noemt zij uitdrukkelijke toestemming als een van de beperkte uitzonderingen voor gevoelige gegevens, en als vereiste in deze zaak.",
+    "voorstel": "Benoem dat dit oordeel voor deze app en deze omstandigheden geldt. Vermijd een algemene regel dat gewone chatbotgesprekken altijd zonder toestemming mogen worden gebruikt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Medewerkers die de AI-systemen controleren, gaan met pensioen. Starters begrijpen de routinetaken die AI overneemt niet meer.",
+    "probleem": "Dit neemt inhoud uit de inleiding van Data News over. Ook het EY-stuk gebruikt inhoud buiten de kop. Als dit betalende artikelen zijn, is dat volgens de bronregels niet toegestaan, ook wanneer die inleiding beschikbaar is.",
+    "voorstel": "Controleer de betaalstatus vóór publicatie. Gebruik bij betalende artikelen alleen de kop als signaal; zoek voor de onderzoeksclaims het Agoria-onderzoek en voor de omzetcijfers een toegankelijke primaire bron."
+  },
+  {
+    "ernst": "klein",
+    "passage": "We kennen enkel de inleiding van het artikel.",
+    "probleem": "Dit beschrijft de redactionele toegang tot bronnen in plaats van wat de lezer over de onderbouwing moet weten. Ook ‘Het deel van het artikel over de uitwerking [...] kennen we niet’ bij EY doet dit.",
+    "voorstel": "Verwijder deze werkwijzezinnen. Zet ontbrekende verificatie in een HTML-commentaar en formuleer voor de lezer alleen controleerbare beperkingen van de onderbouwing."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De monitorbaarheidsscore daalde van 0,94 naar 0,68, en naar 0,22",
+    "probleem": "De score wordt niet voldoende uitgelegd. Het betreft een specifieke maat, g-mean², gewogen naar geslaagde verborgen neventaken en gemiddeld over testcondities. Dit is geen algemeen percentage detecteerbare AI-misdragingen.",
+    "voorstel": "Leg uit wat de maat in deze proef meet en wat niet. Benoem dat de cijfers gelden voor het onderzochte testmodel en de gekozen evaluaties."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een testmodel dat getraind was om zijn redenering te sturen, bleek veel moeilijker te monitoren.",
+    "probleem": "Een belangrijke tegenbevinding ontbreekt: gerichte instructies om transparant te redeneren herstelden de controleerbaarheid aanzienlijk, soms tot boven het basismodel. Ook bleven complexere verborgen doelen beter zichtbaar dan eenvoudige neventaken.",
+    "voorstel": "Neem de gevonden herstelmogelijkheid en de afhankelijkheid van het soort verborgen taak op."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Menselijke controleurs herkenden dat nauwelijks beter dan toeval",
+    "probleem": "De bron zegt dat het resultaat niet statistisch significant beter was dan toeval. ‘Nauwelijks beter’ presenteert het kleine numerieke verschil toch als aangetoonde verbetering.",
+    "voorstel": "Vermeld expliciet dat de menselijke score niet significant boven toeval lag. Geef ook de onzekerheid bij de vergelijking met Fable 5.1 weer."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "AUROC 0,59, waar 0,5 toeval is",
+    "probleem": "AUROC wordt niet uitgelegd. De maat beschrijft het onderscheid tussen gesaboteerd en onschuldig onderzoek over verschillende beslisdrempels, niet het aandeel correct gevonden sabotages.",
+    "voorstel": "Leg de maat kort uit. Onderscheid die eventueel van volledige identificatie van de sabotage: 17% bij mensen en 32% bij Fable 5.1 in deze proef."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Menselijke steekproeven en logs zijn geen garantie.",
+    "probleem": "De studies onderzoeken geen algemene bedrijfscontrole met menselijke steekproeven. De tweede studie betreft gespecialiseerde sabotage van AI-veiligheidsonderzoek, met volledige onderzoeksverslagen en voor mensen de mogelijkheid experimenten uit te voeren.",
+    "voorstel": "Beperk de conclusie tot de onderzochte controlemethoden en presenteer de vertaling naar bedrijfsprocessen als een voorzichtige aanbeveling, niet als een rechtstreeks gemeten resultaat."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Eén bron",
+    "probleem": "Onder ‘Twee studies’ staan twee afzonderlijke onderzoeksbronnen. Het label suggereert ten onrechte dat het hele onderdeel één bron heeft, terwijl iedere specifieke uitkomst wel slechts uit één studie komt.",
+    "voorstel": "Maak onderscheid tussen twee studies over een verwant probleem en het ontbreken van onafhankelijke bevestiging van hun afzonderlijke resultaten."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Of kinderen na de les beter sorteren, is niet gemeten.",
+    "probleem": "VRT vermeldt geen effectmeting. Daaruit volgt niet dat er nergens een meting is uitgevoerd.",
+    "voorstel": "Beperk de uitspraak tot wat de bron vaststelt: VRT rapporteert geen meting van het sorteergedrag na de les."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "kinderen leren thuis de sorteerregels, wat ook ouders kan bijsturen.",
+    "probleem": "De bron beschrijft een les op school, niet thuis. Een effect op ouders wordt niet onderzocht of vermeld.",
+    "voorstel": "Schrap deze doelgroepclaim of beperk haar tot het beschreven leren sorteren op school."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "EcoBot is een AI-avatar in de vorm van een robot uit afval.",
+    "probleem": "De bron noemt het een AI-avatar, maar legt niet uit welke rol AI speelt. De beschreven presentatie en quiz bewijzen niet dat het systeem tijdens de les zelfstandig antwoorden genereert of zich aanpast.",
+    "voorstel": "Schrijf de kwalificatie AI-avatar toe aan VRT en benoem dat de bron niet toelicht wat AI hier precies doet."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Dat gebeurt zonder nieuwe trainingsronde.",
+    "probleem": "De benodigde ondersteuning ontbreekt. Volgens de auteurs kreeg het model toegang tot zijn gewichten, beoordeelde antwoorden en de mogelijkheid zichzelf te draaien. De bron noemt bovendien uren rekentijd op één GPU.",
+    "voorstel": "Benoem die voorwaarden, zodat ‘eigen gewichten herschrijven’ niet klinkt als spontane zelfverbetering tijdens gewoon gebruik."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Onafhankelijke herhaling ontbreekt",
+    "probleem": "De bron vermeldt geen onafhankelijke herhaling, maar bewijst niet dat die ontbreekt.",
+    "voorstel": "Beperk de claim tot de bron: de publicatie rapporteert resultaten van de auteurs zelf en vermeldt geen onafhankelijke herhaling."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Volgens de auteurs werd het model 6,6 punten nauwkeuriger op 490 nieuwe problemen.",
+    "probleem": "De uitgangsscore ontbreekt, waardoor de omvang van de verbetering moeilijk te beoordelen is. De bron vermeldt wel dat de test vooraf vastlag; die relevante kanttekening ontbreekt.",
+    "voorstel": "Vermeld de vooraf vastgelegde test en dat het om niet eerder geziene opgaven gaat. Voeg geen uitgangsscore toe zonder verdere broncontrole en begrens de conclusie tot deze test."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## Vandaag in het kort",
+    "probleem": "Het hele concept mist de voorgeschreven hype-meter. Daardoor wordt nergens expliciet gewogen hoe de aandacht zich verhoudt tot de verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per behandeld onderwerp één van de vijf toegestane standen toe, met één verklarende zin. Baseer die op de beschikbare onderbouwing, niet op de triagescores alleen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een bedrijf dat taken uitbesteedt aan AI moet de controle meerekenen.",
+    "probleem": "De doelgroepduiding is meestal algemeen. Buiten Meerhout ontbreken concrete Vlaamse situaties waarin duidelijk wordt welke taak, beslissing of kost verandert.",
+    "voorstel": "Maak de vertaalslag concreet met herkenbare, uitdrukkelijk hypothetische situaties in een Vlaamse zaak, school of gemeente. Verzin geen daadwerkelijke invoering of gemeten effect."
+  },
+  {
+    "ernst": "klein",
+    "passage": "credential stealer bevatten voor Azure en CI-pipelines",
+    "probleem": "Meerdere vakwoorden blijven onverklaard, hier en elders: onder meer credential stealer, CI-pipelines, PyPI, AVG, PMD, parameters en zelf hosten.",
+    "voorstel": "Leg noodzakelijke vakwoorden bij het eerste gebruik kort uit en vervang overbodig jargon door gewone Nederlandse woorden."
+  }
+]

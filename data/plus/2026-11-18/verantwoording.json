@@ -1,0 +1,117 @@
+[
+  {
+    "passage": "geen enkel topmodel de standaard van een echte medewerker",
+    "beslissing": "verwerkt",
+    "toelichting": "Opening en tussenkop beperkt tot de zes geteste modellen, Epochs eigen taken en Epochs eigen standaard."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Status maakt nu onderscheid tussen OpenAI-productclaims en de ene werkproef van Epoch."
+  },
+  {
+    "passage": "Fable 5.2 deed daar ongeveer 6,5 uur over, tegen ongeveer 16 uur voor een externe medewerker.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vermeld dat Fable 5.2 duurder was dan een externe maar beter scoorde dan Opus 5.5."
+  },
+  {
+    "passage": "De Gegevensbeschermingsautoriteit (GBA) beveelt een chatbot-app aan",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door 'gelast' in opening en kop, conform 'ordonne' in de bron."
+  },
+  {
+    "passage": "Daarna volgt een dwangsom van 2.000 euro per dag.",
+    "beslissing": "verwerkt",
+    "toelichting": "Voorwaarde van niet-naleving en 1.000 euro per tekortkoming per dag vermeld; schrapping van de bewering over automatisch volgen."
+  },
+  {
+    "passage": "Gewone gesprekken mocht het bedrijf wel gebruiken voor training, op basis van gerechtvaardigd belang.",
+    "beslissing": "verwerkt",
+    "toelichting": "Oordeel begrensd tot deze app en omstandigheden; toestemming als beperkte uitzondering genuanceerd."
+  },
+  {
+    "passage": "Medewerkers die de AI-systemen controleren, gaan met pensioen. Starters begrijpen de routinetaken die AI overneemt niet meer.",
+    "beslissing": "verwerkt",
+    "toelichting": "Omdat de betaalstatus onbekend is, is de inhoud geschrapt en alleen de kop als signaal gebruikt, met NAKIJKEN-commentaar; geldt ook voor EY (inclusief omzetcijfers)."
+  },
+  {
+    "passage": "We kennen enkel de inleiding van het artikel.",
+    "beslissing": "verwerkt",
+    "toelichting": "Werkwijzezinnen verwijderd; beperkingen zijn nu geformuleerd als wat de berichtgeving wel en niet onderbouwt."
+  },
+  {
+    "passage": "De monitorbaarheidsscore daalde van 0,94 naar 0,68, en naar 0,22",
+    "beslissing": "verwerkt",
+    "toelichting": "g-mean² uitgelegd en begrensd tot het testmodel en de evaluaties."
+  },
+  {
+    "passage": "Een testmodel dat getraind was om zijn redenering te sturen, bleek veel moeilijker te monitoren.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herstel via transparantie-instructies en het verschil tussen complexe en eenvoudige verborgen taken toegevoegd."
+  },
+  {
+    "passage": "Menselijke controleurs herkenden dat nauwelijks beter dan toeval",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door 'niet significant beter dan toeval' en het verschil met Fable 5.1 als 'binnen de ruis' weergegeven."
+  },
+  {
+    "passage": "AUROC 0,59, waar 0,5 toeval is",
+    "beslissing": "verwerkt",
+    "toelichting": "AUROC uitgelegd en volledige identificatie (17% en 32%) apart vermeld."
+  },
+  {
+    "passage": "Menselijke steekproeven en logs zijn geen garantie.",
+    "beslissing": "verwerkt",
+    "toelichting": "Conclusie beperkt tot de onderzochte methoden en vertaling naar bedrijven als voorzichtige aanbeveling."
+  },
+  {
+    "passage": "**Status:** Eén bron",
+    "beslissing": "verwerkt",
+    "toelichting": "Status bij de twee studies verduidelijkt: twee studies, elk resultaat ongeverifieerd."
+  },
+  {
+    "passage": "Of kinderen na de les beter sorteren, is niet gemeten.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven tot 'VRT rapporteert geen meting'."
+  },
+  {
+    "passage": "kinderen leren thuis de sorteerregels, wat ook ouders kan bijsturen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Claim geschrapt; vervangen door wat de bron wel zegt."
+  },
+  {
+    "passage": "EcoBot is een AI-avatar in de vorm van een robot uit afval.",
+    "beslissing": "verwerkt",
+    "toelichting": "Kwalificatie toegeschreven aan VRT, met vermelding dat de rol van AI niet wordt toegelicht."
+  },
+  {
+    "passage": "Dat gebeurt zonder nieuwe trainingsronde.",
+    "beslissing": "verwerkt",
+    "toelichting": "Voorwaarden toegevoegd: toegang tot gewichten, beoordeelde antwoorden, zelf kunnen draaien, uren op één GPU."
+  },
+  {
+    "passage": "Onafhankelijke herhaling ontbreekt",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven tot 'de publicatie vermeldt geen onafhankelijke herhaling'."
+  },
+  {
+    "passage": "Volgens de auteurs werd het model 6,6 punten nauwkeuriger op 490 nieuwe problemen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vooraf vastgelegde test en ongeziene opgaven vermeld; geen uitgangsscore toegevoegd; ook 'wiskundeopgaven' geschrapt omdat de bron dat bij deze test niet zegt."
+  },
+  {
+    "passage": "## Vandaag in het kort",
+    "beslissing": "verwerkt",
+    "toelichting": "Per onderwerp een hype-meter met één standaardwoord en één zin uitleg toegevoegd."
+  },
+  {
+    "passage": "Een bedrijf dat taken uitbesteedt aan AI moet de controle meerekenen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Waar nuttig expliciet hypothetische Vlaamse voorbeelden toegevoegd, zonder gemeten effecten te beweren."
+  },
+  {
+    "passage": "credential stealer bevatten voor Azure en CI-pipelines",
+    "beslissing": "verwerkt",
+    "toelichting": "AVG, PMD, PyPI, credential stealer, CI-pipelines, parameters/gewichten en zelf hosten kort uitgelegd."
+  }
+]
