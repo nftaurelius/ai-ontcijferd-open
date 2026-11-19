@@ -1,0 +1,102 @@
+[
+  {
+    "passage": "maar die studie is zelf nog niet in te zien",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door de controleerbare vaststelling dat alleen een tweedehands bericht de studie beschrijft, met een NAKIJKEN-opmerking over de beschikbaarheid."
+  },
+  {
+    "passage": "Lees \"een kwart van het werk\" als een kwart van de taken, niet als een kwart van de banen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Stellige omzetting naar taken geschrapt; de tekst zegt nu dat het bericht de meeteenheid niet noemt en dat het geen voorspeld banenverlies is."
+  },
+  {
+    "passage": "dat de arbeidsmarkt flexibeler wordt",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu expliciet vermeld dat ondernemingen gemakkelijker personeel kunnen ontslaan en werknemers betere opleidingen krijgen, toegeschreven via TRT."
+  },
+  {
+    "passage": "Het is volgens Google vanaf vandaag beschikbaar",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar een begonnen uitrol volgens Google, met een NAKIJKEN-opmerking over de publicatiedatum."
+  },
+  {
+    "passage": "plaats 3 met een score van 61 op de Intelligence Index van Artificial Analysis en om 32% lagere kosten per taak",
+    "beslissing": "verwerkt",
+    "toelichting": "Score gekoppeld aan xhigh en kostenbesparing aan high, met de kanttekening dat die voor de geteste taken geldt."
+  },
+  {
+    "passage": "plaats 3 met een score van 61 op de Intelligence Index van Artificial Analysis",
+    "beslissing": "verwerkt",
+    "toelichting": "Er is geen testomschrijving beschikbaar en die verzin ik niet; de tekst zegt nu dat Google niet toelicht wat de index meet of wat de juridische en fiscale tests behelzen."
+  },
+  {
+    "passage": "Een rangschikking van Artificial Analysis geeft deels steun.",
+    "beslissing": "verwerkt",
+    "toelichting": "De Capability Index is als aparte test benoemd en de tekst zegt expliciet dat score 61 en kostenbesparing daardoor niet bevestigd zijn."
+  },
+  {
+    "passage": "Bij strenge beoordeling door experts kwam het aandeel bruikbare vragen op maximaal 56,8%.",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu 'klaar voor gebruik door de leerkracht', met de blinde beoordeling en de hoge correctheid en leerplanaansluiting erbij."
+  },
+  {
+    "passage": "meet niet hoeveel tijd een leerkracht werkelijk wint",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot het ontbreken van een tijdwinstmeting in de samenvatting, met een NAKIJKEN-opmerking."
+  },
+  {
+    "passage": "wie toetsen voorbereidt, ziet dat AI hooguit ontwerpen levert die een leerkracht nog moet nakijken",
+    "beslissing": "verwerkt",
+    "toelichting": "Conclusie beperkt tot VeriMath en deze proef; de status vermeldt dat het een niet onafhankelijk bevestigde preprint van de makers is."
+  },
+  {
+    "passage": "groeide de capaciteit van verkochte AI-chips voor \"agentische inferentie\" met een factor 4,6",
+    "beslissing": "verwerkt",
+    "toelichting": "Verduidelijkt dat het gemodelleerde capaciteit is van het cumulatieve chipbestand voor vaste taken, vergeleken met piekrekenkracht bij 8-bitberekeningen."
+  },
+  {
+    "passage": "met een onzekerheidsmarge van 4,2 tot 5,1 keer",
+    "beslissing": "verwerkt",
+    "toelichting": "Niveau van 90% toegevoegd en vermeld dat onzekerheid over de gemodelleerde prestaties buiten de marge valt."
+  },
+  {
+    "passage": "het cijfer is context voor de snelle opkomst van AI-agenten",
+    "beslissing": "verwerkt",
+    "toelichting": "Adoptieclaim geschrapt; de lokale les zegt nu wat het cijfer niet bewijst voor een Vlaams ontwikkelteam."
+  },
+  {
+    "passage": "zonder dure productie",
+    "beslissing": "verwerkt",
+    "toelichting": "Het kostenvoordeel staat niet in de bron en is geschrapt."
+  },
+  {
+    "passage": "wat de politie hier zelf vermeldt",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu toegeschreven aan VRT, met een NAKIJKEN-opmerking over de oorspronkelijke politieberichten."
+  },
+  {
+    "passage": "Die draait dan 24/7 en je stuurt hem aan via een Telegram-bot die alleen jij kunt gebruiken.",
+    "beslissing": "verwerkt",
+    "toelichting": "Werkings- en toegangsclaims zijn toegeschreven aan de maker en bereikbaarheid is onderscheiden van zelfstandige taakuitvoering."
+  },
+  {
+    "passage": "verkoopt eigen cursussen",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door 'promoot eigen aanbod', wat de beschrijving aantoont, met een NAKIJKEN-opmerking over betaalde cursussen."
+  },
+  {
+    "passage": "Bedrijfs- of klantgegevens op een externe server en via Telegram vragen een eigen afweging onder de AVG",
+    "beslissing": "verwerkt",
+    "toelichting": "De ongebronde juridische duiding is geschrapt en vervangen door een neutrale waarschuwing, met een NAKIJKEN-opmerking om een privacybron te zoeken."
+  },
+  {
+    "passage": "**Status:** Eén bron",
+    "beslissing": "verwerkt",
+    "toelichting": "Bij elk hoofdonderwerp is een hype-meter met één toegestane stand en één zin uitleg toegevoegd, gebaseerd op aandacht tegenover Vlaamse impact."
+  },
+  {
+    "passage": "Daarnaast tonen een preprint en nieuwe cijfers van Epoch AI",
+    "beslissing": "verwerkt",
+    "toelichting": "Preprint en API zijn bij het eerste gebruik uitgelegd, en 'exploits' is vervangen door gewone taal."
+  }
+]

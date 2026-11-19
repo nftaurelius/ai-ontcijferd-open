@@ -1,0 +1,122 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "maar die studie is zelf nog niet in te zien",
+    "probleem": "TRT zegt niet dat de studie niet openbaar of niet raadpleegbaar is. Het ontbreken van een rechtstreekse rapportlink bewijst dat niet.",
+    "voorstel": "Beperk de vaststelling tot wat controleerbaar is: TRT beschrijft de studie, maar geeft geen inzicht in de berekening. Laat de beschikbaarheid van het rapport redactioneel controleren."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Lees \"een kwart van het werk\" als een kwart van de taken, niet als een kwart van de banen.",
+    "probleem": "TRT definieert de meeteenheid van 'werk' niet. De bron ondersteunt dat McKinsey herplaatsing veronderstelt, maar niet dat precies een kwart van het aantal taken wordt bedoeld. Het zou bijvoorbeeld ook om arbeidsuren kunnen gaan.",
+    "voorstel": "Schrap de stellige omzetting naar taken. Benoem dat het bericht de meeteenheid niet verduidelijkt en dat de raming niet gelijkstaat aan voorspeld banenverlies."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "dat de arbeidsmarkt flexibeler wordt",
+    "probleem": "Deze formulering verbergt een wezenlijk onderdeel van het voorstel. TRT vermeldt expliciet dat ondernemingen gemakkelijker personeel zouden kunnen ontslaan, naast betere opleidingen voor werknemers.",
+    "voorstel": "Benoem beide onderdelen feitelijk en schrijf ze toe aan McKinsey via TRT. Zo kan de lezer de gevolgen voor werknemers beoordelen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het is volgens Google vanaf vandaag beschikbaar",
+    "probleem": "Google spreekt over een uitrol die begint op de publicatiedag. Dat is niet hetzelfde als volledige beschikbaarheid. Bovendien behandelt deze dagbrief het voorafgaande etmaal; 'vandaag' is niet zonder datumcontrole over te nemen.",
+    "voorstel": "Gebruik een gecontroleerde publicatiedatum en behoud het onderscheid tussen een begonnen uitrol en algemene beschikbaarheid."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "plaats 3 met een score van 61 op de Intelligence Index van Artificial Analysis en om 32% lagere kosten per taak",
+    "probleem": "De bron koppelt de score van 61 aan de hoogste redeneerinstelling, xhigh, en de kostenbesparing aan de standaardinstelling, high. Die verschillende testvoorwaarden verdwijnen, waardoor de cijfers één prestatieprofiel lijken te beschrijven.",
+    "voorstel": "Vermeld bij elk cijfer de gebruikte instelling en verduidelijk dat de kostenclaim geldt voor de geteste taken, niet automatisch voor eigen werk."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "plaats 3 met een score van 61 op de Intelligence Index van Artificial Analysis",
+    "probleem": "De tekst legt niet uit wat deze index meet, hoe de score moet worden gelezen en wat buiten de test valt. De algemene kanttekening over Nederlandstalige taken volstaat daarvoor niet. Ook de juridische en fiscale tests blijven inhoudelijk ongeduid.",
+    "voorstel": "Voeg controleerbare testomschrijvingen en beperkingen toe. Schrap scores of rangplaatsen wanneer de bron onvoldoende informatie biedt om ze verantwoord te duiden."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een rangschikking van Artificial Analysis geeft deels steun.",
+    "probleem": "De getoonde Capability Index is een andere rangschikking dan de Intelligence Index. Hij bevestigt de genoemde score van 61 en de kostenbesparing van 32% niet. De latere formulering 'De kernclaims' maakt onvoldoende duidelijk welke claims wel en niet onafhankelijk worden ondersteund.",
+    "voorstel": "Benoem de Capability Index als afzonderlijke test. Geef expliciet aan dat deze bron de vakgebiedrangplaatsen ondersteunt, maar niet de genoemde Intelligence Index-score of kostenbesparing."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Bij strenge beoordeling door experts kwam het aandeel bruikbare vragen op maximaal 56,8%.",
+    "probleem": "De bron meet gereedheid voor gebruik door een leerkracht, niet bruikbaarheid in brede zin. Een afgewezen vraag kan na aanpassing nog bruikbaar zijn. Bovendien ontbreekt de relevante tegenbalans: de blinde expertbeoordeling vond een hoge wiskundige correctheid en aansluiting bij het leerplan.",
+    "voorstel": "Gebruik de precieze uitkomstmaat, vermeld dat experts blind beoordeelden en neem ook hun positieve bevinding over correctheid en leerplanaansluiting op."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "meet niet hoeveel tijd een leerkracht werkelijk wint",
+    "probleem": "De samenvatting van het onderzoek rapporteert geen tijdwinstmeting. Daaruit volgt niet dat het volledige onderzoek die meting niet bevat.",
+    "voorstel": "Beperk de uitspraak tot het ontbreken van gerapporteerde tijdwinst in de onderzoekssamenvatting. Controleer het volledige artikel voordat je stelt dat iets niet gemeten is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "wie toetsen voorbereidt, ziet dat AI hooguit ontwerpen levert die een leerkracht nog moet nakijken",
+    "probleem": "Dit veralgemeent één onderzoek met een Vietnamees leerplan naar AI als geheel. De resultaten gelden voor dit systeem, de onderzochte modellen en de gekozen toetsopdrachten.",
+    "voorstel": "Beperk de conclusie tot VeriMath en deze proef. Vermeld expliciet dat de resultaten niet onafhankelijk zijn bevestigd; 'Volgens de maker' maakt dat bij een onderzoeksresultaat onvoldoende duidelijk."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "groeide de capaciteit van verkochte AI-chips voor \"agentische inferentie\" met een factor 4,6",
+    "probleem": "De tekst noemt schattingen en een eigen index, maar laat belangrijke afbakeningen weg. Epoch berekent de capaciteit van alle tot elk kwartaal verkochte chips met een vaste verzameling taken en lang hergebruikte context. De vergelijking betreft specifiek piekrekenkracht bij 8-bitberekeningen, niet ongedifferentieerde 'ruwe chipkracht'.",
+    "voorstel": "Maak duidelijk dat dit gemodelleerde capaciteit voor vaste taken is, geen meting van werkelijk uitgevoerde taken. Benoem het cumulatieve chipbestand en de specifieke rekenmaat waarmee wordt vergeleken."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "met een onzekerheidsmarge van 4,2 tot 5,1 keer",
+    "probleem": "De bron noemt dit een onzekerheidsinterval van 90%. Dat niveau ontbreekt. De tekst zegt terecht dat alleen verkoop en chipmix meetellen, maar maakt niet expliciet dat onzekerheid over de gemodelleerde prestaties buiten de marge valt.",
+    "voorstel": "Vermeld het niveau van 90% en benoem de uitgesloten onzekerheid over de prestatieschatting."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "het cijfer is context voor de snelle opkomst van AI-agenten",
+    "probleem": "Epoch meet geen gebruik of verspreiding van AI-agenten. De 'snelle opkomst' is hier een aanvullende, ongestaafde bewering. De Vlaamse vertaalslag blijft bovendien beperkt tot wat het cijfer niet zegt.",
+    "voorstel": "Schrap de adoptieclaim. Maak voor bijvoorbeeld een Vlaams ontwikkelteam concreet dat deze capaciteitsraming geen bewijs is voor lagere eigen facturen of betere prestaties op eigen taken."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "zonder dure productie",
+    "probleem": "VRT vermeldt geen productiekosten, tijdsbesteding of vergelijking met andere campagnevormen. De tekst voegt dus een onbewezen kostenvoordeel toe.",
+    "voorstel": "Schrap het kostenvoordeel. Beperk de lokale les tot het beschreven gebruik van beeldgeneratie voor een verkeerscampagne."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "wat de politie hier zelf vermeldt",
+    "probleem": "VRT noemt de beelden AI-gegenereerd, maar de bron toont niet dat de politie dat zelf aan het publiek vermeldt. De tekst schrijft de politie daarmee onbewezen transparantie toe.",
+    "voorstel": "Schrijf de vaststelling toe aan VRT. Controleer de oorspronkelijke politieberichten voordat je stelt dat de politie het AI-gebruik zelf bekendmaakt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Die draait dan 24/7 en je stuurt hem aan via een Telegram-bot die alleen jij kunt gebruiken.",
+    "probleem": "Dit zijn claims uit de beschrijving van de videomaker, geen onafhankelijk gecontroleerde werking of beveiligingsgarantie. Alleen de installatieduur krijgt nu een expliciete toeschrijving. Online blijven betekent bovendien niet automatisch dat de assistent zelfstandig nuttig blijft doorwerken.",
+    "voorstel": "Schrijf de werkings- en toegangsclaims expliciet toe aan de maker. Presenteer de exclusieve toegang niet als gecontroleerde garantie en onderscheid bereikbaarheid van autonome taakuitvoering."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "verkoopt eigen cursussen",
+    "probleem": "De beschrijving promoot een eigen aanbod over het opbouwen van een AI-agentschap, maar vermeldt niet expliciet dat het betaalde cursussen zijn. Het commerciële belang is wel zichtbaar via de kortingscode en zelfpromotie.",
+    "voorstel": "Benoem alleen de aantoonbare kortingscode en promotie van het eigen aanbod. Controleer vorm en prijs voordat je van verkochte cursussen spreekt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Bedrijfs- of klantgegevens op een externe server en via Telegram vragen een eigen afweging onder de AVG",
+    "probleem": "Deze juridische duiding heeft geen bron. De formulering maakt bovendien geen onderscheid tussen bedrijfsgegevens in het algemeen en persoonsgegevens.",
+    "voorstel": "Voeg een gezaghebbende privacybron toe en baken af dat het om verwerking van persoonsgegevens gaat. Zet broncontrole tot dan in een redactioneel commentaar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Eén bron",
+    "probleem": "In het hele concept ontbreekt de verplichte hype-meter. Een bronstatus beoordeelt de bewijsbasis, niet de verhouding tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg bij elk hoofdonderwerp één toegestane hype-stand toe, met één zin uitleg. Baseer die op aandacht tegenover Vlaamse impact, niet uitsluitend op bronzekerheid."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Daarnaast tonen een preprint en nieuwe cijfers van Epoch AI",
+    "probleem": "Preprint wordt bij het eerste gebruik niet uitgelegd. Elders blijven ook API, benchmarks en exploits zonder uitleg staan.",
+    "voorstel": "Leg elk vakwoord bij het eerste gebruik kort uit of vervang het door gewone taal. Maak bij preprint duidelijk dat het om een onderzoeksversie vóór formele vakbeoordeling gaat."
+  }
+]
