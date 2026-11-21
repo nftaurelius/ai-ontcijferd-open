@@ -1,0 +1,107 @@
+[
+  {
+    "passage": "De Europese Commissie bevestigt dat hackers een publiek beschikbaar AI-hulpmiddel gebruikten",
+    "beslissing": "verwerkt",
+    "toelichting": "Samenvatting en sectie bevestigen alleen het gebruik van een AI-hulpmiddel; Artex wordt toegeschreven aan een EU-functionaris en niet door de Commissie bevestigd."
+  },
+  {
+    "passage": "een aanval die haar interne systemen ruim tien dagen verstoorde",
+    "beslissing": "verwerkt",
+    "toelichting": "Duur is toegeschreven aan Politico, het preventief offline halen en het herstel van de meeste toepassingen zijn toegevoegd."
+  },
+  {
+    "passage": "**Status:** Bevestigd",
+    "beslissing": "verwerkt",
+    "toelichting": "Status onderscheidt nu de bevestigde aanval van de niet onafhankelijk bevestigde details, en dat staat zichtbaar in de tekst."
+  },
+  {
+    "passage": "Een eerder gemeld incident met koelsystemen in Belgische supermarkten is niet aan deze aanval gekoppeld",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar wat de bron zegt: geen bevestigd verband tussen het Belgische en Franse supermarktincident, en geen link met de Commissie gelegd."
+  },
+  {
+    "passage": "ook tegen kleinere organisaties zoals gemeenten",
+    "beslissing": "verwerkt",
+    "toelichting": "Gemeenten uit de CERT-EU-verwachting geschrapt; de tekst zegt expliciet dat de bron niets over gemeenten zegt."
+  },
+  {
+    "passage": "De Commissie moet wel meer samenwerking en gegevensverzameling over AI-geletterdheid organiseren",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven als verzoek aan de Commissie."
+  },
+  {
+    "passage": "De bron zegt niet of lidstaten iets moeten doen of tegen wanneer.",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu staan de gevraagde acties vermeld en alleen het ontbreken van verplichting en termijn wordt als onbekend benoemd."
+  },
+  {
+    "passage": "**Onderwijs:** leerkrachten moeten volgens de conclusies steun krijgen via initiële opleiding, bijscholing en netwerken waarin collega's van elkaar leren.",
+    "beslissing": "verwerkt",
+    "toelichting": "Voorwaarden rond veilig, ethisch en inclusief gebruik, menselijke zeggenschap en ongelijkheid toegevoegd."
+  },
+  {
+    "passage": "Het schrijft ook veel: 161 miljoen tokens tegenover een mediaan van 85,7 miljoen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Context toegevoegd dat het om tokens tijdens de volledige test gaat en de mediaan vergelijkbare open modellen betreft."
+  },
+  {
+    "passage": "De prijs ligt met 0,15 dollar per miljoen invoertokens en 0,50 dollar per miljoen uitvoertokens iets boven de mediaan.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beide medianen (0,14 en 0,32) vermeld en de tarieven als gebruikstarieven benoemd, niet als zelfhostingkosten."
+  },
+  {
+    "passage": "wat gegevensbescherming makkelijker maakt",
+    "beslissing": "verwerkt",
+    "toelichting": "Privacyconclusie geschrapt; de tekst zegt dat de bron niets over gegevensbescherming of hardware zegt."
+  },
+  {
+    "passage": "De machines voor de productie komen van één bedrijf, het Nederlandse ASML.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot EUV-lithografiemachines met korte uitleg."
+  },
+  {
+    "passage": "ongeveer 150.000 chips van het type H100",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu H100-equivalenten, uitgelegd als omrekening met opwaartse en neerwaartse onzekerheden."
+  },
+  {
+    "passage": "China registreerde 3,75 miljard dollar aan servers uit Maleisië",
+    "beslissing": "verwerkt",
+    "toelichting": "Vermeld dat de handelscategorie AI- en gewone servers omvat en dat de prijs het aanknopingspunt is."
+  },
+  {
+    "passage": "AI-chips: weinig leveranciers, en een vermoedelijke smokkelroute",
+    "beslissing": "verwerkt",
+    "toelichting": "Chipgeheugen (HBM) toegevoegd als mogelijk zwaarste knelpunt eind 2025, met Epoch's voorbehoud."
+  },
+  {
+    "passage": "je betaalt indirect voor die chips via AI-diensten",
+    "beslissing": "verwerkt",
+    "toelichting": "Doorrekeningsclaim geschrapt; enkel de gemeten daling van de kost per berekening blijft."
+  },
+  {
+    "passage": "Anthropic-medewerker Levent Alpöge claimt met Claude een bewijs van de Riemann-hypothese",
+    "beslissing": "verwerkt",
+    "toelichting": "Marcus' kanttekening toegevoegd met bronlink, als zijn standpunt weergegeven."
+  },
+  {
+    "passage": "Wat dit voor Vlaanderen betekent, hangt af van hoe de Vlaamse overheid de tekst oppakt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door het concrete ontbreken van Vlaamse maatregelen en termijnen, met koppeling aan lerarenopleiding en leerplannen zonder beslissing te suggereren."
+  },
+  {
+    "passage": "## Vandaag in het kort",
+    "beslissing": "verwerkt",
+    "toelichting": "Per hoofdonderwerp een hype-meter met één standwoord en één zin uitleg toegevoegd."
+  },
+  {
+    "passage": "een model waarvan de gewichten openbaar zijn onder de Apache 2.0-licentie",
+    "beslissing": "verwerkt",
+    "toelichting": "Gewichten, tokens, parameters en agentisch kenniswerk uitgelegd; 'jailbroken' omschreven als omzeilde veiligheidsbeperkingen."
+  },
+  {
+    "passage": "Het volledige omvang van de schade blijft onduidelijk.",
+    "beslissing": "verwerkt",
+    "toelichting": "Gecorrigeerd naar 'De volledige omvang'."
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "De Europese Commissie bevestigt dat hackers een publiek beschikbaar AI-hulpmiddel gebruikten",
+    "probleem": "De Commissie bevestigt het gebruik van AI, maar noemt het hulpmiddel niet. De publieke beschikbaarheid betreft Artex, waarvan het gebruik alleen via een EU-functionaris aan Politico wordt toegeschreven.",
+    "voorstel": "Beperk de bevestiging tot het gebruik van een AI-hulpmiddel. Maak afzonderlijk duidelijk dat de Commissie het gebruik van Artex niet bevestigt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "een aanval die haar interne systemen ruim tien dagen verstoorde",
+    "probleem": "De samenvatting presenteert de duur als onderdeel van de bevestiging door de Commissie. SecurityWeek schrijft die duur toe aan Politico. Bovendien namen medewerkers toepassingen uit voorzorg offline; de tekst laat dat weg en kan daardoor rechtstreekse technische uitval door de aanvallers suggereren.",
+    "voorstel": "Schrijf de duur toe aan de berichtgeving en vermeld dat de Commissie toepassingen preventief uitschakelde. Neem ook op dat de meeste diensten inmiddels hersteld waren."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Bevestigd",
+    "probleem": "De officiële bevestiging van de aanval is onderbouwd, maar twee onafhankelijke bevestigingen van alle kerndetails zijn niet aangetoond. Beide berichten steunen deels op dezelfde woordvoerder en op Politico. Het HTML-commentaar maakt deze beperking niet zichtbaar voor de lezer.",
+    "voorstel": "Onderscheid de officieel bevestigde aanval van de gemelde duur, het gebruikte hulpmiddel en mogelijke gegevensdiefstal. Vermeld zichtbaar dat die aanvullende details niet onafhankelijk zijn bevestigd."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Een eerder gemeld incident met koelsystemen in Belgische supermarkten is niet aan deze aanval gekoppeld",
+    "probleem": "De bron zegt dat geen verband is bevestigd tussen de Belgische en Franse supermarktincidenten. Ze doet die uitspraak niet over het verband tussen de Belgische supermarkten en de Commissie-aanval.",
+    "voorstel": "Schrap deze vergelijking of benoem uitsluitend de vergelijking die de bron maakt: tussen de Belgische en Franse supermarktincidenten."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "ook tegen kleinere organisaties zoals gemeenten",
+    "probleem": "CERT-EU voorspelt vaker voorkomende, snellere en beter schaalbare aanvallen. De aangehaalde waarschuwing noemt kleinere organisaties of gemeenten niet. De Vlaamse toepassing wordt hier ten onrechte onderdeel van de bronclaim.",
+    "voorstel": "Schrap deze toevoeging uit de aan CERT-EU toegeschreven verwachting. Voeg alleen een gemeentelijke toepassing toe met een passende bron."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De Commissie moet wel meer samenwerking en gegevensverzameling over AI-geletterdheid organiseren",
+    "probleem": "De bron zegt dat de Commissie hierom wordt gevraagd. 'Moet wel' maakt van een verzoek een verplichting en contrasteert misleidend met de voorafgaande uitleg dat het om een oproep gaat.",
+    "voorstel": "Beschrijf dit als een verzoek aan de Commissie, niet als een vastgestelde verplichting."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De bron zegt niet of lidstaten iets moeten doen of tegen wanneer.",
+    "probleem": "De bron noemt wel degelijk gevraagde acties: leerplannen, opleidingen en beoordelingsmethoden aanpassen met bestaande EU-kaders. Alleen een verplichtend karakter en een uitvoeringstermijn worden niet vermeld. De formulering verhult de concrete beleidsinhoud.",
+    "voorstel": "Maak onderscheid tussen de beschreven aanbevelingen en het ontbreken van informatie over bindende verplichtingen en deadlines."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Onderwijs:** leerkrachten moeten volgens de conclusies steun krijgen via initiële opleiding, bijscholing en netwerken waarin collega's van elkaar leren.",
+    "probleem": "De tekst laat de expliciete voorwaarden voor AI-gebruik in onderwijs weg: veilig, ethisch en inclusief gebruik, behoud van menselijke zeggenschap en voorkomen dat ongelijkheid toeneemt. Daardoor blijft vooral een opleidingsoproep over.",
+    "voorstel": "Neem ook de voorwaarden rond menselijke zeggenschap en ongelijkheid op bij de onderwijsduiding."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het schrijft ook veel: 161 miljoen tokens tegenover een mediaan van 85,7 miljoen.",
+    "probleem": "Deze aantallen betreffen de volledige evaluatie op de Intelligence Index, niet een antwoord of gewone gebruikstaak. Die context ontbreekt, waardoor de omvang gemakkelijk verkeerd wordt gelezen.",
+    "voorstel": "Vermeld dat het om gegenereerde tokens tijdens de volledige testevaluatie gaat en dat de mediaan vergelijkbare open modellen betreft."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De prijs ligt met 0,15 dollar per miljoen invoertokens en 0,50 dollar per miljoen uitvoertokens iets boven de mediaan.",
+    "probleem": "De vergelijkingswaarden ontbreken. De bron noemt respectievelijk 0,14 en 0,32 dollar. Vooral bij uitvoer verhult 'iets boven' een relevant verschil. Ook blijft onduidelijk dat dit gebruikstarieven zijn, niet de kosten van zelfhosting.",
+    "voorstel": "Geef beide medianen en benoem de tarieven als de door Artificial Analysis vermelde gebruikstarieven. Trek daaruit geen conclusie over lokale gebruikskosten."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "wat gegevensbescherming makkelijker maakt",
+    "probleem": "De modelanalyse bevat geen beoordeling van gegevensbescherming. Open gewichten en een licentie tonen niet aan dat gegevensbescherming eenvoudiger wordt. Ook de praktische haalbaarheid en gegevensstromen van een lokale installatie zijn niet onderzocht in deze bron.",
+    "voorstel": "Schrap de privacyconclusie. Behandel lokale inzet hoogstens als een te onderzoeken mogelijkheid en zoek een bron voor installatievoorwaarden en gegevensverwerking."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De machines voor de productie komen van één bedrijf, het Nederlandse ASML.",
+    "probleem": "De bron beperkt het monopolie tot EUV-lithografiemachines, die met extreem ultraviolet licht patronen op chips aanbrengen. Ze zegt niet dat alle machines voor chipproductie van ASML komen.",
+    "voorstel": "Beperk de claim expliciet tot EUV-lithografiemachines en leg hun functie kort uit."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "ongeveer 150.000 chips van het type H100",
+    "probleem": "Epoch schat ongeveer 150.000 H100-equivalenten, geen daadwerkelijk aantal H100-chips. Het is een ruwe schaalinschatting op basis van handelswaarde en een H100-chipprijs. De bron noemt ook mogelijke Blackwell-chips.",
+    "voorstel": "Gebruik H100-equivalenten en leg uit dat dit een omgerekende schaalinschatting is, geen vaststelling van chiptype of aantal. Vermeld dat volledige serverkosten en mogelijke smokkelpremies de schatting kunnen opblazen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "China registreerde 3,75 miljard dollar aan servers uit Maleisië",
+    "probleem": "Een belangrijke beperking van de smokkelanalyse ontbreekt: de gebruikte douanecode omvat zowel AI-servers als gewone servers. Epoch leidt de vermoedelijke AI-inhoud af uit de hoge prijzen, niet uit een registratie van specifieke AI-chips.",
+    "voorstel": "Vermeld dat de handelscategorie beide soorten servers omvat en dat de prijs het belangrijkste aanknopingspunt voor de AI-interpretatie is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "AI-chips: weinig leveranciers, en een vermoedelijke smokkelroute",
+    "probleem": "Bij de bespreking van leveranciersconcentratie ontbreekt snel chipgeheugen als belangrijk knelpunt. Epoch noemt dit mogelijk zelfs de sterkste productiebeperking eind 2025, met Samsung, SK Hynix en Micron als voornaamste leveranciers.",
+    "voorstel": "Voeg dit knelpunt kort toe, met de tijdsaanduiding en de onzekerheid die Epoch zelf gebruikt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "je betaalt indirect voor die chips via AI-diensten",
+    "probleem": "Epoch bespreekt hardwareprijzen en rekenkracht per dollar, maar onderzoekt niet hoe chipkosten worden doorgerekend aan zelfstandigen. De daaropvolgende erkenning dat abonnementstarieven niet worden behandeld, onderbouwt deze eerdere claim niet.",
+    "voorstel": "Schrap de claim over doorrekening of voeg een bron over de kostenopbouw van AI-diensten toe. Houd de conclusie anders bij de gemeten hardwareverhouding."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Anthropic-medewerker Levent Alpöge claimt met Claude een bewijs van de Riemann-hypothese",
+    "probleem": "Het voorbehoud over verificatie staat er terecht, maar de beschikbare tegenstem ontbreekt. Gary Marcus benadrukt juist de menselijke en symbolische bijdrage en betwist het beeld van een zelfstandige AI-oplossing.",
+    "voorstel": "Neem Marcus' kanttekening met bronverwijzing op als zijn standpunt, niet als onafhankelijk vastgesteld feit."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Wat dit voor Vlaanderen betekent, hangt af van hoe de Vlaamse overheid de tekst oppakt.",
+    "probleem": "Dit is een algemene afhankelijkheid, geen concrete Vlaamse vertaalslag. De volgende zin, 'Dat staat nergens in de bron', bespreekt bovendien de brondekking in plaats van helder te benoemen welke beleidsinformatie ontbreekt.",
+    "voorstel": "Benoem concreet dat de berichtgeving geen Vlaamse maatregelen of uitvoeringstermijn vermeldt. Koppel de beschreven aanbevelingen aan bijvoorbeeld lerarenopleiding en leerplannen, zonder een Vlaamse beslissing te suggereren."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## Vandaag in het kort",
+    "probleem": "Het hele concept mist de voorgeschreven hype-meter. Daardoor ontbreekt de expliciete afweging tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per hoofdonderwerp één toegestane stand toe met één zin uitleg. Baseer die op de beschikbare onderbouwing en maak onzekerheid zichtbaar."
+  },
+  {
+    "ernst": "klein",
+    "passage": "een model waarvan de gewichten openbaar zijn onder de Apache 2.0-licentie",
+    "probleem": "Verschillende vakwoorden worden bij het eerste gebruik niet uitgelegd: gewichten, parameters, tokens en agentisch kenniswerk. De uitleg van contextvenster verklaart niet wat een token is. Ook 'gekraakte AI-agent' kan worden gelezen als gestolen software, terwijl de radar het omzeilen van veiligheidsbeperkingen bedoelt.",
+    "voorstel": "Leg de noodzakelijke termen bij eerste gebruik kort uit. Benoem bij de radar expliciet dat veiligheidsbeperkingen zouden zijn omzeild."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Het volledige omvang van de schade blijft onduidelijk.",
+    "probleem": "Het lidwoord en de verbuiging kloppen niet.",
+    "voorstel": "Gebruik 'De volledige omvang'."
+  }
+]
