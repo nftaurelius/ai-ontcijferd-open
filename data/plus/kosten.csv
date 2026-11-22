@@ -50,3 +50,6 @@ tijd,rol,leverancier,model,tokens_in,tokens_uit,proefdraai
 2026-11-21T14:40:16+01:00,dagbrief,anthropic,claude-sonnet-5-5,14274,6808,nee
 2026-11-21T14:41:06+01:00,dagcontrole,openai,gpt-6-astra,10298,2847,nee
 2026-11-21T14:42:13+01:00,dagbrief,anthropic,claude-sonnet-5-5,22421,11373,nee
+2026-11-22T14:30:12+01:00,dagbrief,anthropic,claude-sonnet-5-5,6419,3668,nee
+2026-11-22T14:30:44+01:00,dagcontrole,openai,gpt-6-astra,4100,1492,nee
+2026-11-22T14:31:05+01:00,dagbrief,anthropic,claude-sonnet-5-5,9958,3722,nee

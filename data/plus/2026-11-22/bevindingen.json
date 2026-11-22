@@ -1,0 +1,68 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "Verder is het een rustige dag",
+    "probleem": "De bronnen geven geen volledig overzicht van het AI-nieuws. Dat andere signalen niet bevestigd zijn, bewijst niet dat er weinig gebeurde.",
+    "voorstel": "Schrap het oordeel over de nieuwsdag. Beperk je tot de vaststelling dat de overige genoemde signalen niet onafhankelijk bevestigd zijn."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een deel van de applicaties lag tijdelijk plat",
+    "probleem": "Dit suggereert dat de aanval de applicaties rechtstreeks uitschakelde. Volgens Regnier haalde de Commissie ze zelf preventief offline.",
+    "voorstel": "Maak ook in de samenvatting duidelijk dat de Commissie de applicaties uit voorzorg offline haalde."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "de beschreven aanvalsmethode zoekt vooral foutieve instellingen en bekende kwetsbaarheden",
+    "probleem": "De Vlaamse vertaalslag koppelt de eigenschappen van ARTEX impliciet aan de aanval op de Commissie. Die koppeling is niet aangetoond. Ook de nadruk 'vooral' staat niet in de bron.",
+    "voorstel": "Benoem uitdrukkelijk dat dit over ARTEX gaat, niet over de vastgestelde aanvalsmethode bij de Commissie. Schrap 'vooral'. Onderbouw het advies over configuratiecontrole en updates met een rechtstreeks toegankelijke beveiligingsbron."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "voor het personeel van de Commissie zijn er geen aanwijzingen voor gegevensdiefstal",
+    "probleem": "De bron beperkt deze mededeling tot gegevens van het personeel 'als geheel'. Door die beperking weg te laten, sluit de tekst ook aanwijzingen voor diefstal bij individuele personeelsleden uit.",
+    "voorstel": "Behoud de beperking 'als geheel' en schrijf de mededeling expliciet toe aan de woordvoerder."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Dat ARTEX ook bij de Commissie werd ingezet, staat nergens.",
+    "probleem": "De tekst laat relevante context weg: volgens het artikel zag CERT-EU vergelijkbare activiteiten tegen zijn eigen achterban en achtte het gebruik van ARTEX daarbij zeer waarschijnlijk. Dat bewijst geen inzet bij dit specifieke incident, maar is wel een belangrijke nuance.",
+    "voorstel": "Vermeld deze inschatting met toeschrijving aan CERT-EU via het artikel. Behoud daarnaast de kanttekening dat ARTEX niet aan dit specifieke incident is gekoppeld."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "de video toont geen resultaten",
+    "probleem": "Alleen de beschrijving van de maker is beschikbaar als onderbouwing. Daaruit valt niet af te leiden wat de video wel of niet toont.",
+    "voorstel": "Beperk de vaststelling tot de beschrijving: die bevat geen uitgewerkt voor-en-naresultaat. Controleer de video voordat je een uitspraak over de beelden doet."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "want ASD-STE100 is oorspronkelijk voor het Engels bedoeld",
+    "probleem": "De beschrijving noemt vliegtuighandleidingen, maar vermeldt niet voor welke taal de standaard is bedoeld. Bovendien bewijst de taal van de standaard niet welke talen deze specifieke skill ondersteunt.",
+    "voorstel": "Voeg een primaire bron over de standaard toe. Behandel Nederlandse ondersteuning afzonderlijk: de maker vermeldt die niet in de beschrijving."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Wie interne of persoonlijke gegevens in een Claude-chat plakt, moet ook aan gegevensbescherming denken. Voor Claude zelf kunnen kosten gelden.",
+    "probleem": "De beschikbare bronnen bevatten geen informatie over gegevensverwerking of tarieven van Claude. Deze praktische kanttekeningen zijn daardoor niet onderbouwd.",
+    "voorstel": "Onderbouw beide punten met toepasselijke privacy- en tariefdocumentatie van Anthropic, of schrap ze."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Eén bron",
+    "probleem": "Bij het hoofdonderwerp ontbreekt de voorgeschreven hype-meter. De bronstatus zegt niets over de verhouding tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg één toegestane stand toe met één zin uitleg. Weeg daarin de onduidelijke rol van AI en het ontbreken van aangetoonde Vlaamse impact; onderbouw de keuze en benoem de onzekerheid."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "AI tegen 2030 een kwart van het Belgische werk kan overnemen",
+    "probleem": "De kop wordt correct als kop weergegeven, maar het cijfer blijft zonder noodzakelijke context. Het is onbekend of 'werk' hier banen, taken of arbeidsuren betekent en op welk onderzoek de raming berust.",
+    "voorstel": "Vermeld expliciet dat de kop geen uitsluitsel geeft over de meeteenheid, aannames of onderzoeksbron. Gebruik het percentage niet als onderbouwde prognose."
+  },
+  {
+    "ernst": "klein",
+    "passage": "op basis van de quintuple aim",
+    "probleem": "Dit vakbegrip wordt niet uitgelegd. Hetzelfde geldt bij het eerste gebruik voor onder meer 'Claude-skill', 'opensource' en 'Riemann-hypothese'.",
+    "voorstel": "Leg noodzakelijke begrippen bij het eerste gebruik kort uit met bronsteun. Laat begrippen weg wanneer ze voor het signaal niet nodig zijn en de beschikbare bron geen uitleg biedt."
+  }
+]

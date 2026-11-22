@@ -1,0 +1,57 @@
+[
+  {
+    "passage": "Verder is het een rustige dag",
+    "beslissing": "verwerkt",
+    "toelichting": "Oordeel over de nieuwsdag geschrapt; alleen vastgesteld dat de overige signalen niet onafhankelijk bevestigd zijn."
+  },
+  {
+    "passage": "Een deel van de applicaties lag tijdelijk plat",
+    "beslissing": "verwerkt",
+    "toelichting": "Samenvatting zegt nu dat de Commissie de applicaties uit voorzorg zelf offline haalde."
+  },
+  {
+    "passage": "de beschreven aanvalsmethode zoekt vooral foutieve instellingen en bekende kwetsbaarheden",
+    "beslissing": "verwerkt",
+    "toelichting": "Eigenschappen worden uitdrukkelijk aan ARTEX toegeschreven, 'vooral' is weg en het niet-onderbouwde advies over updates is geschrapt."
+  },
+  {
+    "passage": "voor het personeel van de Commissie zijn er geen aanwijzingen voor gegevensdiefstal",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperking 'als geheel' hersteld en de mededeling aan de woordvoerder toegeschreven."
+  },
+  {
+    "passage": "Dat ARTEX ook bij de Commissie werd ingezet, staat nergens.",
+    "beslissing": "verwerkt",
+    "toelichting": "CERT-EU's inschatting toegevoegd, met behoud van de kanttekening dat de link met dit incident ontbreekt."
+  },
+  {
+    "passage": "de video toont geen resultaten",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot wat de beschrijving bevat: geen uitgewerkt voor-en-naresultaat."
+  },
+  {
+    "passage": "want ASD-STE100 is oorspronkelijk voor het Engels bedoeld",
+    "beslissing": "verwerkt",
+    "toelichting": "Taalbewering geschrapt omdat ze niet in het bronmateriaal staat; alleen vermeld dat de maker Nederlandse ondersteuning niet noemt."
+  },
+  {
+    "passage": "Wie interne of persoonlijke gegevens in een Claude-chat plakt, moet ook aan gegevensbescherming denken. Voor Claude zelf kunnen kosten gelden.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beide kanttekeningen geschrapt omdat het bronmateriaal ze niet onderbouwt."
+  },
+  {
+    "passage": "**Status:** Eén bron",
+    "beslissing": "verwerkt",
+    "toelichting": "Hype-meter 'Overroepen' toegevoegd met één zin uitleg en benoemde onzekerheid."
+  },
+  {
+    "passage": "AI tegen 2030 een kwart van het Belgische werk kan overnemen",
+    "beslissing": "verwerkt",
+    "toelichting": "Vermeld dat de kop meeteenheid en onderzoeksbron niet geeft en het cijfer geen onderbouwde prognose is."
+  },
+  {
+    "passage": "op basis van de quintuple aim",
+    "beslissing": "niet verwerkt",
+    "toelichting": "Het bronmateriaal biedt geen uitleg van 'quintuple aim', dus die zou onbronbaar zijn; wel uitgelegd: Claude-skill, opensource, Riemann-hypothese en penetratietests."
+  }
+]
