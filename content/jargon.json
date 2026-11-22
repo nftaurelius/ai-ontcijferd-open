@@ -153,5 +153,30 @@
     "term": "CIO",
     "uitleg_leek": "De topverantwoordelijke voor IT en digitale systemen in een bedrijf of organisatie.",
     "voorbeeld": "De CIO van een groot ziekenhuis beslist mee of er een AI-assistent komt."
+  },
+  {
+    "term": "Gerandomiseerde studie",
+    "uitleg_leek": "Een onderzoek waarbij loting bepaalt wie welke behandeling krijgt. Zo zijn de groepen goed vergelijkbaar.",
+    "voorbeeld": "Aan 19 universiteiten werden studenten door loting ingedeeld, zodat het verschil in examenresultaat aan de aanpak kan liggen."
+  },
+  {
+    "term": "Effectgrootte",
+    "uitleg_leek": "Een getal dat zegt hoe groot een verschil precies is, niet alleen dat er een verschil is.",
+    "voorbeeld": "De samenvatting zegt dat studenten beter leerden, maar niet hoeveel beter."
+  },
+  {
+    "term": "Lokvalk",
+    "uitleg_leek": "Een nepdeel van een website of systeem dat bedoeld is om kwaadaardig gedrag op te sporen.",
+    "voorbeeld": "Epoch zag 36.411 oproepen naar zijn lokvalk."
+  },
+  {
+    "term": "SQL-injectie",
+    "uitleg_leek": "Een aanval waarbij kwaadaardige code in een invoerveld op een website wordt gestopt om bij gegevens te komen.",
+    "voorbeeld": "Eén testagent probeerde dit op de website van Epoch, maar kreeg geen toegang tot privé-informatie."
+  },
+  {
+    "term": "Logbestand",
+    "uitleg_leek": "Een bestand waarin een systeem bijhoudt wat er gebeurt.",
+    "voorbeeld": "Meer dan 200 pogingen richtten zich op echte FrontierMath-logbestanden."
   }
 ]

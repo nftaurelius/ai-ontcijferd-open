@@ -1,0 +1,107 @@
+[
+  {
+    "passage": "waarin het toeval bepaalt wie meedoet",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar 'loting deelt de groepen in'; het niveau van de loting is als nakijkpunt gemarkeerd."
+  },
+  {
+    "passage": "Aan 19 universiteiten volgden 7.200 studenten drie semesters.",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu 'drie semesters en in totaal 7.200 studenten aan 19 universiteiten', zonder te suggereren dat dezelfde studenten drie semesters werden gevolgd."
+  },
+  {
+    "passage": "een docent aan een Vlaamse hogeschool of universiteit krijgt een argument om AI-keuzes bij de lesgevers te leggen",
+    "beslissing": "verwerkt",
+    "toelichting": "Conclusie beperkt tot leerwinst met docentontworpen toepassingen en toegevoegd dat een rechtstreekse vergelijking met centraal ontworpen tools niet is beschreven; hogescholen zijn ook uit de claim gehaald."
+  },
+  {
+    "passage": "Onderschat — Een gerandomiseerde studie met examens als meetlat is sterker bewijs dan de meeste meningen over AI in de les.",
+    "beslissing": "verwerkt",
+    "toelichting": "De uitleg beoordeelde bewijskracht in plaats van aandacht versus impact; stand gewijzigd naar Terecht met de ontbrekende effectgrootte en de beperking tot universiteiten als voorbehoud."
+  },
+  {
+    "passage": "een tekst die nog niet is gepubliceerd in een vaktijdschrift",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu: ingediend op 14 november, de samenvatting vermeldt geen tijdschriftpublicatie of beoordeling door vakgenoten."
+  },
+  {
+    "passage": "Beter leren vraagt dus geen populair hulpmiddel.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door de vaststelling dat de leerwinst niet samenging met hogere tevredenheid of meer activiteit in de cursusgegevens."
+  },
+  {
+    "passage": "Zo kunnen ze achteraf geen gunstige uitkomsten uitkiezen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Absolute garantie geschrapt en enkel de definitie behouden; een methodologische bron is in het bronmateriaal niet beschikbaar en staat als nakijkpunt."
+  },
+  {
+    "passage": "De modellen halen op één taak contractorniveau",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu expliciet Fable 5.2 en Opus 5.5, met contractor uitgelegd als externe opdrachtnemer."
+  },
+  {
+    "passage": "geen enkel topmodel de norm van een eigen medewerker haalt",
+    "beslissing": "verwerkt",
+    "toelichting": "Afgebakend tot de zes geteste modellen op Epoch's taken, ook in kop, alinea en verdieping."
+  },
+  {
+    "passage": "Op Epoch's eigen index voor modelprestaties (een benchmark: een vaste set testopdrachten met een score) scoorden ze ongeveer gelijk, een nieuw record.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vermeld dat Epoch niet beschrijft waaruit de index bestaat en dat Epoch hier de enige onafhankelijke meetbron is; OpenAI bevestigt de test niet."
+  },
+  {
+    "passage": "Claim: de nieuwste topmodellen zijn klaar voor echt werk, want ze scoren recordhoog op benchmarks.",
+    "beslissing": "verwerkt",
+    "toelichting": "Niet langer voorgesteld als bestaande claim maar als gevolgtrekking die niet standhoudt, met Epoch als bron voor de weerlegging."
+  },
+  {
+    "passage": "agents omzeilden een omleiding die ze naar een lokale kopie moest sturen",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu 'volgens Trajectory' bij het omzeilen van de omleiding."
+  },
+  {
+    "passage": "Epoch had geen toestemming gegeven",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot het eerste voorval; toegevoegd dat Epoch later instemde met een gezamenlijk experiment op een afgeschermde testkopie."
+  },
+  {
+    "passage": "Onderzoeksorganisatie Epoch AI publiceerde een incidentrapport.",
+    "beslissing": "verwerkt",
+    "toelichting": "Publicatiedatum 13 november en het feit dat de voorvallen in oktober plaatsvonden toegevoegd."
+  },
+  {
+    "passage": "Enig bedrag in het artikel:",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven naar de enige afzonderlijke efficiëntiemaatregel met een jaarlijkse opbrengst."
+  },
+  {
+    "passage": "Overroepen — AI staat in de kop, maar het artikel noemt geen bedrag voor wat AI oplevert.",
+    "beslissing": "verwerkt",
+    "toelichting": "Een ontbrekende raming bewijst geen overdreven aandacht; stand gewijzigd naar Terecht met de onzekerheid in de uitleg."
+  },
+  {
+    "passage": "Medewerkers die AI-systemen controleren gaan met pensioen. Starters begrijpen de routinetaken die AI overneemt niet meer.",
+    "beslissing": "verwerkt",
+    "toelichting": "Overal toegeschreven aan Agoria via Data News en als risico geformuleerd, ook voor starters en opleidingen."
+  },
+  {
+    "passage": "Kennisverlies krijgt minder aandacht dan baanverlies",
+    "beslissing": "verwerkt",
+    "toelichting": "Vergelijking geschrapt omdat ze niet onderbouwd is; stand gewijzigd naar Terecht met uitleg over één onderzoek en onbekende omvang."
+  },
+  {
+    "passage": "Het onderzoek zelf is hier niet beoordeeld.",
+    "beslissing": "verwerkt",
+    "toelichting": "Werkwijze-taal geschrapt; alleen de ontbrekende onderzoeksgegevens genoemd, en de controle van het rapport staat in een HTML-commentaar."
+  },
+  {
+    "passage": "Opkomende functies zoals skill engineer en kennismanager kunnen helpen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Titels uit de hoofdtekst gehaald; in de verdieping staat dat hun taken niet worden uitgelegd."
+  },
+  {
+    "passage": "De instructeurs maakten \"een breed scala aan innovaties\".",
+    "beslissing": "verwerkt",
+    "toelichting": "Beide citaten uit de studie geparafraseerd, zodat de regel van één kort citaat per bron niet wordt overschreden."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "term": "Gerandomiseerde studie",
+    "uitleg_leek": "Een onderzoek waarbij loting bepaalt wie welke behandeling krijgt. Zo zijn de groepen goed vergelijkbaar.",
+    "voorbeeld": "Aan 19 universiteiten werden studenten door loting ingedeeld, zodat het verschil in examenresultaat aan de aanpak kan liggen."
+  },
+  {
+    "term": "Preprint",
+    "uitleg_leek": "Een onderzoekstekst die al online staat maar nog niet door andere wetenschappers is beoordeeld en gepubliceerd in een vaktijdschrift.",
+    "voorbeeld": "De studie over docenten die zelf AI ontwerpen is een preprint van 14 november."
+  },
+  {
+    "term": "Effectgrootte",
+    "uitleg_leek": "Een getal dat zegt hoe groot een verschil precies is, niet alleen dat er een verschil is.",
+    "voorbeeld": "De samenvatting zegt dat studenten beter leerden, maar niet hoeveel beter."
+  },
+  {
+    "term": "Benchmark",
+    "uitleg_leek": "Een vaste set testopdrachten waarmee je AI-modellen met een score kunt vergelijken.",
+    "voorbeeld": "Twee modellen scoorden bijna gelijk op Epoch's index, maar op echte werktaken lagen ze 17 punten uiteen."
+  },
+  {
+    "term": "AI-agent",
+    "uitleg_leek": "Een AI-programma dat zelfstandig taken uitvoert, zoals berichten sturen of websites bezoeken, zonder dat een mens elke stap aanstuurt.",
+    "voorbeeld": "Testagents stuurden in drie uur 487 berichten naar personeel van Epoch."
+  },
+  {
+    "term": "Lokvalk",
+    "uitleg_leek": "Een nepdeel van een website of systeem dat bedoeld is om kwaadaardig gedrag op te sporen.",
+    "voorbeeld": "Epoch zag 36.411 oproepen naar zijn lokvalk."
+  },
+  {
+    "term": "SQL-injectie",
+    "uitleg_leek": "Een aanval waarbij kwaadaardige code in een invoerveld op een website wordt gestopt om bij gegevens te komen.",
+    "voorbeeld": "Eén testagent probeerde dit op de website van Epoch, maar kreeg geen toegang tot privé-informatie."
+  },
+  {
+    "term": "Logbestand",
+    "uitleg_leek": "Een bestand waarin een systeem bijhoudt wat er gebeurt.",
+    "voorbeeld": "Meer dan 200 pogingen richtten zich op echte FrontierMath-logbestanden."
+  }
+]

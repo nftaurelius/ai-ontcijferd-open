@@ -1,0 +1,128 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "waarin het toeval bepaalt wie meedoet",
+    "probleem": "Randomisering gaat over de toewijzing aan onderzoeksgroepen, niet over wie aan het onderzoek deelneemt. De samenvatting vermeldt bovendien niet op welk niveau werd geloot.",
+    "voorstel": "Schrijf dat onderzoeksgroepen door loting werden ingedeeld. Specificeer pas na controle van de methode of studenten, docenten of andere eenheden werden toegewezen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Aan 19 universiteiten volgden 7.200 studenten drie semesters.",
+    "probleem": "De bron beschrijft een onderzoek met 7.200 studenten aan 19 universiteiten over drie semesters. Daaruit volgt niet dat dezelfde studenten alle drie de semesters werden gevolgd.",
+    "voorstel": "Vermeld dat het onderzoek drie semesters besloeg en in totaal 7.200 studenten aan 19 universiteiten omvatte."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "een docent aan een Vlaamse hogeschool of universiteit krijgt een argument om AI-keuzes bij de lesgevers te leggen",
+    "probleem": "De studie ondersteunt docentontworpen toepassingen, maar de samenvatting beschrijft geen rechtstreekse vergelijking met centraal ontworpen toepassingen binnen dezelfde proef. De verwijzing naar eerder onderzoek bewijst niet dat de ontwerpverantwoordelijkheid op zichzelf het verschil veroorzaakt.",
+    "voorstel": "Beperk de conclusie tot leerwinst met de onderzochte docentontworpen toepassingen. Benoem dat de samenvatting geen rechtstreekse vergelijking tussen beide ontwerpmodellen beschrijft."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Onderschat — Een gerandomiseerde studie met examens als meetlat is sterker bewijs dan de meeste meningen over AI in de les.",
+    "probleem": "Deze uitleg beoordeelt de bewijskracht, niet de verhouding tussen aandacht en verwachte impact voor Vlaanderen. De effectgrootte en toepasbaarheid zijn juist onbekend.",
+    "voorstel": "Onderbouw waarom de verwachte Vlaamse impact de aandacht overstijgt. Zonder die onderbouwing is Terecht een voorzichtiger stand, met de ontbrekende effectgrootte als expliciete beperking."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "een tekst die nog niet is gepubliceerd in een vaktijdschrift",
+    "probleem": "De arXiv-vermelding bevestigt de indieningsdatum, maar niet dat er geen tijdschriftpublicatie bestaat. De publicatiestatus wordt stelliger beschreven dan de bron toelaat.",
+    "voorstel": "Vermeld de arXiv-indiening van 14 november en geef aan dat publicatie in een vaktijdschrift en de beoordelingsstatus niet worden vermeld."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Beter leren vraagt dus geen populair hulpmiddel.",
+    "probleem": "Er is geen verandering gemeten in cursustevredenheid. Dat is niet hetzelfde als de populariteit van het AI-hulpmiddel meten. De conclusie maakt bovendien van één bevinding een algemene regel.",
+    "voorstel": "Beperk dit tot de vaststelling dat de gemeten leerwinst niet samenging met hogere cursustevredenheid of meer geregistreerde cursusactiviteit."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Zo kunnen ze achteraf geen gunstige uitkomsten uitkiezen.",
+    "probleem": "Vooraf registreren maakt selectieve rapportage niet onmogelijk. Bovendien legt het bronmateriaal niet uit welke uitkomsten of analyses vooraf waren vastgelegd.",
+    "voorstel": "Schrap de absolute garantie. Voeg een methodologische bron toe voor een uitleg dat vooraf vastleggen afwijkingen en selectieve rapportage beter controleerbaar kan maken."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De modellen halen op één taak contractorniveau",
+    "probleem": "Onder de kop over Astra en Fable suggereert dit dat beide modellen contractorniveau halen. Volgens Epoch geldt dat voor Fable 5.2 en Opus 5.5, niet voor Astra.",
+    "voorstel": "Noem Fable 5.2 en Opus 5.5 expliciet. Leg contractor bij het eerste gebruik uit als een externe opdrachtnemer."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "geen enkel topmodel de norm van een eigen medewerker haalt",
+    "probleem": "De conclusie geldt voor de zes geteste modellen op de onderzochte Epoch-taken, niet voor alle topmodellen of werk in het algemeen. Ook 'alle modellen' en de kop 'geen medewerkersniveau' missen lokaal die afbakening.",
+    "voorstel": "Gebruik consequent 'geen van de geteste modellen op deze Epoch-taken' en 'alle geteste modellen'."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Op Epoch's eigen index voor modelprestaties (een benchmark: een vaste set testopdrachten met een score) scoorden ze ongeveer gelijk, een nieuw record.",
+    "probleem": "De algemene definitie van benchmark vertelt niet welke vaardigheden de Epoch Capabilities Index meet. De bron beschrijft de samenstelling niet. Daarnaast ontbreekt de expliciete melding dat de kernclaim over werkprestaties op één onafhankelijke meting rust; OpenAI bevestigt die niet.",
+    "voorstel": "Benoem wat over de index onbekend blijft en dat de score geen garantie voor werkprestaties biedt. Vermeld dat Epoch hier de enige onafhankelijke meetbron is."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Claim: de nieuwste topmodellen zijn klaar voor echt werk, want ze scoren recordhoog op benchmarks.",
+    "probleem": "Geen aangehaalde bron doet deze concrete claim. OpenAI spreekt over verbeteringen, niet over benchmarkrecords als bewijs dat modellen klaar zijn voor echt werk. Zo wordt een niet-gedocumenteerde hypeclaim bestreden.",
+    "voorstel": "Geef een bron die deze claim daadwerkelijk maakt, of presenteer dit expliciet als een gevolgtrekking die je niet uit benchmarkscores kunt maken."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "agents omzeilden een omleiding die ze naar een lokale kopie moest sturen",
+    "probleem": "Epoch rapporteert dit als de verklaring van Trajectory, niet als een zelfstandig vastgestelde technische oorzaak. In het concept krijgt alleen de daaropvolgende zin die attributie.",
+    "voorstel": "Schrijf ook bij het omzeilen van de omleiding expliciet 'volgens Trajectory'."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Epoch had geen toestemming gegeven",
+    "probleem": "Deze formulering kan op het volledige incidentrapport slaan. De bron maakt een belangrijk onderscheid: het eerste voorval was zonder toestemming, maar aan het derde experiment werkte Epoch bewust mee.",
+    "voorstel": "Beperk het ontbreken van toestemming tot het eerste voorval en vermeld dat Epoch later instemde met een gezamenlijk experiment op een afgeschermde testkopie."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Onderzoeksorganisatie Epoch AI publiceerde een incidentrapport.",
+    "probleem": "Het rapport dateert van 13 november, vóór de editieperiode van 14 tot en met 20 november. De incidenten zelf vonden in oktober plaats. Zonder publicatiedatum lijkt dit nieuws uit de besproken week.",
+    "voorstel": "Vermeld 13 november en presenteer het als eerdere publicatie die deze week wordt geduid."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Enig bedrag in het artikel:",
+    "probleem": "Het artikel noemt ook 20,7 miljoen euro besparingen, 271 miljoen euro schuld en ongeveer 20 miljoen euro minder middelen. Het bedrag voor het wagenpark is dus niet het enige bedrag.",
+    "voorstel": "Maak duidelijk dat het gaat om de enige afzonderlijke efficiëntiemaatregel waarvoor het artikel een jaarlijkse opbrengst noemt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Overroepen — AI staat in de kop, maar het artikel noemt geen bedrag voor wat AI oplevert.",
+    "probleem": "Een ontbrekende raming bewijst niet dat AI te veel aandacht krijgt ten opzichte van de verwachte Vlaamse impact. De VRT-kop presenteert AI bovendien naast stadswagens en gebouwen, niet als verklaring voor de volledige besparing.",
+    "voorstel": "Overweeg Terecht: AI wordt als één maatregel genoemd, terwijl de bijdrage nog niet becijferd is. Behoud Overroepen alleen met een onderbouwde vergelijking tussen aandacht en impact."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Medewerkers die AI-systemen controleren gaan met pensioen. Starters begrijpen de routinetaken die AI overneemt niet meer.",
+    "probleem": "Deze zinnen presenteren het door Data News beschreven onderzoeksmechanisme als een algemeen vastgesteld feit. In de Vlaamse vertaalslag wordt dat verder verabsoluteerd tot 'verdwijnt ook de plek waar starters hun kennis opdoen'. Omvang, methode en toepassingsvoorwaarden ontbreken.",
+    "voorstel": "Schrijf consequent dat Data News dit risico beschrijft op basis van Agoria-onderzoek. Formuleer de gevolgen voor starters en opleidingen als mogelijk risico, niet als onvermijdelijk gevolg."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Kennisverlies krijgt minder aandacht dan baanverlies",
+    "probleem": "Het bronmateriaal bevat geen vergelijking van de aandacht voor beide onderwerpen. Eén krantenkop over baanzorgen onderbouwt die vergelijking niet.",
+    "voorstel": "Schrap de vergelijking of voeg onderbouwing toe. Heroverweeg daarmee ook de stand Onderschat; de huidige bronnen tonen onvoldoende hoe aandacht en impact zich verhouden."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Het onderzoek zelf is hier niet beoordeeld.",
+    "probleem": "Dit beschrijft de redactionele werkwijze in plaats van wat de lezer over het onderzoek weet. Ook 'in de inleiding van Data News' legt de nadruk op het gebruikte tekstdeel.",
+    "voorstel": "Benoem alleen de ontbrekende onderzoeksgegevens, zoals aantallen bedrijven, sectoren en methode. Zet de controle van het Agoria-rapport in een HTML-commentaar."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Opkomende functies zoals skill engineer en kennismanager kunnen helpen.",
+    "probleem": "De functietitels worden bij hun eerste gebruik niet uitgelegd. Verderop staat terecht dat de bron niet beschrijft wat deze functies doen.",
+    "voorstel": "Laat de onverklaarde titels weg of voeg eerst een bron toe waarmee hun taken in één bijzin kunnen worden uitgelegd."
+  },
+  {
+    "ernst": "klein",
+    "passage": "De instructeurs maakten \"een breed scala aan innovaties\".",
+    "probleem": "Uit dezelfde onderzoeksbron wordt ook al 'AI-proof' geciteerd. Dat overschrijdt de regel van hoogstens één kort citaat per bron.",
+    "voorstel": "Parafraseer deze passage zonder aanhalingstekens of schrap het andere citaat."
+  }
+]
