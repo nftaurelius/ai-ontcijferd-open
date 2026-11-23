@@ -31,36 +31,44 @@ def procent(deel: int, geheel: int) -> str:
     return f"{100 * deel / geheel:.0f} %" if geheel else "–"
 
 
+def waarom(fout: requests.HTTPError) -> str:
+    r = fout.response
+    try:
+        uitleg = str(r.json().get("message", ""))[:200]
+    except ValueError:
+        uitleg = r.text[:200]
+    return f"HTTP {r.status_code} op {r.request.path_url.split('?')[0]}" + (f": {uitleg}" if uitleg else "")
+
+
 def meting() -> str:
     kop = f"## Meter, {nu():%Y-%m-%d}"
     if not os.environ.get("BREVO_API_KEY"):
         return f"{kop}\n\n- BREVO_API_KEY ontbreekt in de secrets van deze repo; geen cijfers van Brevo.\n"
-    regels = [kop, "", "| Lijst | Inschrijvingen | Uitgeschreven of geblokkeerd |", "| --- | --- | --- |"]
-    for lijst in sorted(brevo("/contacts/lists", limit=50).get("lists", []), key=lambda l: l["id"]):
-        regels.append(f"| {lijst['name']} (#{lijst['id']}) | {lijst.get('uniqueSubscribers', lijst.get('totalSubscribers', 0))} | {lijst.get('totalBlacklisted', 0)} |")
-    campagnes = brevo("/emailCampaigns", status="sent", limit=5, sort="desc", statistics="globalStats").get("campaigns", [])
-    if campagnes:
-        regels += ["", "| Campagne | Verstuurd op | Afgeleverd | Geopend | Geklikt |", "| --- | --- | --- | --- | --- |"]
-        for c in campagnes:
-            s = (c.get("statistics") or {}).get("globalStats") or {}
-            af = int(s.get("delivered", 0))
-            regels.append(f"| {c.get('name', '')} | {str(c.get('sentDate', ''))[:10]} | {af} | "
-                          f"{procent(int(s.get('uniqueViews', 0)), af)} | {procent(int(s.get('uniqueClicks', 0)), af)} |")
+    regels = [kop, ""]
+    try:
+        lijsten = brevo("/contacts/lists", limit=50, offset=0).get("lists", [])
+        regels += ["| Lijst | Inschrijvingen | Uitgeschreven of geblokkeerd |", "| --- | --- | --- |"]
+        for lijst in sorted(lijsten, key=lambda l: l["id"]):
+            regels.append(f"| {lijst['name']} (#{lijst['id']}) | {lijst.get('uniqueSubscribers', lijst.get('totalSubscribers', 0))} | {lijst.get('totalBlacklisted', 0)} |")
+    except requests.HTTPError as fout:
+        regels.append(f"- Lijsten niet opgehaald ({waarom(fout)}).")
+    try:
+        campagnes = brevo("/emailCampaigns", status="sent", limit=5, offset=0).get("campaigns", [])
+        if campagnes:
+            regels += ["", "| Campagne | Verstuurd op | Afgeleverd | Geopend | Geklikt |", "| --- | --- | --- | --- | --- |"]
+            for c in campagnes:
+                s = (c.get("statistics") or {}).get("globalStats") or {}
+                af = int(s.get("delivered", 0))
+                regels.append(f"| {c.get('name', '')} | {str(c.get('sentDate', ''))[:10]} | {af} | "
+                              f"{procent(int(s.get('uniqueViews', 0)), af)} | {procent(int(s.get('uniqueClicks', 0)), af)} |")
+    except requests.HTTPError as fout:
+        regels.append(f"- Campagnes niet opgehaald ({waarom(fout)}).")
     regels += ["", "Bezoeken en verwijzers: Vercel Web Analytics (dashboard, met de hand). Bron van de tabellen: Brevo-API, opgehaald door de Meter."]
     return "\n".join(regels) + "\n"
 
 
 def main() -> None:
-    try:
-        blok = meting()
-    except requests.HTTPError as fout:  # schrijf de reden op in plaats van stil te falen (bevat geen sleutel)
-        r = fout.response
-        uitleg = ""
-        try:
-            uitleg = str(r.json().get("message", ""))[:300]
-        except ValueError:
-            uitleg = r.text[:300]
-        blok = f"## Meter, {nu():%Y-%m-%d}\n\n- Brevo weigerde de vraag (HTTP {r.status_code}): {uitleg}\n"
+    blok = meting()
     PAD.parent.mkdir(parents=True, exist_ok=True)
     tekst = PAD.read_text(encoding="utf-8") if PAD.exists() else "# Cijfers verspreiding\n"
     kop = blok.splitlines()[0]
