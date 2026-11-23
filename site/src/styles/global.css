@@ -1386,3 +1386,19 @@ main:focus {
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
+
+/* ---------------------------------------------------------------- bijsluiters (nov. 2026) */
+.bijsluiter-lijst {
+  list-style: none;
+  padding: 0;
+}
+.bijsluiter-lijst li {
+  border-top: 1px solid var(--lijn);
+  padding: 0.75rem 0 0.25rem;
+}
+.bijsluiter-lijst li p {
+  margin: 0 0 0.35rem;
+}
+.bijsluiter-lijst .status {
+  margin: 0 0.35rem 0 0;
+}

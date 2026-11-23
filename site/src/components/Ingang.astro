@@ -1,0 +1,48 @@
+---
+// Overzichtspagina van één ingang (Volgen, Leren, Doen of Lesgeven).
+import Basis from "../layouts/Basis.astro";
+import { INGANGEN, MENU } from "../lib/site";
+import { SITE_URL, uitgever } from "../lib/seo";
+
+interface Props { sleutel: "volgen" | "leren" | "doen" | "lesgeven" }
+const { sleutel } = Astro.props;
+const i = INGANGEN[sleutel];
+const anderen = MENU.filter((m) => m.href !== `/${sleutel}`);
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": `${SITE_URL}/${sleutel}`,
+  url: `${SITE_URL}/${sleutel}`,
+  name: `${i.titel}: ${i.vraag}`,
+  inLanguage: "nl-BE",
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+---
+
+<Basis titel={`${i.titel}: ${i.vraag}`} beschrijving={i.lead} schema={schema}>
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">{i.titel}</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">{i.vraag}</h1>
+      <p class="lead">{i.lead}</p>
+    </div>
+  </section>
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <ul class="tegels">
+      {i.items.map((n) => (
+        <li>
+          {n.ritme && <p class="meta" style="margin:0 0 0.2rem">{n.ritme}</p>}
+          <a href={n.href}>{n.tekst}</a>
+          <p>{n.uitleg}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Ook</p></div>
+    <div class="proza">
+      <p>{anderen.map((m, k) => <>{k > 0 && " · "}<a href={m.href}>{m.tekst}</a></>)}</p>
+    </div>
+  </section>
+</Basis>

@@ -4,6 +4,7 @@ import path from "node:path";
 import "../styles/global.css";
 import { LICENTIE_URL, websiteSchema } from "../lib/seo";
 import { MENU } from "../lib/site";
+import { deelbeeldVoor } from "../lib/deelbeeld";
 
 interface Props {
   titel?: string;
@@ -26,7 +27,7 @@ const volledigeTitel = titel ? `${titel} · AI Ontcijferd` : "AI Ontcijferd — 
 const pad = Astro.url.pathname.replace(/\/$/, "") || "/";
 const actief = (m: (typeof MENU)[number]) => [m.href, ...m.ook].some((h) => pad === h || pad.startsWith(h + "/"));
 const canoniek = new URL(Astro.url.pathname, Astro.site);
-const ogAfbeelding = new URL("/og.png", Astro.site);
+const ogAfbeelding = new URL(deelbeeldVoor(pad) ?? "/og.png", Astro.site);
 // "Bekijk de bron": de pagina in de publieke repo, waar je een fout kunt melden of een verbetering voorstellen.
 const PUBLIEKE_REPO = "https://github.com/nftaurelius/ai-ontcijferd-open/blob/main/";
 const kandidaten = [`src/pages${pad === "/" ? "/index" : pad}.astro`, `src/pages${pad}/index.astro`];

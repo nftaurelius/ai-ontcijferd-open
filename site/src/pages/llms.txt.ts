@@ -28,6 +28,8 @@ export function GET() {
     "- [Gratis](https://aiontcijferd.be/gratis): gratis tools en open lesmateriaal (Creative Commons) over AI",
     "- [Open lesmateriaal](https://aiontcijferd.be/materiaal): lespakketten, lezingen en een AI-cursus om te downloaden en met AI aan te passen; handleiding op /materiaal/gebruiken",
     "- [Zo werken we](https://aiontcijferd.be/zo-werken-we): werkwijze, bronregels en redactiestatuut",
+    "- [Begin hier](https://aiontcijferd.be/begin-hier): AI in tien minuten, voor wie nieuw is",
+    "- [Bijsluiters van AI-tools](https://aiontcijferd.be/bijsluiters): wat ChatGPT, Claude, Gemini, Copilot en Le Chat met je invoer doen en wat ze kosten, met bron en datum",
     "- [Neem het over](https://aiontcijferd.be/overnemen): alles staat onder CC BY 4.0; zo vermeld je de bron, met kant-en-klare teksten",
     "- [Meedoen](https://aiontcijferd.be/meedoen): fouten melden, bronnen voorstellen, de open code (MIT) verbeteren",
     "",

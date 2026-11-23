@@ -6,7 +6,7 @@ import Inschrijven from "../components/Inschrijven.astro";
 import { alleEdities, datumLeesbaar, weekNummer } from "../lib/edities";
 import { alleDagbrieven, alleDossiers } from "../lib/plus";
 import { markeerEerste, splitsTitel } from "../lib/opmaak";
-import { NASLAG } from "../lib/site";
+import { MENU } from "../lib/site";
 import { alleTools } from "../lib/tools";
 import { beschikbarePakketten } from "../lib/materiaal";
 
@@ -33,6 +33,7 @@ const aantalPakketten = beschikbarePakketten().length;
       <ul class="ritme" aria-label="Hoe je ons leest">
         <li><strong>Elke vrijdag</strong> <a href="/edities">de Stand van AI</a>: de week in vijf minuten.</li>
         <li><strong>Elke dag</strong> <a href="/plus">een korte dagbrief</a>, en af en toe een dossier dat één ontwikkeling grondig uitlegt.</li>
+        <li><strong>Nieuw in AI?</strong> <a href="/begin-hier">Begin hier</a>: in tien minuten wat je moet weten.</li>
       </ul>
       <Inschrijven variant="kort" />
     </div>
@@ -117,17 +118,14 @@ const aantalPakketten = beschikbarePakketten().length;
     <div><Inschrijven /></div>
   </section>
 
-  <section class="rij sectie" aria-labelledby="bij-de-hand">
-    <div class="kantlijn"><p class="kantlijn-kop" id="bij-de-hand">Altijd bij de hand</p></div>
+  <section class="rij sectie" aria-labelledby="ingangen">
+    <div class="kantlijn"><p class="kantlijn-kop" id="ingangen">Waar wil je naartoe?</p><p>Nieuw in AI? <a href="/begin-hier">Begin hier</a></p></div>
     <ul class="tegels">
-      <li><a href="/voor">Voor jou</a><p>Alleen wat AI betekent voor onderwijs, werk, gemeenten, zelfstandigen, bibliotheken of burgers.</p></li>
-      <li><a href="/wat-kan-ai">Wat kan AI al?</a><p>Demo's en praktijkvoorbeelden, met bron en kanttekening.</p></li>
-      {NASLAG.slice(0, 2).map((n) => (
-        <li><a href={n.href}>{n.tekst}</a><p>{n.uitleg}</p></li>
+      {MENU.map((m) => (
+        <li><a href={m.href}>{m.tekst}</a><p>{m.uitleg}</p></li>
       ))}
     </ul>
   </section>
-
   {eerdere.length > 0 && (
     <section class="rij sectie">
       <div class="kantlijn"><p class="kantlijn-kop">Eerdere edities</p></div>

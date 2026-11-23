@@ -1,0 +1,112 @@
+---
+import Basis from "../layouts/Basis.astro";
+import Inschrijven from "../components/Inschrijven.astro";
+import { MENU } from "../lib/site";
+import { SITE_URL, uitgever } from "../lib/seo";
+
+const url = `${SITE_URL}/begin-hier`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": url,
+  url,
+  headline: "Begin hier: AI in tien minuten",
+  inLanguage: "nl-BE",
+  dateModified: "2026-11-23",
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+---
+
+<Basis
+  titel="Begin hier: AI in tien minuten"
+  beschrijving="Nieuw in AI? Wat AI is, waar je moet opletten, hoe je het veilig probeert en waar je verder kunt. In gewoon Nederlands."
+  schema={schema}
+>
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Begin hier</p><p>Tien minuten lezen</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Begin hier</h1>
+      <p class="lead">
+        <span class="markeer">Nieuw in AI? Lees dit eerst.</span>{" "}
+        Daarna weet je wat AI is, waar je moet opletten en waar je op deze site verder kunt.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">1</p></div>
+    <div class="proza">
+      <h2 style="margin-top:0">Wat is AI eigenlijk?</h2>
+      <p>
+        AI, artificiële intelligentie, is software die taken doet waarvoor je vroeger een mens nodig had: tekst schrijven,
+        beelden herkennen, vertalen, voorspellen. Als mensen vandaag "AI" zeggen, bedoelen ze meestal chatbots zoals ChatGPT,
+        Claude, Gemini en Copilot, die tekst, beelden of geluid maken op basis van wat je vraagt.
+      </p>
+      <p>
+        Achter zo'n chatbot zit een <a href="/jargon/taalmodel">taalmodel</a>. Dat is getraind op enorm veel tekst en voorspelt
+        telkens welke woorden goed volgen op jouw vraag. Daardoor schrijft het vlot en overtuigend. Maar het weet niet wat waar
+        is: het kan met evenveel zekerheid iets verzinnen. Dat heet een <a href="/jargon/hallucinatie">hallucinatie</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">2</p></div>
+    <div class="proza">
+      <h2 style="margin-top:0">Drie dingen om te onthouden</h2>
+      <ol>
+        <li><strong>Het klinkt altijd zeker, ook als het fout is.</strong> Kijk feiten, cijfers, namen en bronnen na voor je ze gebruikt.</li>
+        <li>
+          <strong>Wat je intypt, gaat naar de aanbieder.</strong> Wat die ermee doet, hangt af van de tool en je soort account. Zet er geen
+          persoonsgegevens of vertrouwelijke informatie in. Twijfel je? Doe de <a href="/plakcheck">Plakcheck</a> of lees de
+          <a href="/bijsluiters">bijsluiters</a>.
+        </li>
+        <li><strong>Jij blijft verantwoordelijk.</strong> Wat je met AI maakt en verstuurt, is jouw werk.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">3</p></div>
+    <div class="proza">
+      <h2 style="margin-top:0">Probeer het, veilig</h2>
+      <p>De beste manier om te zien wat AI kan en niet kan: test het op iets wat je zelf goed kent.</p>
+      <ol>
+        <li>Open een chatbot. Een gratis account volstaat.</li>
+        <li>Vraag uitleg over een onderwerp waar jij veel van weet: je job, je hobby, je gemeente.</li>
+        <li>Lees het antwoord kritisch. Wat klopt? Wat ontbreekt? Wat is verzonnen?</li>
+        <li>Vraag daarna iets wat de chatbot niet kan weten, zoals de naam van de voorzitter van jouw vereniging. Kijkt hij het na, zegt hij dat hij het niet weet, of verzint hij iets?</li>
+      </ol>
+      <p>Gebruik geen echte namen of gegevens van anderen in je vragen.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">4</p></div>
+    <div class="proza">
+      <h2 style="margin-top:0">Wat de wet zegt</h2>
+      <p>
+        In Europa geldt de AI Act: regels die strenger worden naarmate een toepassing riskanter is. Sommige toepassingen zijn
+        verboden, en wie AI voor zijn werk gebruikt, moet werk maken van de AI-kennis van zijn mensen. Wat geldt wanneer, lees je
+        in het <a href="/ai-act">AI Act-kompas</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">5</p></div>
+    <div>
+      <h2 style="margin-top:0">Waar wil je naartoe?</h2>
+      <ul class="tegels">
+        {MENU.map((m) => (
+          <li><a href={m.href}>{m.tekst}</a><p>{m.uitleg}</p></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Bijblijven</p></div>
+    <div><Inschrijven variant="kort" /></div>
+  </section>
+</Basis>

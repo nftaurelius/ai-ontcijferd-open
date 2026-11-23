@@ -32,7 +32,7 @@ const TOOLS: Basis[] = [
   },
 ];
 
-function leesConfig(slug: string): Record<string, any> | null {
+export function leesConfig(slug: string): Record<string, any> | null {
   const bestand = path.resolve(process.cwd(), "public", slug, "app", "index.html");
   if (!fs.existsSync(bestand)) return null;
   const html = fs.readFileSync(bestand, "utf-8");

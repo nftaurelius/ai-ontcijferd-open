@@ -168,10 +168,10 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 - [x] AI-geletterdheid in een doos (artikel 4 van de AI Act): afsprakenkaart, sessie van een uur,
       aanwezigheidslijst, zelftest, lijst van gebruikte tools (23/11, versie 1.0, `/materiaal/ai-geletterdheid-in-een-doos`).
 - [ ] Minstens één pakket meer uit het AI-aanbod, in de algemene versie.
-- [ ] Een pagina "Begin hier".
+- [x] Een pagina "Begin hier" (23/11).
 
 **Doen**
-- [ ] Bijsluiters van AI-tools, uit de gegevens die al in de Plakcheck zitten.
+- [x] Bijsluiters van AI-tools, uit de gegevens die al in de Plakcheck zitten (23/11, `/bijsluiters`).
 - [ ] Eerste werkwijzen (prompts) bij de pakketten.
 
 **Volgen**
@@ -180,8 +180,8 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 
 **Doorgeven**
 - [x] Pagina `/overnemen` en een blok "Neem dit over" bij elke editie.
-- [ ] Een deelafbeelding per editie, dossier, tool en pakket.
-- [ ] Menu en startpagina volgens de vier ingangen (Volgen, Leren, Doen, Lesgeven).
+- [x] Een deelafbeelding per editie, dossier, dagbrief, tool en pakket (23/11, `/deel/...png`).
+- [x] Menu en startpagina volgens de vier ingangen (Volgen, Leren, Doen, Lesgeven) (23/11).
 - [x] De publieke repo leesbaar voor buitenstaanders (LEESMIJ, bijdragen, pagina "Meedoen").
 
 ## Volgorde

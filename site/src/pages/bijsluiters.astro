@@ -1,0 +1,135 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { bijsluiters, bedrag } from "../lib/bijsluiters";
+import { datumLeesbaar } from "../lib/edities";
+import { LICENTIE_URL, SITE_URL, uitgever } from "../lib/seo";
+
+const { bijsluiters: lijst, versie, bijgewerkt } = bijsluiters();
+const url = `${SITE_URL}/bijsluiters`;
+const soortTekst: Record<string, string> = { particulier: "Persoonlijk", zakelijk: "Zakelijk" };
+const door: Record<string, string> = { model: "door een AI-model, met bron", eindredacteur: "door de eindredacteur" };
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": url,
+  url,
+  name: "Bijsluiters van AI-tools: wat gebeurt er met je invoer, en wat kost het?",
+  inLanguage: "nl-BE",
+  dateModified: bijgewerkt,
+  license: LICENTIE_URL,
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+---
+
+<Basis
+  titel="Bijsluiters van AI-tools"
+  beschrijving="Wat doen ChatGPT, Claude, Gemini, Copilot en Le Chat met wat je intypt, en wat kosten ze? Per tool en per soort account, met bron en datum."
+  schema={schema}
+  bron="site/public/plakcheck/app/index.html"
+>
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Bijsluiters</p><p>Bijgewerkt {datumLeesbaar(bijgewerkt)}</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Bijsluiters van AI-tools</h1>
+      <p class="lead">
+        <span class="markeer">Wat gebeurt er met wat je intypt, en wat kost het?</span>{" "}
+        Per tool en per soort account, met de bron en de datum waarop we het nakeken.
+      </p>
+      <p>
+        Het grootste verschil zit vaak niet tussen de tools, maar tussen een persoonlijk en een zakelijk account van dezelfde tool.
+        Gebruik je AI voor je werk, kijk dan vooral naar die tweede rij.
+      </p>
+      <p class="meta">
+        We rangschikken niet en we verdienen niets aan deze tools. Elk gegeven heeft een status: <strong>nagekeken</strong> (met bron) of{" "}
+        <strong>te controleren</strong> (nog niet bevestigd). Prijzen zijn per maand en per gebruiker, zoals de aanbieder ze vermeldt.
+        Dit zijn dezelfde gegevens als in de <a href="/plakcheck">Plakcheck</a> (versie {versie}).
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>In één oogopslag</p></div>
+    <div class="tabelrol">
+      <table class="cijfertabel">
+        <thead><tr><th scope="col">Tool</th><th scope="col">Van</th><th scope="col">Persoonlijk vanaf</th><th scope="col">Zakelijk vanaf</th><th scope="col">Nagekeken</th></tr></thead>
+        <tbody>
+          {lijst.map((b) => {
+            const pers = b.prijzen.filter((p) => p.soort === "particulier").sort((x, y) => x.bedrag - y.bedrag)[0];
+            const zak = b.prijzen.filter((p) => p.soort === "zakelijk").sort((x, y) => x.bedrag - y.bedrag)[0];
+            return (
+              <tr>
+                <th scope="row"><a href={`#${b.slug}`}>{b.naam}</a></th>
+                <td>{b.maker}</td>
+                <td class="getal">{pers ? bedrag(pers) : "–"}</td>
+                <td class="getal">{zak ? bedrag(zak) : "–"}</td>
+                <td>{datumLeesbaar(b.laatstGecontroleerd)}{b.teControleren > 0 && <span class="meta"> · {b.teControleren} te controleren</span>}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <p class="meta">"Vanaf" is het goedkoopste abonnement dat we nakeken. Abonnementen zijn niet altijd vergelijkbaar: sommige bevatten meer dan AI, andere vragen een licentie erbij. Lees de opmerking per abonnement hieronder.</p>
+    </div>
+  </section>
+
+  {lijst.map((b) => (
+    <section class="rij sectie" id={b.slug}>
+      <div class="kantlijn"><p class="kantlijn-kop">Bijsluiter</p><p>{b.maker}</p></div>
+      <div class="proza">
+        <h2 style="margin-top:0">{b.naam}</h2>
+        <p>{b.wat}</p>
+
+        <h3>Wat gebeurt er met wat je intypt?</h3>
+        <ul class="bijsluiter-lijst">
+          {b.invoer.map((g) => (
+            <li>
+              <p><strong>{g.naam}.</strong> {g.tekst}</p>
+              <p class="meta">
+                <span class="status" data-status={g.status === "gecontroleerd" ? "Bevestigd" : "Eén bron"}>{g.status === "gecontroleerd" ? "Nagekeken" : "Te controleren"}</span>{" "}
+                Bron: <a href={g.bronUrl}>{g.bron}</a> · nagekeken op {datumLeesbaar(g.laatstGecontroleerd)} {door[g.gecontroleerdDoor] ?? ""}
+                {g.verouderd && <strong> · Al een tijd niet meer nagekeken: kijk het zelf na.</strong>}
+              </p>
+            </li>
+          ))}
+        </ul>
+
+        <h3>Wat kost het?</h3>
+        <div class="tabelrol">
+          <table class="cijfertabel">
+            <thead><tr><th scope="col">Abonnement</th><th scope="col">Soort</th><th scope="col">Per maand</th><th scope="col">Goed om te weten</th></tr></thead>
+            <tbody>
+              {b.prijzen.map((p) => (
+                <tr>
+                  <th scope="row">{p.naam}</th>
+                  <td>{soortTekst[p.soort] ?? p.soort}</td>
+                  <td class="getal">{bedrag(p)}<br /><span class="meta">{p.btw}</span></td>
+                  <td>
+                    {p.opmerking}{" "}
+                    <span class="meta">Bron: <a href={p.bronUrl}>{p.bron}</a>, {datumLeesbaar(p.laatstGecontroleerd)}.{p.verouderd && " Al een tijd niet meer nagekeken."}</span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Wil je weten of jouw gegevens in {b.naam} mogen? <a href="/plakcheck">Doe de Plakcheck</a>: vier vragen, en alles blijft in je browser.
+        </p>
+      </div>
+    </section>
+  ))}
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Fout gezien?</p></div>
+    <div class="proza">
+      <p>
+        Aanbieders veranderen hun voorwaarden en prijzen geregeld. Zie je iets dat niet meer klopt?{" "}
+        <a href="/meedoen#fout">Meld het</a>, dan kijken we het na. Wil je deze bijsluiters gebruiken in een opleiding of op je intranet?
+        Dat mag, onder <a href="/overnemen">CC BY 4.0</a>.
+      </p>
+      <p>Dit is geen juridisch advies. Lees bij twijfel de voorwaarden van je eigen abonnement.</p>
+    </div>
+  </section>
+</Basis>
