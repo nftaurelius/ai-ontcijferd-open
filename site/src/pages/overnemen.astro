@@ -1,0 +1,134 @@
+---
+import Basis from "../layouts/Basis.astro";
+import NeemDitOver from "../components/NeemDitOver.astro";
+import { alleEdities, datumLeesbaar } from "../lib/edities";
+import { alleDossiers } from "../lib/plus";
+import { NAAMSVERMELDING, overneemDossier, overneemEditie } from "../lib/overnemen";
+import { LICENTIE_URL, SITE_URL, uitgever } from "../lib/seo";
+
+const editie = alleEdities()[0];
+const dossier = alleDossiers()[0];
+const url = `${SITE_URL}/overnemen`;
+
+const wat = [
+  { href: "/edities", tekst: "De weekeditie en de dagbrief", uitleg: "een onderwerp, een alinea of de hele editie." },
+  { href: "/plus", tekst: "Dossiers", uitleg: "ook in stukken, zolang je de bronnen meeneemt." },
+  { href: "/ai-act", tekst: "Het AI Act-kompas", uitleg: "handig voor een intranet of een infoblad voor personeel." },
+  { href: "/jargon", tekst: "De jargonfilter", uitleg: "elke term apart, bijvoorbeeld als woordenlijst bij een sessie." },
+  { href: "/fiches", tekst: "Fiches", uitleg: "om af te drukken en uit te delen." },
+  { href: "/materiaal", tekst: "Lespakketten", uitleg: "om zelf een sessie te geven. Lees eerst hoe je ze aanpast." },
+  { href: "/plakcheck#insluiten", tekst: "Tools zoals de Plakcheck", uitleg: "insluiten op je eigen site of intranet, met één stukje code." },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": url,
+  url,
+  name: "Neem het over: zo gebruik je wat op AI Ontcijferd staat",
+  inLanguage: "nl-BE",
+  license: LICENTIE_URL,
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+---
+
+<Basis
+  titel="Neem het over"
+  beschrijving="Alles op AI Ontcijferd mag je gratis overnemen en aanpassen onder CC BY 4.0: in je nieuwsbrief, gemeenteblad, intranet of les. Zo vermeld je de bron, met kant-en-klare teksten."
+  schema={schema}
+>
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Overnemen</p><p>Gratis, zonder te vragen</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Neem het over</h1>
+      <p class="lead">
+        <span class="markeer">Alles wat je hier leest, mag je overnemen en aanpassen.</span>{" "}
+        In je nieuwsbrief, je gemeenteblad, het intranet van je school of bedrijf, of in een les. Je hoeft het niet te vragen
+        en het kost niets.
+      </p>
+      <p>
+        Dat kan omdat alles op deze site onder de licentie <a rel="license" href={LICENTIE_URL}>Creative Commons Naamsvermelding 4.0</a>{" "}
+        (CC BY 4.0) staat. Je enige plicht: vermeld dat het van AI Ontcijferd komt, zet er een link bij, en zeg het als je iets
+        veranderde.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Wat je mag overnemen</p></div>
+    <div class="proza">
+      <h2>Wat je kunt gebruiken</h2>
+      <ul>
+        {wat.map((w) => <li><a href={w.href}>{w.tekst}</a>: {w.uitleg}</li>)}
+      </ul>
+      <p>
+        Ook de code achter de site is open, onder de MIT-licentie. Je vindt ze op{" "}
+        <a href="https://github.com/nftaurelius/ai-ontcijferd-open">GitHub</a>. Meer daarover op <a href="/meedoen">Meedoen</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Naamsvermelding</p></div>
+    <div class="proza">
+      <h2>Zo vermeld je de bron</h2>
+      <p>Zet deze zin onder wat je overneemt. Pas je iets aan, zet er dan "aangepast" bij.</p>
+      <div class="codeblok">
+        <pre id="naamsvermelding">{NAAMSVERMELDING}</pre>
+        <button type="button" class="knop knop-klein" data-kopieer="naamsvermelding">Kopieer de zin</button>
+      </div>
+      <p>
+        Online zet je er een link naar het stuk bij. Op papier volstaat "aiontcijferd.be". Neem je een lespakket over, dan
+        staat de juiste vermelding al in het pakket (zie <a href="/materiaal/gebruiken">Zo gebruik je een open lespakket</a>).
+      </p>
+    </div>
+  </section>
+
+  {editie && (
+    <NeemDitOver blok={overneemEditie(editie)} id="overneem-editie" anker="editie" kop={`Klaar om over te nemen: ${editie.titel}`} />
+  )}
+  {editie && (
+    <section class="rij sectie klein">
+      <div class="kantlijn"></div>
+      <div class="proza"><p class="meta">Weekeditie van {datumLeesbaar(editie.datum)}. Elke editie heeft onderaan zo'n blok.</p></div>
+    </section>
+  )}
+  {dossier && <NeemDitOver blok={overneemDossier(dossier)} id="overneem-dossier" anker="dossier" kop={`Klaar om over te nemen: ${dossier.titel}`} />}
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Wat niet onder onze licentie valt</p></div>
+    <div class="proza">
+      <h2>Waar je op let</h2>
+      <ul>
+        <li>
+          <strong>Citaten en cijfers van anderen.</strong> Onze stukken verwijzen naar bronnen. Wat uit die bronnen komt, blijft
+          van wie het schreef. Neem de bronvermelding dus mee.
+        </li>
+        <li>
+          <strong>Ons logo en onze naam.</strong> Gebruik ze om de bron te vermelden, niet om te suggereren dat AI Ontcijferd jouw
+          organisatie of product steunt.
+        </li>
+        <li>
+          <strong>Datums.</strong> AI verandert snel. Neem de datum van het stuk mee, zodat je lezers weten hoe recent het is.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Laat het weten</p></div>
+    <div class="proza">
+      <h2>Overgenomen? Zeg het ons</h2>
+      <p>
+        Het hoeft niet, maar het helpt. Mail kort naar <a href="mailto:redactie@aiontcijferd.be">redactie@aiontcijferd.be</a>{" "}
+        wat je overnam en waar. Zo weten we wat nuttig is, en kunnen we je verwittigen als we een fout verbeteren in iets
+        dat jij gebruikte. Alle verbeteringen staan ook op <a href="/correcties">Correcties</a>.
+      </p>
+    </div>
+  </section>
+</Basis>
+
+<script>
+  import { koppelKopieerknoppen } from "../scripts/kopieer";
+  koppelKopieerknoppen();
+</script>

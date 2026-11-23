@@ -23,7 +23,7 @@ const schema = {
 };
 ---
 
-<Basis titel={f.titel} beschrijving={f.samenvatting} schema={schema}>
+<Basis titel={f.titel} beschrijving={f.samenvatting} schema={schema} bron={`content/fiches/${f.slug}.md`}>
   <article class="rij sectie fiche">
     <div class="kantlijn">
       <p>Voor: {f.voor.join(", ")}<br />Bijgewerkt {datumLeesbaar(f.bijgewerkt)}</p>

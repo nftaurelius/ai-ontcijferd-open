@@ -1,7 +1,17 @@
 # Verspreidingsplan AI Ontcijferd
 
-Stand: 15 november 2026. Hoort bij `data/visie.md`. Het eerdere plan van 27 oktober is hierin verwerkt (15/11):
+Stand: 23 november 2026. Hoort bij `data/visie.md`. Het eerdere plan van 27 oktober is hierin verwerkt (15/11):
 daaruit komen de aanmeldingen bij zoekmachines, de pers en de onderwijskanalen. Dit is nu het enige plan.
+
+## Start: 4 januari 2027
+
+Beslist door Duncan op 23 november 2026: de verspreiding start op **maandag 4 januari 2027**, niet eerder. Wie
+de site dan voor het eerst ziet, moet meer vinden dan nieuws: een aantal lespakketten en andere blijvende stukken
+die je meteen kunt gebruiken. Tot dan bouwen we uit (zie "Startlijst" hieronder) en bereiden we de verspreiding voor.
+
+Wat tot 4 januari gewoon doorloopt, omdat het onze eigen kanalen zijn: de site, de weekeditie, de dagbrief, RSS en
+de nieuwsbrief aan wie al ingeschreven is. Wat wacht tot 4 januari: voorstellen aan organisaties, persberichten,
+materiaal op KlasCement en de wekelijkse LinkedIn-berichten.
 
 ## Kern
 
@@ -106,8 +116,10 @@ ingediend). Wat erbij komt:
 
 Een week voor elk moment ligt er een stuk, een overneemblok en een persbericht klaar, opgesteld door de agents.
 
-- 2 december 2026: nieuwe verboden en de markeerplicht uit de AI Act.
-- Eind december: het jaaroverzicht.
+- 2 december 2026: wat de AI Act vanaf dan vraagt. Voor de start: alleen op de eigen site (stuk en AI Act-kompas),
+  zonder persbericht.
+- Eind december: het jaaroverzicht, met wat 2027 brengt. Dit wordt het stuk waarmee we op 4 januari naar buiten
+  gaan.
 - Maart 2027: de nieuwe Digimeter (als imec het ritme van 2026 aanhoudt).
 - Voorjaar 2027: de sessies van het voorjaar en de proef van de AI-week.
 - September 2027: de start van het schooljaar.
@@ -146,31 +158,59 @@ keuzes: plaatsen, aanpassen, overslaan.
 - **Eén keer per maand:** een gesprek met één koepel. Dit is het enige wat geen agent kan, en het heeft de grootste
   hefboom.
 
+## Startlijst voor 4 januari
+
+Wat er op de site moet staan voor we naar buiten gaan. Op maandag 28 december kijken we de lijst na; ontbreekt er
+iets wezenlijks, dan beslist Duncan of de start verschuift.
+
+**Leren en lesgeven**
+- [ ] De AI-proeverij als downloadbaar pakket (Duncan werkt ze af; daarna zetten wij ze in het sjabloon).
+- [ ] AI-geletterdheid in een doos (artikel 4 van de AI Act): afsprakenkaart, sessie van een uur,
+      aanwezigheidslijst, zelftest, lijst van gebruikte tools.
+- [ ] Minstens één pakket meer uit het AI-aanbod, in de algemene versie.
+- [ ] Een pagina "Begin hier".
+
+**Doen**
+- [ ] Bijsluiters van AI-tools, uit de gegevens die al in de Plakcheck zitten.
+- [ ] Eerste werkwijzen (prompts) bij de pakketten.
+
+**Volgen**
+- [ ] Het stuk over 2 december en een nagekeken AI Act-kompas.
+- [ ] Het jaaroverzicht 2026, klaar om op 4 januari mee naar buiten te gaan.
+
+**Doorgeven**
+- [x] Pagina `/overnemen` en een blok "Neem dit over" bij elke editie.
+- [ ] Een deelafbeelding per editie, dossier, tool en pakket.
+- [ ] Menu en startpagina volgens de vier ingangen (Volgen, Leren, Doen, Lesgeven).
+- [x] De publieke repo leesbaar voor buitenstaanders (LEESMIJ, bijdragen, pagina "Meedoen").
+
 ## Volgorde
 
-**Stap 1, tot eind november**
-- [ ] Pagina `/overnemen` en een blok "Neem dit over" bij elke editie (site, geen model nodig).
-- [ ] Een deelafbeelding per editie, dossier en tool.
-- [ ] Contactenboek, eerste versie: een voorstel van organisaties per doelgroep; Duncan schrapt en vult aan.
-- [ ] De eerste drie voorstellen, klaar om te versturen.
-- [ ] Duncan: een organisatie-account op KlasCement.
-- [ ] Duncan: aanmelden bij Bing Webmaster Tools.
+**Stap 0, tot 4 januari: uitbouwen en voorbereiden**
+- [ ] De startlijst hierboven.
+- [ ] Contactenboek, eerste versie (half december): een voorstel van organisaties per doelgroep; Duncan schrapt en
+      vult aan.
+- [ ] De eerste drie voorstellen, klaar om op 4 januari te versturen.
+- [ ] De Verpakker in de weekpijplijn, zodat elke editie vanaf januari een verspreidingspakket heeft.
+- [ ] De Meter en de nulmeting op 4 januari: inschrijvingen, bezoeken, verwijzers.
+- [ ] Duncan: aanmelden bij Bing Webmaster Tools (vindbaarheid, mag nu al).
 - [ ] Duncan: LinkedIn-profiel aanvullen met AI Ontcijferd en de link naar de site.
-- [ ] Duncan: elke week het klaarstaande LinkedIn-bericht plaatsen.
-- [ ] Nulmeting op 1 december: inschrijvingen, bezoeken, verwijzers.
+- [ ] Duncan: een organisatie-account op KlasCement (aanmaken mag nu, materiaal plaatsen vanaf 4 januari).
 
-**Stap 2, december**
-- [ ] De Verpakker in de weekpijplijn.
-- [ ] De Meter, en de pagina "Zo verspreiden we" met de cijfers en het experimentenlogboek.
-- [ ] Het moment van 2 december: stuk, overneemblok en persbericht.
+**Stap 1, vanaf 4 januari**
+- [ ] Het jaaroverzicht als eerste stuk naar buiten, met overneemblok en persbericht.
+- [ ] De eerste drie voorstellen versturen; daarna drie per week.
+- [ ] Elke week het klaarstaande LinkedIn-bericht plaatsen (zes weken als experiment).
+- [ ] De eerste pakketten op KlasCement.
+- [ ] De pagina "Zo verspreiden we" met de cijfers en het experimentenlogboek.
 
-**Stap 3, januari en februari**
+**Stap 2, januari en februari**
 - [ ] De Speurder en de Voorsteller.
 - [ ] De maandelijkse samenvatting per doelgroep.
 - [ ] De chatbot-test.
-- [ ] QR-code en "Gaf je dit pakket?" in het sjabloon, zodra de proeverij af is.
+- [ ] QR-code en "Gaf je dit pakket?" in het sjabloon van de pakketten.
 
-**Stap 4, voorjaar 2027**
+**Stap 3, voorjaar 2027**
 - [ ] De proef van de AI-week als verspreidingsmoment, met de koepels uit het contactenboek.
 
 ## Wat we meten

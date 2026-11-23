@@ -3,6 +3,8 @@ import Basis from "../../layouts/Basis.astro";
 import HypeMeter from "../../components/HypeMeter.astro";
 import Inschrijven from "../../components/Inschrijven.astro";
 import Inhoud from "../../components/Inhoud.astro";
+import NeemDitOver from "../../components/NeemDitOver.astro";
+import { overneemEditie } from "../../lib/overnemen";
 import { kaderVlaanderen, markeerEerste } from "../../lib/opmaak";
 import { alleEdities, datumLeesbaar, weekNummer, type Editie } from "../../lib/edities";
 import { LICENTIE_URL, SITE_URL, auteur, uitgever } from "../../lib/seo";
@@ -41,7 +43,7 @@ const schema = {
 };
 ---
 
-<Basis titel={editie.titel} beschrijving={editie.kernTekst.slice(0, 160)} type="article" schema={schema} gepubliceerd={editie.datum}>
+<Basis titel={editie.titel} beschrijving={editie.kernTekst.slice(0, 160)} type="article" schema={schema} gepubliceerd={editie.datum} bron={editie.bestand}>
   <article>
     <header class="rij sectie">
       <div class="kantlijn">
@@ -110,6 +112,8 @@ const schema = {
         <p class="handtekening">Duncan Panis</p>
       </div>
     </section>
+
+    <NeemDitOver blok={overneemEditie(editie)} id={`overneem-${editie.week}`} />
 
     <section class="rij sectie klein">
       <div class="kantlijn"><p>Transparantie</p></div>

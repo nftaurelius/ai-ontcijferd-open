@@ -32,6 +32,7 @@ export type Onderwerp = {
 
 export type Editie = {
   week: string; // bv. 2026-w44
+  bestand: string; // pad in de repo, bv. content/edities/2026-w44-stand-van-ai.md
   titel: string;
   datum: string;
   labels: string[];
@@ -133,6 +134,7 @@ function leesEditie(bestand: string): Editie | null {
   const kernMd = vind(VASTE_SECTIES.kern);
   return {
     week: String(data.week ?? bestand.replace(/-stand-van-ai\.md$/, "")),
+    bestand: `content/edities/${bestand}`,
     titel: String(data.titel ?? "Stand van AI"),
     datum: data.datum instanceof Date ? data.datum.toISOString().slice(0, 10) : String(data.datum ?? ""),
     labels: Array.isArray(data.labels) ? data.labels : [],

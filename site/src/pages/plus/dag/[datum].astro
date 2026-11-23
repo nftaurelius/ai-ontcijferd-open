@@ -35,7 +35,7 @@ const schema = {
 };
 ---
 
-<Basis titel={titel} beschrijving={dag.kortTekst.slice(0, 160)} type="article" schema={schema} gepubliceerd={dag.datum}>
+<Basis titel={titel} beschrijving={dag.kortTekst.slice(0, 160)} type="article" schema={schema} gepubliceerd={dag.datum} bron={`content/plus/dag/${dag.datum}.md`}>
   <article>
     <header class="rij sectie">
       <div class="kantlijn">

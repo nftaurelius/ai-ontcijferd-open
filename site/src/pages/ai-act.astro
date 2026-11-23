@@ -4,13 +4,13 @@ import { SITE_URL, auteur, uitgever, LICENTIE_URL } from "../lib/seo";
 
 // Tijdlijn na de AI Omnibus (aangenomen door Parlement en Raad in juni 2026, gepubliceerd 24 juli 2026).
 // Laatst nagekeken: zie NAGEKEKEN. Bij elke wijziging: datum aanpassen en bronnen controleren.
-const NAGEKEKEN = "27 oktober 2026";
+const NAGEKEKEN = "23 november 2026";
 const tijdlijn = [
   { datum: "1 augustus 2024", wat: "De AI Act treedt in werking. De regels gaan stap voor stap gelden.", status: "voorbij" },
   { datum: "2 februari 2025", wat: "Verboden AI-praktijken gelden, zoals sociale scoring en emotieherkenning op het werk en op school. Ook de plicht rond AI-geletterdheid start.", status: "voorbij" },
   { datum: "2 augustus 2025", wat: "Regels voor AI-modellen voor algemeen gebruik (zoals de modellen achter ChatGPT, Claude en Gemini) gelden. Ook de sancties en het toezichtskader.", status: "voorbij" },
   { datum: "2 augustus 2026", wat: "De AI Act geldt algemeen, waaronder de transparantieregels: je moet weten dat je met een chatbot praat, en deepfakes moeten herkenbaar zijn.", status: "voorbij" },
-  { datum: "2 december 2026", wat: "Nieuw verbod op AI die seksueel misbruikmateriaal van kinderen of niet-consensueel intiem beeldmateriaal maakt (zoals 'nudify'-apps). Ook een overgangsregel voor het labelen van AI-inhoud geldt dan.", status: "komt" },
+  { datum: "2 december 2026", wat: "Twee nieuwe verboden: AI die zonder toestemming naaktbeelden of intieme beelden van echte mensen maakt (zoals 'nudify'-apps), en AI die beelden van seksueel misbruik van kinderen maakt. Ook moeten alle AI-generators die al vóór augustus 2026 op de markt waren, hun beelden, video, audio en tekst nu machineleesbaar markeren als door AI gemaakt (nieuwe systemen moesten dat al sinds 2 augustus).", status: "komt" },
   { datum: "2 augustus 2027", wat: "AI-modellen voor algemeen gebruik die al vóór augustus 2025 op de markt waren, moeten voldoen. Elke lidstaat moet minstens één testomgeving (regulatory sandbox) hebben.", status: "komt" },
   { datum: "2 december 2027", wat: "De regels voor AI met een hoog risico gelden, bijvoorbeeld in onderwijs, werk en openbare dienstverlening (bijlage III). Oorspronkelijk was dit augustus 2026.", status: "komt" },
   { datum: "2 augustus 2028", wat: "De regels gelden ook voor AI in producten die al onder Europese productregels vallen, zoals medische toestellen en machines (bijlage I).", status: "komt" },
@@ -51,7 +51,7 @@ const doelgroepen = [
     punten: [
       "Je hebt het recht te weten dat je met een chatbot praat, en AI-beelden of -video's die echt lijken moeten herkenbaar zijn.",
       "Sommige toepassingen zijn verboden: manipulatie die schade toebrengt, sociale scoring, emotieherkenning op werk en school, en (vanaf december 2026) apps die naaktbeelden van echte mensen maken.",
-      "Klagen kan voorlopig vooral via de rechtbank of de AI Act Service Desk van de Europese Commissie. Een Belgische toezichthouder is nog niet officieel aangeduid.",
+      "Klagen kan voorlopig vooral via de rechtbank of de AI Act Service Desk van de Europese Commissie. Een Belgische toezichthouder is nog niet officieel aangeduid (stand 23 november 2026). Slachtoffer van valse naaktbeelden? Volwassenen kunnen terecht bij het Instituut voor de gelijkheid van vrouwen en mannen (0800 12 800), minderjarigen bij Child Focus.",
     ],
   },
 ];
@@ -61,7 +61,7 @@ const schema = {
   "@type": "Article",
   headline: "AI Act-kompas voor Vlaanderen",
   description: "Wat de Europese AI-verordening betekent voor scholen, gemeenten, kmo's en burgers in Vlaanderen, met de tijdlijn na de AI Omnibus.",
-  dateModified: "2026-10-27",
+  dateModified: "2026-11-23",
   inLanguage: "nl-BE",
   url: `${SITE_URL}/ai-act`,
   author: { "@id": auteur["@id"], "@type": "Person", name: auteur.name },
@@ -117,7 +117,7 @@ const schema = {
     <div class="proza">
       <h2>Wie houdt toezicht in België?</h2>
       <p>
-        Elke lidstaat moest tegen augustus 2025 een toezichthouder aanduiden. België deed dat niet op tijd. Het BIPT, de regulator voor telecom en post, ligt het meest voor de hand,
+        Elke lidstaat moest tegen augustus 2025 een toezichthouder aanduiden. België deed dat niet op tijd. In juli 2026 bevestigde de FOD Economie dat het BIPT, de regulator voor telecom en post, de AI-toezichthouder wordt,
         maar daarvoor is nog een wet nodig. Voor onderwijs en werk zijn ook de gewesten bevoegd, en een akkoord tussen federale en regionale overheden ontbreekt nog
         (<a href="https://www.vrt.be/vrtnws/nl/2026/07/29/geen-toezichthouder-wel-al-strengere-regels-hoe-ver-staat-belg/">VRT NWS, juli 2026</a>).
         Voor de grote AI-modellen houdt het AI-bureau van de Europese Commissie zelf toezicht.
@@ -130,7 +130,8 @@ const schema = {
     <div class="proza">
       <ul>
         <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">Verordening (EU) 2024/1689 (AI Act)</a>, EUR-Lex</li>
-        <li><a href="https://fpf.org/blog/the-ai-act-implementation-timeline-what-changes-under-the-ai-omnibus/">The AI Act implementation timeline: what changes under the AI Omnibus?</a>, Future of Privacy Forum</li>
+        <li><a href="https://www.europarl.europa.eu/news/en/press-room/20260611IPR45207/ai-act-ep-approves-simplification-measures-and-nudifier-app-ban">AI Act: EP approves simplification measures and "nudifier" app ban</a>, Europees Parlement</li>
+<li><a href="https://fpf.org/blog/the-ai-act-implementation-timeline-what-changes-under-the-ai-omnibus/">The AI Act implementation timeline: what changes under the AI Omnibus?</a>, Future of Privacy Forum</li>
         <li><a href="https://www.vrt.be/vrtnws/nl/2026/07/29/geen-toezichthouder-wel-al-strengere-regels-hoe-ver-staat-belg/">Geen toezichthouder, wel al strengere regels</a>, VRT NWS</li>
       </ul>
       <p>Dit is geen juridisch advies. Bij twijfel over je eigen situatie: raadpleeg een jurist. Zie je een fout of een wijziging? <a href="/correcties">Meld het</a>.</p>

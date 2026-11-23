@@ -1,5 +1,7 @@
 ---
 import Basis from "../../../layouts/Basis.astro";
+import NeemDitOver from "../../../components/NeemDitOver.astro";
+import { overneemDossier } from "../../../lib/overnemen";
 import Inhoud from "../../../components/Inhoud.astro";
 import HypeMeter from "../../../components/HypeMeter.astro";
 import Inschrijven from "../../../components/Inschrijven.astro";
@@ -30,7 +32,7 @@ const schema = {
 };
 ---
 
-<Basis titel={d.titel} beschrijving={d.samenvatting.slice(0, 160)} type="article" schema={schema} gepubliceerd={d.datum}>
+<Basis titel={d.titel} beschrijving={d.samenvatting.slice(0, 160)} type="article" schema={schema} gepubliceerd={d.datum} bron={`content/plus/dossiers/${d.slug}.md`}>
   <article>
     <header class="rij sectie">
       <div class="kantlijn">
@@ -62,6 +64,8 @@ const schema = {
         <p class="handtekening">Duncan Panis</p>
       </div>
     </section>
+
+    <NeemDitOver blok={overneemDossier(d)} id={`overneem-${d.slug}`} />
 
     <section class="rij sectie klein">
       <div class="kantlijn"><p>Transparantie</p></div>

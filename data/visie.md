@@ -76,8 +76,8 @@ gemeenten en raadsleden; iedereen die een tool kiest (onafhankelijke bijsluiters
 
 | Fase | Wat | Poort |
 | --- | --- | --- |
-| **Nu**, tot eind november 2026 | Privacy en kleine fouten; licenties en publieke spiegel; Over-pagina; verspreidingsplan (`data/verspreidingsplan.md`); AI-proeverij volledig af zodra het pakket klaar is | Iemand anders dan Duncan gaf de proeverij |
-| **Winter**, december tot februari | Menu en startpagina naar de vier ingangen, "Begin hier", zoeken; doelgroepportalen; doos voor artikel 4 en afsprakenkaart-maker; bijsluiters; vragenbank; eerste werkwijzen; gesprekken met Muntpunt, Cultuurconnect, Mediawijs, Kenniscentrum Data & Maatschappij | Elk portaal toont een pakket, een tool en werkwijzen |
+| **Uitbouwen**, tot 4 januari 2027 | Klaar: privacy, licenties, publieke spiegel, Over-pagina, verspreidingsplan. Nog: de startlijst uit `data/verspreidingsplan.md`: AI-proeverij en doos voor artikel 4 als pakket, "Begin hier", menu naar de vier ingangen, bijsluiters, eerste werkwijzen, deelafbeeldingen, het stuk over 2 december, het jaaroverzicht; verspreiding voorbereiden | Startlijst nagekeken op 28 december |
+| **Naar buiten**, vanaf 4 januari tot februari 2027 | Verspreiding start (beslist 23/11): voorstellen, LinkedIn, KlasCement; doelgroepportalen; zoeken; afsprakenkaart-maker; vragenbank; gesprekken met Muntpunt, Cultuurconnect, Mediawijs, Kenniscentrum Data & Maatschappij | Iemand anders dan Duncan gaf de proeverij; elk portaal toont een pakket, een tool en werkwijzen |
 | **Voorjaar 2027**, maart tot juni | Pakketten "Getest in de praktijk"; opnames "Zo geef je dit"; eerste stukken in gewone taal; claimcheck; proef van de AI-week | Drie andere bibliotheken gaven een pakket |
 | **Daarna**, vanaf najaar 2027 | Vlaamse AI-week; sectorpakketten met partners; pijplijn als "redactie in een doos"; luisterversie en overneemblok | |
 

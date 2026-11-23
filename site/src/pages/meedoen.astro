@@ -1,0 +1,117 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { SITE_URL, uitgever } from "../lib/seo";
+
+const REPO = "https://github.com/nftaurelius/ai-ontcijferd-open";
+const url = `${SITE_URL}/meedoen`;
+
+const manieren = [
+  {
+    id: "fout",
+    titel: "Je zag een fout",
+    tekst: "Een verkeerd cijfer, een verouderde regel, een bron die niet zegt wat wij schrijven: meld het. We passen het aan en zetten de verbetering op de pagina Correcties.",
+    hoe: [
+      { href: "mailto:redactie@aiontcijferd.be?subject=Fout%20gezien", tekst: "Mail naar redactie@aiontcijferd.be" },
+      { href: `${REPO}/issues/new?template=fout-melden.md`, tekst: "of meld het op GitHub" },
+    ],
+  },
+  {
+    id: "vraag",
+    titel: "Je hebt een vraag over AI",
+    tekst: "Elke week beantwoorden we één lezersvraag in de weekeditie. Vragen die vaak terugkomen, krijgen een vaste plek op de site.",
+    hoe: [{ href: "/vragen", tekst: "Stel je vraag" }],
+  },
+  {
+    id: "tip",
+    titel: "Je kent een goede bron of een Vlaams voorbeeld",
+    tekst: "Een nieuwsbron die we missen, een onderzoek, of een Vlaamse school, gemeente, zaak of vereniging die iets slims met AI doet. Vlaamse voorbeelden zoeken we actief, voor de pagina Wat kan AI al?.",
+    hoe: [
+      { href: "mailto:redactie@aiontcijferd.be?subject=Tip", tekst: "Mail je tip" },
+      { href: `${REPO}/issues/new?template=bron-of-voorbeeld.md`, tekst: "of stel het voor op GitHub" },
+    ],
+  },
+  {
+    id: "pakket",
+    titel: "Je gaf een sessie met ons materiaal",
+    tekst: "Laat weten wanneer, waar, voor hoeveel mensen en wat werkte of niet. Met je toestemming krijgt het pakket het label \"Getest in de praktijk\", met de datum, de gemeente en het aantal deelnemers (nooit hun namen), zodat anderen weten dat het werkt. Je feedback maakt de volgende versie beter.",
+    hoe: [{ href: "mailto:redactie@aiontcijferd.be?subject=Pakket%20gegeven", tekst: "Mail je ervaring" }],
+  },
+  {
+    id: "code",
+    titel: "Je wilt de site of de keten verbeteren",
+    tekst: "De code staat open onder de MIT-licentie, de inhoud onder CC BY 4.0. Meld een probleem of stel een verbetering voor met een issue of een pull request in de publieke repo. Een goed voorstel nemen we over in onze werkrepo, met vermelding van wie het indiende.",
+    hoe: [
+      { href: REPO, tekst: "Naar de publieke repo" },
+      { href: `${REPO}/blob/main/CONTRIBUTING.md`, tekst: "Lees hoe je bijdraagt" },
+    ],
+  },
+  {
+    id: "zelf",
+    titel: "Je wilt het zelf doen",
+    tekst: "Alles mag je overnemen en aanpassen, en de agentketen achter de site kun je zelf draaien, ook zonder API-sleutels om te testen. De uitleg staat in de LEESMIJ van de repo.",
+    hoe: [
+      { href: "/overnemen", tekst: "Zo neem je iets over" },
+      { href: `${REPO}#readme`, tekst: "De keten zelf draaien" },
+    ],
+  },
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": url,
+  url,
+  name: "Meedoen met AI Ontcijferd",
+  inLanguage: "nl-BE",
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+---
+
+<Basis
+  titel="Meedoen"
+  beschrijving="Een fout melden, een bron of Vlaams voorbeeld doorgeven, laten weten dat je een pakket gaf, of de open code verbeteren: zo doe je mee met AI Ontcijferd."
+  schema={schema}
+>
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Meedoen</p><p>Open betekent ook: samen beter maken</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Meedoen</h1>
+      <p class="lead">
+        <span class="markeer">AI Ontcijferd is open: de inhoud, de code en de werkwijze.</span>{" "}
+        Wat we zelf niet zien, zie jij misschien wel. Zo help je mee.
+      </p>
+    </div>
+  </section>
+
+  {manieren.map((m) => (
+    <section class="rij sectie" id={m.id}>
+      <div class="kantlijn"></div>
+      <div class="proza">
+        <h2>{m.titel}</h2>
+        <p>{m.tekst}</p>
+        <p>
+          {m.hoe.map((h, i) => (
+            <>
+              {i > 0 && " "}
+              <a href={h.href}>{h.tekst}</a>
+            </>
+          ))}
+        </p>
+      </div>
+    </section>
+  ))}
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Goed om te weten</p></div>
+    <div class="proza">
+      <p>
+        De eindredacteur, Duncan Panis, beslist wat er met een melding of voorstel gebeurt. Een fout verbeteren we altijd.
+        Op elk voorstel antwoorden lukt niet altijd; dit is een project van één persoon met AI-agents.
+      </p>
+      <p>
+        Mail je ons, dan bewaren we je bericht zolang dat nodig is om te antwoorden. Een issue op GitHub is openbaar: zet er geen persoonlijke
+        gegevens in. Meer op <a href="/privacy">Privacy</a>.
+      </p>
+    </div>
+  </section>
+</Basis>

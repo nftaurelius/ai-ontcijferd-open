@@ -1,6 +1,8 @@
 // Kopieerknoppen: <button data-kopieer="id-van-element">. Kopieert de tekst (of de waarde van een tekstveld).
 export function koppelKopieerknoppen() {
-  document.querySelectorAll<HTMLButtonElement>("[data-kopieer]").forEach((knop) =>
+  // Mag meer dan eens per pagina worden opgeroepen: een knop wordt maar één keer gekoppeld.
+  document.querySelectorAll<HTMLButtonElement>("[data-kopieer]:not([data-gekoppeld])").forEach((knop) => {
+    knop.dataset.gekoppeld = "1";
     knop.addEventListener("click", async () => {
       const bron = document.getElementById(knop.dataset.kopieer ?? "");
       if (!bron) return;
@@ -22,6 +24,6 @@ export function koppelKopieerknoppen() {
         knop.textContent = "Geselecteerd: kopieer met Ctrl+C";
       }
       setTimeout(() => (knop.textContent = oud), 2500);
-    }),
-  );
+    });
+  });
 }

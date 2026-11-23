@@ -1,0 +1,42 @@
+---
+// Blok "Neem dit over": een korte en een langere tekst, klaar om te kopiëren, met naamsvermelding.
+import type { Overneemblok } from "../lib/overnemen";
+
+interface Props {
+  blok: Overneemblok;
+  id: string; // uniek per pagina, voor de kopieerknoppen
+  kop?: string;
+  anker?: string; // id van de sectie, standaard "overnemen"
+}
+const { blok, id, kop = "Neem dit over", anker = "overnemen" } = Astro.props;
+---
+
+<section class="rij sectie klein" id={anker}>
+  <div class="kantlijn"><p>Voor je eigen nieuwsbrief, intranet of blad</p></div>
+  <div class="proza">
+    <h2>{kop}</h2>
+    <p>
+      Je mag dit stuk overnemen en aanpassen, ook in je eigen nieuwsbrief of gemeenteblad. Vermeld AI Ontcijferd en zet
+      een link. Hieronder staan twee versies, klaar om te kopiëren. <a href="/overnemen">Meer over overnemen</a>.
+    </p>
+    <details class="overneem">
+      <summary>Toon de teksten</summary>
+      <p class="meta">Kort, voor een bericht of sociale media</p>
+      <div class="codeblok">
+        <pre id={`${id}-kort`}>{blok.kort}</pre>
+        <button type="button" class="knop knop-klein" data-kopieer={`${id}-kort`}>Kopieer de korte tekst</button>
+      </div>
+      <p class="meta">Langer, voor een nieuwsbrief of blad</p>
+      <div class="codeblok">
+        <pre id={`${id}-lang`}>{blok.lang}</pre>
+        <button type="button" class="knop knop-klein" data-kopieer={`${id}-lang`}>Kopieer de lange tekst</button>
+      </div>
+    </details>
+    <p class="meta">Heb je iets overgenomen? Laat het weten via <a href="mailto:redactie@aiontcijferd.be">redactie@aiontcijferd.be</a>. Zo weten we wat nuttig is, en kunnen we je verwittigen als we iets verbeteren.</p>
+  </div>
+</section>
+
+<script>
+  import { koppelKopieerknoppen } from "../scripts/kopieer";
+  koppelKopieerknoppen();
+</script>

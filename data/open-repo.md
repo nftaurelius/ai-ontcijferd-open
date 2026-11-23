@@ -64,7 +64,7 @@ Doel: de code even open maken als de inhoud (zie `data/visie.md`). Bijwerken na 
 
 ## Daarna
 
-- [ ] LEESMIJ aanvullen voor buitenstaanders die de keten zelf willen draaien.
-- [ ] `CONTRIBUTING.md` en sjablonen voor meldingen; pagina "Meedoen" op de site.
-- [ ] Link "Verbeter deze pagina" onder elke pagina, naar het bronbestand in de publieke repo.
+- [x] LEESMIJ voor buitenstaanders die de keten zelf willen draaien (23/11).
+- [x] `CONTRIBUTING.md`, sjablonen voor meldingen (`.github/ISSUE_TEMPLATE/`) en de pagina `/meedoen` (23/11).
+- [x] Onder elke pagina een link naar het bronbestand in de publieke repo (23/11, `bron` in `Basis.astro`).
 - [x] Beslist welke werknotities publiek zijn (15/11, zie hierboven).
