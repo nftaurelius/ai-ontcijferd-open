@@ -8,7 +8,7 @@ voor: ["Werk","Zelfstandigen","Lokale overheden","Onderwijs"]
 deelnemers: "Medewerkers en zelfstandigen die een chatbot gebruiken of willen gebruiken voor hun werk"
 niveau: "Instap"
 duur: "1,5 uur (plus een uur voorbereiding)"
-versie: "1.0"
+versie: "1.0.1"
 bijgewerkt: 2026-11-23
 licentie: "CC BY 4.0"
 maker: "AI Ontcijferd"

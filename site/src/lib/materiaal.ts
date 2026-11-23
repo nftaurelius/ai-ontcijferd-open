@@ -233,7 +233,11 @@ export function leesmij(p: Pakket): string {
     "Laat in de chatbot geen persoonsgegevens achter. Twijfel je? Doe eerst de Plakcheck:",
     `${SITE_URL}/plakcheck`,
     "",
-    "Fout gezien of iets gemaakt met dit pakket? Laat het weten via redactie@aiontcijferd.be.",
+    "GAF JE DIT PAKKET? LAAT HET WETEN",
+    "Wat werkte, wat niet, wat paste je aan? Twee minuten van jou maken de volgende versie beter:",
+    `${SITE_URL}/gegeven/${p.slug}`,
+    "",
+    "Fout gezien? Mail het naar redactie@aiontcijferd.be, met de naam van het pakket en het versienummer.",
     "",
   ].join("\r\n");
 }

@@ -8,7 +8,7 @@ voor: ["Werk", "Zelfstandigen", "Lokale overheden", "Onderwijs", "Bibliotheken"]
 deelnemers: "Medewerkers en vrijwilligers die AI gebruiken of gaan gebruiken voor hun werk, zonder voorkennis"
 niveau: "Instap"
 duur: "1 uur (plus een halfuur voorbereiding)"
-versie: "1.1"
+versie: "1.1.1"
 bijgewerkt: 2026-11-23
 licentie: "CC BY 4.0"
 maker: "Duncan Panis"

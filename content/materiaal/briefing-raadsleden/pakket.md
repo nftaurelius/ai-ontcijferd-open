@@ -8,7 +8,7 @@ voor: ["Lokale overheden"]
 deelnemers: "Gemeenteraadsleden, schepenen en raadsleden van het OCMW, zonder technische voorkennis"
 niveau: "Instap"
 duur: "45 minuten (plus een uur voorbereiding)"
-versie: "1.0"
+versie: "1.0.1"
 bijgewerkt: 2026-11-23
 licentie: "CC BY 4.0"
 maker: "AI Ontcijferd"

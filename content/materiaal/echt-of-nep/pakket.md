@@ -8,7 +8,7 @@ voor: ["Burgers","Bibliotheken","Onderwijs"]
 deelnemers: "Burgers, ook zonder ervaring met AI. Senioren en ouders zijn een belangrijke doelgroep."
 niveau: "Instap"
 duur: "1 uur (plus een uur voorbereiding)"
-versie: "1.0"
+versie: "1.0.1"
 bijgewerkt: 2026-11-23
 licentie: "CC BY 4.0"
 maker: "AI Ontcijferd"

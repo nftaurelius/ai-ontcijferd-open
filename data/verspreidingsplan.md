@@ -210,7 +210,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 - [ ] De Speurder en de Voorsteller.
 - [ ] De maandelijkse samenvatting per doelgroep.
 - [ ] De chatbot-test.
-- [ ] QR-code en "Gaf je dit pakket?" in het sjabloon van de pakketten.
+- [x] QR-code en "Gaf je dit pakket?" in het sjabloon van de pakketten (23/11, vervroegd): QR naar het pakket op de titeldia en in de voet van elk Word-bestand, QR naar /gegeven/<slug> op de laatste dia.
 
 **Stap 3, voorjaar 2027**
 - [ ] De proef van de AI-week als verspreidingsmoment, met de koepels uit het contactenboek.

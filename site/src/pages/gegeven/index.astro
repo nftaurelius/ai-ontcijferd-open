@@ -1,0 +1,24 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { beschikbarePakketten } from "../../lib/materiaal";
+import { VRAGEN, mailto } from "./_vragen";
+const pakketten = beschikbarePakketten();
+---
+
+<Basis titel="Gaf je een pakket? Laat het weten" beschrijving="Gaf je een open lespakket van AI Ontcijferd? Vertel in een korte mail wat werkte en wat niet. Zo verbeteren we het voor de volgende.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Open lesmateriaal</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Gaf je een pakket?</h1>
+      <p class="lead"><span class="markeer">Laat het weten. Twee minuten van jou maken de volgende versie beter.</span></p>
+      <p>Onze pakketten zijn nog niet in de praktijk getest. Jouw ervaring is dus de eerste. Kies het pakket dat je gaf:</p>
+      <ul>
+        {pakketten.map((p) => <li><a href={`/gegeven/${p.slug}`}>{p.titel}</a></li>)}
+      </ul>
+      <h2>Wat we graag horen</h2>
+      <ol>{VRAGEN.map(([v, u]) => <li><strong>{v}</strong> {u}</li>)}</ol>
+      <p><a class="knop" href={mailto("een pakket")}>Mail het naar de redactie</a></p>
+      <p class="meta">Noem geen namen van deelnemers. Je mail komt bij de eindredacteur terecht; zie <a href="/privacy">privacy</a>.</p>
+    </div>
+  </section>
+</Basis>

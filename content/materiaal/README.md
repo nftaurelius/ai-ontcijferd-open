@@ -81,6 +81,7 @@ Lokaal nakijken: `cd site && npm run build`, daarna `npm run preview` en open `/
 - `/materiaal`: overzicht met filters, beschikbare pakketten en wat in voorbereiding is.
 - `/materiaal/<slug>`: pagina met downloads, uitleg, de prompt om het met AI aan te passen en de naamsvermelding.
 - `/materiaal/<slug>.zip`: alle bestanden plus een LEESMIJ.txt (licentie, naamsvermelding, prompt).
+- `/gegeven/<slug>`: "Gaf je dit pakket?", zes vragen en een kant-en-klare mail naar de redactie. De pakketpagina, de LEESMIJ, de laatste dia (QR-code) en de bijsluiter verwijzen ernaar.
 - `/materiaal/<slug>/bestanden/<bestand>`: elk bestand apart.
 - `/materiaal/gebruiken`: de algemene handleiding voor organisaties.
 
