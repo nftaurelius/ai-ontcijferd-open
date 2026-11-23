@@ -1,0 +1,24 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { beschikbarePakketten } from "../../lib/materiaal";
+const beschikbaar = beschikbarePakketten().slice(0, 4);
+---
+
+<Basis titel="Je bent ingeschreven op Nieuw gratis materiaal" beschrijving="Je inschrijving op Nieuw gratis materiaal van AI Ontcijferd is bevestigd.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Nieuwsbrief</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Je bent ingeschreven</h1>
+      <p class="lead"><span class="markeer">Welkom. Je krijgt een mail als er nieuw gratis lesmateriaal is.</span> Alleen dat, af en toe.</p>
+      <div class="vlaanderen">
+        <p class="vlaanderen-kop">Eén ding nog: zorg dat hij aankomt</p>
+        <p>Voeg <strong>redactie@aiontcijferd.be</strong> toe aan je contactpersonen. Zo belandt de mail niet bij je ongewenste e-mail.</p>
+      </div>
+      <p>Niet wachten? Dit staat er al:</p>
+      <ul>
+        {beschikbaar.map((p) => <li><a href={`/materiaal/${p.slug}`}>{p.titel}</a></li>)}
+      </ul>
+      <p>Alles samen: <a href="/materiaal">open lesmateriaal</a> en <a href="/cursus">de AI-cursus</a>. Uitschrijven kan onderaan elke mail.</p>
+    </div>
+  </section>
+</Basis>

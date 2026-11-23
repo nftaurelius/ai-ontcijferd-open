@@ -8,8 +8,10 @@ const FORMULIER_ACTIE =
   "https://ea44266d.sibforms.com/serve/MUIFAOU2Yg8lC_6FDTGlsZ-WS8E0vGu0t38wjLM4cmc9pzeXokmd1kVuX8JL0SBNWZDtB5xh-K1KgW2XIlsQOz3cZcJ_7u09U-QKSGhvRyuCT5mno0OY4bhJmjgA1TP32MWtpEz-EodDYVTFNeqVU9jx62WtIT7WkYJHkyfvpY-v8iEgaaVhd4yGtq26hcil7NrQno_QOuPjRkU3pw==";
 // FORMULIER_MATERIAAL: tweede Brevo-formulier, voor de lijst "Nieuw gratis materiaal" (af en toe een mail
 // als er een nieuw lespakket, een tool, een prompt of een cursusdeel bijkomt). Zolang dit leeg is, toont de
-// site die keuze niet. Zelfde werkwijze: Brevo → Forms → het formulier → Share → Simple HTML → action-url.
-const FORMULIER_MATERIAAL = "";
+// site die keuze niet. Brevo → Forms → "Inschrijven nieuw gratis materiaal" (lijst #4) → Share → Simple HTML → action-url.
+// Na de bevestiging komt de lezer op /ingeschreven/materiaal.
+const FORMULIER_MATERIAAL =
+  "https://ea44266d.sibforms.com/serve/MUIFAATaeVhm1KiMrigeVwqSIMNhy-zMu3ClHB8yesNaYElRgvQ4HjlOdv2qCRE32wRB5bJlzlwF8koDMXdveV48eOcVViySOicv3h2UJR-OBd4SmKAyswcTrwhV0n9sOTwqPVAnfpTs7Ad1_2E0FuH9bD0U7vUeXh5e4_FAUytjxIWmPWRrBGjOxzsHRwLEMfiSGXY0FxbE9XDJQg==";
 import { alleEdities } from "../lib/edities";
 
 interface Props {
@@ -61,8 +63,8 @@ const id = `inschrijven-${Math.random().toString(36).slice(2, 8)}`;
       {metMateriaal && (
         <fieldset class="inschrijf-keuze">
           <legend class="meta">Wat wil je krijgen?</legend>
-          <label><input type="checkbox" data-keuze="week" checked /> <strong>Stand van AI</strong>: elke vrijdag de week in AI</label>
-          <label><input type="checkbox" data-keuze="materiaal" /> <strong>Nieuw gratis materiaal</strong>: een mail als er een lespakket, tool of prompt bijkomt</label>
+          <label><input type="checkbox" data-keuze="week" checked /> <span><strong>Stand van AI</strong>: elke vrijdag de week in AI</span></label>
+          <label><input type="checkbox" data-keuze="materiaal" /> <span><strong>Nieuw gratis materiaal</strong>: een mail als er een lespakket, tool of prompt bijkomt</span></label>
         </fieldset>
       )}
       <label class="meta" for={`${id}-email`} style="flex-basis:100%">Je e-mailadres</label>
