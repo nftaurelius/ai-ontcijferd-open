@@ -51,9 +51,10 @@ def meting() -> str:
         for lijst in sorted(lijsten, key=lambda l: l["id"]):
             regels.append(f"| {lijst['name']} (#{lijst['id']}) | {lijst.get('uniqueSubscribers', lijst.get('totalSubscribers', 0))} | {lijst.get('totalBlacklisted', 0)} |")
     except requests.HTTPError as fout:
-        regels.append(f"- Lijsten niet opgehaald ({waarom(fout)}).")
+        regels += [f"- Lijsten niet opgehaald ({waarom(fout)})."]
     try:
-        campagnes = brevo("/emailCampaigns", status="sent", limit=5, offset=0).get("campaigns", [])
+        campagnes = brevo("/emailCampaigns", status="sent", limit=5, offset=0, sort="desc",
+                          statistics="globalStats", excludeHtmlContent="true").get("campaigns", [])
         if campagnes:
             regels += ["", "| Campagne | Verstuurd op | Afgeleverd | Geopend | Geklikt |", "| --- | --- | --- | --- | --- |"]
             for c in campagnes:
@@ -62,7 +63,7 @@ def meting() -> str:
                 regels.append(f"| {c.get('name', '')} | {str(c.get('sentDate', ''))[:10]} | {af} | "
                               f"{procent(int(s.get('uniqueViews', 0)), af)} | {procent(int(s.get('uniqueClicks', 0)), af)} |")
     except requests.HTTPError as fout:
-        regels.append(f"- Campagnes niet opgehaald ({waarom(fout)}).")
+        regels += ["", f"- Campagnes niet opgehaald ({waarom(fout)})."]
     regels += ["", "Bezoeken en verwijzers: Vercel Web Analytics (dashboard, met de hand). Bron van de tabellen: Brevo-API, opgehaald door de Meter."]
     return "\n".join(regels) + "\n"
 
