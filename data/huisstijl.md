@@ -88,7 +88,7 @@ Het woordmerk is "AI" in een geel blokje, gevolgd door "Ontcijferd". Het blokje 
 - "AI" en "Ontcijferd" los van elkaar gebruiken, behalve het monogram.
 - Het woordmerk nabouwen in een ander lettertype. Gebruik altijd de bestanden.
 
-**Bestanden:** woordmerk en monogram als SVG en PNG, licht en donker, komen in de repo onder `site/public/merk/` en op een pagina `/merk`. Tot die er zijn, geldt het woordmerk op de site als voorbeeld.
+**Bestanden:** woordmerk en monogram als SVG en PNG, licht en donker, staan in de repo onder `site/public/merk/` en om te downloaden op aiontcijferd.be/merk.
 
 ## Kleur
 
@@ -302,11 +302,10 @@ In dia's: één boodschap per dia, één markering per dia, genummerde onderdele
 2. Zet in de projectinstructies: "Alles wat je maakt volgt de huisstijl van AI Ontcijferd. Bij twijfel: de eenvoudigste versie, en vraag het."
 3. Laat de agent na elk bestand de checklist hierboven overlopen en melden wat hij aanpaste.
 
-**Wat er nog komt** (na goedkeuring van deze gids)
+**Bestanden** (klaar sinds 23 november 2026)
 
-- Woordmerk en monogram als bestanden, en een pagina `/merk` op de site.
-- Sjablonen voor Word (.dotx) en PowerPoint (.potx) in deze stijl, voor alle nieuwe pakketten.
-- De site, de nieuwsbrief, de deelafbeeldingen en het pakket "AI-geletterdheid in een doos" omgezet naar deze gids.
+- Woordmerk en monogram als SVG en PNG, en de sjablonen voor Word (.dotx) en PowerPoint (.potx): aiontcijferd.be/merk.
+- De site, de nieuwsbrief, de deelafbeeldingen, de Plakcheck, de AI-cursus en alle lespakketten volgen deze gids.
 
 Deze gids is versie 1.0. Wijzigingen beslist de eindredacteur; elke versie krijgt een datum.
 
