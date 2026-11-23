@@ -1,7 +1,7 @@
 ---
 titel: "2 december: wat de AI Act vanaf nu verbiedt en vraagt"
-datum: 2026-12-01
-status: concept
+datum: 2026-11-23
+status: klaar
 labels: ["Burgers", "Onderwijs", "Lokale overheden", "Zelfstandigen", "Werk"]
 samenvatting: "Vanaf 2 december 2026 verbiedt de AI Act apps die zonder toestemming naaktbeelden van echte mensen maken, en AI die beelden van kindermisbruik maakt. Ook moeten alle AI-generators hun beelden, video, audio en tekst machineleesbaar markeren. Wat verandert er, voor wie, en wie controleert het in België?"
 ---
@@ -62,13 +62,19 @@ Meer over wat geldt wanneer: het [AI Act-kompas](/ai-act).
 
 ## Mijn inschatting
 
-<!-- Duncan: schrijf hier je inschatting. Het dossier verschijnt pas met status: klaar én tekst onder deze kop. -->
+De twee nieuwe verboden vind ik een vanzelfsprekende aanvulling op de AI Act. Apps die zonder toestemming naaktbeelden van echte mensen maken, en AI die beelden van seksueel misbruik van kinderen maakt, horen nergens thuis. Dat zulke systemen nu uitdrukkelijk verboden zijn, is de normaalste zaak van de wereld.
+
+Ik zie de AI Act als een kader dat meegroeit met de technologie. Zo is het ook bedoeld: de Europese Commissie moet elk jaar nagaan of de lijst met verboden toepassingen aangevuld moet worden ([AI Act Service Desk](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-112)). Bij die jaarlijkse oefening kwam dit gat ook boven ([Europese Commissie](https://digital-strategy.ec.europa.eu/fr/library/report-review-prohibitions-and-high-risk-ai)). Naarmate AI verder evolueert, zullen er stelselmatig nieuwe regels nodig zijn.
+
+De markeringsplicht vind ik een heel goede zaak. In alles wat ik met AI maak, ook op deze site, staat transparantie centraal. Als het steeds moeilijker wordt om echt van vals te onderscheiden, is een merkteken op wat met AI gemaakt is cruciaal. Dan moet die regel ook echt gehandhaafd worden.
+
+Ik denk dat een tweede systeem de markering goed kan aanvullen: een register, bijvoorbeeld op basis van blockchaintechnologie, waarin mensen hun eigen werk als authentiek laten opnemen. Maakt iemand zo'n werk na zonder merkteken, dan kun je het origineel nog altijd terugvinden en vergelijken. Zo krijg je een dubbele controle: het merkteken zegt wat met AI gemaakt is, het register wat echt van iemand komt. Een deel daarvan bestaat al, zonder blockchain: met de open standaard C2PA kan een camera of programma ondertekende herkomstgegevens aan een foto toevoegen ([Content Authenticity Initiative](https://contentauthenticity.org/faq)).
 
 ## Zo is dit gemaakt
 
 - Het onderwerp komt uit de agenda van AI Ontcijferd: 2 december 2026 stond als belangrijke datum in het AI Act-kompas.
 - Claude (Anthropic) zocht de bronnen op, controleerde de data en de inhoud van de regels in juridische analyses en persberichten van het Europees Parlement, en schreef dit concept.
-- Duncan Panis las alles na en schreef zelf "Mijn inschatting".
+- Duncan Panis las alles na en schreef "Mijn inschatting". Claude zette zijn gedachtenstroom om in lopende tekst en controleerde de feiten erin.
 - Dit is geen juridisch advies. Bij twijfel over je eigen situatie: raadpleeg een jurist.
 - Meer over onze werkwijze: [Zo werken we](/zo-werken-we).
 
@@ -84,3 +90,6 @@ Meer over wat geldt wanneer: het [AI Act-kompas](/ai-act).
 8. [Experts waarschuwen voor valse naaktbeelden door AI](https://www.vrt.be/vrtnws/nl/2023/09/29/experts-waarschuwen-voor-valse-naaktbeelden/), VRT NWS
 9. [Ex-Miss België slachtoffer van valse AI-naaktbeelden](https://www.vrt.be/vrtnws/nl/2023/09/29/bv-s-slachtoffer-van-valse-naaktbeelden-via-ai/), VRT NWS
 10. [Reactie op platformen en stiekeme naaktbeelden](https://www.vrt.be/vrtnws/nl/2026/06/24/reactie-matz-platformen-stiekeme-naaktbeelden/), VRT NWS
+11. [Artikel 112: Evaluatie en herziening](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-112), AI Act Service Desk, Europese Commissie
+12. [Report on the need to review the list of prohibited AI practices and of high-risk AI systems](https://digital-strategy.ec.europa.eu/fr/library/report-review-prohibitions-and-high-risk-ai), Europese Commissie
+13. [Content Credentials: FAQ](https://contentauthenticity.org/faq), Content Authenticity Initiative
