@@ -19,3 +19,4 @@ data/verspreiding/
 CLAUDE.md
 data/ideeen.md
 data/plan-plus.md
+data/indexnow-gemeld.txt
