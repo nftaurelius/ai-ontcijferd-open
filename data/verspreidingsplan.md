@@ -193,7 +193,8 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
       vult aan.
 - [ ] De eerste drie voorstellen, klaar om op 4 januari te versturen.
 - [x] De Verpakker (23/11): bij elke gepubliceerde editie een pakket in `data/weken/<week>/verspreiding/pakket.md` (overneemblok, berichtendienst, luisterscript, links naar mail en deelafbeelding, LinkedIn-concept). Zonder model: alles komt uit de gepubliceerde editie. Workflow `verpakker.yml`.
-- [ ] De Meter en de nulmeting op 4 januari: inschrijvingen, bezoeken, verwijzers.
+- [x] De Meter (23/11): elke maandag de inschrijvingen per Brevo-lijst en de laatste campagnes in de privé cijfers (workflow `meter.yml`, secret `BREVO_API_KEY`).
+- [ ] De nulmeting op 4 januari: Meter plus bezoeken en verwijzers uit Vercel Web Analytics (met de hand).
 - [ ] Duncan: aanmelden bij Bing Webmaster Tools (vindbaarheid, mag nu al).
 - [ ] Duncan: LinkedIn-profiel aanvullen met AI Ontcijferd en de link naar de site.
 - [ ] Duncan: een organisatie-account op KlasCement (aanmaken mag nu, materiaal plaatsen vanaf 4 januari).

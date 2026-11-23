@@ -1,0 +1,43 @@
+name: Meter — cijfers van de verspreiding
+
+# Elke maandag: inschrijvingen per Brevo-lijst en de laatste campagnes, in data/verspreiding/cijfers.md
+# (privé, niet in de publieke spiegel). Nodig: secret BREVO_API_KEY in deze repo.
+
+on:
+  schedule:
+    - cron: "23 6 * * 1"   # maandagochtend
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/meter.yml", "pipeline/meter.py"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pijplijn
+  cancel-in-progress: false
+
+jobs:
+  meten:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml requests
+      - name: Meten
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+        run: python -m pipeline.meter
+      - name: Bewaren
+        run: |
+          git config user.name "ai-ontcijferd-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/verspreiding
+          git diff --cached --quiet && exit 0
+          git commit -m "Meter $(date +%F)"
+          git pull --rebase --autostash origin main
+          git push
