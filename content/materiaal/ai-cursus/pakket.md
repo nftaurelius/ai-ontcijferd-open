@@ -8,7 +8,7 @@ voor: ["Burgers", "Werk", "Zelfstandigen", "Onderwijs", "Lokale overheden", "Bib
 deelnemers: "Iedereen die met AI wil leren werken: thuis, op het werk of in een vereniging. Geen voorkennis nodig."
 niveau: "Instap tot gevorderd (de delen klimmen)"
 duur: "Deel 1 in een namiddag; de hele cursus in eigen tempo"
-versie: "Kernversie oktober 2026, in de huisstijl sinds 23 november 2026"
+versie: "oktober 2026 (kernversie)"
 bijgewerkt: 2026-11-23
 licentie: "CC BY 4.0"
 maker: "Duncan Panis"

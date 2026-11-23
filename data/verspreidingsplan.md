@@ -167,7 +167,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 - [ ] De AI-proeverij als downloadbaar pakket (Duncan werkt ze af; daarna zetten wij ze in het sjabloon).
 - [x] AI-geletterdheid in een doos (artikel 4 van de AI Act): afsprakenkaart, sessie van een uur,
       aanwezigheidslijst, zelftest, lijst van gebruikte tools (23/11, versie 1.0, `/materiaal/ai-geletterdheid-in-een-doos`).
-- [ ] Minstens één pakket meer uit het AI-aanbod, in de algemene versie.
+- [x] Meer pakketten: Echt of nep?, Chatbot zonder risico, AI-afspraken op school, Briefing voor raadsleden, Wanneer geen AI? (23/11, v1.0, nog niet getest). De AI-cursus staat online op `/cursus` (23/11).
 - [x] Een pagina "Begin hier" (23/11).
 
 **Doen**
@@ -175,11 +175,12 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 - [x] Eerste werkwijzen: drie prompts en een skill (23/11, `/werkwijzen`). Agents volgen.
 
 **Volgen**
-- [ ] Het stuk over 2 december en een nagekeken AI Act-kompas.
+- [x] Het stuk over 2 december en een nagekeken AI Act-kompas (23/11).
 - [ ] Het jaaroverzicht 2026, klaar om op 4 januari mee naar buiten te gaan.
 
 **Doorgeven**
 - [x] Pagina `/overnemen` en een blok "Neem dit over" bij elke editie.
+- [x] Huisstijl 1.0 doorgevoerd op site, mails, cursus en pakketten, met sjablonen op `/merk` (23/11).
 - [x] Een deelafbeelding per editie, dossier, dagbrief, tool en pakket (23/11, `/deel/...png`).
 - [x] Menu en startpagina volgens de vier ingangen (Volgen, Leren, Doen, Lesgeven) (23/11).
 - [x] De publieke repo leesbaar voor buitenstaanders (LEESMIJ, bijdragen, pagina "Meedoen").
