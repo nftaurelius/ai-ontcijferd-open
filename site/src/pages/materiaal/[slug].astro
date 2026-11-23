@@ -53,7 +53,7 @@ const schema = {
         {p.voor.length > 0 && <p class="meta">Om te geven in: {p.voor.join(", ").toLowerCase()}.</p>}
 
         <div class="downloadblok">
-          <a class="knop knop-groot" href={p.zipUrl} download={p.zipNaam}>Download het hele pakket</a>
+          <a class="knop knop-hoofd knop-groot" href={p.zipUrl} download={p.zipNaam}>Download het hele pakket</a>
           <p class="meta">Eén zip-bestand van {grootte(totaleGrootte(p))}, met een LEESMIJ over de licentie en de prompt om het aan te passen.</p>
           <h2 class="downloadblok-kop">Of download de bestanden apart</h2>
           <ul class="bestanden">

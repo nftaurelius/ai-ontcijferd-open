@@ -1,0 +1,99 @@
+---
+import Basis from "../layouts/Basis.astro";
+
+const KLEUREN = [
+  { naam: "Inkt", hex: "#20262B", gebruik: "Tekst, koppen, knoppen, donkere achtergrond" },
+  { naam: "Papier", hex: "#F2F3EF", gebruik: "Achtergrond" },
+  { naam: "Vlak", hex: "#E8EAE4", gebruik: "Kaders, tegels, tabelkoppen" },
+  { naam: "Lijn", hex: "#CFD3CC", gebruik: "Scheidingslijnen, nooit tekst" },
+  { naam: "Grijs", hex: "#5C6368", gebruik: "Bijschriften, data, bronnen" },
+  { naam: "Geel", hex: "#FFD400", gebruik: "Alleen op vier plekken" },
+];
+const BESTANDEN = [
+  { href: "/merk/woordmerk.svg", tekst: "Woordmerk, licht (SVG)" },
+  { href: "/merk/woordmerk-1200.png", tekst: "Woordmerk, licht (PNG, 1200 px)" },
+  { href: "/merk/woordmerk-donker.svg", tekst: "Woordmerk, donker (SVG)" },
+  { href: "/merk/woordmerk-donker-1200.png", tekst: "Woordmerk, donker (PNG, 1200 px)" },
+  { href: "/merk/monogram.svg", tekst: "Monogram (SVG)" },
+  { href: "/merk/monogram-512.png", tekst: "Monogram (PNG, 512 px)" },
+];
+const GIDS = "https://github.com/nftaurelius/ai-ontcijferd-open/blob/main/data/huisstijl.md";
+---
+
+<Basis
+  titel="Het merk"
+  beschrijving="Het woordmerk, de kleuren en de letters van AI Ontcijferd, om te downloaden. Met de huisstijlgids voor wie iets maakt of overneemt."
+  bron="site/src/pages/merk.astro"
+>
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Merk</p><p>Versie 1.0 · 23 november 2026</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Het merk</h1>
+      <p class="lead">
+        <span class="markeer">Rust boven aandacht: één markering, één knop, één boodschap.</span>{" "}
+        Hier vind je het woordmerk, de kleuren en de letters van AI Ontcijferd, en de gids die zegt hoe je ze gebruikt.
+      </p>
+      <p>
+        Neem je iets over of maak je een sessie met ons materiaal? Gebruik het woordmerk gerust bij de naamsvermelding.
+        Pas het niet aan en typ het niet na: gebruik de bestanden.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Woordmerk</p></div>
+    <div class="proza">
+      <h2>Woordmerk en monogram</h2>
+      <div class="merk-staal">
+        <img src="/merk/woordmerk.svg" alt="Woordmerk AI Ontcijferd op een lichte achtergrond" width="380" />
+      </div>
+      <div class="merk-staal merk-staal-donker">
+        <img src="/merk/woordmerk-donker.svg" alt="Woordmerk AI Ontcijferd op een donkere achtergrond" width="380" />
+      </div>
+      <div class="merk-staal">
+        <img src="/merk/monogram.svg" alt="Monogram: het gele blok met AI" width="72" height="72" />
+      </div>
+      <p>Het monogram gebruik je waar het woordmerk te klein wordt: favicon, profielfoto, alles onder 24 pixels hoog. Laat rond het woordmerk minstens de hoogte van het gele blok vrij.</p>
+      <ul class="bestanden">
+        {BESTANDEN.map((b) => <li><a href={b.href} download>{b.tekst}</a></li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Kleur</p></div>
+    <div class="proza">
+      <h2>Vijf kleuren en één accent</h2>
+      <p>Ongeveer 70 procent papier of vlak, 25 procent inkt, hoogstens 5 procent geel. Geel staat alleen in het woordmerk, achter één zin, op de belangrijkste knop en in het blokje van een nummer.</p>
+      <div class="tabelrol">
+        <table class="cijfertabel">
+          <thead><tr><th scope="col">Kleur</th><th scope="col">Naam</th><th scope="col">Hex</th><th scope="col">Gebruik</th></tr></thead>
+          <tbody>
+            {KLEUREN.map((k) => (
+              <tr><td><span class="kleurstaal" style={`background:${k.hex}`}></span></td><th scope="row">{k.naam}</th><td>{k.hex}</td><td>{k.gebruik}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Letters</p></div>
+    <div class="proza">
+      <h2>Twee letters, elk met een eigen taak</h2>
+      <p><strong>Literata</strong> voor koppen en lopende tekst. <span class="ui-letter"><strong>Atkinson Hyperlegible Next</strong> voor knoppen, labels, data en tabellen.</span> Beide zijn gratis en open.</p>
+      <p>In Word, PowerPoint, Excel en Google Docs gebruik je <strong>Georgia</strong> voor koppen en <strong>Arial</strong> voor tekst. Die staan op vrijwel elke computer, dus een aangepast lespakket verspringt niet.</p>
+      <p>Sjablonen voor Word en PowerPoint vind je bij het <a href="/materiaal">open lesmateriaal</a>.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>De gids</p></div>
+    <div class="proza">
+      <h2>De volledige huisstijlgids</h2>
+      <p>De gids beschrijft het merk, de vaste elementen (markering, blokje, bijsluiter, statuslabels, hype-meter), beeld, taal en toon, en de opbouw per soort output, met een checklist voor je iets publiceert. Hij is geschreven voor mensen en voor AI-agents: voeg hem toe als context in je project en laat de agent de checklist overlopen.</p>
+      <p><a href={GIDS}>Lees de huisstijlgids</a> (Markdown, op GitHub)</p>
+    </div>
+  </section>
+</Basis>

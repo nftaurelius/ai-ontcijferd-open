@@ -1,6 +1,7 @@
-/* AI Ontcijferd — huisstijl
-   Leesbare tekst in Literata, interface en metadata in Atkinson Hyperlegible.
-   Eén signatuur: de gele markeerstift (Vlaams leeuwengeel) voor wat ertoe doet. */
+/* AI Ontcijferd — huisstijl 1.0 (goedgekeurd 23/11/2026, zie data/huisstijl.md)
+   Literata voor tekst, Atkinson Hyperlegible Next voor interface en data.
+   Geel alleen op vier plekken: het woordmerk, één markering, één hoofdknop,
+   en het blokje als nummer of actieve stand. Alles hoekig, links in inkt. */
 
 @import "@fontsource-variable/literata/index.css";
 @import "@fontsource-variable/literata/wght-italic.css";
@@ -15,7 +16,6 @@
   --lijn: #cfd3cc;
   --geel: #ffd400;
   --markeer: rgba(255, 212, 0, 0.55);
-  --link: #1d3fa8;
 
   --tekst: "Literata Variable", Georgia, serif;
   --ui: "Atkinson Hyperlegible Next", system-ui, sans-serif;
@@ -33,7 +33,6 @@
     --grijs: #9ba2a6;
     --lijn: #353c41;
     --markeer: rgba(255, 212, 0, 0.32);
-    --link: #9db4ff;
   }
 }
 
@@ -57,18 +56,17 @@ body {
 }
 
 a {
-  color: var(--link);
-  text-underline-offset: 0.18em;
+  color: var(--inkt);
+  text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
 }
 a:hover {
-  text-decoration-thickness: 2px;
+  background: linear-gradient(transparent 52%, var(--markeer) 52%, var(--markeer) 92%, transparent 92%);
 }
 
 :focus-visible {
-  outline: 3px solid var(--geel);
+  outline: 2px solid var(--inkt);
   outline-offset: 2px;
-  border-radius: 2px;
 }
 
 h1,
@@ -141,15 +139,25 @@ ol {
 .woordmerk {
   font-family: var(--tekst);
   font-size: 1.35rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--inkt);
   text-decoration: none;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: baseline;
+}
+.woordmerk:hover {
+  background: none;
 }
 .woordmerk .ai {
-  padding: 0 0.12em;
-  margin-right: 0.12em;
+  font-family: var(--ui);
+  font-weight: 700;
+  background: var(--geel);
+  color: #20262b;
+  padding: 0.02em 0.22em;
+  margin-right: 0.24em;
+  letter-spacing: 0;
 }
 .menu {
   font-family: var(--ui);
@@ -165,8 +173,7 @@ ol {
 .menu a[aria-current="page"],
 .menu a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--geel);
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
 }
 
 .voet {
@@ -262,8 +269,7 @@ details > *:not(summary) {
 }
 .labels li {
   border: 1px solid var(--lijn);
-  border-radius: 1rem;
-  padding: 0.05rem 0.55rem;
+  padding: 0.05rem 0.5rem;
   font-size: 0.75rem;
   color: var(--inkt);
   background: var(--papier);
@@ -282,7 +288,7 @@ details > *:not(summary) {
 }
 .hype-schaal span {
   height: 0.6rem;
-  background: var(--vlak);
+  background: transparent;
   border: 1px solid var(--lijn);
 }
 .hype-schaal span[data-actief] {
@@ -307,7 +313,6 @@ details > *:not(summary) {
 .inschatting {
   background: var(--vlak);
   padding: 1.5rem 1.75rem;
-  border-left: 4px solid var(--geel);
 }
 .inschatting h2 {
   margin-top: 0;
@@ -379,7 +384,6 @@ details > *:not(summary) {
 
 /* Inschrijven */
 .inschrijven {
-  border: 1px solid var(--inkt);
   padding: 1.5rem 1.75rem;
 }
 .inschrijven h2 {
@@ -406,15 +410,25 @@ details > *:not(summary) {
   font-weight: 700;
   font-size: 0.95rem;
   padding: 0.6rem 1.1rem;
-  background: var(--geel);
-  color: #20262b;
+  background: transparent;
+  color: var(--inkt);
   border: 1px solid var(--inkt);
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
 }
+/* De ene hoofdknop per scherm */
+.knop-hoofd {
+  background: var(--geel);
+  color: #20262b;
+  border-color: var(--geel);
+}
 .knop:hover {
-  background: #ffe24d;
+  background: var(--vlak);
+  text-decoration: underline;
+}
+.knop-hoofd:hover {
+  background: var(--geel);
 }
 
 /* Jargonfilter */
@@ -464,12 +478,11 @@ details > *:not(summary) {
   top: 0.4rem;
   width: 0.75rem;
   height: 0.75rem;
-  border-radius: 50%;
   background: var(--papier);
   border: 2px solid var(--grijs);
 }
 .tijdlijn li[data-status="komt"]::before {
-  background: var(--geel);
+  background: var(--inkt);
   border-color: var(--inkt);
 }
 .tijdlijn p {
@@ -529,15 +542,14 @@ details > *:not(summary) {
   font-size: 0.85rem;
   padding: 0.3rem 0.75rem;
   border: 1px solid var(--lijn);
-  border-radius: 1rem;
   background: var(--papier);
   color: var(--inkt);
   cursor: pointer;
 }
 .filter button[aria-pressed="true"] {
-  background: var(--geel);
+  background: var(--inkt);
   border-color: var(--inkt);
-  color: #20262b;
+  color: var(--papier);
   font-weight: 700;
 }
 .toepassing {
@@ -574,11 +586,11 @@ details > *:not(summary) {
   color: var(--inkt);
 }
 .soort[data-soort="demo"] {
-  background: var(--markeer);
+  background: var(--vlak);
 }
 .kanttekening {
-  border-left: 3px solid var(--geel);
-  padding-left: 0.9rem;
+  background: var(--vlak);
+  padding: 0.6rem 0.9rem;
 }
 .video {
   margin: 0 0 1rem;
@@ -597,13 +609,15 @@ details > *:not(summary) {
   display: inline-block;
   margin: 0.5rem 0 0;
   padding: 0.1rem 0.5rem;
-  border: 1px solid currentColor;
-  border-radius: 999px;
+  border: 1px solid var(--inkt);
+  font-family: var(--ui);
   font-size: 0.8rem;
 }
-.status[data-status="Bevestigd"] {
-  background: var(--markeer);
-  border-color: transparent;
+.status[data-status="Bevestigd"],
+.status[data-status="Nagekeken"] {
+  background: var(--inkt);
+  color: var(--papier);
+  font-weight: 700;
 }
 
 /* ---------------------------------------------------------------- overzicht (nov. 2026)
@@ -630,7 +644,7 @@ details > *:not(summary) {
 }
 .ritme li {
   padding: 0.45rem 0 0.45rem 0.9rem;
-  border-left: 3px solid var(--geel);
+  border-left: 2px solid var(--lijn);
   margin-bottom: 0.4rem;
 }
 
@@ -704,7 +718,7 @@ ul.klein-lijst {
   top: 0.85em;
   width: 0.4rem;
   height: 0.4rem;
-  background: var(--geel);
+  background: var(--inkt);
 }
 .dossiertip {
   margin: 1.25rem 0 0;
@@ -725,7 +739,7 @@ ul.klein-lijst {
   gap: 1rem;
 }
 .tegels li {
-  border: 1px solid var(--lijn);
+  background: var(--vlak);
   padding: 1rem 1.1rem;
 }
 .tegels a {
@@ -797,8 +811,8 @@ ul.klein-lijst {
   .gsm-menu-knop {
     border: 1px solid var(--inkt);
     padding: 0.35rem 0.75rem;
-    background: var(--geel);
-    color: #20262b;
+    background: transparent;
+    color: var(--inkt);
   }
   .gsm-menu[open] .gsm-menu-knop {
     background: var(--papier);
@@ -811,7 +825,6 @@ ul.klein-lijst {
     top: 100%;
     background: var(--papier);
     border-bottom: 3px solid var(--inkt);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     padding: 0.25rem 1rem 1rem;
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
@@ -830,7 +843,7 @@ ul.klein-lijst {
     text-decoration: none;
   }
   .gsm-menu li a[aria-current="page"] {
-    border-left-color: var(--geel);
+    border-left-color: var(--inkt);
   }
   .gsm-menu li strong {
     display: block;
@@ -892,7 +905,6 @@ ul.klein-lijst {
   color: #20262b;
   font-size: 1.05rem;
   letter-spacing: 0;
-  border: 1px solid var(--inkt);
 }
 .onderwerp .proza h2 {
   margin-bottom: 0.9rem;
@@ -917,8 +929,7 @@ ul.klein-lijst {
 
 /* Vaste rubrieken (ruis, woord, lezersvraag, om te proberen, radar) als kader */
 .rubriek {
-  border: 1px solid var(--lijn);
-  border-top: 4px solid var(--geel);
+  background: var(--vlak);
   padding: 1.1rem 1.4rem 0.4rem;
 }
 .rubriek h2 {
@@ -962,15 +973,7 @@ ul.klein-lijst {
 
 /* Inschrijfblok springt eruit */
 .inschrijven {
-  background: rgba(255, 212, 0, 0.14);
-  border: 1px solid var(--inkt);
-  border-top: 5px solid var(--geel);
-}
-.inschrijven h2::before {
-  content: "✉";
-  display: inline-block;
-  margin-right: 0.45rem;
-  font-family: var(--ui);
+  background: var(--vlak);
 }
 @media (max-width: 60rem) {
   .inschrijven {
@@ -980,7 +983,6 @@ ul.klein-lijst {
 
 /* Het Vlaamse blok: waarom het ertoe doet, voor wie */
 .vlaanderen {
-  border-left: 4px solid var(--geel);
   background: var(--vlak);
   padding: 0.9rem 1.1rem 0.2rem;
   margin: 0 0 1.25rem;
@@ -988,9 +990,7 @@ ul.klein-lijst {
 .vlaanderen-kop {
   font-family: var(--ui);
   font-weight: 700;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font-size: 0.9rem;
   margin: 0 0 0.5rem;
 }
 .vlaanderen ul {
@@ -1029,9 +1029,6 @@ ul.klein-lijst {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin: 0 0 0.3rem;
-}
-.inschrijven h2::before {
-  content: none;
 }
 .inschrijven h2 {
   font-size: 1.45rem;
@@ -1080,9 +1077,7 @@ ul.klein-lijst {
 .inschrijven-kort {
   padding: 1rem 1.1rem;
   margin: 1.75rem 0 0.5rem;
-  border: 1px solid var(--inkt);
-  border-left: 6px solid var(--geel);
-  border-top-width: 1px;
+  background: var(--vlak);
 }
 .inschrijven-kort .inschrijven-kort-tekst {
   font-family: var(--ui);
@@ -1104,15 +1099,15 @@ ul.klein-lijst {
 }
 .kop-knop {
   font-weight: 700;
-  background: var(--geel);
-  color: #20262b !important;
+  background: transparent;
+  color: var(--inkt) !important;
   border: 1px solid var(--inkt);
   padding: 0.3rem 0.75rem;
   text-decoration: none !important;
   margin-left: auto;
 }
 .kop-knop:hover {
-  background: #ffe24d;
+  background: var(--vlak);
 }
 .kop-mail {
   display: none;
@@ -1227,7 +1222,6 @@ ul.klein-lijst {
   font-weight: 700;
   background: var(--geel);
   color: #20262b;
-  border: 1px solid var(--inkt);
 }
 
 /* Pakketten in voorbereiding */
@@ -1291,7 +1285,7 @@ ul.klein-lijst {
   line-height: 1.5;
   background: var(--vlak);
   color: var(--inkt);
-  border: 1px solid var(--lijn);
+  border: 0;
   padding: 0.8rem;
   margin: 0.4rem 0 0.6rem;
   white-space: pre-wrap;
@@ -1308,7 +1302,6 @@ ul.klein-lijst {
   padding: 0.35rem 0.8rem;
 }
 .naamsvermelding {
-  border-left: 6px solid var(--geel);
   background: var(--vlak);
   padding: 0.8rem 1rem;
   font-family: var(--ui);
@@ -1317,8 +1310,7 @@ ul.klein-lijst {
 
 /* Gratis tool op de startpagina */
 .toolpromo {
-  border: 1px solid var(--inkt);
-  border-left: 6px solid var(--geel);
+  background: var(--vlak);
   padding: 1.1rem 1.2rem;
 }
 .toolpromo h2 {
@@ -1337,8 +1329,8 @@ ul.klein-lijst {
   top: -4rem;
   z-index: 100;
   padding: 0.6rem 0.9rem;
-  background: var(--geel);
-  color: #20262b;
+  background: var(--inkt);
+  color: var(--papier);
   font-family: var(--ui);
   font-weight: 600;
   text-decoration: none;
@@ -1449,4 +1441,29 @@ main:focus {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
   margin-bottom: 0.5rem;
+}
+
+/* Merkpagina */
+.merk-staal {
+  background: #f2f3ef;
+  padding: 1.5rem;
+  margin: 0 0 0.75rem;
+}
+.merk-staal-donker {
+  background: #20262b;
+}
+.merk-staal img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.kleurstaal {
+  display: inline-block;
+  width: 2.2rem;
+  height: 1.4rem;
+  border: 1px solid var(--lijn);
+  vertical-align: middle;
+}
+.ui-letter {
+  font-family: var(--ui);
 }

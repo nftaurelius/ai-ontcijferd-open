@@ -28,12 +28,12 @@ export function materiaalMail(p: Pakket): string {
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${K.buiten};"><tr><td align="center" style="padding:20px 8px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:600px;background:${K.papier};">
 <tr><td style="padding:28px 32px 0 32px;">
-<p style="margin:0;font-family:${TEKST};font-size:22px;font-weight:bold;color:${K.inkt};"><span style="background:${K.geel};font-family:${UI};padding:0 5px;">AI</span> Ontcijferd</p>
-<p style="margin:6px 0 0 0;font-family:${UI};font-size:12px;letter-spacing:1px;text-transform:uppercase;color:${K.grijs};">Nieuw gratis materiaal</p>
+<p style="margin:0;font-family:Georgia,serif;font-size:22px;font-weight:bold;color:${K.inkt};"><span style="background:${K.geel};font-family:${UI};padding:0 5px;">AI</span> Ontcijferd</p>
+<p style="margin:6px 0 0 0;font-family:${UI};font-size:13px;color:${K.grijs};">Nieuw gratis materiaal</p>
 </td></tr>
 <tr><td style="padding:22px 32px 0 32px;">
 <h1 style="margin:0 0 10px 0;font-family:${TEKST};font-size:26px;line-height:1.25;color:${K.inkt};">${p.titel}</h1>
-<p style="margin:0 0 16px 0;font-family:${TEKST};font-size:17px;line-height:1.6;color:${K.inkt};">${p.samenvatting}</p>
+<p style="margin:0 0 16px 0;font-family:${UI};font-size:17px;line-height:1.6;color:${K.inkt};">${p.samenvatting}</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${K.vlak};"><tr><td style="padding:12px 16px;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0">
 ${rij("Voor wie", p.deelnemers)}${rij("Niveau", p.niveau)}${rij("Duur", p.duur)}${rij("Versie", `${p.versie}, bijgewerkt op ${datumLeesbaar(p.bijgewerkt)}`)}${rij("Licentie", `${p.licentie}: gratis, en je mag het aanpassen`)}

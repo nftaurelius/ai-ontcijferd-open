@@ -40,7 +40,7 @@ const schema = {
         <tbody>{bijsluiter.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody>
       </table>
       {w.bestanden.length > 0 && (
-        <p><a class="knop" href={`/werkwijzen/${w.slug}.zip`}>Download de {w.soort === "skill" ? "skill" : "bestanden"} (zip)</a></p>
+        <p><a class="knop knop-hoofd" href={`/werkwijzen/${w.slug}.zip`}>Download de {w.soort === "skill" ? "skill" : "bestanden"} (zip)</a></p>
       )}
     </div>
   </section>
