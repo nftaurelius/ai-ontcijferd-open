@@ -189,7 +189,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 
 **Stap 0, tot 4 januari: uitbouwen en voorbereiden**
 - [ ] De startlijst hierboven.
-- [ ] Contactenboek, eerste versie (half december): een voorstel van organisaties per doelgroep; Duncan schrapt en
+- [x] Contactenboek, eerste versie (klaar op 23/11, 33 organisaties): een voorstel van organisaties per doelgroep; Duncan schrapt en
       vult aan.
 - [ ] De eerste drie voorstellen, klaar om op 4 januari te versturen.
 - [x] De Verpakker (23/11): bij elke gepubliceerde editie een pakket in `data/weken/<week>/verspreiding/pakket.md` (overneemblok, berichtendienst, luisterscript, links naar mail en deelafbeelding, LinkedIn-concept). Zonder model: alles komt uit de gepubliceerde editie. Workflow `verpakker.yml`.
@@ -209,7 +209,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 **Stap 2, januari en februari**
 - [ ] De Speurder en de Voorsteller.
 - [ ] De maandelijkse samenvatting per doelgroep.
-- [ ] De chatbot-test.
+- [ ] De chatbot-test. Vragenlijst en nulmeting van de zoeklaag klaar (23/11: 0 van 8); de meting van de chatbots zelf volgt.
 - [x] QR-code en "Gaf je dit pakket?" in het sjabloon van de pakketten (23/11, vervroegd): QR naar het pakket op de titeldia en in de voet van elk Word-bestand, QR naar /gegeven/<slug> op de laatste dia.
 
 **Stap 3, voorjaar 2027**
