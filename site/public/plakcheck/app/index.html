@@ -359,8 +359,8 @@ pre{background:var(--papier);padding:.8rem;overflow:auto;font-size:.85rem;line-h
 {
   "meta": {
     "tool": "Plakcheck en Urenrekening",
-    "versie": "1.0.2",
-    "configBijgewerktOp": "2026-11-12",
+    "versie": "1.0.3",
+    "configBijgewerktOp": "2026-11-23",
     "canonicalUrl": "https://aiontcijferd.be/plakcheck",
     "canonicalUrlUitleg": "Het adres van de pagina op aiontcijferd.be waar de tool staat. Deellinks wijzen hierheen. Leeg betekent: het adres waarop de pagina nu draait.",
     "insluitUrl": "https://aiontcijferd.be/plakcheck/app/",
@@ -550,7 +550,7 @@ pre{background:var(--papier);padding:.8rem;overflow:auto;font-size:.85rem;line-h
     },
     {
       "id": "mistral-pro",
-      "naam": "Mistral Le Chat Pro",
+      "naam": "Mistral Vibe Pro (vroeger Le Chat Pro)",
       "soort": "particulier",
       "bedrag": 14.99,
       "munt": "EUR",
@@ -564,7 +564,7 @@ pre{background:var(--papier);padding:.8rem;overflow:auto;font-size:.85rem;line-h
     },
     {
       "id": "mistral-team",
-      "naam": "Mistral Le Chat Team",
+      "naam": "Mistral Vibe Team (vroeger Le Chat Team)",
       "soort": "zakelijk",
       "bedrag": 24.99,
       "munt": "EUR",
@@ -621,11 +621,11 @@ pre{background:var(--papier);padding:.8rem;overflow:auto;font-size:.85rem;line-h
     {
       "id": "google-particulier",
       "naam": "Gemini met een persoonlijk Google-account",
-      "bewering": "Gesprekken kunnen bewaard worden, door menselijke beoordelaars gelezen worden en gebruikt worden om de dienst te verbeteren. Je regelt dat via de activiteitsinstelling. Alleen in secundaire bronnen gezien.",
-      "bron": "Google, Privacyhub voor Gemini-apps",
+      "bewering": "De instelling Activiteit bewaren (Keep Activity) staat standaard aan voor wie 18 of ouder is. Dan bewaart Google je gesprekken bij je account en gebruikt het ze om Google AI te verbeteren, met hulp van menselijke beoordelaars. Gesprekken die een beoordelaar zag, blijven bewaard ook als je je activiteit wist. Zet je de instelling uit, dan gebruikt Google je gesprekken nog om te antwoorden en om misbruik tegen te gaan, ook dan met menselijke beoordelaars.",
+      "bron": "Google, Privacyhub voor Gemini-apps (bijgewerkt op 26 oktober 2026) en Hulp voor Gemini-apps, Activiteit in Gemini-apps",
       "bronUrl": "https://support.google.com/gemini/answer/13594961",
-      "laatstGecontroleerd": "2026-11-10",
-      "status": "TE CONTROLEREN",
+      "laatstGecontroleerd": "2026-11-23",
+      "status": "gecontroleerd",
       "gecontroleerdDoor": "model"
     },
     {
@@ -641,11 +641,11 @@ pre{background:var(--papier);padding:.8rem;overflow:auto;font-size:.85rem;line-h
     {
       "id": "microsoft-particulier",
       "naam": "Copilot met een persoonlijk Microsoft-account",
-      "bewering": "Gesprekken kunnen voor training gebruikt worden, met een instelling om dat uit te zetten. Het kan per land verschillen. Alleen in secundaire bronnen gezien.",
-      "bron": "Microsoft Support, Privacy FAQ for Microsoft Copilot",
-      "bronUrl": "https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot",
-      "laatstGecontroleerd": "2026-11-10",
-      "status": "TE CONTROLEREN",
+      "bewering": "Je gesprekken kunnen gebruikt worden om de AI-modellen van Copilot te trainen. Je kunt dat altijd uitzetten: profiel, Privacy, Training on conversation activity (en apart voor spraak). Microsoft traint niet op gegevens van wie jonger is dan 18. Je gespreksgeschiedenis blijft 18 maanden bewaard, tenzij je ze zelf wist.",
+      "bron": "Microsoft Support, Microsoft Copilot privacy controls en Privacy FAQ for Microsoft Copilot",
+      "bronUrl": "https://support.microsoft.com/microsoft-copilot/microsoft-copilot-privacy-controls",
+      "laatstGecontroleerd": "2026-11-23",
+      "status": "gecontroleerd",
       "gecontroleerdDoor": "model"
     },
     {
@@ -660,12 +660,12 @@ pre{background:var(--papier);padding:.8rem;overflow:auto;font-size:.85rem;line-h
     },
     {
       "id": "mistral",
-      "naam": "Mistral Le Chat",
-      "bewering": "Niet nagekeken tijdens de bouw. Lees de voorwaarden van je abonnement.",
-      "bron": "Mistral, prijspagina",
-      "bronUrl": "https://www.mistral.ai/pricing",
-      "laatstGecontroleerd": "2026-11-10",
-      "status": "TE CONTROLEREN",
+      "naam": "Mistral Vibe (vroeger Le Chat)",
+      "bewering": "Bij het gratis abonnement kunnen je gesprekken gebruikt worden om de modellen te trainen, tot je dat uitzet. Voor Pro en Team spreken de eigen bronnen van Mistral elkaar tegen: de documentatie zegt dat er standaard niet getraind wordt, het helpcentrum dat alleen Enterprise standaard is uitgezet. Ga ervan uit dat training aanstaat en zet het zelf uit in de privacy-instellingen. Bij Enterprise staat het standaard uit.",
+      "bron": "Mistral, documentatie Privacy and data controls en helpcentrum, Do you use my user data to train your AI models?",
+      "bronUrl": "https://docs.mistral.ai/admin/monitor-comply/privacy-data-controls",
+      "laatstGecontroleerd": "2026-11-23",
+      "status": "gecontroleerd",
       "gecontroleerdDoor": "model"
     }
   ],

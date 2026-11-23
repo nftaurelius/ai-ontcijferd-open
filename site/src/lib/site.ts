@@ -44,7 +44,7 @@ export const INGANGEN: Record<string, { titel: string; vraag: string; lead: stri
     lead: "Gratis gereedschap om morgen verstandig met AI aan de slag te gaan.",
     items: [
       { href: "/plakcheck", tekst: "Plakcheck en Urenrekening", uitleg: "Mag dit in een chatbot? En loont het dan nog? Alles draait in je browser." },
-      { href: "/bijsluiters", tekst: "Bijsluiters van AI-tools", uitleg: "Wat ChatGPT, Claude, Gemini, Copilot en Le Chat met je invoer doen, en wat ze kosten." },
+      { href: "/bijsluiters", tekst: "Bijsluiters van AI-tools", uitleg: "Wat ChatGPT, Claude, Gemini, Copilot en Mistral met je invoer doen, en wat ze kosten." },
       { href: "/werkwijzen", tekst: "Werkwijzen", uitleg: "Prompts, skills en agents om AI verstandig te gebruiken, met wat je zelf nakijkt." },
       { href: "/fiches", tekst: "Fiches", uitleg: "Praktische checklists om af te drukken." },
     ],

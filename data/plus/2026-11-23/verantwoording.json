@@ -1,0 +1,77 @@
+[
+  {
+    "passage": "Een workshop of adviestraject rond ChatGPT of Copilot laat je niet meer subsidiëren.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot de kmo-portefeuille en toegeschreven aan Vanoirbeek, die de andere steun elders beschrijft."
+  },
+  {
+    "passage": "Die steun is bedoeld voor iets nieuws ontwikkelen, niet voor een bestaande tool uitrollen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Ontwikkelingssubsidies en investeringsaftrek (aangekochte software of licenties) zijn nu apart beschreven."
+  },
+  {
+    "passage": "succesvolle aanvallen met \"agentic\" tools sterk zijn toegenomen sinds eind september 2026",
+    "beslissing": "verwerkt",
+    "toelichting": "De groei is nu gekoppeld aan de laatste drie weken, en eind september aan de beschreven activiteit."
+  },
+  {
+    "passage": "via gestolen inloggegevens bij privécode en uiteindelijk bij volledige beheerrechten in een cloudomgeving",
+    "beslissing": "verwerkt",
+    "toelichting": "De twee aanvalsroutes zijn gescheiden, de beheerrechten beperkt tot het cluster en 'cluster' is uitgelegd."
+  },
+  {
+    "passage": "ook bij kleine",
+    "beslissing": "verwerkt",
+    "toelichting": "Geschrapt; relevantie voor zelfstandigen is nu voorwaardelijk geformuleerd."
+  },
+  {
+    "passage": "Wiz verkoopt zelf beveiligingssoftware",
+    "beslissing": "verwerkt",
+    "toelichting": "Belangenkanttekening beperkt tot de eigen detectieproducten die Wiz in het bericht beschrijft."
+  },
+  {
+    "passage": "bij meer dan een dozijn organisaties opdook",
+    "beslissing": "verwerkt",
+    "toelichting": "Wisselende zekerheid van Wiz is toegevoegd."
+  },
+  {
+    "passage": "Het eigen incidentteam zag drie keer meer hulpvragen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vermeld dat periode en absolute aantallen ontbreken en dat het geen telling van aanvallen is."
+  },
+  {
+    "passage": "noemt het open-sourceraamwerk ARTEX, dat honderden kopieën kent",
+    "beslissing": "verwerkt",
+    "toelichting": "Forks zijn als softwareafsplitsingen omschreven en de waarschuwing over meerdere losstaande aanvallers is toegevoegd."
+  },
+  {
+    "passage": "Een professioneel ogende webshop is volgens DNS Belgium geen bewijs dat hij echt is",
+    "beslissing": "verwerkt",
+    "toelichting": "Toeschrijving geschrapt; de gevolgtrekking staat nu expliciet als eigen duiding."
+  },
+  {
+    "passage": "Het beschikbare deel van het artikel geeft geen cijfers",
+    "beslissing": "verwerkt",
+    "toelichting": "Werkwijzeverwijzingen uit de publieke tekst gehaald en de controle als HTML-commentaar gezet."
+  },
+  {
+    "passage": "**Status:** Eén bron",
+    "beslissing": "verwerkt",
+    "toelichting": "Bij elk onderwerp is een hype-meter met één van de vijf standen en één zin uitleg toegevoegd."
+  },
+  {
+    "passage": "Volgens VRT vragen wiskundestudenten zich af wat hun studie nog waard is, en een doctoraatsstudent moest zijn onderzoeksplan herschrijven.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door de uitspraak van Huybrechs en de vermelding dat de discussie internationaal is, zonder koppeling aan deze claim."
+  },
+  {
+    "passage": "Wie een webshop heeft, deelt dezelfde periode met nepshops.",
+    "beslissing": "verwerkt",
+    "toelichting": "Punt en bijhorend label Zelfstandigen geschrapt, want de bron biedt geen concrete consequentie voor webwinkeliers."
+  },
+  {
+    "passage": "een jailbroken AI-agent",
+    "beslissing": "verwerkt",
+    "toelichting": "Jailbroken, backdoor, open source en cloudomgeving zijn bij eerste gebruik kort uitgelegd."
+  }
+]

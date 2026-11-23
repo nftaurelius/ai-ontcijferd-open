@@ -35,7 +35,7 @@ const INDELING = [
   { slug: "claude", naam: "Claude", maker: "Anthropic (Verenigde Staten)", wat: "Chatbot en assistent voor tekst, code en bestanden.", aanbieders: ["anthropic-"], prijzen: ["claude-"] },
   { slug: "gemini", naam: "Gemini", maker: "Google (Verenigde Staten)", wat: "Chatbot en assistent, ook ingebouwd in Gmail, Docs en de rest van Google Workspace.", aanbieders: ["google-"], prijzen: ["google-"] },
   { slug: "copilot", naam: "Copilot", maker: "Microsoft (Verenigde Staten)", wat: "Chatbot en assistent, ook ingebouwd in Word, Outlook, Teams en de rest van Microsoft 365.", aanbieders: ["microsoft-"], prijzen: ["m365-"] },
-  { slug: "le-chat", naam: "Le Chat", maker: "Mistral AI (Frankrijk)", wat: "Chatbot en assistent van een Europese aanbieder.", aanbieders: ["mistral"], prijzen: ["mistral-"] },
+  { slug: "le-chat", naam: "Mistral Vibe", maker: "Mistral AI (Frankrijk)", wat: "Chatbot en assistent van een Europese aanbieder. Heette tot mei 2026 Le Chat.", aanbieders: ["mistral"], prijzen: ["mistral-"] },
 ];
 
 const DAG = 24 * 60 * 60 * 1000;

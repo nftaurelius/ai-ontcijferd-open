@@ -1,0 +1,92 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "Een workshop of adviestraject rond ChatGPT of Copilot laat je niet meer subsidiëren.",
+    "probleem": "Dit sluit alle subsidiemogelijkheden uit. De bron zegt alleen dat zulke trajecten niet meer via de kmo-portefeuille betaald kunnen worden.",
+    "voorstel": "Beperk de uitspraak expliciet tot de kmo-portefeuille en behoud de toeschrijving aan Vanoirbeek."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Die steun is bedoeld voor iets nieuws ontwikkelen, niet voor een bestaande tool uitrollen.",
+    "probleem": "‘Die steun’ verwijst ook naar de investeringsaftrek. De bron noemt daarvoor juist aangekochte software of licenties, zonder eigen ontwikkeling als voorwaarde.",
+    "voorstel": "Maak onderscheid tussen ontwikkelingssubsidies en investeringsaftrek. Verbind de eis van eigen ontwikkeling niet aan beide."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "succesvolle aanvallen met \"agentic\" tools sterk zijn toegenomen sinds eind september 2026",
+    "probleem": "Wiz situeert de sterke groei in de laatste drie weken. Eind september is het begin van de beschreven waarnemingen, niet de genoemde groeiperiode.",
+    "voorstel": "Gebruik voor de groeiclaim de laatste drie weken vóór de publicatie van Wiz. Houd de observaties sinds eind september daarvan gescheiden."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "via gestolen inloggegevens bij privécode en uiteindelijk bij volledige beheerrechten in een cloudomgeving",
+    "probleem": "De bron beschrijft volledige beheerrechten binnen een cluster, niet binnen de volledige cloudomgeving. Bovendien liep de route naar die rechten via een parallel gebruikte gestolen servicetoken, niet aantoonbaar via de privécode.",
+    "voorstel": "Scheid de twee beschreven aanvalsroutes en beperk de verkregen beheerrechten tot het betrokken cluster. Leg die term kort uit."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "ook bij kleine",
+    "probleem": "Wiz vermeldt geen omvang van de getroffen of benaderde organisaties. De expliciete koppeling aan kleine organisaties is niet onderbouwd.",
+    "voorstel": "Schrap deze toevoeging. Formuleer de relevantie voor zelfstandigen voorwaardelijk, vanuit de accounts en systemen die zij gebruiken."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Wiz verkoopt zelf beveiligingssoftware",
+    "probleem": "Het bronmateriaal noemt eigen detectieproducten en een incidentteam, maar stelt niet expliciet dat Wiz beveiligingssoftware verkoopt.",
+    "voorstel": "Onderbouw de commerciële activiteit met een toegankelijke primaire bron, of beperk de belangenkanttekening tot de eigen producten en dienstverlening die het bericht beschrijft."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "bij meer dan een dozijn organisaties opdook",
+    "probleem": "Wiz koppelt de activiteit met uiteenlopende zekerheid aan deze organisaties. Die onzekerheid verdwijnt in het concept.",
+    "voorstel": "Vermeld dat Wiz de campagne met wisselende zekerheid aan activiteit bij meer dan twaalf organisaties koppelt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het eigen incidentteam zag drie keer meer hulpvragen.",
+    "probleem": "De vergelijkingsperiode en het absolute aantal ontbreken. Bovendien zijn hulpvragen geen telling van geslaagde AI-aanvallen.",
+    "voorstel": "Maak duidelijk dat Wiz een verdrievoudiging meldt, zonder hier een vergelijkingsperiode of absolute aantallen te geven. Presenteer dit niet als zelfstandige maat voor aanvalsgroei."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "noemt het open-sourceraamwerk ARTEX, dat honderden kopieën kent",
+    "probleem": "De bron spreekt over forks, afsplitsingen van de software, niet noodzakelijk over gebruikte aanvalskopieën. Ook ontbreekt de expliciete waarschuwing dat ARTEX door meerdere, onderling losstaande operators wordt gebruikt.",
+    "voorstel": "Omschrijf forks als softwareafsplitsingen en vermeld dat ARTEX-activiteit niet automatisch één campagne of één aanvaller betekent."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Een professioneel ogende webshop is volgens DNS Belgium geen bewijs dat hij echt is",
+    "probleem": "Dit is een redelijke gevolgtrekking, maar de bron bevat deze specifieke uitspraak niet. Het concept schrijft haar rechtstreeks aan DNS Belgium toe.",
+    "voorstel": "Beperk de toeschrijving tot de waarschuwing dat AI geloofwaardige nepwebshops kan helpen maken. Markeer eventuele praktische conclusies als duiding."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het beschikbare deel van het artikel geeft geen cijfers",
+    "probleem": "Deze formulering en ‘De rest van het artikel kon niet worden meegenomen’ beschrijven de redactionele werkwijze. Bovendien kan hiermee niet worden vastgesteld of het volledige artikel cijfers bevat.",
+    "voorstel": "Verwijder de verwijzingen naar beschikbare delen en verwerking. Zet de controle op eventuele cijfers in een HTML-commentaar en beperk de publieke tekst tot de onderbouwde waarschuwing."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Eén bron",
+    "probleem": "Bij geen enkel onderwerp staat een hype-meter. Een bronstatus vervangt de vereiste beoordeling van aandacht tegenover verwachte impact voor Vlaanderen niet.",
+    "voorstel": "Voeg per onderwerp één van de vijf toegestane standen toe, met één zin uitleg. Baseer die beoordeling niet uitsluitend op de ernst of opvallendheid van de claim."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Volgens VRT vragen wiskundestudenten zich af wat hun studie nog waard is, en een doctoraatsstudent moest zijn onderzoeksplan herschrijven.",
+    "probleem": "De bron situeert deze voorbeelden in een internationale discussie. De doctoraatsstudent werkt aan de Sorbonne. Onder ‘Voor wie’ ontstaat een Vlaamse vertaalslag zonder concreet Vlaams aanknopingspunt en mogelijk de indruk dat dit gevolgen van de Riemann-claim zijn.",
+    "voorstel": "Vermeld de internationale context en verbind het herschreven onderzoeksplan niet aan deze specifieke claim. Maak de betekenis voor Vlaams onderwijs afzonderlijk en voorzichtig expliciet."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Wie een webshop heeft, deelt dezelfde periode met nepshops.",
+    "probleem": "Dit is geen concrete vertaalslag voor een Vlaamse zelfstandige. De zin herhaalt alleen dat echte en valse webshops gelijktijdig bestaan.",
+    "voorstel": "Schrap dit punt of zoek een onderbouwde, concrete consequentie voor webwinkeliers. Voeg geen maatregelen toe die de bron niet ondersteunt."
+  },
+  {
+    "ernst": "klein",
+    "passage": "een jailbroken AI-agent",
+    "probleem": "‘Jailbroken’ wordt niet uitgelegd. Ook ‘open-sourceraamwerk’, ‘Linux-backdoor’ en ‘cloudomgeving’ blijven bij hun eerste gebruik onverklaard.",
+    "voorstel": "Leg elk vakwoord bij het eerste gebruik kort uit of vervang het door een begrijpelijke Nederlandse omschrijving."
+  }
+]

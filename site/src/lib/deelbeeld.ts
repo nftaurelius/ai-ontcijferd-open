@@ -13,7 +13,7 @@ export type Deelbeeld = { pad: string; soort: string; titel: string; onder: stri
 
 const VAST: Deelbeeld[] = [
   { pad: "/plakcheck", soort: "Gratis tool", titel: "Mag dit in een chatbot? En loont het dan nog?", onder: "Plakcheck en Urenrekening · draait in je browser" },
-  { pad: "/bijsluiters", soort: "Bijsluiters", titel: "Wat doen AI-tools met wat je intypt, en wat kosten ze?", onder: "ChatGPT · Claude · Gemini · Copilot · Le Chat" },
+  { pad: "/bijsluiters", soort: "Bijsluiters", titel: "Wat doen AI-tools met wat je intypt, en wat kosten ze?", onder: "ChatGPT · Claude · Gemini · Copilot · Mistral" },
   { pad: "/begin-hier", soort: "Begin hier", titel: "AI in tien minuten", onder: "Wat het is, waar je op let, waar je verder kunt" },
   { pad: "/ai-act", soort: "AI Act-kompas", titel: "Wat geldt wanneer, en wat betekent het voor jou?", onder: "Voor scholen, gemeenten, kmo's en burgers" },
   { pad: "/materiaal", soort: "Open lesmateriaal", titel: "Lespakketten om zelf over AI les te geven", onder: "Gratis, onder Creative Commons" },
