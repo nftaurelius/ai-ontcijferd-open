@@ -1,0 +1,425 @@
+---
+id: deel1
+file: 02-Deel-1-Aan-de-slag-met-AI
+kicker: AI-CURSUS · DEEL 1
+title: Aan de slag met AI
+subtitle: Je eerste echte resultaten
+tagline: Geen voorkennis nodig. Je doet meteen iets dat werkt — en je leert het vaste recept dat je daarna voor élke taak kunt gebruiken.
+version: Versie 6.0 · oktober 2026
+runhead: Aan de slag met AI
+anchor: ladder:1
+toc: WAT JE GAAT DOEN
+toctitle: Deel 1 — Aan de slag met AI
+tocline: Je eerste resultaten, het recept, bijschaven, veilig werken.
+---
+Dit is geen handleiding die je van A tot Z moet doorworstelen. Het is een boekje dat je bij de hand neemt. Je leest het in één namiddag, je doet onderweg een paar kleine dingen, en aan het eind heb je met AI een echte taak afgewerkt — eentje die je zonder schaamte zou versturen.
+
+We doen het bewust anders dan een gewone cursus. Geen theorie die je eerst moet slikken voor je iets mag doen. Je doet meteen iets, je ziet dat het werkt, en je begrijpt pas dáárna waarom. Zo blijft het hangen — en zo voelt het ook niet als studeren.
+
+:::refbox
+Dit is Deel 1, het startpunt voor iedereen. Je hebt niets nodig behalve een telefoon of computer en een gratis account bij een AI-assistent. Welke assistent je kiest, maakt voor dit boekje niet uit: alles wat je hier leert, werkt overal.
+:::
+
+# Je eerste gesprek | Een vraag in gewone mensentaal, en een antwoord in gewone mensentaal. Meer is het niet.
+
+Een vriend van mij — slimme kerel, ingenieur — bleef maar mopperen dat AI niks bruikbaars opleverde. “Het geeft alleen maar algemene onzin,” zei hij. Tot ik over zijn schouder meekeek terwijl hij het gebruikte.
+
+Hij typte: “schrijf een mail.” Meer niet. En ja, hij kreeg algemene onzin terug.
+
+Het probleem was nooit de AI. Het was dat niemand hem ooit had laten zien hoe je ermee praat. Dat is wat dit boekje doet. En we beginnen niet met uitleg — we beginnen met jou, nu, iets laten doen dat werkt.
+
+Pak je telefoon of je laptop. Open één AI-assistent: ChatGPT, Claude, Gemini of Copilot. Maakt niet uit welke. Heb je er nog geen? Maak een gratis account, het is zo gebeurd. Open een nieuw gesprek.
+
+Klaar? Goed. Typ dit, letterlijk:
+
+>> “Leg in drie korte zinnen uit wat jij wel en niet goed kan, alsof je het aan een vriend vertelt.”
+
+Lees wat er terugkomt.
+
+Dat was het. Je hebt zonet met AI gepraat. Geen knoppen, geen instellingen, geen cursus van tien uur. Je stelde een vraag in gewone mensentaal en je kreeg een antwoord in gewone mensentaal.
+
+Onthoud dat gevoel, want het is het hele punt: je hoeft niets technisch te kunnen. Je moet alleen leren hoe je het vraagt. En daar gaat de rest van dit boekje over.
+
+## Maar wat is dat ding nu eigenlijk?
+
+? Genoeg om de juiste verwachtingen te hebben — niet meer. Want verkeerde verwachtingen zijn precies waarom mijn vriend gefrustreerd raakte.
+
+Eén beeld houdt alles op zijn plek. We komen er de hele cursus op terug, dus onthoud het goed:
+
+> Je AI is een stagiair met het IQ van Einstein.
+
+Denk daar even over na. Een stagiair met een heel hoog IQ. Wat betekent dat?
+
+Het betekent dat hij heel slim en snel is. Geef hem een goede opdracht en hij doet in dertig seconden waar jij een uur over zou doen. Maar het is zijn eerste werkdag. Hij kent jou niet. Hij weet niet wat je al duizend keer hebt gedaan, hij kent je gewoontes niet, hij weet niet wat “goed” betekent in jouw ogen. Dus als je hem een vage opdracht geeft, doet hij wat elke gretige stagiair doet: hij gokt. Met veel zelfvertrouwen.
+
+Dat verandert meteen hoe je ernaar kijkt. Twee dingen.
+
+**Hij is erg sterk in taal.** Schrijven, herschrijven, samenvatten, vertalen, ordenen, brainstormen, iets uitleggen op maat van wie het moet horen. Alles wat veel tijd kost of saai is — daar blinkt hij in uit.
+
+**Maar hij kan je vol overtuiging iets vertellen dat gewoon niet klopt.** Hij “weet” namelijk niets zeker. Hij is alleen heel, héél goed in inschatten wat waarschijnlijk het beste past. Meestal zit dat goed. Soms zit het er volledig naast, en dan klinkt het even zelfverzekerd. Daarom blijf jij de baas: jij stuurt, jij controleert, jij beslist wat ermee gebeurt.
+
+Dat is het. Capabel, maar niet onfeilbaar. Gebruik hem met lef — en kijk altijd na wat eruit komt. Op die twee zinnen bouwen we alles wat volgt.
+
+:::deeper Waarom “gokt” hij eigenlijk?
+Onder de motorkap is je AI een taalmodel: getraind op enorme hoeveelheden tekst, en het doet in feite één ding heel goed — telkens voorspellen wat het best volgt. Daar komt die vloeiende taal vandaan.
+
+Het verklaart ook meteen waarom hij soms zelfverzekerd onzin produceert: hij kiest wat waarschijnlijk klinkt, niet wat waar is. Je hoeft dit niet te snappen om AI te gebruiken — maar het helpt om te begrijpen waaróm controleren zo belangrijk is.
+:::
+
+:::note En nog iets: hij wil het met je eens zijn
+Een gretige stagiair spreekt zijn baas niet graag tegen, en je AI ook niet. Vraag je “is dit goed?”, dan krijg je meestal bevestiging — ook als het niet goed is. Vraag daarom liever “wat is hier mis mee?” of zeg erbij: “wees streng, niet aardig”. Complimenten krijg je gratis; kritiek moet je opeisen.
+:::
+
+# Waarom de ene vraag werkt | Het verschil tussen teleurstellend en verbluffend zit bijna nooit in de tool. Het zit in hoe je vraagt.
+
+Weet je nog, mijn vriend met zijn “schrijf een mail”? Hier ligt zijn fout. En het is dezelfde fout die bijna iedereen maakt in de eerste week.
+
+Het verschil tussen een teleurstellend en een verbluffend resultaat zit bijna nooit in de tool. Het zit in hóé je het vraagt. En het mooie is: dat kun je in vijf minuten leren.
+
+Laat me het je laten voelen in plaats van uitleggen. Stel, je moeder wordt zeventig en je nodigt de familie uit voor een etentje. Hier zijn twee manieren om die uitnodiging te vragen — en het verschil zegt alles.
+
+:::vs ZO VRAAGT BIJNA IEDEREEN | ZO KRIJG JE IETS BRUIKBAARS
+“Schrijf een uitnodiging.”
+---
+“Je bent de zoon of dochter die een familiefeest organiseert. Schrijf een korte, warme uitnodiging voor het zeventigste verjaardagsetentje van mijn moeder, op zaterdag 14 maart, voor ooms, tantes, neven en nichten. Maximaal 100 woorden, een vleugje humor, en eindig met de vraag om te laten weten wie komt.”
+:::
+
+Waarom werkt die tweede zo veel beter? Niet omdat hij langer is. Omdat hij de AI vertelt wat hij anders zelf zou moeten gokken. Kijk maar wat erin zat, zonder dat het gekunsteld aanvoelt:
+
+- **Wie de AI moet zijn** — iemand uit de familie die het feest organiseert.
+- **Wat je precies wil** — een uitnodiging voor een verjaardagsetentje.
+- **Voor wie het is** — de bredere familie.
+- En de rest die het af maakt: wanneer, hoe lang, welke toon, en hoe het moet eindigen.
+
+:::donow Probeer het zelf — het duurt twee minuten
+Stel beide vragen aan je AI, na elkaar. Leg de twee antwoorden naast elkaar.
+
+Op de eerste krijg je iets algemeens dat je nog volledig moet bijwerken. Op de tweede iets dat je bijna meteen kunt versturen. Zelfde tool, zelfde minuut — alleen een andere vraag.
+:::
+
+> Vaag erin is vaag eruit. Hoe meer je de AI vertelt, hoe beter hij wordt. Dat is de hele truc.
+
+En meteen lost dit een vraag op waar bijna iedereen mee zit: “hoe weet ik nu of het resultaat goed is?” Simpel — een goed resultaat past bij wie het moet lezen, in de juiste toon en lengte, en doet wat jij wou. Hoe duidelijker je dat vooraf zegt, hoe makkelijker je het achteraf herkent. Je weet zelf wat je wou; nu weet de AI het ook.
+
+Nu denk je misschien: moet ik dan telkens zo'n volledige vraag uittikken? Nee. In het volgende hoofdstuk zie je een veel luiere manier — je laat de AI die goede vraag gewoon vóór je opstellen. Hou dit voorbeeld dus even vast. Het komt zo terug.
+
+:::deeper Het ROL-model, als je van geheugensteuntjes houdt
+Wie, wat, voor wie. Sommige mensen onthouden dat makkelijker met een naam: het **ROL-model** — Rol (wie moet de AI zijn?), Opdracht (wat wil je?), Lezerspubliek (voor wie?). Plus de context eromheen: toon, lengte, details.
+
+Je hoeft het niet uit het hoofd te leren. Het is gewoon een handig haakje om te controleren of je vraag genoeg meegeeft. Vergeet de naam gerust — onthoud de drie vragen.
+:::
+
+# Het recept | Van een vaag idee naar een resultaat dat werkt — elke keer met dezelfde vijf stappen.
+
+Dit is het belangrijkste hoofdstuk van het hele boekje. Als je al de rest vergeet, onthoud dan dit. Alles wat hierna komt — ook in de volgende delen — bouwt hierop voort.
+
+Je zag net dat een rijke vraag veel beter werkt dan een vage. Maar zo'n vraag telkens opnieuw uittikken is werk. En eerlijk? Niemand houdt dat vol. Dus doen we het slimmer.
+
+> Je hoeft geen goede vraag te leren schrijven. Je leert iets beters: een vast recept dat de vraag vóór je opstelt.
+
+Dat recept is altijd hetzelfde. Of je nu een mail schrijft, een lange tekst samenvat of een uitnodiging maakt — dezelfde zes stappen. In dit boekje doe je er vijf; de zesde leer je in Deel 2. Je mist hier dus niets.
+
+:::fig methode scope=1 | Het recept in zes stappen. Nu doe je stap 1 tot 5. Stap 6 (bewaren) komt in Deel 2.
+:::
+
+Laten we het niet abstract houden. We volgen het recept aan één echt voorbeeld, van begin tot eind: een bedankmail aan je collega's na een geslaagde opendeurdag. Je ziet straks de echte tekst die eruit komt, en hoe hij stap voor stap beter wordt.
+
+## Stap 1 & 2 — Eerst je gedachten en je materiaal verzamelen
+
+? Dit zijn de twee stappen die bijna iedereen overslaat. En het is precies waar het resultaat wordt bepaald.
+
+Voor je ook maar iets aan de AI vraagt, gooi je eerst alles uit je hoofd op papier — of in een leeg gesprek. Niet netjes. Niet in volzinnen. Gewoon alles wat je weet en wil. Wat moet erin, voor wie is het, welke toon, wat mag zeker niet ontbreken. Dit heet een **braindump**, en het is je grondstof.
+
+:::sample JE BRAINDUMP — gewoon alles eruit, hoe rommelig ook
+“Wil het team bedanken na de opendeurdag van zaterdag. Warm en persoonlijk, niet te formeel. Kort. Vermelden dat er meer volk was dan verwacht en dat de rondleidingen heel goed onthaald werden. Ook iets zeggen over de mensen die op hun vrije dag kwamen helpen. Afsluiten met een drankje vrijdag.”
+:::
+
+Heb je iets liggen dat helpt — een vorige mail waarvan je de toon goed vond, een programma, wat achtergrond? Gooi het erbij. Dat zijn je **bronnen**. Voor deze bedankmail heb je ze niet echt nodig, maar negen van de tien keer maken ze het verschil tussen “oké” en “wow”.
+
+> Hoe rijker je braindump en bronnen, hoe beter álles wat erna komt. Sla deze twee stappen nooit over — hier wordt de wedstrijd gewonnen.
+
+## Stap 3 — Laat de AI je vraag opstellen
+
+? Hier valt alle stress over “hoe schrijf ik een goede vraag” gewoon weg.
+
+Je geeft je rommelige braindump aan een slimme helper, en die maakt er een scherpe vraag van. Weet je nog die rijke vraag uit het vorige hoofdstuk, met wie en wat en voor wie erin? Die hoef je niet zelf te schrijven. Er bestaat een kant-en-klare helper — we noemen hem de **prompt-engineer**. Je plakt hem in een gesprek, geeft je braindump, hij stelt je een paar vragen, en hij levert een nette vraag af. Je vindt hem achterin, in de bijlagen, klaar om te kopiëren.
+
+En hier los ik meteen iets op wat anders verwarrend wordt. In het vorige hoofdstuk leek ik te zeggen: leer een goede vraag stellen. Nu zeg ik: laat de AI dat doen. Tegenstrijdig? Nee.
+
+> Het wie-wat-voor-wie was om te begríjpen wat een goede vraag bevat. De prompt-engineer is er zodat je ze niet zelf hoeft te schríjven.
+
+Het ene helpt je herkennen wanneer een vraag goed is. Het andere doet het typwerk. Je geeft je braindump, beantwoordt zijn paar vragen, en krijgt zoiets terug:
+
+:::prompt DE VRAAG DIE JE TERUGKRIJGT
+Je bent teamleider en schrijft je collega's. Schrijf een korte,
+warme bedankmail na onze geslaagde opendeurdag van zaterdag.
+Toon: oprecht, persoonlijk, niet formeel. Vermeld dat er meer
+bezoekers kwamen dan verwacht, dat de rondleidingen goed
+onthaald werden, en bedank uitdrukkelijk wie op een vrije dag
+kwam helpen. Maximaal 120 woorden. Sluit af met een uitnodiging
+voor een drankje vrijdag na het werk.
+:::
+
+## Stap 4 — Vraag de eerste versie
+
+Plak die vraag in je AI-assistent en vraag de eerste versie. Dit krijg je bijvoorbeeld terug:
+
+:::sample DE EERSTE VERSIE — bruikbaar, maar nog niet af
+Beste collega's, graag wil ik jullie langs deze weg hartelijk bedanken voor jullie inzet tijdens de opendeurdag. Dankzij jullie harde werk is het evenement een groot succes geworden. Ik wil in het bijzonder diegenen bedanken die hun vrije dag hebben opgeofferd. Wij stellen jullie medewerking enorm op prijs. Graag nodig ik jullie uit voor een drankje op vrijdag. Met vriendelijke groeten.
+:::
+
+Lees het eens met een kritisch oog. Het klopt. Maar het is een tikje stijf en afstandelijk — “langs deze weg”, “wij stellen jullie medewerking op prijs”. Dat is geen mail die klinkt alsof een mens hem schreef. De warme, persoonlijke toon die je wou? Nog niet helemaal daar.
+
+En dat is volkomen normaal. Sterker nog, verwacht het.
+
+> De eerste versie is een vertrekpunt, geen eindpunt — net als de eerste poging van een stagiair op dag één.
+
+De magie zit in wat nu komt: het bijschaven. Dat krijgt een eigen hoofdstuk, want het is precies daar dat jij het verschil maakt. Maar eerst even het recept op een rij, want je gaat het de rest van je leven gebruiken.
+
+:::recap
+- **Stap 1–2:** gooi alles uit je hoofd (braindump) en verzamel je voorbeelden (bronnen). Hier wordt het bepaald.
+- **Stap 3:** laat de prompt-engineer de vraag opstellen — typwerk dat je niet zelf hoeft te doen.
+- **Stap 4:** vraag de eerste versie, en verwacht een ruwe versie. Geen eindproduct.
+- **Stap 5:** bijschaven tot het echt goed is. Daarover gaat het volgende hoofdstuk.
+:::
+
+# Bijschaven tot het goed is | De winst zit in het bijsturen, niet in de eerste vraag.
+
+Hier is de fout die ik het vaakst zie: mensen krijgen die eerste versie, denken “ach, goed genoeg”, en versturen ze. Doe dat niet. Want hier, in het bijschaven, zit jouw hele meerwaarde.
+
+De truc is simpel: geef één duidelijke instructie per keer. Geen “maak het beter” — daar kan niemand iets mee, je AI ook niet. Wees concreet. Zeg wat er anders moet, één ding tegelijk.
+
+Voor onze bedankmail ging dat zo:
+
+- **Eerste duw:** “Maak het persoonlijker en warmer, minder formeel. Schrijf zoals je praat tegen mensen met wie je elke dag samenwerkt.”
+- **Tweede duw:** “Korter, en begin met hoe druk het zaterdag was.”
+
+Twee zinnen. Kijk wat ze deden:
+
+:::sample NA TWEE RONDES — dit verstuur je zonder aarzelen
+Dag allemaal, wat een zaterdag! Meer volk dan we ooit hadden durven hopen, en iedereen ging buiten met een glimlach. Dat is helemaal jullie verdienste. En een extra merci aan wie op een vrije dag kwam helpen — dat is niet vanzelfsprekend. Vrijdag na het werk trakteer ik: zien we elkaar aan de koffiehoek? Groetjes, Kristien.
+:::
+
+Voel je het verschil? Geen “langs deze weg” meer. Het klinkt als een mens die het meent. En het kostte je twee zinnen sturen — geen half uur zwoegen aan een wit blad.
+
+Twee, soms drie rondes. Meer heb je bijna nooit nodig. En de vraag wanneer je moet stoppen, beantwoordt zichzelf:
+
+> Iets is niet af wanneer de AI klaar is. Het is af wanneer jíj het zonder schaamte zou versturen.
+
+## Wat zeg je dan precies?
+
+? De meeste mensen blijven steken op “maak het beter”. Deze zinnen werken wél — kies er telkens één.
+
+- **Toon:** “Schrijf het warmer en persoonlijker” · “Mag zakelijker” · “Schrijf zoals je praat.”
+- **Lengte:** “De helft korter” · “Maak er drie zinnen van” · “Werk het tweede deel wat meer uit.”
+- **Inhoud:** “Begin met [dit]” · “Haal [dat] eruit” · “Vermeld zeker nog [X].”
+- **Als het niet lukt:** “Geef me drie heel verschillende versies” — en bouw verder op de versie die het dichtst bij zit.
+
+Werkt het na drie rondes nog altijd niet? Dan ligt het meestal niet aan het bijsturen maar aan de vraag. Ga terug naar je braindump, vul aan wat je vergat, en start opnieuw. Dat kost je twee minuten en levert vaak meer op dan een vierde ronde duwen.
+
+:::donow Nu jij — neem een echte taak
+Pak iets kleins dat je deze week toch moet schrijven. Een mailtje, een berichtje, een korte tekst. Niets verzonnen — iets echts.
+
+Doorloop het hele recept: braindump, laat de prompt-engineer je vraag maken, vraag de eerste versie, en schaaf ze bij in twee of drie rondes. Stop pas als je ze écht zou versturen. Dat is je eerste volledige rit. Gefeliciteerd.
+:::
+
+# Veilig en met gezond verstand | Twee gewoontes van tien seconden die je behoeden voor de twee fouten die echt pijn doen.
+
+Twee gewoontes. Ze kosten je samen tien seconden per keer, en ze behoeden je voor de twee fouten die echt pijn doen. Lees dit één keer goed, en daarna doe je het vanzelf.
+
+## Gewoonte 1 — Kijk altijd na wat eruit komt
+
+Je AI kan vol overtuiging iets vertellen dat niet klopt, zonder het zelf te weten. Hij verzint soms een feit, een cijfer of een bron die compleet echt lijkt. Dat heet een **hallucinatie**, en het is de valkuil waar slimme mensen het vaakst in trappen.
+
+Een voorbeeld. Vraag je naar “het bouwjaar van het oudste huis in mijn straat”, dan kan je een keurig jaartal terugkrijgen — 1887, bijvoorbeeld — dat gewoon verzonnen is. Het klinkt zo zeker dat je het niet in twijfel trekt. En daar zit het gevaar: niet in de fout zelf, maar in hoe overtuigd hij klinkt.
+
+Dus controleer altijd feiten, cijfers, datums, namen en bronnen. En zeker alles wat je publiceert, verstuurt, of waar iemand anders op zal voortbouwen. Eén onopgemerkte verzinsel kan je geloofwaardigheid kosten.
+
+## Gewoonte 2 — Geef nooit gevoelige gegevens in
+
+Wat je in een AI-tool typt, kan op de servers van de aanbieder bewaard worden. Dus geen namen, adressen, dossiers, medische informatie of vertrouwelijke stukken. De meeste tools laten je in de instellingen kiezen of je gesprekken mogen dienen om het model verder te trainen. Kijk die knop één keer na. Maar ook met die knop uit blijft de regel staan: wat gevoelig is, gaat er niet in.
+
+Dat hoeft je nooit tegen te houden. Je veralgemeent gewoon. Kijk:
+
+:::vs NIET DOEN | WEL DOEN
+“Vat de klacht samen van mevrouw Jansens uit de Lindelaan over de wateroverlast aan haar woning.”
+---
+“Vat deze klacht samen: een bewoner meldt wateroverlast aan haar woning.”
+:::
+
+> Zou je het niet op een openbaar prikbord in de supermarkt hangen? Geef het dan ook niet aan AI.
+
+Het antwoord is even bruikbaar, en je hebt niemands gegevens prijsgegeven. En onthoud, boven alles: wat je met de output doet, blijft jouw verantwoordelijkheid. De AI is je assistent. Jij zet je naam eronder.
+
+:::deeper Nog vier dingen om in je achterhoofd te houden
+**Hij is niet neutraal.** Je AI is getraind op tekst van overal, en kan dus vooroordelen meedragen of een eenzijdig beeld geven. Wees extra alert bij gevoelige onderwerpen en bij alles wat over mensen beslist.
+
+**Hij kent de actualiteit niet altijd.** Een model heeft een kennisgrens en weet weinig met zekerheid over wat ná zijn training gebeurde. Voor recente feiten gebruik je een tool met zoekfunctie, of je checkt het bij een betrouwbare bron.
+
+**Hij weet niet welke dag het is.** Een AI heeft een slecht tijdsbesef en rekent zich al eens mis met “volgende week” of “binnen twee maanden”. Gaat het over data of deadlines? Geef de datum van vandaag er gewoon expliciet bij.
+
+**Pas op met andermans werk.** Plak geen beschermde teksten klakkeloos in, en verspreid output niet zonder na te gaan of ze niet te dicht bij bestaand materiaal leunt.
+:::
+
+:::donow Bouw de reflex in
+Neem een echte tekst met een naam of adres erin. Herschrijf hem tot een geanonimiseerde versie en vraag de AI er iets mee te doen.
+
+Merk twee dingen: het antwoord is even goed, en je hebt niemands gegevens prijsgegeven. Doe dit een paar keer en het wordt automatisch.
+:::
+
+# Wat hierna komt | Wat je nu kunt, wat je zelf blijft doen, en de ladder boven je.
+
+Even stilstaan bij wat je nu kunt. Je brengt een echte taak van een vaag idee naar iets dat je zonder schaamte verstuurt. Je volgt het recept, je schaaft bij, en je werkt veilig en met gezond verstand. Dat is meer dan de meeste mensen óóit met AI doen — de meesten blijven steken bij “schrijf een mail”.
+
+En toch is dit pas de eerste trede. Boven je ligt een hele ladder, en elke trede laat méér werk vanzelf gebeuren.
+
+:::fig ladder hl=1 | Hoe hoger je klimt, hoe meer werk van jou naar je AI verschuift. Maar geen haast — aan de eerste twee treden hebben de meeste mensen meer dan genoeg.
+:::
+
+Wanneer weet je dat je klaar bent voor de volgende? Eén signaal: je merkt dat je telkens opnieuw dezelfde uitleg zit te typen, en hetzelfde werk overdoet. Frustrerend, maar het is goed nieuws — het betekent dat je rijp bent voor Deel 2. Daar leer je je werk bewaren en hergebruiken (dat is stap 6 van het recept), zodat je nooit meer vanaf nul begint.
+
+En de ladder is niet de enige weg. Naast de delen bestaan er modules: losse boekjes die je niet hoger maar breder maken — over je stem gebruiken in plaats van typen, over beeld, over tabellen, over grote documenten, over leren met AI. Ze veronderstellen Deel 1 en 2, hebben geen onderlinge volgorde, en je pikt eruit wat jouw leven of werk raakt. Eén module kun je zelfs al vóór dit boekje lezen: *AI om je heen*, over de AI die je tegenkomt zonder dat je erom vroeg. De Wegwijzer toont ze allemaal op één kaart.
+
+Maar er is echt geen haast. Word eerst vlot in wat je nu kunt. Speel ermee. Gebruik het deze week voor drie echte dingen. De rest komt vanzelf.
+
+## En wat blijf je zelf doen?
+
+Eén eerlijke bedenking om mee af te sluiten, want ze hoort erbij. Alles in dit boekje gaat over werk uitbesteden. Maar niet alles wíl je uitbesteden. De brief aan iemand die er iets aan heeft dat jíj hem schreef. Het moeilijke gesprek. Het schrijven waar je plezier aan beleeft. En alles waar je zelf beter in wil worden — want een vaardigheid die je nooit meer gebruikt, zakt weg.
+
+Dat is geen achterlijkheid, dat is een keuze. Maak ze bewust in plaats van erin te verdwijnen: gebruik AI voor het werk dat toch af moet, en hou zelf wat je zelf wil kunnen. Wie dat onderscheid maakt, haalt er het meeste uit — en verliest onderweg niets.
+
+:::note Je bent klaar voor Deel 2 als
+Je een nieuwe taak die je niet had voorbereid, helemaal zelf tot een verstuurbaar resultaat brengt — met het recept, het bijschaven en je gezonde verstand. Lukt dat vlot, zonder terug te bladeren? Dan ben je er klaar voor.
+:::
+
+# Bijlagen: je gereedschapskist | De twee helpers om te kopiëren, zes vragen om mee te starten, en een korte woordenlijst.
+
+Alles wat je telkens opnieuw nodig hebt, op één plek. Je hoeft dit niet te lezen zoals de rest — kom hier terug wanneer je iets zoekt.
+
+## De prompt-engineer
+
+Dit is de helper uit stap 3. Plak hem als allereerste bericht in een nieuw gesprek, geef daarna je braindump, en hij stelt de goede vraag voor je op.
+
+:::prompt KOPIEER DIT
+Je bent een wereldklasse prompt-engineer. Je helpt mij om van
+een ruwe braindump en eventuele bronnen tot één scherpe,
+herbruikbare vraag te komen voor een concreet doel. Jij
+schrijft de vraag; ik hoef dat niet zelf te kunnen.
+
+Werkwijze:
+1. Lees mijn braindump. Vat in 2-3 zinnen samen wat je
+   begrijpt als mijn doel, zodat ik kan bijsturen.
+2. Stel daarna maximaal 3 tot 5 verhelderende vragen — alleen
+   die waarvan het antwoord de vraag wezenlijk verandert: het
+   doel, voor wie, de gewenste vorm en lengte, de toon, en hoe
+   een geslaagd resultaat eruitziet. Wacht op mijn antwoorden.
+3. Lever daarna de vraag af in een apart, duidelijk blok dat ik
+   in één keer kan kopiëren. Zorg dat ze een duidelijke rol,
+   opdracht en doelpubliek heeft, de juiste toon en lengte, en
+   in positieve instructies geschreven is (zeg wat ik wél wil).
+   Zet de delen die per keer veranderen tussen [vierkante haken].
+4. Geef onder de vraag in een paar zinnen de belangrijkste
+   keuzes die je maakte, zodat ik begrijp waarom.
+5. Vraag of ik een tweede variant wil met een andere insteek.
+
+Regels:
+- Schrijf in het Nederlands, tenzij ik anders vraag.
+- Lever de vraag zelf op, niet een kant-en-klaar eindproduct.
+- Is mijn input te dun, zeg dat eerlijk en vraag wat je nodig
+  hebt. Verzin geen feiten die ik niet gegeven heb.
+:::
+
+## Laat je AI jou leren kennen
+
+Deze helper hoort eigenlijk thuis in Deel 2, maar je mag hem nu al gebruiken. Hij maakt een korte “brief over jezelf” die je voortaan aan elke AI kunt geven, zodat je niet telkens opnieuw moet uitleggen wie je bent.
+
+:::prompt KOPIEER DIT
+Je helpt mij een korte, herbruikbare contextbrief over mezelf
+te maken, die ik voortaan aan elke AI kan geven zodat ze mij
+meteen kent. Jij stelt de vragen; ik hoef niet zelf te bedenken
+wat erin moet.
+
+Werkwijze:
+1. Interview mij stap voor stap. Stel telkens één tot drie
+   vragen tegelijk en bouw verder op mijn antwoord. Geen lange
+   vragenlijst in één keer.
+2. Dek af: wie ik ben en wat ik doe; mijn doelen en de taken
+   die ik vaak heb; voor wie ik meestal schrijf; mijn voorkeur
+   qua taal, toon en lengte; en wat ik altijd of net nooit wil.
+3. Wanneer je genoeg weet, schrijf je mijn contextbrief in een
+   apart blok dat ik in één keer kan kopiëren: kort, helder, met
+   korte kopjes.
+
+Regels:
+- Schrijf in het Nederlands. Neem niets op wat ik niet zei.
+- Herinner me eraan geen gevoelige gegevens te geven.
+:::
+
+## Zes vragen om mee te starten
+
+Nog niet zeker hoe je begint? Kopieer er een, vul de stukjes tussen [haken] in, en plak hem in je AI-assistent. Ze laten meteen zien hoe een goede vraag eruitziet.
+
+:::prompt EEN TEKST HELDERDER MAKEN
+Je bent een expert in duidelijke taal. Herschrijf de tekst
+hieronder zodat ze helder en toegankelijk is voor
+[doelpubliek]. Korte zinnen, geen vakjargon, alle belangrijke
+info behouden. Zeg onderaan kort welke moeilijke woorden je
+verving.
+
+Tekst: [plak hier je tekst]
+:::
+
+:::prompt EEN BERICHT BEANTWOORDEN
+Je bent [jouw rol]. Schrijf een vriendelijk, professioneel
+antwoord op het bericht hieronder. Toon begrip, blijf beleefd,
+en [vermeld / leg uit / beloof: ...]. Sluit af met een
+duidelijke volgende stap.
+
+Bericht: [plak hier het bericht — geanonimiseerd]
+:::
+
+:::prompt EEN LANGE TEKST SAMENVATTEN
+Vat de tekst hieronder samen voor [doelpubliek]. Eerst de
+kern in 3 zinnen, dan de belangrijkste punten als bullets, en
+tot slot eventuele actiepunten. Voeg niets toe wat er niet
+staat.
+
+Tekst: [plak hier je tekst]
+:::
+
+:::prompt BRAINSTORMEN
+Ik wil ideeën voor [onderwerp of doel]. Geef me 10
+uiteenlopende ideeën, van voor de hand liggend tot verrassend,
+elk in één zin. Stel me daarna één vraag die helpt om de beste
+richting te kiezen.
+
+Context: [wat je al weet, je doel, beperkingen]
+:::
+
+:::prompt EEN UITNODIGING OF AANKONDIGING
+Je bent [rol]. Schrijf een [bericht / uitnodiging] voor
+[doelpubliek] over [onderwerp]. Toon: [warm / formeel]. Hou het
+onder [aantal] woorden, vermeld zeker [datum / plaats], en
+eindig met [oproep].
+:::
+
+:::prompt IETS LATEN UITLEGGEN
+Leg [onderwerp] uit aan [iemand zonder voorkennis]. Gebruik
+eenvoudige taal en een concreet voorbeeld of vergelijking. Hou
+het beknopt. Vraag op het einde of ik een stuk verder uitgelegd
+wil.
+:::
+
+## Woordenlijst
+
+De handvol woorden die in deze cursus telkens terugkomen, in gewone taal.
+
+- **Prompt** — De vraag of opdracht die je aan de AI geeft. Hoe beter je vraag, hoe beter het resultaat.
+- **Context** — Alle info die je meegeeft zodat de AI zijn werk goed kan doen: het doel, voor wie, voorbeelden, achtergrond.
+- **Braindump** — Stap 1 van het recept: alles wat in je hoofd zit eruit gooien, ongefilterd. Je grondstof.
+- **Bronnen** — Voorbeelden en achtergrond die je erbij geeft om het resultaat scherper te maken.
+- **Prompt-engineer** — De helper die je vraag voor je opstelt, zodat je zelf geen perfecte vraag hoeft te schrijven.
+- **ROL-model** — Geheugensteun voor wat een goede vraag bevat: Rol, Opdracht, Lezerspubliek.
+- **Afleverbaar** — De lat voor “af”: niet wanneer de AI klaar is, maar wanneer jij het zonder schaamte zou versturen.
+- **Hallucinatie** — Wanneer de AI overtuigend iets verzint dat niet klopt. Daarom kijk je alles na.
+- **Anonimiseren** — Echte namen en details vervangen door algemene woorden, zodat je niets prijsgeeft.

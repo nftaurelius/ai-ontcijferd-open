@@ -1,0 +1,390 @@
+---
+id: deel3
+file: 04-Deel-3-AI-als-hefboom
+kicker: AI-CURSUS · DEEL 3
+title: AI als hefboom
+subtitle: Werk dat blijft doorlopen
+tagline: Je doet al goede losse taken. Nu koppel je ze aan elkaar, laat je de AI in rondjes doorwerken, en grond je hem in je eigen kennis — zodat grotere klussen grotendeels vanzelf lopen.
+version: Versie 2.0 · oktober 2026
+runhead: Deel 3 — AI als hefboom
+anchor: ladder:3
+toc: WAT JE GAAT DOEN
+toctitle: Deel 3 — AI als hefboom
+tocline: Werk koppelen tot ketens, loops, je eigen kennisbank, red teamen.
+---
+Tot nu deed je met AI telkens één taak: een mail, een samenvatting, een uitnodiging. Je bracht ze tot een goed resultaat, en je leerde je werk bewaren en hergebruiken. Dit deel gaat over de volgende sprong — en het is een echte.
+
+Hier stop je met taken los van elkaar te doen. Je koppelt ze tot een keten waarin het werk vanzelf doorstroomt, je laat de AI in rondjes zijn eigen werk verbeteren, en je laat hem antwoorden op basis van jóúw documenten. Het resultaat: grotere klussen die grotendeels lopen, met minder van jou ertussen. Dat is wat we bedoelen met AI als hefboom — je zet iets één keer goed op, en het tilt daarna keer op keer.
+
+:::refbox
+Lees dit deel pas wanneer Deel 1 en Deel 2 echt zitten. We bouwen rechtstreeks voort op het recept (Deel 1) en op je bewaarde opzet en projecten (Deel 2). En zoals altijd: geen haast. Pak dit op wanneer je merkt dat je meerdere stappen telkens met de hand aan elkaar zit te plakken.
+:::
+
+# De sprong | Waarom je tijd niet meer in de losse taken zit, maar in de naden ertussen.
+
+Een collega van mij — noem haar Sofie — was na een paar weken behoorlijk handig met AI geworden. Snellere mails, samenvattingen in seconden, nette teksten waar ze vroeger een uur op zwoegde. “Ik snap niet hoe ik het zonder deed,” zei ze. En toch zag ik haar op een donderdagavond iets doen waar ik stil van werd — niet van bewondering, maar omdat ze zoveel nog met de hand deed.
+
+Ze zat de notities van het teamoverleg te verwerken. Plakken in een gesprek, samenvatting vragen, kopiëren. Nieuw gesprek, samenvatting plakken, actiepunten vragen, kopiëren. Nóg een gesprek, actiepunten plakken, opvolgmail vragen. Drie keer kopiëren, drie keer plakken, drie keer opnieuw uitleggen waar het over ging. “Dat doe ik elke week,” zei ze, alsof het de normaalste zaak van de wereld was.
+
+De AI was niet de trage schakel. Sofie was het — niet omdat ze onhandig was, maar omdat zíj telkens de koerier speelde die het werk van de ene stap naar de volgende droeg.
+
+> Je tijd zit niet meer in de losse taken. Ze zit in de naden ertussen.
+
+Dat is precies waar dit deel over gaat: de naden weghalen. Het werk laten doorstromen van stap naar stap, zonder dat jij telkens de tussenpersoon bent. De AI in rondjes zijn eigen werk laten aanscherpen. En hem laten putten uit jouw documenten in plaats van enkel uit zijn algemene kennis. Stuk voor stuk verschuift er werk van jouw handen naar een opzet die het voor je doet.
+
+## Waarom dit een hefboom is
+
+Een hefboom vermenigvuldigt je kracht. Je duwt één keer, en er beweegt veel meer dan je zelf zou kunnen tillen. Zo werkt dit deel ook: je zet een keten één keer goed op, en daarna tilt ze elke week opnieuw — zonder dat het je telkens evenveel moeite kost.
+
+> In Deel 2 leerde je AI jou kennen. In Deel 3 leer je hem doorwerken.
+
+Eerlijk blijven: je hebt dit niet voor álles nodig. Een snelle eenmalige vraag blijft een snelle eenmalige vraag. Maar zodra een klus uit meerdere stappen bestaat, of je ze geregeld herhaalt, is dit het verschil tussen elke keer zwoegen en één keer opzetten. Dáár ligt de winst.
+
+:::note Onthoud
+Dit deel leert je de principes: hoe je werk koppelt, in rondjes verbetert en grondt in je eigen kennis. Welke concrete tool dat vandaag het handigst doet, staat in de Levende Toolgids — die hoort vanaf nu echt bij je gereedschap.
+:::
+
+# Werkstromen: stappen koppelen | Het kernidee van dit deel: de uitkomst van de ene stap wordt vanzelf de invoer van de volgende.
+
+Als je uit dit hele deel maar één ding meeneemt, laat het dit hoofdstuk zijn. Begrijp je de keten, dan vallen de loop, de kennisbank en al de rest die nog komen vanzelf op hun plek.
+
+Terug naar Sofie en haar donderdagavond. Wat ze deed, was eigenlijk al een **werkstroom** — alleen was zíj de lijm tussen de stappen. Die lijm kun je weghalen. Want kijk wat er echt gebeurde.
+
+:::fig flow foot="de uitkomst van elke stap wordt de invoer van de volgende" | Een werkstroom is een ketting — hier van ruwe notities tot een afgewerkte opvolgmail.
+Ruwe notities | zoals ze zijn
+Samenvatting | de kern
+Actiepunten | wie doet wat
+Opvolgmail | klaar om te versturen
+:::
+
+De samenvatting was de invoer voor de actiepunten. De actiepunten waren de invoer voor de mail. Dat is alles wat een werkstroom is.
+
+> Een werkstroom is niets meer dan dit: de uitkomst van stap 1 wordt de invoer van stap 2.
+
+En zodra je het zo ziet, dringt de vraag zich op: waarom zou jíj die uitkomsten van stap naar stap dragen? Je kunt de hele ketting in één keer overgeven.
+
+## Twee manieren om te koppelen
+
+**Eén: blijf in hetzelfde gesprek.** Geef de AI je notities, vraag de samenvatting, en zeg dan gewoon: “maak van die samenvatting hierboven nu de actiepunten”, en daarna “schrijf op basis van die actiepunten een korte opvolgmail”. De AI heeft de vorige stap nog vers in het gesprek staan — je hoeft niets te kopiëren.
+
+**Twee: maak er een vast recept van.** Doe je dit elke week, schrijf de keten dan één keer uit als een opdracht die alle stappen ineens beschrijft, en bewaar ze in je bibliotheek (Deel 2). Voortaan plak je je notities, start je het recept, en rolt het hele pakket eruit.
+
+:::prompt ÉÉN OPDRACHT, DE HELE KETEN
+Hieronder staan mijn ruwe vergadernotities. Doe achter elkaar:
+1. Vat ze samen in maximaal 8 zinnen.
+2. Haal daar de concrete actiepunten uit, elk met wie het doet
+   en tegen wanneer, als dat vermeld is.
+3. Schrijf op basis van die actiepunten een korte, vriendelijke
+   opvolgmail aan het team.
+Zet elk onderdeel onder een eigen kopje.
+
+Notities: [plak hier je notities]
+:::
+
+Laten we het niet abstract houden. Hier zijn de notities die Sofie elke week zit te verwerken — rommelig, zoals notities nu eenmaal zijn.
+
+:::sample SOFIES RUWE NOTITIES
+Teamoverleg 12/11, 6 aanwezig. Opendeurdag geëvalueerd — veel volk, goede reacties. Wel te weinig mensen aan de onthaalbalie, volgende keer vroeger inplannen. Marie regelt de zaal voor de eindejaarsdrink, datum nog te prikken. Tom volgt de offerte voor de nieuwe printer op, deadline eind december. Klacht over lawaai in de open ruimte, eens bekijken. Volgende overleg in januari.
+:::
+
+Geef je dat aan de opdracht hierboven, dan rolt dit eruit — in één keer, zonder één keer te kopiëren:
+
+:::sample WAT DE KETEN OPLEVERT
+**Samenvatting.** Het team evalueerde de geslaagde opendeurdag, stelde een tekort aan mensen aan het onthaal vast, plande een eindejaarsdrink en een lopende printerofferte, en noteerde een klacht over lawaai in de open ruimte.
+
+**Actiepunten.** Marie — zaal boeken voor de eindejaarsdrink en een datum prikken. Tom — offerte voor de printer afronden vóór eind december. Het team — het onthaal volgende keer vroeger inplannen, en de lawaaiklacht verder bekijken.
+
+**Opvolgmail.** “Dag iedereen, bedankt voor het fijne overleg. Kort de afspraken: Marie regelt de zaal voor de eindejaarsdrink, Tom rondt de printerofferte af (deadline eind december), en we plannen het onthaal volgende keer vroeger in. Tot in januari!”
+:::
+
+Drie afgewerkte stukken uit één opdracht. Sofies hele donderdagavond, in de tijd die ze vroeger kwijt was aan stap één alleen.
+
+## De ketting is zo sterk als zijn zwakste schakel
+
+Eén waarschuwing, en het is een belangrijke. Bij een losse taak zie je een zwak resultaat meteen. In een keten niet: een matige samenvatting in stap 1 sleept de actiepunten en de mail mee naar beneden, zonder dat je het doorhebt. De fout wordt groter naarmate ze verder de keten in reist.
+
+Daarom: geef elke stap kort de kans om goed te zijn vóór ze de volgende voedt. Bij een belangrijke keten lees je de samenvatting even na voor je verdergaat. Bij een vertrouwde keten die je al vaak draaide, hoeft dat niet meer. Jij voelt het verschil.
+
+:::vs ZONDER KOPPELING | MET KOPPELING
+Je doet drie losse gesprekken, kopieert en plakt ertussen, en legt elke keer opnieuw de context uit. Werk dat je elke week overdoet.
+---
+Je geeft de keten één keer, en het werk stroomt van stap naar stap. Een recept dat je bewaart en hergebruikt.
+:::
+
+:::deeper Wanneer in één gesprek, wanneer opsplitsen?
+Hou een keten in één gesprek zolang elke stap voortbouwt op de vorige en het geheel overzichtelijk blijft. Wordt het lang en begint de AI in de war te raken (de contextrot uit Deel 2), knip dan: vraag een samenvatting van waar je staat, en begin een vers gesprek voor de volgende stappen.
+
+Vuistregel: korte keten van nauw verbonden stappen → één gesprek. Lange keten met duidelijk losse brokken → per brok een fris gesprek, met de uitkomst van het vorige als startpunt.
+:::
+
+:::donow Doe dit nu — koppel je eerste twee stappen
+Neem een echte taak van deze week die uit twee stappen bestaat. Bijvoorbeeld: een lange tekst samenvatten, en die samenvatting dan omzetten in een bericht.
+
+Doe het in één gesprek. Vraag eerst stap 1. Zeg dan: “gebruik het resultaat hierboven en doe nu stap 2.” Merk dat je niets hoefde te kopiëren — de keten droeg zichzelf.
+:::
+
+# De loop | De motor onder goed werk: niet één perfecte vraag, maar rondjes — maken, beoordelen, verbeteren.
+
+In Deel 1 leerde je bijschaven: de eerste versie is een vertrekpunt, jij duwt ze beter met korte, concrete instructies. Je deed dat met de hand, één duwtje per keer. Hier maak je er een echte motor van — en je laat de AI er een groot deel van zelf draaien.
+
+> Kwaliteit komt niet uit één perfecte vraag. Ze komt uit rondjes.
+
+Dat is het hele idee. Niemand schrijft in één keer de beste versie — geen mens, geen AI. Goed werk ontstaat door te maken, te beoordelen, te verbeteren, en dat te herhalen tot het klopt. Een loop, met andere woorden. En een loop kun je ontwerpen.
+
+:::fig flow num lf=3 loop="herhaal tot het de lat haalt" | De loop: maak een versie, beoordeel ze tegenover je lat, verbeter, en herhaal — tot ze de lat haalt. Dan pas stopt het.
+Maak | een versie
+Beoordeel | tegenover je lat
+Verbeter | gericht
+Klaar | haalt de lat
+:::
+
+## Wat een loop bruikbaar maakt: een lat
+
+? Zonder lat draait een loop eeuwig of stopt hij willekeurig. Mét lat weet de AI wanneer het goed is.
+
+Het verschil tussen wat rondjes draaien en een echte loop is je **lat**: een duidelijke maat voor wanneer iets goed genoeg is. Dat kan een rijtje criteria zijn (“onder de 80 woorden, warme toon, eindigt met een concrete vraag”) of gewoon de lat uit Deel 1: af is wanneer jíj het zonder schaamte zou versturen. Geef de AI die lat, en hij weet waar hij naartoe werkt — en wanneer hij mag stoppen.
+
+Laat het je even zien. Je wil in de appgroep van je straat mensen warm maken om zaterdag mee te helpen met de lenteschoonmaak van het pleintje, met als lat: kort, warm, en eindigend op een concrete vraag. De eerste versie:
+
+:::sample RONDE 1 — het staat er, maar het pakt niet
+Beste buren, op zaterdag 22 maart vindt de lenteschoonmaak van het plein plaats. Iedereen is welkom. Gelieve te laten weten indien u wenst deel te nemen. Met vriendelijke groeten.
+:::
+
+Het klopt, maar het pakt niet — “gelieve”, “indien u wenst”: het klinkt als een formulier. Nu laat je de loop draaien tegen je lat: beoordelen, verbeteren, en nog eens.
+
+:::sample NA TWEE RONDES — dit doet buren reageren
+Dag buren! Zaterdag 22 maart maken we ons pleintje weer lenteklaar: blad ruimen, banken poetsen, en daarna koffie met taart bij nummer 14. Twee uurtjes, veel handen, licht werk. Wie doet mee? Een duimpje hieronder volstaat.
+:::
+
+Voel je het verschil? Geen “gelieve” meer. En geen enkele losse ingreep deed dat in z'n eentje — de rondjes deden het, omdat je vooraf had gezegd waar ze naartoe moesten.
+
+:::prompt DE LOOP IN ÉÉN OPDRACHT
+Beoordeel je eigen tekst kritisch tegenover deze lat:
+[jouw criteria — bv. doelpubliek, toon, lengte, wat erin moet].
+Noem de drie grootste zwaktes. Verbeter de tekst zodat ze de lat
+haalt. Herhaal die ronde tot alle punten gehaald zijn, of tot
+maximaal drie rondes. Zeg na elke ronde in één zin wat je
+veranderde.
+:::
+
+:::vs LOS BIJSCHAVEN | EEN LOOP MET EEN LAT
+Je geeft duwtjes op gevoel, één voor één, en stopt wanneer je moe bent of denkt “het zal wel goed zijn”.
+---
+Je legt vooraf vast wat “goed” betekent, en de AI verbetert in rondjes tot hij die lat haalt. Jij beslist enkel nog of de lat klopt.
+:::
+
+:::deeper Waarom rondjes werken
+Elke ronde verkleint de afstand tussen wat er staat en wat je wil. De eerste ronde haalt de grove dingen eruit, de tweede de fijnere, de derde de puntjes. Daarom halen twee of drie gerichte rondes het bijna altijd van één lange, vage poging.
+
+Dit principe — maken, meten tegen een doel, bijsturen, herhalen — vind je op de hogere treden overal terug. Het is de basis onder zowat elk systeem dat zichzelf verbetert, en het is precies hoe een agent in Deel 4 werkt.
+:::
+
+:::warn Let op
+Een loop zonder rem draait eindeloos en gaat soms zelfs achteruit — “verbeteren” om het verbeteren maakt een goede tekst weer stuk. Geef daarom altijd een lat én een grens (bv. “maximaal drie rondes”). Haalt het de lat niet? Dan ligt het meestal aan onduidelijke criteria, niet aan nog een ronde.
+:::
+
+# Je eigen kennisbank | Tot nu antwoordde de AI uit zijn algemene kennis. Nu laat je hem antwoorden uit de jouwe.
+
+Stel je deze twee vragen voor. “Hoe schrijf ik een goede klantennieuwsbrief?” — daar geeft elke AI een degelijk algemeen antwoord op. En: “Schrijf de nieuwsbrief van deze maand in de stijl van onze vorige edities, en hou rekening met onze leveringsvoorwaarden.” Op die tweede kan geen enkele AI antwoorden — tenzij hij jouw vorige edities en jouw voorwaarden vóór zich heeft.
+
+Dat is de sprong van dit hoofdstuk. Tot nu putte de AI uit zijn algemene training: alles wat hij ooit zag, maar niets specifiek van jou. Nu geef je hem een eigen **kennisbank** — jouw documenten — en laat je hem dáárop antwoorden.
+
+> Tot nu antwoordde de AI uit zijn algemene kennis. Nu laat je hem antwoorden uit de jouwe.
+
+## Hoe het werkt
+
+Eenvoudiger dan het klinkt. Je geeft de AI een set bronnen — je verzamelt ze (denk aan stap 2 van het recept), je laadt ze op of zet ze in een vaste werkruimte, en voortaan baseert hij zijn antwoorden op die documenten in plaats van op een gok. Hij léést jouw materiaal en gebruikt het.
+
+De vakterm hiervoor is RAG, maar die hoef je niet te onthouden. Wat telt: je geeft de AI jouw kennis als vertrekpunt, en zijn antwoorden worden meteen veel specifieker — en betrouwbaarder.
+
+## Waarom dit zoveel oplevert
+
+Twee dingen tegelijk. **Het wordt van jou.** Geen algemene nieuwsbrief, maar jóúw nieuwsbrief, in jouw toon, met jouw afspraken erin. **En het verzint minder.** Denk aan de hallucinaties uit Deel 1: de AI die met volle overtuiging een verkeerd jaartal geeft. Als hij antwoordt uit jouw documenten in plaats van uit zijn geheugen, leest hij het op in plaats van het te gokken. De kans op verzinsels daalt fors — al verdwijnt ze nooit helemaal.
+
+:::vs ZONDER JE DOCUMENTEN | MET JE KENNISBANK
+“Een goede nieuwsbrief opent met een pakkende titel, gevolgd door je belangrijkste nieuws…” — correct, maar algemeen. Het had over elke zaak kunnen gaan.
+---
+“Zoals in jullie editie van mei open je met het seizoensaanbod; en denk aan punt 4 van jullie voorwaarden: levering binnen de week, behalve op maandag.” — meteen van jullie.
+:::
+
+Welke tool dit handig doet, verandert en staat in de Toolgids — sommige zijn er net voor gemaakt om enkel op jouw bronnen te werken, bij andere doe je het via een vast project uit Deel 2 met je referentiemateriaal erin. Het principe is overal hetzelfde, en de spelregel ook:
+
+:::prompt ANTWOORD UIT MIJN DOCUMENTEN
+Baseer je antwoord uitsluitend op de documenten die ik je gaf.
+Verwijs erbij naar waar je iets vandaan haalt. Staat het
+antwoord niet in die documenten, zeg dan eerlijk dat het er
+niet in staat — verzin niets.
+:::
+
+:::warn Let op
+Twee dingen blijven gelden uit Deel 1. Eén: blijf controleren — de AI kan een bron verkeerd lezen of door elkaar halen. Twee: zet geen gevoelige gegevens in een kennisbank in de cloud. Veralgemeen, laat die stukken weg, of gebruik een tool die alles op je eigen toestel houdt (zie de Toolgids).
+:::
+
+:::donow Doe dit nu — bouw een minikennisbank
+Verzamel twee of drie eigen documenten over hetzelfde onderwerp (oude teksten, een reglement, wat notities). Geef ze aan je AI in één werkruimte. Stel dan een vraag die hij enkel kán beantwoorden mét die documenten.
+
+Merk het verschil met een algemeen antwoord — en vraag hem te tonen waar hij het vandaan haalt.
+:::
+
+# Begin bij het einde | Voor grotere klussen begin je niet bij stap 1 en hoop je het beste. Je begint bij het eindresultaat.
+
+Er is een fout die bijna iedereen maakt zodra een klus wat groter wordt: meteen beginnen. Je opent een gesprek en typt “maak een plan voor mijn verhuis”, en je hoopt dat er iets bruikbaars uitrolt. Meestal niet — want de AI weet niet waar hij naartoe werkt, en jij eigenlijk ook nog niet helemaal.
+
+Draai het om. Begin bij het einde.
+
+> Beschrijf eerst hoe “klaar” eruitziet. Een helder eindbeeld maakt elke stap onderweg makkelijk.
+
+Als je scherp hebt wat het eindresultaat moet zijn — wat erin staat, voor wie het is, hoe het eruitziet als het af is — dan valt de weg ernaartoe vanzelf op zijn plek. Je redeneert terug: wat heb ik nodig vlak vóór het einde? En daarvoor? Zo bouw je een plan in stappen, van achter naar voor. En die stappen — dat is meteen je werkstroom uit hoofdstuk 2.
+
+## Laat de AI je eerst uitvragen
+
+? Net als de prompt-engineer uit Deel 1 — maar nu voor een hele klus, niet één vraag.
+
+Het mooie is dat je dit eindbeeld niet alleen hoeft te bedenken. Laat de AI je interviewen. Je zegt wat je ongeveer wil, hij stelt je de scherpe vragen die jij over het hoofd zou zien, en pas als het doel helder is, maakt hij een plan en begint hij.
+
+:::prompt ACHTERSTEVOREN, MET INTERVIEW
+Ik wil [het eindresultaat — bv. een draaiboek voor mijn verhuis
+over drie maanden]. Begin nog niet. Stel me eerst de vragen die
+je nodig hebt om te weten hoe een geslaagd eindresultaat
+eruitziet. Maak daarna een plan in stappen, waarbij de uitkomst
+van elke stap de invoer van de volgende is. Toon me het plan,
+en voer dan stap 1 uit. Wacht telkens op mijn akkoord voor je
+verdergaat.
+:::
+
+:::vs METEEN BEGINNEN | EERST HET EINDBEELD
+“Maak een verhuisplan.” Je krijgt een algemene checklist die half mist wat jij in je hoofd had — de piano, de kat, de school van de kinderen — en je herwerkt het eindeloos.
+---
+Je legt vast hoe “klaar” eruitziet, laat een plan maken, en werkt het stap voor stap af. Elke stap heeft een doel, en niets wezenlijks valt tussen de plooien.
+:::
+
+Voel je hoe de hoofdstukken samenkomen? Je begint bij het einde (dit hoofdstuk), dat geeft je een keten van stappen (hoofdstuk 2), en elke stap scherp je aan met een loop (hoofdstuk 3), gegrond in je eigen documenten waar nodig (hoofdstuk 4). Dat is geen los trucje meer — dat is een manier van werken.
+
+:::deeper Achterstevoren werken heeft een naam
+Wat je hier doet, heet terugredeneren of *reverse engineering*: je vertrekt vanuit het gewenste resultaat en redeneert terug naar de stappen die ernaartoe leiden, in plaats van vooruit te ploeteren en te hopen dat je ergens uitkomt.
+
+Het werkt voor zowat alles wat groter is dan één taak: een verslag, een cursus, een plan, een verbouwing, zelfs een eigen klein systeem. Hoe scherper het eindbeeld, hoe rechter de weg.
+:::
+
+# Laat je werk aanvallen | Je werk bewust laten afbreken om de zwakke plekken te vinden — vóór iemand anders ze vindt.
+
+Er is iets wat je over je AI moet weten, en je kent het al: hij wil het met je eens zijn. Vraag je “is dit een goed plan?”, dan is de kans groot dat hij je gelijk geeft en er nog een complimentje bovenop doet. Niet omdat het plan goed is, maar omdat hij geneigd is mee te gaan met wat jij lijkt te willen horen.
+
+> De AI wil het met je eens zijn. Daarom moet jíj hem vragen om je af te breken.
+
+Dat is geen detail. Het betekent dat je de kritiek die je nodig hebt, actief moet opeisen. Doe je dat niet, dan hoor je vooral een echo van je eigen idee — en de zwakke plekken ontdek je pas wanneer het misgaat.
+
+De oplossing heet **red teamen**: je zet de AI expliciet in de rol van tegenstander en laat hem je werk afbreken. In Deel 2 deed je dit licht — je liet de AI eens kritisch naar zijn eigen tekst kijken. Hier maak je er een gewoonte van, en je gaat harder.
+
+:::prompt LAAT HET AFBREKEN
+Speel de scherpste criticus die je kunt zijn. Val [dit plan /
+deze tekst] aan: zoek de drie grootste risico's of zwakke
+plekken, ook de ongemakkelijke die ik liever niet hoor. Wees
+streng, niet aardig, en ga niet mee in mijn aannames. Stel
+daarna voor hoe ik elk ervan zou kunnen oplossen.
+:::
+
+Laat het je zien. Je vraagt dit over je plan voor een tuinfeest voor je vijftigste, met zestig gasten. Dit krijg je terug — en het is precies wat je nodig had:
+
+:::sample WAT DE CRITICUS TERUGGEEFT
+1. Je rekent op mooi weer, maar er is geen plan B bij regen — dat kan de hele dag kelderen. 2. Je laat iedereen inschrijven via één appgroep; wie daar niet in zit, mist het. 3. Je budget houdt geen buffer voor last-minute kosten. Voorstel: reserveer nu een partytent of binnenruimte, voeg een tweede manier toe om te antwoorden, en hou 15% van je budget achter de hand.
+:::
+
+Niets daarvan zou je gehoord hebben op de vraag “is dit een goed plan?”. Je moest erom vragen.
+
+## Waarom net nu, op dit niveau
+
+Op de vorige treden keek je elk resultaat zelf na voor je het gebruikte. Maar dit deel gaat over werk dat grotendeels vanzelf loopt — ketens, loops, grote stukken werk die met minder van jou ertussen tot stand komen. Precies daar wordt red teamen onmisbaar: een verborgen zwakke plek reist mee door de hele keten zonder dat iemand hem tegenhoudt. Bewust laten aanvallen is je vangnet.
+
+Twee tools tegen elkaar zetten maakt het nog scherper, zoals je in Deel 2 zag: laat de ene iets maken en de andere het afbreken. Een buitenstaander ziet wat de maker mist.
+
+:::note Onthoud
+Vraag nooit “is dit goed?” als je echt wil weten of iets goed is. Vraag “wat is hier mis mee?”. De eerste vraag nodigt uit tot meegaan; de tweede tot eerlijkheid. Op het verschil tussen die twee vragen bouw je betrouwbaar werk.
+:::
+
+:::donow Doe dit nu — drie keer hard
+Neem een plan of tekst waar je tevreden over bent — juist daar zit het gevaar.
+
+Laat de AI er drie keer op inbeuken, telkens vanuit een andere hoek: wat ontbreekt, wat kan misgaan, wat zou een criticus zeggen. Verbeter wat hout snijdt. Merk hoeveel sterker het wordt — en dat je dit zonder vragen nooit had gezien.
+:::
+
+# Wat hierna komt, en je gereedschap | Wat je nu kunt, een blik op de volgende trede, en de helpers om te kopiëren.
+
+Kijk eens terug naar waar je staat. Je koppelt losse stappen tot een keten die zichzelf draagt. Je laat de AI in loops zijn eigen werk aanscherpen tegenover een lat. Je grondt hem in je eigen documenten. Je begint bij het einde en redeneert terug naar een plan. En je laat je werk bewust aanvallen voor je erop vertrouwt. Dat is geen verzameling trucjes — dat is werken met een hefboom.
+
+:::fig ladder hl=3 | Je staat nu op de derde trede. Hoe hoger je klimt, hoe meer werk van jou naar je AI en je systemen verschuift.
+:::
+
+En toch is dit nog niet het plafond. Tot hier start jíj elke keten: je geeft de opdracht, en de AI werkt ze af. In Deel 4 verbind je je AI met je andere tools — je agenda, je mail, je bestanden — en bouw je systemen die niet meer wachten tot jij ze start, maar grotendeels vanzelf lopen: op een vast moment, of wanneer er iets binnenkomt.
+
+Maar ook daarvoor geldt: geen haast. Word eerst vlot in de keten, de loop en de kennisbank. Gebruik ze deze maand voor een paar echte klussen. De rest komt.
+
+:::note De toolgids hoort er nu bij
+Vanaf dit deel verwijst de cursus echt naar de Levende Toolgids. Welke tool nu het handigst is voor een eigen kennisbank, voor langere werkstromen of voor het zwaardere werk dat in Deel 4 komt — dat verandert te snel voor een cursus. Het staat, bijgewerkt, in de toolgids.
+:::
+
+## Bijlagen: je gereedschap
+
+Drie helpers om te kopiëren. Kom hier terug wanneer je er een nodig hebt.
+
+### 1. De plan-vanaf-het-einde-helper
+
+Voor een grotere klus. Plak hem als eerste bericht, en hij interviewt je tot het doel helder is voor hij begint.
+
+:::prompt KOPIEER DIT
+Ik wil [het eindresultaat]. Begin nog niet met uitvoeren.
+1. Stel me eerst de vragen die je nodig hebt om te weten hoe een
+   geslaagd eindresultaat eruitziet: wat erin moet, voor wie, in
+   welke vorm, en waaraan ik zie dat het af is.
+2. Maak daarna een plan in stappen, waarbij de uitkomst van elke
+   stap de invoer van de volgende is. Toon me dat plan.
+3. Voer dan stap 1 uit en wacht op mijn akkoord voor de volgende.
+Schrijf in het Nederlands. Verzin geen feiten die ik niet gaf.
+:::
+
+### 2. De loop-helper
+
+Om een tekst of stuk werk in rondjes te laten verbeteren tot het je lat haalt.
+
+:::prompt KOPIEER DIT
+Beoordeel het werk hieronder kritisch tegenover deze lat:
+[jouw criteria]. Noem de drie grootste zwaktes. Verbeter het
+zodat het de lat haalt. Herhaal die ronde tot alle punten
+gehaald zijn, of tot maximaal drie rondes. Zeg na elke ronde in
+één zin wat je veranderde, zodat ik kan volgen.
+
+Werk: [plak hier je tekst of stuk werk]
+:::
+
+### 3. De red-team-helper
+
+Om je werk bewust te laten afbreken in plaats van een schouderklopje te krijgen.
+
+:::prompt KOPIEER DIT
+Speel de scherpste, eerlijkste criticus. Val het werk hieronder
+aan: zoek de drie grootste risico's, zwakke plekken of gaten —
+ook de ongemakkelijke die ik liever niet hoor. Wees streng,
+niet aardig, en ga niet mee in mijn aannames. Stel daarna voor
+hoe ik elk punt zou kunnen oplossen.
+
+Werk: [plak hier je plan of tekst]
+:::
+
+## Woordenlijst
+
+- **Werkstroom** — Een keten van stappen waarin de uitkomst van de ene stap de invoer van de volgende is.
+- **Loop** — Maken, beoordelen, verbeteren, herhalen tot het werk je lat haalt.
+- **Lat** — Je vooraf vastgelegde maat voor wanneer iets goed genoeg is, zodat een loop weet wanneer hij mag stoppen.
+- **Kennisbank (RAG)** — De AI laten antwoorden op basis van jouw eigen documenten in plaats van enkel zijn algemene kennis.
+- **Achterstevoren werken** — Beginnen bij het eindresultaat en terugredeneren naar het plan dat ernaartoe leidt.
+- **Red teamen** — Je werk bewust laten aanvallen om de zwakke plekken te vinden vóór iemand anders dat doet.
+
+:::recap
+- Een werkstroom koppelt stappen: de uitkomst van stap 1 wordt de invoer van stap 2.
+- Kwaliteit komt uit loops — maken, beoordelen, verbeteren — met een duidelijke lat en een rem.
+- Een eigen kennisbank laat de AI antwoorden uit jouw documenten: specifieker, en minder verzinsels.
+- Begin bij het einde en laat je uitvragen; het eindbeeld maakt elke stap onderweg makkelijk.
+- De AI wil het met je eens zijn — eis kritiek actief op door je werk te laten aanvallen.
+:::
+
+Je bent klaar voor de volgende trede wanneer je een grotere klus van begin tot eind aanpakt mét keten, loop en kennisbank — en ze zelf bewust laat aanvallen voor je erop vertrouwt. Lukt dat vlot? Dan beheers je AI als hefboom.

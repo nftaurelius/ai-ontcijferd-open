@@ -18,6 +18,7 @@ const VAST: Deelbeeld[] = [
   { pad: "/ai-act", soort: "AI Act-kompas", titel: "Wat geldt wanneer, en wat betekent het voor jou?", onder: "Voor scholen, gemeenten, kmo's en burgers" },
   { pad: "/materiaal", soort: "Open lesmateriaal", titel: "Lespakketten om zelf over AI les te geven", onder: "Gratis, onder Creative Commons" },
   { pad: "/overnemen", soort: "Neem het over", titel: "Alles mag je overnemen en aanpassen", onder: "CC BY 4.0 · kant-en-klare teksten" },
+  { pad: "/cursus", soort: "AI-cursus", titel: "Leren werken met AI door het te doen", onder: "Vier delen, tien modules, gratis online en als PDF" },
   { pad: "/merk", soort: "Het merk", titel: "Woordmerk, kleuren en letters van AI Ontcijferd", onder: "Om te downloaden, met de huisstijlgids" },
   { pad: "/meedoen", soort: "Meedoen", titel: "Open inhoud, open code, samen beter maken", onder: "Fouten melden, bronnen voorstellen, code verbeteren" },
   ...Object.entries(INGANGEN).map(([k, i]) => ({ pad: `/${k}`, soort: i.titel, titel: i.vraag, onder: i.lead })),

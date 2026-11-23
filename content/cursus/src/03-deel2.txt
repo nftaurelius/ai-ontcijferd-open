@@ -1,0 +1,451 @@
+---
+id: deel2
+file: 03-Deel-2-Je-persoonlijke-assistent
+kicker: AI-CURSUS · DEEL 2
+title: Je persoonlijke assistent
+subtitle: Een opzet die jou kent
+tagline: Stop met elke keer vanaf nul te beginnen. Je bewaart je beste werk, je laat je AI jou kennen, en je terugkerende taken lukken sneller en consistenter — elke keer.
+version: Versie 2.0 · oktober 2026
+runhead: Je persoonlijke assistent
+anchor: ladder:2
+toc: WAT JE GAAT DOEN
+toctitle: Deel 2 — Je persoonlijke assistent
+tocline: Bewaren en hergebruiken: bibliotheek, sjablonen, context, projecten, limieten.
+---
+In Deel 1 bracht je een taak van een vaag idee tot een resultaat dat je zonder schaamte zou versturen. Knap werk. Maar je merkt het waarschijnlijk al: je doet elke keer bijna hetzelfde voorwerk. Dezelfde uitleg over wie je bent, dezelfde soort vraag, hetzelfde bijschaven — telkens opnieuw.
+
+Dit deel lost dat op. Je gaat niet harder werken; je gaat slimmer opbouwen. Je bewaart wat werkt, je laat je AI jou leren kennen, en je brengt het samen op één vaste plek. Het resultaat: dezelfde taak, elke keer sneller en consistenter — zonder dat je nog vanaf nul begint.
+
+:::refbox
+Heb je Deel 1 — Aan de slag met AI nog niet doorlopen? Begin daar. Het recept en het bijschaven uit Deel 1 zijn hier de basis; dit deel bouwt er rechtstreeks op voort.
+:::
+
+# Opnieuw beginnen is duur | Je kunt het recept. Nu zorg je dat je het nooit meer helemaal vanaf nul hoeft te doen.
+
+Weet je nog de stagiair met het IQ van Einstein, uit Deel 1? Briljant, maar je moest hem alles uitleggen — elke ochtend opnieuw. Wie je bent, voor wie je schrijft, hoe je het graag hebt. Elke keer van nul. Dat werkte. Maar het is uitputtend, en eigenlijk een beetje zonde van zo'n slimme kop.
+
+Stel je voor dat je het hem één keer goed uitlegt, en dat hij het onthoudt. Dat hij na een week jouw toon aanvoelt, je vaste taken kent, en weet wat “goed” betekent in jouw ogen. Geen toekomstmuziek — dat is precies wat je in dit deel opbouwt.
+
+## Reken het even uit
+
+Hanne heeft een kleine bloemenzaak. Naast de bloemen is er het onzichtbare werk: een bericht op sociale media over de nieuwe seizoensboeketten, een antwoord aan een klant van wie de bestelling vertraging heeft, een herinnering voor de rouwbloemen die morgen klaar moeten staan. Elke week opnieuw. En elke week tikte ze in haar AI-assistent eerst een halve alinea uit: dat ze een bloemenzaak heeft, dat het warm en persoonlijk mag zijn, voor welk publiek, hoe lang. Pas dáárna kwam haar eigenlijke vraag.
+
+Reken het even uit. Drie van die berichten per week, telkens een minuut of tien — voor een flink stuk omdat ze elke keer dezelfde achtergrond intikt. Een bewaarde, goede opzet brengt dat terug tot een minuut of twee. Dat is bijna een half uur per week, voor één soort taak. Vermenigvuldig dat met alles wat ze terugkerend doet, en je zit zo aan een uur of meer. Elke week. Voor altijd.
+
+## Maar het gaat niet alleen om tijd
+
+Bewaren wint tijd, ja. Maar het doet twee dingen die nog meer waard zijn. Het maakt je resultaten **consistent**: dezelfde toon, dezelfde structuur, elke keer — niet de ene week warm en de andere week stijf, naargelang je toevallige bui. En het verlaagt je **mentale last**: je hoeft niet meer te bedenken hóé je het ook alweer aanpakte. Je opent je opzet en je begint al halverwege.
+
+> Je stopt niet met elke keer opnieuw beginnen door harder te werken. Je stopt door één keer goed op te bouwen.
+
+En eigenlijk ken je dit al. Het recept uit Deel 1 had zes stappen; je deed er vijf. De zesde — bewaren — heb je toen bewust overgeslagen. Dit deel is die zesde stap, helemaal uitgevouwen.
+
+:::fig methode scope=2 | Het recept uit Deel 1. Stap 6 — bewaren — sloeg je toen over. Daar begint dit deel.
+:::
+
+De rest van dit deel is dat idee, opgeschaald. Je bouwt vier dingen: een vaste plek om je werk te bewaren, sjablonen die je nooit meer hoeft te herschrijven, een document dat je AI vertelt wie je bent, en één werkruimte die alles samenbrengt. Plus een handvol gewoontes die elk gesprek scherper maken. We beginnen bij de plek.
+
+:::donow Doe dit nu
+Neem één prompt die deze week voor je werkte. Eender welke. Bewaar hem op één plek — een notitie-app, een document, maakt niet uit — en geef hem een herkenbare naam.
+
+Sluit alles. Open het morgen. Hij staat er nog, klaar om opnieuw te gebruiken. Dat kleine gevoel — “het staat er, ik hoef het niet opnieuw te bedenken” — is waar dit hele deel over gaat.
+:::
+
+# Je bibliotheek | Eén vaste plek waar je je beste werk bewaart — en, even belangrijk, in seconden terugvindt.
+
+Bewaren begint met een plek. Geen ingewikkeld systeem, geen app die je nog moet leren. Gewoon één plek waar alles samenkomt.
+
+## Wat zet je erin?
+
+- Prompts en sjablonen die goed werkten.
+- Je persoonlijke contextdocument (dat maak je in hoofdstuk 4).
+- Voorbeelden van resultaten waar je tevreden over was.
+- Instructies of afspraken die je vaak hergebruikt.
+
+Waar je het bewaart, maakt minder uit dan dát je het op één plek doet. Een gedeeld document, een notitie-app, een map op je computer — alles werkt. Kies iets wat je sowieso al gebruikt, zodat je het niet vergeet. De beste bibliotheek is degene die je echt openhoudt.
+
+## Naamgeving is het halve werk
+
+Een bibliotheek die je niet kunt doorzoeken, is een kerkhof. Je bewaart braaf, maar je vindt nooit iets terug, en dus begin je toch weer vanaf nul. De oplossing is saai en doeltreffend: gebruik een vast patroon. Bijvoorbeeld *categorie – taak*:
+
+- “Mail – antwoord op klacht”
+- “Mail – afspraak bevestigen”
+- “Samenvatting – lange tekst”
+- “Sociale media – aankondiging”
+
+Zo staat alles wat bij “Mail” hoort vanzelf samen, en vind je in seconden wat je zoekt. Kies meteen je vaste categorieën — vier of vijf volstaan — zodat alles wat later bijkomt vanzelf op zijn plek valt. Zet bij elk bewaard stuk ook kort wanneer je het gebruikt, en eventueel een ingevuld voorbeeld. Dan weet je het over een maand nog.
+
+:::warn Let op
+Alles op één hoop gooien zonder naam of categorie. Na twee weken vind je niks meer terug en begin je toch weer vanaf nul — precies wat je wou vermijden.
+:::
+
+:::donow Doe dit nu — maak je vaste plek
+Maak je bibliotheek aan. Bewaar er twee prompts uit de starterset van Deel 1 in, elk met een naam volgens het patroon *categorie – taak* en één regel “wanneer gebruiken”.
+
+Sluit de plek en open ze opnieuw: vind je je prompts meteen terug? Dan staat je bibliotheek.
+:::
+
+# Van eenmalig naar herbruikbaar | Een prompt die één keer werkte, wordt een sjabloon dat altijd werkt. Eén keer denken, eindeloos invullen.
+
+Een **sjabloon** is een prompt waarvan je de vaste structuur behoudt en enkel de wisselende delen openlaat — tussen [haken]. Zo hoef je nooit meer na te denken over de opbouw. Je vult in en je bent vertrokken.
+
+Terug naar Hanne. Stel dat deze prompt voor haar goed werkte toen een bestelling vertraging had:
+
+:::prompt EENMALIGE PROMPT
+Je bent de eigenaar van een kleine bloemenzaak. Schrijf een
+vriendelijk antwoord aan een klant die vraagt waar het boeket
+blijft dat ze voor vrijdag bestelde. Toon begrip, leg uit dat
+de levering van de groothandel een dag vertraging had, en bied
+gratis levering aan huis aan op zaterdagochtend.
+:::
+
+Mooi resultaat — maar eenmalig. Volgende week is het geen vertraging maar een verkeerde kleur, en geen vrijdag maar dinsdag. Dan zou ze alles herschrijven. Tenzij ze er een sjabloon van maakt, door de delen die per keer veranderen te vervangen door invulvelden:
+
+:::prompt HET SJABLOON
+Je bent de eigenaar van een kleine bloemenzaak. Schrijf een
+vriendelijk antwoord aan een klant die [klaagt / vraagt] over
+[onderwerp]. Toon begrip, leg uit [de reden], en bied
+[de oplossing of volgende stap] aan.
+:::
+
+Nu werkt diezelfde prompt voor élke gelijkaardige vraag. Drie velden invullen, klaar.
+
+## Wat maak je een invulveld?
+
+Alles wat van situatie tot situatie verandert: namen, onderwerpen, redenen, data. Wat altijd hetzelfde is — de toon, de structuur, de aanpak — laat je vast staan. Daar zit net de waarde: je legt je goede aanpak één keer vast, en hergebruikt hem zonder er nog over na te denken.
+
+> Een sjabloon is een beslissing die je één keer neemt, en daarna nooit meer.
+
+En je hoeft dit niet met de hand te doen. Geef je werkende prompt aan de prompt-engineer uit Deel 1 (hij staat ook achterin) en vraag: “maak hier een herbruikbaar sjabloon van met invulvelden.” Hij zet de haken op de juiste plekken en wijst aan welke velden je over het hoofd zag.
+
+:::warn Let op
+Te veel willen dichttimmeren. Een sjabloon dat álles vastlegt, wordt log en past nergens nog op. Hou de structuur vast en laat genoeg ruimte voor de specifieke situatie.
+:::
+
+:::donow Doe dit nu — je eerste sjabloon
+Neem een prompt die je vaker gebruikt en maak er een sjabloon van met minstens twee invulvelden. Bewaar het met een naam en een regel “wanneer gebruiken”.
+
+Test het daarna op een totaal andere situatie — en vul enkel de velden in, zonder iets te herschrijven. Lukt dat? Dan is het een echt sjabloon.
+:::
+
+# Laat je AI jou kennen | Leg één keer vast wie je bent en hoe je klinkt — en je AI weet het voortaan.
+
+Telkens je een AI iets vraagt, geef je eigenlijk dezelfde brief mee: wie je bent, wat je rol is, voor wie je schrijft, welke toon je verkiest. In Deel 1 typte je dat elke keer opnieuw. Vanaf nu doe je dat één keer.
+
+## Het contextdocument
+
+? Eén korte brief over jezelf, en je hoeft jezelf nooit meer voor te stellen.
+
+Een **contextdocument** is precies dat: een korte brief over jou die je vooraan in een gesprek of project plakt, zodat je AI je meteen kent. Wat erin staat:
+
+- wie je bent en wat je rol is;
+- je doelen en de soort taken die je vaak doet;
+- voor wie je meestal schrijft (je doelpubliek);
+- je voorkeuren qua taal, toon en lengte;
+- dingen die je altijd wil, of net nooit.
+
+Het verschil dat dit maakt, voel je meteen. Vraag je zonder context “schrijf een bericht over onze nieuwe openingsuren”, dan krijg je iets algemeens. Vraag je hetzelfde mét een contextdocument dat zegt: je hebt een bloemenzaak, je schrijft warm en informeel, altijd met “je” — dan krijg je meteen iets dat klinkt alsof jíj het schreef. Zonder dat je het nog moest uitleggen.
+
+En nee, je hoeft die brief niet zelf te schrijven. Gebruik de **contextdocument-helper**: een interview waarin je AI jóú de vragen stelt, en op basis van je antwoorden een nette brief voor je opstelt. Je vindt hem achterin, klaar om te kopiëren. Bewaar het resultaat in je bibliotheek, en werk het bij wanneer er iets verandert.
+
+:::warn Let op
+Een contextdocument dat te lang of verouderd is. Hou het kort en krachtig, en werk het bij wanneer je rol of voorkeuren veranderen. Een halve pagina die klopt, is meer waard dan drie pagina's die niemand nog naleest. En ook hier: geen gevoelige gegevens erin.
+:::
+
+## De instelling in je tool
+
+? Naast je draagbare brief heeft je tool vaak ook een vaste, ingebouwde plek voor je context.
+
+De meeste tools hebben in hun instellingen een optie om persoonlijke context op te geven die automatisch in al je gesprekken meeloopt. Veel tools houden daarnaast ook een **geheugen** bij: ze onthouden uit eerdere gesprekken wat ze over je leerden. Handig — maar het werkt enkel binnen die ene tool. Gebruik daarom beide naast elkaar:
+
+| | De instelling of het geheugen van je tool | Je eigen contextdocument |
+|---|---|---|
+| Wat is het | Een optie in je tool, of wat hij zelf onthoudt | Een korte brief over jou die je zelf bewaart |
+| Waar werkt het | Altijd aan, maar enkel binnen die ene tool | Draagbaar: plak het in elke tool of elk project |
+| Wanneer | Voor wat altijd moet gelden in je hoofdtool | Wanneer je over tools en projecten heen werkt |
+| Jouw taak | Af en toe nakijken wat erin staat | Bijwerken wanneer er iets verandert |
+
+## Leer je AI je eigen stem
+
+Je AI kan niet alleen weten wíé je bent, maar ook hóé je schrijft. Geef hem een paar teksten die je zelf ooit schreef — mails, berichten, een stukje tekst — en laat hem je toon en stijl analyseren. Voortaan klinkt zijn werk als jij.
+
+:::prompt PROMPT — JE STEM LEREN
+Hieronder staan enkele teksten die ik zelf schreef. Analyseer
+mijn schrijfstijl en toon: woordkeuze, zinslengte, mate van
+formaliteit, en typische eigenaardigheden. Vat mijn stem samen
+in een korte stijlgids, en schrijf voortaan in die stijl.
+
+[plak hier 2 à 3 eigen teksten]
+:::
+
+Bewaar die stijlgids in je bibliotheek, of zet hem in je contextdocument. Kies wel teksten die echt klinken zoals jij wil klinken — een gehaaste mail van een slechte dag leert hem de verkeerde stem.
+
+> Wie je bent, en hoe je klinkt. Leg die twee één keer vast, en je AI vertrekt nooit meer als een vreemde.
+
+:::donow Doe dit nu — je eerste contextdocument
+Maak met de helper achterin je eerste contextdocument. Doe het gerust eerst voor een verzonnen persoon om de flow te leren, daarna voor jezelf.
+
+Test het meteen: geef dezelfde opdracht één keer zonder en één keer mét je contextdocument erbij. Leg de twee antwoorden naast elkaar. Het verschil is precies wat dit hoofdstuk je oplevert.
+:::
+
+# Eén vaste werkruimte | Sjabloon en contextdocument zijn los al sterk. Samen, op één plek, worden ze een assistent die start waar jij gebleven was.
+
+Je hebt nu losse bouwstenen: bewaarde prompts, sjablonen, een contextdocument, misschien een stijlgids. Bruikbaar. Maar de echte tijdwinst komt wanneer je ze niet meer los bij elkaar zoekt, maar samenbrengt op één vaste plek: een **project**.
+
+De meeste tools hebben hiervoor een vaste werkruimte waarin je context en instructies één keer instelt, zodat álle gesprekken erin die context automatisch delen. Bij de ene tool heet dat een “project”, bij de andere een “Gem”, een “notebook” of een aangepaste assistent — de naam verschilt, het idee niet. Je zet er één keer in:
+
+- je contextdocument;
+- je vaste instructies (hoe de AI zich moet gedragen);
+- eventueel referentiemateriaal dat je vaak nodig hebt.
+
+:::fig flow hl=4 | Je losse bouwstenen gaan één keer in een project. Daarna deelt elk gesprek erin vanzelf die context.
+Contextdocument | wie je bent, je stem
+Sjablonen | met [invulvelden]
+Vaste instructies | hoe de AI zich gedraagt
+Het project | één werkruimte die jou kent
+:::
+
+Daarna start je binnen dat project gewoon een gesprek, en hoef je niets meer te herhalen. Hanne maakte één project “winkelcommunicatie”, zette haar contextbrief en haar sjablonen erin, en een korte instructie over haar toon. Sindsdien duurt dat wekelijkse bericht geen kwartier meer, maar drie minuten — en het klinkt elke keer als zij.
+
+## Wanneer maak je een project?
+
+Niet voor een eenmalige vraag. Wel zodra je iets vaker doet binnen eenzelfde context en je het beu bent telkens dezelfde achtergrond te geven. Vuistregel: doe je iets meer dan een paar keer met dezelfde context, maak er een project van.
+
+## Eén groot project of meerdere?
+
+Liefst één project per terugkerend domein. Iemand met een drukke job en een vrijwilligersrol heeft baat bij een project “werkmails” en een apart project voor de vereniging, elk met hun eigen context en toon. Eén project, één duidelijk doel. Alles op één hoop maakt de resultaten weer vaag — precies wat je met al dit werk wou vermijden.
+
+> Een project is de plek waar je AI ophoudt een vreemde te zijn.
+
+:::warn Let op — een project is een aparte ruimte
+Wat je AI in een gewoon gesprek over jou weet, weet hij niet automatisch in een project — en omgekeerd. Geheugen en context worden niet zomaar gedeeld tussen je gewone gesprekken en een project, of tussen projecten onderling. Bij sommige tools kies je dat zelf in de instellingen van het project; kijk dan na hoe het staat.
+
+Ga er dus nooit van uit dat “hij dat al weet”. Zet de context die je nodig hebt expliciet in elk project. Daarom is je draagbare contextdocument zo handig: je plakt het er gewoon in.
+:::
+
+:::donow Doe dit nu — je eerste project
+Maak één blijvend project voor iets wat je vaak doet. Zet je contextdocument erin en een korte vaste instructie.
+
+Start er een gesprek in — en merk dat je niets meer hoeft uit te leggen. Dat is het moment waarop “een tool die ik gebruik” verandert in “een opzet die mij kent”.
+:::
+
+# Slimmer werken | Drie gewoontes die elk gesprek scherper maken: het gezond houden, varianten vergelijken, en kritiek opeisen.
+
+Je opzet staat. Nu nog drie gewoontes die in elk gesprek het verschil maken tussen “oké” en “scherp”. Ze kosten je niks extra — het is vooral een kwestie van weten dat ze bestaan.
+
+## Hou je gesprek gezond
+
+? Hoe langer een gesprek, hoe groter de kans dat je AI de draad kwijtraakt.
+
+In een lang gesprek begint een AI op den duur eerdere instructies door elkaar te halen of te negeren. Dat heet **contextrot**. Twee eenvoudige technieken houden je gesprek gezond.
+
+**Samenvatten en opnieuw beginnen.** Raakt een lang gesprek vervuild, vraag dan: “vat samen wat we tot nu toe besproken en beslist hebben.” Plak die samenvatting in een nieuw, fris gesprek en werk verder. Je behoudt de kern, zonder de rommel.
+
+**Terugkeren naar waar het misliep.** In veel tools kun je een eerder bericht bewerken. Merk je dat de AI vanaf een bepaald punt het verkeerde spoor volgt? Bewerk dan jóúw bericht op dat punt en vertrek opnieuw vanaf daar. Dat werkt beter dan achteraf proberen recht te trekken.
+
+En een simpele vuistregel die veel rommel voorkomt: voor een nieuwe, andere taak start je sowieso een nieuw gesprek. Eén gesprek, één onderwerp.
+
+## Vergelijken en laten beoordelen
+
+Je kunt eindeloos blijven sleutelen aan één versie. Of je laat de AI het vergelijken en beoordelen mee doen — dat scheelt, en levert vaak beter werk.
+
+:::prompt PROMPT — TWEE VARIANTEN
+Geef twee versies met een duidelijk andere insteek: versie A
+[bv. zakelijk en kort], versie B [bv. warm en uitgebreider].
+Leg bij elke versie in één zin uit welke keuze je maakte.
+:::
+
+Welke past het best bij je publiek en je toon? Soms is het antwoord “de structuur van A met de toon van B” — vraag dan gewoon om die combinatie.
+
+En feedback hoef je niet altijd zelf te geven. Laat de AI zijn eigen werk beoordelen:
+
+:::prompt PROMPT — LAAT HEM ZICHZELF BEOORDELEN
+Beoordeel je eigen antwoord kritisch tegenover [mijn doel of
+criteria], noem drie concrete zwaktes, en verbeter het.
+:::
+
+Of speel twee AI's tegen elkaar uit: laat de ene tool een tekst schrijven, en geef die aan een andere met de vraag “geef hierop kritische feedback en stel verbeteringen voor.” Een buitenstaander ziet wat de maker mist. Dit is meteen een eerste vorm van wat in Deel 3 terugkomt als **red teamen**: je werk bewust laten aanvallen om de zwakke plekken te vinden — vóór iemand anders ze vindt.
+
+:::deeper Waarom werkt “noem drie zwaktes” zo goed?
+Een AI is van nature geneigd je gelijk te geven. Vraag je “is dit goed?”, dan hoor je meestal “ja, sterk!” — niet omdat het waar is, maar omdat meegaand zijn het makkelijkste antwoord is.
+
+Door expliciet om drie zwaktes te vragen, haal je hem uit die ja-knikstand. Je verandert de opdracht van “bevestig mij” naar “vind fouten”. Dezelfde AI, een veel bruikbaarder antwoord. Zeg er gerust bij: “wees streng, niet aardig”. Een compliment zonder kritiek is geen beoordeling.
+:::
+
+:::donow Doe dit nu — drie zwaktes
+Laat de AI iets maken, daarna zijn eigen werk kritisch beoordelen tegenover je doel, en het verbeteren. Leg de verbeterde versie naast de eerste. Zie je het verschil dat drie zwaktes maakten?
+:::
+
+# Bewust kiezen: model, denkkracht, limieten | Je hoeft niet voor alles hetzelfde te gebruiken. Drie knoppen, en waarom je tegen je limiet loopt.
+
+Tot slot een keuze die veel mensen op de automatische piloot maken: welk model, welke instellingen. Je hoeft daar geen expert in te zijn. Er zijn maar drie knoppen waaraan je draait.
+
+:::fig knoppen | Drie knoppen: het model (licht/snel of sterk/traag), de denkkracht (laag of hoog) en de zoekmodus (uit of aan).
+:::
+
+**1. Welk model.** Tools bieden meestal een snel, lichter model en een sterker, trager model. Voor een korte vraag of een snelle herschrijving volstaat het lichte model. Voor een lange tekst, een moeilijke analyse of iets waar veel van afhangt, kies je het sterke. Veel tools kiezen intussen zelf, met een stand als “automatisch” — prima, zolang je weet dat je het kunt overrulen.
+
+**2. Hoeveel denkkracht.** Sommige tools laten je kiezen hoe diep de AI nadenkt — een “denk”-stand of een keuze in inspanning. Meer denken is beter op moeilijke problemen, maar trager. Zet het hoog voor echt complexe taken, laag voor eenvoudige.
+
+**3. Zoekmodus.** Heb je actuele informatie nodig? Gebruik een stand die op het web kan zoeken. En — je weet het nog uit Deel 1 — controleer altijd de bron.
+
+:::note Onthoud
+De exacte modelnamen en versies veranderen voortdurend. Welke vandaag de “snelle” en welke de “sterke” is, staat daarom in de Levende Toolgids — niet in deze les, zodat ze niet veroudert.
+:::
+
+## Waarom je tegen je limiet loopt
+
+Elke tool rantsoeneert, ook de betalende versies. Wat je opmaakt, is niet zozeer het aantal vragen, maar hoeveel de AI telkens moet lezen en denken. Drie dingen tellen het zwaarst: een heel lang gesprek (bij elke nieuwe vraag leest hij alles opnieuw), grote bestanden, en het sterke model met de denkstand aan. Beeld en zeker video maken kost nog eens veel meer.
+
+Het goede nieuws: de gewoontes die je al kent, sparen ook je tegoed. Een nieuw gesprek per taak. Samenvatten en fris herbeginnen zodra het lang wordt. Je vaste documenten één keer in een project in plaats van telkens opnieuw opladen. En het snelle model voor de kleine klussen.
+
+> Het lichtste wat volstaat, is meestal ook het beste.
+
+:::deeper En de stroom?
+Eén gewone tekstvraag verbruikt volgens de makers zelf ongeveer een derde wattuur: Google meldt 0,24 Wh voor een doorsnee vraag aan Gemini, OpenAI 0,34 Wh voor ChatGPT. Dat is een paar seconden televisie. Twee eerlijke kanttekeningen: het zijn cijfers van de bedrijven zelf, en de stroom voor het trainen van de modellen zit er niet in.
+
+Beeld en video vragen veel meer dan tekst. Dus: een tekstvraag hoef je je niet kwalijk te nemen. Bij beeld en video loont dezelfde reflex als bij je limiet: eerst goed beschrijven, dan gericht bijsturen, in plaats van twintig keer opnieuw te laten maken.
+:::
+
+## Wanneer is een betalend abonnement nodig?
+
+Begin gratis. De gratis versies zijn echt bruikbaar. Overweeg pas te betalen wanneer je regelmatig tegen de limieten aanloopt, je het sterke model vaak nodig hebt, of je functies mist (langere documenten, projecten, onderzoek). Een simpele test: hou twee weken bij of de gratis limieten je echt blokkeren. Zo ja, upgrade. Zo nee, blijf gratis.
+
+:::donow Doe dit nu — kies bewust
+Neem een taak die je deze week deed en vraag jezelf af: koos ik mijn model en instellingen bewust, of uit gewoonte? Had een lichtere keuze volstaan — of had een sterkere het beter gedaan?
+:::
+
+# Wat hierna komt | Wat je nu kunt — en de volgende trede van de ladder.
+
+Even stilstaan bij wat je nu kunt. Je hebt een opzet die jóú kent: een bibliotheek met sjablonen, een contextdocument, je eigen stem, en minstens één blijvend project. Je houdt je gesprekken gezond, je laat de AI meebeoordelen, en je kiest je instellingen bewust. Terugkerende taken lukken merkbaar sneller en consistenter. Dat is een echte sprong — van “een tool die ik gebruik” naar “een opzet die ik opbouw”.
+
+:::fig ladder hl=2 | Je staat nu op de tweede trede. Elke trede hoger laat méér werk vanzelf gebeuren — maar geen haast.
+:::
+
+En toch is dit pas de tweede trede. In Deel 3 zet je de volgende stap: van losse, bewaarde taken naar gekóppeld werk. Je koppelt stappen aan elkaar tot vaste werkstromen, en je laat je AI werken met je eigen kennisbank — zodat hij niet alleen jou kent, maar ook je documenten.
+
+Vanaf hier staan ook de modules voor je open. Ze maken je niet hoger maar breder: je stem, beeld, tabellen, grote documenten, leren, onderzoek. Kies er gerust één die je werk deze maand raakt — de Wegwijzer helpt je kiezen.
+
+Maar er is echt geen haast. Word eerst vlot in deze opzet. Gebruik ze deze week voor iets wat je toch moest doen. De gewoonte om te bewaren en te hergebruiken is belangrijker dan snel doorklimmen — net die gewoonte maakt alle volgende delen draagbaar.
+
+:::recap
+- Stop met elke keer vanaf nul: bewaren wint tijd, maakt resultaten consistent en verlaagt je mentale last.
+- Bouw een bibliotheek (*categorie – taak*), sjablonen met [invulvelden] en een contextdocument — en breng ze samen in een project.
+- Een project is een aparte ruimte: zet je context er telkens expliciet in.
+- Hou gesprekken gezond, vraag varianten, en eis kritiek op (“noem drie zwaktes”).
+- Kies model en instellingen bewust — het lichtste wat volstaat, spaart ook je limiet.
+:::
+
+:::note Je bent klaar voor Deel 3 als
+Je een terugkerende taak één keer goed opzet — een sjabloon plus je bewaarde context in een project — en ze daarna een tweede keer merkbaar sneller afwerkt, met een resultaat dat even goed of beter is.
+:::
+
+# Bijlagen: je gereedschapskist | De helper voor je contextdocument, drie sjablonen, drie oefeningen en een woordenlijst.
+
+Alles wat je telkens opnieuw nodig hebt, op één plek. Je hoeft dit niet te lezen zoals de rest — kom hier terug wanneer je iets zoekt.
+
+## De contextdocument-helper
+
+Dit is de helper uit hoofdstuk 4. Plak hem als eerste bericht in een nieuw gesprek, beantwoord zijn vragen, en hij schrijft je contextbrief. (Hij staat ook in Deel 1 — hier nog eens, want je gebruikt hem in dit deel voortdurend.)
+
+:::prompt KOPIEER DIT
+Je helpt mij een korte, herbruikbare contextbrief over mezelf
+te maken, die ik voortaan aan elke AI kan geven zodat ze mij
+meteen kent. Jij stelt de vragen; ik hoef niet zelf te bedenken
+wat erin moet.
+
+Werkwijze:
+1. Interview mij stap voor stap. Stel telkens één tot drie
+   vragen tegelijk en bouw verder op mijn antwoord.
+2. Dek af: wie ik ben en wat ik doe; mijn doelen en de taken
+   die ik vaak heb; voor wie ik meestal schrijf; mijn voorkeur
+   qua taal, toon en lengte; en wat ik altijd of net nooit wil.
+3. Wanneer je genoeg weet, schrijf je mijn contextbrief in een
+   apart blok dat ik in één keer kan kopiëren: kort, helder, met
+   korte kopjes.
+
+Regels:
+- Schrijf in het Nederlands. Neem niets op wat ik niet zei.
+- Herinner me eraan geen gevoelige gegevens te geven.
+:::
+
+## Drie sjablonen om je bibliotheek mee te starten
+
+Vul de stukjes tussen [haken] in. Bewaar ze met een naam volgens het patroon *categorie – taak*.
+
+:::prompt SJABLOON — ANTWOORD OP EEN BERICHT
+Je bent [jouw rol]. Schrijf een vriendelijk, professioneel
+antwoord op het bericht hieronder. Toon begrip, blijf beleefd,
+en [vermeld / leg uit / beloof: ...]. Sluit af met een
+duidelijke volgende stap.
+
+Bericht: [plak hier het bericht — geanonimiseerd]
+:::
+
+:::prompt SJABLOON — EEN LANGE TEKST SAMENVATTEN
+Vat de tekst hieronder samen voor [doelpubliek]. Eerst de kern
+in 3 zinnen, dan de belangrijkste punten als bullets, en tot
+slot eventuele actiepunten. Voeg niets toe wat er niet staat.
+
+Tekst: [plak hier je tekst]
+:::
+
+:::prompt SJABLOON — UITNODIGING OF AANKONDIGING
+Je bent [rol]. Schrijf een [bericht / uitnodiging] voor
+[doelpubliek] over [onderwerp]. Toon: [warm / formeel]. Hou het
+onder [aantal] woorden, vermeld zeker [datum / plaats], en
+eindig met [oproep].
+:::
+
+## Drie oefeningen
+
+Wil je meer dan de “Doe dit nu”-momenten uit de hoofdstukken? Hier zijn drie oefeningen met uitgeschreven materiaal, zodat je meteen kunt beginnen.
+
+### Oefening 1 — Maak een sjabloon (bij hoofdstuk 3)
+
+Hieronder staat een eenmalige prompt. Duid voor jezelf aan welke delen per keer veranderen, vervang ze door invulvelden (mik op minstens drie), en bewaar het sjabloon. Test het daarna op de tweede situatie.
+
+:::prompt EENMALIGE PROMPT
+Je bent secretaris van een koor. Schrijf een herinneringsmail
+aan de leden dat de repetitie van donderdag verplaatst is naar
+vrijdag om 20 uur in de parochiezaal.
+:::
+
+Tweede situatie om op te testen: het teamoverleg van je afdeling verhuist van maandag 9 uur naar dinsdag 14 uur, in vergaderzaal 2. Geslaagd wanneer je het sjabloon kunt invullen zonder ook maar iets te herschrijven.
+
+### Oefening 2 — Leer je AI een stem (bij hoofdstuk 4)
+
+Laat de AI onderstaande stijl analyseren tot een korte stijlgids (woordkeuze, zinslengte, toon). Vraag daarna een nieuwe tekst in diezelfde stem: een aankondiging voor verse herfstsoep. Herken je de stem terug?
+
+:::sample DRIE TEKSTEN IN EEN HERKENBARE STEM
+“Goeiemorgen lekkerbekken! Vers uit de oven: onze roggebroodjes. Kom snel, want op is op!”
+
+“Wat een weer vandaag, hè? Perfect voor een warme koffiekoek. We staan klaar met de glimlach!”
+
+“Nieuw deze week: appelflappen zoals vroeger. Eén hapje en je bent verkocht. Tot in de winkel!”
+:::
+
+Verdieping: vraag dezelfde soeptekst ook zónder de stijlgids, en leg de twee naast elkaar. Het verschil toont precies wat de stijlgids doet.
+
+### Oefening 3 — Beoordelen en verbeteren (bij hoofdstuk 6)
+
+Geef een duidelijk doel — “een uitnodiging die mensen echt doet inschrijven voor een gratis infoavond over zonnepanelen op 11 oktober” — en laat de AI onderstaande tekst kritisch beoordelen tegenover dat doel (drie zwaktes), en daarna verbeteren.
+
+:::sample EEN MATIGE TEKST
+“Beste allen, er is een infoavond. Het is binnenkort. Kom zeker want het wordt interessant. Groeten.”
+:::
+
+Geslaagd wanneer de verbeterde versie merkbaar sterker is, en je in één zin kunt benoemen wat ze beter maakt.
+
+## Woordenlijst
+
+- **Bibliotheek** — Je vaste plek waar je je beste prompts, sjablonen en je contextdocument bewaart en terugvindt.
+- **Sjabloon** — Een prompt met een vaste structuur waarin je de wisselende delen openlaat tussen [haken].
+- **Invulveld** — Het stukje tussen [haken] dat per situatie verandert — een naam, een datum, een onderwerp.
+- **Contextdocument** — Een korte brief over jou (rol, doel, publiek, stijl) die je aan elke AI kunt geven.
+- **Geheugen** — Wat een tool zelf over jou onthoudt uit eerdere gesprekken. Handig, maar enkel binnen die tool.
+- **Project** — Een vaste werkruimte waarin je context en instructies één keer instelt, zodat alle gesprekken erin ze delen.
+- **Stijlgids** — Een korte samenvatting van jouw schrijfstijl en toon, die je AI helpt om als jou te klinken.
+- **Contextrot** — Het verschijnsel dat een AI in een lang gesprek de draad kwijtraakt en eerdere instructies door elkaar haalt.
+- **Limiet** — Hoeveel je per periode met een tool kunt doen. Lange gesprekken, grote bestanden en het sterke model gebruiken er het meest van.
+- **Red teamen** — Je eigen werk bewust laten aanvallen om de zwakke plekken te vinden. Komt voluit in Deel 3.

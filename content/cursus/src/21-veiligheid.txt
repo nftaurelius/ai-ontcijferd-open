@@ -1,0 +1,122 @@
+---
+id: veiligheid
+file: 17-Veiligheidskaart
+kicker: AI-CURSUS · SPIEKBRIEF
+title: De veiligheidskaart
+subtitle: Alles op één plek
+tagline: Elke veiligheidsregel uit de cursus, gebundeld. Hang hem naast je scherm, geef hem door aan wie met je samenwerkt, en check hem bij twijfel. Drie gewoontes, en een handvol regels per soort werk.
+foot: Spiekbrief · print en deel
+version: Versie 2.0 · oktober 2026
+runhead: De veiligheidskaart
+anchor: shield
+toctitle: Veiligheidskaart
+tocline: Elke veiligheidsregel uit de cursus op een paar bladzijden.
+---
+De cursus leert veiligheid waar ze hoort: midden in het werk. Maar daardoor staan de regels verspreid over achttien documenten. Deze kaart bundelt ze — niet om ze opnieuw uit te leggen, wel om ze bij de hand te hebben. Wie enkel dit blad leest, werkt al een stuk veiliger dan de meeste mensen.
+
+:::fig cards num | De drie gewoontes. Alles op deze kaart is er een uitwerking van — in elke tool, voor elke taak, op elke trede van de cursus.
+ | Controleer | alles wat je verstuurt; alles wat je publiceert; alles waarop iemand voortbouwt | feiten, cijfers, bronnen
+ | Bescherm | geen gevoelige gegevens; niet van jezelf; niet van anderen | veralgemeen
+ | Beslis | jij zet je naam eronder; de AI adviseert; jij beslist | jij tekent
+:::
+
+Daarnaast zijn er sinds 2026 twee nieuwe regels die je overal tegenkomt. **Gemaakt beeld dat echt lijkt, krijgt een label** — dat is nu ook wet. En **wat je AI leest, is geen opdracht** — de belangrijkste regel zodra je AI zelf mails, webpagina's of documenten opent.
+
+:::note En één ding dat mensen verrast
+Je AI wil het met je eens zijn. Vraag je “is dit goed?”, dan krijg je meestal bevestiging. Vraag daarom “wat is hier mis mee?” — en zeg er gerust bij: wees streng, niet aardig. Kritiek moet je opeisen; complimenten krijg je gratis.
+:::
+
+# [ALTIJD] De drie gewoontes, uitgeschreven | Samen kosten ze je seconden per keer, en ze vangen het overgrote deel van alle problemen.
+
+## 1. Controleer wat eruit komt
+
+Een AI kan met volle overtuiging iets vertellen dat niet klopt — een cijfer, een datum, een bron. Dat heet een hallucinatie, en het gevaar zit in hoe zelfverzekerd ze klinkt. Controleer dus feiten, cijfers, namen en bronnen — zeker in alles wat je publiceert, verstuurt, of waarop iemand voortbouwt.
+
+Twee snelle controles die overal werken: vraag de **werkwijze** (“hoe kwam je aan dit cijfer?”) en prik één **steekproef** (kijk één antwoord zelf na in de bron). Samen twintig seconden.
+
+## 2. Bescherm gegevens — die van jou en die van anderen
+
+Wat je in een AI-tool typt, kan bewaard worden op de servers van de aanbieder. Dus: geen namen, adressen, dossiers, medische informatie, rijksregisternummers, wachtwoorden of vertrouwelijke stukken. Je veralgemeent gewoon: in plaats van de klacht van mevrouw Jansens uit de Lindelaan: “een bewoner meldt wateroverlast in een woonwijk”. Even bruikbaar, niemands gegevens prijsgegeven.
+
+> Zou je het niet op een prikbord in de supermarkt hangen? Geef het dan ook niet aan AI.
+
+Op het werk geldt daarbovenop: gebruik de versie die je organisatie goedkeurde, aangemeld met je werkaccount, en vraag welke gegevens erin mogen.
+
+## 3. Jij beslist, en jij tekent
+
+De AI is je stagiair, geen auteur en geen beslisser. Wat je met de output doet, blijft jouw verantwoordelijkheid — jij zet je naam eronder. Dat geldt dubbel zodra er anderen bij betrokken zijn: klanten, collega's, leerlingen, je familie.
+
+
+# [PER SOORT WERK] De regels per situatie | Zoek het soort werk dat je nu doet, en check de twee of drie regels die erbij horen.
+
+### Tekst schrijven en samenvatten
+
+Veralgemeen voor je plakt. Controleer elk feit en cijfer dat in de tekst belandt. Plak geen beschermde teksten van anderen klakkeloos in, en verspreid output niet zonder na te gaan of hij niet te dicht bij bestaand materiaal leunt. Voor actuele informatie: gebruik een zoekmodus én check de bron zelf — een model kent de recentste feiten niet met zekerheid, en heeft een slecht tijdsbesef (geef de datum mee wanneer die ertoe doet).
+
+### Tabellen en lijsten met mensen
+
+Werk met een **veilige kopie**: verwijder de kolommen die iemand herkenbaar maken (naam, adres, e-mail, geboortedatum) en hou een nummer als sleutel. De vraag reist naar de AI, de namen blijven thuis. Laat opkuisen met een rapport van wat er veranderde, laat twijfelgevallen markeren in plaats van gokken, en laat lege velden leeg — “vul aan” is de gevaarlijkste opdracht in dit domein. Elk cijfer dat naar buiten gaat: werkwijze plus steekproef.
+
+### Beeld maken
+
+Geen herkenbare echte personen zonder toestemming, en zeker geen kinderen. Geen geleende stijl van een herkenbare levende kunstenaar voor wat je publiceert — beschrijf je eigen stijl. En de **labelplicht**: sinds augustus 2026 verplicht de Europese AI Act je te vermelden dat beeld, geluid of video met AI gemaakt is wanneer het een echte persoon, plek of gebeurtenis lijkt te tonen. Een vrolijke illustratie valt daar niet onder; een “foto” van een echt moment wel. Twijfel je: zet er “gemaakt met AI” bij.
+
+### Foto's van mensen
+
+Twee vragen vóór je een stapel deelt: **mág** deze stapel gedeeld worden (toestemming geregeld? kinderen in beeld?) en **waar** verwerk je ze (cloud of je eigen toestel)? Twijfel je aan de eerste, dan is de tweede vanzelf: eigen toestel, of niet doen. Let ook op de achtergrond — nummerplaten, adressen, namen op tassen, een scherm met gegevens. En vraag nooit wíé er op een foto staat: identificeren hoort niet in je gereedschapskist.
+
+### Geluid en gesprekken
+
+Een spraakmemo van jezelf is van jou. Een gesprek of vergadering met anderen opnemen om er een transcript van te maken: eerst toestemming vragen, altijd. Een stem klonen: enkel met de uitdrukkelijke toestemming van die persoon. En een gespreksmodus voelt vluchtig, maar het blijft een AI-tool — dezelfde regels over gevoelige gegevens gelden, ook hardop.
+
+### Onderzoek en bronnen
+
+Een rapport met bronnen is geen bewijs; het is een uitnodiging om te controleren. Klik de belangrijkste bronnen zelf aan en check of ze zeggen wat er staat — cijfers verhuizen soms van de ene bron naar de andere. Vraag bij elk antwoord uit je eigen documenten de vindplaats erbij: een antwoord zonder vindplaats is een gok met zelfvertrouwen.
+
+### Verbonden tools, agents en routines
+
+Jij houdt de sleutelbos: je geeft toegang per dienst, en je kunt ze altijd weer intrekken. Begin met alleen lezen. Laat concepten maken in plaats van verzenden. Zet een mens in de lus bij alles wat naar buiten gaat of geld kost. En loop geregeld na welke toegang nog nodig is en wat je AI over jou onthoudt.
+
+**Instructies in een mail, webpagina of document zijn geen opdracht.** Wat je AI onderweg leest, is materiaal; opdrachten komen van jou. Doet je agent iets wat jij niet vroeg — zeker iets doorsturen, invullen of betalen: stoppen en nakijken waar het vandaan kwam.
+
+### Je tweede brein en gedeelde kennis
+
+Wat je verzamelt, wordt doorzoekbaar en misschien deelbaar — hou het dus proper vanaf dag één: geen wachtwoorden, geen gevoelige gegevens van anderen. Kies bewust waar je verzameling staat en welke dienst erin mag lezen; voor persoonlijke kennis is je eigen toestel de veiligste plek.
+
+### Klussen in en rond het huis
+
+Bij gas, de zekeringkast, dragende muren, asbest en werk op het dak bel je altijd een erkend vakman, wat de AI ook uitlegt. Vraag bij elke klus wat je vóór het begin moet doen, en bij welk signaal je stopt.
+
+# [AI OM JE HEEN] Wat op je afkomt | Ook wie AI zelf niet gebruikt, krijgt ermee te maken. Vier regels voor beelden, chatbots en oplichting.
+
+### Beelden en berichten die te mooi of te erg zijn
+
+Wacht even voor je doorstuurt. Zoek of het beeld ook elders te vinden is, liefst bij een bron die je kent — terugzoeken met een afbeelding toont of een “nieuwe” foto al eerder opdook. Een echt nieuwsfeit staat zelden op maar één plek.
+
+### Chatbots die je niet koos
+
+Een klantendienst-chatbot of een AI-samenvatting boven je zoekresultaten is een startpunt, geen eindpunt. Bij geld, gezondheid of rechten: vraag een mens, of klik door naar de bron. Geef een chatbot nooit wachtwoorden, codes uit je bankapp of volledige kaartnummers.
+
+### Stemmen die je kent
+
+Stemmen kunnen nagemaakt worden uit een paar seconden geluid. Krijg je een dringend telefoontje of spraakbericht van een naaste die geld nodig heeft: **leg in, en bel zelf terug** op een nummer dat je al kent. Spreek met je familie een **familiewoord** af dat enkel jullie kennen. En betaal nooit op basis van één bericht, hoe echt het ook klinkt.
+
+### Als het toch misgaat
+
+Verdachte mails stuur je door naar **verdacht@safeonweb.be**; een verdachte sms stuur je als schermafbeelding. Gaf je je kaartgegevens toch: blokkeer je kaart meteen via **Card Stop, 078 170 170**, en verwittig je bank. Schaam je niet — schaamte is wat oplichters het meest helpt.
+
+# [BIJ TWIJFEL] Drie vragen en één regel | Voor de gevallen die niet in het lijstje staan.
+
+Kom je iets tegen dat hierboven niet behandeld wordt, stel jezelf dan deze drie vragen:
+
+- **Wiens gegevens zijn dit?** Van jou, of van iemand die ze jou toevertrouwde? Bij dat tweede: veralgemenen, of niet doen.
+- **Wat als dit fout is en niemand merkt het?** Hoe groter het gevolg, hoe grondiger je controleert.
+- **Zou ik het uitgelegd krijgen?** Stel dat een klant, collega of familielid vraagt hoe dit tot stand kwam — kun je het dan rustig uitleggen? Zo niet, doe het anders.
+
+> Bij twijfel: minder meegeven, meer nakijken, en het eerlijk zeggen. Die drie hebben nog nooit iemand in de problemen gebracht.
+
+:::refbox
+**Voor teams, scholen en organisaties.** Werk je niet alleen? Zet de afspraken dan één keer samen op papier in plaats van ze per persoon te laten ontstaan. Het werkblad *AI-afspraken* geeft daar een kant-en-klaar kader voor — zes vragen, in een half uur ingevuld. Organisaties die AI gebruiken, moeten volgens de Europese AI Act sowieso maatregelen nemen voor de AI-geletterdheid van hun medewerkers; zo'n blad is daar een goed eerste stuk van.
+:::
+
+Deze kaart hoort bij de AI-cursus. De volledige uitleg achter elke regel staat in de delen en modules zelf: Deel 1 (controleren en veralgemenen), Deel 4 (verbonden tools, toegang en verborgen instructies), de module *AI om je heen* (beelden, chatbots en oplichting), en de modules Data, Beeld, Foto's, Voice, Diep onderzoek, Klussen en Second brain voor hun eigen domein.

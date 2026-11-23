@@ -1,0 +1,268 @@
+---
+id: m-fotos
+file: 13-Module-Fotos-op-schaal
+kicker: AI-CURSUS · MODULE
+title: Foto's op schaal
+subtitle: Laat je AI kijken
+tagline: Vierhonderd foto's na één feest, een doos dia's van vijftig jaar geleden: je AI kan niet alleen beeld maken, hij kan kijken. Je leert selecteren met een lat, beschrijven voor vindbaarheid, en orde brengen in elk archief — met de mensen op de foto's als eerste zorg.
+foot: Module · veronderstelt Deel 1–2 · geen volgorde
+version: Versie 2.0 · oktober 2026
+runhead: Module — Foto's op schaal
+anchor: grid
+toc: WAT JE GAAT DOEN
+toctitle: Foto's op schaal
+tocline: Je AI laten kijken: selecteren, beschrijven, archief ordenen.
+---
+Beeld heeft twee richtingen. Beeld maken uit een beschrijving is het onderwerp van de module *Beeld & video*. Deze module draait de kijkrichting om: je AI kan ook kijken. Hij kan een foto bekijken en beschrijven wat erop staat, beoordelen of ze scherp en sterk is, en dat niet één keer doen maar honderden keren na elkaar — zonder moe te worden en zonder zijn oordeel te laten verwateren bij foto driehonderd.
+
+Dat verandert wat een stapel foto's is. De vierhonderd van het familiefeest, de duizenden op je telefoon, de doos van je grootouders: het waren bergen, het worden doorzoekbare verzamelingen. Je leert selecteren met een expliciete lat, beschrijvingen maken op schaal, en orde brengen in een archief — en je leert eerst waar de grenzen liggen, want op bijna elke foto staat een mens.
+
+:::refbox
+Dit is een module: een losstaand deel dat je breder maakt, geen trede van de ladder. Ze veronderstelt Deel 1 en 2. Hoeveel foto's je in één keer kunt aanleveren en welke tools hele mappen aankunnen, verandert snel — dat staat in de Levende Toolgids. De werkwijze hier blijft overal dezelfde.
+:::
+
+# Vierhonderdzevenentachtig foto's | Je AI kan kijken. Wat dat betekent voor elke stapel beelden die je ooit nog krijgt.
+
+Het veertigjarige huwelijksfeest van Jonas' ouders was een succes. Dat weet Jonas omdat hij er was — en omdat er drie dagen later 487 foto's in zijn mailbox zaten, van zijn zus, twee neven en een tante met een nieuwe camera, in mapjes met namen als “DEFINITIEF_selectie_v2”. Het fotoboek voor zijn ouders wil er dertig. De familiegroep twaalf. De bedankkaart één, “maar wel een goeie”. Jonas kent het vervolg: twee avonden scrollen, na honderd foto's lijken ze allemaal op elkaar, en de keuze wordt uiteindelijk gemaakt door vermoeidheid in plaats van door smaak.
+
+Wat Jonas nog niet wist: de AI die hij al maanden voor teksten gebruikt, kan ook kijken. Geef hem een foto en hij vertelt wat erop staat — de taart, de toespraak, de kleinkinderen vooraan, dat de foto licht onscherp is en dat er rechts een rommelige vuilniszak in beeld staat. Geen magie: gewoon beschrijven wat te zien is, zoals een aandachtige vriend dat zou doen. Het verschil met die vriend? Hij doet het met evenveel aandacht bij foto 400 als bij foto 4.
+
+> Je AI kan niet alleen beelden maken. Hij kan kijken — en kijken wordt pas een superkracht op schaal.
+
+Eén foto beschrijven is een aardigheid. Honderden foto's beoordelen tegen dezelfde criteria, elk beeld woorden geven, een archief doorzoekbaar maken — dat is werk dat vroeger simpelweg bleef liggen. Drie taken komen telkens terug, en ze vormen de kern van deze module:
+
+:::fig cards num | Kijken op schaal in drie taken: selecteren tegen jouw lat, beschrijven voor vindbaarheid en toegankelijkheid, en ordenen tot bruikbare reeksen.
+Selecteren | De beste eruit | Tegen jouw criteria, met dezelfde aandacht bij elke foto. | “de 30 sterkste van 487”
+Beschrijven | Woorden bij elk beeld | Namen, beschrijvingen, trefwoorden. | “vindbaar en toegankelijk”
+Ordenen | Stapels worden reeksen | Groeperen op inhoud en moment. | “toespraak, dansvloer, taart”
+:::
+
+Eén ding verandert er níét, en dat zeggen we meteen: de AI maakt voorstellen, jij maakt keuzes. Welke foto op de cover van het fotoboek komt, blijft een kwestie van smaak en aanvoelen — van jou. Wat verdwijnt, is het geestdodende voorwerk: de 487 terugbrengen tot de 30 die je aandacht verdienen.
+
+:::vs TWEE AVONDEN SCROLLEN | LATEN KIJKEN MET EEN LAT
+Na honderd foto's lijken ze op elkaar, je oordeel slijt, en de keuze wordt gemaakt door vermoeidheid. En de doos op zolder? Die blijft dicht.
+---
+De AI beoordeelt alle 487 met dezelfde aandacht, jij kiest fris uit de shortlist — en zelfs de doos van vijftig jaar wordt een namiddag werk.
+:::
+
+In de rest van deze module bouwen we die drie taken één voor één op — maar niet vóór we het over de mensen op de foto's hebben gehad. Want daar begint alles.
+
+# Eerst dit: het zijn foto's van mensen | Twee vragen vóór er ook maar één foto naar een AI gaat — en één vraag die je nooit stelt.
+
+Op bijna elke foto van Jonas staat een mens — lachend, etend, dansend, herkenbaar. En daarmee gelden hier dezelfde regels als bij de klantenlijst uit de datamodule: foto's van herkenbare personen zíjn persoonsgegevens. De afspraken daarover veranderen niet omdat een machine meekijkt. Wat je al hoort te respecteren — vragen voor je iets publiek deelt, extra zorg bij kinderen — blijft exact even hard gelden. AI voegt er alleen één nieuwe vraag aan toe: welke dienst laat je meekijken?
+
+:::fig two | De twee vragen vóór je een stapel deelt: mag deze stapel gedeeld worden, en waar laat je hem verwerken? Twijfel je aan de eerste, dan is de tweede vanzelf: je eigen toestel.
+VRAAG 1 | Mag de stapel gedeeld? | Staat er iemand herkenbaar op?; Weten ze dat de foto's verwerkt worden?; Kinderen? Dan dubbel voorzichtig.; Wat zegt je werkgever of organisatie? | b
+VRAAG 2 | Waar verwerk je ze? | Op je eigen toestel: de veiligste weg.; In de cloud: enkel wat gedeeld mag,; bij een dienst die je bewust koos.; Twijfel? Kleiner beginnen kan altijd. | w
+:::
+
+De eerste vraag gaat over de mensen óp de foto's. Een familiefeest waar iedereen weet dat er gefotografeerd wordt, is iets anders dan foto's uit een schoolklas of een jeugdkamp. Vuistregel: een stapel die je niet zomaar met de hele familie zou delen, stuur je ook niet naar een clouddienst. De tweede vraag gaat over de weg: er bestaan tools die beelden volledig op je eigen computer verwerken — voor gevoelige stapels is dat de koninklijke weg (welke, zie de Toolgids). En werk je voor een school, bedrijf of gemeente: vraag welke diensten goedgekeurd zijn vóór je begint, niet erna.
+
+> De regels over foto's van mensen veranderen niet omdat een machine meekijkt.
+
+## De vraag die je nooit stelt
+
+Eén gebruik hoort niet in jouw gereedschapskist, en het is belangrijk om dat scherp te stellen: mensen identificeren. “Wie is deze persoon?”, “zoek alle foto's waar die-en-die opstaat” — dat is gezichtsherkenning, en dat terrein is wettelijk en ethisch zwaar beladen, met reden. Goede AI-diensten weigeren het; dat is geen gebrek maar een grens die er hoort te staan. Alles in deze module werkt zonder ooit te vragen wíé er op een foto staat — enkel wát er te zien is. De namen voeg jíj toe, want jij kent de mensen.
+
+:::warn Let op
+Denk ook aan wat er ín de achtergrond staat: nummerplaten, adressen op gevels, namen op een tas, een scherm met persoonlijke gegevens. Een foto lekt soms meer dan zijn onderwerp. Neem het op in je criteria — daarover gaat het volgende hoofdstuk.
+:::
+
+:::donow Doe dit nu — keur je eigen stapel
+Neem de fotostapel waarmee je deze module wil oefenen. Stel de twee vragen: mag deze stapel gedeeld worden, en waar verwerk ik hem dan?
+
+Twijfel je over ook maar een deel? Oefen dan eerst met foto's zonder mensen — je eigen natuur-, reis- of gebouwenfoto's werken perfect om de technieken onder de knie te krijgen. De werkwijze is identiek; het risico is nul.
+:::
+
+# Selecteren met een lat | Van 487 naar 30 in één opdracht — omdat je eerst opschreef wat “goed” betekent.
+
+Twee avonden scrollen heeft één kernprobleem, en het is niet de tijd: het is dat niemand vooraf zei wat er gezocht werd. Zonder criteria wordt selecteren een gevoel, en gevoel slijt na honderd foto's. De oplossing komt recht uit deze cursus: maak je **lat** expliciet. Jonas schreef de zijne in vijf minuten:
+
+:::sample JONAS' LAT — opgeschreven vóór het kijken begon
+**Technisch:** scherp op het onderwerp, fatsoenlijk belicht, geen afgesneden hoofden.
+
+**Inhoudelijk:** emotie en interactie boven statische groepsfoto's; zijn ouders mogen het middelpunt zijn; variatie — niet twaalf keer de taart vanuit dezelfde hoek.
+
+**Deelregels:** geen close-ups van de kinderen van zijn neef (die vroeg dat uitdrukkelijk); geen nummerplaten in beeld; niets waar iemand onflatteus op staat.
+:::
+
+Die lat, plus de stapel, plus één opdracht:
+
+:::prompt DE SELECTIE-OPDRACHT
+Hieronder volgen foto's van een familiefeest. Beoordeel elke
+foto tegen de criteria hierboven. Geef per foto: een score op
+elk criterium, één zin motivering, en een eindoordeel
+(aanrader / bruikbaar / afgewezen / eerst checken).
+Maak daarna een shortlist van de 30 sterkste, gesorteerd, met
+per foto waarom — en let daarbij zelf op variatie in het
+geheel. Kies niets definitief: dat doe ik.
+:::
+
+:::sample UIT WAT DE AI RAPPORTEERDE
+“Foto 087 — aanrader. Scherp, warm licht; de vader veegt een traan weg tijdens de toespraak van zijn dochter: precies de emotie uit je criteria. Kandidaat voor de cover.
+
+Foto 112 — bruikbaar, maar dit is de zesde foto van de taart uit dezelfde hoek; voor variatie niet in de shortlist.
+
+Foto 203 — afgewezen: bewegingsonscherpte op de gezichten.
+
+Foto 241 — sterk beeld, maar twee jonge kinderen staan er frontaal en close op: eerst checken of dit de kinderen zijn voor wie een afspraak geldt.”
+:::
+
+Voel je wat er gebeurde? De AI deed geen smaakuitspraak in jouw plaats — hij paste jóúw lat toe, 487 keer, met dezelfde aandacht bij de laatste als bij de eerste. En kijk naar foto 241: de deelregel uit de lat werkte als vangnet. De volgorde is altijd dezelfde: de AI maakt de shortlist, jij maakt de keuze. Uit 30 kies je er in tien minuten twaalf — mét je smaak, die nu fris is in plaats van versleten.
+
+> De AI maakt de shortlist. De keuze blijft smaak — en smaak blijft van jou.
+
+:::warn Let op
+De AI kan zich vergissen — een net-niet-scherpe foto goedkeuren, een grap op een spandoek missen, een detail verkeerd lezen. De shortlist versnelt je werk; ze vervangt je eindcontrole niet. Alles wat gedeeld of gedrukt wordt, heb jij zelf nog bekeken.
+:::
+
+:::donow Doe dit nu — selecteer met een lat
+Schrijf een lat van drie regels (technisch, inhoudelijk, deelregels) voor een echte stapel. Geef een eerste lading foto's met de selectie-opdracht.
+
+Controleer daarna een steekproef, net als in de datamodule: kijk drie beoordeelde foto's zelf na. Klopt “scherp”? Klopt de motivering? Dan mag de rest van de stapel erdoor.
+:::
+
+# Woorden bij elk beeld | Beschrijvingen, alt-teksten en trefwoorden op schaal — het werk dat altijd bleef liggen.
+
+De twaalf foto's zijn gekozen. En nu het werk dat er altijd bij inschiet: er woorden bij zetten. Niet voor de sier — om drie redenen die er echt toe doen. **Vindbaarheid:** “IMG_4821.jpg” vindt niemand ooit terug; “2026-feest40-toespraak-papa-ontroerd.jpg” wel. **Toegankelijkheid:** mensen die slecht of niet zien, laten een website of bericht voorlezen — en horen bij een foto zonder beschrijving alleen stilte. **De toekomst:** de kleinkinderen van over dertig jaar willen weten wie, wat en wanneer dit was.
+
+Dit was altijd het eerst geschrapte klusje, want twaalf keer is het vervelend en vierhonderd keer is het ondenkbaar. Op schaal kijken maakt het een bijzaak van tien minuten:
+
+:::prompt DE WOORDEN-OPDRACHT
+Maak voor elke foto hieronder:
+1. Een sprekende bestandsnaam: [jaar]-[gelegenheid]-kern-van-
+   het-beeld, kleine letters, koppeltekens.
+2. Een alt-tekst van één zin: wat er feitelijk te zien is,
+   voor wie de foto niet kan bekijken. Geen “foto van”
+   vooraan, geen namen van personen.
+3. Drie tot vijf trefwoorden.
+Beschrijf enkel wat je ziet; benoem niemand bij naam.
+:::
+
+:::sample VAN BESTAND NAAR VINDBAAR BEELD
+**Was:** IMG_4821.jpg — verder niets.
+
+**Bestandsnaam:** 2026-feest40-toespraak-ontroering.jpg
+
+**Alt-tekst:** “Een oudere man veegt glimlachend een traan weg terwijl een jonge vrouw met een microfoon spreekt, aan een feestelijk gedekte tafel.”
+
+**Trefwoorden:** huwelijksfeest · toespraak · ontroering · familie · 2026
+:::
+
+Voel je het verschil? Dezelfde foto, maar ze bestaat nu drie keer: voor de zoekfunctie, voor het oor van wie niet ziet, en voor het archief. En merk de regel “benoem niemand bij naam”: de beschrijving zegt “een oudere man”, niet wie het is. Wil je namen in je archief, dan voeg jíj ze toe — jij kent de mensen; de AI hoort ze niet te raden.
+
+> Een foto zonder woorden is over vijf jaar onvindbaar — en voor sommige mensen vandaag al onzichtbaar.
+
+:::deeper Waarom alt-teksten geen luxe zijn
+Voor iemand met een visuele beperking is de alt-tekst de foto. Toegankelijkheidsregels voor websites — voor overheden en veel organisaties gewoon verplicht — vragen er dan ook om. Een goede alt-tekst is feitelijk en beknopt: wat is er te zien, wat gebeurt er. Geen “mooie sfeerfoto” (dat is een mening), wel wat de kijker zou zien.
+
+En het mooie: hetzelfde werk maakt je beelden ook vindbaar voor zoekmachines en je eigen archief. Toegankelijkheid en vindbaarheid zijn twee kanten van dezelfde beschrijving.
+:::
+
+:::donow Doe dit nu — geef tien foto's hun woorden
+Neem tien foto's die je onlangs deelde of nog wil bewaren. Draai de woorden-opdracht.
+
+Lees de alt-teksten hardop voor met je ogen dicht: zie je de foto voor je? Dan zijn ze goed. Hernoem de bestanden en bewaar de trefwoorden bij je foto's — vanaf nu is dit een vaste stap van tien minuten in plaats van een goed voornemen.
+:::
+
+# Orde in het archief | De doos van je grootouders, de chaos op je telefoon: van stapel naar verzameling.
+
+Na het feest kreeg Jonas nog iets in handen: een schoenendoos van zijn grootmoeder. Tweehonderd foto's, jaren vijftig tot nu, “misschien iets voor jullie”. Vroeger was dat een doos die van zolder naar zolder verhuist tot niemand nog weet wie erop staat. Nu is het een project van twee zaterdagen: inscannen, en dan de AI laten kijken — foto per foto, met een vaste opdracht.
+
+:::sample UIT DE SCHOENENDOOS — twee beschrijvingen
+“Foto 034 — zwart-wit groepsportret van een twintigtal mensen in zondagse kledij voor een cafégevel; opschrift ‘In den Hoorn’ leesbaar. Kledij, kapsels en de auto rechts wijzen op eind jaren vijftig tot begin jaren zestig (**schatting**). **Vermoedelijk** een trouwfeest: de vrouw in het midden draagt een witte jurk en een boeket.
+
+Foto 121 — kleur, licht vervaagd; een gezin aan een picknicktafel op een camping, een oranje tent op de achtergrond. Jaren zeventig (**schatting**, op basis van kledij en de tent). **Mogelijk** een vakantie aan zee: er staat een windscherm.”
+:::
+
+Let op de twee woorden die telkens terugkomen: *schatting* en *vermoedelijk*. Die staan er omdat Jonas erom vroeg — en dat is dé regel voor archiefwerk met AI. Een jaartal aflezen uit kledij en auto's is een beredeneerde gok, geen feit. Laat de AI zijn zekerheid benoemen, en verzamel de echte zekerheid waar ze zit: bij de mensen. Jonas legde de beschreven foto's voor aan zijn grootmoeder en haar zus — en kreeg er namen, jaartallen en drie verhalen bovenop die niemand nog kende. De AI ordende de doos; de familie gaf haar haar geheugen terug.
+
+> De AI ordent de doos. De mensen geven haar haar geheugen terug.
+
+Dezelfde aanpak werkt op elke ongeordende verzameling: laat groeperen op wat er te zien is (“feesten, vakanties, het oude huis, portretten”), laat reeksen herkennen (“deze zeven lijken van dezelfde dag”), en bouw zo een catalogus met trefwoorden — waarna zoeken in je eigen archief ineens gewoon wérkt. Voor de duizenden foto's op je telefoon geldt exact hetzelfde principe, met één extra les uit deze module: dat zijn óók foto's van mensen, dus vraag twee uit hoofdstuk 2 eerst.
+
+:::deeper Van doos tot fotoboek (brug naar Deel 3)
+Wie Deel 3 kent, ziet in het archiefwerk een keten: scannen, beschrijven, trefwoorden, catalogus — en uit die catalogus rolt met één selectie-opdracht het fotoboek voor de negentigste verjaardag, of de reeks “vijftig jaar in vijftig beelden”.
+
+En de beschrijvingen zelf zijn moederkopij zoals in de documentenmodule: dezelfde catalogus voedt straks het fotoboek, de diashow op het feest en de familiequiz. Eén keer goed beschrijven, eindeloos hergebruiken.
+:::
+
+:::donow Doe dit nu — orden één kleine verzameling
+Kies een behapbare, ongeordende verzameling: één oude map, twintig gescande foto's, de beelden van één zomer. Laat elke foto beschrijven met trefwoorden, mét de regel: zekerheid benoemen, schattingen markeren.
+
+Zet de beschrijvingen in een lijstje naast de bestandsnamen — en test het: zoek iets terug op een trefwoord. Dat gevoel, van vinden in plaats van bladeren, is waarom archieven bestaan.
+:::
+
+# Wat hierna komt, en je gereedschap | De werkwijze op een rij, de helpers om te kopiëren, en de woorden die je nodig hebt.
+
+De 487 foto's van Jonas werden een shortlist van 30, een fotoboek, en een familiegroep met twaalf beelden die elk woorden hebben. De schoenendoos werd een catalogus — en op een zondagnamiddag een tafel vol verhalen. Geen van beide was nieuw werk; het was werk dat er altijd al lag en nooit gebeurde, omdat kijken op schaal voor mensen niet vol te houden is. Nu wel: de AI kijkt onvermoeibaar, jij beslist met frisse ogen.
+
+En de volgorde van deze module is bewust de volgorde van het werk: éérst de twee vragen over de mensen op de foto's, dan pas de technieken. Wie die volgorde aanhoudt, kan alles uit deze module met een gerust hart gebruiken.
+
+:::note Kijken helpt ook bij handwerk
+Eén foto van een onbekend onderdeel, een lekkende kraan of een verwilderde tuin levert je de woorden en het plan die je zelf niet had. Dat is het onderwerp van de module *Klussen & vakwerk*.
+:::
+
+## Bijlagen: je gereedschap
+
+### 1. De selectielat plus opdracht
+
+:::prompt KOPIEER DIT
+Mijn lat voor deze selectie:
+Technisch: [scherp, belicht, kadrering, ...]
+Inhoudelijk: [sfeer, emotie, variatie, wat opvallen mag]
+Deelregels: [kinderen, toestemming, achtergronddetails]
+
+Beoordeel elke foto tegen deze lat. Geef per foto een score
+per criterium, één zin motivering en een eindoordeel
+(aanrader / bruikbaar / afgewezen / eerst checken).
+Maak een shortlist van de [aantal] sterkste met per foto
+waarom, en bewaak variatie in het geheel. Kies niets
+definitief: dat doe ik.
+:::
+
+### 2. De woordenhelper
+
+:::prompt KOPIEER DIT
+Maak voor elke foto:
+1. Een sprekende bestandsnaam: [jaar]-[gelegenheid]-kern-van-
+   het-beeld, kleine letters, koppeltekens.
+2. Een alt-tekst van één zin: feitelijk wat er te zien is,
+   voor wie de foto niet kan bekijken. Geen namen van
+   personen, geen oordelen zoals “mooi”.
+3. [Drie tot vijf] trefwoorden voor het archief.
+Beschrijf enkel wat je ziet.
+:::
+
+### 3. De archiefbeschrijver
+
+:::prompt KOPIEER DIT
+Beschrijf elke foto voor mijn archief:
+1. Wat is er feitelijk te zien (personen zonder namen,
+   aanwijzingen zoals leesbare opschriften, voorwerpen).
+2. Een schatting van de periode, met waaróp je die baseert —
+   en markeer ze uitdrukkelijk als schatting.
+3. Een vermoeden van de gelegenheid, als het beeld daar
+   aanwijzingen voor geeft. Ook dat als vermoeden.
+4. Drie tot vijf trefwoorden.
+Zeg het eerlijk wanneer je iets niet kunt aflezen.
+:::
+
+## Woordenlijst
+
+- **Kijken (beeldherkenning)** — Het vermogen van AI om een beeld te bekijken en te beschrijven wat erop staat. De tegenhanger van beeld máken.
+- **Lat** — Je expliciete criteria voor een selectie: technisch, inhoudelijk en deelregels. Opgeschreven vóór het kijken begint.
+- **Shortlist** — De voorselectie die de AI maakt tegen jouw lat. De eindkeuze daaruit blijft van jou.
+- **Alt-tekst** — De beschrijving in één zin die voorgelezen wordt aan wie een foto niet kan zien. Feitelijk, beknopt, zonder namen.
+- **Trefwoord** — Een archiefwoord waarop je een beeld later terugvindt. Drie tot vijf per foto volstaan.
+- **Gezichtsherkenning** — Personen identificeren op beeld. Hoort niet in jouw gereedschapskist; goede diensten weigeren het terecht.
+
+:::recap
+- Je AI kan kijken, en op schaal wordt dat een superkracht: selecteren, beschrijven, ordenen.
+- Eerst de mensen: mag deze stapel gedeeld worden, en waar verwerk je hem? Twijfel = eigen toestel of niet.
+- Selecteer met een lat die je vooraf opschrijft; de AI maakt de shortlist, jij kiest, en je controleert een steekproef.
+- Geef elk beeld woorden: bestandsnaam, alt-tekst, trefwoorden. Tien minuten, drie keer winst.
+- Archiefwerk: laat schattingen markeren, en haal je mensen erbij voor de echte zekerheid.
+:::
+
+Je hebt deze module beet wanneer een binnenkomende fotostapel geen zucht meer oproept maar een routine: twee vragen, lat, shortlist, keuze, woorden erbij. Vanaf dan is geen stapel nog een berg — en geen doos op zolder nog een verloren geheugen.

@@ -1,0 +1,101 @@
+---
+id: wegwijzer
+file: 01-Wegwijzer
+kicker: AI-CURSUS · WEGWIJZER
+title: Wegwijzer
+subtitle: De kaart van de cursus
+tagline: Alle documenten, één samenhang. Lees dit eerst: waar je begint, hoe de ladder en de modules zich verhouden, en welke route bij jou past.
+foot: Lees dit eerst · vijf minuten
+version: Versie 2.0 · oktober 2026
+runhead: Wegwijzer — de kaart van de cursus
+anchor: combo
+toctitle: Wegwijzer — de kaart van de cursus
+tocline: Hoe alles samenhangt, en welke route bij jou past. Lees dit eerst.
+---
+Deze cursus is geen boek dat je van voor naar achter leest. Het is een verzameling documenten met een duidelijke bouw — en wie de bouw kent, weet altijd wat de volgende zinvolle stap is. Dit is de kaart.
+
+:::fig kaart | De ladder klimt, de modules verbreden, de naslag haal je erbij wanneer je hem nodig hebt.
+:::
+
+**De ladder klimt.** Deel 1 tot 4 lees je in volgorde. Elke trede verschuift meer werk van jou naar je AI: eerst leer je één taak goed doen, dan bouw je een opzet die jou kent, dan koppel je werk aan elkaar, en uiteindelijk draaien er systemen grotendeels vanzelf. Je hoeft nooit hoger te klimmen dan je nuttig vindt — aan de eerste twee treden hebben de meeste mensen lang genoeg.
+
+**De modules verbreden.** Tien losse boekjes maken je niet autonomer maar breder: je stem, beeld, tabellen, grote documenten, fotostapels, diep onderzoek, leren, klussen en een tweede brein. Ze hebben geen onderlinge volgorde en staan elk volledig op zichzelf. Negen ervan veronderstellen Deel 1 en 2. Eén niet: *AI om je heen* gaat over de AI die je tegenkomt zonder dat je erom vroeg, en die kun je ook lezen als je AI zelf (nog) niet gebruikt.
+
+**De toolgids leeft.** De cursus zelf noemt bewust zo weinig mogelijk toolnamen; die veranderen te snel. Alles met een merknaam, prijs of versienummer staat in de Levende Toolgids — het ene document dat mág verouderen en geregeld wordt bijgewerkt. Kijk er de peildatum na vóór je een keuze maakt of iets installeert.
+
+:::refbox
+Bewaar deze wegwijzer bovenaan je cursusmap. Elk document draagt op de cover zijn versienummer en maand — zo weet je altijd of je de recentste versie leest.
+:::
+
+# [JOUW ROUTE] Waar begin je, en wanneer wat | Eén startpunt voor iedereen, en daarna een weg die zich naar jou plooit.
+
+**Iedereen start bij Deel 1.** Geen voorkennis nodig; je doet meteen iets dat werkt en leert het vaste recept waar alles op voortbouwt. Klim naar Deel 2 zodra je het signaal herkent dat Deel 1 zelf aankondigt: je merkt dat je telkens dezelfde uitleg zit te typen en hetzelfde werk overdoet.
+
+**Na Deel 2 splitst de weg** — en beide richtingen zijn goed. Verder klimmen (Deel 3, dan 4) wanneer je klussen uit meerdere stappen bestaan en je er meer wil laten vanzelf lopen. Of verbreden met een module wanneer een concreet soort werk je aandacht vraagt. De meeste mensen doen allebei door elkaar: een module wanneer die zich aandient, een trede wanneer ze eraan toe zijn.
+
+**Gebruik je AI (nog) niet zelf?** Begin dan gerust bij de module *AI om je heen*. Ze leert je herkennen en wegen wat je overal tegenkomt — nepbeelden, chatbots, gekloonde stemmen — en eindigt met de brug naar Deel 1 voor wie daarna toch zelf wil beginnen.
+
+## Welke module is voor jou? Herken jezelf
+
+- Je krijgt een foto, filmpje of telefoontje en vraagt je af of het wel echt is → **AI om je heen**.
+- Je typt alles met twee duimen op je telefoon, of je beste ideeën komen onderweg → **Voice & snelheid**.
+- Er staat iets op je lijstje dat je eigenlijk niet snapt maar niet meer durft te vragen — of je wil iets écht leren of vertalen → **Leren met AI**.
+- Je moet iets echt uitzoeken — vergelijken, regels naslaan, met bronnen die kloppen → **Diep onderzoek**.
+- Er wacht een verslag, dossier of presentatie die je al weken voor je uit schuift → **Documenten & presentaties**.
+- Je verliest avonden aan lijsten, kasboeken of inschrijvingstabellen → **Data & spreadsheets**.
+- Je zoekt je suf naar het plaatje dat nét niet bestaat → **Beeld & video**.
+- Er staan honderden foto's van het laatste feest (of een doos oude) op je te wachten → **Foto's op schaal**.
+- Er wacht een klus: een verwilderde tuin, een lekkende kraan, een zolder die kast moet worden → **Klussen & vakwerk**.
+- Jouw kennis zit in je hoofd, drie mappen en een mailbox — en ooit moet iemand dit van je overnemen → **Second brain**.
+
+## En wanneer klim je verder?
+
+Ook daarvoor bestaan herkenbare signalen — de delen benoemen ze zelf. Je bent klaar voor Deel 3 wanneer je merkt dat je meerdere stappen telkens met de hand aan elkaar plakt: samenvatten, dan actiepunten, dan de mail — drie keer kopiëren en plakken. En je bent toe aan Deel 4 wanneer je ketens en kennisbank vlot draaien en je wil dat werk ook zonder jouw startsein begint. Twijfel je? Dan is het antwoord: nog niet — en dat is prima.
+
+> Er is geen verkeerde volgorde. Er is alleen de volgende stap die jóú nu iets oplevert.
+
+:::note Drie herkenbare routes
+**De praktische minimalist:** Deel 1 en 2, plus de één of twee modules die je dagelijkse leven of werk raken. Voor de meeste mensen ruim voldoende.
+
+**De verbreder:** Deel 1 en 2, en daarna module na module — de ladder verder beklimmen hoeft niet.
+
+**De klimmer:** Deel 1 tot 4 in volgorde, met modules ertussendoor wanneer ze van pas komen. Voor wie systemen wil bouwen.
+:::
+
+# [HET OVERZICHT] Alle documenten op een rij | Eén zin per document, zodat je altijd weet waar iets thuishoort.
+
+## De ladder
+
+- **Deel 1 — Aan de slag met AI.** Je eerste echte resultaten, het recept van braindump tot bijschaven, en veilig werken met gezond verstand.
+- **Deel 2 — Je persoonlijke assistent.** Bewaren en hergebruiken: je bibliotheek, sjablonen, contextdocument, je eigen stem, vaste projecten en bewust omgaan met je limieten.
+- **Deel 3 — AI als hefboom.** Werk koppelen tot ketens, de AI in rondjes laten verbeteren, je eigen kennisbank, en je werk bewust laten aanvallen.
+- **Deel 4 — Geïntegreerde systemen.** Agents, skills, veilige koppelingen en werk dat zichzelf start — met jouw vinger op de knop.
+
+## De modules (in elke volgorde)
+
+- **AI om je heen** — echt van nep onderscheiden, chatbots die je niet koos, stemmen en oplichting, kinderen en AI. Kan ook vóór Deel 1.
+- **Voice & snelheid** — dicteren, praten met je AI en ideeën vangen: drie tot vier keer sneller dan typen.
+- **Leren met AI** — een geduldige uitlegger op jouw hoogte, een overhoorder die je bijhoudt, en vertalen in elke richting.
+- **Diep onderzoek** — grondige, bronnen-gestaafde antwoorden, en rapporten lezen als een journalist.
+- **Documenten & presentaties** — groot werk stuk voor stuk: skelet, kamers, rode draad, en dia's die je verhaal dragen.
+- **Data & spreadsheets** — vragen stellen aan je tabellen, met de veilige kopie en de controlereflex.
+- **Beeld & video** — beschrijven wat je wil zien, bijsturen, één stijl vasthouden, en eerlijk zijn over wat gemaakt is.
+- **Foto's op schaal** — je AI laten kijken: selecteren met een lat, beschrijvingen en orde in elk archief.
+- **Klussen & vakwerk** — van foto tot materiaallijst en stappenplan, met een scherpe grens waar de vakman begint.
+- **Second brain** — een geheugen buiten je hoofd dat je kunt bevragen én doorgeven.
+
+## De naslag
+
+- **De Levende Toolgids** — welke assistent, welk model en welke tool vandaag de beste keuze is, met prijzen en grenzen. Wordt geregeld bijgewerkt; de peildatum staat op de cover.
+- **De veiligheidskaart** — elke veiligheidsregel uit de cursus op één blad. Print hem en hang hem naast je scherm.
+- **AI-afspraken** — een werkblad met zes vragen die je samen invult, voor elke groep die samenwerkt: een team, een gezin, een vereniging.
+
+## Praktisch
+
+Elk document staat volledig op zichzelf: je kunt er één printen, delen of herlezen zonder de rest erbij te nemen. Op elke cover staat het versienummer en de maand — vergelijk die even wanneer je een document doorgeeft. En de cursus groeit: er kunnen modules bijkomen en delen worden bijgewerkt. Deze wegwijzer verhuist dan mee, en blijft altijd de kortste weg naar het overzicht.
+
+:::note Eén rode draad door alles heen
+Waar je ook leest, drie gewoontes komen telkens terug: jij controleert wat eruit komt, je geeft geen gevoelige gegevens prijs, en jij blijft degene die beslist. Wie die drie vasthoudt, kan elk document met een gerust hart gebruiken.
+:::
+
+Veel plezier ermee. En onthoud de geest van het geheel: geen haast, geen examens — gewoon telkens die ene volgende stap die je echte werk vandaag al lichter maakt.

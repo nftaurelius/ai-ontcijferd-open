@@ -1,0 +1,200 @@
+[
+ {
+  "id": "wegwijzer",
+  "nr": 1,
+  "groep": "Start",
+  "titel": "Wegwijzer",
+  "ondertitel": "De kaart van de cursus",
+  "korteTitel": "Wegwijzer — de kaart van de cursus",
+  "regel": "Hoe alles samenhangt, en welke route bij jou past. Lees dit eerst.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/01-Wegwijzer.pdf"
+ },
+ {
+  "id": "deel1",
+  "nr": 2,
+  "groep": "De ladder — lees deze in volgorde",
+  "titel": "Aan de slag met AI",
+  "ondertitel": "Je eerste echte resultaten",
+  "korteTitel": "Deel 1 — Aan de slag met AI",
+  "regel": "Je eerste resultaten, het recept, bijschaven, veilig werken.",
+  "versie": "Versie 6.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/02-Deel-1-Aan-de-slag-met-AI.pdf"
+ },
+ {
+  "id": "deel2",
+  "nr": 3,
+  "groep": "De ladder — lees deze in volgorde",
+  "titel": "Je persoonlijke assistent",
+  "ondertitel": "Een opzet die jou kent",
+  "korteTitel": "Deel 2 — Je persoonlijke assistent",
+  "regel": "Bewaren en hergebruiken: bibliotheek, sjablonen, context, projecten, limieten.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/03-Deel-2-Je-persoonlijke-assistent.pdf"
+ },
+ {
+  "id": "deel3",
+  "nr": 4,
+  "groep": "De ladder — lees deze in volgorde",
+  "titel": "AI als hefboom",
+  "ondertitel": "Werk dat blijft doorlopen",
+  "korteTitel": "Deel 3 — AI als hefboom",
+  "regel": "Werk koppelen tot ketens, loops, je eigen kennisbank, red teamen.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/04-Deel-3-AI-als-hefboom.pdf"
+ },
+ {
+  "id": "deel4",
+  "nr": 5,
+  "groep": "De ladder — lees deze in volgorde",
+  "titel": "Geïntegreerde systemen",
+  "ondertitel": "Je AI gaat meedraaien",
+  "korteTitel": "Deel 4 — Geïntegreerde systemen",
+  "regel": "Agents, skills, veilige koppelingen en werk dat zichzelf start.",
+  "versie": "Versie 3.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/05-Deel-4-Geintegreerde-systemen.pdf"
+ },
+ {
+  "id": "m-omjeheen",
+  "nr": 6,
+  "groep": "De modules — kies op behoefte",
+  "titel": "AI om je heen",
+  "ondertitel": "Wat je tegenkomt zonder erom te vragen",
+  "korteTitel": "AI om je heen",
+  "regel": "Echt van nep onderscheiden, chatbots, stemmen en oplichting, kinderen en AI.",
+  "versie": "Versie 1.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/06-Module-AI-om-je-heen.pdf"
+ },
+ {
+  "id": "m-voice",
+  "nr": 7,
+  "groep": "De modules — kies op behoefte",
+  "titel": "Voice & snelheid",
+  "ondertitel": "Spreek, in plaats van te typen",
+  "korteTitel": "Voice & snelheid",
+  "regel": "Spreken in plaats van typen: dicteren, gesprekken, ideeën vangen.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/07-Module-Voice-en-snelheid.pdf"
+ },
+ {
+  "id": "m-leren",
+  "nr": 8,
+  "groep": "De modules — kies op behoefte",
+  "titel": "Leren met AI",
+  "ondertitel": "De uitlegger die nooit zucht",
+  "korteTitel": "Leren met AI",
+  "regel": "Een uitlegger op jouw hoogte, jezelf laten overhoren, vertalen.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/08-Module-Leren-met-AI.pdf"
+ },
+ {
+  "id": "m-onderzoek",
+  "nr": 9,
+  "groep": "De modules — kies op behoefte",
+  "titel": "Diep onderzoek",
+  "ondertitel": "Van vraag naar onderbouwing",
+  "korteTitel": "Diep onderzoek",
+  "regel": "Grondige, bronnen-gestaafde antwoorden — en ze leren controleren.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/09-Module-Diep-onderzoek.pdf"
+ },
+ {
+  "id": "m-documenten",
+  "nr": 10,
+  "groep": "De modules — kies op behoefte",
+  "titel": "Documenten & presentaties",
+  "ondertitel": "Groot werk, stuk voor stuk",
+  "korteTitel": "Documenten & presentaties",
+  "regel": "Groot werk stuk voor stuk: skelet, kamers, rode draad, dia's.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/10-Module-Documenten-en-presentaties.pdf"
+ },
+ {
+  "id": "m-data",
+  "nr": 11,
+  "groep": "De modules — kies op behoefte",
+  "titel": "Data & spreadsheets",
+  "ondertitel": "Stel vragen aan je tabellen",
+  "korteTitel": "Data & spreadsheets",
+  "regel": "Vragen stellen aan je tabellen, met veilige kopie en controlereflex.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/11-Module-Data-en-spreadsheets.pdf"
+ },
+ {
+  "id": "m-beeld",
+  "nr": 12,
+  "groep": "De modules — kies op behoefte",
+  "titel": "Beeld & video",
+  "ondertitel": "Beschrijf wat je wil zien",
+  "korteTitel": "Beeld & video",
+  "regel": "Beschrijven wat je wil zien, bijsturen, één stijl vasthouden, eerlijk blijven.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/12-Module-Beeld-en-video.pdf"
+ },
+ {
+  "id": "m-fotos",
+  "nr": 13,
+  "groep": "De modules — kies op behoefte",
+  "titel": "Foto's op schaal",
+  "ondertitel": "Laat je AI kijken",
+  "korteTitel": "Foto's op schaal",
+  "regel": "Je AI laten kijken: selecteren, beschrijven, archief ordenen.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/13-Module-Fotos-op-schaal.pdf"
+ },
+ {
+  "id": "m-klussen",
+  "nr": 14,
+  "groep": "De modules — kies op behoefte",
+  "titel": "Klussen & vakwerk",
+  "ondertitel": "Van foto tot materiaallijst",
+  "korteTitel": "Klussen & vakwerk",
+  "regel": "Van foto tot materiaallijst en stappenplan — met een duidelijke grens.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/14-Module-Klussen-en-vakwerk.pdf"
+ },
+ {
+  "id": "m-brein",
+  "nr": 15,
+  "groep": "De modules — kies op behoefte",
+  "titel": "Second brain",
+  "ondertitel": "Een geheugen buiten je hoofd",
+  "korteTitel": "Second brain",
+  "regel": "Eén plek voor je kennis, die je kunt bevragen en doorgeven.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/15-Module-Second-brain.pdf"
+ },
+ {
+  "id": "toolgids",
+  "nr": 16,
+  "groep": "Naslag — hou erbij, print wat je nodig hebt",
+  "titel": "De levende toolgids",
+  "ondertitel": "Welke tool, welk model, wat het kost",
+  "korteTitel": "Levende Toolgids",
+  "regel": "De tools van vandaag: modellen, prijzen, agents, beeld, geluid, data en notities.",
+  "versie": "Versie 4.0 · peildatum oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/16-Levende-Toolgids.pdf"
+ },
+ {
+  "id": "veiligheid",
+  "nr": 17,
+  "groep": "Naslag — hou erbij, print wat je nodig hebt",
+  "titel": "De veiligheidskaart",
+  "ondertitel": "Alles op één plek",
+  "korteTitel": "Veiligheidskaart",
+  "regel": "Elke veiligheidsregel uit de cursus op een paar bladzijden.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/17-Veiligheidskaart.pdf"
+ },
+ {
+  "id": "afspraken",
+  "nr": 18,
+  "groep": "Naslag — hou erbij, print wat je nodig hebt",
+  "titel": "AI-afspraken",
+  "ondertitel": "voor je team of groep",
+  "korteTitel": "AI-afspraken — werkblad",
+  "regel": "Zes vragen om samen te beantwoorden, met ruimte om in te vullen.",
+  "versie": "Versie 2.0 · oktober 2026",
+  "pdf": "/materiaal/ai-cursus/bestanden/18-AI-afspraken-werkblad.pdf"
+ }
+]

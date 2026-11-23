@@ -1,0 +1,95 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { cursusDelen, groepNaam, type CursusDeel } from "../../lib/cursus";
+import { LICENTIE_URL, SITE_URL, uitgever } from "../../lib/seo";
+
+export function getStaticPaths() {
+  const delen = cursusDelen();
+  return delen.map((d, i) => ({ params: { id: d.id }, props: { d, vorige: delen[i - 1] ?? null, volgende: delen[i + 1] ?? null } }));
+}
+const { d, vorige, volgende } = Astro.props as { d: CursusDeel; vorige: CursusDeel | null; volgende: CursusDeel | null };
+const url = `${SITE_URL}/cursus/${d.id}`;
+const versie = d.versie.replace(/^Versie /, "");
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "@id": url,
+  url,
+  name: d.titel,
+  description: d.tagline,
+  inLanguage: "nl-BE",
+  isAccessibleForFree: true,
+  license: LICENTIE_URL,
+  isPartOf: { "@type": "Course", "@id": `${SITE_URL}/cursus`, name: "De AI-cursus" },
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+---
+
+<Basis titel={`${d.titel}: ${d.ondertitel || "AI-cursus"}`} beschrijving={d.tagline} schema={schema} bron="content/cursus/src">
+  <section class="rij sectie">
+    <div class="kantlijn">
+      <p class="kantlijn-kop">AI-cursus · {groepNaam(d.groep)}</p>
+      <p><a href="/cursus">Alle delen</a></p>
+    </div>
+    <div class="proza">
+      <p class="soortlabel">{d.kicker.replace(/^AI-CURSUS · /, "")}</p>
+      <h1 style="margin-top:0">{d.titel}</h1>
+      {d.ondertitel && <p class="lead" style="margin-bottom:0.5rem">{d.ondertitel}</p>}
+      <p>{d.tagline}</p>
+      <table class="bijsluiter">
+        <tbody>
+          <tr><th scope="row">Versie</th><td>{versie}</td></tr>
+          <tr><th scope="row">Licentie</th><td>CC BY 4.0, Duncan Panis en AI Ontcijferd</td></tr>
+          <tr><th scope="row">Op papier</th><td><a href={d.pdf} download>Download dit deel als PDF</a></td></tr>
+        </tbody>
+      </table>
+      {d.hoofdstukken.length > 1 && (
+        <nav aria-label="In dit deel">
+          <ol class="cursus-inhoud">
+            {d.hoofdstukken.map((h, i) => <li><span class="blokje blokje-inkt">{h.nr ?? "·"}</span><a href={`#${h.id}`}>{h.titel}</a></li>)}
+          </ol>
+        </nav>
+      )}
+    </div>
+  </section>
+  {d.intro.trim() && (
+    <section class="rij sectie">
+      <div class="kantlijn"></div>
+      <div class="proza cursus-tekst" set:html={d.intro} />
+    </section>
+  )}
+  {d.hoofdstukken.map((h) => (
+    <section class="rij sectie" id={h.id}>
+      <div class="kantlijn"><p class="kantlijn-kop">{h.kicker.toLowerCase().replace(/^./, (c) => c.toUpperCase())}</p></div>
+      <div class="proza cursus-tekst">
+        <h2 style="margin-top:0">{h.titel}</h2>
+        {h.onder && <p class="lead">{h.onder}</p>}
+        <Fragment set:html={h.html} />
+      </div>
+    </section>
+  ))}
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Verder</p></div>
+    <div class="proza">
+      <p class="cursus-verder">
+        {vorige && <a href={`/cursus/${vorige.id}`}>← {vorige.titel}</a>}
+        {volgende && <a href={`/cursus/${volgende.id}`}>{volgende.titel} →</a>}
+      </p>
+      <p class="meta">De AI-cursus van Duncan Panis, CC BY 4.0. Fout gezien of een beter voorbeeld? <a href="/meedoen">Laat het weten</a>.</p>
+    </div>
+  </section>
+</Basis>
+
+<script>
+  import { koppelKopieerknoppen } from "../../scripts/kopieer";
+  document.querySelectorAll<HTMLPreElement>(".cursus-tekst .prompt pre").forEach((pre, i) => {
+    pre.id ||= `prompt-${i + 1}`;
+    const knop = document.createElement("button");
+    knop.type = "button";
+    knop.className = "knop knop-klein";
+    knop.dataset.kopieer = pre.id;
+    knop.textContent = "Kopieer";
+    pre.after(knop);
+  });
+  koppelKopieerknoppen();
+</script>

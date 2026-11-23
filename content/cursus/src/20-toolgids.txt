@@ -1,0 +1,359 @@
+---
+id: toolgids
+file: 16-Levende-Toolgids
+kicker: AI-CURSUS · LEVENDE TOOLGIDS
+title: De levende toolgids
+subtitle: Welke tool, welk model, wat het kost
+tagline: De cursus leert je de tijdloze principes en vaardigheden. Deze gids vertaalt ze naar de tools van vandaag — en veroudert daarom. Kijk altijd eerst naar de datum, en controleer prijzen zelf voor je iets afsluit.
+foot: Levend document · vaak bijgewerkt · controleer de datum
+version: Versie 4.0 · peildatum oktober 2026
+runhead: De levende toolgids
+anchor: sliders
+toc: IN DEZE GIDS
+toctitle: Levende Toolgids
+tocline: De tools van vandaag: modellen, prijzen, agents, beeld, geluid, data en notities.
+---
+In de cursus hou ik de tools bewust buiten de deur. Een les zegt “kies een sterker model voor een moeilijke taak”, niet “gebruik model X versie Y”. Dat is met opzet: namen, prijzen en knoppen veranderen om de paar maanden, en een cursus die daarmee volloopt, is binnen een halfjaar achterhaald.
+
+Maar ergens moet die concrete laag wél staan. Dat is deze gids: één document dat mag verouderen, zodat de rest van de cursus dat niet hoeft. Hier vind je welke assistent welke is, welk model vandaag de snelle en de sterke is, wat het kost, en de tools voor agents, beeld, video, geluid, data, je notities en het werk binnen een organisatie.
+
+:::warn Belangrijk — alles hier heeft een houdbaarheidsdatum
+Deze versie is bijgewerkt in oktober 2026. Bij de modelnamen en abonnementen bewoog er de voorbije maanden meer dan ooit: OpenAI bracht GPT-6, Google herschikte zijn abonnementen, Anthropic bracht een nieuwe generatie modellen. Controleer namen en prijzen altijd zelf op de site van de tool voor je iets afsluit.
+:::
+
+# Lees dit eerst | Waarom deze gids losstaat van de cursus, en hoe je hem gebruikt zonder dat hij je in de war stuurt.
+
+De cursus en deze gids doen bewust verschillende dingen. De cursus leert je vaardigheden die over twee jaar nog kloppen: de methode, je oordeel, hoe je veilig werkt. Deze gids vertelt je welke knop dat vandaag is. Dat verschil is geen detail — het is de reden dat de cursus niet veroudert en deze gids wel.
+
+:::fig two | De cursus leert het tijdloze; deze gids vertaalt het naar het vluchtige van vandaag. Daarom staan ze los van elkaar.
+DE CURSUS | Tijdloos | Principes en mentale modellen; de methode (het recept); vaardigheden per doel (modules); houding, oordeel en veiligheid | b
+DEZE GIDS | Vluchtig | Namen van tools en modellen; welke tool voor welk doel nu; prijzen en abonnementen; limieten en knoppen | o
+:::
+
+> Deze gids zegt wélke tool. De cursus leert je de vaardigheid om er iets mee te maken.
+
+Hou dat onderscheid vast, want het keert in elk hoofdstuk terug. Je leest hier dat er tools bestaan om beeld te maken, agents te laten werken of data te analyseren — met de namen van het moment. Hóé je daar goed mee werkt, leer je in het bijbehorende deel of de bijbehorende module. De gids is de catalogus; de cursus is de opleiding.
+
+## Hoe je deze gids gebruikt
+
+Niet van voor naar achter, zoals de cursus. Dit is een naslagwerk. Je komt hier terug met een concrete vraag — “welke is nu de sterke van ChatGPT?”, “wat kost Gemini?”, “waarmee maak ik beeld?” — leest dat stukje, en gaat weer verder. Meer moet het niet zijn.
+
+## Drie dingen om in je achterhoofd te houden
+
+**Eén: kijk naar de datum.** Op de cover staat wanneer deze gids is bijgewerkt. Is dat lang geleden, neem de prijzen en modelnamen dan met een korrel zout en check ze zelf.
+
+**Twee: prijzen verschillen per land.** De bedragen hier zijn richtprijzen, vaak in dollar zoals de makers ze opgeven. In euro en in België kan het een paar euro afwijken, en btw komt er soms nog bij. Gebruik ze om te vergelijken, niet als exacte factuur.
+
+**Drie: je hebt bijna niets hiervan nodig om te beginnen.** Eén gratis assistent en de methode uit de cursus brengen je verder dan de meeste mensen ooit komen. De rest van deze gids is er voor wanneer je een specifieke behoefte voelt — niet als boodschappenlijst.
+
+:::note Onthoud
+Deze gids noemt merken en prijzen omdat dat hier hoort. De cursus zelf blijft toolonafhankelijk: wat je daar leert, werkt in elke tool die je kiest.
+:::
+
+# De grote assistenten | Vier grote namen, allemaal gratis te proberen. Wat ze zijn, en waar elk in uitblinkt.
+
+Er zijn vier algemene AI-assistenten die het gros van de mensen gebruikt. Ze kunnen alle vier wat de cursus je leert: schrijven, samenvatten, brainstormen, uitleggen, foto's en documenten lezen. De verschillen zitten in de details en in waar ze vandaan komen. Je kunt ze alle vier gratis uitproberen.
+
+| Assistent | Van wie | Gratis | Waar het opvalt |
+|---|---|---|---|
+| **ChatGPT** | OpenAI | Ja | De bekendste, breedste functies, sterk allround |
+| **Claude** | Anthropic | Ja | Sterk in schrijven, lange teksten en zelf taken uitvoeren met je bestanden |
+| **Gemini** | Google | Ja | Zit ingebouwd in Gmail, Docs en Android; handig als je daar al werkt |
+| **Copilot** | Microsoft | Ja | Zit ingebouwd in Word, Excel en Outlook; draait op modellen van OpenAI |
+
+> De beste assistent is degene die je echt opent. Begin met één, gratis, en leer hem goed kennen.
+
+Welke je kiest, maakt minder uit dan je denkt. Een paar vuistregels die helpen:
+
+- **Werk je veel in Google** (Gmail, Docs, Android)? Gemini zit daar al naast.
+- **Werk je veel in Microsoft Office** (Word, Excel, Outlook)? Dan ligt Copilot voor de hand — en op het werk vaak de enige toegelaten keuze (zie hoofdstuk 11).
+- **Wil je vooral goed schrijven en redeneren**, los van een pakket? ChatGPT en Claude zijn daar sterk in.
+- **Twijfel je?** Neem ChatGPT of Claude gratis, en kijk welke jou het beste ligt.
+
+:::donow Probeer dit — dezelfde vraag aan twee assistenten
+Stel dezelfde vraag — bijvoorbeeld een uitnodiging volgens het recept uit Deel 1 — aan twee verschillende assistenten. Vaak voel je binnen één antwoord al welke toon jou beter ligt. Dat is een prima manier om te kiezen.
+:::
+
+# Snel of sterk: het model van vandaag | In Deel 2 leerde je aan de drie knoppen te draaien. Hier staat welke stand dat vandaag concreet is.
+
+In Deel 2 zag je de drie knoppen: het model (snel of sterk), de denkkracht (laag of hoog) en de zoekmodus (uit of aan). Die les is tijdloos. Wat verandert, is welk model nú de snelle en welke de sterke is. Daar gaat dit hoofdstuk over.
+
+:::fig knoppen | De drie knoppen uit Deel 2. De principes blijven; de namen hieronder veranderen mee met de tijd.
+:::
+
+## Welke is nu de snelle, welke de sterke?
+
+Stand van zaken in oktober 2026. Verwacht dat deze namen tegen volgend jaar opnieuw veranderd zijn.
+
+| Assistent | De snelle | De sterke | Helemaal bovenaan |
+|---|---|---|---|
+| **ChatGPT** | GPT-6 Luna — ook op de gratis versie en Go | GPT-6 Sol — vanaf Plus | GPT-6 Astra: beperkt in Plus, volledig in Pro |
+| **Claude** | Haiku 5.5 | Sonnet 5.5 voor bijna alles (ook gratis), Opus 5.5 voor zwaar werk (vanaf Pro) | Fable 5.1, het nieuwe topmodel |
+| **Gemini** | Gemini 3.5 Flash en 3.6 Flash; Flash-Lite op de gratis versie | Gemini 3.1 Pro — vanaf AI Pro, met Deep Think als denkstand | Gemini 3.5 Pro en Gemini 4 zijn aangekondigd, nog niet publiek |
+| **Copilot** | Je kiest “snel”, “automatisch” of “dieper nadenken” | Draait op de modellen van OpenAI | Je kiest het model meestal niet zelf |
+
+Lees de tabel niet als huiswerk. De boodschap is simpel: elke assistent heeft een lichtere, snelle variant en een zwaardere, tragere. Voor een kort mailtje volstaat de snelle. Voor een lange analyse of iets waar veel van afhangt, schakel je naar de sterke. En het zwaarste model is zelden nodig: het is er voor de echt moeilijke klussen, en het vreet je limiet het snelst op.
+
+## Denkkracht en zoekmodus
+
+De meeste sterke modellen hebben een **denkstand** (soms “thinking”, “Deep Think”, “denk langer” of “dieper nadenken” genoemd). Zet hem aan als een probleem echt complex is; het kost wat tijd maar levert beter werk. En de **zoekmodus**: zet die aan zodra je actuele informatie nodig hebt, en controleer altijd de bron — net als in Deel 1.
+
+:::note Onthoud
+Knoop geen modelnamen in je hoofd. Onthoud het patroon — elke tool heeft een snelle en een sterke — en kom hier terug als je de naam van vandaag nodig hebt.
+:::
+
+# Wat het kost, in geld en in stroom | Beginnen kan gratis. Wat de abonnementen ongeveer kosten, waarom je tegen limieten loopt, en wat één vraag verbruikt.
+
+Goed nieuws eerst: bij alle vier kun je gratis beginnen, en die gratis versies zijn echt bruikbaar. Je betaalt pas wanneer je tegen grenzen aanloopt. Dit zijn de richtprijzen:
+
+| Assistent | Gratis | Instap | Zwaarder gebruik |
+|---|---|---|---|
+| **ChatGPT** | Ja | Go ~$8 · Plus ~$20 per maand | Pro ~$100 of ~$200 per maand |
+| **Claude** | Ja | Pro $20 per maand ($17 bij jaarbetaling) | Max ~$100 of ~$200 per maand |
+| **Gemini** | Ja | AI Plus ~$5 · AI Pro ~$20 per maand | AI Ultra $100 of $200 per maand |
+| **Copilot** | Ja, de Copilot-app | Microsoft 365 Personal €99 per jaar, met 60 AI-credits per maand | Microsoft 365 Premium €219 per jaar |
+
+Twee kanttekeningen bij Microsoft. Bij **Microsoft 365 Family** (€129 per jaar) krijgt enkel de eigenaar van het abonnement Copilot, niet de gezinsleden. En de AI-credits zijn een maandelijks tegoed: wie Copilot in Word en Excel dagelijks zwaar gebruikt, loopt er sneller tegenaan dan wie af en toe iets vraagt.
+
+De instap ligt bij de meeste rond de twintig dollar of euro per maand. Daarvoor krijg je meer berichten, het sterke model vaker, en extra functies: langere documenten, projecten, de onderzoeksmodus, agents. De zware plannen van honderd en meer zijn voor mensen die de hele dag intensief met AI werken — niet voor beginners.
+
+> Begin gratis. Betaal pas wanneer de gratis grenzen je echt in de weg zitten.
+
+## Hoe je beslist of je upgradet
+
+Dezelfde test als in Deel 2: hou twee weken bij of je echt geblokkeerd raakt. Loop je geregeld tegen de limiet, heb je het sterke model vaak nodig, of mis je een functie die je werk zou versnellen? Dan is twintig euro per maand snel terugverdiend. Zo nee, blijf rustig gratis.
+
+## Waarom je tegen de limiet loopt
+
+Elke tool rantsoeneert, ook de betalende. Wat je opmaakt, is niet het aantal vragen maar hoeveel de AI telkens moet lezen en denken: een heel lang gesprek, grote bestanden, het sterke model met de denkstand aan, en vooral agents die zelf urenlang doorwerken. De concrete limieten per abonnement staan op de prijspagina van elke tool — en ze veranderen te vaak om hier te vermelden. Hoe je je tegoed spaart, staat in Deel 2, hoofdstuk 7.
+
+## En de stroom?
+
+Eén gewone tekstvraag verbruikt volgens de makers zelf ongeveer een derde wattuur:
+
+:::fig bars note="cijfers van de makers zelf; training van de modellen niet meegerekend" | Wat één gewone tekstvraag verbruikt, volgens Google en OpenAI. Ter vergelijking: een tv verbruikt dat in enkele seconden. Beeld en video vragen een veelvoud.
+Gemini-vraag | 0.24 | 0,24 Wh (Google)
+ChatGPT-vraag | 0.34 | 0,34 Wh (OpenAI)
+:::
+
+Twee eerlijke kanttekeningen. Het zijn cijfers van de bedrijven zelf, niet van onafhankelijke metingen. En de stroom voor het trainen van de modellen zit er niet in. Tekst hoef je je niet kwalijk te nemen; bij beeld en video loont dezelfde reflex als bij je limiet: eerst goed beschrijven, dan gericht bijsturen, in plaats van twintig keer opnieuw te laten genereren.
+
+:::donow Probeer dit — kijk voor je afsluit
+Ga naar de prijspagina van de tool zelf en check het bedrag van vandaag, en wat er precies in het plan zit. Prijzen en plannen wijzigen vaker dan wat dan ook in deze gids.
+:::
+
+# Verder dan de chat: agents | Tools die niet enkel antwoorden, maar zelf stappen uitvoeren. De laag waar Deel 3 en 4 op steunen.
+
+Tot nu ging alles over het gewone gesprek: jij vraagt, de AI antwoordt. Daarnaast is er een krachtigere laag: **agents**. Een agent doet meer dan antwoorden: hij voert zelf stappen uit, gebruikt programma's en bestanden, controleert zijn eigen werk en gaat door tot de taak af is.
+
+De grootste verschuiving van 2026: agents zijn geen aparte programma's meer voor techneuten. Ze zitten in de gewone assistenten.
+
+> Hier staat wélke agent bestaat. Hóé je er veilig en goed mee werkt, leer je in Deel 3 en 4.
+
+## In de gewone assistent
+
+- **Claude** voert zelf taken uit met je bestanden: ordenen, opzoeken, en echte Word-, Excel- en PowerPoint-bestanden maken. Wat vroeger apart “Cowork” heette, zit nu gewoon in Claude. Ook ontwerpen, documenten en presentaties zijn functies binnen Claude, geen losse producten.
+- **ChatGPT** heeft drie tabbladen: *Chat* voor het gewone gesprek, *Work* voor de agent die taken van begin tot eind uitvoert, en *Codex* voor code.
+- **Gemini** heeft Gemini Spark, een agent die altijd aan staat en voor je opvolgt — voorlopig enkel in AI Ultra.
+- **Copilot** heeft agents in de werkversie van Microsoft 365, binnen wat je organisatie toelaat.
+
+## In de tools die je al gebruikt
+
+Steeds vaker komt de AI naar jou, in plaats van andersom: **Claude in Chrome** werkt in je browser, **Claude for M365** in Word, Excel en Outlook, en **Claude Tag** in Slack. Gemini zit in Gmail, Docs en Android; Copilot in Windows en Office.
+
+## Koppelingen, skills, routines
+
+De bouwstenen uit Deel 4 heten in elke tool anders, en de namen schuiven. Ter oriëntatie:
+
+| Bouwsteen uit Deel 4 | Hoe het vandaag vaak heet |
+|---|---|
+| Vaste werkplek met eigen documenten | Projecten (ChatGPT, Claude), Gems (Gemini), Notebooks (Copilot) |
+| Koppeling met je mail, agenda of bestanden | Koppelingen, connectoren of apps — per dienst aan te zetten |
+| Een vaste werkwijze die de AI oproept | Skills en plugins (Claude), GPT's (ChatGPT), Gems (Gemini) |
+| Werk dat zichzelf start | Geplande taken of routines (ChatGPT, Claude), Spark (Gemini Ultra) |
+
+## Voor wie code schrijft
+
+Hier zit de grootste drukte. Deze tools lezen je code, plannen een wijziging, passen meerdere bestanden aan en draaien commando's — grotendeels zelfstandig. Niet nodig als je geen code schrijft, maar goed om de namen te kennen:
+
+| Tool | Wat het is | Hoe je het gebruikt |
+|---|---|---|
+| **Claude Code** | Anthropic; werkt in de terminal, je editor en op het web | Via een Claude-abonnement (Pro of Max) |
+| **OpenAI Codex** | Werkt in terminal, editor, cloud, desktop en mobiel | Via een ChatGPT-abonnement |
+| **Cursor** | Een volledige code-editor met de agent ingebouwd | Eigen abonnement, ~$20 per maand |
+| **Google Antigravity** | Googles agentplatform, draait op Gemini | Gratis proefversie; meer via Google AI |
+| **GitHub Copilot** | De bekendste codehulp, ingebouwd in veel editors | Gratis instap; Pro ~$10 per maand |
+
+Gratis beginnen of geen vast model? Gemini CLI (gratis dagquotum) en de opensource-agents OpenCode, Cline, Aider en Hermes zijn gratis als tool — je betaalt enkel de modelkosten, en je kunt er zelfs lokale modellen mee aansturen (hoofdstuk 10).
+
+:::warn Let op — wat een agent leest, is geen opdracht
+Een agent die je mail, webpagina's of documenten leest, leest ook wat anderen schreven — en daar kunnen verborgen instructies in staan. Opdrachten komen van jou, uit je gesprek. Doet je agent iets wat jij niet vroeg, zeker iets doorsturen of invullen: stoppen en nakijken. Meer in Deel 4, hoofdstuk 6.
+:::
+
+# Beeld en video | Tools om beeld en video te maken — en om je AI naar beelden te laten kijken.
+
+AI kan vandaag overtuigend beeld en video maken uit een beschrijving. Hóé je dat goed doet — beschrijven, bijsturen, een stijl vasthouden — leer je in de module *Beeld & video*. Hier staat enkel welke tools er nu toe doen.
+
+## Beeld maken
+
+Goed om te weten: de grote assistenten kunnen zelf al beeld maken in een gesprek. Begin daar. Wil je meer, dan zijn dit de bekende namen, elk met een eigen sterkte:
+
+- **GPT Image** (in ChatGPT) — het makkelijkst, en sterk in leesbare tekst in een beeld en in het volgen van precieze instructies.
+- **Nano Banana** (Google, in Gemini) — sterk in hetzelfde personage over meerdere beelden vasthouden, en in “verander enkel dit”-bewerkingen.
+- **Midjourney** — de meest artistieke resultaten. Eigen abonnement (vanaf ~$10 per maand).
+- **Ideogram** — het betrouwbaarst voor tekst in beeld: posters, logo's, titels.
+- **Adobe Firefly** — getraind op gelicentieerd materiaal, het veiligst voor commercieel gebruik.
+- **FLUX** (Black Forest Labs) — open en fotorealistisch, voor wie het zelf wil draaien. **Recraft** — voor logo's en vectoren.
+
+## Video maken
+
+Dit is de snelst bewegende categorie van allemaal. Namen wisselen hier bijna maandelijks.
+
+- **Google Veo**, en sinds mei **Gemini Omni**, dat video maakt uit tekst, beeld of video — in AI Plus, Pro en Ultra. De sterkste allround keuze, met geluid erbij.
+- **Kling** — goedkoper, hoge resolutie, goede lipsynchronisatie; gratis instap. **Seedance** (ByteDance) staat ook bovenaan de ranglijsten.
+- **Runway** — de meeste controle voor wie echt regisseert (camera, montage).
+- **Sora** (OpenAI) zit in ChatGPT; de losse app stopte in maart 2026.
+- **HeyGen**, **Synthesia** — pratende avatars, handig voor uitleg- en opleidingsvideo's.
+
+## Kijken: beelden beoordelen en beschrijven
+
+De omgekeerde richting — je AI naar beelden laten kíjken — doe je gewoon in de grote assistenten: geef foto's mee en laat ze beoordelen, beschrijven of van alt-teksten voorzien. In een gewoon gesprek gaat dat per handvol tot enkele tientallen; voor hele mappen ineens gebruik je de agents uit hoofdstuk 5. Voor stapels die het huis niet uit mogen: open modellen die beelden aankunnen, draaien ook lokaal (hoofdstuk 10). De werkwijze leer je in de module *Foto's op schaal*.
+
+## Echt of gemaakt?
+
+Om te controleren of een beeld al eerder opdook: **terugzoeken met een afbeelding** via Google Lens (in Google en de Google-app), Bing Visueel zoeken of TinEye. Zo zie je of een “nieuwe” foto al jaren rondgaat of uit een andere context komt. Detectietools die beloven AI-beeld feilloos te herkennen, bestaan niet; vertrouw meer op de bronreflex uit de module *AI om je heen*.
+
+:::warn Let op — de labelplicht
+Sinds 2 augustus 2026 verplicht de Europese AI Act je te vermelden dat beeld, geluid of video met AI gemaakt is wanneer het een echte persoon, plek of gebeurtenis lijkt te tonen. Gebruik ook geen echte personen of beschermd materiaal zonder toestemming. Twijfel je: zet er “gemaakt met AI” bij. Dat kost niets en het klopt altijd.
+:::
+
+# Geluid: dicteren, stemmen en muziek | Twee richtingen: je stem omzetten naar tekst om sneller te werken, en tekst omzetten naar stem of muziek.
+
+## Dicteren — spreken in plaats van typen
+
+De simpelste versneller heeft niets met genereren te maken: stop met typen en spreek. Voor de meeste mensen is dat drie tot vier keer sneller, en moderne dicteertools halen de “euh”'s er vanzelf uit.
+
+- **Gratis en al op je toestel:** de ingebouwde dictee van je telefoon of computer (Apple-dictee, Windows-spraak, spraakgestuurd typen in Google Docs). Prima om te starten en privacyvriendelijk, want het draait vaak op het toestel zelf.
+- **Vlotter:** tools als Wispr Flow werken in zowat elke app en poetsen je spraak meteen op tot verzorgde tekst. Rond de vijftien à twintig dollar per maand, met een gratis instap.
+- **Privé:** wil je dat je stem je computer niet verlaat, dan zijn er opties die alles lokaal verwerken (bijvoorbeeld Superwhisper op Mac).
+
+> Je braindump uit Deel 1 hoef je niet te typen. Je kunt hem gewoon inspreken.
+
+## Stemmen en muziek maken
+
+De andere richting: tekst omzetten naar gesproken stem of zelfs muziek.
+
+- **ElevenLabs** — de standaard voor realistische stemmen, een stem klonen, en video's nasynchroniseren naar een andere taal.
+- **Suno** — maakt een compleet liedje met zang uit een beschrijving; gratis instap. **Udio** biedt meer controle voor wie wil sleutelen.
+- **Descript** — audio en video bewerken door de tekst te bewerken: je knipt in het transcript in plaats van in de geluidsgolf.
+
+:::warn Let op — stemmen zijn van iemand
+Een stem klonen of een gesprek met anderen opnemen: enkel met hun toestemming. En stuur geen gevoelige inhoud naar een tool die alles in de cloud verwerkt.
+:::
+
+# Data, documenten en diep onderzoek | Tools voor tabellen, presentaties, lange documenten en grondig bronnenonderzoek.
+
+## Data en spreadsheets
+
+De grote assistenten kunnen al veel: laad een Excel- of CSV-bestand op en vraag een analyse, een samenvatting of een grafiek. AI zit ook ín de rekenbladen: **Copilot in Excel** — nu ook in de consumentenabonnementen van Microsoft 365, binnen de maandelijkse AI-credits — en **Gemini in Google Sheets**. Claude maakt en bewerkt rechtstreeks Excel-bestanden, en werkt met Claude for M365 ook in Excel zelf. De vaardigheid komt in de module *Data & spreadsheets*.
+
+## Documenten en presentaties
+
+- **Claude** en **ChatGPT** maken rechtstreeks Word-, PowerPoint- en Excel-bestanden die je kunt downloaden en verder bewerken.
+- **Copilot in Word en PowerPoint** — als je eindresultaat sowieso een Office-bestand moet zijn, en nu ook in Microsoft 365 Personal en Family (voor de eigenaar).
+- **Gamma** — maakt razendsnel een eerste presentatie uit een beschrijving; sterke gratis versie, webgericht.
+- **Canva** — enorme sjabloon- en beeldbibliotheek met AI erin; handig als je ook beeld voor sociale media en video in één omgeving wil.
+
+## Diep onderzoek
+
+- **De onderzoeksmodus** in ChatGPT, Gemini, Claude en Copilot (vaak “Deep Research” of “Research”): je geeft een vraag, de AI zoekt zelf bronnen en levert een onderbouwd verslag. Op gratis plannen meestal beperkt tot een paar keer per maand.
+- **NotebookLM** (Google, gratis) — werkt enkel op de documenten die jíj aanlevert, met bronverwijzing bij elk antwoord. Sterk om je eigen materiaal te doorzoeken en samen te vatten; maakt er ook een audio-overzicht van.
+- **Perplexity** — een zoekmachine die antwoordt met bronnen erbij; handig voor snel opzoekwerk met vindplaatsen.
+
+
+# Notities en je tweede brein | Tools om je kennis op één plek te houden — en je AI erin te laten lezen.
+
+De module *Second brain* leert je een geheugen buiten je hoofd bouwen: vastleggen zonder moeite, ordenen in treden, en je verzameling bevragen. Wélke tool die plek wordt, staat hier — met het principe uit de module als koopwijzer: open, platte bestanden overleven elke verhuis.
+
+## De notitietools van vandaag
+
+- **Obsidian** — je notities als gewone tekstbestanden op je eigen toestel: hét open formaat uit de module, gratis, met links tussen notities. AI komt via uitbreidingen, desnoods volledig lokaal. Vraagt wat instelwerk; beloont het ruimschoots.
+- **Notion** — de alles-in-één-werkruimte met AI ingebouwd; sterk om samen te werken. Kanttekening: je kennis leeft in hun cloud — exporteer geregeld.
+- **De ingebouwde apps** (Microsoft OneNote, Apple Notities, Google Keep) — gratis, altijd bij de hand, en intussen met AI van het huis. Prima voor trede 1; de verbindingen en het bevragen blijven er dunner.
+
+## Je AI in je verzameling laten lezen
+
+Trede 3 uit de module — je brein bevragen — kan vandaag langs vier wegen:
+
+- **Een vast project in je assistent** (Deel 2): je kerndocumenten meegeven aan ChatGPT, Claude of Gemini. De eenvoudigste start.
+- **NotebookLM** — je laadt je notities en documenten op, en het antwoordt uitsluitend daaruit, met bronverwijzing. De vindplaatsenregel uit de module, ingebouwd.
+- **Uitbreidingen in je notitietool** — bij tools met open bestanden (zoals Obsidian) bestaan uitbreidingen die je hele verzameling op betekenis doorzoeken, ook volledig op je eigen toestel.
+- **Koppelingen en agents** (hoofdstuk 5) — die werken rechtstreeks op je mappen, je Notion of je Drive, en kunnen je verzameling dus lezen én bijhouden. Dat is trede 4 uit de module.
+
+:::warn Let op — je tweede brein bevat je leven
+Cloudnotities zijn bij de meeste diensten niet end-to-end versleuteld: de aanbieder kán erin. Voor persoonlijke of gevoelige kennis is de veiligste combinatie open bestanden op je eigen toestel, met lokale AI ernaast (hoofdstuk 10). Voor kennis van je werk volg je de regels van je werkgever (hoofdstuk 11).
+:::
+
+> Kies de tool waar je je tekst zo weer uit meeneemt. Tools komen en gaan; je brein moet blijven.
+
+# AI op je eigen computer | Modellen die volledig op je eigen toestel draaien: privé, gratis in gebruik, en offline. Mits wat techniek.
+
+Bijna alles in deze gids draait in de cloud: je typt iets, het gaat naar de servers van de maker, en het antwoord komt terug. Er bestaat ook een andere weg: een AI-model dat volledig op je eigen computer draait. Niets verlaat je toestel.
+
+## Waarom zou je dat willen?
+
+Drie redenen vooral: **privacy** (je gegevens blijven bij jou — handig voor gevoelig werk), **geen abonnement** (na de installatie gebruik je het zoveel je wil), en het werkt **offline**. De prijs die je betaalt, is wat techniek en een computer met voldoende geheugen.
+
+## Hoe het werkt, in het kort
+
+Je installeert een programma dat de modellen voor je beheert. De twee bekendste: **LM Studio** (met een gewone vensterinterface, het vriendelijkst voor beginners) en **Ollama** (via getypte commando's, of met een eenvoudige app). Daarin download je een open model — namen die nu rondgaan zijn Llama, Qwen, Gemma, DeepSeek, Mistral en gpt-oss — en je praat ermee zoals met een gewone assistent. Veel open modellen kunnen intussen ook beelden bekijken en, met de juiste uitbreiding, je notities doorzoeken.
+
+:::note Onthoud
+Lokale modellen halen meestal niet de kwaliteit van de sterkste cloudmodellen, en ze vragen een vlotte computer. Voor de meeste mensen blijft een gewone gratis assistent de eenvoudigste keuze. Zie dit als een optie voor wie privacy of offline werken echt belangrijk vindt.
+:::
+
+> De grote chat-apps zelf kun je niet lokaal draaien. Wat je wél lokaal draait, zijn aparte, open modellen.
+
+# AI op het werk | Voor wie AI gebruikt binnen een organisatie, een school of een bestuur. Drie punten, en de wet in één alinea.
+
+Thuis kies je zelf. Op het werk niet — en dat is maar goed ook: je organisatie heeft vaak een versie waarbij je gegevens binnen de organisatie blijven en niet gebruikt worden om modellen te trainen. Drie punten volstaan meestal.
+
+## 1. Gebruik de versie die je organisatie goedkeurde
+
+Meld je aan met je werkaccount, in de tool die je werkgever ter beschikking stelt. De bekendste werkversies: **Microsoft 365 Copilot** en **Copilot Chat** (in organisaties met Microsoft), **Gemini in Google Workspace**, **ChatGPT Business of Enterprise** en **Claude Team of Enterprise**. Een persoonlijk gratis account voor werkgegevens is de klassieke vergissing — goedbedoeld, maar buiten elke afspraak.
+
+## 2. Herken de werkversie
+
+Bij Copilot delen de werk- en de persoonlijke versie sinds 2026 één adres, **copilot.cloud.microsoft**; het adres zegt dus niet meer of je beschermd werkt. Kijk naar de tekens: je werkaccount rechtsboven, en het schildje dat aangeeft dat je gegevens beschermd zijn. Bij andere tools: de naam van je organisatie of “Team”/“Enterprise” in je account.
+
+## 3. Vraag welke gegevens erin mogen
+
+Ook in de goedgekeurde versie zijn er grenzen: persoonsgegevens van klanten of burgers, personeelsdossiers, vertrouwelijke stukken. Vraag het aan je ICT- of privacyverantwoordelijke vóór je begint, niet achteraf. Bestaat er nog geen afspraak in je team? Het werkblad *AI-afspraken* achteraan deze cursus is een goede start.
+
+:::refbox
+**De AI Act in één alinea.** Sinds februari 2025 moeten organisaties die AI gebruiken maatregelen nemen zodat hun medewerkers er met kennis van zaken mee werken (artikel 4). Na de wijziging van juli 2026, de “Digitale Omnibus”, is dat een plicht tot inspanning, geen gegarandeerd niveau per persoon. Digitaal Vlaanderen maakte er een AI-geletterdheidskader voor, ook voor lokale besturen. Deze cursus en het werkblad zijn goede bouwstenen. Geen juridisch advies: je organisatie bepaalt wat het concreet betekent.
+:::
+
+# Hoe deze gids leeft | Een levend document is alleen nuttig als het ook echt bijgewerkt wordt. Zo houden we het vers.
+
+Deze gids is met opzet het enige deel van de cursus dat veroudert. Dat is het ontwerp: door al het vluchtige hier samen te brengen, blijft de rest tijdloos — zolang deze gids vers blijft. Vertrouw hem dus nooit blind: kijk eerst hoe oud hij is.
+
+## Wat dat in de praktijk betekent
+
+- **Een peildatum.** Op de cover staat wanneer de gids is bijgewerkt. Vergelijk die altijd met vandaag.
+- **Een controlereflex.** Voor een prijs of een modelnaam waar veel van afhangt: kijk even op de site van de tool zelf. Eén minuut werk, en je hebt zekerheid.
+
+## Wat er sinds versie 3.0 (juli 2026) veranderde
+
+- **Modellen:** GPT-6 (Luna, Sol, Astra) in ChatGPT; bij Claude Haiku, Sonnet en Opus 5.5 en het topmodel Fable 5.1; bij Gemini nieuwe Flash-modellen.
+- **Abonnementen:** Google herschikte de plannen (AI Plus, Pro, Ultra); Microsoft 365 Personal en Family kregen AI-credits.
+- **Agents** zitten nu in de gewone assistenten. **Nieuw:** verbruik (h4), terugzoeken en labelplicht (h6), AI op het werk (h11).
+
+:::recap
+- De cursus is tijdloos (principes en vaardigheden); deze gids is vluchtig (de tools van vandaag).
+- Vier grote assistenten, alle vier gratis te proberen — begin met één.
+- Elke tool heeft een snelle en een sterke variant; de namen wisselen, het patroon niet.
+- Agents zitten nu in de gewone assistenten; daarnaast zijn er tools voor beeld, video, geluid, data en notities.
+- Op het werk: de goedgekeurde versie, met je werkaccount, en vraag welke gegevens erin mogen.
+- Kijk altijd naar de peildatum en controleer prijzen zelf voor je iets afsluit.
+:::

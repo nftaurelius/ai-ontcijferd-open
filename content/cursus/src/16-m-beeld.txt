@@ -1,0 +1,270 @@
+---
+id: m-beeld
+file: 12-Module-Beeld-en-video
+kicker: AI-CURSUS · MODULE
+title: Beeld & video
+subtitle: Beschrijf wat je wil zien
+tagline: Stop met zoeken naar het plaatje dat nét niet bestaat. Je leert beschrijven wat je in je hoofd hebt, in rondjes bijsturen tot het klopt, één herkenbare stijl vasthouden — en eerlijk zijn over wat gemaakt is.
+foot: Module · veronderstelt Deel 1–2 · geen volgorde
+version: Versie 2.0 · oktober 2026
+runhead: Module — Beeld & video
+anchor: grid
+toc: WAT JE GAAT DOEN
+toctitle: Beeld & video
+tocline: Beschrijven wat je wil zien, bijsturen, één stijl vasthouden, eerlijk blijven.
+---
+Iedereen die weleens een uitnodiging, affiche, nieuwsbrief of presentatie maakt, kent het uur dat verdwijnt in het zoeken naar een bruikbaar beeld. Stockfoto's die nét niet kloppen, clipart uit een ander tijdperk, en op het einde toch maar dat ene plaatje dat “goed genoeg” is. Dat uur hoeft niet meer. AI kan vandaag beeld maken uit een beschrijving — en de vaardigheid die dat vraagt, heb je grotendeels al: het is hetzelfde recept als in Deel 1, met een ander medium.
+
+In deze module leer je wat een beeldbeschrijving goed maakt, hoe je in rondjes bijstuurt in plaats van te hopen op één perfecte poging, hoe je één herkenbare stijl over al je beelden vasthoudt, en wat er al kan met video. Plus het stuk dat er onlosmakelijk bij hoort: eerlijk en veilig omgaan met gemaakt beeld.
+
+:::refbox
+Dit is een module: een losstaand deel dat je breder maakt, geen trede van de ladder. Ze veronderstelt Deel 1 en 2. Welke beeld- en videotool vandaag de sterkste is, verandert bijna maandelijks — dat staat in de Levende Toolgids. Hier leer je wat in élke tool werkt.
+:::
+
+# Het plaatje dat nét niet bestaat | Van zoeken naar beschrijven — en waarom je deze vaardigheid al half beheerst.
+
+Leen organiseert elk jaar het straatfeest in haar wijk. Voor de uitnodiging in de bussen zocht ze een beeld. Een uur lang scrolde ze door gratis stockfoto's: mensen die te breed lachen in een straat die nergens in Vlaanderen ligt, ballonnen in kantoorkleuren, één bijna-goede foto met een watermerk erdoor. Ze eindigde, zoals elk jaar, met een plaatje dat “goed genoeg” was. Het feest was van haar straat; de uitnodiging kon van eender welke straat zijn.
+
+Het jaar erna deed ze het anders. Ze zocht niet — ze beschreef. Wat ze in haar hoofd had: de rijhuizen met de twee lindebomen, slingers ertussen, lange tafels op de rijweg, laat namiddaglicht. Twintig seconden later stond het op haar scherm. Niet perfect, nog niet. Maar het was háár straat, haar sfeer — iets wat geen stockfotosite ter wereld had kunnen leveren, want het bestond nog niet.
+
+> Stop met zoeken naar het beeld dat toevallig bestaat. Beschrijf het beeld dat je nodig hebt.
+
+Dat is de hele omslag van deze module. En het goede nieuws: de vaardigheid erachter ken je al. In Deel 1 leerde je dat een rijke vraag betere tekst oplevert dan een vage, en dat de eerste versie een vertrekpunt is dat je bijschaaft. Bij beeld geldt exact hetzelfde recept — braindump, beschrijving, eerste versie, bijsturen. Alleen de ingrediënten van de beschrijving zijn anders, want een beeld heeft andere eigenschappen dan een tekst.
+
+:::vs ZOEKEN | BESCHRIJVEN
+Je bladert door wat toevallig bestaat, en plooit je idee naar het minst slechte resultaat. Het beeld bepaalt wat jij toont.
+---
+Je vertrekt van wat jij in je hoofd hebt, en het beeld plooit zich naar jouw idee. Jij bepaalt wat het beeld toont.
+:::
+
+## Waar dit meteen loont
+
+Overal waar je nu naar beelden zoekt of het zonder doet: een uitnodiging en een affiche, een nieuwsbrief, een presentatie of lesmateriaal, een kaartje voor een verjaardag, een illustratie bij een bericht, een sfeerbeeld voor je verbouwing. Niet om kunst te vervangen — wel om het gat te vullen tussen “geen beeld” en “een fotograaf of vormgever inhuren”, waar het overgrote deel van het dagelijkse beeldwerk zit.
+
+:::note Onthoud
+De grote AI-assistenten kunnen tegenwoordig zelf beeld maken in een gesprek, en daarnaast bestaan gespecialiseerde beeldtools met elk hun sterkte. Welke dat vandaag zijn: Levende Toolgids, hoofdstuk beeld en video. De principes hier werken in allemaal.
+:::
+
+# Beschrijf wat je wil zien | De vier ingrediënten van een beeldbeschrijving — en het verschil dat ze maken.
+
+Wat maakt een beeldbeschrijving goed? Niet lengte, en geen toverwoorden. Een goede beschrijving beantwoordt vier vragen — dezelfde vier die een fotograaf of illustrator je zou stellen voor die aan het werk gaat:
+
+:::fig cards | De vier ingrediënten: wat je ziet, hoe het gemaakt is, welk gevoel het draagt en in welke vorm het komt. Samen zijn ze je beschrijving.
+ONDERWERP | Wat zie je? | de straat, slingers, lange tafels
+STIJL | Hoe gemaakt? | illustratie in vlakke kleuren, of een foto
+SFEER | Welk gevoel? | gouden namiddaglicht, warm, uitnodigend
+KADER | Welke vorm? | liggend, ruimte bovenaan voor de titel
+:::
+
+Kijk wat dat doet in de praktijk. Dit was Leens eerste poging, het beeld-equivalent van de vage vraag uit Deel 1:
+
+:::prompt DE VAGE BESCHRIJVING
+Maak een leuke afbeelding voor ons straatfeest.
+:::
+
+Ze kreeg een algemeen feestbeeld: ballonnen, confetti, juichende mensen in een stijl van overal en nergens. Technisch prima — en volstrekt inwisselbaar. En dan dezelfde vraag, maar met de vier ingrediënten ingevuld:
+
+:::prompt DE RIJKE BESCHRIJVING
+Een vrolijke illustratie in vlakke kleuren van een Vlaamse
+straat met rijhuizen: slingers tussen twee grote lindebomen,
+lange tafels op de rijweg, buren van alle leeftijden, kinderen
+met krijt op de stoep. Warm gouden namiddaglicht, uitnodigend
+en gezellig. Liggend formaat, met rustige ruimte bovenaan voor
+de titel. Geen tekst in het beeld.
+:::
+
+:::sample WAT ZE NU KREEG
+Haar straat, haar sfeer: de bomen, de slingers, het licht van een late junimiddag — en bovenaan bewust lege lucht waar straks “Straatfeest 14 juni” komt. Nog niet af, maar onmiskenbaar het juiste vertrekpunt.
+:::
+
+Voel je het verschil? Het zit niet in méér woorden, maar in de juiste soort woorden: één zin per ingrediënt volstaat.
+
+> Eén zin per ingrediënt — wat, hoe, welk gevoel, welke vorm — en de AI ziet wat jij ziet.
+
+Twee ingrediënten verdienen extra aandacht. **Stijl** is de krachtigste knop: “een foto”, “een illustratie in vlakke kleuren”, “een aquarel”, “een strakke infographic” — hetzelfde onderwerp wordt er een totaal ander beeld door. En **kader** vergeten wreekt zich later: bedenk vooraf waar het beeld moet passen (liggend voor een banner, staand voor een affiche, vierkant voor sociale media) en of er ruimte vrij moet blijven voor tekst.
+
+En net als in Deel 1 hoef je die beschrijving niet zelf te schrijven. Achterin staat de **beeldbriefinghelper**: hij stelt je de vier vragen en schrijft de beschrijving voor je uit.
+
+:::donow Doe dit nu — je eerste beschreven beeld
+Neem iets echts waarvoor je binnenkort een beeld nodig hebt. Beantwoord voor jezelf de vier vragen — wat, hoe, welk gevoel, welke vorm — in één zin elk.
+
+Geef die vier zinnen als één beschrijving aan een beeldtool. Vergelijk met wat een vage vraag je zou geven. Dat verschil is precies deze module.
+:::
+
+# Het eerste beeld is een vertrekpunt | Niemand haalt het perfecte beeld in één keer. Je stuurt bij — één ding per keer.
+
+Het eerste beeld dat verschijnt, is zelden het beeld dat je gebruikt. Dat is geen falen — dat is hoe het hoort te werken. Herinner je de kernles van Deel 1: de eerste versie is een vertrekpunt, en jij duwt ze beter met korte, concrete instructies. Bij beeld werkt dat net zo, met één gouden regel erbij:
+
+> Stuur bij met één verandering per keer — en zeg erbij wat goed moet blijven.
+
+:::fig flow hl=3 | Bijsturen op een beeld: hou vast wat goed is, en verander gericht één ding per ronde. Twee of drie rondes halen het bijna altijd van tien nieuwe pogingen.
+Versie 1 | “verander enkel de lucht: vroege avond, met lampjes”
+Versie 2 | “maak het geheel iets warmer van kleur”
+Versie 3 | klaar om te gebruiken
+:::
+
+Zo klonk dat bij Leen, na haar eerste goede vertrekpunt:
+
+:::sample LEENS BIJSTUURRONDES
+**Ronde 1:** “Dit is goed. Verander enkel de lucht: maak er vroege avond van, met lichtslingers in de bomen. Al de rest blijft hetzelfde.”
+
+**Ronde 2:** “Bijna. Maak het geheel iets warmer van kleur, en haal de fiets rechts vooraan weg — daar komt straks het inschrijfstrookje.”
+
+Klaar. Drie versies, twee gerichte instructies — geen twintig wilde pogingen.
+:::
+
+Voel je de aanpak? Ze beschrijft niet telkens een nieuw beeld; ze bewerkt het bestaande met woorden. Wat goed is, benoemt ze als te behouden. Wat moet veranderen, benoemt ze precies. Wie alles tegelijk verandert, krijgt telkens een compleet nieuw beeld — en verliest wat al goed was. (En spaart bovendien je tegoed: elk nieuw beeld verbruikt er een stuk van.)
+
+## Twee hulpmiddelen bij het bijsturen
+
+**Vraag varianten.** Twijfel je tussen richtingen, vraag dan twee of drie versies met een duidelijk andere keuze — “één als illustratie, één als foto” — en kies. Dat is de A/B-truc uit Deel 2, maar dan voor beeld.
+
+**Geef een voorbeeld mee.** De meeste tools laten je een bestaand beeld toevoegen: een oude uitnodiging waarvan je de sfeer wil, een foto van je eigen straat als referentie. Eén goed voorbeeld zegt meer dan drie zinnen stijlbeschrijving — al geldt ook hier: geen foto's van herkenbare mensen zonder dat ze het weten (hoofdstuk 6).
+
+:::deeper Dit is de loop uit Deel 3
+Maken, beoordelen tegenover wat je wil, gericht verbeteren, herhalen tot het de lat haalt: wie Deel 3 deed, herkent hier de loop. Beeld is er misschien wel het duidelijkste voorbeeld van — je zíét elke ronde wat er beter werd.
+
+Nog geen Deel 3 gedaan? Geen probleem: bijsturen zoals in dit hoofdstuk is alles wat je hier nodig hebt.
+:::
+
+:::donow Doe dit nu — drie rondes, één verandering per ronde
+Neem het beeld uit het vorige hoofdstuk. Bekijk het kritisch: wat is goed, wat stoort het meest?
+
+Stuur drie rondes bij, telkens met één gerichte verandering én de vermelding wat moet blijven. Leg versie 1 en versie 4 naast elkaar. Dát is het verschil tussen hopen en sturen.
+:::
+
+# Eén stijl, veel beelden | Herkenbaarheid komt niet uit één mooi beeld, maar uit beelden die bij elkaar horen.
+
+Eén goed beeld maken is fijn. Maar het straatfeest heeft een uitnodiging nodig, een affiche voor het raam, een bericht in de wijkgroep en een bedankkaartje achteraf. Als elk beeld er anders uitziet — vandaag een aquarel, morgen een foto, overmorgen knalkleuren — oogt het geheel rommelig, hoe mooi elk beeld apart ook is.
+
+> Herkenbaarheid zit niet in één beeld. Ze zit in de familie.
+
+De oplossing ken je uit Deel 2: leg vast wat werkt, en hergebruik het. Voor beeld heet dat een **stijlblok** — een korte, vaste beschrijving van je beeldtaal die je vooraan elke beeldopdracht plakt:
+
+:::sample LEENS STIJLBLOK — bewaard in haar bibliotheek
+“Onze stijl: vriendelijke illustraties in vlakke kleuren. Warm palet met oker, terracotta en donkergroen. Eenvoudige vormen, geen drukke details. Geen tekst in het beeld. Liggend formaat, tenzij anders gevraagd.”
+:::
+
+Vanaf dan begint elke opdracht met dat blok, gevolgd door het onderwerp van vandaag. De uitnodiging, de affiche en het bedankkaartje worden verschillende beelden — maar onmiskenbaar van dezelfde afzender. Bewaar het stijlblok in je bibliotheek naast je sjablonen, of zet het vast in je project. Precies zoals je contextdocument, maar dan voor hoe jouw beelden eruitzien. Een zaak, een vereniging of een gezinsalbum: het werkt overal.
+
+## Hetzelfde figuurtje in elk beeld
+
+Een stap verder is een vaste figuur: de mascotte van je zaak, hetzelfde getekende personage in elk kaartje. Dat kan — beschrijf de figuur gedetailleerd in je stijlblok, of geef het vorige beeld telkens mee als referentie — maar weet dat dit de lastigste discipline van beeld maken is. Sommige tools zijn er speciaal goed in (zie de Toolgids); verwacht ook dan een paar rondes bijsturen per beeld.
+
+## Tekst in beeld: de eerlijke waarschuwing
+
+De titel, de datum, het adres: zet ze er liefst zélf op, achteraf, met een gewoon programma. Beeldtools maken bij tekst nog geregeld spel- of letterfouten — en niets ondergraaft een affiche zo snel als “Straatfeeest” in grote letters. Daarom vroeg Leen ruimte bovenaan: het beeld levert de sfeer, zij levert de woorden. Er zijn tools die tekst wél betrouwbaar zetten; welke, staat in de Toolgids. Maar controleer ook daar elke letter.
+
+:::donow Doe dit nu — schrijf je stijlblok
+Beschrijf in drie tot vijf zinnen jouw beeldtaal: soort beeld, kleuren, gevoel, vorm, en wat er nooit in mag. Twijfel je? Laat de AI je uitvragen met de helper achterin.
+
+Maak met dat blok twee beelden over totaal verschillende onderwerpen. Leg ze naast elkaar: zie je dat ze familie zijn? Dan werkt je stijlblok. Bewaar het in je bibliotheek.
+:::
+
+# Bewegend beeld | Video uit een beschrijving: wat vandaag al kan, hoe je het aanpakt, en waar de grenzen liggen.
+
+Wat met beeld kan, kan intussen ook met video: je beschrijft een scène, en er komt een kort filmpje uit — beweging, licht, vaak zelfs geluid erbij. Dit is de snelst evoluerende hoek van het hele AI-landschap: wat vorig jaar onmogelijk was, is vandaag gewoon. Daarom staat álles wat toolnamen en limieten betreft in de Toolgids, en leert dit hoofdstuk je enkel wat blijft: hoe je over een video nadenkt.
+
+## Denk in één shot
+
+De klassieke beginnersfout is een halve film vragen: “maak een video over ons straatfeest met de opbouw, de spelletjes, het optreden en het vuurwerk”. Dat wordt zelden iets. Wat goed werkt, is één **shot**: één scène, één beweging, een paar seconden. Denk aan de vier ingrediënten van je beeldbeschrijving, plus twee nieuwe vragen: wat beweegt er in het beeld, en wat doet de camera?
+
+:::prompt LEENS AANKONDIGINGSVIDEO — ÉÉN SHOT
+Eén shot van een seconde of zes. De camera glijdt langzaam door
+de versierde straat bij valavond: lichtslingers flikkeren aan
+tussen de bomen, vlaggetjes bewegen zacht in de wind, warm
+gouden licht. Stijl: zachte, realistische look. Rustig en
+uitnodigend. Liggend formaat. Geen tekst in beeld, geen
+herkenbare gezichten.
+:::
+
+Zes seconden sfeer die in de wijkgroep blijft hangen, met de titel er los overheen gezet. Geen verhaal, geen montage: één goed shot dat één gevoel draagt. Wil je toch iets langers, dan maak je meerdere shots en plak je ze achter elkaar in een gewoon montageprogramma — elk shot met hetzelfde stijlblok, zodat ze familie zijn. Dat is je werkstroomdenken uit Deel 3, toegepast op video.
+
+> Vraag geen film. Vraag één moment — en bouw daarmee.
+
+## Wanneer video loont, en wanneer niet
+
+Video schittert waar sfeer het werk doet: een aankondiging, een seizoenswens, een beeld dat beweegt op een scherm. Ze loont níét waar precisie telt — een uitleg met stappen, echte mensen die echt iets zeggen, alles met veel tekst. Daar blijven een goed beeld, een gewone opname of een presentatie sterker. En hou rekening met de praktische kant: video maken kost bij de meeste tools veel meer tegoed (en stroom) dan beeld, en een shot maken duurt minuten. Begin dus bij beeld; video is het dessert.
+
+:::donow Doe dit nu — je eerste shot
+Kijk in de Toolgids welke videotool je vandaag gratis of binnen je abonnement kunt proberen. Neem je stijlblok en beschrijf één shot van een echt moment: wat je ziet, wat beweegt, wat de camera doet.
+
+Maak het één keer en stuur hoogstens twee rondes bij. Vraag je daarna af: voegt de beweging echt iets toe tegenover het stilstaande beeld? Soms is het antwoord nee — ook dat is de les.
+:::
+
+# Eerlijk en veilig, en je gereedschap | De spelregels die niet veranderen, de helpers om te kopiëren, en de woorden op een rij.
+
+Beeld maken is macht: je toont mensen iets wat nooit gebeurd is, en het oogt echt. Net daarom horen bij deze module een paar vaste spelregels — niet als kleine lettertjes, maar als deel van de vaardigheid zelf.
+
+**Echte mensen zijn geen materiaal.** Maak geen herkenbare echte personen, en al zeker geen kinderen, zonder uitdrukkelijke toestemming. Laad ook geen foto's van anderen op als referentie zonder dat ze het weten — de klasfoto in een AI-tool gooien om er “iets leuks” mee te doen, is precies de reflex die je moet afleren. Werk met illustraties in plaats van met echte gezichten. Het is veiliger én het oogt vaak beter.
+
+**Andermans werk is geen sjabloon.** “In de stijl van” een herkenbare, levende kunstenaar of illustrator: niet doen voor iets wat je verspreidt. Beschrijf de stijl die je wil in je eigen woorden — vlakke kleuren, warm palet, zachte texturen — in plaats van een naam te lenen. Dat is je stijlblok, en het is van jou. Hetzelfde geldt voor logo's, merken en bekende figuren uit films of strips.
+
+**Zeg wat gemaakt is.** Sinds augustus 2026 verplicht de Europese AI Act je te vermelden dat beeld, geluid of video met AI gemaakt is wanneer het een echte persoon, plek of gebeurtenis lijkt te tonen. Een vrolijke illustratie van een feeststraat valt daar niet onder. Een “foto” van de burgemeester op jullie feest wel. Twijfel je, zet er dan gewoon “gemaakt met AI” bij: dat kost niets en het klopt altijd. Het vertrouwen van je publiek is meer waard dan een mooier plaatje.
+
+**En kijk zelf kritisch.** Wat jij kunt maken, kan een ander ook. Beelden bewijzen steeds minder; de vraag “waar komt dit vandaan?” wordt de reflex — dezelfde bronnenreflex als in Deel 1, maar nu voor je ogen. De module *AI om je heen* werkt dat verder uit.
+
+> Hoe makkelijker beeld te maken is, hoe waardevoller eerlijkheid erover wordt.
+
+:::note Beeld voor je eigen plannen
+Een sfeerbeeld van je toekomstige tuin of badkamer maken werkt met exact dezelfde vier ingrediënten — en helpt je kiezen vóór je begint. Hoe je dat koppelt aan een materiaallijst en een stappenplan, staat in de module *Klussen & vakwerk*. Onthoud wel: zo'n beeld is een impressie, geen bouwtekening.
+:::
+
+## Bijlagen: je gereedschap
+
+### 1. De beeldbriefinghelper
+
+Stelt je de vier vragen en schrijft je beschrijving. Plak hem in een gewoon gesprek; het resultaat geef je aan je beeldtool.
+
+:::prompt KOPIEER DIT
+Help me een beschrijving maken voor een beeld dat ik wil laten
+maken. Interview me kort: wat er te zien moet zijn, in welke
+stijl (foto, illustratie, ...), welke sfeer en welk licht, en
+welke vorm (staand, liggend, vierkant, ruimte voor tekst). Eén
+tot drie vragen per keer. Schrijf daarna de beschrijving uit in
+vloeiende zinnen, eindigend met “geen tekst in het beeld” tenzij
+ik anders zeg. Voeg niets toe wat ik niet vroeg.
+:::
+
+### 2. De bijstuurhelper
+
+Voor elke ronde na de eerste versie. Eén verandering per keer, en benoem wat blijft.
+
+:::prompt KOPIEER DIT
+Dit beeld is een goed vertrekpunt. Behoud [wat goed is: de
+compositie / de stijl / de kleuren]. Verander enkel dit:
+[één gerichte verandering]. Al de rest blijft hetzelfde.
+:::
+
+### 3. Het stijlbloksjabloon
+
+Vul in, bewaar in je bibliotheek of project, en plak vooraan elke beeldopdracht.
+
+:::prompt KOPIEER DIT
+Onze stijl: [soort beeld: illustratie / foto / ...] in
+[beschrijving van de look]. Kleurenpalet: [drie tot vier
+kleuren of een gevoel]. Sfeer: [warm / strak / speels / ...].
+Vermijd: [drukte / tekst in beeld / echte gezichten / ...].
+Formaat: [liggend / staand / vierkant], tenzij anders gevraagd.
+:::
+
+## Woordenlijst
+
+- **Beeldbeschrijving** — De tekst waarmee je een beeld laat maken: onderwerp, stijl, sfeer en kader in een paar zinnen.
+- **Bijsturen** — Het beeld ronde per ronde verbeteren met één gerichte verandering, terwijl je benoemt wat moet blijven.
+- **Stijlblok** — Je bewaarde beschrijving van je beeldtaal, die je vooraan elke opdracht plakt zodat alle beelden familie zijn.
+- **Referentiebeeld** — Een bestaand beeld dat je meegeeft als voorbeeld van de gewenste stijl of als basis om op verder te werken.
+- **Shot** — Eén doorlopende scène in video: één moment, één beweging, enkele seconden.
+- **Beeldverhouding** — De vorm van je beeld (liggend, staand, vierkant). Kies ze vooraf op basis van waar het beeld moet passen.
+- **Label “gemaakt met AI”** — De vermelding dat een beeld gemaakt is. Verplicht bij beeld dat een echte persoon, plek of gebeurtenis lijkt te tonen.
+
+:::recap
+- Stop met zoeken naar wat toevallig bestaat; beschrijf het beeld dat je nodig hebt.
+- Vier ingrediënten maken de beschrijving: wat je ziet, hoe het gemaakt is, welk gevoel, welke vorm.
+- Het eerste beeld is een vertrekpunt: stuur bij met één verandering per keer, en benoem wat blijft.
+- Een stijlblok maakt van losse beelden een familie — bewaar het naast je sjablonen uit Deel 2.
+- Video: denk in één shot, en begin bij beeld. Video is het dessert.
+- Geen echte mensen zonder toestemming, geen geleende stijl, en zeg wat gemaakt is.
+:::
+
+Je hebt deze module beet wanneer het uur stockfoto's scrollen vervangen is door twee minuten beschrijven en drie rondes bijsturen — en het resultaat eruitziet als iets van jóú. Vanaf dan is elk beeld dat je nodig hebt, een beeld dat bestaat.

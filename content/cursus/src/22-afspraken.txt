@@ -1,0 +1,134 @@
+---
+id: afspraken
+file: 18-AI-afspraken-werkblad
+kicker: AI-CURSUS · WERKBLAD
+title: AI-afspraken
+subtitle: voor je team of groep
+tagline: Zes vragen die je één keer samen beantwoordt, zodat niemand het per ongeluk verkeerd doet. Ingevuld in een half uur — en daarna het antwoord op elke “mag dat eigenlijk?”.
+foot: Werkblad · vul samen in
+version: Versie 2.0 · oktober 2026
+runhead: AI-afspraken voor je team of groep
+anchor: check
+toctitle: AI-afspraken — werkblad
+tocline: Zes vragen om samen te beantwoorden, met ruimte om in te vullen.
+---
+Zodra meer dan één iemand AI gebruikt voor gezamenlijk werk — in een team, een school, een bestuur, een vereniging, een klein bedrijf — ontstaan er afspraken, of ze nu uitgesproken zijn of niet. De ene plakt de klantenlijst in een chatbot, de andere durft niets, en niemand weet wat mag. Dat gaat een keer mis, en dan is het gesprek achteraf altijd moeilijker dan het vooraf geweest zou zijn.
+
+Dit werkblad maakt dat gesprek makkelijk: zes vragen, in een half uur samen te beantwoorden. Geen juridisch document, geen beleidsnota — gewoon helderheid, op één blad, waar iedereen naar kan wijzen. Print het, vul het samen in op een overleg, en bewaar het bij de rest van jullie afspraken.
+
+:::refbox
+Dit werkblad hoort bij de AI-cursus en veronderstelt niets: ook wie de cursus niet volgde, kan meepraten. Wil je de regels achter de antwoorden, kijk dan op *De veiligheidskaart* — die past hier perfect naast.
+:::
+
+:::warn Werk je in een organisatie? Begin hier
+Vraag vóór je dit blad invult aan je ICT- of privacyverantwoordelijke welke AI-tools al goedgekeurd zijn en welke afspraken er al liggen. Vaak bestaat er een versie waarbij gegevens binnen de organisatie blijven. Dit blad is dan de praktische vertaling van dat beleid naar jullie dagelijkse werk, niet de vervanging ervan.
+:::
+
+:::refbox
+**Voor organisaties: de AI Act.** Sinds februari 2025 moeten organisaties die AI gebruiken maatregelen nemen zodat hun medewerkers er met kennis van zaken mee werken (artikel 4 van de Europese AI Act). Na de wijziging van juli 2026 is dat een plicht tot inspanning, geen gegarandeerd niveau per persoon. In Vlaanderen maakte Digitaal Vlaanderen daar een AI-geletterdheidskader voor, ook voor lokale besturen. Dit ingevulde werkblad is een goed eerste stuk bewijs dat jullie dat doen. Geen juridisch advies.
+:::
+
+# [HET GESPREK] Vragen één en twee | Waarvoor gebruiken we AI, en wat mag er nooit in?
+
+Bij elke vraag staat waarover het gaat, een vaak gekozen antwoord, en ruimte voor dat van jullie.
+
+## 1. Waarvoor gebruiken we AI, en waarvoor niet?
+
+Begin positief: waar mag het gerust voor? Teksten opstellen en herschrijven, samenvatten, brainstormen, vertalen, beeld voor aankondigingen. Noem daarna wat bij jullie niet vanzelf spreekt: officiële brieven, communicatie bij een conflict, teksten met een handtekening eronder, beslissingen over mensen, of alles wat over één specifieke persoon gaat.
+
+:::sample VAAK GEKOZEN ANTWOORD
+“AI mag voor alle voorbereidend werk: opstellen, samenvatten, vertalen, beeld. Niet voor persoonlijke of gevoelige communicatie en niet voor beslissingen over mensen — die doet en schrijft de verantwoordelijke zelf.”
+:::
+
+**Ons antwoord:**
+
+:::fill 4
+:::
+
+## 2. Wat mag er nooit in een AI-tool?
+
+Dit is de belangrijkste vraag van het blad. Denk aan: lijsten met namen en adressen, betaalgegevens, medische of vertrouwelijke informatie, gegevens over kinderen, en alles wat onder beroepsgeheim valt. En spreek af hóé je er dan wel mee werkt: met een veilige kopie zonder namen, in de goedgekeurde werkversie, of helemaal niet.
+
+:::sample VAAK GEKOZEN ANTWOORD
+“Geen namen, adressen, e-mails, geboortedata of betaalgegevens. Werken met lijsten van mensen mag enkel via een kopie zonder die kolommen, met nummers als sleutel. En enkel in de tool die we samen kozen.”
+:::
+
+**Ons antwoord:**
+
+:::fill 4
+:::
+
+# [HET GESPREK · VERVOLG] Vragen drie tot zes | Over foto's, controle, openheid en wie waarvoor zorgt.
+
+## 3. Wat doen we met foto's van mensen?
+
+Jullie regelden dit waarschijnlijk al voor de website of de nieuwsbrief — trek die afspraak gewoon door naar AI. Wat mag naar een tool om te laten sorteren of beschrijven, en wat niet? Bij kinderen geldt bijna overal: extra voorzichtig, of enkel op het eigen toestel.
+
+:::sample VAAK GEKOZEN ANTWOORD
+“Foto's waarvoor publicatietoestemming geregeld is, mogen door een AI-tool voor selectie en beschrijving. Foto's van kinderen niet. En we vragen nooit wie er op een foto staat.”
+:::
+
+**Ons antwoord:**
+
+:::fill 3
+:::
+
+## 4. Wie controleert wat naar buiten gaat?
+
+De regel is overal dezelfde — wie het verstuurt, controleert het — maar zeg het één keer hardop. Spreek ook af wat er extra nagelezen wordt: cijfers in een verslag, feiten in een communicatie, en alles wat op de website, in de pers of bij een klant belandt.
+
+:::sample VAAK GEKOZEN ANTWOORD
+“Wie iets verstuurt of publiceert, heeft het zelf nagelezen. Cijfers en data worden altijd gecheckt tegen de bron. Bij twijfel leest een collega mee.”
+:::
+
+**Ons antwoord:**
+
+:::fill 3
+:::
+
+## 5. Zijn we er open over?
+
+Bij een gewone mail hoeft niemand een vermelding. Maar bij beeld dat iets lijkt te documenteren, of bij een tekst waarvan lezers zouden aannemen dat een mens hem persoonlijk schreef, verandert dat. En sinds augustus 2026 is één ding ook wet: beeld, geluid of video gemaakt met AI dat een echte persoon, plek of gebeurtenis lijkt te tonen, moet je als zodanig vermelden.
+
+:::sample VAAK GEKOZEN ANTWOORD
+“We vermelden het niet bij gewone teksten. Gemaakt beeld dat een echte persoon, plek of gebeurtenis lijkt te tonen, krijgt altijd ‘gemaakt met AI’ (dat is sinds augustus 2026 ook wettelijk zo). En we liegen er nooit over als iemand het vraagt.”
+:::
+
+**Ons antwoord:**
+
+:::fill 3
+:::
+
+## 6. Wie zorgt waarvoor?
+
+Afspraken zonder eigenaar verdampen. Spreek af wie deze afspraken beheert en nieuwe mensen inwerkt, wie de gedeelde bibliotheek of het gemeenschappelijke brein onderhoudt, en wie de eventuele abonnementen opvolgt. Eén naam per taak volstaat.
+
+| Taak | Wie |
+|---|---|
+| Deze afspraken beheren en nieuwe mensen inwerken | …………………………………………… |
+| De gedeelde bibliotheek of kennisverzameling onderhouden | …………………………………………… |
+| Abonnementen en toegang opvolgen | …………………………………………… |
+| Het aanspreekpunt bij een vergissing | …………………………………………… |
+
+# [AFRONDEN] Vastleggen en levend houden | Wat je met het ingevulde blad doet — en hoe je voorkomt dat het een dode letter wordt.
+
+Schrijf de antwoorden over in jullie eigen woorden, en zet ze waar iedereen ze vindt: in de gedeelde map, bij het onthaalpakket voor nieuwe mensen, of achteraan het verslag van het overleg waarop je ze maakte. Vermeld de datum — dan zie je later wanneer het tijd is voor een herziening.
+
+> Afspraken die niemand kent, bestaan niet. Eén blad waar iedereen naar kan wijzen, is genoeg.
+
+En een geruststelling: afspraken maken betekent niet dat er iets gevaarlijks aan de hand is. Het betekent dat jullie iets nuttigs gaan gebruiken en het goed willen doen.
+
+## Drie dingen die het levend houden
+
+- **Werk nieuwe mensen in.** Wie erbij komt, krijgt dit blad samen met de sleutels. Twee minuten uitleg voorkomt de meeste ongelukken.
+- **Herbekijk het één keer per jaar.** Koppel het aan een vast moment — een jaarplanning, een algemene vergadering, het begin van het schooljaar. Tools en gewoontes veranderen; jullie antwoorden mogen mee veranderen.
+- **Maak fouten bespreekbaar.** Er gáát iets mislopen: iemand plakt per ongeluk te veel in een chatbot. Spreek nu al af dat zoiets gemeld wordt zonder gedoe — want een gemelde fout kun je nog beperken, een verzwegen fout niet.
+
+:::checks
+- Vraag 1 tot 5 beantwoord, in onze eigen woorden
+- Eén naam per taak bij vraag 6
+- Datum genoteerd: ____ / ____ / ________
+- Bewaard op een plek die iedereen kent
+- Herziening gepland in: ________________
+:::
+

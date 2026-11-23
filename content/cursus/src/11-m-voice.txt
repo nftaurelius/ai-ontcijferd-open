@@ -1,0 +1,278 @@
+---
+id: m-voice
+file: 07-Module-Voice-en-snelheid
+kicker: AI-CURSUS · MODULE
+title: Voice & snelheid
+subtitle: Spreek, in plaats van te typen
+tagline: De goedkoopste versnelling van de hele cursus: je spreekt drie tot vier keer sneller dan je typt, en praten kun je al. Je leert je stem inzetten — om te dicteren, om met je AI te praten, en om ideeën te vangen waar ze komen.
+foot: Module · veronderstelt Deel 1–2 · geen volgorde
+version: Versie 2.0 · oktober 2026
+runhead: Module — Voice & snelheid
+anchor: grid
+toc: WAT JE GAAT DOEN
+toctitle: Voice & snelheid
+tocline: Spreken in plaats van typen: dicteren, gesprekken, ideeën vangen.
+---
+Alles wat je tot nu met AI deed, begon met typen. Dat is zo gewoon dat je er niet meer bij stilstaat — en net daarom laat bijna iedereen hier de makkelijkste winst van de hele cursus liggen. Want tussen jouw hoofd en je AI zit één flessenhals: hoe snel je je gedachten in woorden krijgt. En daarvoor heb je een sneller kanaal dan je vingers. Je stem.
+
+Deze module leert je dat kanaal gebruiken: dicteren in plaats van tikken, een echt gesprek voeren met je AI, en ideeën vangen op de momenten dat je geen toetsenbord bij de hand hebt. Geen nieuwe vaardigheid — je kunt al praten. Alleen een nieuwe gewoonte.
+
+:::refbox
+Dit is een module: een losstaand deel dat je breder maakt, geen trede van de ladder. Ze veronderstelt Deel 1 en 2 (het recept en je bewaarde opzet) en heeft geen volgorde tegenover de andere modules. Welke dicteertool of gespreksmodus vandaag de handigste is, staat in de Levende Toolgids — hier leer je het principe, dat overal werkt.
+:::
+
+# Twee duimen op een schermpje | Waarom typen de stille rem is op al je AI-werk — en hoeveel sneller het kan.
+
+Koen traint de jeugdploeg van de voetbalclub. Twee avonden op het veld, en daarna, in de zetel, het onzichtbare werk: berichten aan de ouders, een wedstrijdverslagje voor de clubpagina, een woordje aan de trainer van de tegenstander. Allemaal op zijn telefoon, met twee duimen, letter per letter. “Dat is elke week mijn half uur zeteladministratie,” zei hij. Hij gebruikte zijn AI goed — en tóch kroop dat half uur er elke week weer door.
+
+Tot iemand hem vroeg waarom hij dat allemaal tíkte. Koen keek verbaasd. Hij had er gewoon nooit aan gedacht dat het anders kon. Die avond hield hij de microfoonknop op zijn toetsenbord ingedrukt en sprak zijn bericht gewoon uit. Twintig seconden praten, tekst op het scherm, klaar. “Ik was er kwaad om,” zei hij later. “Niet op de telefoon. Op mezelf, dat ik dat twee jaar met mijn duimen heb zitten doen.”
+
+## De cijfers achter Koens verbazing
+
+Dit is geen kwestie van gevoel. Meet het na en de verhouding is elke keer ongeveer dezelfde:
+
+:::fig bars hl=3 note="Richtwaarden voor een gemiddelde gebruiker. Jouw cijfers verschillen — de verhouding niet." | Spreken is voor de meeste mensen drie tot vier keer sneller dan typen op een klavier, en vier tot vijf keer sneller dan tikken op een telefoon.
+Typen op je telefoon | 30 | ~30 woorden per minuut
+Typen op een klavier | 40 | ~40 woorden per minuut
+Spreken | 140 | ~140 woorden per minuut
+:::
+
+> Tussen jouw hoofd en je AI zit één flessenhals: hoe snel je je gedachten in woorden krijgt. Je stem is het bredere kanaal.
+
+En het gaat om meer dan snelheid. Typen kost moeite, en moeite maakt zuinig: je kort je gedachten in nog vóór ze op het scherm staan. Praten kost bijna niets — dus je zegt gewoon álles wat je denkt. Straks zie je wat dat doet met de kwaliteit van je AI-werk: meer grondstof erin betekent beter werk eruit.
+
+Drie manieren om je stem in te zetten, en ze krijgen elk hun stuk van deze module:
+
+:::fig cards num | Drie routes voor je stem: dicteren waar je anders zou typen, een gesprek voeren met je AI, en ideeën inspreken om ze later te verwerken.
+De dicteerknop | Je stem als toetsenbord | Werkt in elk vak waar je kunt typen. | Voor alles wat je anders tikt
+De gespreksmodus | Praten mét je AI | Heen en weer, handen en ogen vrij. | Voor denken, oefenen, onderweg
+De spraakmemo | Nu inspreken | Later verwerken tot tekst en werk. | Voor ideeën op rare momenten
+:::
+
+:::note Onthoud
+Je hoeft hier niets nieuws voor te leren. Praten kun je al — waarschijnlijk beter dan typen. Deze module gaat enkel over de gewoonte om het ook te doen.
+:::
+
+# Dicteren: je stem als toetsenbord | De microfoonknop werkt in elk vak waar je kunt typen.
+
+De eenvoudigste route eerst. Op het toetsenbord van je telefoon staat een microfoonknop, en je computer heeft een ingebouwde dicteerfunctie. Druk erop, spreek, en je woorden verschijnen als tekst — in je berichten, je mails, en ja, ook in het vak waar je anders je prompt tikt. Je stem is gewoon een tweede toetsenbord. Een veel sneller.
+
+“Maar ik praat helemaal niet in nette zinnen,” hoor ik je denken. Klopt. Niemand doet dat. Kijk wat er gebeurde toen Koen zijn afgelastingsbericht insprak — eerst wat hij letterlijk zei, daarna wat er op zijn scherm kwam:
+
+:::sample WAT KOEN LETTERLIJK ZEI
+“euh ja dus de training van woensdag euh die gaat niet door want het veld ligt er veel te slecht bij euh dus we verplaatsen naar donderdag zelfde uur zelfde plaats en euh laat even weten wie er niet kan”
+:::
+
+:::sample WAT ER OP HET SCHERM VERSCHEEN
+De training van woensdag gaat niet door: het veld ligt er veel te slecht bij. We verplaatsen naar donderdag, zelfde uur, zelfde plaats. Laat even weten wie er niet kan.
+:::
+
+Voel je het verschil? De “euh's” zijn weg, de leestekens staan er, de zinnen lopen. Moderne dicteerfuncties kuisen je spraak onderweg op — de betere zelfs zó goed dat je het resultaat meteen kunt versturen. En haalt jouw dicteerknop dat niveau niet, dan is er een simpele reddingsboei: plak de ruwe tekst in je AI met de vraag hem op te kuisen. Die helper staat achterin.
+
+> Je hoeft niet in nette zinnen te praten. Praat zoals je praat — het opkuisen is niet jouw werk.
+
+## Waar dicteren meteen loont
+
+Overal waar je nu tikt, maar het snelst voelbaar bij berichten en mails (zeker op je telefoon), je prompts aan je AI, en antwoorden op vragen die je AI je stelt — denk aan de verhelderende vragen van de prompt-engineer uit Deel 1. Die beantwoord je sprekend in een fractie van de tijd, en meestal vollediger.
+
+:::deeper De betere dicteertools
+De ingebouwde dicteerknop van je toestel is gratis en prima om mee te beginnen. Daarnaast bestaan er gespecialiseerde dicteertools die in élke app werken en je spraak grondiger opkuisen: ze halen de aarzelingen eruit, zetten leestekens beter, en leren je vaktermen kennen.
+
+Welke dat vandaag zijn, wat ze kosten, en welke je stem op je eigen toestel houden (belangrijk voor gevoelige inhoud): dat verandert te snel voor deze module en staat in de Levende Toolgids, in het hoofdstuk over geluid.
+:::
+
+:::warn Let op
+Eigennamen, adressen en dialectwoorden zijn de zwakke plek van elke dicteerfunctie: “De Pinte” wordt al eens “de pint”. Lees dus na voor je verstuurt — dezelfde reflex als bij alles wat AI voor je maakt. Jij kijkt na, jij verstuurt.
+:::
+
+:::donow Doe dit nu — je eerste gedicteerde bericht
+Neem het volgende bericht dat je toch moet sturen. Druk de microfoonknop op je toetsenbord in en spreek het uit zoals je het tegen die persoon zou zeggen.
+
+Lees na, verstuur, en let op de klok: dit was sneller dan tikken — de eerste keer al, terwijl je nog moest wennen. Vanaf nu wordt het alleen maar vlotter.
+:::
+
+# De braindump die je al had | Stap 1 van het recept wordt ineens moeiteloos — en je AI krijgt er dubbel zoveel grondstof door.
+
+Herinner je stap 1 van het recept uit Deel 1: de braindump. Alles wat in je hoofd zit eruit gooien, rommelig en ongefilterd, want dáár wordt de wedstrijd gewonnen. Mooi principe. Maar wees eerlijk: hoe vaak werd jouw braindump drie magere zinnetjes, omdat typen nu eenmaal moeite kost?
+
+Kijk naar Koen, die na de wedstrijd een verslagje voor de clubpagina wil. Eerst zoals vroeger, getypt op zijn telefoon:
+
+:::sample DE GETYPTE BRAINDUMP — drie duimzinnetjes
+“Verslag wedstrijd zaterdag. 3-1 gewonnen tegen Zwevegem. Goed gespeeld, leuke sfeer.”
+:::
+
+En dan dezelfde braindump, maar ingesproken op de terugweg naar de kleedkamer — praten kost niks, dus alles komt mee:
+
+:::sample DE INGESPROKEN BRAINDUMP — alles komt mee
+“Verslagje voor de clubpagina, luchtig en trots. 3-1 gewonnen tegen Zwevegem. Moeilijk eerste kwartier, 0-1 achter na een hoekschop. Omgekeerd door twee goals van Lina, die speelt echt haar beste seizoen. Derde goal van Mo in de slotminuut, heel de bank erop. Ook vermelden: veel supporters ondanks de regen, en de nieuwe truitjes van de sponsor werden goed onthaald. Eindigen met de thuismatch van volgende week, oproep om te komen supporteren.”
+:::
+
+Voel je het verschil? Zelfde wedstrijd, zelfde Koen, zelfde minuut werk — maar de tweede braindump bevat de toon, de wending, de namen, de sfeer én het slot. Uit de eerste kan de AI alleen iets algemeens maken. Uit de tweede rolt bijna vanzelf een verslag dat klinkt alsof je erbij was. Het verschil zat niet in een betere prompt. Het zat in het kanaal.
+
+> Hoe rijker je braindump, hoe beter alles wat erna komt. Spreken maakt rijk moeiteloos.
+
+## Denken op je benen
+
+Er komt nog iets bij, en wie het één keer voelt, wil niet meer terug: praten terwijl je stapt. Een blokje om met je telefoon in je zak, en hardop denken over dat lastige mailtje, dat plan, die beslissing. Bewegen maakt denken losser — en omdat je alles inspreekt, ben je aan het einde van je wandeling niet alleen uitgedacht, je gedachten stáán er ook al. Klaar om aan je AI te geven.
+
+Spreek je braindump gerust in als één lange stroom, zonder structuur. Structuur aanbrengen is het werk van de AI — de prompt-engineer uit Deel 1 draait er zijn hand niet voor om. Jouw enige taak is: alles zeggen.
+
+:::donow Doe dit nu — spreek je volgende braindump in
+Neem de eerstvolgende echte taak waarvoor je het recept gebruikt. Doe stap 1 deze keer sprekend: microfoonknop in, en vertel gewoon alles wat je weet en wil — rommelig mag, dat was altijd al de bedoeling.
+
+Geef die braindump daarna aan de prompt-engineer, zoals altijd. Vergelijk het eindresultaat met wat je vroeger uit een getypte braindump kreeg. Dát is wat het bredere kanaal doet.
+:::
+
+# Praten mét je AI | De gespreksmodus: een echt heen-en-weer, handen vrij. Wanneer het schittert, en wanneer typen wint.
+
+Dicteren is je stem als toetsenbord: jij spreekt, er verschijnt tekst, en verder verandert er niets. Maar de grote AI-assistenten kunnen meer. Ze hebben een **gespreksmodus**: jij praat, de AI praat terug, en je voert een echt gesprek — zoals je zou bellen met iemand die alles weet en eindeloos geduld heeft. Handen vrij, ogen vrij.
+
+Dat is geen speelgoed. Voor bepaalde soorten werk is het gewoon de betere vorm. Koen gebruikt het intussen voor iets waar hij vroeger tegen opzag: lastige gesprekken voorbereiden. Een vader was boos omdat zijn dochter weinig speelminuten kreeg, en Koen oefende het gesprek al wandelend, hardop:
+
+:::sample EEN STUK UIT KOENS OEFENGESPREK
+**Koen:** “Speel de vader van een speelster die vindt dat zijn dochter te weinig speelt. Wees redelijk maar duidelijk gefrustreerd. Ik oefen hoe ik dat gesprek aanpak.”
+
+**AI (als vader):** “Trainer, ik moet het toch even zeggen. Elke week staat ze klaar, en elke week zit ze meer op de bank dan op het veld. Wat is daar de reden voor?”
+
+**Koen:** “Dat begrijp ik, en ik ben blij dat je het rechtstreeks aan mij vraagt in plaats van langs de zijlijn…”
+
+Na afloop vroeg Koen: “Stap uit je rol. Wat deed ik goed, en waar liet ik een steek vallen?”
+:::
+
+Voel je wat hier gebeurt? Dit kán niet met typen — het werkt juist omdat het spreken is: het echte tempo, de echte zenuwen, de echte woorden die je straks ook zult gebruiken. En na afloop krijg je eerlijke feedback, van een sparringpartner die niets doorvertelt.
+
+## Wanneer de gespreksmodus schittert
+
+- **Denken en brainstormen** — hardop redeneren met iemand die meedenkt, doorvraagt en samenvat.
+- **Oefenen** — een lastig gesprek, een presentatie, een sollicitatie, een taal. De AI speelt de andere kant.
+- **Iets laten uitleggen** — al luisterend, met de mogelijkheid om op elk moment “wacht, leg dat stuk opnieuw uit” te zeggen.
+- **Onderweg** — in de auto, tijdens het koken, op een wandeling. Momenten die anders verloren gaan.
+
+## En wanneer typen wint
+
+Moet het resultaat een tekst zijn die je wil nalezen, vergelijken of bewaren — een lang document, een tabel, iets met precieze formuleringen — dan werk je beter in het gewone chatvenster, met je sjablonen en je project erbij. Vuistregel: denken en oefenen doe je sprekend, afwerken doe je op het scherm. Veel gesprekken beginnen in de gespreksmodus en eindigen als tekst.
+
+:::warn Let op
+Een gesprek voelt vluchtig, maar het is er een met een AI-tool: dezelfde regels als altijd. Geen gevoelige gegevens, geen namen en dossiers van anderen — ook niet hardop. En wat de AI zegt, controleer je nog steeds voor je ernaar handelt.
+:::
+
+:::donow Doe dit nu — voer je eerste echte gesprek
+Open de gespreksmodus van je AI-assistent (meestal een microfoontje of een golfje in de app). Kies iets wat je toch moest uitdenken: een beslissing, een plan, een gesprek dat eraan komt.
+
+Praat vijf minuten. Vraag op het einde: “vat samen wat we besproken en beslist hebben.” Die samenvatting is je vertrekpunt op het scherm — precies de brug van denken naar afwerken.
+:::
+
+# Van gesproken woord naar afgewerkt werk | De derde route: nu inspreken, later verwerken. Je stem als voordeur van je hele opzet.
+
+De beste ideeën houden zich niet aan je agenda. Ze komen in de auto, onder de douche, op de fiets. Tegen dat je achter een scherm zit, is de helft vervlogen. De derde route lost dat op: vang het nu, verwerk het later.
+
+Het gereedschap is de gewone spraakmemo van je telefoon, of een notitie-app met een dicteerknop. Idee? Dertig seconden inspreken, klaar. 's Avonds geef je die tekst aan je AI — en daar wordt het interessant, want vanaf dat moment neemt je bestaande opzet het over.
+
+Koen doet het intussen elke zaterdag. Op de terugweg van de wedstrijd spreekt hij vijf minuten vol: de uitslag, de opvallende momenten, wie er geblesseerd raakte, wat er moet gebeuren. Thuis plakt hij dat ene transcript in zijn clubproject en vraagt:
+
+:::prompt VAN TRANSCRIPT NAAR AFGEWERKT PAKKET
+Hieronder staat mijn ingesproken nabespreking. Doe achter elkaar:
+1. Haal eruit wat er concreet moet gebeuren, met wie het doet.
+2. Schrijf het wedstrijdverslagje voor de clubpagina, in mijn
+   gebruikelijke stijl.
+3. Schrijf het bericht aan de ouders met de praktische punten.
+Zet elk onderdeel onder een eigen kopje.
+
+Transcript: [plak hier je ingesproken tekst]
+:::
+
+Herken je de vorm? Dat is een keten — de uitkomst van elke stap voedt de volgende. Vijf minuten praten in de auto wordt thuis, met één opdracht, een actielijstje plus twee verstuurbare teksten. Zijn zetel-half-uur is een zetel-vijf-minuten geworden: nalezen en versturen.
+
+> Je stem is de voordeur. Daarachter staat alles wat je al bouwde: je sjablonen, je project, je stem op papier.
+
+Dat is het echte punt van deze module. Spreken vervangt niets van wat je in Deel 1 en 2 leerde — het versnelt de ingang ervan. Je braindump, je context, je antwoorden op verhelderende vragen: alles wat vroeger door de flessenhals van het typen moest, stroomt nu binnen op spreeksnelheid.
+
+:::deeper Dit wordt een werkstroom (brug naar Deel 3)
+De opdracht hierboven is een keten van drie stappen in één. In Deel 3 — AI als hefboom — leer je zulke ketens bewust ontwerpen, bewaren en verbeteren.
+
+Heb je Deel 3 al gedaan, dan zie je het meteen: je stem is gewoon de nieuwe, snellere stap 1 van elke werkstroom die je al hebt. Nog niet? Geen probleem — de opdracht werkt ook zo.
+:::
+
+:::warn Let op — opnemen en de anderen
+Een spraakmemo van jezelf is van jou. Maar zodra je een gesprek of vergadering met ánderen wil opnemen om er een transcript van te maken, vraag je eerst hun toestemming — altijd. En voor gevoelige inhoud geldt opnieuw: kies een tool die je stem op je eigen toestel verwerkt (zie de Toolgids), of spreek algemener in.
+:::
+
+:::donow Doe dit nu — vang één idee
+Zet vandaag nog een spraakmemoknop klaar waar je hem in twee tellen vindt: op je startscherm, of via de snelknop van je telefoon.
+
+Spreek deze week minstens één idee of nabespreking in op een moment zonder scherm. Verwerk het 's avonds met je AI. Merk hoeveel er bewaard bleef dat anders vervlogen was.
+:::
+
+# Wat hierna komt, en je gereedschap | De gewoonte in drie stappen, de helpers om te kopiëren, en de woorden op een rij.
+
+Deze module vroeg geen nieuwe vaardigheid — alleen de moed om tegen je telefoon te praten. In ruil kreeg je het bredere kanaal: dicteren waar je anders tikt, een echte gesprekspartner voor het denkwerk, en een voordeur die altijd openstaat, ook zonder scherm. Koens zetel-half-uur is vijf minuten geworden. Wat wordt het bij jou?
+
+De gewoonte bouw je in drie stappen, één per week als je wil: eerst élk bericht dicteren in plaats van tikken, tot de gêne weg is. Dan je braindumps inspreken. Dan de gespreksmodus proberen voor één echte denksessie. Daarna hoef je er niet meer over na te denken — net als bij typen, ooit.
+
+:::note Waar je stem nog meer van pas komt
+Twee modules bouwen rechtstreeks op deze verder. In *Second brain* wordt inspreken de moeiteloze voordeur van je kennisverzameling. En in *Leren met AI* gebruik je diezelfde gespreksmodus als oefenpartner — om een taal te oefenen of je te laten overhoren.
+:::
+
+## Bijlagen: je gereedschap
+
+### 1. De opkuishelper
+
+Voor wanneer je dicteerfunctie de “euh's” en leestekens niet zelf oplost, of je een lange ruwe spraaktekst hebt.
+
+:::prompt KOPIEER DIT
+Hieronder staat ruwe, ingesproken tekst. Kuis hem op: verwijder
+aarzelingen en herhalingen, zet leestekens en hoofdletters, en
+verdeel in vlotte zinnen en alinea's. Verander mijn woordkeuze
+en betekenis niet, en voeg niets toe. Behoud mijn toon.
+
+Tekst: [plak hier je gedicteerde tekst]
+:::
+
+### 2. De gesproken-braindumphelper
+
+Om van een ingesproken gedachtestroom een geordende braindump te maken die klaar is voor de prompt-engineer uit Deel 1.
+
+:::prompt KOPIEER DIT
+Hieronder staat een ingesproken gedachtestroom. Orden hem tot een
+heldere braindump: het doel, voor wie het is, wat er zeker in
+moet, de gewenste toon, en losse ideeën apart. Laat niets weg
+wat ik zei; verzin niets bij. Stel me daarna maximaal drie
+vragen over wat nog ontbreekt.
+
+Gedachtestroom: [plak hier je ingesproken tekst]
+:::
+
+### 3. De transcript-naar-pakkethelper
+
+De keten uit hoofdstuk 5, klaar om aan te passen aan jouw vaste nabespreking — en te bewaren in je bibliotheek.
+
+:::prompt KOPIEER DIT
+Hieronder staat mijn ingesproken nabespreking. Doe achter elkaar:
+1. Haal eruit wat er concreet moet gebeuren, met wie het doet.
+2. Schrijf [het verslag / de samenvatting] voor [doelpubliek],
+   in mijn gebruikelijke stijl.
+3. Schrijf het korte bericht met de praktische punten voor
+   [tweede doelpubliek].
+Zet elk onderdeel onder een eigen kopje.
+
+Transcript: [plak hier je ingesproken tekst]
+:::
+
+## Woordenlijst
+
+- **Dicteren** — Je stem gebruiken als toetsenbord: jij spreekt, er verschijnt tekst in het vak waar je anders zou typen.
+- **Gespreksmodus** — De stand waarin je met je AI praat en hij hoorbaar terugpraat: een echt heen-en-weer. Ook wel *voice mode* genoemd.
+- **Spraakmemo** — Een korte geluidsopname voor jezelf, om een idee te vangen en later te verwerken.
+- **Transcript** — De uitgeschreven tekst van iets wat gesproken werd. De grondstof waarmee je AI verder werkt.
+- **Opkuisen** — Ruwe spraaktekst omzetten in vlotte, leesbare tekst: aarzelingen eruit, leestekens erin, betekenis ongemoeid.
+
+:::recap
+- Spreken is drie tot vier keer sneller dan typen — en het is de flessenhals tussen jouw hoofd en je AI.
+- Dicteer waar je anders tikt; praat zoals je praat, het opkuisen is niet jouw werk. Wel altijd even nalezen.
+- Ingesproken braindumps zijn rijker, en rijkere grondstof maakt al je AI-werk beter.
+- Denken en oefenen doe je in de gespreksmodus; afwerken doe je op het scherm.
+- Vang ideeën met een spraakmemo en laat je bestaande opzet ze verwerken — je stem is de voordeur.
+- Dezelfde regels als altijd: geen gevoelige gegevens, toestemming bij opnames, en jij controleert.
+:::
+
+Je hebt deze module beet wanneer je merkt dat je hand vanzelf naar de microfoonknop gaat in plaats van naar de letters. Vanaf dan is de vraag niet meer óf je je stem gebruikt — maar hoe je het ooit zonder deed.

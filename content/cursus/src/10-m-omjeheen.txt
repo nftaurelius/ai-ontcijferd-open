@@ -1,0 +1,231 @@
+---
+id: m-omjeheen
+file: 06-Module-AI-om-je-heen
+kicker: AI-CURSUS · MODULE
+title: AI om je heen
+subtitle: Wat je tegenkomt zonder erom te vragen
+tagline: Een foto die niet echt is, een chatbot aan de telefoon, een stem die als je kind klinkt. Ook wie AI zelf nooit gebruikt, krijgt er elke dag mee te maken. Deze module leert je herkennen, wegen en rustig blijven.
+foot: Module · veronderstelt niets · ook vóór Deel 1
+version: Versie 1.0 · oktober 2026
+runhead: Module — AI om je heen
+anchor: eye
+toc: WAT JE GAAT DOEN
+toctitle: AI om je heen
+tocline: Echt van nep onderscheiden, chatbots, stemmen en oplichting, kinderen en AI.
+---
+De rest van de cursus gaat over AI gebruiken: jij vraagt, de AI helpt. Deze module draait het om. Ze gaat over de AI die jóú opzoekt — in je berichten, je zoekresultaten, aan de telefoon, in de apps van je kinderen. Of je nu zelf een AI-assistent gebruikt of niet, die AI is er al.
+
+Dat hoeft niemand bang te maken. Het vraagt wel een paar nieuwe reflexen, zoals we ooit leerden dat niet elke mail van “de bank” van de bank komt. Je leert hier hoe je een beeld of bericht weegt, wat je van een chatbot mag verwachten, hoe je je beschermt tegen gekloonde stemmen, en hoe je er met kinderen over praat.
+
+:::refbox
+Dit is de enige module die niets veronderstelt. Je hoeft geen AI-account te hebben en geen enkel ander deel gelezen te hebben. Wil je daarna toch zelf beginnen? Deel 1 — Aan de slag met AI wacht op je.
+:::
+
+# Het beeld dat niet echt was | AI zit al overal om je heen — ook als je hem nooit opende.
+
+Rita is achtenzestig en zit in drie familiegroepen op haar telefoon. Op een zondagavond kreeg ze een foto doorgestuurd: de kerktoren van haar dorp, half ingestort na een storm, met brandweer ervoor. “Verschrikkelijk!!” schreef haar schoonzus erbij. Rita stuurde hem meteen door naar haar kinderen en twee vriendinnen.
+
+De volgende ochtend fietste ze langs de kerk. De toren stond er, zoals altijd. Er was geen storm geweest. De foto was gemaakt met AI — door iemand, ergens, om redenen die niemand kende. Rita voelde zich vooral beschaamd. “Ik had het moeten zien,” zei ze. “Het zag er zo echt uit.”
+
+Ze had het niet kúnnen zien. Dat is precies het punt van deze module. Gemaakte beelden zijn vandaag vaak niet meer van echte te onderscheiden, ook niet door kenners. Wat Rita wél had kunnen doen, is iets anders: even wachten, en één vraag stellen. Daarover gaat het volgende hoofdstuk.
+
+> Je hoeft niet te kunnen zien dat iets nep is. Je moet leren vragen waar het vandaan komt.
+
+## Waar je AI tegenkomt
+
+Het helpt om te weten waar AI je pad kruist, want dan herken je het sneller. Vier plekken komen telkens terug:
+
+:::fig cards num | Vier plekken waar je AI tegenkomt zonder erom te vragen.
+Wat je ziet | Beeld en video | Foto's en filmpjes die gemaakt zijn, niet gefilmd. In berichten, op sociale media, in reclame.
+Wat je hoort | Stemmen | Telefoontjes en spraakberichten met een nagemaakte stem — soms van iemand die je kent.
+Wat je leest | Teksten en antwoorden | Samenvattingen bovenaan zoekresultaten, artikels en reviews die door AI geschreven zijn.
+Met wie je praat | Chatbots | De klantendienst van je energieleverancier, de hulp in een app, de “assistent” op een website.
+:::
+
+Niet alles hiervan is slecht. Een chatbot die om middernacht je vraag over een factuur beantwoordt, is gewoon handig. Een AI-samenvatting kan je tijd besparen. Het probleem is nooit dat AI er is, maar dat je niet altijd weet dát hij er is — en dus niet weet hoeveel vertrouwen iets verdient.
+
+:::note Onthoud
+Deze module maakt je niet wantrouwig tegenover alles. Ze geeft je een paar vaste reflexen, zodat je rustig kunt blijven: bij twijfel even wachten, even checken, en pas dan doorsturen, antwoorden of betalen.
+:::
+
+# Echt of nep: herkennen en wegen | Kijken werkt niet meer. Wegen wel — met vier vragen en één gewoonte.
+
+Een paar jaar geleden kon je gemaakte beelden nog herkennen aan rare handen met zes vingers, of tekst die nergens op leek. Die tijd is voorbij. De beste tools maken vandaag beelden, video's en stemmen waar je met het blote oog niets meer aan ziet. Wie je nog een lijstje “verraderlijke details” aanbiedt, geeft je vooral vals vertrouwen.
+
+> Echt van nep onderscheiden is geen kwestie van scherp kijken meer, maar van goed wegen.
+
+## Vier vragen bij elk beeld of bericht dat je raakt
+
+Je hoeft dit niet bij elk kattenfilmpje te doen. Wel bij alles wat je boos, bang of verontwaardigd maakt — want dat is precies het gevoel waarop nepinhoud mikt — en bij alles wat je wil doorsturen.
+
+1. **Waar komt het vandaan?** Wie maakte of plaatste het eerst? Een bekende nieuwsbron, een officiële instantie, of een anoniem account?
+2. **Wie zegt het nog?** Als er echt een kerktoren instort, staat het binnen het uur op de website van een krant of de gemeente. Vind je het nergens anders, dan is dat een signaal.
+3. **Wie heeft er belang bij?** Wil iemand dat je klikt, koopt, geeft, boos wordt? Hoe sterker het gevoel, hoe meer reden om even te wachten.
+4. **Klopt het met wat je weet?** Rita wist dat er die dag geen storm was. Je eigen kennis is een betere detector dan je ogen.
+
+## De gewoonte: zoek het beeld terug
+
+Er is één handige truc die echt werkt: **terugzoeken met een afbeelding**. Je geeft de foto (of een schermafbeelding ervan) aan een zoekmachine, en die toont waar hetzelfde beeld al eerder opdook. Een “nieuwe” foto die al drie jaar rondgaat, of een beeld dat enkel op vreemde websites staat, ontmasker je zo in een halve minuut. Hoe dat op jouw telefoon werkt, staat in de Levende Toolgids.
+
+:::vs METEEN DOORSTUREN | EVEN WEGEN
+Het beeld raakt je, je stuurt het door naar vijf groepen. Als het nep blijkt, heb je het zelf mee verspreid — en wie het van jou kreeg, gelooft het omdat het van jou komt.
+---
+Je wacht een minuut. Je zoekt het beeld terug en kijkt of een nieuwsbron het meldt. Niets te vinden? Dan stuur je het niet door — of je stuurt het door met de vraag “weet iemand of dit klopt?”.
+:::
+
+## En de labels?
+
+Sinds augustus 2026 verplicht de Europese AI Act wie beeld, geluid of video met AI maakt en verspreidt, dat te vermelden wanneer het een echte persoon, plek of gebeurtenis lijkt te tonen. Veel platformen zetten er ook automatisch een label bij, zoals “gemaakt met AI”. Dat helpt. Maar weet twee dingen: wie je wil bedriegen, houdt zich niet aan de regels, en een label valt makkelijk weg bij een schermafbeelding.
+
+> Een label “gemaakt met AI” is een nuttige hint. Het ontbreken van een label is geen bewijs dat iets echt is.
+
+:::deeper Waarom nepinhoud werkt, ook bij slimme mensen
+Nepbeelden en -berichten worden zelden gemaakt om je te overtuigen met argumenten. Ze mikken op een snel gevoel: schrik, woede, medelijden, of de wens om als eerste iets te melden. In die toestand denkt niemand na — en dat weten de makers.
+
+Daarom is “even wachten” zo'n sterke gewoonte. Het gevoel zakt binnen een minuut, het nadenken komt terug. Wie die minuut neemt, trapt er veel minder vaak in, hoe overtuigend het beeld ook is.
+:::
+
+:::donow Doe dit nu — weeg één bericht
+Zoek in je berichten of op sociale media een recent beeld of bericht dat veel reacties kreeg. Stel de vier vragen: waar komt het vandaan, wie zegt het nog, wie heeft er belang bij, klopt het met wat je weet?
+
+Probeer het beeld daarna terug te zoeken. Wat vind je? Of het nu echt blijkt of niet: je hebt net de gewoonte geoefend die Rita die zondag had willen hebben.
+:::
+
+# Chatbots die je niet koos | Klantendiensten, zoeksamenvattingen en hulp in apps: wat je eraan hebt, en wanneer je naar een mens vraagt.
+
+Je belt je internetprovider en een vriendelijke stem vraagt wat je probleem is. Je typt een vraag in de zoekbalk en bovenaan verschijnt een keurige samenvatting. Je opent de app van je bank en er springt een “assistent” tevoorschijn. In al die gevallen praat je met AI — vaak zonder dat het groot aangekondigd wordt.
+
+## Je hebt het recht om het te weten
+
+De Europese AI Act zegt sinds augustus 2026 dat je moet weten wanneer je met een AI-systeem praat, tenzij dat al duidelijk is uit de situatie. Twijfel je? Vraag het gewoon: “Praat ik met een mens of met een computer?” Een eerlijke dienst antwoordt daar eerlijk op.
+
+## Waar een chatbot goed in is, en waar niet
+
+:::vs DAAR IS HIJ HANDIG VOOR | DAAR VRAAG JE EEN MENS
+Algemene vragen, openingsuren, waar je een formulier vindt, de stand van een levering, een eenvoudige uitleg over je factuur. Snel, en ook 's nachts.
+---
+Een klacht, een fout op je rekening, een uitzondering op de regels, iets wat je echt raakt — en alles waarvoor je een belofte of beslissing nodig hebt.
+:::
+
+Een chatbot kan zich vergissen, net als elke AI. Hij kan met veel zelfvertrouwen een regel uitleggen die niet bestaat, of een korting beloven die er niet is. Wat hij zegt, heeft niet altijd de waarde van wat een medewerker je zou bevestigen. Gaat het ergens om, vraag dan naar een medewerker — de meeste diensten bieden die mogelijkheid, al moet je er soms twee keer om vragen — of vraag om de bevestiging per mail.
+
+## Samenvattingen bovenaan je zoekresultaten
+
+Veel zoekmachines zetten bovenaan een antwoord dat door AI geschreven is. Handig voor een snelle vraag. Maar het is een samenvatting van wat de AI vond, geen gecontroleerd feit. Zeker voor geld, gezondheid, recht en alles waar je een beslissing op bouwt: klik door naar de bron eronder, en kijk of die echt zegt wat de samenvatting beweert.
+
+> Een AI-samenvatting is een wegwijzer, geen eindbestemming. Klik door wanneer het telt.
+
+:::warn Let op
+Geef een chatbot nooit wachtwoorden, codes uit je bankapp of volledige kaartnummers, ook niet als hij erom vraagt. Een echte dienst heeft die niet nodig in een gesprek. En deel geen gevoelige informatie over je gezondheid of je familie, tenzij je zeker weet bij wie je zit.
+:::
+
+:::donow Doe dit nu — vraag het gewoon
+Kom je deze week een chatbot tegen — op een website, in een app, aan de telefoon? Vraag eens: “Ben je een mens of een computer?” En daarna: “Hoe kan ik een medewerker spreken?”
+
+Merk hoe je met die twee vragen meteen weet waar je staat. Je kunt de chatbot dan gerust gebruiken voor wat hij goed doet, en de rest bij een mens leggen.
+:::
+
+# Stemmen en oplichting | Een paar seconden opname kan volstaan om een stem na te maken. Eén familieafspraak beschermt je.
+
+Marc kreeg op een woensdagmiddag een spraakbericht van zijn dochter. Ze huilde. Ze had een ongeluk gehad met een geleende auto, ze zat vast, en ze had dringend geld nodig voor de garage, “nu meteen, papa, ik leg het later uit”. Het nummer kende hij niet — “mijn telefoon is kapot, dit is van een vriendin”. De stem was die van zijn dochter. Haar intonatie, haar manier van “papa” zeggen.
+
+Marc deed het enige juiste: hij hing niet op om te betalen, maar om haar zelf te bellen, op haar gewone nummer. Ze nam op, vanop haar werk. Er was geen ongeluk. Iemand had haar stem nagemaakt, waarschijnlijk met een paar seconden uit een filmpje dat ze ooit online zette.
+
+> Een stem bewijst niet meer wie er spreekt. Terugbellen op een nummer dat je al kent, wel.
+
+## Hoe die oplichting werkt
+
+Het patroon is bijna altijd hetzelfde: een bekend gezicht of een bekende stem, een plotse nood, haast, en een vraag om geld of codes. Soms klinkt het als je kind of kleinkind, soms als je bank, soms als de politie. Wat ze gemeen hebben: je mag geen tijd krijgen om na te denken, en je mag het niet aan iemand anders vragen.
+
+:::fig flow tone=nnrr | Het vaste patroon van oplichting met een nagemaakte stem. Zie je de laatste twee samen? Stop.
+Een bekende stem | of een bekend nummer
+Een plotse nood | ongeluk, boete, geblokkeerde rekening
+Haast | nu, meteen, vertel het niemand
+Geld of codes | overschrijving, kaartnummer, app-code
+:::
+
+## Drie afspraken die je beschermen
+
+**Een familiewoord.** Spreek met je naasten één woord of vraag af die enkel jullie kennen — niet je geboortedatum, niet de naam van de hond die op sociale media staat. Belt “je zoon” in nood, vraag dan naar het woord. Een oplichter kent het niet.
+
+**Altijd terugbellen.** Hang op en bel zelf, op het nummer dat je al hebt. Niet op het nummer dat je net gebeld heeft, niet op een nummer uit het bericht. Echte nood overleeft vijf minuten.
+
+**Nooit betalen op basis van één bericht.** Geen overschrijving, geen kaartnummer, geen code uit je bankapp, omdat iemand erom vraagt in één telefoon of bericht — hoe echt de stem ook klinkt. Een bank vraagt nooit je codes, en de politie vraagt nooit om geld over te schrijven.
+
+:::note Toch iets verdachts gekregen?
+In België kun je verdachte mails doorsturen naar **verdacht@safeonweb.be** (een verdacht sms-bericht stuur je als schermafbeelding); op safeonweb.be vind je wat je verder kunt doen. Heb je toch je kaartgegevens gegeven, blokkeer je kaart dan meteen via **Card Stop: 078 170 170**, en verwittig je bank. Schaam je niet: deze oplichting is gemaakt om slimme mensen te bedriegen.
+:::
+
+:::donow Doe dit nu — maak de afspraak
+Spreek deze week met je naaste familie een familiewoord af. Vertel erbij waarom: stemmen kunnen nagemaakt worden. Het gesprek duurt vijf minuten, en het is de goedkoopste verzekering die je ooit afsluit.
+:::
+
+# Kinderen, jongeren en AI | Huiswerk, AI-vrienden en foto's: praten werkt beter dan verbieden.
+
+Voor veel kinderen en jongeren is AI gewoon een van de dingen op hun telefoon. Ze gebruiken het voor huiswerk, om te kletsen, om filmpjes te bewerken. Een verbod werkt zelden — wat wel werkt, is dat ze weten wat ze gebruiken, en dat ze bij jou terechtkunnen.
+
+## Huiswerk: hulp of overname?
+
+AI kan een geduldige bijlesgever zijn die nooit zucht. Maar dezelfde tool kan ook gewoon het huiswerk maken, en dan leert je kind niets. Het verschil zit in de vraag:
+
+:::vs DE VRAAG DIE HET LEREN WEGNEEMT | DE VRAAG DIE LEREN OPLEVERT
+“Los deze oefening op.” Huiswerk af, hoofd leeg. Op de toets staat er niemand naast.
+---
+“Ik zit vast bij stap twee. Geef me een hint, geen oplossing — en geef me daarna een gelijkaardige oefening.”
+:::
+
+Een eenvoudige afspraak helpt: de AI mag uitleggen en overhoren, niet invullen wat beoordeeld wordt. En wat je kind met AI deed, moet het in eigen woorden kunnen navertellen. Wie het kan navertellen, heeft geleerd. De module *Leren met AI* werkt dit verder uit.
+
+## AI-vrienden en gezelschapsapps
+
+Er bestaan apps waarin een AI zich voordoet als vriend, vriendin of partner: altijd beschikbaar, altijd begripvol, altijd mee eens. Voor een eenzame tiener kan dat aanvoelen als een redding. Het risico is dat het echte vriendschappen gaat vervangen in plaats van aanvullen, en dat zo'n app vooral ontworpen is om je zo lang mogelijk te laten praten.
+
+Je hoeft geen expert te zijn om erover te praten. Drie vragen openen het gesprek:
+
+- “Met welke apps of chatbots praat jij weleens? Mag ik eens meekijken?”
+- “Wat vind je er fijn aan — en is er iets wat je raar vond?”
+- “Weet je dat die app geld verdient als je lang blijft praten?”
+
+## Foto's van kinderen
+
+Een foto van je kind kan vandaag door anderen met AI bewerkt worden, ook op manieren die je niet wil. Europa verbiedt vanaf december 2026 apps die mensen met AI ongevraagd ontkleden, maar wie kwaad wil, houdt zich niet aan verboden. De beste bescherming blijft dezelfde als altijd: wees zuinig met herkenbare foto's van kinderen op openbare plekken, en zet profielen zo dat enkel bekenden ze zien.
+
+:::warn Let op
+Als je kind iets akeligs tegenkwam of meemaakte online — een bewerkte foto, een bedreiging, een vreemde die aandringt — reageer dan eerst met rust en steun, niet met straf. Een kind dat bang is voor straf, vertelt het de volgende keer niet. Bewaar schermafbeeldingen en meld het bij het platform; bij strafbare feiten bij de politie.
+:::
+
+:::donow Doe dit nu — één gesprek
+Vraag deze week aan een kind of jongere in je omgeving: “Gebruik jij AI? Laat eens zien waarvoor.” Luister vooral. Je leert er meer van dan van eender welke handleiding — en je kind weet voortaan dat het er met jou over kan praten.
+:::
+
+# Wat hierna komt, en je gereedschap | De reflexen op een rij, de woorden die je nodig hebt, en de brug naar zelf beginnen.
+
+Rita kijkt nog altijd naar foto's in de familiegroep. Ze schrikt nog altijd. Maar ze stuurt niets meer door voor ze één ding gedaan heeft: even wachten, en kijken of het ergens anders te vinden is. Marc heeft met zijn kinderen een familiewoord afgesproken. Het is maar een woord. Maar het maakt een nagemaakte stem machteloos.
+
+Dat is deze hele module. Je hoeft AI niet te begrijpen om er niet in te trappen. Je hebt een paar vaste reflexen nodig, en die heb je nu.
+
+:::recap DE REFLEXEN OP EEN RIJ
+- **Wacht een minuut** bij alles wat je boos, bang of verontwaardigd maakt.
+- **Vraag waar het vandaan komt**, en zoek een beeld terug voor je het doorstuurt.
+- **Een label is een hint, geen bewijs** — ontbreekt het, dan zegt dat niets.
+- **Vraag of je met een mens praat**, en vraag naar een medewerker wanneer het ergens om gaat.
+- **Klik door naar de bron** onder een AI-samenvatting wanneer het telt.
+- **Bel zelf terug** op een nummer dat je al kent, en spreek een familiewoord af.
+- **Betaal nooit op basis van één bericht**, en geef nooit codes.
+- **Praat met kinderen**, en reageer met rust wanneer ze iets vertellen.
+:::
+
+## En als je nu toch zelf wil beginnen?
+
+Misschien heeft deze module je nieuwsgierig gemaakt. Wie weet hoe AI werkt, kan er ook beter mee omgaan — en het kan je echt werk besparen: een moeilijke brief helder laten uitleggen, een lastige mail laten opstellen, iets laten vertalen. **Deel 1 — Aan de slag met AI** neemt je in één namiddag mee, zonder voorkennis. Alles wat je hier leerde over controleren, past daar naadloos bij.
+
+## Woordenlijst
+
+- **Gemaakt beeld (deepfake)** — Een foto, video of stem die met AI gemaakt is, maar eruitziet of klinkt alsof ze echt is.
+- **Terugzoeken met een afbeelding** — Een beeld aan een zoekmachine geven om te zien waar het eerder opdook.
+- **Label “gemaakt met AI”** — Een vermelding dat inhoud met AI gemaakt is. In Europa verplicht bij beeld van echte personen, plekken of gebeurtenissen.
+- **Chatbot** — Een computerprogramma dat met je praat of chat, vaak gebruikt door klantendiensten.
+- **AI-samenvatting** — Een antwoord dat een zoekmachine met AI schrijft, bovenaan de zoekresultaten.
+- **Stemklonen** — Een stem nabootsen met AI op basis van een korte opname.
+- **Familiewoord** — Een afgesproken woord of vraag waarmee je naasten elkaar herkennen bij een verdacht telefoontje.
+- **AI-gezelschapsapp** — Een app waarin een AI zich voordoet als vriend of partner.

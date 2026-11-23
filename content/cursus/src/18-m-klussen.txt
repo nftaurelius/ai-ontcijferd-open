@@ -1,0 +1,332 @@
+---
+id: m-klussen
+file: 14-Module-Klussen-en-vakwerk
+kicker: AI-CURSUS · MODULE
+title: Klussen & vakwerk
+subtitle: Van foto tot materiaallijst
+tagline: Een verwilderde tuin, een lekkende kraan, een zolder die kast moet worden. Je leert je AI meekijken naar je échte situatie, samen een plan maken met materiaallijst en stappen — en scherp zien waar het werk van een vakman begint.
+foot: Module · veronderstelt Deel 1–2 · geen volgorde
+version: Versie 2.0 · oktober 2026
+runhead: Module — Klussen & vakwerk
+anchor: grid
+toc: WAT JE GAAT DOEN
+toctitle: Klussen & vakwerk
+tocline: Van foto tot materiaallijst en stappenplan — met een duidelijke grens.
+---
+Deze module is de enige die je scherm verlaat. Alle andere gaan over woorden, cijfers en beelden; deze gaat over hout, water, aarde en steen — over het werk dat je in je handen voelt. En juist daar zit een groot gat dat AI vult: niet het werk zelf, maar alles eromheen. Wat is dit voor onderdeel? Hoeveel heb ik nodig? In welke volgorde? Waar loopt het meestal mis?
+
+Je leert je situatie tonen met foto's, samen een ontwerp maken, een materiaallijst en een stappenplan krijgen dat klopt, en jezelf laten begeleiden terwijl je bezig bent. En je leert de grens kennen: er is werk waar het eerlijke antwoord altijd “bel een erkend vakman” is, en die grens staat in deze module vooraan in plaats van in de kleine lettertjes.
+
+:::refbox
+Dit is een module: een losstaand deel dat je breder maakt, geen trede van de ladder. Ze veronderstelt Deel 1 en 2. Welke tool vandaag het best foto's beoordeelt of een ontwerp visualiseert, staat in de Levende Toolgids.
+:::
+
+# Een tuin die niemand aandurfde | Wat AI wél en niet voor je doet bij handwerk — en waarom dat meer scheelt dan je denkt.
+
+Wim kocht het huis van zijn overleden oom. Binnen viel mee. De tuin niet: driehonderd vierkante meter die vier jaar niemand had aangeraakt. Braamstruiken tot borsthoogte, een terras waar mos de tegels uit elkaar duwde, en ergens onder het onkruid — dat vermoedde hij — een pad. Elke keer dat hij er ging staan, draaide hij zich na twee minuten weer om. Niet omdat het werk hem te zwaar was; Wim is niet vies van werken. Maar omdat hij niet wist wáár te beginnen.
+
+Dat is het echte probleem bij klussen, en het heeft weinig met handigheid te maken. Het werk zelf kun je meestal wel. Het is alles eromheen dat je tegenhoudt: welke aanpak, in welke volgorde, hoeveel materiaal, welk type schroef, en die ene vraag waar je niemand mee durft lastig te vallen. Daar sneuvelen de meeste plannen — niet aan het zweet, maar aan het niet-weten.
+
+> Wat je tegenhoudt is zelden het werk. Het is niet weten waar te beginnen, en in welke volgorde.
+
+Wim deed uiteindelijk iets simpels: hij trok vier foto's van de tuin, gaf de afmetingen, en beschreef wat hij wilde — makkelijk te onderhouden, plek voor een tafel, iets van groen dat het hele jaar iets doet. Twintig minuten later had hij een ontwerp in woorden, een volgorde van werken over drie weekends, en een materiaallijst waarmee hij naar de bouwmarkt kon. Die zaterdag begon hij. Aan de braamstruiken, want die stonden bovenaan.
+
+Wat hier gebeurde, is een keten die je bij élke klus kunt gebruiken — een tuin, een badkamer, een zolder, een kast:
+
+:::fig flow num hl=4 foot="controlepunt vóór je koopt: mag en kan ik dit zelf doen?" | De klusketen: toon je situatie, laat vaststellen wat het is, bepaal samen wat het wordt, en werk dat uit tot materiaal en stappen. Met één controlepunt dat je nooit overslaat.
+Je situatie | foto's en maten
+Wat is het? | onderdelen, oorzaak
+Wat wordt het? | ontwerp en keuzes
+Wat heb je nodig? | materiaal en plan
+Aan de slag | stap voor stap
+:::
+
+Let op dat controlepunt. Voor je materiaal koopt, stel je één vraag: mag en kan ik dit zelf doen? Bij een tuin is het antwoord bijna altijd ja. Bij een gasleiding is het altijd nee. Daartussen zit een grijze zone waar het erop aankomt — en daarom is dat meteen het volgende hoofdstuk.
+
+## Waar dit overal past
+
+Denk breed: een tuin aanleggen of onderhouden, schilderen en behangen, een kast of werkblad op maat maken, tegels en vloeren, een kraan of douchekop vervangen, een afvoer ontstoppen, isoleren, een schutting zetten, meubels herstellen. Maar even goed het kleine werk waar je nooit aan begint omdat je twijfelt: welke plug in deze muur, welk soort verf op dit hout, waarom druppelt die kraan.
+
+En het werkt in twee richtingen. Ga je zelf aan de slag, dan helpt het je van start. Laat je het uitvoeren, dan helpt het je een offerte begrijpen, de juiste vragen stellen aan de aannemer, en zien of een prijs redelijk is. Ook dat is deze module.
+
+:::note Wat AI hier níét is
+Hij staat niet naast je met een waterpas, hij voelt niet of die muur hol klinkt, en hij ziet niet wat jij vanuit je ooghoek opmerkt. Hij is de belezen kennis die je opbelt: prima in uitleggen, plannen en berekenen — maar jij bent degene die er staat, en jij beslist.
+:::
+
+# Eerst dit: waar jouw werk stopt | Drie zones, en één regel die je altijd volgt. Dit hoofdstuk staat bewust vooraan.
+
+Een AI zal je vrijwel alles uitleggen wat je vraagt, ook dingen die je beter niet zelf doet. Hij weet niet dat jij op een wankele ladder staat, dat je huis van 1962 nog oude bedrading heeft, of welke regels er in jouw land gelden over wie aan gas mag komen. Die grens bewaak jij — en daarom bepaal je ze vóórdat je begint, niet halverwege.
+
+:::fig cards tone=gor | Drie zones. Groen doe je gerust zelf, oranje kan mits je weet wat je doet en de regels volgt, rood laat je altijd door een erkend vakman uitvoeren.
+GROEN | Zelf doen | schilderen, behangen; tuinaanleg en beplanting; meubels, rekken, ophangen; een kraan of douchekop; tegels en vloeren | gewoon doen, met zorg
+ORANJE | Kan zelf, met kennis | afvoeren en sanitair aansluiten; een stopcontact bijplaatsen; dakgoot, buitenwerk op hoogte; isolatie en gipsplaten | regels volgen; keuring blijft verplicht
+ROOD | Altijd een vakman | alles met gas; de elektriciteitskast en de keuring; dragende muren en structuur; asbestverdacht materiaal; werken aan het dak | bel iemand
+:::
+
+## De rode zone, zonder omwegen
+
+**Gas.** Aansluiten, verplaatsen, wijzigen: altijd een erkend installateur. Geen uitzonderingen. Ruik je gas: kraan dicht, ramen open, geen schakelaars aanraken, naar buiten en bellen.
+
+**De elektrische installatie.** Aan de zekeringkast, de aarding of de hoofdleiding komt een vakman. En wat je ook zelf uitvoert aan elektriciteit: een gewijzigde installatie moet gekeurd worden, en bij verkoop of verhuur wordt daarnaar gevraagd. Werk je in een oude installatie zonder aarding? Dan is de vakman geen luxe maar de enige verstandige keuze.
+
+**Structuur.** Een muur wegnemen, een balk inkorten, een opening maken in een dragende wand: dat is rekenwerk van een ingenieur of architect, geen inschatting van een AI en ook niet van jou. Twijfel je of een muur dragend is? Behandel hem als dragend tot iemand ter plaatse het tegendeel vaststelt.
+
+**Asbest.** Golfplaten, oude leien, bepaalde vloerbekleding en isolatie uit de jaren zestig tot tachtig: niet boren, niet breken, niet schuren. Laat het onderzoeken en verwijderen door wie daarvoor is opgeleid.
+
+**Hoogte.** Het dak, de gevel, alles boven ladderhoogte. De meeste ernstige ongevallen bij werk in en rond het huis zijn valpartijen, en een dakgoot is geen leven waard.
+
+> Bij gas, de zekeringkast, dragende muren, asbest en het dak is het antwoord altijd hetzelfde: bel een vakman.
+
+## De regel die de grijze zone oplost
+
+Voor alles daartussen bestaat één vraag die verrassend goed werkt: **wat gebeurt er als ik dit fout doe?** Verf die niet mooi dekt, doe je over. Een tegel die scheef ligt, kap je uit. Maar een lekkende aansluiting achter een gemetselde wand, een kortsluiting in een kinderkamer — dat zijn fouten die je niet zomaar terugdraait. Hoe hoger de prijs van de fout, hoe eerder je iemand belt. En laat je AI meedenken over precies die vraag. Hij mag de zone voorstellen; jij beslist:
+
+:::prompt MAG IK DIT ZELF DOEN?
+Ik wil [de klus] doen in [situatie: type woning, bouwjaar,
+wat er nu ligt]. Mijn ervaring: [beginner / handig / veel
+gedaan].
+1. Valt dit onder werk dat een particulier in België zelf mag
+   en kan doen, of hoort het bij een erkend vakman? Wees
+   streng, niet behulpzaam.
+2. Welke regels, keuringen of vergunningen spelen hier?
+3. Wat kan er misgaan, en hoe erg is dat?
+4. Als het een grensgeval is: wat doe ik zelf en wat laat ik
+   doen?
+:::
+
+:::warn Let op — de AI kent jouw huis niet, en regels wijzigen
+Antwoorden over keuringen, normen en vergunningen zijn een vertrekpunt, geen vergunning. Controleer ze bij je gemeente, je netbeheerder of een erkend installateur — die weten wat er vandaag geldt. En vraag je AI expliciet naar de regels in België of Vlaanderen: standaard mengt hij er graag buitenlandse gewoontes door.
+:::
+
+:::donow Doe dit nu — bepaal de zone van je klus
+Neem de klus die je al even voor je uit schuift. Stel de vraag hierboven, met je échte situatie erin: bouwjaar, wat er nu ligt, jouw ervaring.
+
+Kijk vooral naar punt 4: het antwoord voor het grensgeval. Vaak blijkt dat je driekwart zelf kunt doen en enkel het aansluiten laat uitvoeren — dat scheelt geld én wachttijd, en het is de veilige weg.
+:::
+
+# Laat je AI meekijken | Een foto zegt meer dan drie alinea's uitleg — zeker als je de juiste woorden niet kent.
+
+Het grootste struikelblok bij klussen is taal. Je staat in de winkel en wil “dat ronde ding dat onder de wastafel zit”, of je zoekt online naar een onderdeel waarvan je de naam niet kent. Je kunt niet opzoeken wat je niet kunt benoemen — en precies dat lost een foto op.
+
+Wim had een lekkende mengkraan in de douche. Hij trok één foto en vroeg:
+
+:::sample WIMS VRAAG BIJ DE FOTO
+“Dit is de kraan in onze douche, hij lekt aan de onderkant en druppelt na na het dichtdraaien. Wat voor type is dit, hoe heet het onderdeel dat waarschijnlijk versleten is, en waar zoek ik daarop in de winkel?”
+:::
+
+:::sample WAT HIJ TERUGKREEG
+“Dit is een thermostatische mengkraan. Nadruppelen wijst meestal op een versleten binnenwerk of een verharde O-ring. Vraag in de winkel naar een binnenwerk of een O-ringset voor dit merk en type — neem de oude onderdelen mee ter vergelijking, want merken verschillen. En sluit eerst het water af aan de hoofdkraan, niet enkel aan de douche.”
+:::
+
+Voel je wat dat oplost? Wim had geen woord van dit alles kunnen opzoeken. Nu stapte hij de winkel binnen met een naam, een vraag en een vermoeden — en met een waarschuwing die hij zelf niet had bedacht.
+
+> Je kunt niet opzoeken wat je niet kunt benoemen. Een foto geeft je de woorden.
+
+## Zo maak je foto's waar iets uit te halen valt
+
+- **Van ver én van dichtbij.** Eén overzichtsfoto van de hele situatie, en één close-up van waar het om draait.
+- **Zet er maat bij.** Leg een duimstok, meetlint of gewoon een muntstuk in beeld — dan is er iets om aan af te meten.
+- **Fotografeer merk en typenummer.** Het plaatje op de ketel, het label onder het toestel. Daarmee wordt elk antwoord tien keer specifieker.
+- **Meerdere hoeken bij ruimtes.** Voor een tuin of kamer: vier foto's vanuit de hoeken zeggen meer dan tien willekeurige.
+- **Vertel wat je ruikt en hoort.** Een foto vangt geen borrelende leiding of brandgeur. Beschrijf het erbij.
+
+## Een diagnose blijft een vermoeden
+
+Hier past dezelfde nuchterheid als in de rest van de cursus: wat je krijgt is een goed onderbouwd vermoeden, geen vaststelling. Een AI ziet geen vocht achter een wand en hoort geen zoemende transformator. Vraag daarom altijd meerdere mogelijke oorzaken, gerangschikt van waarschijnlijk naar minder waarschijnlijk, plus hoe je elk ervan zelf kunt uitsluiten.
+
+:::prompt DIAGNOSE MET MEERDERE SPOREN
+Bij de foto's: [wat je ziet, hoort, ruikt, en sinds wanneer].
+Geef me drie mogelijke oorzaken, van meest naar minst
+waarschijnlijk. Zeg bij elke: hoe ik ze zelf kan controleren
+zonder iets te beschadigen, en wat het ongeveer kost om ze te
+verhelpen.
+:::
+
+:::note Ook handig: een handleiding die je niet snapt
+Fotografeer de bladzijde, of zoek de handleiding als bestand op en geef ze mee. Vraag dan wat je echt wil weten: “welke stappen gelden voor mijn situatie?”, “wat betekent deze waarschuwing concreet?”, of “vertaal deze montagehandleiding naar gewone taal, in de juiste volgorde”. Vooral bij die vellen met tekeningetjes en zonder woorden scheelt dat veel giswerk.
+:::
+
+# Van idee naar plan | Het ontwerp, de materiaallijst, de volgorde en het budget — het papierwerk dat de klus doet slagen.
+
+Hier ligt de grootste tijdwinst van deze hele module. Niet in het graven of het schroeven, maar in het voorbereiden — precies het deel dat iedereen half doet en waar elke klus op strandt: drie keer terug naar de winkel, het verkeerde formaat, en dat ene stuk gereedschap dat je pas op zaterdagmiddag mist.
+
+## Eerst: wat wordt het?
+
+Bij een herstelling ligt het doel vast. Bij een verbouwing of een tuin niet, en dan begin je met ontwerpen. Geef je foto's, je maten, je wensen en vooral je beperkingen — budget, tijd, onderhoud, wie er woont. Vraag twee of drie verschillende richtingen in plaats van één plan; dan zie je pas wat je echt wil.
+
+:::prompt DRIE RICHTINGEN VOOR MIJN RUIMTE
+Bij deze foto's: een tuin van [afmetingen], oriëntatie [zuid /
+noord ...], grond [klei / zand / onbekend]. Bewoners: [wie,
+kinderen, huisdier]. Ik wil: [wensen]. Beperkingen: budget rond
+[bedrag], [hoeveel] onderhoud per maand, [wat blijft staan].
+Geef drie duidelijk verschillende ontwerprichtingen. Beschrijf
+per richting: de indeling in woorden, de sfeer, wat het kost in
+grote lijnen, en hoeveel onderhoud het vraagt. Zeg bij elke ook
+eerlijk wat het nadeel is.
+:::
+
+Uit die drie kies je, of je combineert — de indeling van A met de beplanting van B. Wil je het ook zíen, laat dan een sfeerbeeld maken op basis van de beschrijving (module *Beeld & video*). Onthoud wel: zo'n beeld is een impressie om je gevoel te toetsen, geen bouwtekening.
+
+## Dan: wat heb je nodig?
+
+? De materiaallijst is het hart van je voorbereiding — en het stuk dat je zelf nooit volledig krijgt.
+
+Vraag de lijst met hoeveelheden op basis van jouw maten, mét een marge voor snijverlies en breuk, en gesplitst in wat je koopt en wat je huurt. Zo zag Wims lijst voor het eerste weekend eruit:
+
+:::sample MATERIAALLIJST — TERRAS SCHOONMAKEN EN HERLEGGEN (12 m²)
+**Kopen:** voegzand, 4 zakken van 25 kg (12 m² × ca. 8 kg/m², plus marge) · onkruidwerend doek, 15 m² · 6 vervangtegels 40 × 40 (2 gebroken, 4 reserve) · stabilisatiezand, 3 zakken.
+
+**Huren of lenen:** trilplaat (halve dag) · hogedrukreiniger.
+
+**Al in huis, controleren:** rubberen hamer, waterpas van minstens 1 m, rijlat, handveger, kruiwagen, werkhandschoenen, oor- en oogbescherming.
+
+**Let op:** tegels van een oude reeks zijn zelden identiek van kleur — neem er één mee naar de winkel.
+:::
+
+Merk op wat die lijst allemaal doet: hoeveelheden berekend uit jouw oppervlakte, marge ingebouwd, huur apart van koop, en een controlelijst van wat je waarschijnlijk al hebt. Dat laatste voorkomt de klassieke zaterdagmiddag zonder rijlat. En reken de hoeveelheden even na: dezelfde controlereflex als bij elk cijfer.
+
+## En: in welke volgorde?
+
+De volgorde is bij handwerk geen detail maar het halve werk — wie de vloer legt voor hij de muur schildert, doet alles twee keer. Vraag een stappenplan met de logica erbij, en met een realistische tijdsinschatting voor iemand van jouw niveau. Vraag expliciet naar de **volgordevallen**: wat moet absoluut vóór iets anders, en wat moet drogen of uitharden voor je verder kunt.
+
+:::vs ZONDER PLAN | MET PLAN
+Je begint bij wat het meest opvalt, ontdekt halverwege dat er eerst iets anders moest, en rijdt drie keer naar de winkel. Het weekend is op, de tuin half.
+---
+Je weet wat er dit weekend af moet, alles ligt klaar, en je stopt op een punt waar het geen kwaad kan te stoppen. Volgende zaterdag pik je gewoon op.
+:::
+
+## De keuzevraag die je geld bespaart
+
+In elke materiaallijst zitten keuzes verstopt: welk type verf, welke dikte, welke kwaliteit. Daar zit vaak een groot prijsverschil in, en niet altijd een groot kwaliteitsverschil. Vraag het gewoon: “waar loont het om meer te betalen bij deze lijst, en waar volstaat het goedkoopste?” Het antwoord is meestal verrassend consequent: op wat je later niet meer kunt vervangen zonder alles open te breken, bespaar je niet — leidingen, isolatie, bevestigingen, de ondergrond. Op wat zichtbaar en vervangbaar is, mag het goedkopere.
+
+:::deeper Budget bijhouden (brug naar Data & spreadsheets)
+Loopt je project over meerdere weekends en winkelbezoeken, zet de kosten dan in een eenvoudige tabel: post, geraamd, werkelijk betaald. Na twee weekends zie je meteen waar de raming scheef zat — en bij een volgende klus raam je beter. De module *Data & spreadsheets* leert je zulke tabellen bevragen.
+:::
+
+:::donow Doe dit nu — maak je materiaallijst en volgorde
+Neem je klus, je maten en je zone-antwoord uit hoofdstuk 2. Vraag de materiaallijst met hoeveelheden en marge, gesplitst in kopen, huren en controleren-of-je-het-hebt.
+
+Vraag daarna het stappenplan met tijdsinschatting en de volgordevallen. Zet beide op je telefoon of print ze. Dít is wat je meeneemt naar de winkel — niet een lijstje in je hoofd.
+:::
+
+# Tijdens de klus | Een begeleider die altijd tijd heeft, en die weet wanneer je moet stoppen.
+
+Het plan staat. Nu sta je in de badkamer met een moersleutel, of in de tuin met een schop, en komt de vraag die geen stappenplan voorzag. Ook hier kan je AI meedoen — op voorwaarde dat je hem gebruikt als begeleider, niet als iemand die het van op afstand overneemt.
+
+## Laat je stap voor stap begeleiden
+
+Vraag de instructie niet in één keer maar per stap, en zeg erbij wat je voor je hebt. Doe het sprekend als je handen bezig zijn — de gespreksmodus uit de module *Voice & snelheid* is hier op zijn plaats: je praat, hij antwoordt, niemand zoekt met natte vingers op een telefoonscherm.
+
+:::prompt BEGELEID ME STAP VOOR STAP
+Ik ga nu [de klus] uitvoeren. Mijn gereedschap: [wat je hebt].
+Begeleid me stap voor stap: geef één stap per keer en wacht tot
+ik zeg dat ze klaar is. Zeg bij elke stap waar ik op moet
+letten en waar het meestal misgaat. Als ik zeg dat iets niet
+lukt, help me eerst uitzoeken waarom voor we verdergaan.
+Begin met wat ik moet doen vóór ik ook maar iets losdraai.
+:::
+
+Die laatste regel is geen toeval. “Wat moet ik doen vóór ik begin?” is de vraag die water op de vloer, een doorgeslagen zekering en een verloren schroefje voorkomt. Water afsluiten en de kraan opendraaien om de druk weg te nemen. De juiste zekering uitschakelen én controleren met een spanningstester. Een emmer eronder. Een doekje in de afvoer zodat er niets in verdwijnt.
+
+> De nuttigste vraag van elke klus is niet “hoe doe ik dit?” maar “wat doe ik vóór ik begin?”
+
+## Als het vastloopt
+
+Er komt een moment dat iets niet meegeeft, niet past of anders blijkt dan gedacht. Dat is normaal en zelden een ramp — mits je stopt met forceren. Trek een foto van wat je ziet en beschrijf het:
+
+:::sample WIM, HALVERWEGE
+**Wim:** “De moer onder de wastafel geeft niet mee, ook niet met de tang. Hij ziet er wit en korrelig uit. Ik durf niet harder te trekken.”
+
+**Antwoord:** “Goed dat je stopt — harder trekken breekt hier meestal de kunststof of de leiding zelf. Dat witte is kalkaanslag. Probeer in deze volgorde: 1. ontkalker of azijn erop, twintig minuten laten inwerken; 2. zachtjes heen en weer bewegen in plaats van doortrekken; 3. een waterpomptang met een doek ertussen, zodat de moer niet vervormt. Blijft hij vastzitten of hoor je kraken: stoppen en een loodgieter bellen. Een afgebroken afvoer achter de wand is een heel ander werk dan een vastzittende moer.”
+:::
+
+Voel je het verschil met blind doorduwen? Drie opties van zacht naar steviger, én een duidelijke stopgrens. Vraag daar altijd naar: **bij welk signaal moet ik stoppen?** Dat ene zinnetje maakt het verschil tussen een klusje van tien minuten en een schade van honderden euro's.
+
+## Achteraf: leg vast wat je leerde
+
+Klein maar waardevol: schrijf na afloop drie regels op. Wat was het type onderdeel, wat kostte het, en wat zou je volgende keer anders doen. Trek een foto van de installatie vóór je alles dichtmaakt — die ene foto van de leidingen achter de wand is over vijf jaar goud waard. Wie de module *Second brain* deed, weet waar dat hoort: bij je huisdossier, met de foto's erbij.
+
+:::warn Let op — wees eerlijk over wat je ziet
+De begeleiding is maar zo goed als jouw beschrijving. Zeg het wanneer iets anders is dan verwacht: een extra buis, een kleur die niet klopt, water dat blijft komen. En bij twijfel over gas, rook, brandgeur of een tintelend gevoel: niet verder vragen — afsluiten, naar buiten, en bellen.
+:::
+
+:::donow Doe dit nu — bereid je eerstvolgende klus voor
+Neem het stappenplan uit hoofdstuk 4. Vraag voor stap één: wat moet ik doen vóór ik begin, en bij welk signaal moet ik stoppen?
+
+Zet die twee antwoorden bovenaan je plan. Dat is de goedkoopste verzekering van je hele project — en het scheelt je de reflex om toch nog even harder te trekken.
+:::
+
+# Wat hierna komt, en je gereedschap | De aanpak op een rij, de helpers om te kopiëren, en de woorden die je nodig hebt.
+
+Wims tuin was na vier weekends geen tuin uit een tijdschrift, maar wel een tuin waar hij in zat. En het punt is niet dat AI het werk deed — hij heeft elke braam zelf uitgetrokken. Het punt is dat hij begón, omdat de berg was opgedeeld in weekends, met een lijstje per keer en het geruststellende gevoel dat hij niets vergat.
+
+Die twee dingen zijn wat deze module oplevert: je komt van start, omdat het niet-weten weg is, en je werkt voorbereid, omdat het papierwerk klopt. En je weet waar je stopt — bij gas, de kast, dragende muren, asbest en het dak belt iedereen een vakman, ook de handigste onder ons.
+
+:::note De vakman is geen nederlaag
+Een goed voorbereide klus maakt de vakman die je erbij haalt zelfs beter: je weet wat je wil, je kent de termen, en je hebt het voorwerk gedaan. Veel installateurs werken graag zo — jij doet het sloop- en afwerkwerk, zij doen de aansluiting. Dat is vaak de slimste én de goedkoopste combinatie.
+:::
+
+## Bijlagen: je gereedschap
+
+### 1. De zonecheck
+
+:::prompt KOPIEER DIT
+Ik wil [de klus] doen. Situatie: [type woning, bouwjaar, wat er
+nu ligt, wat ik al weet]. Mijn ervaring: [beginner / handig].
+1. Mag en kan een particulier in België dit zelf doen, of hoort
+   het bij een erkend vakman? Wees streng, niet behulpzaam.
+2. Welke regels, keuringen of vergunningen spelen hier, en bij
+   wie controleer ik dat?
+3. Wat kan er misgaan en hoe erg is dat?
+4. Bij twijfel: wat doe ik zelf, wat laat ik doen?
+:::
+
+### 2. Het klusplan
+
+:::prompt KOPIEER DIT
+Ik ga [de klus] uitvoeren. Maten: [afmetingen]. Situatie:
+[wat er nu is]. Ervaring: [niveau]. Tijd: [wanneer je kunt].
+Geef me:
+1. Een materiaallijst met hoeveelheden berekend uit mijn maten,
+   inclusief marge voor snijverlies — gesplitst in kopen,
+   huren, en controleren-of-ik-het-al-heb.
+2. Een stappenplan in de juiste volgorde, met per stap een
+   realistische tijdsinschatting voor mijn niveau.
+3. De volgordevallen: wat moet absoluut eerst, en wat moet
+   drogen of uitharden voor ik verder kan.
+4. Een logische opdeling als ik dit over meerdere dagen spreid.
+:::
+
+### 3. De werfbegeleider
+
+Terwijl je bezig bent. Werkt het best sprekend.
+
+:::prompt KOPIEER DIT
+Ik voer nu [de klus] uit. Gereedschap: [wat je hebt].
+Begeleid me stap voor stap: één stap per keer, wacht tot ik zeg
+dat ze klaar is. Begin met wat ik moet doen vóór ik iets
+losdraai (afsluiten, beveiligen, klaarzetten). Zeg bij elke
+stap waar het meestal misgaat, en bij welk signaal ik moet
+stoppen en een vakman bellen. Loopt iets vast, help me dan
+eerst uitzoeken waarom — stel me gerust vragen.
+:::
+
+## Woordenlijst
+
+- **De klusketen** — Situatie tonen, vaststellen wat het is, bepalen wat het wordt, materiaal en stappen, uitvoeren. Met het controlepunt ertussen.
+- **De drie zones** — Groen (zelf), oranje (zelf mits kennis en regels), rood (altijd een erkend vakman).
+- **Prijs van de fout** — De vraag die de grijze zone oplost: wat gebeurt er als ik dit fout doe, en kan ik dat terugdraaien?
+- **Volgordeval** — Een stap die absoluut vóór een andere moet, of die moet drogen of uitharden. De klassieke oorzaak van dubbel werk.
+- **Stopsignaal** — Het vooraf afgesproken teken dat je stopt en iemand belt: kraken, blijvend lekken, brandgeur, een moer die niet meegeeft.
+- **Marge** — De extra hoeveelheid materiaal voor snijverlies, breuk en vergissingen. Standaard bij elke berekening.
+
+:::recap
+- Wat je tegenhoudt is zelden het werk, maar het niet weten waar te beginnen — en dat is precies wat AI oplost.
+- Bepaal eerst je zone: bij gas, de zekeringkast, dragende muren, asbest en het dak bel je altijd een vakman.
+- Twijfelgeval? Vraag je af wat er gebeurt als je het fout doet, en hoe makkelijk dat terug te draaien is.
+- Toon je situatie met foto's — van ver en dichtbij, met iets voor de maat en het typeplaatje erbij.
+- Laat een materiaallijst met marge en een stappenplan met volgordevallen maken. Daar zit de tijdwinst.
+- Tijdens de klus: vraag wat je vóór het begin moet doen, en bij welk signaal je stopt.
+:::
+
+Je hebt deze module beet wanneer een klus die je maanden voor je uit schoof, verandert in een lijstje voor zaterdag. En wanneer je even makkelijk zegt “dit doe ik zelf” als “hier bel ik iemand voor” — want dat tweede is geen zwakte, dat is vakmanschap herkennen.

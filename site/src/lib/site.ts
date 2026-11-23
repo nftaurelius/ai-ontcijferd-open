@@ -35,7 +35,7 @@ export const INGANGEN: Record<string, { titel: string; vraag: string; lead: stri
       { href: "/begin-hier", tekst: "Begin hier", uitleg: "Nieuw in AI? In tien minuten wat je moet weten, en waar je verder kunt." },
       { href: "/ai-act", tekst: "AI Act-kompas", uitleg: "Wat de Europese AI-wet betekent voor jou, en wat wanneer geldt." },
       { href: "/jargon", tekst: "Jargonfilter", uitleg: "AI-termen in gewoon Nederlands." },
-      { href: "/materiaal#h-komend", tekst: "AI-cursus", uitleg: "Een volledige cursus AI-geletterdheid, in niveaus. In voorbereiding." },
+      { href: "/cursus", tekst: "AI-cursus", uitleg: "Leren werken met AI door het te doen: vier delen, tien modules, online of als PDF." },
     ],
   },
   doen: {

@@ -1,0 +1,136 @@
+/* AI-cursus — PDF in de huisstijl van AI Ontcijferd (1.0, 23/11/2026).
+   Literata voor tekst en koppen, Atkinson Hyperlegible Next voor labels, data en tabellen.
+   Geel alleen als blokje (nummer) en als één markering. Alles hoekig. */
+@font-face { font-family:"Literata"; src:url("fonts/literata-latin-400-normal.woff2"); font-weight:400; font-style:normal; }
+@font-face { font-family:"Literata"; src:url("fonts/literata-latin-ext-400-normal.woff2"); font-weight:400; font-style:normal; }
+@font-face { font-family:"Literata"; src:url("fonts/literata-latin-400-italic.woff2"); font-weight:400; font-style:italic; }
+@font-face { font-family:"Literata"; src:url("fonts/literata-latin-600-normal.woff2"); font-weight:600; font-style:normal; }
+@font-face { font-family:"Literata"; src:url("fonts/literata-latin-700-normal.woff2"); font-weight:700; font-style:normal; }
+@font-face { font-family:"Literata"; src:url("fonts/literata-latin-ext-700-normal.woff2"); font-weight:700; font-style:normal; }
+@font-face { font-family:"Atkinson"; src:url("fonts/atkinson-hyperlegible-next-latin-400-normal.woff2"); font-weight:400; }
+@font-face { font-family:"Atkinson"; src:url("fonts/atkinson-hyperlegible-next-latin-700-normal.woff2"); font-weight:700; }
+@font-face { font-family:"DejaVu Sans Mono"; src:url("file:///usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"); font-weight:400; }
+@font-face { font-family:"DejaVu Sans Mono"; src:url("file:///usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf"); font-weight:700; }
+
+:root{
+  --inkt:#20262b; --papier:#f2f3ef; --vlak:#e8eae4; --lijn:#cfd3cc; --grijs:#5c6368; --geel:#ffd400;
+  --markeer:rgba(255,212,0,.55);
+}
+
+@page{
+  size:A4; margin:24mm 40mm 22mm 24mm;
+  @bottom-left{ content:"AI Ontcijferd · aiontcijferd.be · CC BY 4.0 · __VERSIE__"; font-family:"Atkinson"; font-size:8.5pt; color:var(--grijs); }
+  @bottom-right{ content:counter(page); font-family:"Atkinson"; font-size:9pt; color:var(--grijs); }
+  @top-right{ content:"__RUNHEAD__"; font-family:"Atkinson"; font-size:8.5pt; color:var(--grijs); margin-top:6mm; }
+}
+@page cover{ margin:0; @bottom-left{content:none;} @bottom-right{content:none;} @top-right{content:none;} }
+@page nohead{ @top-right{content:none;} }
+
+html{ font-size:10.5pt; }
+body{ font-family:"Literata",Georgia,serif; color:var(--inkt); line-height:1.5; hyphens:none; text-align:left; margin:0; }
+.intro-page{ page:nohead; }
+
+/* ---------------- OMSLAG ---------------- */
+.cover{ page:cover; height:297mm; width:210mm; position:relative; color:var(--papier); background:var(--inkt); page-break-after:always; }
+.cover .merk{ position:absolute; top:24mm; left:24mm; display:flex; align-items:center; font-size:15pt; }
+.cover .merk .ai{ background:var(--geel); color:var(--inkt); font-family:"Atkinson"; font-weight:700; padding:1mm 2.4mm; margin-right:2.6mm; line-height:1.1; }
+.cover .merk .naam{ font-family:"Literata"; font-weight:600; color:#fff; }
+.cover .kicker{ position:absolute; top:70mm; left:24mm; right:24mm; font-family:"Atkinson"; font-weight:700;
+  letter-spacing:.14em; font-size:9.5pt; color:var(--lijn); }
+.cover h1{ position:absolute; top:80mm; left:24mm; right:36mm; font-family:"Literata"; font-weight:600;
+  font-size:32pt; line-height:1.14; margin:0; color:#fff; }
+.cover h1 .h1sub{ display:block; color:var(--lijn); font-weight:400; font-size:20pt; margin-top:3mm; }
+.cover .tagline{ position:absolute; top:150mm; left:24mm; right:44mm; font-family:"Literata"; font-size:12pt; color:#e6e8e3; line-height:1.5; }
+.cover .ladder-anchor{ position:absolute; bottom:48mm; left:24mm; width:62mm; }
+.cover .ladder-anchor svg{ width:100%; height:auto; display:block; }
+.cover .footstrip{ position:absolute; bottom:22mm; left:24mm; right:24mm; display:flex; justify-content:space-between;
+  align-items:flex-end; padding-top:5mm; }
+.cover .footstrip div{ font-family:"Atkinson"; font-size:9pt; color:var(--lijn); }
+
+/* ---------------- INTRO + INHOUD ---------------- */
+.refbox{ max-width:136mm; background:var(--vlak); padding:4mm 5mm; margin:5mm 0 8mm 0; font-size:10pt; line-height:1.5; }
+.refbox p{ margin:0 0 2mm 0; } .refbox p:last-child{ margin:0; }
+.toc-kicker{ font-family:"Atkinson"; font-weight:700; letter-spacing:.12em; font-size:8.5pt; color:var(--grijs); margin:6mm 0 2mm 0; }
+.toc{ max-width:136mm; }
+.toc ol{ list-style:none; padding:0; margin:0; }
+.toc li{ display:flex; align-items:baseline; font-size:10.5pt; padding:1.8mm 0; border-bottom:1px solid var(--lijn); margin:0; }
+.toc li .n{ font-family:"Atkinson"; font-weight:700; width:9mm; flex:none; }
+.toc li .t{ flex:1; }
+.toc li a.pg{ font-family:"Atkinson"; color:var(--grijs); text-decoration:none; padding-left:4mm; }
+.toc li a.pg::after{ content:target-counter(attr(href), page); }
+
+.btoc h3{ margin-top:6mm; }
+.btoc .row{ display:flex; align-items:baseline; padding:2mm 0; border-bottom:1px solid var(--lijn); max-width:136mm; page-break-inside:avoid; }
+.btoc .row .n{ font-family:"Atkinson"; font-weight:700; width:9mm; flex:none; }
+.btoc .row .t{ flex:1; }
+.btoc .row .t b{ display:block; font-size:10.5pt; }
+.btoc .row .t span{ display:block; font-size:9.5pt; color:var(--grijs); line-height:1.4; }
+.btoc .row .pg{ font-family:"Atkinson"; width:12mm; text-align:right; color:var(--grijs); }
+
+/* ---------------- HOOFDSTUK ---------------- */
+.chapter{ page-break-before:always; padding-top:4mm; }
+.chapter .ch-kicker{ font-family:"Atkinson"; font-weight:700; letter-spacing:.12em; font-size:8.5pt; color:var(--grijs); margin:0 0 3mm 0; }
+.chapter h2.ch-title{ font-family:"Literata"; font-weight:600; font-size:22pt; margin:0 0 2mm 0; line-height:1.18; max-width:136mm; }
+.chapter .ch-sub{ font-size:11pt; color:var(--grijs); max-width:136mm; margin:0 0 6mm 0; line-height:1.5; }
+
+h3{ font-family:"Literata"; font-weight:600; font-size:14pt; margin:7mm 0 2mm 0; max-width:136mm; line-height:1.25; page-break-after:avoid; }
+h4{ font-family:"Atkinson"; font-weight:700; font-size:10.5pt; margin:5mm 0 1.5mm 0; max-width:136mm; page-break-after:avoid; }
+p{ max-width:136mm; margin:0 0 3mm 0; orphans:2; widows:2; }
+strong{ font-weight:700; } em{ font-style:italic; }
+ul,ol{ max-width:136mm; margin:0 0 3.5mm 0; padding-left:6mm; }
+li{ margin:1.2mm 0; line-height:1.45; }
+
+/* ---------------- KADERS: vlak zonder rand ---------------- */
+.callout,.sample,.deeper,.recap,.refbox{ border:0; }
+.callout{ max-width:136mm; background:var(--vlak); padding:4mm 5mm; margin:4mm 0; page-break-inside:avoid; }
+.callout .co-lbl,.sample .s-lbl,.deeper .dp-lbl,.recap .r-lbl,.prompt .p-lbl,.vs .card .vs-lbl{
+  font-family:"Atkinson"; font-weight:700; font-size:8.5pt; letter-spacing:.08em; text-transform:uppercase; color:var(--grijs); margin:0 0 2mm 0; }
+.callout p{ margin:0; font-size:10pt; } .callout p+p{ margin-top:2mm; }
+.callout ul{ margin:1mm 0 0 0; } .callout li{ font-size:10pt; }
+.co-warn .co-lbl{ color:var(--inkt); }
+
+.prompt{ max-width:136mm; background:var(--vlak); margin:4mm 0; page-break-inside:avoid; }
+.prompt .p-lbl{ padding:3mm 5mm 0 5mm; }
+.prompt pre{ font-family:"DejaVu Sans Mono"; font-size:8.3pt; line-height:1.5; color:var(--inkt); margin:1mm 0 0 0;
+  padding:0 5mm 4.5mm 5mm; white-space:pre-wrap; word-wrap:break-word; }
+
+.sample{ max-width:136mm; background:transparent; padding:3mm 0 3mm 5mm; margin:4mm 0; page-break-inside:avoid; box-shadow:inset 2px 0 0 var(--lijn); }
+.sample p{ font-size:10pt; color:var(--grijs); margin:0 0 2mm 0; } .sample p:last-child{ margin:0; }
+
+table{ border-collapse:collapse; width:136mm; margin:4mm 0; font-family:"Atkinson"; font-size:9.3pt; page-break-inside:avoid; }
+th{ color:var(--grijs); font-weight:400; text-align:left; padding:2mm 2.4mm; vertical-align:bottom; border-bottom:1px solid var(--lijn); }
+td{ border-bottom:1px solid var(--lijn); padding:2mm 2.4mm; vertical-align:top; line-height:1.4; }
+
+.recap{ max-width:136mm; background:var(--vlak); padding:4mm 5mm; margin:7mm 0 3mm 0; page-break-inside:avoid; }
+.recap ul{ margin:0; padding-left:5mm; } .recap li{ font-size:10pt; }
+
+.figure{ max-width:136mm; margin:5mm 0; page-break-inside:avoid; }
+.figure svg{ width:100%; height:auto; display:block; }
+.figure .cap{ font-family:"Atkinson"; font-size:9pt; color:var(--grijs); margin-top:2mm; line-height:1.4; }
+
+/* Doe het nu: het gele blokje als teken, de rest vlak */
+.donow{ max-width:136mm; margin:5mm 0; background:var(--vlak); page-break-inside:avoid; }
+.donow .dn-head{ font-family:"Atkinson"; font-weight:700; font-size:10.5pt; padding:4mm 5mm 0 5mm; display:flex; align-items:center; }
+.donow .dn-head::before{ content:"\2192"; background:var(--geel); color:var(--inkt); width:5.5mm; height:5.5mm; line-height:5.5mm; text-align:center; margin-right:3mm; font-size:9pt; flex:none; }
+.donow .dn-body{ padding:2mm 5mm 4mm 13.5mm; }
+.donow .dn-body p{ margin:0 0 2mm 0; font-size:10.3pt; } .donow .dn-body p:last-child{ margin:0; }
+
+.vs{ max-width:136mm; margin:5mm 0; display:flex; gap:4mm; page-break-inside:avoid; }
+.vs .card{ flex:1; padding:3.5mm 4mm; }
+.vs .card p{ margin:0 0 1.5mm 0; font-size:9.8pt; } .vs .card p:last-child{ margin:0; }
+.vs .weak{ background:transparent; box-shadow:inset 0 0 0 1px var(--lijn); }
+.vs .strong{ background:var(--vlak); } .vs .strong .vs-lbl{ color:var(--inkt); }
+
+.anchor-line{ max-width:126mm; margin:6mm 0; font-family:"Literata"; font-size:14pt; line-height:1.45; font-weight:600; page-break-inside:avoid; }
+.pullquote{ max-width:126mm; margin:5mm 0; padding:0 0 0 5mm; font-family:"Literata"; font-size:12pt; font-style:italic; line-height:1.5; page-break-inside:avoid; box-shadow:inset 2px 0 0 var(--lijn); }
+.why{ font-size:10.5pt; color:var(--grijs); margin:-1mm 0 3mm 0; max-width:136mm; }
+
+.deeper{ max-width:136mm; margin:5mm 0; background:transparent; box-shadow:inset 0 0 0 1px var(--lijn); padding:4mm 5mm; page-break-inside:avoid; }
+.deeper p{ margin:0 0 2mm 0; font-size:9.8pt; color:var(--grijs); } .deeper p:last-child{ margin:0; }
+
+.fill{ max-width:136mm; height:26mm; margin:2mm 0 5mm 0;
+  background:repeating-linear-gradient(to bottom, transparent 0, transparent 7.6mm, var(--lijn) 7.6mm, var(--lijn) 7.9mm); }
+.checks{ max-width:136mm; margin:3mm 0 4mm 0; }
+.checks div{ display:flex; gap:3mm; margin:1.6mm 0; font-size:10pt; line-height:1.45; }
+.checks div::before{ content:""; flex:none; width:3.6mm; height:3.6mm; border:1.2pt solid var(--inkt); margin-top:.8mm; }
+.pb{ page-break-before:always; }

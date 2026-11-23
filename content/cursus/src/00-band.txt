@@ -1,0 +1,17 @@
+---
+id: band
+file: 00-band-voorwerk
+kicker: AI-CURSUS · VOLLEDIGE UITGAVE
+title: De complete AI-cursus
+subtitle: Van eerste gesprek tot eigen systemen
+tagline: Een tool-onafhankelijke cursus over werken met AI, voor wie wil beginnen en voor wie verder wil. Vier delen die klimmen, tien modules die verbreden, en de naslag die je erbij houdt.
+foot: Alle delen, modules en naslag in één band
+version: Kernversie · oktober 2026
+runhead: De complete AI-cursus
+anchor: combo
+---
+Deze band bundelt de hele cursus: achttien documenten die ook elk afzonderlijk bestaan. Je hoeft hem niet van voor naar achter te lezen — de Wegwijzer, het eerste document, toont welke route bij jou past. Wie gewoon wil beginnen, slaat hem open op Deel 1 en doet de eerste opdracht.
+
+**Drie dingen die je vooraf wil weten.** De cursus is tool-onafhankelijk: wat je leert, werkt in ChatGPT, Claude, Gemini, Copilot en wat er nog komt. Alles met een merknaam of prijs staat apart in de Levende Toolgids, die als enige mag verouderen. En elke les begint met doen: je leest niet over AI, je werkt ermee, vanaf de eerste bladzijde.
+
+**Wat nieuw is in deze kernversie.** De cursus is herschreven tot een algemene versie die niet op één doelpubliek mikt, met voorbeelden uit werk, thuis en vrije tijd. De nieuwe module *AI om je heen* is er voor wie AI vooral tegenkomt in plaats van zelf gebruikt, en is de enige die vóór de ladder kan staan. De Europese AI Act (labelplicht en AI-geletterdheid), wat AI verbruikt, en verborgen instructies in wat een agent leest, staan nu waar ze horen. De toolgids kreeg versie 4.0, met peildatum oktober 2026.

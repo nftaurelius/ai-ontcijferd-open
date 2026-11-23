@@ -1,0 +1,69 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { cursusDelen, GROEP_UITLEG, groepNaam, VOLLEDIG_PDF } from "../../lib/cursus";
+import { LICENTIE_URL, SITE_URL, uitgever } from "../../lib/seo";
+
+const delen = cursusDelen();
+const groepen = [...new Set(delen.map((d) => d.groep))];
+const bijsluiter = [
+  ["Voor wie", "Iedereen die met AI wil leren werken: thuis, op het werk of in een vereniging"],
+  ["Niveau", "Instap tot gevorderd. De vier delen klimmen; de modules kies je zelf."],
+  ["Duur", "Deel 1 lees en doe je in een namiddag. De rest in je eigen tempo."],
+  ["Versie", "Kernversie oktober 2026, in de huisstijl sinds 23 november 2026"],
+  ["Nagekeken op", "Oktober 2026. De Levende Toolgids heeft een eigen peildatum: kijk prijzen zelf na."],
+  ["Getest", "Nog niet als open cursus. Gebruik je hem? Laat het weten."],
+  ["Licentie", "CC BY 4.0, Duncan Panis en AI Ontcijferd"],
+];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "@id": `${SITE_URL}/cursus`,
+  url: `${SITE_URL}/cursus`,
+  name: "De AI-cursus",
+  description: "Een volledige, tool-onafhankelijke cursus om met AI te leren werken, zonder voorkennis.",
+  inLanguage: "nl-BE",
+  isAccessibleForFree: true,
+  license: LICENTIE_URL,
+  provider: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  hasPart: delen.map((d) => ({ "@type": "LearningResource", name: d.titel, url: `${SITE_URL}/cursus/${d.id}` })),
+};
+---
+
+<Basis titel="De AI-cursus: leren werken met AI" beschrijving="Een volledige, gratis cursus om met AI te leren werken, zonder voorkennis. Vier delen, tien modules, een toolgids en een veiligheidskaart. Online of als PDF." schema={schema} bron="content/cursus/src">
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Cursus</p><p><a href="/leren">Leren</a></p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">De AI-cursus</h1>
+      <p class="lead"><span class="markeer">Je leert met AI werken door het te doen.</span> Elk deel begint met een opdracht die meteen werkt, en legt pas daarna uit waarom. Wat je leert, werkt in ChatGPT, Claude, Gemini, Copilot en wat er nog komt.</p>
+      <table class="bijsluiter">
+        <tbody>{bijsluiter.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody>
+      </table>
+      <p><a class="knop knop-hoofd" href="/cursus/deel1">Begin bij Deel 1</a></p>
+      <p class="meta">Liever op papier? <a href={VOLLEDIG_PDF} download>De hele cursus als PDF</a> (277 bladzijden), of elk deel apart hieronder. Lesgevers vinden alles samen bij het <a href="/materiaal/ai-cursus">open lesmateriaal</a>.</p>
+    </div>
+  </section>
+  {groepen.map((g) => (
+    <section class="rij sectie">
+      <div class="kantlijn"><p class="kantlijn-kop">{groepNaam(g)}</p><p>{GROEP_UITLEG[g]}</p></div>
+      <div class="proza">
+        <ol class="cursuslijst">
+          {delen.filter((d) => d.groep === g).map((d) => (
+            <li>
+              <span class="blokje">{d.nr}</span>
+              <div>
+                <a href={`/cursus/${d.id}`}><strong>{d.titel}</strong></a>{d.ondertitel && <span class="meta">: {d.ondertitel}</span>}
+                <p class="meta">{d.regel} <a href={d.pdf} download>PDF</a></p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  ))}
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Overnemen</p></div>
+    <div class="proza">
+      <p>Geschreven door Duncan Panis. Je mag de cursus gebruiken, aanpassen en delen onder CC BY 4.0, ook in je eigen lessen. Vermeld AI Ontcijferd en zet een link naar deze pagina. De bron staat als tekstbestanden in de <a href="https://github.com/nftaurelius/ai-ontcijferd-open/tree/main/content/cursus">open repository</a>.</p>
+    </div>
+  </section>
+</Basis>

@@ -1467,3 +1467,251 @@ main:focus {
 .ui-letter {
   font-family: var(--ui);
 }
+
+/* ---------------- De AI-cursus ---------------- */
+.soortlabel {
+  font-family: var(--ui);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--grijs);
+  margin: 0 0 0.5rem;
+}
+.blokje {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-width: 1.6rem;
+  height: 1.6rem;
+  padding: 0 0.3rem;
+  background: var(--geel);
+  color: #20262b;
+  font-family: var(--ui);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.blokje-inkt {
+  background: var(--vlak);
+  color: var(--inkt);
+}
+.cursuslijst,
+.cursus-inhoud {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cursuslijst li {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--lijn);
+}
+.cursuslijst li .meta {
+  margin: 0.2rem 0 0;
+}
+.cursus-inhoud {
+  margin-top: 1.5rem;
+  font-family: var(--ui);
+}
+.cursus-inhoud li {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.35rem 0;
+}
+.cursus-verder {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-family: var(--ui);
+}
+.cursus-tekst h3 {
+  font-size: 1.3rem;
+  margin: 2.2rem 0 0.5rem;
+}
+.cursus-tekst h4 {
+  font-family: var(--ui);
+  font-size: 1rem;
+  margin: 1.6rem 0 0.4rem;
+}
+.cursus-tekst .why,
+.cursus-tekst .sample p,
+.cursus-tekst .deeper p {
+  color: var(--grijs);
+}
+.cursus-tekst .anchor-line {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 1.8rem 0;
+}
+.cursus-tekst .pullquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--lijn);
+  margin: 1.4rem 0;
+}
+.cursus-tekst .refbox,
+.cursus-tekst .callout,
+.cursus-tekst .recap,
+.cursus-tekst .donow,
+.cursus-tekst .prompt,
+.cursus-tekst .vs .strong {
+  background: var(--vlak);
+  padding: 1rem 1.2rem;
+  margin: 1.4rem 0;
+}
+.cursus-tekst .refbox p:last-child,
+.cursus-tekst .callout p:last-child,
+.cursus-tekst .donow p:last-child,
+.cursus-tekst .deeper p:last-child,
+.cursus-tekst .sample p:last-child,
+.cursus-tekst .vs p:last-child {
+  margin-bottom: 0;
+}
+.cursus-tekst .co-lbl,
+.cursus-tekst .r-lbl,
+.cursus-tekst .p-lbl,
+.cursus-tekst .s-lbl,
+.cursus-tekst .dp-lbl,
+.cursus-tekst .vs-lbl {
+  font-family: var(--ui);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--grijs);
+  margin: 0 0 0.5rem;
+}
+.cursus-tekst .co-warn .co-lbl,
+.cursus-tekst .vs .strong .vs-lbl {
+  color: var(--inkt);
+}
+.cursus-tekst .donow .dn-head {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  font-family: var(--ui);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.cursus-tekst .donow .dn-head::before {
+  content: "→";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: none;
+  background: var(--geel);
+  color: #20262b;
+}
+.cursus-tekst .donow .dn-body {
+  padding-left: 2.2rem;
+}
+.cursus-tekst .prompt pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  background: none;
+  padding: 0;
+}
+.cursus-tekst .prompt .knop {
+  margin-top: 0.8rem;
+}
+.cursus-tekst .sample {
+  border-left: 2px solid var(--lijn);
+  padding: 0.2rem 0 0.2rem 1rem;
+  margin: 1.4rem 0;
+}
+.cursus-tekst .deeper {
+  border: 1px solid var(--lijn);
+  padding: 1rem 1.2rem;
+  margin: 1.4rem 0;
+}
+.cursus-tekst .vs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.4rem 0;
+}
+.cursus-tekst .vs .card {
+  margin: 0;
+  padding: 1rem 1.2rem;
+}
+.cursus-tekst .vs .weak {
+  border: 1px solid var(--lijn);
+}
+@media (max-width: 40rem) {
+  .cursus-tekst .vs {
+    grid-template-columns: 1fr;
+  }
+}
+.cursus-tekst .figure {
+  margin: 1.6rem 0;
+}
+.cursus-tekst .figure svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cursus-tekst .figure .cap {
+  font-family: var(--ui);
+  font-size: 0.85rem;
+  color: var(--grijs);
+  margin-top: 0.5rem;
+}
+.cursus-tekst table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--ui);
+  font-size: 0.9rem;
+  margin: 1.4rem 0;
+}
+.cursus-tekst th {
+  text-align: left;
+  font-weight: 400;
+  color: var(--grijs);
+  border-bottom: 1px solid var(--lijn);
+  padding: 0.4rem 0.5rem 0.4rem 0;
+  vertical-align: bottom;
+}
+.cursus-tekst td {
+  border-bottom: 1px solid var(--lijn);
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  vertical-align: top;
+}
+.cursus-tekst .fill {
+  height: auto !important;
+  min-height: 4.5rem;
+  background: repeating-linear-gradient(to bottom, transparent 0, transparent 1.9rem, var(--lijn) 1.9rem, var(--lijn) calc(1.9rem + 1px));
+  margin: 0.5rem 0 1.4rem;
+}
+.cursus-tekst .checks div {
+  display: flex;
+  gap: 0.6rem;
+  margin: 0.35rem 0;
+}
+.cursus-tekst .checks div::before {
+  content: "";
+  flex: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 1.5px solid var(--inkt);
+  margin-top: 0.35rem;
+}
+.cursus-tekst .pb {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .cursus-tekst .figure svg {
+    background: #f2f3ef;
+    padding: 0.6rem;
+  }
+}

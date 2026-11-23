@@ -1,0 +1,275 @@
+---
+id: m-data
+file: 11-Module-Data-en-spreadsheets
+kicker: AI-CURSUS · MODULE
+title: Data & spreadsheets
+subtitle: Stel vragen aan je tabellen
+tagline: Je hoeft geen formules te kennen om antwoorden uit je lijsten te halen. Je leert je gegevens veilig aanleveren, rommel laten opkuisen, vragen stellen in gewone taal — en elk cijfer controleren voor je erop bouwt.
+foot: Module · veronderstelt Deel 1–2 · geen volgorde
+version: Versie 2.0 · oktober 2026
+runhead: Module — Data & spreadsheets
+anchor: grid
+toc: WAT JE GAAT DOEN
+toctitle: Data & spreadsheets
+tocline: Vragen stellen aan je tabellen, met veilige kopie en controlereflex.
+---
+Elk huishouden, elke zaak en elke vereniging draait op lijstjes: klanten, betalingen, inschrijvingen, een kasboek, het huishoudbudget. En bijna iedereen die ermee werkt, kent de avonden die erin verdwijnen — niet omdat de vragen moeilijk zijn, maar omdat het gereedschap dat is. Formules opzoeken, kolommen sorteren, en op het einde tóch met de hand tellen.
+
+Die drempel is weg. Je AI kan tabellen lezen, opkuisen en doorrekenen — en jij hoeft alleen nog te doen waar je goed in bent: de juiste vraag stellen, in gewone taal. Deze module leert je dat, plus de twee dingen die er onlosmakelijk bij horen: je gegevens veilig aanleveren (want lijsten gaan bijna altijd over mensen) en elk cijfer controleren voor je erop bouwt.
+
+:::refbox
+Dit is een module: een losstaand deel dat je breder maakt, geen trede van de ladder. Ze veronderstelt Deel 1 en 2. Welke tool vandaag het handigst met tabellen werkt — en welke binnen je eigen omgeving blijven — staat in de Levende Toolgids. Hier leer je wat in elke tool geldt.
+:::
+
+# Drie avonden in de klantenlijst | Je hoeft geen formules te kennen. Je moet vragen kunnen stellen — en antwoorden kunnen controleren.
+
+Dirk heeft een fietsenwinkel. Honderdveertig klanten hebben er een onderhoudsabonnement, en elk jaar in januari komt hetzelfde ritueel: de hernieuwingen. Eén rekeninguittreksel, en een klantenlijst die al zes jaar wordt bijgehouden — eerst door zijn vader, dan door een stagiair, nu door hem, elk op zijn eigen manier. Drie avonden zat hij eraan. Niet aan de moeilijke vragen, want die zijn simpel: wie heeft betaald, wie moet een herinnering krijgen, hoeveel staat er binnen. Drie avonden aan het gevécht: namen die net anders gespeld zijn, datums in drie formaten, en ergens een formule die een foutmelding geeft sinds iemand ooit een kolom verwijderde.
+
+Herken je het? Dan is dit de module waar je het meeste tijd terugwint. Want het gevecht van Dirk — het opzoeken, het sorteren, het met de hand natellen — is precies het soort werk dat een AI vandaag uitstekend doet. Wat overblijft voor jou, is het deel dat altijd al het echte werk was:
+
+:::fig flow tone=bnb | De rolverdeling: jij stelt de vraag in gewone taal, de AI doet het reken- en zoekwerk, en jij controleert het antwoord aan de hand van de werkwijze die hij erbij geeft.
+Jouw vraag | in gewone taal: “wie heeft nog niet hernieuwd?”
+Het rekenwerk | doet de AI: filteren, tellen, vergelijken
+Het antwoord | mét werkwijze — controleren doe jij, altijd
+:::
+
+> Jij hoeft de formule niet meer te kennen. Jij moet weten wat je wil weten — en nakijken of het klopt.
+
+Let op die derde stap, want die maakt of kraakt alles. Een tekst die een beetje afwijkt, is nog bruikbaar. Een cijfer dat een beetje afwijkt, is fout — en een fout cijfer in een kasverslag of een herinnering aan de verkeerde klant doet echte schade. Daarom loopt door deze hele module één rode draad: je vraagt niet alleen het antwoord, je vraagt ook hoe de AI eraan kwam, en je controleert zelf een steekproef. Dat klinkt als extra werk. Het is een fractie van de drie avonden van Dirk.
+
+## Wat er allemaal onder valt
+
+Meer dan je denkt: de klantenlijst en het kasboek, jazeker — maar ook de inschrijvingen voor een evenement, de resultaten van een vragenlijst, je huishoudbudget, de energiemeters van het voorbije jaar, de verzameling platen of postzegels. Alles wat in rijen en kolommen past, of erin zou móéten passen maar nu een rommeltje is. Vooral dat laatste — daarover zo meteen meer.
+
+:::note Onthoud
+De grote AI-assistenten kunnen bestanden zoals Excel en CSV rechtstreeks lezen en analyseren, en AI zit intussen ook ín de rekenbladen zelf. Welke weg vandaag de handigste is: Levende Toolgids. De werkwijze hier is overal dezelfde.
+:::
+
+# Eerst dit: jouw lijst, hun gegevens | Lijsten gaan bijna altijd over mensen. Eén voorbereidende stap maakt al de rest zorgeloos.
+
+Voor Dirk ook maar één cel naar een AI stuurt, moet er iets gezegd. Zijn klantenlijst is niet zomaar data — het zijn de namen, adressen en betaalgegevens van honderdveertig echte mensen die hem die gegevens toevertrouwden. Die zomaar naar een AI-dienst sturen is geen goed idee, en in veel gevallen mag het gewoonweg niet. Dat hoeft je niet af te schrikken — het vraagt alleen één voorbereidende stap, en die is verrassend eenvoudig.
+
+Hier is het inzicht dat alles ontspant: voor bijna elke vraag aan je lijst heb je de persoonsgegevens niet nodig. “Hoeveel klanten hernieuwden al?” — daar heeft de AI geen enkele naam voor nodig. “Welke maand piekt?” — geen adres nodig. Je werkt dus met een **veilige kopie**: dezelfde lijst, maar zonder de kolommen die iemand herkenbaar maken.
+
+:::fig two | Het origineel met de persoonsgegevens blijft bij jou. De AI krijgt een kopie met klantnummers en enkel de kolommen die je vraag nodig heeft.
+HET ORIGINEEL | Blijft bij jou | Naam en voornaam; adres en e-mail; geboortedatum; betaalgegevens | n
+WAT DE AI KRIJGT | De veilige kopie | Klantnummer; klant sinds (jaar); hernieuwd: ja of nee; laatste betaling (maand) | g
+:::
+
+Zo maak je ze, in twee minuten: kopieer je bestand, verwijder in de kopie de kolommen met namen, adressen, e-mails en geboortedata, en laat het klantnummer (of gewoon het rijnummer) staan als sleutel. Krijg je straks als antwoord “klantnummers 23, 41 en 88 hebben twee jaar niet betaald”, dan zoek je die drie nummers op in je origineel — dat gewoon thuis bleef. De AI hielp met het zware werk; de namen zag hij nooit.
+
+> De vraag reist naar de AI. De namen blijven thuis.
+
+:::deeper Werk je voor een organisatie?
+Voor een bedrijf, een school, een vereniging of een openbaar bestuur geldt meer dan voorzichtig zijn: de privacywetgeving (de AVG, in het Engels GDPR) legt vast wat je met persoonsgegevens mag doen, en “in een externe AI-dienst plakken” valt daar zelden zomaar onder. Vraag na welke AI-tools je organisatie goedgekeurd heeft — vaak bestaan er versies waarbij de gegevens binnen de organisatie blijven.
+
+En het principe van de veilige kopie blijft ook dáár de beste gewoonte: geef elke tool enkel wat de vraag nodig heeft. Minder meegeven is altijd de sterkste bescherming. Organisaties die AI inzetten, moeten volgens de Europese AI Act bovendien maatregelen nemen zodat hun mensen er met kennis van zaken mee werken — deze gewoonte is daar een mooi stuk van.
+:::
+
+:::warn Let op
+Sommige gegevens zijn extra gevoelig en horen nóóit in een AI-dienst thuis, ook niet “voor even”: rijksregisternummers, rekeningnummers, medische informatie, gegevens over kinderen. Twijfel je, laat de kolom weg — weglaten kost niets, terughalen kan niet.
+:::
+
+:::donow Doe dit nu — maak je eerste veilige kopie
+Neem een echte lijst waarmee je werkt. Maak een kopie en gooi er alle kolommen uit die iemand herkenbaar maken. Hou een nummer als sleutel.
+
+Kijk naar wat overblijft en stel jezelf de vraag: kan ik hiermee alles vragen wat ik wil weten? Bijna altijd is het antwoord ja — en vanaf nu is elke oefening in deze module zorgeloos.
+:::
+
+# Rommel eruit | Tachtig procent van het werk met lijsten is opkuisen. Laat dát nu net zijn wat de AI het best kan.
+
+Het vuile geheim van al het lijstjeswerk: de analyse is zelden het probleem. Het probleem is de staat van de lijst. Drie mensen, drie stijlen — en dit is wat Dirk in zijn veilige kopie aantrof:
+
+:::sample DE LIJST ZOALS DIRK ZE ERFDE — vier smaken waarheid
+Klant 023 · klant sinds: 2019 · hernieuwd: ja · betaald: 15/01
+
+Klant 041 · klant sinds: '21 · hernieuwd: JA · betaald: 2026-01-12
+
+Klant 054 · klant sinds: 2021 · hernieuwd: x · betaald: 12 jan
+
+Klant 067 · klant sinds: (leeg) · hernieuwd: betaald · betaald: (leeg)
+
+… en zo nog honderdzesendertig rijen, elk met hun eigen logica.
+:::
+
+Vroeger was dit het drie-avondenwerk: rij per rij gelijktrekken. Nu is het één opdracht — op voorwaarde dat je ze goed geeft. En goed geven betekent hier één ding boven alles: vraag niet alleen om op te kuisen, vraag om te **rapporteren** wat er veranderd is.
+
+:::prompt DE OPKUISOPDRACHT
+Kuis deze tabel op zonder gegevens te verzinnen:
+1. Zet alle datums in het formaat DD-MM-JJJJ.
+2. Maak van 'hernieuwd' overal ja of nee. Onduidelijk? Markeer
+   als TWIJFEL, kies niet zelf.
+3. Zet jaartallen voluit ('21 wordt 2021).
+4. Laat lege velden leeg. Vul niets in.
+Geef daarna een rapport: wat je veranderde, welke rijen je
+markeerde, en wat je niet kon oplossen.
+:::
+
+:::sample WAT DE AI RAPPORTEERDE
+“In orde gebracht: 138 datums naar DD-MM-JJJJ, 41 jaartallen voluit gezet, 96 keer ja/JA/x samengevoegd tot ‘ja’.
+
+Gemarkeerd als TWIJFEL: rij 067 (‘hernieuwd: betaald’ maar geen betaaldatum) en rij 112 (datum ‘31/02’ bestaat niet).
+
+Niet opgelost: 4 rijen zonder ‘klant sinds’ — leeg gelaten zoals gevraagd.”
+:::
+
+Voel je het verschil met blind vertrouwen? De AI kuiste in seconden op wat Dirk een avond kostte — maar de twijfelgevallen besliste hij níét zelf. Die twee rijen bekijkt Dirk even in zijn origineel, en klaar. Dat is de gezonde rolverdeling: de machine doet de honderd saaie gevallen, de mens de twee moeilijke.
+
+> Een goede opkuis verandert veel en verzint niets. Het rapport is je bewijs.
+
+:::warn Let op
+“Vul de lege velden aan” is de gevaarlijkste vraag in dit hele domein: een AI vult dan met aannemelijke verzinsels. Lege velden zijn informatie — laat ze leeg, en zoek zelf uit wat erin hoort.
+:::
+
+:::donow Doe dit nu — kuis één echte lijst op
+Neem de veilige kopie uit het vorige hoofdstuk. Geef ze aan je AI met de opkuisopdracht hierboven, aangepast aan jouw kolommen.
+
+Lees het rapport vóór je naar de tabel kijkt. Loop de twijfelgevallen na in je origineel. Bewaar daarna de opgekuiste versie apart — gooi nooit je origineel weg.
+:::
+
+# Stel je vragen | Van tabel naar antwoord in gewone taal — en de controlereflex die elk cijfer betrouwbaar maakt.
+
+Met een propere lijst begint het aangename deel. Je stelt je vragen zoals je ze aan een collega zou stellen — geen formules, geen draaitabellen, gewoon Nederlands. Zo klonk dat bij Dirk:
+
+:::sample DIRKS VRAGEN AAN DE LIJST — EN DE ANTWOORDEN
+**“Hoeveel klanten hebben al hernieuwd?”** — 96 van de 140. Dat is 69%, tegenover 82 rond dezelfde datum vorig jaar.
+
+**“Wie moet een herinnering krijgen?”** — 41 klantnummers, hier als lijstje. Drie daarvan betaalden de voorbije jaren telkens pas in maart — misschien nog geen herinnering waard.
+
+**“In welke week komen de meeste betalingen binnen?”** — De tweede week van januari, elk jaar opnieuw: gemiddeld 38% van alle hernieuwingen.
+:::
+
+Merk op wat er gebeurt: je krijgt niet alleen cijfers, je krijgt inzicht — de vergelijking met vorig jaar, de klanten die altijd laat betalen. Een AI die je hele tabel overziet, ziet patronen die jij al tellend nooit zou zoeken. Vraag er gerust expliciet naar: “wat valt jóú op aan deze cijfers?” levert vaak het nuttigste antwoord van de avond.
+
+## De controlereflex
+
+? Eén verkeerd gelezen kolom en elk cijfer erna is fout — zonder dat je het ziet.
+
+Elk cijfer dat je gaat gebruiken — in een verslag, een mail, een beslissing — verdient twee korte controles. **Eén: vraag de werkwijze.** “Hoe kom je aan 96?” — “Ik telde de rijen waar ‘hernieuwd’ ja is: dat zijn er 96 van de 140.” Klinkt de werkwijze fout (verkeerde kolom, verkeerde periode), dan is het cijfer het ook. **Twee: controleer één steekproef.** Neem één klantnummer uit het antwoord en kijk het na in je origineel. Klopt de steekproef en de werkwijze, dan mag het cijfer mee naar buiten.
+
+:::vs EEN CIJFER ZONDER CONTROLE | EEN CIJFER MET CONTROLE
+“De AI zei 96, dus het is 96.” Tot blijkt dat ook de geschorste abonnementen meegeteld zijn — en jij het mag uitleggen.
+---
+Werkwijze gevraagd, één steekproef gecontroleerd, twintig seconden werk. Het cijfer is nu van jóú — en je kunt het verdedigen.
+:::
+
+Wil je iemand overtuigen, vraag er dan meteen een grafiek bij: “maak een staafdiagram van de hernieuwingen per week, vorig jaar ernaast in een lichtere kleur.” Ook daar geldt: controleer de cijfers achter de staafjes vóór je het toont — een mooie grafiek maakt een fout cijfer alleen maar overtuigender.
+
+:::donow Doe dit nu — drie vragen en één controle
+Stel aan je opgekuiste lijst drie vragen die je écht beantwoord wil zien. Sluit af met: “wat valt jou op aan deze cijfers?”
+
+Kies het ene cijfer dat je zou gebruiken, vraag de werkwijze en controleer één steekproef in je origineel. Voel hoe anders dat cijfer aanvoelt — dat is het verschil tussen overnemen en weten.
+:::
+
+# Van eenmalig naar elke maand | Terugkerend lijstjeswerk verdient een bewaard recept — met de controle ingebouwd.
+
+De hernieuwingen komen elk jaar terug. Het kasoverzicht elke maand. De voorraad elk seizoen. En dus geldt hier wat je in Deel 2 leerde: wat terugkeert, zet je één keer goed op en bewaar je. Voor lijstjeswerk betekent dat één opdracht die de hele avond vervangt — opkuis, vragen, controle en eindproduct in één keten:
+
+:::prompt DIRKS MAANDRECEPT — BEWAARD IN ZIJN BIBLIOTHEEK
+Hieronder staat de veilige kopie van onze klantenlijst van deze
+maand. Doe achter elkaar:
+1. Kuis op volgens onze vaste regels (datums DD-MM-JJJJ,
+   hernieuwd ja/nee, twijfel markeren, niets invullen).
+2. Rapporteer wat je veranderde en markeerde.
+3. Beantwoord: hoeveel hernieuwd (met % en vergelijking vorige
+   maand), welke klantnummers een herinnering nodig hebben, wat
+   valt op.
+4. Geef bij elk cijfer in één zin je werkwijze.
+5. Schrijf tot slot een korte samenvatting voor mezelf:
+   vijf zinnen, feitelijk, geen namen.
+
+Tabel: [plak hier de veilige kopie]
+:::
+
+Kijk naar wat er in stap 4 gebeurt: de controle zit ín het recept. Dirk hoeft er niet meer aan te dénken om de werkwijze te vragen — ze komt er elke maand automatisch bij, klaar om na te lezen. Zo bouw je je goede gewoontes in je gereedschap in, in plaats van in je geheugen.
+
+> De eerste keer kost een avond denkwerk. Elke volgende maand kost een kwartier nalezen.
+
+En de samenvatting in stap 5? Dat is de brug van cijfers naar communicatie — van deze module terug naar wat je in Deel 1 al kon. Uit dezelfde keten rolt net zo goed de herinneringsmail (op basis van je sjabloon uit Deel 2). Cijfers zijn zelden het eindproduct; ze zijn de grondstof voor iets wat mensen lezen.
+
+:::deeper Van recept naar routine (brug naar Deel 3 en 4)
+Wie Deel 3 deed, herkent in het maandrecept een werkstroom: de uitkomst van elke stap voedt de volgende, met een controlestap ingebouwd. In Deel 4 gaat het nog een trede hoger: daar leer je zulk werk laten stárten zonder jou — op een vast moment in de maand, met het resultaat als concept klaar.
+
+Maar ook zonder die delen staat je recept er al. Het verschil is enkel wie op de startknop duwt: jij, of de kalender.
+:::
+
+:::donow Doe dit nu — bouw je eigen maandrecept
+Neem het terugkerende lijstjeswerk dat jou het meest kost. Schrijf het recept: je opkuisregels, je drie vaste vragen, de werkwijzeregel, en het eindproduct dat eruit moet komen.
+
+Draai het één keer op echte gegevens, verbeter wat wringt, en bewaar het in je bibliotheek met een naam volgens het vaste patroon: “Data – hernieuwingen maandelijks”. De volgende keer is het plakken en nalezen.
+:::
+
+# Wat hierna komt, en je gereedschap | De rolverdeling op een rij, de helpers om te kopiëren, en de woorden die je nodig hebt.
+
+Dirks drie avonden zijn een kwartier geworden: veilige kopie plakken, recept starten, rapport en werkwijzes nalezen, twee twijfelgevallen checken, herinneringen versturen. Maar belangrijker dan de tijdwinst is wat er onderweg níét veranderde: de gegevens van zijn klanten verlieten nooit zijn computer, en elk cijfer dat hij gebruikte, had hij zelf gecontroleerd. Sneller én zorgvuldiger — dat is de combinatie waar deze module op mikt.
+
+De rolverdeling nog één keer, want zij is de hele module: jij bepaalt de vraag, de AI doet het werk, jij keurt het antwoord. Wie een van de drie overslaat, krijgt problemen — vage vragen geven vage cijfers, handwerk blijft drie avonden duren, en ongecontroleerde cijfers ontploffen op het slechtst denkbare moment.
+
+:::note Van cijfers naar een verhaal
+Cijfers zijn zelden het eindproduct. Moet er uit jouw analyse een verslag, een dossier of een presentatie komen, dan neemt de module *Documenten & presentaties* het daar over — skelet eerst, dan sectie per sectie.
+:::
+
+## Bijlagen: je gereedschap
+
+### 1. De opkuishelper
+
+:::prompt KOPIEER DIT
+Kuis deze tabel op zonder gegevens te verzinnen:
+1. Zet alle datums in het formaat [DD-MM-JJJJ].
+2. Maak van [kolom] overal [ja/nee of jouw vaste waarden].
+   Onduidelijk? Markeer als TWIJFEL, kies niet zelf.
+3. Trek schrijfwijzen gelijk waar het duidelijk om hetzelfde
+   gaat; markeer vermoedelijke dubbels, verwijder ze niet.
+4. Laat lege velden leeg. Vul niets in.
+Geef daarna een rapport: wat je veranderde, wat je markeerde,
+en wat je niet kon oplossen.
+
+Tabel: [plak hier je veilige kopie]
+:::
+
+### 2. De vraag-met-controlehelper
+
+:::prompt KOPIEER DIT
+Beantwoord de volgende vragen over deze tabel. Geef bij elk
+cijfer in één zin hoe je eraan kwam (welke kolom, welke
+voorwaarde, hoeveel rijen). Als iets niet uit de tabel af te
+leiden is, zeg dat dan — gok niet.
+Vragen: [jouw vragen]
+Sluit af met: wat valt jou op aan deze cijfers?
+
+Tabel: [plak hier je veilige kopie]
+:::
+
+### 3. Het maandreceptsjabloon
+
+:::prompt KOPIEER DIT
+Hieronder staat de veilige kopie van [jouw lijst]. Doe achter
+elkaar:
+1. Kuis op volgens deze regels: [jouw opkuisregels].
+2. Rapporteer wat je veranderde en markeerde.
+3. Beantwoord: [jouw twee of drie vaste vragen].
+4. Geef bij elk cijfer in één zin je werkwijze.
+5. Schrijf de korte samenvatting voor [doelpubliek]:
+   [aantal] zinnen, feitelijk, geen namen.
+
+Tabel: [plak hier de veilige kopie]
+:::
+
+## Woordenlijst
+
+- **Persoonsgegevens** — Alles waarmee iemand herkenbaar is: naam, adres, e-mail, geboortedatum. Horen niet zomaar in een AI-dienst.
+- **Veilige kopie** — Je lijst zonder de persoonsgegevens, met een nummer als sleutel. Wat de AI krijgt; het origineel blijft bij jou.
+- **Opkuisen** — Een tabel gelijktrekken (datums, schrijfwijzen, dubbels) zonder iets te verzinnen, mét een rapport van wat er veranderde.
+- **Werkwijze** — De uitleg bij een cijfer: welke kolom, welke voorwaarde, hoeveel rijen. Je eerste controle.
+- **Steekproef** — Eén antwoord met de hand nakijken in je origineel. Je tweede controle, en je beste vriend.
+- **CSV** — Een kaal, universeel tabelbestand dat elke tool kan lezen. Handig om lijsten tussen programma's en AI's te verhuizen.
+
+:::recap
+- Jij bepaalt de vraag, de AI doet het reken- en zoekwerk, jij keurt het antwoord — die rolverdeling is de module.
+- Werk altijd met een veilige kopie: de vraag reist naar de AI, de namen blijven thuis.
+- Laat opkuisen mét rapport: veel veranderen, niets verzinnen, twijfel markeren — en lege velden leeg.
+- Elk cijfer dat je gebruikt: werkwijze vragen plus één steekproef. Twintig seconden, altijd.
+- Terugkerend lijstjeswerk wordt een bewaard maandrecept, met de controle ingebouwd.
+:::
+
+Je hebt deze module beet wanneer een rommelige lijst geen zucht meer oproept maar een reflex: veilige kopie, opkuis met rapport, vragen in gewone taal, werkwijze en steekproef. Vanaf dan zijn lijstjes niet langer het werk — ze zijn gewoon het begin ervan.
