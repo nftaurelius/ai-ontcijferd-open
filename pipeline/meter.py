@@ -46,7 +46,7 @@ def meting() -> str:
             af = int(s.get("delivered", 0))
             regels.append(f"| {c.get('name', '')} | {str(c.get('sentDate', ''))[:10]} | {af} | "
                           f"{procent(int(s.get('uniqueViews', 0)), af)} | {procent(int(s.get('uniqueClicks', 0)), af)} |")
-    regels += ["", "Bezoeken en verwijzers: Vercel Web Analytics (dashboard). Bron van de tabellen: Brevo-API."]
+    regels += ["", "Bezoeken en verwijzers: Vercel Web Analytics (dashboard, met de hand). Bron van de tabellen: Brevo-API, opgehaald door de Meter."]
     return "\n".join(regels) + "\n"
 
 
