@@ -1,0 +1,45 @@
+name: Verpakker — verspreidingspakket per editie
+
+# Maakt per gepubliceerde editie het verspreidingspakket (data/weken/<week>/verspreiding/pakket.md):
+# overneemblok, korte versie voor een berichtendienst, luisterscript, links naar mail en deelafbeelding,
+# en het LinkedIn-concept. Geen model, niets wordt automatisch geplaatst. Duncan kiest per onderdeel.
+
+on:
+  push:
+    branches: [main]
+    paths: ["content/edities/**"]
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Optioneel: week opnieuw verpakken (bv. 2026-w47). Leeg = alle nieuwe gepubliceerde edities."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pijplijn
+  cancel-in-progress: false
+
+jobs:
+  verpakken:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Pakket maken
+        run: python -m pipeline.verpakker ${{ inputs.week }}
+      - name: Bewaren
+        run: |
+          git config user.name "ai-ontcijferd-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/weken
+          git diff --cached --quiet && exit 0
+          git commit -m "Verspreidingspakket $(date +%F)"
+          git pull --rebase --autostash origin main
+          git push

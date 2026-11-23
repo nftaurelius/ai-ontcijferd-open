@@ -192,7 +192,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 - [ ] Contactenboek, eerste versie (half december): een voorstel van organisaties per doelgroep; Duncan schrapt en
       vult aan.
 - [ ] De eerste drie voorstellen, klaar om op 4 januari te versturen.
-- [ ] De Verpakker in de weekpijplijn, zodat elke editie vanaf januari een verspreidingspakket heeft.
+- [x] De Verpakker (23/11): bij elke gepubliceerde editie een pakket in `data/weken/<week>/verspreiding/pakket.md` (overneemblok, berichtendienst, luisterscript, links naar mail en deelafbeelding, LinkedIn-concept). Zonder model: alles komt uit de gepubliceerde editie. Workflow `verpakker.yml`.
 - [ ] De Meter en de nulmeting op 4 januari: inschrijvingen, bezoeken, verwijzers.
 - [ ] Duncan: aanmelden bij Bing Webmaster Tools (vindbaarheid, mag nu al).
 - [ ] Duncan: LinkedIn-profiel aanvullen met AI Ontcijferd en de link naar de site.
