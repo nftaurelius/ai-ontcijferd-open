@@ -53,7 +53,7 @@ def meting() -> str:
     except requests.HTTPError as fout:
         regels += [f"- Lijsten niet opgehaald ({waarom(fout)})."]
     try:
-        campagnes = brevo("/emailCampaigns", status="sent", limit=5, offset=0, sort="desc",
+        campagnes = brevo("/emailCampaigns", type="classic", status="sent", limit=5, offset=0, sort="desc",
                           statistics="globalStats", excludeHtmlContent="true").get("campaigns", [])
         if campagnes:
             regels += ["", "| Campagne | Verstuurd op | Afgeleverd | Geopend | Geklikt |", "| --- | --- | --- | --- | --- |"]
