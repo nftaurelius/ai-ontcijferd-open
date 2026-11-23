@@ -1,0 +1,83 @@
+---
+// "Zo verspreiden we": klaar voor 4 januari 2027. Het underscore-voorvoegsel houdt de pagina buiten de site.
+// Op 4 januari: hernoemen naar zo-verspreiden-we.astro, een link toevoegen op /zo-werken-we en de cijfers invullen.
+import Basis from "../layouts/Basis.astro";
+
+const regels = [
+  ["Automatisch", ["De site, RSS-feeds en deelafbeeldingen", "Kant-en-klare teksten om over te nemen", "Nieuwe pagina's melden aan zoekmachines", "Cijfers verzamelen"]],
+  ["Alleen als de eindredacteur het verstuurt", ["De nieuwsbrief", "Een bericht op LinkedIn, met de hand geplaatst", "Een mail aan een organisatie", "Een persbericht"]],
+  ["Nooit", ["Als bot reageren of berichten sturen op sociale media", "Persoonlijke e-mailadressen verzamelen of aanschrijven", "Nepaccounts, gekochte volgers of reacties", "Iets beweren dat de site niet waarmaakt"]],
+] as const;
+
+const meten = [
+  ["Sessies die anderen gaven met ons materiaal", "Wat telt: of iemand er iets mee deed. Wie een pakket gaf, kan het ons laten weten op /gegeven."],
+  ["Organisaties die iets overnamen", "Een tekst, een ingesloten tool, een pakket."],
+  ["Inschrijvingen op de nieuwsbrieven", "Per week, en waar ze vandaan komen."],
+  ["Of chatbots ons kennen", "Elke maand dezelfde acht vragen aan zoekmachines en chatbots, bijvoorbeeld \"Mag ik klantgegevens in ChatGPT plakken?\". Noemt het antwoord ons, of een andere Vlaamse bron?"],
+  ["Bezoeken en verwijzingen", "Bewust onderaan: bereik is geen doel op zich."],
+] as const;
+
+const proeven = [
+  ["Een overneemblok aanbieden aan tien gemeentebladen", "Hoeveel nemen het over?"],
+  ["Eén fiche op KlasCement", "Hoeveel downloads na een maand, tegenover dezelfde fiche op onze site?"],
+  ["Zes weken lang elke week een bericht op LinkedIn", "Hoeveel inschrijvingen komen daarvandaan?"],
+] as const;
+---
+
+<Basis titel="Zo verspreiden we" beschrijving="Hoe AI Ontcijferd zijn werk bij mensen krijgt: wat automatisch gebeurt, wat een mens verstuurt, wat we nooit doen, en wat we meten.">
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Transparantie</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Zo verspreiden we</h1>
+      <p class="lead"><span class="markeer">Agents bereiden voor, een mens verstuurt. Wat we meten, staat hier.</span></p>
+      <p>
+        AI Ontcijferd heeft geen advertentiebudget en geen marketingteam. We maken materiaal dat af is, gratis en met
+        je eigen naam erop mag, en brengen het bij de organisaties die het kunnen gebruiken: scholen, bibliotheken,
+        gemeenten, verenigingen. Net als de redactie draait ook de verspreiding grotendeels op AI-agents. Deze pagina
+        zegt wat ze mogen en wat niet.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>De regels</p></div>
+    <div class="proza">
+      <h2>Wat automatisch gebeurt, en wat nooit</h2>
+      {regels.map(([kop, lijst]) => (
+        <>
+          <h3>{kop}</h3>
+          <ul>{lijst.map((r) => <li>{r}</li>)}</ul>
+        </>
+      ))}
+      <p>
+        Agents zoeken organisaties op en schrijven voorstellen klaar, maximaal drie per week. Ze sturen zelf niets.
+        Wat twee weken blijft liggen, vervalt.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Wat telt</p></div>
+    <div class="proza">
+      <h2>Wat we meten</h2>
+      <ol>{meten.map(([kop, uitleg]) => <li><strong>{kop}.</strong> {uitleg}</li>)}</ol>
+      <p>Streefcijfers leggen we pas vast na de eerste meting, niet ervoor. De cijfers komen hier elke maand.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p>Proeven</p></div>
+    <div class="proza">
+      <h2>Experimentenlogboek</h2>
+      <p>Elke proef krijgt vier regels: wat we verwachtten, wat we deden, wat het opleverde, wat we beslissen.</p>
+      <ol>{proeven.map(([proef, vraag]) => <li><strong>{proef}.</strong> {vraag} <span class="meta">Loopt nog.</span></li>)}</ol>
+    </div>
+  </section>
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Meedoen</p></div>
+    <div class="proza">
+      <p>Wil je iets overnemen of een pakket geven? Kijk op <a href="/overnemen">overnemen</a> en <a href="/materiaal">open lesmateriaal</a>. Gaf je al een sessie? <a href="/gegeven">Laat het weten</a>.</p>
+    </div>
+  </section>
+</Basis>

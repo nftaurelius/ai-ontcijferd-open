@@ -97,11 +97,12 @@ Mensen stellen hun vraag aan een zoekmachine of aan een chatbot. De site is daar
 gestructureerde gegevens, AI-crawlers toegelaten) en aangemeld bij Google Search Console (27/10, sitemap
 ingediend). Wat erbij komt:
 
-- aanmelden bij Bing Webmaster Tools (importeren uit Search Console);
+- aanmelden bij Bing Webmaster Tools (importeren uit Search Console); sinds 23/11 meldt IndexNow nieuwe pagina's al
+  automatisch aan Bing (workflow `indexnow.yml`);
 
 - een pagina per echte vraag ("Mag ik ChatGPT gebruiken op het werk?"), gevoed door de vragenbank;
 - de pagina's "stand per thema", die blijven staan en bijgewerkt worden;
-- een maandelijkse test: een agent stelt twintig vaste vragen aan de grote chatbots en noteert of AI Ontcijferd in
+- een maandelijkse test: een agent stelt acht vaste vragen aan de grote chatbots en noteert of AI Ontcijferd in
   het antwoord of de bronnen voorkomt. Dat is zelf een stuk waard.
 
 ### 4. Eigen kanalen
@@ -191,11 +192,11 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 - [ ] De startlijst hierboven.
 - [x] Contactenboek, eerste versie (klaar op 23/11, 33 organisaties): een voorstel van organisaties per doelgroep; Duncan schrapt en
       vult aan.
-- [ ] De eerste drie voorstellen, klaar om op 4 januari te versturen.
+- [x] De eerste drie voorstellen, klaar om op 4 januari te versturen (concepten in `data/verspreiding/voorstellen/`, 23/11).
 - [x] De Verpakker (23/11): bij elke gepubliceerde editie een pakket in `data/weken/<week>/verspreiding/pakket.md` (overneemblok, berichtendienst, luisterscript, links naar mail en deelafbeelding, LinkedIn-concept). Zonder model: alles komt uit de gepubliceerde editie. Workflow `verpakker.yml`.
 - [x] De Meter (23/11): elke maandag de inschrijvingen per Brevo-lijst en de laatste campagnes in de privé cijfers (workflow `meter.yml`, secret `BREVO_API_KEY`).
 - [ ] De nulmeting op 4 januari: Meter plus bezoeken en verwijzers uit Vercel Web Analytics (met de hand).
-- [ ] Duncan: aanmelden bij Bing Webmaster Tools (vindbaarheid, mag nu al).
+- [ ] Duncan: aanmelden bij Bing Webmaster Tools (vindbaarheid, mag nu al). Sinds 23/11 meldt IndexNow nieuwe pagina's al automatisch aan Bing; het account geeft er cijfers bij.
 - [ ] Duncan: LinkedIn-profiel aanvullen met AI Ontcijferd en de link naar de site.
 - [ ] Duncan: een organisatie-account op KlasCement (aanmaken mag nu, materiaal plaatsen vanaf 4 januari).
 
@@ -204,7 +205,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 - [ ] De eerste drie voorstellen versturen; daarna drie per week.
 - [ ] Elke week het klaarstaande LinkedIn-bericht plaatsen (zes weken als experiment).
 - [ ] De eerste pakketten op KlasCement.
-- [ ] De pagina "Zo verspreiden we" met de cijfers en het experimentenlogboek.
+- [ ] De pagina "Zo verspreiden we" met de cijfers en het experimentenlogboek. Klaar maar verborgen (`site/src/pages/_zo-verspreiden-we.astro`); op 4/1 hernoemen en de cijfers invullen.
 
 **Stap 2, januari en februari**
 - [ ] De Speurder en de Voorsteller.
@@ -222,7 +223,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 - Het aantal sessies dat anderen gaven.
 - De sites die naar ons verwijzen, en de zoektermen en vertoningen in Search Console.
 - Voorstellen: verstuurd, beantwoord, samenwerking.
-- Hoe vaak AI Ontcijferd voorkomt in de antwoorden van chatbots op de twintig testvragen.
+- Hoe vaak AI Ontcijferd voorkomt in de antwoorden van chatbots op de acht testvragen.
 
 Streefcijfers leggen we vast na de nulmeting, niet ervoor.
 
