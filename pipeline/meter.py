@@ -51,7 +51,16 @@ def meting() -> str:
 
 
 def main() -> None:
-    blok = meting()
+    try:
+        blok = meting()
+    except requests.HTTPError as fout:  # schrijf de reden op in plaats van stil te falen (bevat geen sleutel)
+        r = fout.response
+        uitleg = ""
+        try:
+            uitleg = str(r.json().get("message", ""))[:300]
+        except ValueError:
+            uitleg = r.text[:300]
+        blok = f"## Meter, {nu():%Y-%m-%d}\n\n- Brevo weigerde de vraag (HTTP {r.status_code}): {uitleg}\n"
     PAD.parent.mkdir(parents=True, exist_ok=True)
     tekst = PAD.read_text(encoding="utf-8") if PAD.exists() else "# Cijfers verspreiding\n"
     kop = blok.splitlines()[0]
