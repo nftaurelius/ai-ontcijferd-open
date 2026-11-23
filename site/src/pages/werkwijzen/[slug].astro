@@ -1,0 +1,72 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { beschikbareWerkwijzen, SOORT_NAAM, type Werkwijze } from "../../lib/werkwijzen";
+import { datumLeesbaar } from "../../lib/edities";
+import { LICENTIE_URL, SITE_URL, uitgever } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return beschikbareWerkwijzen().map((w) => ({ params: { slug: w.slug }, props: { w } }));
+}
+const { w } = Astro.props as { w: Werkwijze };
+const url = `${SITE_URL}/werkwijzen/${w.slug}`;
+const bijsluiter = [
+  ["Voor wie", w.voor.join(", ")],
+  ["Niveau", w.niveau],
+  ["Versie", `${w.versie}, bijgewerkt op ${datumLeesbaar(w.bijgewerkt)}`],
+  ["Getest", w.getest],
+  ["Licentie", `${w.licentie}, AI Ontcijferd`],
+].filter(([, v]) => v);
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": url,
+  url,
+  name: w.titel,
+  description: w.samenvatting,
+  inLanguage: "nl-BE",
+  dateModified: w.bijgewerkt,
+  license: LICENTIE_URL,
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+---
+
+<Basis titel={w.titel} beschrijving={w.samenvatting} schema={schema} bron={`content/werkwijzen/${w.slug}.md`}>
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">{SOORT_NAAM[w.soort]}</p><p><a href="/werkwijzen">Alle werkwijzen</a></p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">{w.titel}</h1>
+      <p class="lead">{w.samenvatting}</p>
+      <table class="bijsluiter">
+        <tbody>{bijsluiter.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody>
+      </table>
+      {w.bestanden.length > 0 && (
+        <p><a class="knop" href={`/werkwijzen/${w.slug}.zip`}>Download de {w.soort === "skill" ? "skill" : "bestanden"} (zip)</a></p>
+      )}
+    </div>
+  </section>
+  <section class="rij sectie">
+    <div class="kantlijn"></div>
+    <div class="proza werkwijze-tekst" set:html={w.html} />
+  </section>
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Overnemen</p></div>
+    <div class="proza">
+      <p>Je mag deze {SOORT_NAAM[w.soort].toLowerCase()} gebruiken, aanpassen en delen onder {w.licentie}. Vermeld AI Ontcijferd en zet een link naar deze pagina. Werkte het bij jou, of net niet? <a href="/meedoen">Laat het weten</a>.</p>
+    </div>
+  </section>
+</Basis>
+
+<script>
+  import { koppelKopieerknoppen } from "../../scripts/kopieer";
+  // Een kopieerknop onder elk codeblok (de prompt).
+  document.querySelectorAll<HTMLPreElement>(".werkwijze-tekst pre").forEach((pre, i) => {
+    pre.id ||= `prompt-${i + 1}`;
+    const knop = document.createElement("button");
+    knop.type = "button";
+    knop.className = "knop knop-klein";
+    knop.dataset.kopieer = pre.id;
+    knop.textContent = "Kopieer";
+    pre.after(knop);
+  });
+  koppelKopieerknoppen();
+</script>

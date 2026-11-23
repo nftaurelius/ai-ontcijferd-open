@@ -172,7 +172,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 
 **Doen**
 - [x] Bijsluiters van AI-tools, uit de gegevens die al in de Plakcheck zitten (23/11, `/bijsluiters`).
-- [ ] Eerste werkwijzen (prompts) bij de pakketten.
+- [x] Eerste werkwijzen: drie prompts en een skill (23/11, `/werkwijzen`). Agents volgen.
 
 **Volgen**
 - [ ] Het stuk over 2 december en een nagekeken AI Act-kompas.

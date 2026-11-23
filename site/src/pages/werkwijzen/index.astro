@@ -1,0 +1,65 @@
+---
+import Basis from "../../layouts/Basis.astro";
+import { alleWerkwijzen, SOORT_NAAM, type Soort } from "../../lib/werkwijzen";
+import { datumLeesbaar } from "../../lib/edities";
+import { LICENTIE_URL, SITE_URL, uitgever } from "../../lib/seo";
+
+const alle = alleWerkwijzen();
+const groepen: { soort: Soort; titel: string; uitleg: string }[] = [
+  { soort: "prompt", titel: "Prompts", uitleg: "Een geteste vraag om te kopiëren en in je eigen AI-assistent te plakken." },
+  { soort: "skill", titel: "Skills", uitleg: "Een map met instructies die een assistent zelf laadt als de taak erom vraagt. Eén keer klaarzetten, daarna werkt hij vanzelf." },
+  { soort: "agent", titel: "Assistenten en agents", uitleg: "Een eigen assistent voor een vaste taak, of een agent die zelf stappen zet. Met wat hij wel en niet mag aanraken." },
+];
+const url = `${SITE_URL}/werkwijzen`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": url,
+  url,
+  name: "Werkwijzen: prompts, skills en agents om AI verstandig te gebruiken",
+  inLanguage: "nl-BE",
+  license: LICENTIE_URL,
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+---
+
+<Basis titel="Werkwijzen: prompts, skills en agents" beschrijving="Prompts, skills en agents om AI verstandig te gebruiken, met een bijsluiter: voor wie, getest met welk model, en wat je nakijkt. Gratis, onder CC BY 4.0." schema={schema} bron="content/werkwijzen/README.md">
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Werkwijzen</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Werkwijzen</h1>
+      <p class="lead">
+        <span class="markeer">Prompts, skills en agents om AI verstandig te gebruiken.</span>{" "}
+        Elk met een bijsluiter: voor wie, getest met welk model, en wat je zelf nakijkt.
+      </p>
+      <p class="meta">
+        Gratis en aan te passen onder CC BY 4.0. Een werkwijze die we nog niet testten, zegt dat ook. Probeerde je er een? Laat weten met welk model en wat het gaf, via <a href="/meedoen">Meedoen</a>.
+      </p>
+    </div>
+  </section>
+
+  {groepen.map((g) => {
+    const lijst = alle.filter((w) => w.soort === g.soort);
+    return lijst.length > 0 && (
+      <section class="rij sectie" id={g.soort}>
+        <div class="kantlijn"><p class="kantlijn-kop">{g.titel}</p></div>
+        <div>
+          <p class="meta" style="margin-top:0">{g.uitleg}</p>
+          <ul class="aanbod">
+            {lijst.map((w) => (
+              <li>
+                <p class="aanbod-soort">
+                  <span class="soort">{SOORT_NAAM[w.soort]}</span>{" "}
+                  {w.status === "beschikbaar" ? `Versie ${w.versie} · ${datumLeesbaar(w.bijgewerkt)}` : "In voorbereiding"}
+                </p>
+                <h2>{w.status === "beschikbaar" ? <a href={`/werkwijzen/${w.slug}`}>{w.titel}</a> : w.titel}</h2>
+                <p>{w.samenvatting}</p>
+                {w.voor.length > 0 && <p class="meta">Voor: {w.voor.join(", ").toLowerCase()}</p>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    );
+  })}
+</Basis>

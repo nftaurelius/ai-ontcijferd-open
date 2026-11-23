@@ -7,7 +7,7 @@ export const LINKEDIN = ""; // url van de LinkedIn-pagina van AI Ontcijferd, als
 export const MENU = [
   { href: "/volgen", tekst: "Volgen", uitleg: "Wat gebeurt er? De Stand van AI, de dagbrief, dossiers en praktijkvoorbeelden.", ook: ["/edities", "/plus", "/wat-kan-ai", "/terugblik"] },
   { href: "/leren", tekst: "Leren", uitleg: "Hoe werkt het? Begin hier, het AI Act-kompas en de jargonfilter.", ook: ["/begin-hier", "/ai-act", "/jargon", "/naslag"] },
-  { href: "/doen", tekst: "Doen", uitleg: "Wat kan ik ermee? De Plakcheck, bijsluiters van AI-tools en fiches.", ook: ["/plakcheck", "/bijsluiters", "/fiches", "/gratis"] },
+  { href: "/doen", tekst: "Doen", uitleg: "Wat kan ik ermee? De Plakcheck, bijsluiters van AI-tools, prompts en skills, en fiches.", ook: ["/plakcheck", "/bijsluiters", "/werkwijzen", "/fiches", "/gratis"] },
   { href: "/lesgeven", tekst: "Lesgeven", uitleg: "Hoe geef ik het door? Open lespakketten om zelf te geven, en alles om over te nemen.", ook: ["/materiaal", "/overnemen"] },
   { href: "/voor", tekst: "Voor jou", uitleg: "Alleen wat jouw sector raakt: onderwijs, werk, gemeenten, zelfstandigen, bibliotheken, burgers.", ook: [] as string[] },
 ];
@@ -45,6 +45,7 @@ export const INGANGEN: Record<string, { titel: string; vraag: string; lead: stri
     items: [
       { href: "/plakcheck", tekst: "Plakcheck en Urenrekening", uitleg: "Mag dit in een chatbot? En loont het dan nog? Alles draait in je browser." },
       { href: "/bijsluiters", tekst: "Bijsluiters van AI-tools", uitleg: "Wat ChatGPT, Claude, Gemini, Copilot en Le Chat met je invoer doen, en wat ze kosten." },
+      { href: "/werkwijzen", tekst: "Werkwijzen", uitleg: "Prompts, skills en agents om AI verstandig te gebruiken, met wat je zelf nakijkt." },
       { href: "/fiches", tekst: "Fiches", uitleg: "Praktische checklists om af te drukken." },
     ],
   },

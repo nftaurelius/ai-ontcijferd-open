@@ -1,0 +1,22 @@
+---
+// Klein blok met de nieuwste essays over AI van Duncan Panis (duncanpanis.be).
+import { essays } from "../lib/verderdenken";
+interface Props { aantal?: number }
+const { aantal = 3 } = Astro.props;
+const lijst = essays().slice(0, aantal);
+---
+
+{lijst.length > 0 && (
+  <section class="rij sectie klein" aria-labelledby="verder-denken">
+    <div class="kantlijn"><p class="kantlijn-kop" id="verder-denken">Verder denken</p></div>
+    <div class="proza">
+      <p class="meta" style="margin-top:0">Essays over AI van Duncan Panis, op zijn eigen site. Geen nieuws, wel de vragen eronder.</p>
+      <ul class="klein-lijst">
+        {lijst.map((e) => (
+          <li><a href={e.url}>{e.titel}</a> <span class="meta">· {e.samenvatting}</span></li>
+        ))}
+      </ul>
+      <p class="meta"><a href="https://duncanpanis.be/geschriften">Alle essays op duncanpanis.be</a></p>
+    </div>
+  </section>
+)}

@@ -6,21 +6,35 @@
 // na de klik daarin komt de lezer op /ingeschreven.
 const FORMULIER_ACTIE =
   "https://ea44266d.sibforms.com/serve/MUIFAOU2Yg8lC_6FDTGlsZ-WS8E0vGu0t38wjLM4cmc9pzeXokmd1kVuX8JL0SBNWZDtB5xh-K1KgW2XIlsQOz3cZcJ_7u09U-QKSGhvRyuCT5mno0OY4bhJmjgA1TP32MWtpEz-EodDYVTFNeqVU9jx62WtIT7WkYJHkyfvpY-v8iEgaaVhd4yGtq26hcil7NrQno_QOuPjRkU3pw==";
+// FORMULIER_MATERIAAL: tweede Brevo-formulier, voor de lijst "Nieuw gratis materiaal" (af en toe een mail
+// als er een nieuw lespakket, een tool, een prompt of een cursusdeel bijkomt). Zolang dit leeg is, toont de
+// site die keuze niet. Zelfde werkwijze: Brevo → Forms → het formulier → Share → Simple HTML → action-url.
+const FORMULIER_MATERIAAL = "";
 import { alleEdities } from "../lib/edities";
 
 interface Props {
   /** groot: volledig blok met wat je krijgt. kort: één regel, voor midden in een pagina. */
   variant?: "groot" | "kort";
+  /** week: de Stand van AI (standaard). materiaal: alleen nieuw gratis materiaal (voor lesgevers). */
+  lijst?: "week" | "materiaal";
 }
-const { variant = "groot" } = Astro.props;
+const { variant = "groot", lijst: gevraagd = "week" } = Astro.props;
+const metMateriaal = FORMULIER_MATERIAAL !== "";
+// Zonder materiaalformulier valt een materiaal-inschrijving terug op de weekeditie.
+const lijst = gevraagd === "materiaal" && metMateriaal ? "materiaal" : "week";
+const actie = lijst === "materiaal" ? FORMULIER_MATERIAAL : FORMULIER_ACTIE;
 const laatste = alleEdities()[0];
 const id = `inschrijven-${Math.random().toString(36).slice(2, 8)}`;
 ---
 
 {variant === "kort" ? (
   <section class="inschrijven inschrijven-kort" aria-labelledby={`${id}-titel`}>
-    <p class="inschrijven-kort-tekst" id={`${id}-titel`}><strong>Liever elke vrijdag in je mailbox?</strong> Vijf minuten, gratis.</p>
-    <form class="inschrijfformulier" action={FORMULIER_ACTIE} method="post" target={`${id}-doel`}>
+    <p class="inschrijven-kort-tekst" id={`${id}-titel`}>
+      {lijst === "materiaal"
+        ? <><strong>Een mail als er nieuw lesmateriaal is?</strong> Alleen dat, af en toe, gratis.</>
+        : <><strong>Liever elke vrijdag in je mailbox?</strong> Vijf minuten, gratis.</>}
+    </p>
+    <form class="inschrijfformulier" action={actie} method="post" target={`${id}-doel`}>
       <label class="visueel-verborgen" for={`${id}-email`}>E-mailadres</label>
       <input id={`${id}-email`} type="email" name="EMAIL" required autocomplete="email" placeholder="jij@voorbeeld.be" />
       <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
@@ -43,7 +57,14 @@ const id = `inschrijven-${Math.random().toString(36).slice(2, 8)}`;
       <li>Wat ze betekenen voor Vlaanderen, met een hype-meter per onderwerp</li>
       <li>Gratis, en uitschrijven kan met één klik</li>
     </ul>
-    <form class="inschrijfformulier" action={FORMULIER_ACTIE} method="post" target={`${id}-doel`}>
+    <form class="inschrijfformulier" action={FORMULIER_ACTIE} method="post" target={`${id}-doel`} data-materiaal={metMateriaal ? FORMULIER_MATERIAAL : undefined}>
+      {metMateriaal && (
+        <fieldset class="inschrijf-keuze">
+          <legend class="meta">Wat wil je krijgen?</legend>
+          <label><input type="checkbox" data-keuze="week" checked /> <strong>Stand van AI</strong>: elke vrijdag de week in AI</label>
+          <label><input type="checkbox" data-keuze="materiaal" /> <strong>Nieuw gratis materiaal</strong>: een mail als er een lespakket, tool of prompt bijkomt</label>
+        </fieldset>
+      )}
       <label class="meta" for={`${id}-email`} style="flex-basis:100%">Je e-mailadres</label>
       <input id={`${id}-email`} type="email" name="EMAIL" required autocomplete="email" placeholder="jij@voorbeeld.be" />
       <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
@@ -63,7 +84,35 @@ const id = `inschrijven-${Math.random().toString(36).slice(2, 8)}`;
 
 <script>
   document.querySelectorAll<HTMLFormElement>(".inschrijfformulier").forEach((form) => {
-    form.addEventListener("submit", () => {
+    form.addEventListener("submit", (e) => {
+      // Keuze tussen twee lijsten: elk Brevo-formulier krijgt zijn eigen verzoek.
+      const materiaal = form.dataset.materiaal;
+      if (materiaal) {
+        const week = form.querySelector<HTMLInputElement>('input[data-keuze="week"]')?.checked ?? true;
+        const mat = form.querySelector<HTMLInputElement>('input[data-keuze="materiaal"]')?.checked ?? false;
+        if (!week && !mat) {
+          e.preventDefault();
+          return;
+        }
+        if (mat) {
+          const kopie = form.cloneNode(true) as HTMLFormElement;
+          kopie.removeAttribute("data-materiaal");
+          kopie.action = materiaal;
+          const doel = document.createElement("iframe");
+          doel.name = `${form.target}-materiaal`;
+          doel.hidden = true;
+          doel.style.display = "none";
+          document.body.append(doel);
+          kopie.target = doel.name;
+          kopie.hidden = true;
+          document.body.append(kopie);
+          kopie.submit();
+          setTimeout(() => kopie.remove(), 3000);
+        }
+        if (!week) {
+          e.preventDefault();
+        }
+      }
       const bedankt = form.parentElement?.querySelector<HTMLElement>(".inschrijf-bedankt");
       // het verzoek vertrekt naar het verborgen iframe; toon meteen de bevestiging
       setTimeout(() => {

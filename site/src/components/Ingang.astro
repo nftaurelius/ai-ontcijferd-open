@@ -3,6 +3,7 @@
 import Basis from "../layouts/Basis.astro";
 import { INGANGEN, MENU } from "../lib/site";
 import { SITE_URL, uitgever } from "../lib/seo";
+import VerderDenken from "./VerderDenken.astro";
 
 interface Props { sleutel: "volgen" | "leren" | "doen" | "lesgeven" }
 const { sleutel } = Astro.props;
@@ -39,6 +40,7 @@ const schema = {
       ))}
     </ul>
   </section>
+  {(sleutel === "leren" || sleutel === "volgen") && <VerderDenken />}
   <section class="rij sectie klein">
     <div class="kantlijn"><p>Ook</p></div>
     <div class="proza">
