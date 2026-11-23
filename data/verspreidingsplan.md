@@ -165,8 +165,8 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 
 **Leren en lesgeven**
 - [ ] De AI-proeverij als downloadbaar pakket (Duncan werkt ze af; daarna zetten wij ze in het sjabloon).
-- [ ] AI-geletterdheid in een doos (artikel 4 van de AI Act): afsprakenkaart, sessie van een uur,
-      aanwezigheidslijst, zelftest, lijst van gebruikte tools.
+- [x] AI-geletterdheid in een doos (artikel 4 van de AI Act): afsprakenkaart, sessie van een uur,
+      aanwezigheidslijst, zelftest, lijst van gebruikte tools (23/11, versie 1.0, `/materiaal/ai-geletterdheid-in-een-doos`).
 - [ ] Minstens één pakket meer uit het AI-aanbod, in de algemene versie.
 - [ ] Een pagina "Begin hier".
 
