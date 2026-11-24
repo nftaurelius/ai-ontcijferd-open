@@ -177,7 +177,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 
 **Volgen**
 - [x] Het stuk over 2 december en een nagekeken AI Act-kompas (23/11).
-- [ ] Het jaaroverzicht 2026, klaar om op 4 januari mee naar buiten te gaan.
+- [ ] Het jaaroverzicht 2026, klaar om op 4 januari mee naar buiten te gaan. Concept met tien ontwikkelingen en wat 2027 brengt staat klaar (24/11, privé); eind december aanvullen met december, nakijken, "Mijn inschatting" van Duncan.
 
 **Doorgeven**
 - [x] Pagina `/overnemen` en een blok "Neem dit over" bij elke editie.
@@ -196,7 +196,7 @@ iets wezenlijks, dan beslist Duncan of de start verschuift.
 - [x] De Verpakker (23/11): bij elke gepubliceerde editie een pakket in `data/weken/<week>/verspreiding/pakket.md` (overneemblok, berichtendienst, luisterscript, links naar mail en deelafbeelding, LinkedIn-concept). Zonder model: alles komt uit de gepubliceerde editie. Workflow `verpakker.yml`.
 - [x] De Meter (23/11): elke maandag de inschrijvingen per Brevo-lijst en de laatste campagnes in de privé cijfers (workflow `meter.yml`, secret `BREVO_API_KEY`).
 - [ ] De nulmeting op 4 januari: Meter plus bezoeken en verwijzers uit Vercel Web Analytics (met de hand).
-- [ ] Duncan: aanmelden bij Bing Webmaster Tools (vindbaarheid, mag nu al). Sinds 23/11 meldt IndexNow nieuwe pagina's al automatisch aan Bing; het account geeft er cijfers bij.
+- [x] Duncan: aanmelden bij Bing Webmaster Tools (vindbaarheid, mag nu al); geverifieerd en sitemap ingediend op 24/11. Sinds 23/11 meldt IndexNow nieuwe pagina's al automatisch aan Bing; het account geeft er cijfers bij.
 - [ ] Duncan: LinkedIn-profiel aanvullen met AI Ontcijferd en de link naar de site.
 - [ ] Duncan: een organisatie-account op KlasCement (aanmaken mag nu, materiaal plaatsen vanaf 4 januari).
 
