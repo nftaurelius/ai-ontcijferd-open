@@ -6,7 +6,7 @@ status: beschikbaar
 volgorde: 40
 voor: ["Lokale overheden"]
 deelnemers: "Gemeenteraadsleden, schepenen en raadsleden van het OCMW, zonder technische voorkennis"
-niveau: "Instap"
+niveau: "N0–N2 · Nieuwsgierig tot Gebruiker"
 duur: "45 minuten (plus een uur voorbereiding)"
 versie: "1.0.1"
 bijgewerkt: 2026-11-23

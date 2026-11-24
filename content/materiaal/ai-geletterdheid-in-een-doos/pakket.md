@@ -6,7 +6,7 @@ status: beschikbaar
 volgorde: 10
 voor: ["Werk", "Zelfstandigen", "Lokale overheden", "Onderwijs", "Bibliotheken"]
 deelnemers: "Medewerkers en vrijwilligers die AI gebruiken of gaan gebruiken voor hun werk, zonder voorkennis"
-niveau: "Instap"
+niveau: "N0–N2 · Nieuwsgierig tot Gebruiker"
 duur: "1 uur (plus een halfuur voorbereiding)"
 versie: "1.1.1"
 bijgewerkt: 2026-11-23

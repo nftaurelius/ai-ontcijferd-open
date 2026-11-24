@@ -49,6 +49,8 @@ export type Pakket = {
   voor: string[];
   deelnemers: string;
   niveau: string;
+  /** De niveaus uit de niveaucheck waarbij het pakket past, bv. ["N0", "N1", "N2"]; leeg als onbekend. */
+  niveaus: string[];
   duur: string;
   versie: string;
   bijgewerkt: string;
@@ -120,6 +122,20 @@ export function groepen(p: Pakket): Groep[] {
   return uit;
 }
 
+/** "N0–N2 · ..." -> ["N0","N1","N2"]; "N1 · Starter" -> ["N1"]; "N0 tot N4" -> alle vijf. */
+export function niveausUit(tekst: string): string[] {
+  const m = tekst.match(/N(\d)\s*(?:[–-]|tot)\s*N?(\d)/) ?? tekst.match(/N(\d)/);
+  if (!m) return [];
+  const van = Number(m[1]), tot = Number(m[2] ?? m[1]);
+  return Array.from({ length: tot - van + 1 }, (_, i) => `N${van + i}`);
+}
+
+/** Korte weergave: "N0–N2" of "N1". */
+export function niveauKort(p: { niveaus: string[] }): string {
+  const n = p.niveaus;
+  return n.length === 0 ? "" : n.length === 1 ? n[0] : `${n[0]}–${n[n.length - 1]}`;
+}
+
 let cache: Pakket[] | null = null;
 
 export function allePakketten(): Pakket[] {
@@ -176,6 +192,7 @@ export function allePakketten(): Pakket[] {
         voor: Array.isArray(data.voor) ? data.voor.map(String) : [],
         deelnemers: String(data.deelnemers ?? ""),
         niveau: String(data.niveau ?? ""),
+        niveaus: niveausUit(String(data.niveau ?? "")),
         duur: String(data.duur ?? ""),
         versie,
         bijgewerkt: datum(data.bijgewerkt),

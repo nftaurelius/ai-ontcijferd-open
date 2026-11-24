@@ -6,7 +6,7 @@ status: beschikbaar
 volgorde: 20
 voor: ["Burgers","Bibliotheken","Onderwijs"]
 deelnemers: "Burgers, ook zonder ervaring met AI. Senioren en ouders zijn een belangrijke doelgroep."
-niveau: "Instap"
+niveau: "N0–N2 · Nieuwsgierig tot Gebruiker"
 duur: "1 uur (plus een uur voorbereiding)"
 versie: "1.0.1"
 bijgewerkt: 2026-11-23

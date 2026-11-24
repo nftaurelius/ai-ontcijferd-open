@@ -6,7 +6,7 @@ status: beschikbaar
 volgorde: 50
 voor: ["Burgers","Bibliotheken","Onderwijs","Werk"]
 deelnemers: "Iedereen, met of zonder ervaring met AI"
-niveau: "Instap"
+niveau: "N1–N3 · Starter tot Power user"
 duur: "1 uur (plus een halfuur voorbereiding)"
 versie: "1.0.1"
 bijgewerkt: 2026-11-23

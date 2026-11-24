@@ -6,7 +6,7 @@ status: beschikbaar
 volgorde: 30
 voor: ["Onderwijs"]
 deelnemers: "Het lerarenteam en de directie"
-niveau: "Instap"
+niveau: "N0–N2 · Nieuwsgierig tot Gebruiker"
 duur: "1 uur (plus een halfuur voorbereiding)"
 versie: "1.0.1"
 bijgewerkt: 2026-11-23

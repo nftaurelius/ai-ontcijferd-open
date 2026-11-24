@@ -3,6 +3,7 @@
 // Alles gebeurt in de browser: niets wordt verstuurd of bewaard.
 import Basis from "../layouts/Basis.astro";
 import { niveaucheck, VERDER } from "../lib/niveaucheck";
+import { beschikbarePakketten, niveauKort } from "../lib/materiaal";
 import { SITE_URL, uitgever } from "../lib/seo";
 
 const { niveaus, vragen, onderElke, versie, nagekeken, chatbot } = niveaucheck();
@@ -19,6 +20,10 @@ const schema = {
   author: { "@type": "Person", name: "Duncan Panis" },
   publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
 };
+// Lespakketten per niveau: alles wat beschikbaar is, behalve de cursus (die staat al bij "verder") en het fundament.
+const pakketten = beschikbarePakketten().filter((p) => p.soort !== "fundament" && p.slug !== "ai-cursus");
+const voorIedereen = (p: { voor: string[] }) => p.voor.includes("Burgers");
+const pakkettenOp = (code: string) => pakketten.filter((p) => p.niveaus.includes(code));
 const cursusLink = (code: string) => VERDER[code]?.find((v) => v.href.startsWith("/cursus"));
 ---
 
@@ -62,6 +67,7 @@ const cursusLink = (code: string) => VERDER[code]?.find((v) => v.href.startsWith
         <div id="nc-uitslag-tekst"></div>
         <h3>Verder op deze site</h3>
         <ul id="nc-uitslag-verder"></ul>
+        <div id="nc-uitslag-pakketten"></div>
         <div class="nc-onder" set:html={onderElke} />
         <p><button type="button" class="knop" id="nc-opnieuw">Opnieuw beginnen</button> <a href="#niveaus">Bekijk alle niveaus</a></p>
       </div>
@@ -100,6 +106,24 @@ const cursusLink = (code: string) => VERDER[code]?.find((v) => v.href.startsWith
           <ul class="nc-detail-verder">
             {(VERDER[n.code] ?? []).map((v) => <li><a href={v.href}>{v.tekst}</a></li>)}
           </ul>
+          <div class="nc-detail-pakketten">
+            <h3>Sessies op jouw niveau</h3>
+            {pakkettenOp(n.code).length === 0 ? (
+              <p>Op {n.code} is er nog geen open lespakket. Het volgt; schrijf je in op <a href="/nieuwsbrief">Nieuw gratis materiaal</a> om het te weten.</p>
+            ) : (
+              <>
+                <p>Deze open lespakketten passen bij {n.code}. Een bibliotheek, school, vereniging of werkgever kan ze gratis geven: vraag ernaar, of geef ze zelf.</p>
+                {pakkettenOp(n.code).filter(voorIedereen).length > 0 && (
+                  <><p class="meta" style="margin-bottom:0.2em">Voor iedereen</p>
+                  <ul>{pakkettenOp(n.code).filter(voorIedereen).map((p) => <li><a href={`/materiaal/${p.slug}`}>{p.titel}</a> <span class="meta">({niveauKort(p)})</span></li>)}</ul></>
+                )}
+                {pakkettenOp(n.code).filter((p) => !voorIedereen(p)).length > 0 && (
+                  <><p class="meta" style="margin-bottom:0.2em">Op het werk, op school of in de gemeente</p>
+                  <ul>{pakkettenOp(n.code).filter((p) => !voorIedereen(p)).map((p) => <li><a href={`/materiaal/${p.slug}`}>{p.titel}</a> <span class="meta">({niveauKort(p)})</span></li>)}</ul></>
+                )}
+              </>
+            )}
+          </div>
         </details>
       ))}
     </div>
@@ -161,6 +185,7 @@ const cursusLink = (code: string) => VERDER[code]?.find((v) => v.href.startsWith
     document.getElementById("nc-uitslag-kop")!.textContent = `${code} · ${d.dataset.naam}`;
     document.getElementById("nc-uitslag-tekst")!.innerHTML = d.querySelector(".nc-detail-tekst")!.innerHTML;
     document.getElementById("nc-uitslag-verder")!.innerHTML = d.querySelector(".nc-detail-verder")!.innerHTML;
+    document.getElementById("nc-uitslag-pakketten")!.innerHTML = d.querySelector(".nc-detail-pakketten")!.innerHTML;
     lijst.hidden = true;
     terug.parentElement!.hidden = true;
     voortgang.textContent = "Klaar";

@@ -40,7 +40,7 @@ const schema = {
         <p>
           {p.deelnemers && <>Voor: {p.deelnemers}<br /></>}
           {p.duur && <>Duur: {p.duur}<br /></>}
-          {p.niveau && <>Niveau: {p.niveau}<br /></>}
+          {p.niveau && <>Niveau: {p.niveaus.length ? <a href="/niveaucheck">{p.niveau}</a> : p.niveau}<br /></>}
           Versie {p.versie}<br />
           {p.bijgewerkt && <>Bijgewerkt {datumLeesbaar(p.bijgewerkt)}<br /></>}
           <a rel="license" href={lic.url}>{p.licentie}</a>

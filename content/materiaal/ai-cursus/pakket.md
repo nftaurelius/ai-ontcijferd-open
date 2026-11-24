@@ -6,7 +6,7 @@ status: beschikbaar
 volgorde: 5
 voor: ["Burgers", "Werk", "Zelfstandigen", "Onderwijs", "Lokale overheden", "Bibliotheken"]
 deelnemers: "Iedereen die met AI wil leren werken: thuis, op het werk of in een vereniging. Geen voorkennis nodig."
-niveau: "Instap tot gevorderd (de delen klimmen)"
+niveau: "N0–N4 · de delen klimmen van Nieuwsgierig tot Bouwer"
 duur: "Deel 1 in een namiddag; de hele cursus in eigen tempo"
 versie: "oktober 2026 (kernversie)"
 bijgewerkt: 2026-11-23

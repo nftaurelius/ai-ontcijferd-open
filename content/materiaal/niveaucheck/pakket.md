@@ -4,7 +4,7 @@ samenvatting: "Vijf korte vragen met ja of nee, en je weet waar je staat met AI:
 soort: fundament
 status: beschikbaar
 volgorde: 5
-voor: ["Bibliotheken", "Burgers", "Werk", "Onderwijs", "Lokale besturen"]
+voor: ["Bibliotheken", "Burgers", "Werk", "Onderwijs", "Lokale overheden"]
 deelnemers: "Iedereen die wil weten waar hij staat met AI, en organisaties die sessies over AI geven."
 niveau: "Alle niveaus, N0 tot N4"
 duur: "2 minuten om in te vullen; ongeveer 1 uur om het online formulier te bouwen en te testen"

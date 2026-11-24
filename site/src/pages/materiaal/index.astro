@@ -1,7 +1,7 @@
 ---
 import Basis from "../../layouts/Basis.astro";
 import Inschrijven from "../../components/Inschrijven.astro";
-import { allePakketten, SOORTEN, grootte, totaleGrootte } from "../../lib/materiaal";
+import { allePakketten, SOORTEN, grootte, totaleGrootte, niveauKort } from "../../lib/materiaal";
 import { datumLeesbaar } from "../../lib/edities";
 import { LICENTIE_URL, SITE_URL, uitgever } from "../../lib/seo";
 
@@ -10,6 +10,7 @@ const beschikbaar = pakketten.filter((p) => p.status === "beschikbaar");
 const komend = pakketten.filter((p) => p.status !== "beschikbaar");
 const soorten = [...new Set(beschikbaar.map((p) => p.soort))];
 const doelgroepen = [...new Set(beschikbaar.flatMap((p) => p.voor))];
+const NIVEAUS = [["N0", "Nieuwsgierig"], ["N1", "Starter"], ["N2", "Gebruiker"], ["N3", "Power user"], ["N4", "Bouwer"]] as const;
 const url = `${SITE_URL}/materiaal`;
 const schema = {
   "@context": "https://schema.org",
@@ -70,6 +71,11 @@ const schema = {
                 {doelgroepen.map((d) => <button type="button" data-voor={d} aria-pressed="false">{d}</button>)}
               </div>
             )}
+            <div class="filter" role="group" aria-label="Filter op niveau">
+              <button type="button" data-niveau="" aria-pressed="true">Elk niveau</button>
+              {NIVEAUS.map(([c, naam]) => <button type="button" data-niveau={c} aria-pressed="false" title={naam}>{c} · {naam}</button>)}
+              <a href="/niveaucheck" class="filter-uitleg" style="font-size:0.9rem;align-self:center">Welk niveau ben ik?</a>
+            </div>
             {soorten.length > 1 && (
               <div class="filter" role="group" aria-label="Filter op soort">
                 <button type="button" data-soort="" aria-pressed="true">Alles</button>
@@ -83,7 +89,7 @@ const schema = {
         <div class="kantlijn"><p>{beschikbaar.length} {beschikbaar.length === 1 ? "pakket" : "pakketten"}</p></div>
         <ul class="aanbod">
           {beschikbaar.map((p) => (
-            <li data-pakket data-soort={p.soort} data-voor={p.voor.join("|")}>
+            <li data-pakket data-soort={p.soort} data-voor={p.voor.join("|")} data-niveaus={p.niveaus.join("|")}>
               <p class="aanbod-soort"><span class="soort">{SOORTEN[p.soort]}</span> Versie {p.versie}{p.bijgewerkt && `, bijgewerkt ${datumLeesbaar(p.bijgewerkt)}`}</p>
               <h2><a href={`/materiaal/${p.slug}`}>{p.titel}</a></h2>
               <p>{p.samenvatting}</p>
@@ -120,7 +126,7 @@ const schema = {
           {komend.map((p) => (
             <li>
               <span class="soort">{SOORTEN[p.soort]}</span>
-              <strong>{p.titel}</strong>
+              <strong>{p.titel}</strong>{niveauKort(p) && <span class="meta"> · {niveauKort(p)}</span>}
               {p.samenvatting && <p>{p.samenvatting}</p>}
             </li>
           ))}
@@ -148,18 +154,23 @@ const schema = {
 <script>
   const kaarten = Array.from(document.querySelectorAll<HTMLElement>("[data-pakket]"));
   const leeg = document.getElementById("filter-leeg");
-  const staat = { voor: "", soort: "" };
+  const staat = { voor: "", soort: "", niveau: "" };
   function pasToe() {
     let zichtbaar = 0;
     for (const k of kaarten) {
-      const ok = (!staat.voor || (k.dataset.voor ?? "").split("|").includes(staat.voor)) && (!staat.soort || k.dataset.soort === staat.soort);
+      const ok = (!staat.voor || (k.dataset.voor ?? "").split("|").includes(staat.voor)) && (!staat.soort || k.dataset.soort === staat.soort) && (!staat.niveau || (k.dataset.niveaus ?? "").split("|").includes(staat.niveau));
       k.hidden = !ok;
       if (ok) zichtbaar++;
     }
     if (leeg) leeg.hidden = zichtbaar > 0;
     document.querySelectorAll<HTMLButtonElement>("[data-voor]").forEach((b) => b.tagName === "BUTTON" && b.setAttribute("aria-pressed", String(b.dataset.voor === staat.voor)));
     document.querySelectorAll<HTMLButtonElement>("button[data-soort]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.soort === staat.soort)));
+    document.querySelectorAll<HTMLButtonElement>("button[data-niveau]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.niveau === staat.niveau)));
   }
+  document.querySelectorAll<HTMLButtonElement>("button[data-niveau]").forEach((b) => b.addEventListener("click", () => { staat.niveau = b.dataset.niveau ?? ""; pasToe(); }));
+  // Komt iemand van de niveaucheck (/materiaal?niveau=N1), dan staat de filter al goed.
+  const gevraagd = new URLSearchParams(location.search).get("niveau");
+  if (gevraagd && /^N[0-4]$/.test(gevraagd)) { staat.niveau = gevraagd; pasToe(); }
   document.querySelectorAll<HTMLButtonElement>("button[data-voor]").forEach((b) => b.addEventListener("click", () => { staat.voor = b.dataset.voor ?? ""; pasToe(); }));
   document.querySelectorAll<HTMLButtonElement>("button[data-soort]").forEach((b) => b.addEventListener("click", () => { staat.soort = b.dataset.soort ?? ""; pasToe(); }));
 </script>
