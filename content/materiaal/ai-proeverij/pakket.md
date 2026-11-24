@@ -8,8 +8,8 @@ voor: ["Bibliotheken", "Burgers", "Werk", "Onderwijs"]
 deelnemers: "Nieuwsgierigen die nog nooit bewust een chatbot gebruikten. Maximaal 20, aan tafels van vier. Geen toestel nodig."
 niveau: "N0 · Nieuwsgierig"
 duur: "2 uur, met een pauze (de eerste keer ongeveer zes uur voorbereiding, daarna twee)"
-versie: "1.0"
-bijgewerkt: 2026-11-23
+versie: "1.0.1"
+bijgewerkt: 2026-11-24
 licentie: "CC BY 4.0"
 maker: "Duncan Panis"
 bestanden:
@@ -46,6 +46,7 @@ personaliseren: |
   - Kies de gangen die bij de groep passen; gang 1 (schrijven) blijft staan.
   - Vervang de verzonnen voorbeelden door voorbeelden uit de eigen gemeente of vereniging, maar houd ze verzonnen: geen echte namen of gegevens.
   - Laat de grenzen van het dessert staan: de agent verstuurt, koopt, publiceert en meldt zich nergens aan; de laatste klik blijft bij de lesgever.
+  - De niveaucheck en Instap N1 bestaan nog niet als open pakket. Vul bij [LINK_NIVEAUCHECK] en [VOLGENDE_SESSIES] het eigen vervolgaanbod in, of schrap die regels.
   - Toolnamen en prijzen staan alleen in de toolbijlage. Werk die bij met de datum van vandaag en zet [NAKIJKEN] bij wat je niet kon nagaan.
 ---
 
@@ -84,3 +85,9 @@ Elke gang duurt tien minuten: de tafel draait de proefkaart om, de lesgever toon
 ## In welke vorm
 
 Elk document zit erin als PDF om te printen, als Word-bestand om aan te passen en als platte tekst (Markdown), de bron die je het makkelijkst met AI aanpast. De presentatie zit er ook in als PowerPoint. In de zip staan de bestanden in dezelfde mappen als in de handleiding.
+
+## Wat nog volgt
+
+Het pakket verwijst naar een niveaucheck en naar een startsessie (Instap N1). Die staan nog niet als open pakket op deze site; ze volgen. Tot dan vul je bij [LINK_NIVEAUCHECK] en [VOLGENDE_SESSIES] je eigen vervolgaanbod in, of laat je die regels weg.
+
+**Versie 1.0.1** (24 november 2026): QR-codes in de presentatie (naar dit pakket op de titeldia, naar ["Gaf je dit pakket?"](/gegeven/ai-proeverij) op de laatste dia), diatitels zonder nummer, en bij het testformulier van het dessert concrete formulierprogramma's in plaats van een verwijzing naar een ander pakket.

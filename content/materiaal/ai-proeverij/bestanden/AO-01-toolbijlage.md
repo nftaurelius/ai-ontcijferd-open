@@ -4,7 +4,7 @@ code: AO-01
 onderdeel: toolbijlage
 pakket: AI-proeverij
 type: volledig
-versie: 1.0
+versie: 1.0.1
 datum: 2026-11-23
 peildatum: 2026-11-15
 licentie: CC BY 4.0
@@ -30,7 +30,7 @@ Deze bijlage is het enige deel van het pakket dat toolnamen, prijzen en versies 
 
 Het voorbereide resultaat van **gang 2** (de afgewerkte presentatie) is in de test gemaakt met hetzelfde betaalde Google AI-plan als de beelden. Daar is geen apart veld voor: zie de opstelling hieronder.
 
-Voor het **testformulier** van het dessert gebruik je een formulierprogramma uit de toolbijlage van AO-00.
+Voor het **testformulier** van het dessert gebruik je een formulierprogramma zoals Google Formulieren of Microsoft Forms, aangemeld met het demo-account.
 
 ## Wat lukt met een gratis account?
 

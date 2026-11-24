@@ -4,7 +4,7 @@ code: AO-01
 onderdeel: prompts
 pakket: AI-proeverij
 type: volledig
-versie: 1.0
+versie: 1.0.1
 datum: 2026-11-23
 licentie: CC BY 4.0
 ---
@@ -346,7 +346,7 @@ Let op bij het starten: de agent werkt alleen in zijn eigen venster in de browse
 
 ### Klaarzetten (ongeveer een uur, in de week voor de sessie)
 
-**1. Het testformulier maken (15 minuten).** Gebruik een formulierprogramma uit de toolbijlage van AO-00.
+**1. Het testformulier maken (15 minuten).** Gebruik een formulierprogramma zoals Google Formulieren of Microsoft Forms, aangemeld met het demo-account.
 
 1. Maak een nieuw, leeg formulier.
 2. Geef het de titel "Inschrijving straatfeest (testformulier)".

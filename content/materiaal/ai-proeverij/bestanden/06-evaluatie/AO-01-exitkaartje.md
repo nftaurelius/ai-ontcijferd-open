@@ -4,12 +4,12 @@ code: AO-01
 onderdeel: exitkaartje
 pakket: AI-proeverij
 type: volledig
-versie: 1.0
+versie: 1.0.1
 datum: 2026-11-23
 licentie: CC BY 4.0
 ---
 
-**Voor wie:** elke deelnemer. **Exemplaren:** één per deelnemer, op een half A4. Dit is het generieke exitkaartje uit AO-00, met twee vragen eigen aan de proeverij (vraag 6 en 7). Het onderste deel is een strook om af te knippen: zo blijft het kaartje zelf anoniem.
+**Voor wie:** elke deelnemer. **Exemplaren:** één per deelnemer, op een half A4. Dit is het generieke exitkaartje, met twee vragen eigen aan de proeverij (vraag 6 en 7). Het onderste deel is een strook om af te knippen: zo blijft het kaartje zelf anoniem.
 
 # Exitkaartje
 

@@ -4,7 +4,7 @@ code: AO-01
 onderdeel: presentatie
 pakket: AI-proeverij
 type: volledig
-versie: 1.0
+versie: 1.0.1
 datum: 2026-11-23
 licentie: CC BY 4.0
 ---
