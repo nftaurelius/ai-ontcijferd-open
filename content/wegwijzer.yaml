@@ -1,0 +1,364 @@
+# Wegwijzer: wat anderen in Vlaanderen (en net daarbuiten) al goed aanbieden over AI.
+#
+# Waarom: de visie zegt "zelf maken wat ontbreekt, verwijzen naar wat goed is". Dit bestand is de lijst waar we
+# naar verwijzen. Nog geen pagina op de site: Duncan kiest eerst wat erop komt (eerste versie 24/11/2026).
+#
+# Velden
+#   naam, aanbieder, url
+#   soort:        lesmateriaal | opleiding | richtlijn | kader | tool | overzicht | netwerk | onderzoek
+#   wat:          wat je er vindt, in een of twee zinnen
+#   doelgroepen:  Onderwijs, Werk, Lokale overheden, Zelfstandigen, Bibliotheken, Burgers (zoals in toepassingen.yaml)
+#   ingang:       volgen | leren | doen | lesgeven (de vier ingangen uit de visie)
+#   niveau:       N0 tot N4 (schatting van de redactie, zoals bij de pakketten)
+#   prijs:        gratis | betalend | gemengd | onbekend
+#   licentie:     zoals de bron het zegt; "niet vermeld" als de bron niets zegt (dan alleen verwijzen, niet overnemen)
+#   taal:         nl | en | nl en en
+#   verwijs_als:  wanneer we iemand hierheen sturen (wat zij hebben en wij niet)
+#   verhouding:   aanvulling (wij hebben het niet) | overlap (wij hebben iets gelijkaardigs) | bron (wij bouwen erop)
+#   laatstGecontroleerd, status (gecontroleerd | TE CONTROLEREN), bron
+#
+# Regels: alleen wat we zelf op de site van de aanbieder of in een officiële bron zagen krijgt "gecontroleerd".
+# Geen namen van individuele medewerkers. Een aanbod dat verdwijnt of verouderd is, krijgt status TE CONTROLEREN
+# tot het is nagekeken; de bronnencheck kan deze lijst later meenemen.
+
+wegwijzer:
+  # --- Overheden en lokale besturen ---
+  - naam: "AI-geletterdheidskader met vijf AI-persona's"
+    aanbieder: Digitaal Vlaanderen (AI Expertisecentrum)
+    url: https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/pijler-4-mens-organisatie/ai-geletterdheid-voor-overheden-in-vlaanderen
+    soort: kader
+    wat: >-
+      Een competentiemodel met woordenboek, vijf persona's (AI-gebruiker, -gids, -impactmaker, -ontwerper en -gangmaker)
+      met bijpassende opleidingen, en een samenvatting van wat fundamentele AI-geletterdheid is. Voor medewerkers van
+      de Vlaamse overheid en van lokale besturen.
+    doelgroepen: [Lokale overheden, Werk]
+    ingang: leren
+    niveau: "N1–N4"
+    prijs: gratis
+    licentie: niet vermeld
+    taal: nl
+    verwijs_als: "een gemeente of overheidsdienst een officieel kader zoekt voor artikel 4 van de AI Act"
+    verhouding: bron
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "pagina van Digitaal Vlaanderen; de pdf's dragen 20251216 in de bestandsnaam (vermoedelijk versie december 2025)"
+
+  - naam: "Richtlijnen voor het gebruik van publiek toegankelijke generatieve AI"
+    aanbieder: Digitaal Vlaanderen (AI Expertisecentrum)
+    url: https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/richtlijnen-voor-het-gebruik-van-genai
+    soort: richtlijn
+    wat: >-
+      Richtlijnen voor medewerkers van de Vlaamse overheid over wat wel en niet mag met chatbots, met een onepager als
+      geheugensteun. Lokale besturen gebruiken ze vaak als vertrekpunt voor een eigen beleid.
+    doelgroepen: [Lokale overheden, Werk]
+    ingang: doen
+    niveau: "N1–N2"
+    prijs: gratis
+    licentie: niet vermeld
+    taal: nl
+    verwijs_als: "iemand vraagt welke afspraken een overheidsdienst al heeft over chatbots"
+    verhouding: overlap
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "https://www.vlaanderen.be/intern/werkplek/aan-de-slag-met-generatieve-ai-binnen-de-vlaamse-overheid"
+
+  - naam: "AI Radar"
+    aanbieder: Digitaal Vlaanderen (AI Expertisecentrum)
+    url: https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/ai-radar
+    soort: overzicht
+    wat: "Overzicht van lopende, geplande en afgeronde AI-projecten bij de Vlaamse overheid en lokale besturen."
+    doelgroepen: [Lokale overheden]
+    ingang: volgen
+    niveau: "N1–N3"
+    prijs: gratis
+    licentie: niet vermeld
+    taal: nl
+    verwijs_als: "een dienst wil weten wat andere besturen al met AI doen; ook een bron voor toepassingen.yaml"
+    verhouding: bron
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "pagina van Digitaal Vlaanderen"
+
+  - naam: "AI Netwerk"
+    aanbieder: Digitaal Vlaanderen (AI Expertisecentrum)
+    url: https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/ai-expertisecentrum/ai-netwerk-samen-werken-aan-verantwoorde-innovatie-met-artificiele-intelligentie
+    soort: netwerk
+    wat: "Community op Viva Engage voor medewerkers van de Vlaamse overheid en lokale besturen; toegang na goedkeuring."
+    doelgroepen: [Lokale overheden]
+    ingang: volgen
+    niveau: "N1–N4"
+    prijs: gratis
+    licentie: niet van toepassing
+    taal: nl
+    verwijs_als: "een medewerker van een bestuur collega's zoekt die met hetzelfde bezig zijn"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "communityrichtlijnen op de site van Digitaal Vlaanderen"
+
+  - naam: "Artificiële intelligentie in het lokaal bestuur"
+    aanbieder: VVSG
+    url: https://www.vvsg.be/node/1686
+    soort: overzicht
+    wat: >-
+      Themapagina over AI voor steden en gemeenten, met praktijkvoorbeelden (zoals Hasselt dat laanbomen inventariseert
+      met AI) en verwijzingen naar VAIA en Digitaal Vlaanderen. Het volledige artikel is voor leden.
+    doelgroepen: [Lokale overheden]
+    ingang: leren
+    niveau: "N0–N2"
+    prijs: gemengd
+    licentie: niet vermeld
+    taal: nl
+    verwijs_als: "een lokaal bestuur een vertrekpunt zoekt bij de eigen koepel"
+    verhouding: overlap
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "pagina gedateerd 3/4/2026"
+
+  # --- Onderwijs ---
+  - naam: "Artificiële intelligentie (themapagina, visietekst en praktische gids)"
+    aanbieder: Kenniscentrum Digisprong (Departement Onderwijs en Vorming)
+    url: https://www.vlaanderen.be/kenniscentrum-digisprong/themas/innovatie/artificiele-intelligentie
+    soort: richtlijn
+    wat: >-
+      De visietekst "Verantwoorde AI in het Vlaamse onderwijs", een praktische gids voor een AI-beleid op school in
+      stappen, artikels over AI-geletterdheid van leerlingen, vragen om AI-programma's te kiezen en prompts per job
+      (bijvoorbeeld voor kleuterleerkrachten).
+    doelgroepen: [Onderwijs]
+    ingang: leren
+    niveau: "N0–N3"
+    prijs: gratis
+    licentie: niet vermeld
+    taal: nl
+    verwijs_als: "een school het officiële kader zoekt; naast ons pakket AI-afspraken op school"
+    verhouding: bron
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "pagina's van Kenniscentrum Digisprong"
+
+  - naam: "KlasCement, deelsite over AI"
+    aanbieder: KlasCement (Departement Onderwijs en Vorming)
+    url: https://www.klascement.net/ai/
+    soort: lesmateriaal
+    wat: "Leermiddelen over en met AI die leraren zelf delen."
+    doelgroepen: [Onderwijs]
+    ingang: lesgeven
+    niveau: "N0–N3"
+    prijs: gratis
+    licentie: "per leermiddel verschillend"
+    taal: nl
+    verwijs_als: "een leraar materiaal zoekt voor een bepaald vak of een bepaalde graad"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: TE CONTROLEREN
+    bron: "vermeld door Kenniscentrum Digisprong; het adres komt uit een gedeeld overzicht, nog niet zelf geopend"
+
+  - naam: "EDUbox Artificiële intelligentie: slimme machines leren begrijpen"
+    aanbieder: VRT (met Mediawijs, imec, Kenniscentrum Data & Maatschappij, amai! en Brightlab)
+    url: https://www.vrt.be/nl/vrt-voor-leerkrachten/catalogus/artificiele-intelligentie-slimme-machines-leren-begrijpen
+    soort: lesmateriaal
+    wat: "Lespakket voor het secundair onderwijs, als downloadbare pdf en als interactieve site, met een handleiding voor leerkrachten. Vernieuwd in januari 2024."
+    doelgroepen: [Onderwijs]
+    ingang: lesgeven
+    niveau: "N0–N1"
+    prijs: gratis
+    licentie: niet vermeld
+    taal: nl
+    verwijs_als: "een leraar secundair een kant-en-klare les voor leerlingen zoekt; wij maken vooral materiaal voor volwassenen"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "VRT-catalogus en VRT NWS 30/1/2024"
+
+  - naam: "AI op school (lesmateriaal en nascholingen)"
+    aanbieder: Dwengo vzw
+    url: https://www.dwengo.org/en/aiopschool
+    soort: lesmateriaal
+    wat: >-
+      Lesmateriaal over AI voor het secundair onderwijs, afgestemd op eindtermen en leerplandoelen, met leerpaden
+      (bijvoorbeeld zelf een eenvoudige chatbot maken). Dwengo geeft ook nascholingen.
+    doelgroepen: [Onderwijs]
+    ingang: lesgeven
+    niveau: "N1–N4"
+    prijs: gemengd
+    licentie: niet vermeld
+    taal: nl en en
+    verwijs_als: "een leraar wil dat leerlingen begrijpen hoe AI technisch werkt"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "dwengo.org; nascholingsaanbod (pdf) op dezelfde site"
+
+  # --- Mediawijsheid en burgers ---
+  - naam: "De kracht en keerzijde van AI (dossier)"
+    aanbieder: Mediawijs (Vlaams Kenniscentrum Digitale en Mediawijsheid)
+    url: https://www.mediawijs.be/nl/dossiers/artificiele-intelligentie
+    soort: lesmateriaal
+    wat: >-
+      Dossier met de EDUbox, een postertool met een oefening over waar AI kansen biedt en waar niet, en een beleidstool
+      "Mediawijsheid voor het onderwijs". Mediawijs krijgt ook vragen van scholen over deepfakes.
+    doelgroepen: [Onderwijs, Burgers]
+    ingang: leren
+    niveau: "N0–N2"
+    prijs: gratis
+    licentie: niet vermeld
+    taal: nl
+    verwijs_als: "het over mediawijsheid en deepfakes bij jongeren gaat; naast ons pakket Echt of nep?"
+    verhouding: overlap
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "mediawijs.be; VRT NWS 13/2/2026 over vragen van scholen"
+
+  - naam: "amai!"
+    aanbieder: Kenniscentrum Data & Maatschappij en partners (Vlaams AI-beleidsplan)
+    url: https://amai.vlaanderen
+    soort: overzicht
+    wat: "Burgerproject rond AI: burgers dienen ideeën in voor AI-toepassingen (klimaat, gezondheid, mobiliteit, werk) en denken mee over de ontwikkeling."
+    doelgroepen: [Burgers]
+    ingang: volgen
+    niveau: "N0–N1"
+    prijs: gratis
+    licentie: niet vermeld
+    taal: nl
+    verwijs_als: "een burger wil meedenken over AI-projecten"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: TE CONTROLEREN
+    bron: "VUB-nieuws over de lancering; EU-Citizen.Science vermeldt een looptijd tot 31/3/2025; eerdere notitie: gaat eind 2026 op in Flanders Technology & Innovation. Nakijken of de site nog actief is."
+
+  - naam: "GenAI Blind Spots (kaartenset)"
+    aanbieder: Kenniscentrum Data & Maatschappij (VUB)
+    url: https://data-en-maatschappij.ai/en/tools/genai-blind-spots-card-set
+    soort: tool
+    wat: >-
+      Kaartenset om in een team stil te staan bij de minder zichtbare risico's van generatieve AI, zoals schaduwgebruik
+      van tools en betrouwbaarheid van wat eruit komt. Gratis te downloaden; gedrukte set kost 10 euro.
+    doelgroepen: [Werk, Lokale overheden, Bibliotheken]
+    ingang: lesgeven
+    niveau: "N1–N3"
+    prijs: gratis
+    licentie: niet vermeld
+    taal: nl en en
+    verwijs_als: "een team een gesprek wil voeren over risico's; past naast AI-geletterdheid in een doos"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "VUB-nieuws 13/3/2026"
+
+  # --- Werk, ondernemers en opleiding ---
+  - naam: "Vlaamse AI Academie (VAIA)"
+    aanbieder: Vlaamse universiteiten en hogescholen
+    url: https://www.vaia.be
+    soort: opleiding
+    wat: >-
+      Overzicht van AI-opleidingen voor professionals en onderzoekers, van korte cursussen tot postgraduaten, en mee
+      ontwikkelde vakken zoals AI-tools voor een office assistant, voor de ondernemer en voor de administratief
+      vastgoedbediende. Het aantal deelnemers groeide van 282 (2021) naar 7.960 (2024).
+    doelgroepen: [Werk, Zelfstandigen]
+    ingang: leren
+    niveau: "N1–N4"
+    prijs: gemengd
+    licentie: niet van toepassing
+    taal: nl en en
+    verwijs_als: "iemand een erkende of langere opleiding zoekt; wij hebben gratis instapmateriaal"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "antwoord op een vraag in het Vlaams Parlement over VAIA; VLAIO verwijst ernaar"
+
+  - naam: "Advies en begeleiding over AI voor kmo's (START AI, opleidingen generatieve AI per sector)"
+    aanbieder: VLAIO
+    url: https://www.vlaio.be/nl/begeleiding-advies/digitalisering/artificiele-intelligentie/advies-en-begeleiding
+    soort: opleiding
+    wat: >-
+      START AI: een kort individueel traject met een AI-expert om te ontdekken wat AI voor je kmo kan doen. Daarnaast
+      door VLAIO gesteunde opleidingen over generatieve AI per sector, bijvoorbeeld voor bouwbedrijven en vastgoedkantoren.
+    doelgroepen: [Zelfstandigen, Werk]
+    ingang: doen
+    niveau: "N1–N3"
+    prijs: onbekend
+    licentie: niet van toepassing
+    taal: nl
+    verwijs_als: "een ondernemer begeleiding op maat zoekt"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "vlaio.be, nieuwsbericht over nieuwe opleidingen generatieve AI voor kmo's"
+
+  - naam: "Online cursus 'Wat is AI?' en AI-opleidingen"
+    aanbieder: VDAB
+    url: https://www.vdab.be/wat-is-AI
+    soort: opleiding
+    wat: >-
+      Een gratis interactieve online cursus over wat AI is en wat het betekent voor werk, plus een zoekpagina met
+      AI-opleidingen van VDAB en partners (zoals centra voor volwassenenonderwijs). De gratis online workshop
+      "Maak kennis met generatieve AI" (2 uur) had op 24/11 geen geplande data.
+    doelgroepen: [Werk, Burgers]
+    ingang: leren
+    niveau: "N0–N2"
+    prijs: gemengd
+    licentie: niet vermeld
+    taal: nl
+    verwijs_als: "een werkzoekende of werknemer een gratis start of een erkende opleiding zoekt"
+    verhouding: overlap
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "vdab.be/wat-is-AI; vdab.be/vindeenopleiding/opleidingen/ai; vdab.be/opleidingen/workshops/ol-generatieve-ai-1891"
+
+  - naam: "Opleidingsreeks ChatGPT voor ondernemers"
+    aanbieder: UNIZO
+    url: https://www.unizo.be/Chatgpt_HV2027
+    soort: opleiding
+    wat: "Reeks van vier sessies over ChatGPT in de bedrijfsvoering (instellen, prompten, projecten, onderzoek, agentmodus)."
+    doelgroepen: [Zelfstandigen]
+    ingang: doen
+    niveau: "N1–N2"
+    prijs: onbekend
+    licentie: niet van toepassing
+    taal: nl
+    verwijs_als: "een zelfstandige een begeleide reeks wil volgen"
+    verhouding: overlap
+    laatstGecontroleerd: 2026-11-24
+    status: TE CONTROLEREN
+    bron: "unizo.be; prijs en data nog na te kijken"
+
+  # --- Bibliotheken ---
+  - naam: "LIBRA.I.: handboek AI in openbare bibliotheken"
+    aanbieder: Goethe-Institut Brussel met Muntpunt, FARI (ULB), de stadsbibliotheek van Łódź en de Letse Nationale Bibliotheek
+    url: https://www.goethe.de/resources/files/pdf359/handboek_librai_nl.pdf
+    soort: lesmateriaal
+    wat: >-
+      Methodiek om AI in te zetten voor media- en informatiegeletterdheid in de bibliotheek: tien thematische blokken
+      (van basiskennis tot verandermanagement) en vier lesplannen, met voorbeelden voor jongeren, senioren en makers.
+      Nederlandse versie; project liep van november 2024 tot oktober 2026.
+    doelgroepen: [Bibliotheken]
+    ingang: lesgeven
+    niveau: "N0–N3"
+    prijs: gratis
+    licentie: "CC BY-SA 4.0"
+    taal: nl en en
+    verwijs_als: "een bibliotheek een methodiek voor het team zoekt; wij leveren kant-en-klare publiekssessies"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "het handboek zelf (licentie en partners op de colofonpagina). Let op: een bewerking moet onder CC BY-SA blijven, dus niet mengen met onze CC BY-pakketten zonder dat te melden."
+
+  - naam: "DigLib (Digital Libraries)"
+    aanbieder: FRSI, Public Libraries 2030, EOS, CSBNO en Dot Beyond (Erasmus+)
+    url: https://dig-lib.eu
+    soort: onderzoek
+    wat: >-
+      Europees project (2025–2027) dat bibliothecarissen opleidt om digitale vaardigheden bij volwassenen te begeleiden.
+      Er is een open onderzoeksrapport (augustus 2025, met een bevraging bij bibliotheekmedewerkers in Italië, Polen,
+      Roemenië en Vlaanderen); een opleidingsprogramma en leerplatform volgen. Proefbibliotheken in vier landen.
+    doelgroepen: [Bibliotheken]
+    ingang: lesgeven
+    niveau: "N1–N3"
+    prijs: gratis
+    licentie: "rapport open access; licentie van het platform niet vermeld"
+    taal: en
+    verwijs_als: "een bibliotheek wil weten hoe Europese collega's volwassenen digitaal begeleiden"
+    verhouding: aanvulling
+    laatstGecontroleerd: 2026-11-24
+    status: gecontroleerd
+    bron: "dig-lib.eu; dig-lib.eu/contacts; EU Digital Skills and Jobs Platform"

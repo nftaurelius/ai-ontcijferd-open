@@ -56,6 +56,17 @@ ontbreekt, het wijst naar wat goed is, en het geeft alles vrij.
 Dwars erdoorheen: een portaal per doelgroep (onderwijs, werk, lokale overheden, zelfstandigen, bibliotheken, burgers).
 Eronder: het open fundament (inhoud CC BY, open code, werkwijze en verbruik zichtbaar, bron en datum bij elk gegeven).
 
+**Voorstel (24/11, idee van Duncan, nog goed te keuren): AI per job.** Onder elk doelgroepportaal komen jobpagina's
+(bijvoorbeeld de dienst mobiliteit of economie van een gemeente, een communicatiemedewerker van een school, een
+leerkracht secundair). De bouwsteen is de *taakkaart*: één concrete taak, met wat AI er wel en niet goed in doet, een
+werkwijze, wat je niet in een chatbot plakt, het niveau (N0-N4), de regels die gelden en een eerlijk veld "getest". Een
+jobpagina bundelt taakkaarten, pakketten, toepassingen en verwijzingen. Zo heeft iemand met een concrete taak een reden
+om te komen, en dient één taakkaart meerdere jobs. Elke taakkaart wordt getest door iemand die die job doet.
+
+**Wegwijzer (24/11).** "Verwijzen naar wat goed is" krijgt een vaste lijst: `content/wegwijzer.yaml`, met per aanbod
+voor wie, niveau, prijs, licentie, wanneer we ernaar verwijzen en wanneer het laatst is nagekeken. De pagina volgt als
+Duncan kiest wat erop komt; de jobpagina's en portalen putten eruit.
+
 ## Waar de leegtes liggen
 
 Lesgevers zonder AI-achtergrond; micro-ondernemingen, zelfstandigen en verenigingen; digitaal kwetsbare en
@@ -77,7 +88,7 @@ gemeenten en raadsleden; iedereen die een tool kiest (onafhankelijke bijsluiters
 | Fase | Wat | Poort |
 | --- | --- | --- |
 | **Uitbouwen**, tot 4 januari 2027 | Klaar: privacy, licenties, publieke spiegel, Over-pagina, verspreidingsplan. Nog: de startlijst uit `data/verspreidingsplan.md`: AI-proeverij en doos voor artikel 4 als pakket, "Begin hier", menu naar de vier ingangen, bijsluiters, eerste werkwijzen, deelafbeeldingen, het stuk over 2 december, het jaaroverzicht; verspreiding voorbereiden | Startlijst nagekeken op 28 december |
-| **Naar buiten**, vanaf 4 januari tot februari 2027 | Verspreiding start (beslist 23/11): voorstellen, LinkedIn, KlasCement; doelgroepportalen; zoeken; afsprakenkaart-maker; vragenbank; gesprekken met Muntpunt, Cultuurconnect, Mediawijs, Kenniscentrum Data & Maatschappij | Iemand anders dan Duncan gaf de proeverij; elk portaal toont een pakket, een tool en werkwijzen |
+| **Naar buiten**, vanaf 4 januari tot februari 2027 | Verspreiding start (beslist 23/11): voorstellen, LinkedIn, KlasCement; doelgroepportalen met de wegwijzer; proef AI per job met drie jobs (voorstel 24/11); zoeken; afsprakenkaart-maker; vragenbank; gesprekken met Muntpunt, Cultuurconnect, Mediawijs, Kenniscentrum Data & Maatschappij en DigLib (Public Libraries 2030) | Iemand anders dan Duncan gaf de proeverij; elk portaal toont een pakket, een tool en werkwijzen |
 | **Voorjaar 2027**, maart tot juni | Pakketten "Getest in de praktijk"; opnames "Zo geef je dit"; eerste stukken in gewone taal; claimcheck; proef van de AI-week | Drie andere bibliotheken gaven een pakket |
 | **Daarna**, vanaf najaar 2027 | Vlaamse AI-week; sectorpakketten met partners; pijplijn als "redactie in een doos"; luisterversie en overneemblok | |
 
