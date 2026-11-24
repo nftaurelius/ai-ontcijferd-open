@@ -31,6 +31,7 @@ export function GET() {
     "- [De AI-cursus](https://aiontcijferd.be/cursus): een volledige, tool-onafhankelijke cursus om met AI te leren werken, online en als PDF",
     "- [Werkwijzen](https://aiontcijferd.be/werkwijzen): prompts, skills en agents om AI verstandig te gebruiken, met bijsluiter",
     "- [Begin hier](https://aiontcijferd.be/begin-hier): AI in tien minuten, voor wie nieuw is",
+    "- [Niveaucheck](https://aiontcijferd.be/niveaucheck): vijf vragen, een niveau van N0 (Nieuwsgierig) tot N4 (Bouwer), met wat je hierna leert",
     "- [Bijsluiters van AI-tools](https://aiontcijferd.be/bijsluiters): wat ChatGPT, Claude, Gemini, Copilot en Mistral Vibe met je invoer doen en wat ze kosten, met bron en datum",
     "- [Neem het over](https://aiontcijferd.be/overnemen): alles staat onder CC BY 4.0; zo vermeld je de bron, met kant-en-klare teksten",
     "- [Meedoen](https://aiontcijferd.be/meedoen): fouten melden, bronnen voorstellen, de open code (MIT) verbeteren",

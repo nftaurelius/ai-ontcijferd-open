@@ -4,7 +4,7 @@ import { beschikbarePakketten, type Pakket } from "../../lib/materiaal";
 import { VRAGEN, mailto } from "./_vragen";
 
 export function getStaticPaths() {
-  return beschikbarePakketten().map((p) => ({ params: { slug: p.slug }, props: { p } }));
+  return beschikbarePakketten().filter((p) => p.soort !== "fundament").map((p) => ({ params: { slug: p.slug }, props: { p } }));
 }
 const { p } = Astro.props as { p: Pakket };
 const naam = p.titel.replace(/\?$/, ""); // "Echt of nep?" zonder dubbel vraagteken

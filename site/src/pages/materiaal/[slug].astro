@@ -120,6 +120,7 @@ const schema = {
     </div>
   </section>
 
+{p.soort !== "fundament" && (
   <section class="rij sectie" id="gegeven">
     <div class="kantlijn"><p class="kantlijn-kop">Gaf je dit pakket?</p></div>
     <div class="proza">
@@ -127,6 +128,7 @@ const schema = {
       <p><a class="knop" href={`/gegeven/${p.slug}`}>Vertel hoe het ging</a></p>
     </div>
   </section>
+  )}
 
   <section class="rij sectie klein">
     <div class="kantlijn"><p>Fout gezien?</p></div>

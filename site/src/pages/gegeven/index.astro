@@ -2,7 +2,7 @@
 import Basis from "../../layouts/Basis.astro";
 import { beschikbarePakketten } from "../../lib/materiaal";
 import { VRAGEN, mailto } from "./_vragen";
-const pakketten = beschikbarePakketten();
+const pakketten = beschikbarePakketten().filter((p) => p.soort !== "fundament");
 ---
 
 <Basis titel="Gaf je een pakket? Laat het weten" beschrijving="Gaf je een open lespakket van AI Ontcijferd? Vertel in een korte mail wat werkte en wat niet. Zo verbeteren we het voor de volgende.">

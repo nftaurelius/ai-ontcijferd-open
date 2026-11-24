@@ -1,0 +1,194 @@
+---
+// De niveaucheck: vijf vragen, een niveau van N0 tot N4. Inhoud uit AO-00 (src/lib/niveaucheck.ts).
+// Alles gebeurt in de browser: niets wordt verstuurd of bewaard.
+import Basis from "../layouts/Basis.astro";
+import { niveaucheck, VERDER } from "../lib/niveaucheck";
+import { SITE_URL, uitgever } from "../lib/seo";
+
+const { niveaus, vragen, onderElke, versie, nagekeken, chatbot } = niveaucheck();
+const url = `${SITE_URL}/niveaucheck`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "@id": url,
+  url,
+  name: "Niveaucheck: op welk niveau sta je met AI?",
+  inLanguage: "nl-BE",
+  educationalLevel: "N0 tot N4",
+  license: "https://creativecommons.org/licenses/by/4.0/",
+  author: { "@type": "Person", name: "Duncan Panis" },
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+};
+const cursusLink = (code: string) => VERDER[code]?.find((v) => v.href.startsWith("/cursus"));
+---
+
+<Basis
+  titel="Niveaucheck: op welk niveau sta je met AI?"
+  beschrijving="Vijf korte vragen met ja of nee. Je krijgt een niveau van N0 tot N4: wat je al kunt, wat je hierna leert, en één ding om alvast te proberen. Anoniem, niets wordt bewaard."
+  schema={schema}
+  bron="content/materiaal/niveaucheck/bestanden/AO-00-niveaucheck.md"
+>
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Niveaucheck</p><p>Twee minuten</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Op welk niveau sta je met AI?</h1>
+      <p class="lead"><span class="markeer">Vijf korte vragen met ja of nee.</span> Je krijgt een niveau van N0 tot N4: wat je al kunt, wat je hierna leert, en één ding om alvast te proberen.</p>
+      <p>Antwoord eerlijk; het is geen test. De check meet wat je al doet, niet wat je weet. <strong>Twijfel je, antwoord dan nee:</strong> een niveau te laag beginnen kost niets, een niveau te hoog wel. Je antwoorden blijven in je browser; we bewaren en tellen niets.</p>
+      <Fragment set:html={chatbot} />
+    </div>
+  </section>
+
+  <section class="rij sectie" id="check" aria-live="polite">
+    <div class="kantlijn"><p class="kantlijn-kop">De vragen</p><p id="nc-voortgang" hidden></p></div>
+    <div class="proza">
+      <ol class="nc-vragen" id="nc-vragen">
+        {vragen.map((v) => (
+          <li class="nc-vraag" data-nr={v.nr} data-nee={v.neeGeeft} data-ja={v.jaGeeft ?? ""}>
+            <p class="nc-tekst"><strong>{v.tekst}</strong></p>
+            {v.uitlegHtml && <div class="nc-uitleg meta" set:html={v.uitlegHtml} />}
+            <p class="nc-knoppen" hidden>
+              <button type="button" class="knop" data-antwoord="ja">Ja</button>
+              <button type="button" class="knop" data-antwoord="nee">Nee</button>
+            </p>
+            <p class="nc-papier meta">Nee? Dan ben je <strong>{v.neeGeeft}</strong>.{v.jaGeeft && <> Ja? Dan ben je <strong>{v.jaGeeft}</strong>.</>}</p>
+          </li>
+        ))}
+      </ol>
+      <p class="nc-terug" hidden><button type="button" class="nc-link" id="nc-terug">Vorige vraag</button></p>
+
+      <div id="nc-uitslag" hidden tabindex="-1">
+        <p class="kantlijn-kop" style="margin:0">Jouw niveau</p>
+        <h2 id="nc-uitslag-kop" style="margin-top:0.2em"></h2>
+        <div id="nc-uitslag-tekst"></div>
+        <h3>Verder op deze site</h3>
+        <ul id="nc-uitslag-verder"></ul>
+        <div class="nc-onder" set:html={onderElke} />
+        <p><button type="button" class="knop" id="nc-opnieuw">Opnieuw beginnen</button> <a href="#niveaus">Bekijk alle niveaus</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rij sectie" id="niveaus">
+    <div class="kantlijn"><p class="kantlijn-kop">De niveaus</p><p>N0 tot N4</p></div>
+    <div class="proza">
+      <h2 style="margin-top:0">De ladder</h2>
+      <p>Elk niveau zegt wat je al kunt als je begint. Elk deel van de <a href="/cursus">AI-cursus</a> en elk <a href="/materiaal">lespakket</a> hoort bij een niveau.</p>
+      <div class="tabel-schuif">
+        <table>
+          <thead><tr><th>Niveau</th><th>Je kunt al …</th><th>Wat je hierna leert</th><th>In de cursus</th></tr></thead>
+          <tbody>
+            {niveaus.map((n) => {
+              const c = cursusLink(n.code);
+              return (
+                <tr>
+                  <td><strong>{n.code}</strong><br />{n.naam}</td>
+                  <td>{n.kanAl}</td>
+                  <td>{n.leertHierna}</td>
+                  <td>{c ? <a href={c.href}>{n.inDeCursus}</a> : n.inDeCursus}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Alle uitslagen</h2>
+      {niveaus.map((n) => (
+        <details class="nc-detail" id={`uitslag-${n.code}`} data-code={n.code} data-naam={n.naam}>
+          <summary><strong>{n.code} · {n.naam}</strong></summary>
+          <div class="nc-detail-tekst" set:html={n.uitslagHtml} />
+          <ul class="nc-detail-verder">
+            {(VERDER[n.code] ?? []).map((v) => <li><a href={v.href}>{v.tekst}</a></li>)}
+          </ul>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Voor organisaties</p></div>
+    <div class="proza">
+      <p>Geef je zelf sessies over AI? Gebruik de check vóór de inschrijving, zodat iedereen in een sessie op zijn niveau zit. Op papier aan de balie, of als anoniem online formulier in Microsoft Forms of Google Formulieren, met jouw aanbod onder elke uitslag.</p>
+      <p><a class="knop" href="/materiaal/niveaucheck">Neem de niveaucheck over</a></p>
+      <p class="meta">"Niveaucheck" door Duncan Panis, AI Ontcijferd, onder <a href="https://creativecommons.org/licenses/by/4.0/deed.nl">CC BY 4.0</a>. Versie {versie}, nagekeken op {nagekeken}.</p>
+    </div>
+  </section>
+</Basis>
+
+<style>
+  .nc-vragen { padding-left: 1.4em; }
+  .nc-vraag { margin-bottom: 1.4em; }
+  .nc-tekst { margin-bottom: 0.3em; }
+  .nc-uitleg :global(p) { margin: 0 0 0.4em; }
+  .nc-knoppen { display: flex; gap: 0.8em; margin-top: 0.8em; }
+  .nc-knoppen .knop { min-width: 6em; }
+  .nc-link { background: none; border: 0; padding: 0; font: inherit; color: var(--inkt); text-decoration: underline; cursor: pointer; }
+  .nc-detail { margin: 0; border-bottom: 0; }
+  .nc-detail:last-of-type { border-bottom: 1px solid var(--lijn); margin-bottom: 1.25rem; }
+  .nc-detail summary { cursor: pointer; }
+  #nc-uitslag { border-top: 3px solid var(--inkt); padding-top: 1em; }
+  #nc-uitslag:focus { outline: none; }
+  .nc-onder { border-top: 1px solid var(--lijn); margin-top: 1.2em; padding-top: 0.6em; }
+  .tabel-schuif { overflow-x: auto; margin-bottom: 2.2rem; }
+  .tabel-schuif td { vertical-align: top; padding-top: 0.5em; padding-bottom: 0.5em; }
+  /* Met JavaScript: één vraag tegelijk */
+  :global(.nc-actief) .nc-vraag { display: none; }
+  :global(.nc-actief) .nc-vraag.nc-nu { display: list-item; }
+  :global(.nc-actief) .nc-papier { display: none; }
+</style>
+
+<script>
+  const lijst = document.getElementById("nc-vragen")!;
+  const vragen = [...lijst.querySelectorAll<HTMLLIElement>(".nc-vraag")];
+  const voortgang = document.getElementById("nc-voortgang")!;
+  const terug = document.getElementById("nc-terug")!;
+  const uitslag = document.getElementById("nc-uitslag")!;
+  let nu = 0;
+
+  function toon(i: number) {
+    nu = i;
+    uitslag.hidden = true;
+    lijst.hidden = false;
+    vragen.forEach((v, j) => v.classList.toggle("nc-nu", j === i));
+    lijst.setAttribute("start", String(i + 1));
+    voortgang.hidden = false;
+    voortgang.textContent = `Vraag ${i + 1} van ${vragen.length}`;
+    terug.parentElement!.hidden = i === 0;
+  }
+
+  function uitslagTonen(code: string) {
+    const d = document.getElementById(`uitslag-${code}`) as HTMLDetailsElement;
+    document.getElementById("nc-uitslag-kop")!.textContent = `${code} · ${d.dataset.naam}`;
+    document.getElementById("nc-uitslag-tekst")!.innerHTML = d.querySelector(".nc-detail-tekst")!.innerHTML;
+    document.getElementById("nc-uitslag-verder")!.innerHTML = d.querySelector(".nc-detail-verder")!.innerHTML;
+    lijst.hidden = true;
+    terug.parentElement!.hidden = true;
+    voortgang.textContent = "Klaar";
+    uitslag.hidden = false;
+    uitslag.focus();
+    history.replaceState(null, "", `#uitslag-${code}`);
+  }
+
+  document.body.classList.add("nc-actief");
+  vragen.forEach((v, i) => {
+    v.querySelector<HTMLElement>(".nc-knoppen")!.hidden = false;
+    v.querySelectorAll<HTMLButtonElement>("button[data-antwoord]").forEach((b) =>
+      b.addEventListener("click", () => {
+        if (b.dataset.antwoord === "nee") return uitslagTonen(v.dataset.nee!);
+        if (v.dataset.ja) return uitslagTonen(v.dataset.ja);
+        toon(i + 1);
+      }),
+    );
+  });
+  terug.addEventListener("click", () => toon(Math.max(0, nu - 1)));
+  document.getElementById("nc-opnieuw")!.addEventListener("click", () => {
+    history.replaceState(null, "", location.pathname);
+    toon(0);
+    document.getElementById("check")!.scrollIntoView({ behavior: "smooth" });
+  });
+
+  // Een gedeelde link naar een uitslag opent die uitslag.
+  const m = location.hash.match(/^#uitslag-(N\d)$/);
+  if (m && document.getElementById(`uitslag-${m[1]}`)) uitslagTonen(m[1]);
+  else toon(0);
+</script>

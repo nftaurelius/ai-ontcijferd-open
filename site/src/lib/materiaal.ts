@@ -14,6 +14,7 @@ export const SOORTEN = {
   lezing: "Lezing",
   gesprek: "Gespreksformat",
   fiches: "Fiches",
+  fundament: "Fundament",
 } as const;
 export type Soort = keyof typeof SOORTEN;
 
@@ -267,10 +268,9 @@ export function leesmij(p: Pakket): string {
     "Laat in de chatbot geen persoonsgegevens achter. Twijfel je? Doe eerst de Plakcheck:",
     `${SITE_URL}/plakcheck`,
     "",
-    "GAF JE DIT PAKKET? LAAT HET WETEN",
-    "Wat werkte, wat niet, wat paste je aan? Twee minuten van jou maken de volgende versie beter:",
-    `${SITE_URL}/gegeven/${p.slug}`,
-    "",
+    ...(p.soort === "fundament"
+      ? ["GEBRUIK JE DIT? LAAT HET WETEN", "Waar en hoe gebruik je het, en wat zou je anders willen? Mail naar redactie@aiontcijferd.be.", ""]
+      : ["GAF JE DIT PAKKET? LAAT HET WETEN", "Wat werkte, wat niet, wat paste je aan? Twee minuten van jou maken de volgende versie beter:", `${SITE_URL}/gegeven/${p.slug}`, ""]),
     "Fout gezien? Mail het naar redactie@aiontcijferd.be, met de naam van het pakket en het versienummer.",
     "",
   ].join("\r\n");
