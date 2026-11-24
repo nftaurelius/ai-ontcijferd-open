@@ -14,6 +14,11 @@ content/materiaal/<slug>/
     03-werkblad.pdf
 ```
 
+Submappen in `bestanden/` mogen (zoals bij de AI-proeverij: `01-draaiboek/`, `02-presentatie/`); ze blijven submappen in de zip.
+Staat hetzelfde document er in meer formaten (zelfde naam, andere extensie: `.pdf`, `.docx`, `.md`), dan toont de
+pagina één regel met een link per formaat. In `bestanden:` in de frontmatter mag je dan de naam zonder extensie
+gebruiken (bijvoorbeeld `01-draaiboek/AO-01-draaiboek`).
+
 De `<slug>` wordt het adres: `/materiaal/<slug>`. Kleine letters en koppeltekens, geen spaties.
 
 ### pakket.md

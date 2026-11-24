@@ -1,7 +1,7 @@
 // Mail "Nieuw gratis materiaal": één mail per nieuw lespakket, voor de lijst van lesgevers.
 // De site bouwt hem op /mail/materiaal/<slug>.html; die HTML gaat als conceptcampagne naar Brevo.
 // Volgt de huisstijl (versie 1.0): geel alleen voor het blokje "AI" en de ene knop.
-import type { Pakket } from "./materiaal";
+import { groepen, type Pakket } from "./materiaal";
 import { datumLeesbaar } from "./edities";
 import { SITE_URL } from "./seo";
 
@@ -17,8 +17,8 @@ export function materiaalMail(p: Pakket): string {
   const url = `${SITE_URL}/materiaal/${p.slug}`;
   const rij = (k: string, v: string) =>
     v ? `<tr><td style="padding:6px 16px 6px 0;font-family:${UI};font-size:13px;color:${K.grijs};vertical-align:top;white-space:nowrap;">${k}</td><td style="padding:6px 0;font-family:${UI};font-size:14px;color:${K.inkt};">${v}</td></tr>` : "";
-  const bestanden = p.bestanden
-    .map((b) => `<li style="margin:0 0 6px 0;font-family:${UI};font-size:14px;line-height:1.5;color:${K.inkt};"><strong>${b.naam}</strong>${b.omschrijving ? `: ${b.omschrijving}` : ""}</li>`)
+  const bestanden = groepen(p)
+    .map((g) => `<li style="margin:0 0 6px 0;font-family:${UI};font-size:14px;line-height:1.5;color:${K.inkt};"><strong>${g.bestanden.length === 1 ? g.bestanden[0].naam : g.stam}</strong>${g.omschrijving ? `: ${g.omschrijving}` : ""}</li>`)
     .join("");
   return `<!doctype html>
 <html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">

@@ -1,7 +1,7 @@
 ---
 import Basis from "../../layouts/Basis.astro";
 import Inschrijven from "../../components/Inschrijven.astro";
-import { beschikbarePakketten, LICENTIES, SOORTEN, grootte, totaleGrootte, naamsvermelding, personalisatiePrompt, type Pakket } from "../../lib/materiaal";
+import { beschikbarePakketten, LICENTIES, SOORTEN, grootte, groepen, totaleGrootte, naamsvermelding, personalisatiePrompt, type Pakket } from "../../lib/materiaal";
 import { datumLeesbaar } from "../../lib/edities";
 import { SITE_URL, auteur, uitgever } from "../../lib/seo";
 
@@ -57,11 +57,19 @@ const schema = {
           <p class="meta">Eén zip-bestand van {grootte(totaleGrootte(p))}, met een LEESMIJ over de licentie en de prompt om het aan te passen.</p>
           <h2 class="downloadblok-kop">Of download de bestanden apart</h2>
           <ul class="bestanden">
-            {p.bestanden.map((b) => (
+            {groepen(p).map((g) => g.bestanden.length === 1 ? (
               <li>
-                <a href={b.url} download={b.naam}>{b.naam}</a>
-                <span class="meta"> · {b.formaat}, {grootte(b.bytes)}</span>
-                {b.omschrijving && <p>{b.omschrijving}</p>}
+                <a href={g.bestanden[0].url} download={g.bestanden[0].naam.split("/").pop()}>{g.bestanden[0].naam}</a>
+                <span class="meta"> · {g.bestanden[0].formaat}, {grootte(g.bestanden[0].bytes)}</span>
+                {g.omschrijving && <p>{g.omschrijving}</p>}
+              </li>
+            ) : (
+              <li>
+                <strong>{g.stam}</strong>
+                <span class="meta"> · {g.bestanden.map((b, i) => (
+                  <>{i > 0 && ", "}<a href={b.url} download={b.naam.split("/").pop()}>{b.formaat}</a> ({grootte(b.bytes)})</>
+                ))}</span>
+                {g.omschrijving && <p>{g.omschrijving}</p>}
               </li>
             ))}
           </ul>

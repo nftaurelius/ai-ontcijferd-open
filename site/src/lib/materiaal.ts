@@ -87,6 +87,38 @@ function datum(x: unknown): string {
   return x ? String(x) : "";
 }
 
+/** Bestandsnaam zonder extensie: "01-draaiboek/AO-01-draaiboek.pdf" -> "01-draaiboek/AO-01-draaiboek". */
+export function stam(naam: string): string {
+  return naam.replace(/\.[^./]+$/, "");
+}
+
+// Volgorde van de formaten binnen één document: eerst om te printen, dan om aan te passen, dan de bron.
+const FORMAAT_VOLGORDE = ["pdf", "pptx", "docx", "xlsx", "odt", "odp", "ods", "md", "txt"];
+
+export type Groep = { stam: string; titel: string; omschrijving: string; bestanden: Bestand[] };
+
+/** Dezelfde tekst in meer formaten (pdf, docx, md) wordt één regel met een link per formaat. */
+export function groepen(p: Pakket): Groep[] {
+  const uit: Groep[] = [];
+  for (const b of p.bestanden) {
+    const s = stam(b.naam);
+    let g = uit.find((x) => x.stam === s);
+    if (!g) {
+      g = { stam: s, titel: s.split("/").pop() ?? s, omschrijving: "", bestanden: [] };
+      uit.push(g);
+    }
+    g.bestanden.push(b);
+    if (!g.omschrijving && b.omschrijving) g.omschrijving = b.omschrijving;
+  }
+  const ext = (b: Bestand) => b.naam.split(".").pop()?.toLowerCase() ?? "";
+  const rang = (b: Bestand) => {
+    const i = FORMAAT_VOLGORDE.indexOf(ext(b));
+    return i === -1 ? 99 : i;
+  };
+  for (const g of uit) g.bestanden.sort((a, b) => rang(a) - rang(b));
+  return uit;
+}
+
 let cache: Pakket[] | null = null;
 
 export function allePakketten(): Pakket[] {
@@ -104,29 +136,31 @@ export function allePakketten(): Pakket[] {
         if (b?.bestand) meta[String(b.bestand)] = String(b.omschrijving ?? "");
       }
       const bestandenMap = path.join(map, slug, "bestanden");
+      // Submappen mogen (bv. 01-draaiboek/); de naam is dan het relatieve pad met "/".
+      const lijst = (dir: string, voor = ""): string[] =>
+        fs.readdirSync(dir, { withFileTypes: true }).filter((f) => !f.name.startsWith(".")).flatMap((f) =>
+          f.isDirectory() ? lijst(path.join(dir, f.name), `${voor}${f.name}/`) : f.isFile() ? [`${voor}${f.name}`] : []);
+      const volgorde = Object.keys(meta);
+      const plaats = (naam: string) => {
+        const i = volgorde.findIndex((k) => k === naam || k === stam(naam));
+        return i === -1 ? 999 : i;
+      };
       const bestanden: Bestand[] = fs.existsSync(bestandenMap)
-        ? fs
-            .readdirSync(bestandenMap, { withFileTypes: true })
-            .filter((f) => f.isFile() && !f.name.startsWith("."))
-            .map((f) => {
-              const pad = path.join(bestandenMap, f.name);
-              const ext = f.name.split(".").pop()?.toLowerCase() ?? "";
+        ? lijst(bestandenMap)
+            .map((naam) => {
+              const pad = path.join(bestandenMap, ...naam.split("/"));
+              const ext = naam.split(".").pop()?.toLowerCase() ?? "";
               return {
-                naam: f.name,
-                omschrijving: meta[f.name] ?? "",
+                naam,
+                omschrijving: meta[naam] ?? meta[stam(naam)] ?? "",
                 formaat: FORMATEN[ext] ?? ext.toUpperCase(),
                 bytes: fs.statSync(pad).size,
                 pad,
-                url: `/materiaal/${slug}/bestanden/${encodeURIComponent(f.name)}`,
+                url: `/materiaal/${slug}/bestanden/${naam.split("/").map(encodeURIComponent).join("/")}`,
               };
             })
             // volgorde uit de frontmatter eerst, daarna alfabetisch
-            .sort((a, b) => {
-              const ia = Object.keys(meta).indexOf(a.naam);
-              const ib = Object.keys(meta).indexOf(b.naam);
-              if (ia !== ib) return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
-              return a.naam.localeCompare(b.naam, "nl");
-            })
+            .sort((a, b) => plaats(a.naam) - plaats(b.naam) || a.naam.localeCompare(b.naam, "nl"))
         : [];
       const soort = (String(data.soort ?? "workshop") as Soort) in SOORTEN ? (String(data.soort) as Soort) : "workshop";
       const versie = String(data.versie ?? "1.0");
@@ -215,7 +249,7 @@ export function leesmij(p: Pakket): string {
     p.samenvatting,
     "",
     "WAT ZIT ERIN",
-    ...p.bestanden.map((b) => `- ${b.naam}${b.omschrijving ? `: ${b.omschrijving}` : ""}`),
+    ...groepen(p).map((g) => `- ${g.bestanden.length === 1 ? g.bestanden[0].naam : `${g.stam} (${g.bestanden.map((b) => b.formaat).join(", ")})`}${g.omschrijving ? `: ${g.omschrijving}` : ""}`),
     "",
     "LICENTIE",
     `${lic.naam} (${p.licentie}): ${lic.url}`,

@@ -165,7 +165,7 @@ Wat er op de site moet staan voor we naar buiten gaan. Op maandag 28 december ki
 iets wezenlijks, dan beslist Duncan of de start verschuift.
 
 **Leren en lesgeven**
-- [ ] De AI-proeverij als downloadbaar pakket (Duncan werkt ze af; daarna zetten wij ze in het sjabloon).
+- [x] De AI-proeverij als downloadbaar pakket (24/11: door Duncan afgewerkt, v1.0, online op /materiaal/ai-proeverij).
 - [x] AI-geletterdheid in een doos (artikel 4 van de AI Act): afsprakenkaart, sessie van een uur,
       aanwezigheidslijst, zelftest, lijst van gebruikte tools (23/11, versie 1.0, `/materiaal/ai-geletterdheid-in-een-doos`).
 - [x] Meer pakketten: Echt of nep?, Chatbot zonder risico, AI-afspraken op school, Briefing voor raadsleden, Wanneer geen AI? (23/11, v1.0, nog niet getest). De AI-cursus staat online op `/cursus` (23/11).
