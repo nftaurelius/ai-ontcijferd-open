@@ -1,0 +1,98 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "https://www.vrt.be/vrtnews/nl/2026/11/25/gegevens-van-1-2-miljoen-vlamingen-gestolen-door-hackersgroep-gh/",
+    "probleem": "De URL wijkt af van de bronlink: het pad bevat 'vrtnews' in plaats van 'vrtnws'. De fout staat zowel in de tekst als in de bronnenlijst.",
+    "voorstel": "Gebruik op beide plaatsen de aangeleverde VRT-link met '/vrtnws/nl/'."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Gegevens van 1,2 miljoen Vlamingen gestolen, met hulp van AI",
+    "probleem": "De kop presenteert het aantal als vastgesteld, terwijl de tekst terecht vermeldt dat het CCB dit niet kan bevestigen.",
+    "voorstel": "Maak ook in de kop duidelijk dat het aantal een claim van Secutec is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Het cijfer komt van Secutec. Het Centrum voor Cybersecurity België (CCB) kan het niet bevestigen, maar zegt dat het om die orde van grootte zou gaan. Daarom staat de status op \"Eén bron\": de andere berichten herhalen dezelfde claim.",
+    "probleem": "VRT schrijft de ontdekking toe aan Secutec én SOCRadar. Die tweede partij ontbreekt. De bron toont niet hoe onafhankelijk hun bevindingen zijn, maar onderbouwt evenmin de stellige conclusie dat alle berichten uitsluitend dezelfde Secutec-claim herhalen.",
+    "voorstel": "Vermeld SOCRadar als medeontdekker volgens VRT. Behoud de waarschuwing dat een onafhankelijke bevestiging van de omvang ontbreekt, zonder de herkomst stelliger te reconstrueren dan mogelijk is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Gemeenten moeten betrokken inwoners binnen 3 dagen inlichten nadat ze zelf op de hoogte zijn gebracht",
+    "probleem": "Dit staat inderdaad bij VRT, maar wordt hier zonder attributie als algemene juridische verplichting gebracht. Een primaire beleids- of rechtsbron die de termijn en voorwaarden onderbouwt, ontbreekt.",
+    "voorstel": "Schrijf dit expliciet toe aan VRT en laat de precieze verplichting vóór publicatie controleren aan een primaire bron. Leg die controle vast in een HTML-commentaar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Meta's AI-agent Muse komt binnen enkele weken naar België",
+    "probleem": "De planning komt volgens VRT uit contact met Meta. De kop en de samenvatting maken daarvan een zekere komst, terwijl een vaste datum ontbreekt.",
+    "voorstel": "Label de timing als een aankondiging of verwachting van Meta, via VRT. Pas ook de vermelding in 'Vandaag in het kort' aan."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Ze zagen zeer weinig ontslagen door AI.",
+    "probleem": "De bron beperkt deze bevinding tot binnenlandse ontslagen door AI-automatisering. Die geografische beperking verdwijnt, terwijl de afname van buitenlandse contractanten juist een belangrijke kanttekening is.",
+    "voorstel": "Behoud de beperking tot binnenlandse ontslagen en maak duidelijk dat het om meldingen van de geïnterviewde klanten gaat. Begrens ook de kop over 'weinig ontslagen'."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Bedrijven die AI alleen uitrollen en op gebruik wachten, houden volgens de interviews last van ongelijk gebruik en losse toepassingen.",
+    "probleem": "De tekst neemt alleen de beperkingen van afwachten na uitrol mee. De bron noemt ook weerstand, baanonzekerheid en zorgen over toezicht bij opgelegde automatisering, naast taken die AI niet versnelt. Daardoor blijft de analyse van invoering eenzijdig.",
+    "voorstel": "Neem ook een kanttekening over opgelegde invoering en niet-versnelde taken op. Behoud de attributie aan de interviews."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Eenvoudige maatregelen bij de inzet verminderen het naar buiten reiken met tot 96%.",
+    "probleem": "De maximale daling wordt genoemd zonder de bijbehorende uitgangssituatie, maatregel of testconditie. De bron ondersteunt de claim als samenvatting van Anthropic, maar geeft hier onvoldoende context om de score te duiden.",
+    "voorstel": "Laat de 96% weg zolang de vergelijking niet kan worden uitgelegd. Of laat de precieze maatregel, uitgangswaarde en testconditie controleren en vermeld dat het een resultaat volgens Anthropic is."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "De boodschap voor organisaties blijft dat een agent alleen zo veilig is als de omgeving waarin hij draait.",
+    "probleem": "Dit is een absolute veiligheidsconclusie die de bron niet draagt. Anthropic bespreekt naast afscherming ook modelgedrag, instructies en controle van acties als veiligheidsmaatregelen.",
+    "voorstel": "Beperk de conclusie tot het belang van de afscherming. Presenteer de omgeving niet als de enige bepalende factor voor veiligheid."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Nieuwe deepfake-test: AI-modellen herkennen nepstemmen nauwelijks",
+    "probleem": "De kop generaliseert de prestaties van twaalf geteste multimodale taalmodellen naar AI-modellen in het algemeen. Dezelfde bron meldt juist veel hogere scores voor specifiek getrainde detectoren.",
+    "voorstel": "Beperk de kop tot de geteste taalmodellen en deze test. Trek in de burgerduiding evenmin een algemene conclusie over alle AI-modellen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Nepbeelden worden vaker opgemerkt dan nepstemmen (43,6% tegenover 7,5%).",
+    "probleem": "De percentages gaan volgens het abstract over vervalsingen van uitsluitend beeld tegenover vervalsingen van uitsluitend stem, in de context van het best scorende taalmodel. Die afbakening ontbreekt.",
+    "voorstel": "Vermeld dat het om beeld-alleen- en stem-alleenvervalsingen gaat en koppel de percentages expliciet aan het betreffende modelresultaat."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "OpenAI: GPT-6 kan eiwitten ontwerpen zonder gespecialiseerde modellen",
+    "probleem": "De kop maakt onvoldoende onderscheid tussen het ontwerpen en de laboratoriumvalidatie. Bij de aangehaalde labresultaten leverden gespecialiseerde modellen wel aminozuursequenties en hielpen ze kandidaten selecteren. De latere kanttekening herstelt de eerste indruk slechts gedeeltelijk.",
+    "voorstel": "Begrens 'zonder gespecialiseerde modellen' in de kop tot de ontwerptaken waarover OpenAI die claim doet. Houd de bijdrage van gespecialiseerde modellen aan de labresultaten zichtbaar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "die sinds begin 2026 ongeveer zeven keer sneller daalt dan in 2022-2025",
+    "probleem": "De vergelijking heeft een periode en bron, maar legt niet uit wat de gemeten trainingsfout zegt en niet zegt. Zonder die uitleg kan de lezer zeven keer snellere vooruitgang in praktische AI-capaciteiten lezen, wat deze bron niet aantoont.",
+    "voorstel": "Leg de maat begrijpelijk uit en begrens de betekenis van de versnelling. Laat het getal weg als die uitleg niet met een bron kan worden onderbouwd."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "Het concept bevat nergens een hype-meter. De statuslabels beschrijven de bewijspositie, niet de verhouding tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per behandeld onderwerp een stand uit de vijf voorgeschreven categorieën toe, met één zin uitleg. Leid die stand niet rechtstreeks af uit de bronstatus."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Onderzoekers en biotechbedrijven kunnen deze richting volgen, maar de bron zegt niets over beschikbaarheid of kosten.",
+    "probleem": "Dit is algemene sectorinformatie, geen concrete Vlaamse vertaalslag. Ook bij verschillende andere onderzoeksitems blijft 'Voor wie' beperkt tot algemene aanbevelingen.",
+    "voorstel": "Maak een concrete Vlaamse toepassing uitsluitend zichtbaar als die te onderbouwen is. Benoem anders dat de praktische betekenis voor Vlaamse organisaties nog onzeker is, zonder lokale voorbeelden als feit te verzinnen."
+  },
+  {
+    "ernst": "klein",
+    "passage": "velen gebruiken minder externe contractors, vooral offshore",
+    "probleem": "Vakwoorden worden niet consequent uitgelegd. Naast 'contractors' en 'offshore' blijven onder meer 'multimodale taalmodellen', 'pretraining loss', 'frontiermodellen' en 'sequenties' zonder uitleg bij het eerste gebruik.",
+    "voorstel": "Vervang onnodig Engels door begrijpelijk Nederlands en geef noodzakelijke vakwoorden bij het eerste gebruik een korte uitleg."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "passage": "https://www.vrt.be/vrtnews/nl/2026/11/25/...",
+    "beslissing": "verwerkt",
+    "toelichting": "De link is op beide plaatsen hersteld naar het pad /vrtnws/nl/ uit de aangeleverde bron."
+  },
+  {
+    "passage": "Gegevens van 1,2 miljoen Vlamingen gestolen, met hulp van AI",
+    "beslissing": "verwerkt",
+    "toelichting": "De kop schrijft het aantal nu toe aan Secutec."
+  },
+  {
+    "passage": "Het cijfer komt van Secutec. ... de andere berichten herhalen dezelfde claim.",
+    "beslissing": "verwerkt",
+    "toelichting": "SOCRadar is toegevoegd en de stellige bewering dat andere berichten dezelfde claim herhalen is geschrapt; alleen het ontbreken van onafhankelijke bevestiging blijft."
+  },
+  {
+    "passage": "Gemeenten moeten betrokken inwoners binnen 3 dagen inlichten",
+    "beslissing": "verwerkt",
+    "toelichting": "De bewering is nu aan VRT NWS toegeschreven en er staat een nakijkcommentaar voor controle aan een primaire bron."
+  },
+  {
+    "passage": "Meta's AI-agent Muse komt binnen enkele weken naar België",
+    "beslissing": "verwerkt",
+    "toelichting": "Kop en samenvatting schrijven de timing nu toe aan VRT, op basis van contact met Meta, zonder vaste datum."
+  },
+  {
+    "passage": "Ze zagen zeer weinig ontslagen door AI.",
+    "beslissing": "verwerkt",
+    "toelichting": "De beperking tot ontslagen in eigen land door AI-automatisering en de herkomst uit de interviews staan nu in tekst en kop."
+  },
+  {
+    "passage": "Bedrijven die AI alleen uitrollen en op gebruik wachten...",
+    "beslissing": "verwerkt",
+    "toelichting": "Er is een alinea toegevoegd over opgelegde invoering (baanonzekerheid, toezicht, weerstand) en niet-versnelde taken."
+  },
+  {
+    "passage": "Eenvoudige maatregelen bij de inzet verminderen het naar buiten reiken met tot 96%.",
+    "beslissing": "verwerkt",
+    "toelichting": "Het getal is geschrapt omdat de context ontbreekt; een nakijkcommentaar vraagt om controle in de volledige post."
+  },
+  {
+    "passage": "De boodschap voor organisaties blijft dat een agent alleen zo veilig is als de omgeving waarin hij draait.",
+    "beslissing": "verwerkt",
+    "toelichting": "De absolute conclusie is vervangen door wat de bron zegt: de beveiliging van de sandbox is cruciaal."
+  },
+  {
+    "passage": "Nieuwe deepfake-test: AI-modellen herkennen nepstemmen nauwelijks",
+    "beslissing": "verwerkt",
+    "toelichting": "De kop en de burgerduiding beperken zich tot de geteste taalmodellen die beeld en geluid verwerken."
+  },
+  {
+    "passage": "Nepbeelden worden vaker opgemerkt dan nepstemmen (43,6% tegenover 7,5%).",
+    "beslissing": "verwerkt",
+    "toelichting": "De percentages zijn nu afgebakend tot vervalsingen van alleen beeld of alleen stem en gekoppeld aan het best scorende model volgens de samenvatting."
+  },
+  {
+    "passage": "OpenAI: GPT-6 kan eiwitten ontwerpen zonder gespecialiseerde modellen",
+    "beslissing": "verwerkt",
+    "toelichting": "De kop vermeldt nu dat de labtests wel gespecialiseerde modellen gebruikten voor sequenties en kandidaatselectie."
+  },
+  {
+    "passage": "die sinds begin 2026 ongeveer zeven keer sneller daalt dan in 2022-2025",
+    "beslissing": "verwerkt",
+    "toelichting": "Het item is uit de radar gehaald omdat de maat niet met een bron uit te leggen is; een nakijkcommentaar blijft staan."
+  },
+  {
+    "passage": "**Status:** Volgens de maker",
+    "beslissing": "verwerkt",
+    "toelichting": "Bij elk onderwerp is een hype-meter met een van de vijf standen en één zin uitleg toegevoegd, los van de bronstatus."
+  },
+  {
+    "passage": "Onderzoekers en biotechbedrijven kunnen deze richting volgen, maar de bron zegt niets over beschikbaarheid of kosten.",
+    "beslissing": "verwerkt",
+    "toelichting": "Deze duiding zegt nu dat de betekenis voor Vlaamse organisaties onzeker is, zonder verzonnen lokale voorbeelden; de andere 'Voor wie'-regels blijven omdat ze uit de bronnen volgen."
+  },
+  {
+    "passage": "velen gebruiken minder externe contractors, vooral offshore",
+    "beslissing": "verwerkt",
+    "toelichting": "Contractors, offshore, multimodale taalmodellen en sequenties zijn uitgelegd of vervangen door Nederlands; het frontiervakwoord verdween met het geschrapte radaritem."
+  }
+]
