@@ -1,0 +1,162 @@
+---
+import Basis from "../layouts/Basis.astro";
+import { DOELGROEPEN } from "../lib/doelgroepen";
+import { datumLeesbaar } from "../lib/edities";
+import { SITE_URL, uitgever } from "../lib/seo";
+import { CONTACT_EMAIL } from "../lib/site";
+import {
+  alleWegwijzers,
+  INGANG_LABELS,
+  INGANG_VOLGORDE,
+  SOORT_LABELS,
+  TAAL_LABELS,
+  laatsteControle,
+  licentieLeesbaar,
+  prijsLeesbaar,
+} from "../lib/wegwijzer";
+
+const items = alleWegwijzers();
+const groepen = INGANG_VOLGORDE.map((ingang) => ({ ingang, ...INGANG_LABELS[ingang], items: items.filter((w) => w.ingang === ingang) })).filter((g) => g.items.length);
+const nagekeken = laatsteControle();
+const url = `${SITE_URL}/wegwijzer`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": url,
+  url,
+  name: "Wegwijzer: waar je in Vlaanderen terechtkunt met vragen over AI",
+  description: "Wat anderen in Vlaanderen al goed aanbieden over AI: richtlijnen, lesmateriaal, opleidingen en hulp, per doelgroep, met prijs, licentie en datum van controle.",
+  inLanguage: "nl-BE",
+  dateModified: nagekeken,
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: items.map((w, i) => ({ "@type": "ListItem", position: i + 1, name: w.naam, url: w.url })),
+  },
+};
+---
+
+<Basis
+  titel="Wegwijzer: waar je elders terechtkunt met AI"
+  beschrijving="Wat anderen in Vlaanderen al goed aanbieden over AI: richtlijnen, lesmateriaal, opleidingen en hulp, voor scholen, gemeenten, werk, zelfstandigen, bibliotheken en burgers. Met prijs, licentie en datum van controle."
+  schema={schema}
+  bron="content/wegwijzer.yaml"
+>
+  <section class="rij sectie">
+    <div class="kantlijn"><p>{items.length} adressen<br />Nagekeken op {datumLeesbaar(nagekeken)}</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Wegwijzer</h1>
+      <p class="lead">
+        Niet alles moet van ons komen. Voor veel vragen over AI bestaat in Vlaanderen al iets goeds: een richtlijn van de
+        overheid, lesmateriaal van collega's, een opleiding of een hulplijn. Hier wijzen we je de weg.
+      </p>
+      <p>
+        Bij elk adres staat voor wie het is, wanneer je er het best terechtkunt, wat het kost en of je het mag overnemen.
+        Hebben wij iets dat erbij past, dan staat dat er ook. Wat wij zelf maken, vind je onder{" "}
+        <a href="/lesgeven">Lesgeven</a> en <a href="/doen">Doen</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie filter-sectie">
+    <div class="kantlijn"><p>Toon adressen voor</p></div>
+    <div>
+      <div class="filter" role="group" aria-label="Filter op doelgroep">
+        <button type="button" data-voor="" aria-pressed="true">Iedereen</button>
+        {DOELGROEPEN.map((d) => <button type="button" data-voor={d.slug} aria-pressed="false">{d.label}</button>)}
+      </div>
+      <div class="filter" role="group" aria-label="Filter op wat je wilt">
+        <button type="button" data-ingang="" aria-pressed="true">Alles</button>
+        {groepen.map((g) => <button type="button" data-ingang={g.ingang} aria-pressed="false">{g.vraag}</button>)}
+        <button type="button" data-gratis aria-pressed="false">Alleen gratis</button>
+      </div>
+      <p class="meta" id="filter-leeg" hidden>Nog geen adressen met deze filter. Ken je er een? Laat het ons weten (onderaan).</p>
+    </div>
+  </section>
+
+  {groepen.map((g) => (
+    <section class="rij sectie wegwijs-groep" data-groep={g.ingang}>
+      <div class="kantlijn"><p class="kantlijn-kop">{g.titel}</p><p>{g.vraag}</p></div>
+      <div class="proza">
+        {g.items.map((w) => (
+          <article class="wegwijs" id={w.slug} data-voor={w.doelgroepSlugs.join(" ")} data-ingang={w.ingang} data-prijs={w.prijs}>
+            <p class="meta toepassing-kop"><span class="soort">{SOORT_LABELS[w.soort] ?? w.soort}</span>{w.aanbieder}</p>
+            <h2><a href={w.url} rel="noopener" target="_blank">{w.naam}</a></h2>
+            <p>{w.wat}</p>
+            {w.verwijsAls && <p><strong>Ga hierheen als</strong> {w.verwijsAls}.</p>}
+            {w.bijOns && <p class="wegwijs-bijons">Bij ons ernaast: <a href={w.bijOns.href}>{w.bijOns.tekst}</a></p>}
+            <ul class="labels">{w.doelgroepen.map((d) => <li>{d}</li>)}</ul>
+            <p class="meta" style="margin:0">
+              {w.niveau && <>Niveau {w.niveau} · </>}{prijsLeesbaar(w)} · {TAAL_LABELS[w.taal] ?? w.taal} · nagekeken op {datumLeesbaar(w.laatstGecontroleerd)}
+            </p>
+            {licentieLeesbaar(w) && <p class="meta" style="margin:0.2rem 0 0">{licentieLeesbaar(w)}</p>}
+          </article>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Hoe we kiezen</p></div>
+    <div class="proza">
+      <ul>
+        <li><strong>Voor wie hier komt.</strong> Elk adres helpt een van onze doelgroepen: scholen, werk, gemeenten, zelfstandigen, bibliotheken of burgers.</li>
+        <li><strong>In het Nederlands, liefst uit Vlaanderen.</strong> Is iets alleen in het Engels, dan zeggen we dat.</li>
+        <li><strong>Geen reclame.</strong> We nemen geen verkopers van AI-tools op, en we krijgen niets voor een vermelding. Heeft een organisatie een eigen standpunt, zoals een vakbond, dan staat dat erbij.</li>
+        <li><strong>Eerlijk over prijs en licentie.</strong> Staat er geen licentie bij, dan mag je het gebruiken maar niet zomaar overnemen. Bij een Creative Commons-licentie mag dat wel, met naamsvermelding.</li>
+        <li><strong>Nagekeken.</strong> Alleen wat we zelf bij de aanbieder of in een officiële bron zagen, komt hier. We kijken de lijst elk kwartaal na; de datum staat bij elk adres.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Mis je iets?</p></div>
+    <div class="proza">
+      <p>
+        Ken je een goed adres dat hier ontbreekt, of klopt er iets niet meer? Mail het naar
+        <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Wegwijzer: voorstel of verbetering")}`}>{CONTACT_EMAIL}</a>.
+        We kijken elk voorstel na voor het hier verschijnt.
+      </p>
+    </div>
+  </section>
+</Basis>
+
+<script>
+  const kaarten = Array.from(document.querySelectorAll<HTMLElement>(".wegwijs"));
+  const groepen = Array.from(document.querySelectorAll<HTMLElement>(".wegwijs-groep"));
+  const leeg = document.getElementById("filter-leeg");
+  const staat = { voor: "", ingang: "", gratis: false };
+
+  function pasToe() {
+    let zichtbaar = 0;
+    for (const k of kaarten) {
+      const ok =
+        (!staat.voor || (k.dataset.voor ?? "").split(" ").includes(staat.voor)) &&
+        (!staat.ingang || k.dataset.ingang === staat.ingang) &&
+        (!staat.gratis || k.dataset.prijs === "gratis");
+      k.hidden = !ok;
+      if (ok) zichtbaar++;
+    }
+    for (const g of groepen) g.hidden = !g.querySelector(".wegwijs:not([hidden])");
+    if (leeg) leeg.hidden = zichtbaar > 0;
+    document.querySelectorAll<HTMLButtonElement>("button[data-voor]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.voor === staat.voor)));
+    document.querySelectorAll<HTMLButtonElement>("button[data-ingang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.ingang === staat.ingang)));
+    document.querySelector("button[data-gratis]")?.setAttribute("aria-pressed", String(staat.gratis));
+    const params = new URLSearchParams();
+    if (staat.voor) params.set("voor", staat.voor);
+    if (staat.ingang) params.set("wat", staat.ingang);
+    history.replaceState(null, "", params.size ? `?${params}${location.hash}` : location.pathname + location.hash);
+  }
+
+  document.querySelectorAll<HTMLButtonElement>("button[data-voor]").forEach((b) => b.addEventListener("click", () => { staat.voor = b.dataset.voor ?? ""; pasToe(); }));
+  document.querySelectorAll<HTMLButtonElement>("button[data-ingang]").forEach((b) => b.addEventListener("click", () => { staat.ingang = b.dataset.ingang ?? ""; pasToe(); }));
+  document.querySelector("button[data-gratis]")?.addEventListener("click", () => { staat.gratis = !staat.gratis; pasToe(); });
+
+  // Deellink: /wegwijzer?voor=onderwijs&wat=lesgeven
+  const p = new URLSearchParams(location.search);
+  const voor = p.get("voor");
+  const wat = p.get("wat");
+  if (voor && document.querySelector(`button[data-voor="${CSS.escape(voor)}"]`)) staat.voor = voor;
+  if (wat && document.querySelector(`button[data-ingang="${CSS.escape(wat)}"]`)) staat.ingang = wat;
+  if (staat.voor || staat.ingang) pasToe();
+</script>

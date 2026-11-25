@@ -6,7 +6,7 @@ export const LINKEDIN = ""; // url van de LinkedIn-pagina van AI Ontcijferd, als
 // `ook` = paden die onder dezelfde ingang vallen (voor de markering in het menu).
 export const MENU = [
   { href: "/volgen", tekst: "Volgen", uitleg: "Wat gebeurt er? De Stand van AI, de dagbrief, dossiers en praktijkvoorbeelden.", ook: ["/edities", "/plus", "/wat-kan-ai", "/terugblik"] },
-  { href: "/leren", tekst: "Leren", uitleg: "Hoe werkt het? Begin hier, het AI Act-kompas en de jargonfilter.", ook: ["/begin-hier", "/niveaucheck", "/ai-act", "/jargon", "/naslag"] },
+  { href: "/leren", tekst: "Leren", uitleg: "Hoe werkt het? Begin hier, het AI Act-kompas en de jargonfilter.", ook: ["/begin-hier", "/niveaucheck", "/ai-act", "/jargon", "/naslag", "/wegwijzer"] },
   { href: "/doen", tekst: "Doen", uitleg: "Wat kan ik ermee? De Plakcheck, bijsluiters van AI-tools, prompts en skills, en fiches.", ook: ["/plakcheck", "/bijsluiters", "/werkwijzen", "/fiches", "/gratis"] },
   { href: "/lesgeven", tekst: "Lesgeven", uitleg: "Hoe geef ik het door? Open lespakketten om zelf te geven, en alles om over te nemen.", ook: ["/materiaal", "/overnemen"] },
   { href: "/voor", tekst: "Voor jou", uitleg: "Alleen wat jouw sector raakt: onderwijs, werk, gemeenten, zelfstandigen, bibliotheken, burgers.", ook: [] as string[] },
@@ -37,6 +37,7 @@ export const INGANGEN: Record<string, { titel: string; vraag: string; lead: stri
       { href: "/ai-act", tekst: "AI Act-kompas", uitleg: "Wat de Europese AI-wet betekent voor jou, en wat wanneer geldt." },
       { href: "/jargon", tekst: "Jargonfilter", uitleg: "AI-termen in gewoon Nederlands." },
       { href: "/cursus", tekst: "AI-cursus", uitleg: "Leren werken met AI door het te doen: vier delen, tien modules, online of als PDF." },
+      { href: "/wegwijzer", tekst: "Wegwijzer", uitleg: "Waar je elders in Vlaanderen terechtkunt: richtlijnen, lesmateriaal, opleidingen en hulp, nagekeken." },
     ],
   },
   doen: {

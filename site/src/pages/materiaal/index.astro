@@ -171,6 +171,10 @@ const schema = {
   // Komt iemand van de niveaucheck (/materiaal?niveau=N1), dan staat de filter al goed.
   const gevraagd = new URLSearchParams(location.search).get("niveau");
   if (gevraagd && /^N[0-4]$/.test(gevraagd)) { staat.niveau = gevraagd; pasToe(); }
+  // Komt iemand van de wegwijzer of een doelgroeppagina (/materiaal?voor=bibliotheken), dan staat ook die filter goed.
+  const voorGevraagd = (new URLSearchParams(location.search).get("voor") ?? "").toLowerCase().replace(/-/g, " ");
+  const voorKnop = Array.from(document.querySelectorAll<HTMLButtonElement>("button[data-voor]")).find((b) => b.dataset.voor && b.dataset.voor.toLowerCase() === voorGevraagd);
+  if (voorKnop) { staat.voor = voorKnop.dataset.voor ?? ""; pasToe(); }
   document.querySelectorAll<HTMLButtonElement>("button[data-voor]").forEach((b) => b.addEventListener("click", () => { staat.voor = b.dataset.voor ?? ""; pasToe(); }));
   document.querySelectorAll<HTMLButtonElement>("button[data-soort]").forEach((b) => b.addEventListener("click", () => { staat.soort = b.dataset.soort ?? ""; pasToe(); }));
 </script>

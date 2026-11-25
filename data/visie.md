@@ -63,9 +63,9 @@ werkwijze, wat je niet in een chatbot plakt, het niveau (N0-N4), de regels die g
 jobpagina bundelt taakkaarten, pakketten, toepassingen en verwijzingen. Zo heeft iemand met een concrete taak een reden
 om te komen, en dient één taakkaart meerdere jobs. Elke taakkaart wordt getest door iemand die die job doet.
 
-**Wegwijzer (24/11).** "Verwijzen naar wat goed is" krijgt een vaste lijst: `content/wegwijzer.yaml`, met per aanbod
-voor wie, niveau, prijs, licentie, wanneer we ernaar verwijzen en wanneer het laatst is nagekeken. De pagina volgt als
-Duncan kiest wat erop komt; de jobpagina's en portalen putten eruit.
+**Wegwijzer (online 25/11).** "Verwijzen naar wat goed is" heeft een vaste plek: `/wegwijzer`, uit
+`content/wegwijzer.yaml`, met per adres voor wie, wanneer je erheen gaat, niveau, prijs, licentie, wat wij ernaast
+hebben en wanneer het laatst is nagekeken. De doelgroepportalen tonen "Elders goed"; de jobpagina's putten er later uit.
 
 ## Waar de leegtes liggen
 

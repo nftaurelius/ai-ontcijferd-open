@@ -62,6 +62,41 @@ def diagnose(b: dict) -> list[str]:
     return regels
 
 
+def wegwijzer_check() -> tuple[list[str], int]:
+    """Werkt elke link in de wegwijzer nog, en is elk adres het voorbije kwartaal nagekeken?"""
+    import datetime as dt
+    pad = ROOT / "content" / "wegwijzer.yaml"
+    if not pad.exists():
+        return [], 0
+    items = (yaml.safe_load(pad.read_text(encoding="utf-8")) or {}).get("wegwijzer", [])
+    regels = ["", "## Wegwijzer (content/wegwijzer.yaml)", "",
+              "| Adres | Status | Nagekeken | Opmerking |", "| --- | --- | --- | --- |"]
+    vandaag, problemen = dt.date.today(), 0
+    for w in items:
+        opm = []
+        try:
+            r = requests.get(w["url"], headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
+            code = str(r.status_code)
+            if r.status_code >= 400:
+                opm.append(f"link geeft {r.status_code}")
+            elif urlsplit(r.url).netloc != urlsplit(w["url"]).netloc:
+                opm.append(f"stuurt door naar {urlsplit(r.url).netloc}")
+        except Exception as fout:
+            code = "geen verbinding"
+            opm.append(fout.__class__.__name__)
+        gezien = w.get("laatstGecontroleerd")
+        gezien = gezien if isinstance(gezien, dt.date) else dt.date.fromisoformat(str(gezien)) if gezien else None
+        if not gezien or (vandaag - gezien).days > 100:
+            opm.append("langer dan een kwartaal niet nagekeken")
+        if w.get("status") != "gecontroleerd":
+            opm.append("status TE CONTROLEREN (niet op de site)")
+        if opm:
+            problemen += 1
+        regels.append(f"| {w.get('naam')} | {code} | {gezien or '?'} | {'; '.join(opm) or 'OK'} |")
+    regels += ["", f"{problemen} adres(sen) in de wegwijzer vragen aandacht. Een 403 kan een site zijn die bots weert: open de link zelf."]
+    return regels, problemen
+
+
 def main() -> None:
     alle = "--alle" in sys.argv
     lijst = (yaml.safe_load((ROOT / "sources.yaml").read_text(encoding="utf-8"))["bronnen"]
@@ -93,6 +128,10 @@ def main() -> None:
     regels += ["", f"{problemen} bron(nen) vragen aandacht."]
     if details:
         regels += ["", "## Diagnose", ""] + details
+    try:
+        regels += wegwijzer_check()[0]
+    except Exception as fout:  # de wegwijzer mag de bronnencheck nooit doen falen
+        regels += ["", f"Wegwijzer niet nagekeken: {fout.__class__.__name__} {str(fout)[:80]}"]
     tekst = "\n".join(regels) + "\n"
     (DATA / "bronnencheck.md").write_text(tekst, encoding="utf-8")
     if os.environ.get("GITHUB_STEP_SUMMARY"):

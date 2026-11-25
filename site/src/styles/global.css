@@ -1719,3 +1719,30 @@ main:focus {
 .inschrijf-keuze input[type="checkbox"] {
   accent-color: var(--inkt);
 }
+
+/* ---------------------------------------------------------------- wegwijzer (nov. 2026)
+   Wat anderen goed aanbieden; zelfde ritme als de toepassingen. */
+.wegwijs-groep[hidden],
+.wegwijs[hidden] {
+  display: none;
+}
+.wegwijs {
+  scroll-margin-top: 1.5rem;
+  border-top: 1px solid var(--lijn);
+  padding: 1.4rem 0 0.9rem;
+}
+.wegwijs:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.wegwijs h2 {
+  margin: 0.3rem 0 0.7rem;
+  font-size: 1.3rem;
+}
+.wegwijs h2 a {
+  color: inherit;
+}
+.wegwijs-bijons {
+  border-left: 3px solid var(--inkt);
+  padding-left: 0.7rem;
+}
