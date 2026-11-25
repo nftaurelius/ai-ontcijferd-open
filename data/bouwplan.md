@@ -63,7 +63,7 @@ buiten gaat niets voor 4 januari.
 - **Wie:** agents; tekst nakijken bij de Europese Commissie en in de Omnibus-tekst.
 - **Klaar als:** fiche online, kompas verwijst ernaar, bron en datum erbij, opgenomen in de vragenbank (B02).
 
-### B02 · De vragenbank: elke echte vraag een eigen pagina
+### B02 · De vragenbank: elke echte vraag een eigen pagina ✓ (25/11: eerste 24 vragen online)
 - **Voor wie:** iedereen; de ingang voor wie geen AI-les wil maar een antwoord. Alle dwarsvragen.
 - **Waarom:** het onderzoek levert ruim veertig echte vragen per doelgroep. Een pagina per vraag helpt mensen,
   zoekmachines en chatbots (motor 3 van het verspreidingsplan). De grootste groep wil een antwoord op een eigen vraag.
@@ -116,7 +116,7 @@ buiten gaat niets voor 4 januari.
 - Staat al gepland (geplande taken 21/12, 28/12, 30/12, 4/1). Duncan schrijft "Mijn inschatting" eind december
   (ingepland).
 
-### B26 · Feedback van gebruikers op elk stuk
+### B26 · Feedback van gebruikers op elk stuk ✓ (25/11: vragen, fiches, Plakcheck)
 - **Voor wie:** iedereen die iets van ons gebruikt. Nodig omdat we niet afhangen van externe testers.
 - **Waarom:** zo leren we wat werkt zonder dat iemand ons eerst moet testen. Elke reactie wordt een verbetering.
 - **Vorm:** onder elke vraag, fiche, taakkaart, tool en pakket een klein blok "Werkte dit voor jou?" met twee knoppen
@@ -276,7 +276,7 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 
 ## Volgorde voor de komende bouwsessies
 
-1. B02 · vragenbank, eerste 24 vragen (de basis waar B01, B05, B06, B09 en B14 op steunen), met B26 erin
+1. ~~B02 · vragenbank, eerste 24 vragen, met B26~~ (klaar 25/11)
 2. B01 · fiche artikel 4 na de Omnibus
 3. B03 · afsprakenkaart-maker
 4. B05 · fiches "Is dit echt?" en "AI-oplichting gericht op je zaak"
@@ -293,4 +293,5 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 | Datum | Item | Wat | PR |
 | --- | --- | --- | --- |
 | 25/11/2026 | - | Bouwplan opgesteld uit visie, verspreidingsplan en doelgroepenonderzoek | #47 |
-| 25/11/2026 | B12, B26 | Beslissingen Duncan: AI per job goedgekeurd, niet afhangen van anderen, B26 toegevoegd | |
+| 25/11/2026 | B12, B26 | Beslissingen Duncan: AI per job goedgekeurd, niet afhangen van anderen, B26 toegevoegd | #48 |
+| 25/11/2026 | B02, B26 | Vragenbank: 24 vragen (drie per dwarsvraag) op /vragen, elk met eigen pagina, FAQ-gegevens en bronnen; blok op elke doelgroeppagina; feedbackblok op vragen, fiches en Plakcheck | |

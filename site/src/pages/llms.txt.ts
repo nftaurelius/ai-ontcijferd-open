@@ -32,6 +32,7 @@ export function GET() {
     "- [Werkwijzen](https://aiontcijferd.be/werkwijzen): prompts, skills en agents om AI verstandig te gebruiken, met bijsluiter",
     "- [Begin hier](https://aiontcijferd.be/begin-hier): AI in tien minuten, voor wie nieuw is",
     "- [Niveaucheck](https://aiontcijferd.be/niveaucheck): vijf vragen, een niveau van N0 (Nieuwsgierig) tot N4 (Bouwer), met wat je hierna leert",
+    "- [Vragen over AI](https://aiontcijferd.be/vragen): echte vragen over AI (privacy, nepbeelden, afspraken, de AI Act, werk) met een kort, nagekeken antwoord en bronnen, elk op een eigen pagina",
     "- [Wegwijzer](https://aiontcijferd.be/wegwijzer): wat anderen in Vlaanderen al goed aanbieden over AI (richtlijnen, lesmateriaal, opleidingen, hulp), per doelgroep, met prijs, licentie en datum van controle",
     "- [Bijsluiters van AI-tools](https://aiontcijferd.be/bijsluiters): wat ChatGPT, Claude, Gemini, Copilot en Mistral Vibe met je invoer doen en wat ze kosten, met bron en datum",
     "- [Neem het over](https://aiontcijferd.be/overnemen): alles staat onder CC BY 4.0; zo vermeld je de bron, met kant-en-klare teksten",

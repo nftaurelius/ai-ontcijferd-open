@@ -8,6 +8,7 @@ import { alleEdities, datumLeesbaar, weekNummer } from "./edities";
 import { alleDagbrieven, alleDossiers } from "./plus";
 import { beschikbarePakketten } from "./materiaal";
 import { INGANGEN } from "./site";
+import { alleVragen, DWARSVRAGEN } from "./vragen";
 
 export type Deelbeeld = { pad: string; soort: string; titel: string; onder: string };
 
@@ -15,6 +16,7 @@ const VAST: Deelbeeld[] = [
   { pad: "/plakcheck", soort: "Gratis tool", titel: "Mag dit in een chatbot? En loont het dan nog?", onder: "Plakcheck en Urenrekening · draait in je browser" },
   { pad: "/bijsluiters", soort: "Bijsluiters", titel: "Wat doen AI-tools met wat je intypt, en wat kosten ze?", onder: "ChatGPT · Claude · Gemini · Copilot · Mistral" },
   { pad: "/niveaucheck", soort: "Niveaucheck", titel: "Op welk niveau sta je met AI?", onder: "Vijf vragen · N0 tot N4 · anoniem" },
+  { pad: "/vragen", soort: "Vragen over AI", titel: "Echte vragen, nagekeken antwoorden", onder: "Privacy · nepbeelden · afspraken · de wet · je job" },
   { pad: "/wegwijzer", soort: "Wegwijzer", titel: "Waar kun je elders terecht met vragen over AI?", onder: "Richtlijnen, lesmateriaal, opleidingen en hulp in Vlaanderen" },
   { pad: "/begin-hier", soort: "Begin hier", titel: "AI in tien minuten", onder: "Wat het is, waar je op let, waar je verder kunt" },
   { pad: "/ai-act", soort: "AI Act-kompas", titel: "Wat geldt wanneer, en wat betekent het voor jou?", onder: "Voor scholen, gemeenten, kmo's en burgers" },
@@ -35,6 +37,7 @@ export function alleDeelbeelden(): Deelbeeld[] {
     ...alleDossiers().map((d) => ({ pad: `/plus/dossiers/${d.slug}`, soort: `Dossier · ${datumLeesbaar(d.datum)}`, titel: d.titel, onder: d.samenvatting })),
     ...alleDagbrieven().map((d) => ({ pad: `/plus/dag/${d.datum}`, soort: `Dagbrief · ${datumLeesbaar(d.datum)}`, titel: d.items.length ? d.items.slice(0, 3).map((i) => i.titel).join(" · ") : d.titel, onder: "AI Ontcijferd Plus" })),
     ...beschikbarePakketten().map((p) => ({ pad: `/materiaal/${p.slug}`, soort: `Open lespakket · versie ${p.versie}`, titel: p.titel, onder: `${p.duur ?? ""}${p.duur ? " · " : ""}${p.licentie} · gratis te downloaden` })),
+    ...alleVragen().map((v) => ({ pad: `/vragen/${v.slug}`, soort: `Vraag over AI · ${DWARSVRAGEN[v.dwarsvraag].kort}`, titel: v.vraag, onder: v.doelgroepen.join(" · ") })),
     ...VAST,
   ];
   return cache;

@@ -4,6 +4,7 @@
 // en wordt hier in een kader getoond. Deellinks (#p=...) worden doorgegeven aan het kader.
 import Basis from "../layouts/Basis.astro";
 import Inschrijven from "../components/Inschrijven.astro";
+import WerkteDit from "../components/WerkteDit.astro";
 import { tool } from "../lib/tools";
 import { datumLeesbaar } from "../lib/edities";
 import { LICENTIE_URL, SITE_URL, uitgever } from "../lib/seo";
@@ -102,6 +103,11 @@ const schema = {
       )}
       <p>Wil je weten wanneer de tool verandert, of wanneer er nieuwe gratis tools en lespakketten bijkomen? Dat lees je in de nieuwsbrief.</p>
     </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Jouw ervaring</p></div>
+    <div class="proza"><WerkteDit titel={t.naam} versie={t.versie} pad="/plakcheck" /></div>
   </section>
 
   <section class="rij sectie">

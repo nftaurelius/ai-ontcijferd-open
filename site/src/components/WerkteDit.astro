@@ -1,0 +1,20 @@
+---
+// Feedback van gebruikers (bouwplan B26). Geen formulier en geen opslag: twee mailto-links naar de redactie,
+// met de naam en versie van het stuk in het onderwerp. Wat binnenkomt, gaat (zonder naam) naar data/feedback.md.
+import { CONTACT_EMAIL } from "../lib/site";
+interface Props { titel: string; versie?: string; pad: string }
+const { titel, versie, pad } = Astro.props;
+const stuk = `${titel}${versie ? ` (versie ${versie})` : ""}`;
+const link = (oordeel: string, tekst: string) =>
+  `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`${oordeel}: ${stuk}`)}&body=${encodeURIComponent(`${tekst}\n\nPagina: https://aiontcijferd.be${pad}\n`)}`;
+const ja = link("Werkte", "Dit werkte voor mij. (Wil je, vertel in een zin waarvoor je het gebruikte.)");
+const nee = link("Werkte niet", "Dit werkte niet voor mij, of er ontbreekt iets. Wat liep er mis of wat zocht je?");
+---
+<aside class="werkte-dit niet-printen" aria-label="Feedback">
+  <p class="werkte-dit-vraag">Werkte dit voor jou?</p>
+  <p class="werkte-dit-knoppen">
+    <a class="knop" href={ja}>Ja</a>
+    <a class="knop" href={nee}>Nee, er ontbreekt iets</a>
+  </p>
+  <p class="meta">Je mail gaat naar de redactie. We bewaren je naam en adres niet bij de feedback, en passen het stuk aan als het beter kan.</p>
+</aside>

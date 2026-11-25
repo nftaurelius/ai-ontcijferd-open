@@ -1,27 +1,96 @@
 ---
+// Vragenbank (bouwplan B02): echte vragen over AI met een nagekeken antwoord, gegroepeerd per dwarsvraag.
+// Onderaan: een eigen vraag stellen (lezersvragen) en wat de Stand van AI al beantwoordde.
 import Basis from "../layouts/Basis.astro";
 import { CONTACT_EMAIL } from "../lib/site";
-import { alleEdities } from "../lib/edities";
+import { alleEdities, datumLeesbaar } from "../lib/edities";
+import { DOELGROEPEN } from "../lib/doelgroepen";
+import { alleVragen, DWARSVRAGEN } from "../lib/vragen";
+import { SITE_URL, uitgever } from "../lib/seo";
 
+const vragen = alleVragen();
+const groepen = Object.entries(DWARSVRAGEN)
+  .map(([nr, d]) => ({ nr: Number(nr), ...d, vragen: vragen.filter((v) => v.dwarsvraag === Number(nr)) }))
+  .filter((g) => g.vragen.length);
 const beantwoord = alleEdities().filter((e) => e.lezersvraag);
+const nagekeken = vragen.map((v) => v.nagekeken).sort().at(-1) ?? "";
+const url = `${SITE_URL}/vragen`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": url,
+  url,
+  name: "Vragen over AI, met een nagekeken antwoord",
+  description: "Echte vragen over AI van burgers, scholen, werknemers, zelfstandigen, gemeenten en bibliotheken, elk met een kort, nagekeken antwoord en bronnen.",
+  inLanguage: "nl-BE",
+  dateModified: nagekeken,
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  mainEntity: { "@type": "ItemList", itemListElement: vragen.map((v, i) => ({ "@type": "ListItem", position: i + 1, name: v.vraag, url: `${url}/${v.slug}` })) },
+};
 ---
 
-<Basis titel="Stel je vraag over AI" beschrijving="Heb je een vraag over AI, voor je werk, je school, je gemeente of jezelf? Stel ze aan AI Ontcijferd. Elke week beantwoorden we er één in de Stand van AI.">
+<Basis
+  titel="Vragen over AI, met een nagekeken antwoord"
+  beschrijving="Mag ik dit in ChatGPT plakken? Is die video echt? Wat moet mijn werkgever doen voor de AI Act? Echte vragen over AI, elk met een kort antwoord, wat je doet en de bronnen."
+  schema={schema}
+  bron="content/vragen"
+>
   <section class="rij sectie">
+    <div class="kantlijn"><p>{vragen.length} vragen<br />Nagekeken op {datumLeesbaar(nagekeken)}</p></div>
+    <div class="proza">
+      <h1 style="margin-top:0">Vragen over AI</h1>
+      <p class="lead">
+        De vragen die mensen echt stellen, met een kort antwoord, wat je doet, en de bronnen. Elk antwoord is nagekeken en
+        heeft een datum.
+      </p>
+      <p>
+        De vragen komen uit ons <a href="https://github.com/nftaurelius/ai-ontcijferd-open/blob/main/data/doelgroepenonderzoek.md">onderzoek naar wat onze doelgroepen over AI vragen</a>,
+        uit sessies en van lezers. Staat je vraag er niet bij? <a href="#stel-je-vraag">Stel ze</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="rij sectie filter-sectie">
+    <div class="kantlijn"><p>Toon vragen van</p></div>
+    <div>
+      <div class="filter" role="group" aria-label="Filter op doelgroep">
+        <button type="button" data-voor="" aria-pressed="true">Iedereen</button>
+        {DOELGROEPEN.map((d) => <button type="button" data-voor={d.slug} aria-pressed="false">{d.label}</button>)}
+      </div>
+    </div>
+  </section>
+
+  {groepen.map((g) => (
+    <section class="rij sectie vraag-groep" id={`over-${g.nr}`}>
+      <div class="kantlijn"><p class="kantlijn-kop">{g.kort}</p></div>
+      <div class="proza">
+        <h2 style="margin-top:0">{g.titel}</h2>
+        {g.vragen.map((v) => (
+          <div class="vraag-item" data-voor={v.doelgroepSlugs.join(" ")}>
+            <h3><a href={`/vragen/${v.slug}`}>{v.vraag}</a></h3>
+            <p style="margin:0 0 0.3rem">{v.kort}</p>
+            <p class="meta" style="margin:0">{v.doelgroepen.join(" · ")}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="rij sectie" id="stel-je-vraag">
     <div class="kantlijn"><p>Lezersvragen</p></div>
     <div class="proza">
-      <h1 style="margin-top:0">Stel je vraag over AI</h1>
-      <p class="lead">Wat wil jij weten over AI? Elke week beantwoorden we één vraag van een lezer in de Stand van AI.</p>
+      <h2 style="margin-top:0">Stel je vraag</h2>
       <p>
         Mail je vraag naar <a href={`mailto:${CONTACT_EMAIL}?subject=Lezersvraag`}>{CONTACT_EMAIL}</a>. Zeg erbij of we je voornaam mogen vermelden; anders blijft
-        de vraag anoniem. Hoe concreter de vraag, hoe bruikbaarder het antwoord: "Mag mijn school ChatGPT gebruiken met leerlingen van twaalf?" werkt beter dan "Is AI gevaarlijk?".
+        de vraag anoniem. Elke week beantwoorden we er één in de Stand van AI, en goede vragen komen ook hier. Hoe concreter, hoe beter:
+        "Mag mijn school ChatGPT gebruiken met leerlingen van twaalf?" werkt beter dan "Is AI gevaarlijk?".
       </p>
     </div>
   </section>
 
   {beantwoord.length > 0 && (
     <section class="rij sectie">
-      <div class="kantlijn"><p>Eerder beantwoord</p></div>
+      <div class="kantlijn"><p>Eerder beantwoord in de Stand van AI</p></div>
       <ul class="editielijst">
         {beantwoord.map((e) => (
           <li><a href={`/edities/${e.week}#lezersvraag`}>{e.lezersvraagTitel || e.titel}</a></li>
@@ -30,3 +99,18 @@ const beantwoord = alleEdities().filter((e) => e.lezersvraag);
     </section>
   )}
 </Basis>
+
+<script>
+  const items = Array.from(document.querySelectorAll<HTMLElement>(".vraag-item"));
+  const groepen = Array.from(document.querySelectorAll<HTMLElement>(".vraag-groep"));
+  let voor = "";
+  function pasToe() {
+    for (const i of items) i.hidden = !!voor && !(i.dataset.voor ?? "").split(" ").includes(voor);
+    for (const g of groepen) g.hidden = !g.querySelector(".vraag-item:not([hidden])");
+    document.querySelectorAll<HTMLButtonElement>("button[data-voor]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.voor === voor)));
+    history.replaceState(null, "", voor ? `?voor=${voor}${location.hash}` : location.pathname + location.hash);
+  }
+  document.querySelectorAll<HTMLButtonElement>("button[data-voor]").forEach((b) => b.addEventListener("click", () => { voor = b.dataset.voor ?? ""; pasToe(); }));
+  const gevraagd = new URLSearchParams(location.search).get("voor");
+  if (gevraagd && document.querySelector(`button[data-voor="${CSS.escape(gevraagd)}"]`)) { voor = gevraagd; pasToe(); }
+</script>

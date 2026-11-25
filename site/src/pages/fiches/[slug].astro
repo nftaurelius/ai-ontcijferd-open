@@ -1,5 +1,6 @@
 ---
 import Basis from "../../layouts/Basis.astro";
+import WerkteDit from "../../components/WerkteDit.astro";
 import { alleFiches, type Fiche } from "../../lib/fiches";
 import { datumLeesbaar } from "../../lib/edities";
 import { LICENTIE_URL, SITE_URL, auteur, uitgever } from "../../lib/seo";
@@ -34,6 +35,7 @@ const schema = {
       <p class="lead">{f.samenvatting}</p>
       <Fragment set:html={f.html} />
       <p class="meta">Bron: AI Ontcijferd, aiontcijferd.be/fiches/{f.slug}. Vrij te gebruiken onder CC BY 4.0.</p>
+      <WerkteDit titel={f.titel} versie={`bijgewerkt ${f.bijgewerkt}`} pad={`/fiches/${f.slug}`} />
     </div>
   </article>
 </Basis>

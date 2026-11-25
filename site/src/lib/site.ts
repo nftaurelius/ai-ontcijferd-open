@@ -6,7 +6,7 @@ export const LINKEDIN = ""; // url van de LinkedIn-pagina van AI Ontcijferd, als
 // `ook` = paden die onder dezelfde ingang vallen (voor de markering in het menu).
 export const MENU = [
   { href: "/volgen", tekst: "Volgen", uitleg: "Wat gebeurt er? De Stand van AI, de dagbrief, dossiers en praktijkvoorbeelden.", ook: ["/edities", "/plus", "/wat-kan-ai", "/terugblik"] },
-  { href: "/leren", tekst: "Leren", uitleg: "Hoe werkt het? Begin hier, het AI Act-kompas en de jargonfilter.", ook: ["/begin-hier", "/niveaucheck", "/ai-act", "/jargon", "/naslag", "/wegwijzer"] },
+  { href: "/leren", tekst: "Leren", uitleg: "Hoe werkt het? Begin hier, het AI Act-kompas en de jargonfilter.", ook: ["/begin-hier", "/vragen", "/niveaucheck", "/ai-act", "/jargon", "/naslag", "/wegwijzer"] },
   { href: "/doen", tekst: "Doen", uitleg: "Wat kan ik ermee? De Plakcheck, bijsluiters van AI-tools, prompts en skills, en fiches.", ook: ["/plakcheck", "/bijsluiters", "/werkwijzen", "/fiches", "/gratis"] },
   { href: "/lesgeven", tekst: "Lesgeven", uitleg: "Hoe geef ik het door? Open lespakketten om zelf te geven, en alles om over te nemen.", ook: ["/materiaal", "/overnemen"] },
   { href: "/voor", tekst: "Voor jou", uitleg: "Alleen wat jouw sector raakt: onderwijs, werk, gemeenten, zelfstandigen, bibliotheken, burgers.", ook: [] as string[] },
@@ -33,6 +33,7 @@ export const INGANGEN: Record<string, { titel: string; vraag: string; lead: stri
     lead: "Wat AI is, wat het kan en niet kan, en welke regels gelden. In gewoon Nederlands.",
     items: [
       { href: "/begin-hier", tekst: "Begin hier", uitleg: "Nieuw in AI? In tien minuten wat je moet weten, en waar je verder kunt." },
+      { href: "/vragen", tekst: "Vragen over AI", uitleg: "Mag ik dit in een chatbot plakken? Is die video echt? Echte vragen met een nagekeken antwoord." },
       { href: "/niveaucheck", tekst: "Niveaucheck", uitleg: "Vijf vragen met ja of nee: op welk niveau sta je met AI, en wat leer je hierna?" },
       { href: "/ai-act", tekst: "AI Act-kompas", uitleg: "Wat de Europese AI-wet betekent voor jou, en wat wanneer geldt." },
       { href: "/jargon", tekst: "Jargonfilter", uitleg: "AI-termen in gewoon Nederlands." },

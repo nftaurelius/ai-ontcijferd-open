@@ -1,0 +1,71 @@
+---
+// Eén vraag uit de vragenbank, met FAQ-gegevens voor zoekmachines en chatbots.
+import Basis from "../../layouts/Basis.astro";
+import WerkteDit from "../../components/WerkteDit.astro";
+import { alleVragen, DWARSVRAGEN, type Vraag } from "../../lib/vragen";
+import { datumLeesbaar } from "../../lib/edities";
+import { LICENTIE_URL, SITE_URL, auteur, uitgever } from "../../lib/seo";
+
+export function getStaticPaths() {
+  return alleVragen().map((v) => ({ params: { slug: v.slug }, props: { v } }));
+}
+const { v } = Astro.props as { v: Vraag };
+const dv = DWARSVRAGEN[v.dwarsvraag];
+const verwant = alleVragen().filter((x) => x.dwarsvraag === v.dwarsvraag && x.slug !== v.slug);
+const url = `${SITE_URL}/vragen/${v.slug}`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": url,
+  url,
+  inLanguage: "nl-BE",
+  dateModified: v.nagekeken,
+  author: { "@id": auteur["@id"], "@type": "Person", name: auteur.name },
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  license: LICENTIE_URL,
+  mainEntity: [{ "@type": "Question", name: v.vraag, acceptedAnswer: { "@type": "Answer", text: `${v.kort} ${v.tekst}`.slice(0, 1500) } }],
+};
+---
+
+<Basis titel={v.vraag} beschrijving={v.kort} schema={schema} bron={`content/vragen/${v.slug}.md`}>
+  <article class="rij sectie">
+    <div class="kantlijn">
+      <p><a href={`/vragen#over-${v.dwarsvraag}`}>{dv.titel}</a></p>
+      <p>Voor: {v.doelgroepen.join(", ")}<br />{v.niveau && <>Niveau {v.niveau} (<a href="/niveaucheck">wat is dat?</a>)<br /></>}Nagekeken op {datumLeesbaar(v.nagekeken)}<br />Versie {v.versie}</p>
+    </div>
+    <div class="proza">
+      <p class="meta" style="margin-top:0"><a href="/vragen">Vragen over AI</a></p>
+      <h1 style="margin-top:0">{v.vraag}</h1>
+      <p class="vraag-kort">{v.kort}</p>
+      <Fragment set:html={v.html} />
+
+      {v.verder.length > 0 && (
+        <>
+          <h2>Verder op deze site</h2>
+          <ul>{v.verder.map((l) => <li><a href={l.href}>{l.tekst}</a></li>)}</ul>
+        </>
+      )}
+
+      {v.bronnen.length > 0 && (
+        <>
+          <h2>Bronnen</h2>
+          <ul class="meta">{v.bronnen.map((b) => <li><a href={b.url} rel="noopener">{b.naam}</a></li>)}</ul>
+        </>
+      )}
+
+      <p class="meta">
+        {v.getest} Dit is geen juridisch advies. Zie je een fout of is iets veranderd? Meld het via de knop hieronder.
+        Vrij over te nemen onder CC BY 4.0, met vermelding van AI Ontcijferd en een link naar deze pagina.
+      </p>
+
+      <WerkteDit titel={v.vraag} versie={v.versie} pad={`/vragen/${v.slug}`} />
+
+      {verwant.length > 0 && (
+        <>
+          <h2>Andere vragen over dit onderwerp</h2>
+          <ul>{verwant.map((x) => <li><a href={`/vragen/${x.slug}`}>{x.vraag}</a></li>)}</ul>
+        </>
+      )}
+    </div>
+  </article>
+</Basis>

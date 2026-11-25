@@ -8,6 +8,7 @@ import { toepassingenVoor } from "../../lib/toepassingen";
 import { datumLeesbaar } from "../../lib/edities";
 import { plusVoor } from "../../lib/plus";
 import { wegwijzersVoor, prijsLeesbaar } from "../../lib/wegwijzer";
+import { vragenVoor } from "../../lib/vragen";
 
 export function getStaticPaths() {
   return DOELGROEPEN.map((d) => ({ params: { slug: d.slug }, props: { d } }));
@@ -19,6 +20,7 @@ const fiches = alleFiches().filter((f) => f.voor.includes(d.label));
 const voorbeelden = toepassingenVoor(d.label);
 const plus = plusVoor(d.label).slice(0, 8);
 const elders = wegwijzersVoor(d.slug);
+const vragen = vragenVoor(d.slug);
 ---
 
 <Basis titel={`AI voor ${d.label.toLowerCase()}`} beschrijving={`Wat betekent AI voor ${d.wie} in Vlaanderen? Alle onderwerpen uit de Stand van AI voor ${d.label.toLowerCase()}, zonder hype.`}>
@@ -29,6 +31,23 @@ const elders = wegwijzersVoor(d.slug);
       <p class="lead">{d.vraag} Hier vind je elk onderwerp uit de Stand van AI dat {d.wie} raakt.</p>
     </div>
   </section>
+
+  {vragen.length > 0 && (
+    <section class="rij sectie">
+      <div class="kantlijn"><p>Wat mensen hier vragen<br /><a href={`/vragen?voor=${d.slug}`}>Alle vragen</a></p></div>
+      <div>
+        <ul class="editielijst">
+          {vragen.slice(0, 6).map((v) => (
+            <li>
+              <a href={`/vragen/${v.slug}`}>{v.vraag}</a>
+              <p class="meta" style="margin:0.2rem 0 0">{v.kort.split(". ")[0].replace(/\.$/, "")}.</p>
+            </li>
+          ))}
+        </ul>
+        {vragen.length > 6 && <p class="meta"><a href={`/vragen?voor=${d.slug}`}>Nog {vragen.length - 6} vragen</a></p>}
+      </div>
+    </section>
+  )}
 
   <section class="rij sectie">
     <div class="kantlijn"><p>{aantal(items.length, "onderwerp", "onderwerpen")}</p></div>

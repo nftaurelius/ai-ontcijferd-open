@@ -20,3 +20,5 @@ CLAUDE.md
 data/ideeen.md
 data/plan-plus.md
 data/indexnow-gemeld.txt
+# Feedback van gebruikers: samengevat, maar het blijft wat gebruikers ons persoonlijk schreven.
+data/feedback.md

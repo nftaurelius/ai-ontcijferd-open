@@ -1746,3 +1746,44 @@ main:focus {
   border-left: 3px solid var(--inkt);
   padding-left: 0.7rem;
 }
+
+/* ---------------------------------------------------------------- vragenbank en feedback (nov. 2026) */
+.werkte-dit {
+  border-top: 1px solid var(--lijn);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+.werkte-dit-vraag {
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+.werkte-dit-knoppen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 0.5rem;
+}
+.vraag-item[hidden],
+.vraag-groep[hidden] {
+  display: none;
+}
+.vraag-kort {
+  font-size: 1.15rem;
+  border-left: 3px solid var(--inkt);
+  padding-left: 0.9rem;
+}
+.vraag-item {
+  border-top: 1px solid var(--lijn);
+  padding: 1rem 0 0.8rem;
+}
+.vraag-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.vraag-item h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.15rem;
+}
+.vraag-item h3 a {
+  color: inherit;
+}
