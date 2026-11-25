@@ -72,7 +72,9 @@ hebben en wanneer het laatst is nagekeken. De doelgroepportalen tonen "Elders go
 Lesgevers zonder AI-achtergrond; micro-ondernemingen, zelfstandigen en verenigingen; digitaal kwetsbare en
 laaggeletterde volwassenen; ouders; senioren en oplichting; studenten die hun denken niet willen uitbesteden; kleine
 gemeenten en raadsleden; iedereen die een tool kiest (onafhankelijke bijsluiters); iedereen die een AI-belofte leest
-(claims natrekken). Dwars door alles: leren wanneer je AI beter niet gebruikt.
+(claims natrekken). Dwars door alles: leren wanneer je AI beter niet gebruikt. Het doelgroepenonderzoek (25/11)
+voegt toe: verenigingen (geen enkele meting), bibliotheekmedewerkers, raadsleden en eenmanszaken, en organisaties die
+grip zoeken op hun digitale afhankelijkheid.
 
 ## Eerste keuzes uit de ideeënbank
 
@@ -84,6 +86,9 @@ gemeenten en raadsleden; iedereen die een tool kiest (onafhankelijke bijsluiters
 5. AI in gewone taal: klare taal, beeld, papier en audio.
 
 ## Routekaart
+
+Wat we concreet bouwen en in welke volgorde, staat in `data/bouwplan.md` (items B01 tot B25, sinds 25/11), op basis
+van deze visie en het doelgroepenonderzoek (`data/doelgroepenonderzoek.md`).
 
 | Fase | Wat | Poort |
 | --- | --- | --- |
