@@ -294,4 +294,4 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 | --- | --- | --- | --- |
 | 25/11/2026 | - | Bouwplan opgesteld uit visie, verspreidingsplan en doelgroepenonderzoek | #47 |
 | 25/11/2026 | B12, B26 | Beslissingen Duncan: AI per job goedgekeurd, niet afhangen van anderen, B26 toegevoegd | #48 |
-| 25/11/2026 | B02, B26 | Vragenbank: 24 vragen (drie per dwarsvraag) op /vragen, elk met eigen pagina, FAQ-gegevens en bronnen; blok op elke doelgroeppagina; feedbackblok op vragen, fiches en Plakcheck | |
+| 25/11/2026 | B02, B26 | Vragenbank: 24 vragen (drie per dwarsvraag) op /vragen, elk met eigen pagina, FAQ-gegevens en bronnen; blok op elke doelgroeppagina; feedbackblok op vragen, fiches en Plakcheck | #49 |
