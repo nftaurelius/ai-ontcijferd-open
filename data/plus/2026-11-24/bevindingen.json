@@ -1,0 +1,128 @@
+[
+  {
+    "ernst": "kritiek",
+    "passage": "Het onderzoek is gedaan door communicatiebureaus die zelf belang hebben bij het onderwerp.",
+    "probleem": "De bron noemt Backstage Communication en Finvictum, maar beschrijft hun activiteiten of belangen niet. Zowel de kwalificatie als communicatiebureaus als het toegeschreven eigenbelang is hier onbewezen.",
+    "voorstel": "Schrap deze zin of onderbouw de activiteiten en het concrete belang van beide organisaties met bronnen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Onderzoek: ruim een derde van AI-antwoorden over Belgische beursbedrijven is vertekend",
+    "probleem": "De kop maakt van een samengestelde categorie één vastgestelde tekortkoming. De bron zegt 'vertekend of vereist extra menselijke controle'. Extra controle vereisen is niet noodzakelijk hetzelfde als vertekend zijn.",
+    "voorstel": "Behoud ook in de kop beide categorieën en beperk de uitspraak tot de onderzochte antwoorden."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Neem het cijfer daarom als richtinggevend.",
+    "probleem": "Zonder informatie over vragen, modellen, steekproef en beoordelingscriteria is niet vast te stellen waarvoor het cijfer richtinggevend is. Deze formulering verleent het resultaat alsnog algemene betekenis.",
+    "voorstel": "Benoem dat de representativiteit en betekenis van het percentage niet te beoordelen zijn op basis van de gepubliceerde toelichting."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Er is nog geen onafhankelijke evaluatie.",
+    "probleem": "De Mencap-bron vermeldt geen onafhankelijke evaluatie, maar bewijst niet dat die nergens bestaat. Hetzelfde probleem speelt bij 'Het rapport is bovendien niet onafhankelijk herhaald' in het Wharton-onderwerp.",
+    "voorstel": "Beperk beide uitspraken tot wat controleerbaar is: de gebruikte bron vermeldt geen onafhankelijke evaluatie of herhaling."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "in afwachting van een Nederlandstalige versie",
+    "probleem": "Dit suggereert dat een Nederlandstalige versie gepland is. Mencap zegt niets over Nederlandse taalondersteuning of een toekomstige vertaling.",
+    "voorstel": "Maak duidelijk dat Nederlandse taalondersteuning onbekend is, zonder een toekomstige versie te suggereren."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Mencap benadrukt dat de tool menselijke beoordeling ondersteunt en niet vervangt.",
+    "probleem": "De belangrijkste voorwaarde wordt afgezwakt tot algemene menselijke controle. Mencap zegt specifiek dat mensen met een verstandelijke beperking informatie moeten blijven beoordelen, aanpassen en mee ontwikkelen. Ook het gemeentelijke voorbeeld laat die betrokkenheid weg.",
+    "voorstel": "Benoem de blijvende betrokkenheid van de doelgroep als voorwaarde, ook bij de vertaalslag naar gemeentelijke brieven en formulieren."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Google, Meta en een Brits-Amerikaans project rollen AI-hulp voor persoonlijke gegevens, winkelen en toegankelijke informatie uit.",
+    "probleem": "Voor de Easy Read-tool beschrijft Mencap een interesseregistratie om tot de eerste gebruikers te behoren. Dat is niet hetzelfde als een algemene uitrol. De geografische kwalificatie van het project wordt evenmin onderbouwd.",
+    "voorstel": "Onderscheid productuitrol van een aangekondigd hulpmiddel waarvoor organisaties hun interesse kunnen registreren. Laat de onbewezen geografische kwalificatie weg."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Wie koppelt, geeft het zoekscherm toegang tot uitgaven, documenten en chats",
+    "probleem": "Dit trekt afzonderlijke, optionele koppelingen samen tot één toegangspakket. Volgens Google kiest de gebruiker welke apps worden gekoppeld. Drive en de Gemini-app volgen bovendien pas later.",
+    "voorstel": "Maak de gegevenstoegang afhankelijk van de gekozen app en onderscheid de start van Wallet van de aangekondigde latere koppelingen."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Beveiligingsteams kunnen de gepubliceerde netwerkindicatoren en YARA-regels (detectieregels voor malware) van NVISO naast hun logs leggen.",
+    "probleem": "Hier worden twee detectiemethoden onjuist samengevoegd. De bron adviseert netwerkindicatoren in DNS- en netwerklogs te zoeken en YARA-regels te gebruiken om malware en bijbehorende opstartbestanden op te sporen.",
+    "voorstel": "Scheid het controleren van netwerklogs van het zoeken naar malware en opstartbestanden met YARA-regels."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "vraag je IT-leverancier om ook geplande taken en diensten per gebruiker na te kijken.",
+    "probleem": "Het handelingsadvies laat twee belangrijke stappen uit de bron weg: getroffen systemen isoleren en bewijsmateriaal bewaren. Ook controle van systeembrede diensten en taken hoort erbij, niet alleen die per gebruiker.",
+    "voorstel": "Neem de volledige prioriteit uit de bron over: isoleren, bewijs bewaren en zowel systeembrede als gebruikersgebonden opstartmechanismen onderzoeken."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "AI-gestuurd framework plaatst Linux-achterdeur bij Belgische inbraak",
+    "probleem": "De kop legt meer nadruk op AI-sturing dan de bron rechtvaardigt. Die spreekt van een AI-ondersteunde inbraak en acht menselijke instructies voor de installatie waarschijnlijk.",
+    "voorstel": "Gebruik ook in de kop 'AI-ondersteund' en voorkom dat de kop autonome besluitvorming suggereert."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Een voorbeeld: bij Gemini 3.5 Flash verschoof de keuze met 99 procentpunt na één bronscreenshot.",
+    "probleem": "Het getal mist zijn concrete vergelijkingsbasis. Het gaat om de toename in de keuze voor de Fitbit Inspire 3 na een screenshot van Wirecutter, tegenover alleen het productoverzicht. Het is geen algemene score voor beïnvloedbaarheid.",
+    "voorstel": "Noem het gekozen product, de bronconditie, de vergelijking met alleen het overzicht en de 200 tests per conditie."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Eén zin als \"I love hiking!\" bracht de meeste modellen ertoe een duurder horloge te kiezen",
+    "probleem": "De bron beschrijft deze specifieke verschuiving bij drie van de zes modellen. GPT-5 Mini veranderde juist bij de negatieve variant. De algemene conclusie over één ingeplante zin wordt hier te stellig aan deze ene positieve zin gekoppeld.",
+    "voorstel": "Beperk de uitspraak tot de genoemde modellen of maak onderscheid tussen de positieve en negatieve geheugenvarianten."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Reviews en vermeldingen op sites van derden kunnen meer gewicht krijgen bij AI-agents dan je eigen productpagina.",
+    "probleem": "Deze Vlaamse toepassing trekt de simulatorbevinding door naar echte webwinkels. De test gebruikte screenshots van een productoverzicht en bronnen, geen operationele winkelomgeving. De voorafgaande beperking verdwijnt uit het praktische advies.",
+    "voorstel": "Markeer dit als een mogelijk aandachtspunt op basis van deze simulatie, niet als aangetoond gedrag tegenover een echte productpagina."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Voor adviesfuncties is analyse alleen niet langer onderscheidend; oordeel en begeleiding wegen zwaarder.",
+    "probleem": "Een argument uit een essay over consultancyfirma's wordt hier een vaststaand oordeel over alle adviesfuncties. De bron meet niet dat oordeel en begeleiding inmiddels zwaarder wegen.",
+    "voorstel": "Schrijf dit toe aan de auteurs en presenteer de toepassing op Vlaamse adviesfuncties als een mogelijke les, niet als gemeten verschuiving."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Ze waarschuwen ook dat consultants zich moeten aanpassen, omdat AI-bedrijven eigen implementatiediensten opbouwen.",
+    "probleem": "Een relevante tegenkracht uit het essay ontbreekt: ook de eigen teams van klanten zullen volgens de auteurs concurreren om de nieuwe adviesvraag. Daardoor kan de samenvatting te gunstig uitvallen voor externe adviseurs.",
+    "voorstel": "Noem naast AI-bedrijven ook interne klantenteams als mogelijke concurrenten."
+  },
+  {
+    "ernst": "klein",
+    "passage": "De \"early evidence\" waarnaar het verwijst, staat niet in het beschikbare deel van de tekst.",
+    "probleem": "Dit beschrijft de redactionele toegang tot de tekst in plaats van de inhoud voor de lezer. Ook 'Het beschikbare bericht is kort' richt de aandacht onnodig op de werkwijze.",
+    "voorstel": "Beschrijf uitsluitend welke onderbouwing de bron geeft. Zet een noodzakelijke controle van de volledige bewijsvoering in een HTML-commentaar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "GPT-6 Cyber in één run 948 Linux-kernelbugs hielp valideren en patches voor review genereerde",
+    "probleem": "De prestatieclaim krijgt alleen een algemeen label 'nog niet bevestigd'. Het onderscheid tussen geholpen validatie, nieuwe ontdekkingen, voorgestelde patches en aanvaarde reparaties blijft onduidelijk.",
+    "voorstel": "Label dit expliciet als een claim van OpenAI. Benoem dat het aantal geholpen validaties betreft, niet aantoonbaar nieuwe ontdekkingen of succesvol ingevoerde reparaties, en dat de testopzet niet wordt toegelicht."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "een open-source Linux-runtime waarmee agents systemen kunnen beschermen zonder downtime",
+    "probleem": "De beschikbare OpenAI-publicatie biedt meer nuance dan dit radarsignaal: het gaat om tijdelijke bescherming tijdens patching, met menselijke goedkeuring en een gecontroleerde demonstratie. 'Zonder downtime' klinkt hier als een algemene productgarantie.",
+    "voorstel": "Verwijs rechtstreeks naar de primaire OpenAI-publicatie, label de mogelijkheden als claims van de maker en beperk de aangetoonde werking tot de beschreven test."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## Vandaag in het kort",
+    "probleem": "In het hele concept ontbreekt de voorgeschreven hype-meter. Bronstatussen als 'Eén bron' en 'Volgens de maker' beoordelen de verhouding tussen aandacht en verwachte impact voor Vlaanderen niet.",
+    "voorstel": "Voeg per uitgewerkt onderwerp één van de vijf toegestane standen toe, met één zin uitleg over aandacht tegenover verwachte Vlaamse impact."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Volgens een rapport van beveiligingsbedrijf NVISO van 23 november plaatste het AI-framework ARTEX bij een inbraak in België de malware ZQAgent.",
+    "probleem": "Meerdere vakwoorden blijven bij eerste gebruik onverklaard, waaronder framework en malware. Elders geldt dit voor systemd-diensten, logs, investor relations, runs, agents en runtime.",
+    "voorstel": "Vervang jargon waar mogelijk door gewone woorden en geef anders bij het eerste gebruik een korte verklaring."
+  }
+]

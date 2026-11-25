@@ -1,0 +1,107 @@
+[
+  {
+    "passage": "Het onderzoek is gedaan door communicatiebureaus die zelf belang hebben bij het onderwerp.",
+    "beslissing": "verwerkt",
+    "toelichting": "Zin geschrapt omdat de bron geen activiteiten of belangen van beide organisaties beschrijft; een nakijknotitie is toegevoegd."
+  },
+  {
+    "passage": "Onderzoek: ruim een derde van AI-antwoorden over Belgische beursbedrijven is vertekend",
+    "beslissing": "verwerkt",
+    "toelichting": "De kop noemt nu beide categorieën: vertekend of vraagt extra controle."
+  },
+  {
+    "passage": "Neem het cijfer daarom als richtinggevend.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vervangen door de vaststelling dat representativiteit en betekenis van het percentage niet te beoordelen zijn."
+  },
+  {
+    "passage": "Er is nog geen onafhankelijke evaluatie.",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot wat Mencap vermeldt; bij Wharton herschreven tot 'vermeldt geen onafhankelijke herhaling'."
+  },
+  {
+    "passage": "in afwachting van een Nederlandstalige versie",
+    "beslissing": "verwerkt",
+    "toelichting": "Nu staat er dat Nederlandse ondersteuning onbekend is, zonder toekomstige versie te suggereren."
+  },
+  {
+    "passage": "Mencap benadrukt dat de tool menselijke beoordeling ondersteunt en niet vervangt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Benoemd dat mensen met een leerbeperking beoordelen, aanpassen en verbeteren; ook in het gemeentevoorbeeld."
+  },
+  {
+    "passage": "Google, Meta en een Brits-Amerikaans project rollen AI-hulp voor persoonlijke gegevens, winkelen en toegankelijke informatie uit.",
+    "beslissing": "verwerkt",
+    "toelichting": "Uitrol van Google en Meta onderscheiden van de aangekondigde Easy Read-tool met interesseregistratie; geografische kwalificatie geschrapt."
+  },
+  {
+    "passage": "Wie koppelt, geeft het zoekscherm toegang tot uitgaven, documenten en chats",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegang nu per gekozen app beschreven, met Drive en Gemini-app als latere koppelingen."
+  },
+  {
+    "passage": "Beveiligingsteams kunnen de gepubliceerde netwerkindicatoren en YARA-regels (detectieregels voor malware) van NVISO naast hun logs leggen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Netwerklogs (DNS en netwerk) gescheiden van het zoeken naar malware en opstartbestanden met YARA-regels."
+  },
+  {
+    "passage": "vraag je IT-leverancier om ook geplande taken en diensten per gebruiker na te kijken.",
+    "beslissing": "verwerkt",
+    "toelichting": "Advies uitgebreid met isoleren, bewijs bewaren en controle van systeembrede én gebruikersgebonden mechanismen."
+  },
+  {
+    "passage": "AI-gestuurd framework plaatst Linux-achterdeur bij Belgische inbraak",
+    "beslissing": "verwerkt",
+    "toelichting": "Kop wordt 'AI-ondersteunde inbraak plaatst Linux-achterdeur in België', in lijn met de bron."
+  },
+  {
+    "passage": "Een voorbeeld: bij Gemini 3.5 Flash verschoof de keuze met 99 procentpunt na één bronscreenshot.",
+    "beslissing": "verwerkt",
+    "toelichting": "Vergelijkingsbasis toegevoegd: Fitbit Inspire 3, Wirecutter-screenshot, tegenover alleen het overzicht, 200 runs per conditie."
+  },
+  {
+    "passage": "Eén zin als \"I love hiking!\" bracht de meeste modellen ertoe een duurder horloge te kiezen",
+    "beslissing": "verwerkt",
+    "toelichting": "Beperkt tot de genoemde modellen en het omgekeerde gedrag van GPT-5 Mini toegevoegd."
+  },
+  {
+    "passage": "Reviews en vermeldingen op sites van derden kunnen meer gewicht krijgen bij AI-agents dan je eigen productpagina.",
+    "beslissing": "verwerkt",
+    "toelichting": "Herschreven als mogelijk aandachtspunt op basis van de simulatie, niet als aangetoond gedrag in echte webwinkels."
+  },
+  {
+    "passage": "Voor adviesfuncties is analyse alleen niet langer onderscheidend; oordeel en begeleiding wegen zwaarder.",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegeschreven aan de auteurs en als mogelijke les gepresenteerd, niet als gemeten verschuiving."
+  },
+  {
+    "passage": "Ze waarschuwen ook dat consultants zich moeten aanpassen, omdat AI-bedrijven eigen implementatiediensten opbouwen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Eigen teams van klanten toegevoegd als concurrent, zoals in het essay."
+  },
+  {
+    "passage": "De \"early evidence\" waarnaar het verwijst, staat niet in het beschikbare deel van de tekst.",
+    "beslissing": "verwerkt",
+    "toelichting": "Werkwijzetaal verwijderd en vervangen door een lezersgerichte zin; controle staat als HTML-commentaar."
+  },
+  {
+    "passage": "GPT-6 Cyber in één run 948 Linux-kernelbugs hielp valideren en patches voor review genereerde",
+    "beslissing": "verwerkt",
+    "toelichting": "Expliciet als claim van OpenAI gelabeld, met onderscheid tussen geholpen validatie en ontdekkingen of reparaties; testopzet niet toegelicht."
+  },
+  {
+    "passage": "een open-source Linux-runtime waarmee agents systemen kunnen beschermen zonder downtime",
+    "beslissing": "verwerkt",
+    "toelichting": "Verwezen naar de OpenAI-pagina; beschreven als tijdelijke bescherming met goedkeuring door een operator en beperkt tot de gecontroleerde test, als claim van de makers."
+  },
+  {
+    "passage": "## Vandaag in het kort",
+    "beslissing": "verwerkt",
+    "toelichting": "Per uitgewerkt onderwerp is een hype-meter met één van de vijf standen en één zin uitleg toegevoegd."
+  },
+  {
+    "passage": "Volgens een rapport van beveiligingsbedrijf NVISO van 23 november plaatste het AI-framework ARTEX bij een inbraak in België de malware ZQAgent.",
+    "beslissing": "verwerkt",
+    "toelichting": "Jargon (framework, malware, systemd, logs, investor relations, agents, runs, open-source) kort verklaard bij eerste gebruik."
+  }
+]
