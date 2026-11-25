@@ -13,6 +13,11 @@ Stand: 25 november 2026. Dit is de prioriteitenlijst voor alles wat we nog bouwe
 - Zonder andere opdracht neemt een bouwsessie **het eerste open item van de laagste fase** dat niet op Duncan wacht.
 - Klaar = alles onder "Klaar als" staat online of in de repo. Vink af met datum en PR-nummer.
 - Items met **wacht op Duncan** start een agent niet zelf; hij bereidt hoogstens voor.
+- **We hangen niet af van anderen** (beslist door Duncan op 25/11). We bouwen, testen en verbeteren zelf zo ver het
+  gaat; feedback van gebruikers stuurt bij (B26). Een tester, leraar of partner is welkom, maar nooit een voorwaarde
+  om iets te bouwen of te publiceren. "Getest" zegt altijd eerlijk wie testte: de redactie, een gebruiker die
+  feedback gaf, of iemand in de praktijk.
+- **Poorten zijn meetpunten, geen voorwaarden.** Ze zeggen hoe ver we staan; ze houden het bouwen niet tegen.
 - Elk nieuw stuk volgt de vaste regels: bijsluiter (voor wie, niveau, duur, laatst nagekeken, licentie, versie),
   bron en datum bij alles wat verandert, huisstijl 1.0, CC BY 4.0, en "getest" altijd eerlijk.
 - Nieuwe inzichten of ideeën: bij `data/ideeen.md`, en pas in dit plan als Duncan ze een plaats geeft.
@@ -108,9 +113,21 @@ buiten gaat niets voor 4 januari.
 - **Wie:** agents. **Klaar als:** twee fiches online, briefing en portaal Lokale overheden verwijzen ernaar.
 
 ### B07 · Jaaroverzicht 2026
-- Staat al gepland (geplande taken 21/12, 28/12, 30/12, 4/1). **Wacht op Duncan:** "Mijn inschatting".
+- Staat al gepland (geplande taken 21/12, 28/12, 30/12, 4/1). Duncan schrijft "Mijn inschatting" eind december
+  (ingepland).
 
-**Poort fase 1:** startlijst nagekeken op 28 december; B01 tot B06 online of bewust verschoven.
+### B26 · Feedback van gebruikers op elk stuk
+- **Voor wie:** iedereen die iets van ons gebruikt. Nodig omdat we niet afhangen van externe testers.
+- **Waarom:** zo leren we wat werkt zonder dat iemand ons eerst moet testen. Elke reactie wordt een verbetering.
+- **Vorm:** onder elke vraag, fiche, taakkaart, tool en pakket een klein blok "Werkte dit voor jou?" met twee knoppen
+  en een mailto naar de redactie (onderwerp met de naam en versie van het stuk; geen formulier, geen opslag, privacy
+  ongewijzigd). `/gegeven/<slug>` blijft voor pakketten. Een logboek `data/feedback.md` (privé, in
+  `spiegel/uitsluiten.txt`): datum, stuk, wat de gebruiker zei (zonder naam), wat we aanpasten. Elke maand verwerken;
+  een stuk met feedback krijgt bij "getest" ook "aangepast na feedback van gebruikers (datum)".
+- **Wie:** agents. **Klaar als:** component `WerkteDit.astro` op vragen, fiches en tools; logboek en werkwijze in
+  CLAUDE.md.
+
+**Poort fase 1:** startlijst nagekeken op 28 december; B01 tot B06 en B26 online of bewust verschoven.
 
 ---
 
@@ -127,8 +144,11 @@ start (voorstellen, KlasCement, LinkedIn).
 - **Vorm:** twee lessen van 50 minuten met draaiboek in gewone woorden, dia's, werkblad, klasafsprakenkaart (B03),
   de vragen die kinderen stellen, en een versie zonder schermen. Eerst nakijken hoe de eindtermen precies ingevoerd
   worden per leerjaar.
-- **Wie:** agents maken het concept (in december mag al); **wacht op Duncan** voor een leraar die het test.
-- **Klaar als:** pakket op `/materiaal`, op KlasCement, getest in één klas.
+- **Wie:** agents; de redactie test zelf (de les doorlopen als leraar en als leerling, elke prompt uitproberen in de
+  tools die scholen aanbieden, nagaan tegen de eindtermen). Een klas via contacten van de bib kan later, maar is geen
+  voorwaarde.
+- **Klaar als:** pakket op `/materiaal` met "getest door de redactie" en feedbackblok (B26); op KlasCement vanaf
+  4 januari.
 
 ### B09 · "Zo geef je dit" bij elk pakket
 - **Voor wie:** lesgevers zonder AI-achtergrond. Dwarsvraag 4.
@@ -152,17 +172,22 @@ start (voorstellen, KlasCement, LinkedIn).
   koepel te praten.
 - **Vorm:** vier korte vragenlijsten (tien vragen, vijf minuten), zonder persoonsgegevens; de resultaten onder CC BY
   op de site, met de ruwe antwoorden. Vragenlijst in de eigen site (geen externe verwerker) of via een koepel.
-- **Wie:** agents maken vragenlijst en privacytekst nu; **wacht op Duncan** voor het verspreiden (vanaf 4 januari,
-  via De Federatie, Socius, VVBAD, VVSG, UNIZO).
+- **Wie:** agents maken vragenlijst en privacytekst nu. Verspreiden vanaf 4 januari (akkoord Duncan 25/11), via
+  De Federatie, Socius, VVBAD, VVSG, UNIZO; Duncan verstuurt, zoals elke mail naar een organisatie.
 - **Klaar als:** eerste bevraging gesloten en resultaten gepubliceerd.
 
 ### B12 · AI per job: proef met drie jobs
-- **Wacht op Duncan:** akkoord op het voorstel in `data/visie.md` en de keuze van drie jobs met een tester.
+- **Goedgekeurd door Duncan op 25/11.** Geen externe testers nodig: de redactie kiest de jobs en test elke taakkaart
+  zelf; feedback van gebruikers (B26) stuurt bij.
 - **Voor wie:** wie met een concrete taak komt. Dwarsvragen 6 en 8.
 - **Vorm:** taakkaarten (één taak, wat AI wel en niet kan, werkwijze, wat je niet plakt, niveau, regels, "getest") en
   een jobpagina per job, onder het doelgroepportaal. Bronnen voor taken: de vragen per rol uit het onderzoek, de AI
   Radar van Digitaal Vlaanderen, de vragenbank.
-- **Klaar als:** drie jobpagina's met elk vijf taakkaarten, elk getest door iemand die de job doet.
+- **Keuze van de eerste drie jobs:** waar het onderzoek de duidelijkste vragen per rol geeft en waar wij al materiaal
+  hebben: medewerker van een gemeente (loket en communicatie), leraar secundair, zelfstandige met een kleine zaak.
+- **Testen door de redactie:** elke taak echt uitvoeren met een verzonnen maar realistisch voorbeeld (nooit echte
+  gegevens), in minstens twee gratis tools, en noteren wat werkte en wat niet. Dat staat bij "getest".
+- **Klaar als:** drie jobpagina's met elk vijf taakkaarten, getest door de redactie, met feedbackblok (B26).
 
 ### B13 · AI thuis
 - **Voor wie:** ouders. Geen enkel aanbod voor hen bij ons, en weinig elders.
@@ -243,27 +268,29 @@ de eerste bevraging (B11) loopt.
 
 ## Wacht op Duncan
 
-- "Mijn inschatting" voor het jaaroverzicht (B07), uiterlijk 30 december.
-- Akkoord op AI per job en de keuze van drie jobs met een tester (B12).
-- Een leraar lager onderwijs die het pakket zesde leerjaar test (B08).
-- Verspreiden van de bevraging (B11), vanaf 4 januari.
-- ACV in de wegwijzer laten staan of een werkgeversbron ernaast.
+- "Mijn inschatting" voor het jaaroverzicht (B07): ingepland voor eind december.
+- Versturen van de bevragingen (B11) en de voorstellen: vanaf 4 januari.
+
+Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaarde, wel feedback van gebruikers
+(B26); een leraar via contacten van de bib kan later voor B08; bevragingen vanaf 4/1; ACV blijft in de wegwijzer.
 
 ## Volgorde voor de komende bouwsessies
 
-1. B02 · vragenbank, eerste 24 vragen (de basis waar B01, B05, B06, B09 en B14 op steunen)
+1. B02 · vragenbank, eerste 24 vragen (de basis waar B01, B05, B06, B09 en B14 op steunen), met B26 erin
 2. B01 · fiche artikel 4 na de Omnibus
 3. B03 · afsprakenkaart-maker
 4. B05 · fiches "Is dit echt?" en "AI-oplichting gericht op je zaak"
 5. B06 · twee fiches voor gemeenten
 6. B04 · waar AI Ontcijferd van afhangt
-7. B08 · concept pakket zesde leerjaar (testen vanaf januari)
+7. B08 · pakket zesde leerjaar, getest door de redactie
 8. B11 · vragenlijsten klaarzetten
 9. B13 · AI thuis
-10. B09, B10, B14 in januari
+10. B12 · AI per job, eerste drie jobs
+11. B09, B10, B14 in januari
 
 ## Logboek
 
 | Datum | Item | Wat | PR |
 | --- | --- | --- | --- |
-| 25/11/2026 | - | Bouwplan opgesteld uit visie, verspreidingsplan en doelgroepenonderzoek | |
+| 25/11/2026 | - | Bouwplan opgesteld uit visie, verspreidingsplan en doelgroepenonderzoek | #47 |
+| 25/11/2026 | B12, B26 | Beslissingen Duncan: AI per job goedgekeurd, niet afhangen van anderen, B26 toegevoegd | |
