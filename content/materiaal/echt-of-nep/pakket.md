@@ -8,8 +8,8 @@ voor: ["Burgers","Bibliotheken","Onderwijs"]
 deelnemers: "Burgers, ook zonder ervaring met AI. Senioren en ouders zijn een belangrijke doelgroep."
 niveau: "N0–N2 · Nieuwsgierig tot Gebruiker"
 duur: "1 uur (plus een uur voorbereiding)"
-versie: "1.0.1"
-bijgewerkt: 2026-11-23
+versie: "1.0.2"
+bijgewerkt: 2026-11-26
 licentie: "CC BY 4.0"
 maker: "AI Ontcijferd"
 bestanden:
@@ -30,3 +30,5 @@ personaliseren: |
 Oplichting met AI wordt overtuigender: een stem die klinkt als je kleinzoon, een video van een bekende Vlaming die een belegging aanprijst. Herkennen wordt steeds moeilijker. Daarom leert deze sessie vooral een gewoonte die altijd werkt, en waar je terechtkunt als het toch misloopt. Ook de nieuwe Europese regels komen kort aan bod: deepfakes herkenbaar maken, en het verbod op nudify-apps vanaf 2 december 2026.
 
 Je hoeft geen AI-expert te zijn. Het draaiboek zegt wat je doet en zegt, minuut per minuut.
+
+Twee fiches van één A4 passen erbij, om mee te geven of uit te leggen in de bibliotheek, het OCMW of de vereniging: [Is dit echt? Wat je doet bij twijfel](/fiches/is-dit-echt), in klare taal, en [AI-oplichting gericht op je zaak](/fiches/ai-oplichting-gericht-op-je-zaak), voor zelfstandigen en organisaties.

@@ -8,6 +8,8 @@ doelgroepen:
 dwarsvraag: 2
 niveau: N0
 verder:
+- tekst: 'Fiche om af te drukken: Is dit echt?'
+  href: /fiches/is-dit-echt
 - tekst: 'Pakket: Echt of nep?'
   href: /materiaal/echt-of-nep
 - tekst: 'Wegwijzer: folder over AI-fraude'
@@ -23,8 +25,8 @@ bronnen:
   url: https://www.vrt.be/vrtnws/nl/2026/06/19/fraudstop-phishing-telefoonnummer-bank
 - naam: 'Europese Bankautoriteit: Online financiële fraude en oplichting in een wereld met AI (januari 2026)'
   url: https://www.eba.europa.eu/sites/default/files/2026-01/fa63af9a-bafd-4821-baee-48c7c8fb6490/Online%20financial%20frauds%20and%20scams%20in%20an%20AI%20world_BE_NL.pdf
-nagekeken: '2026-11-25'
-versie: '1.0'
+nagekeken: '2026-11-26'
+versie: '1.1'
 status: gecontroleerd
 getest: Antwoord nagekeken door de redactie; nog geen feedback van gebruikers.
 ---

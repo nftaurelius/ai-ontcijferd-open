@@ -7,6 +7,8 @@ doelgroepen:
 dwarsvraag: 2
 niveau: N0
 verder:
+- tekst: 'Fiche om af te drukken: Is dit echt?'
+  href: /fiches/is-dit-echt
 - tekst: 'Pakket: Echt of nep?'
   href: /materiaal/echt-of-nep
 - tekst: 'Wegwijzer: folder over AI-fraude'
@@ -18,8 +20,8 @@ bronnen:
   url: https://www.vrt.be/vrtnws/nl/2026/06/19/fraudstop-phishing-telefoonnummer-bank
 - naam: 'Centrum voor Cybersecurity België: bijna 10 miljoen verdachte berichten in 2025'
   url: https://ccb.belgium.be/news/phishing-messages-surge-safeonweb-receives-nearly-10-million-suspicious-alerts-2025
-nagekeken: '2026-11-25'
-versie: '1.0'
+nagekeken: '2026-11-26'
+versie: '1.1'
 status: gecontroleerd
 getest: Antwoord nagekeken door de redactie; nog geen feedback van gebruikers.
 ---

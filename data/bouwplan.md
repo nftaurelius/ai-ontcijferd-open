@@ -93,7 +93,7 @@ buiten gaat niets voor 4 januari.
   elk doet, wat er gebeurt als het wegvalt, en de uitweg.
 - **Wie:** agents. **Klaar als:** online, met datum.
 
-### B05 · Echt of nep: van pakket naar gereedschap voor iedereen
+### B05 · Echt of nep: van pakket naar gereedschap voor iedereen ✓ (26/11: twee fiches, drie vragen, pakket en wegwijzer gekoppeld)
 - **Voor wie:** burgers, senioren, ouders, zelfstandigen. Dwarsvraag 2, het sterkste bewijs (85% vreest nepinformatie).
 - **Waarom:** het federale fraudeplan (november 2026) legt volgens de berichtgeving niet uit hoe AI oplichting
   geloofwaardiger maakt. Wie het meest kwetsbaar is, leest liever op papier.
@@ -279,7 +279,7 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 1. ~~B02 · vragenbank, eerste 24 vragen, met B26~~ (klaar 25/11)
 2. ~~B01 · fiche artikel 4 na de Omnibus~~ (klaar 26/11)
 3. ~~B03 · afsprakenkaart-maker~~ (klaar 26/11)
-4. B05 · fiches "Is dit echt?" en "AI-oplichting gericht op je zaak"
+4. ~~B05 · fiches "Is dit echt?" en "AI-oplichting gericht op je zaak"~~ (klaar 26/11)
 5. B06 · twee fiches voor gemeenten
 6. B04 · waar AI Ontcijferd van afhangt
 7. B08 · pakket zesde leerjaar, getest door de redactie
@@ -297,3 +297,4 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 | 25/11/2026 | B02, B26 | Vragenbank: 24 vragen (drie per dwarsvraag) op /vragen, elk met eigen pagina, FAQ-gegevens en bronnen; blok op elke doelgroeppagina; feedbackblok op vragen, fiches en Plakcheck | #49 |
 | 26/11/2026 | B01 | Fiche "Artikel 4 na de Omnibus" (één A4, bijsluiter, bronnen: Publicatieblad, Commissie 20/10, VRT); kader in het AI Act-kompas; doos en vraag artikel-4-werkgever verwijzen ernaar. Fiches tonen nu een bijsluiter en bronnen (huisstijl 1.0) | #50 |
 | 26/11/2026 | B03 | Afsprakenkaart v1.0.1 op /afsprakenkaart: vijf contexten (klas, werk, gemeente, vereniging, thuis), acht vragen, kaart van één A4, deellink #p=, testpaneel 42 van 42; in TOOLS, /gratis, /doen, privacy; doos, schoolpakket, schoolfiche en drie vragen verwijzen ernaar. Regels per context nagekeken en goedgekeurd door Duncan (v1.0.1) | #50 |
+| 26/11/2026 | B05 | Fiches "Is dit echt? Wat je doet bij twijfel" (klare taal, met invulregel voor een vertrouwenspersoon) en "AI-oplichting gericht op je zaak" (gewijzigd rekeningnummer, CEO-fraude, valse bankhelpdesk, phishing; naamcontrole van de bank), elk één A4. Drie nieuwe vragen (nieuw rekeningnummer, CEO-fraude, bank belt); twee vragen, het pakket "Echt of nep?" (v1.0.2) en de wegwijzer verwijzen naar de fiches. Het federale fraudeplan (12/11) noemt AI niet, de fiches vullen dat aan | #52 |
