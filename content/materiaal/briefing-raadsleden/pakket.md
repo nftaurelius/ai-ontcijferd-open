@@ -8,8 +8,8 @@ voor: ["Lokale overheden"]
 deelnemers: "Gemeenteraadsleden, schepenen en raadsleden van het OCMW, zonder technische voorkennis"
 niveau: "N0–N2 · Nieuwsgierig tot Gebruiker"
 duur: "45 minuten (plus een uur voorbereiding)"
-versie: "1.0.1"
-bijgewerkt: 2026-11-23
+versie: "1.0.2"
+bijgewerkt: 2026-11-26
 licentie: "CC BY 4.0"
 maker: "AI Ontcijferd"
 bestanden:
@@ -30,3 +30,5 @@ personaliseren: |
 Een raadslid hoeft geen AI-expert te zijn, maar moet wel de juiste vragen kunnen stellen. Deze briefing zet op een rij wat de Europese AI Act van een gemeente vraagt: wat nu al geldt (AI-geletterdheid, herkenbare chatbots en AI-teksten), wat vanaf 2 december 2027 verandert als AI meebeslist over burgers, en wie in België toezicht houdt. Het werkblad met tien vragen kan de raad bij elk dossier gebruiken.
 
 Je hoeft geen AI-expert te zijn. Het draaiboek zegt wat je doet en zegt, minuut per minuut.
+
+De tien vragen staan ook online als fiche van één A4: [Tien vragen bij een AI-voorstel in de raad](/fiches/tien-vragen-bij-een-ai-voorstel-in-de-raad). Voor de medewerkers aan het onthaal en de loketten is er [AI aan het loket](/fiches/ai-aan-het-loket): wat mag, wat nooit, en hoe je een inwoner helpt die een brief of bericht niet vertrouwt.

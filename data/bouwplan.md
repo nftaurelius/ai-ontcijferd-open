@@ -103,7 +103,7 @@ buiten gaat niets voor 4 januari.
 - **Wie:** agents; klare taal volgens de werkwijze "klare-taal".
 - **Klaar als:** twee fiches online en afdrukbaar, gekoppeld aan het pakket en de wegwijzer.
 
-### B06 · Twee fiches voor gemeenten
+### B06 · Twee fiches voor gemeenten ✓ (26/11: raad en loket, briefing en portaal verwijzen ernaar)
 - **Voor wie:** raadsleden en medewerkers van lokale besturen. Dwarsvragen 1, 3 en 7.
 - **Waarom:** over raadsleden bestaat geen enkele meting; wie beslist over een AI-project kreeg er meestal geen
   vorming over. Medewerkers van kleine gemeenten vallen buiten de door Vlaanderen betaalde Copilot-licenties en
@@ -280,7 +280,7 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 2. ~~B01 · fiche artikel 4 na de Omnibus~~ (klaar 26/11)
 3. ~~B03 · afsprakenkaart-maker~~ (klaar 26/11)
 4. ~~B05 · fiches "Is dit echt?" en "AI-oplichting gericht op je zaak"~~ (klaar 26/11)
-5. B06 · twee fiches voor gemeenten
+5. ~~B06 · twee fiches voor gemeenten~~ (klaar 26/11)
 6. B04 · waar AI Ontcijferd van afhangt
 7. B08 · pakket zesde leerjaar, getest door de redactie
 8. B11 · vragenlijsten klaarzetten
@@ -298,3 +298,4 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 | 26/11/2026 | B01 | Fiche "Artikel 4 na de Omnibus" (één A4, bijsluiter, bronnen: Publicatieblad, Commissie 20/10, VRT); kader in het AI Act-kompas; doos en vraag artikel-4-werkgever verwijzen ernaar. Fiches tonen nu een bijsluiter en bronnen (huisstijl 1.0) | #50 |
 | 26/11/2026 | B03 | Afsprakenkaart v1.0.1 op /afsprakenkaart: vijf contexten (klas, werk, gemeente, vereniging, thuis), acht vragen, kaart van één A4, deellink #p=, testpaneel 42 van 42; in TOOLS, /gratis, /doen, privacy; doos, schoolpakket, schoolfiche en drie vragen verwijzen ernaar. Regels per context nagekeken en goedgekeurd door Duncan (v1.0.1) | #50 |
 | 26/11/2026 | B05 | Fiches "Is dit echt? Wat je doet bij twijfel" (klare taal, met invulregel voor een vertrouwenspersoon) en "AI-oplichting gericht op je zaak" (gewijzigd rekeningnummer, CEO-fraude, valse bankhelpdesk, phishing; naamcontrole van de bank), elk één A4. Drie nieuwe vragen (nieuw rekeningnummer, CEO-fraude, bank belt); twee vragen, het pakket "Echt of nep?" (v1.0.2) en de wegwijzer verwijzen naar de fiches. Het federale fraudeplan (12/11) noemt AI niet, de fiches vullen dat aan | #52 |
+| 26/11/2026 | B06 | Fiches "Tien vragen bij een AI-voorstel in de raad" (de tien vragen uit de briefing, met wat vanaf 2 december 2027 geldt als AI meebeslist over mensen: artikel 26, 27 en 49) en "AI aan het loket" (wat mag, wat nooit, zes stappen voor een inwoner die een brief of bericht niet vertrouwt), elk één A4. De briefing voor raadsleden (v1.0.2) verwijst ernaar; het portaal Lokale overheden toont ze | #53 |
