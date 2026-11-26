@@ -8,6 +8,8 @@ doelgroepen:
 dwarsvraag: 3
 niveau: N1
 verder:
+- tekst: 'Maak jullie afsprakenkaart (werk)'
+  href: /afsprakenkaart
 - tekst: 'Pakket: AI-geletterdheid in een doos'
   href: /materiaal/ai-geletterdheid-in-een-doos
 - tekst: AI Act-kompas
@@ -21,8 +23,8 @@ bronnen:
   url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202601744
 - naam: 'AI Ontcijferd: AI Act-kompas (nagekeken 23 november 2026)'
   url: https://aiontcijferd.be/ai-act
-nagekeken: '2026-11-25'
-versie: '1.0'
+nagekeken: '2026-11-26'
+versie: '1.1'
 status: gecontroleerd
 getest: Antwoord nagekeken door de redactie; nog geen feedback van gebruikers.
 ---

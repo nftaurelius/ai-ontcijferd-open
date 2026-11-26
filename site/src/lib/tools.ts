@@ -8,6 +8,7 @@ export type Tool = {
   slug: string;
   naam: string;
   korteNaam: string;
+  knop: string;
   vraag: string;
   uitleg: string;
   voor: string[];
@@ -25,10 +26,21 @@ const TOOLS: Basis[] = [
     slug: "plakcheck",
     naam: "Plakcheck en Urenrekening",
     korteNaam: "Plakcheck",
+    knop: "Doe de Plakcheck",
     vraag: "Mag dit in een chatbot? En loont het dan nog?",
     uitleg:
       "Vier vragen zeggen of je gegevens in een AI-tool horen. Daarna reken je na of het je nog tijd en geld oplevert als je het veilig doet. Alles draait in je browser.",
     voor: ["Werk", "Lokale overheden", "Zelfstandigen", "Onderwijs", "Bibliotheken", "Burgers"],
+  },
+  {
+    slug: "afsprakenkaart",
+    naam: "Afsprakenkaart",
+    korteNaam: "Afsprakenkaart",
+    knop: "Maak je afsprakenkaart",
+    vraag: "Welke afspraken over AI maken we?",
+    uitleg:
+      "Kies klas, werk, gemeente, vereniging of thuis, loop acht vragen door en druk één pagina met jullie afspraken af. Alles draait in je browser.",
+    voor: ["Onderwijs", "Werk", "Lokale overheden", "Zelfstandigen", "Bibliotheken", "Burgers"],
   },
 ];
 

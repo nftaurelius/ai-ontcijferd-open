@@ -8,8 +8,8 @@ voor: ["Onderwijs"]
 deelnemers: "Het lerarenteam en de directie"
 niveau: "N0–N2 · Nieuwsgierig tot Gebruiker"
 duur: "1 uur (plus een halfuur voorbereiding)"
-versie: "1.0.1"
-bijgewerkt: 2026-11-23
+versie: "1.0.2"
+bijgewerkt: 2026-11-26
 licentie: "CC BY 4.0"
 maker: "AI Ontcijferd"
 bestanden:
@@ -30,3 +30,5 @@ personaliseren: |
 Leerlingen gebruiken AI, of de school het nu regelt of niet. Met dit pakket leid je een teamvergadering van een uur. Vijf vragen, verdeeld over groepjes, leveren samen de eerste versie van jullie schoolafspraken op. Het bouwt op de fiche "AI-afspraken op school" en zet kort op een rij wat de AI Act van een school vraagt.
 
 Je hoeft geen AI-expert te zijn. Het draaiboek zegt wat je doet en zegt, minuut per minuut.
+
+Na de vergadering zet je de afspraken met de [Afsprakenkaart](/afsprakenkaart) op één pagina: kies "In de klas" voor de afspraken die leraren met hun leerlingen maken.

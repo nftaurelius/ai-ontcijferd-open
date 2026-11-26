@@ -54,7 +54,7 @@ Leemtes waar niemand meet: verenigingen, bibliotheekmedewerkers, raadsleden en e
 Doel: wie op 4 januari komt, vindt antwoorden op de drie sterkste vragen. Alles hier kunnen agents maken; naar
 buiten gaat niets voor 4 januari.
 
-### B01 · Artikel 4 na de Omnibus: wat moet je nog?
+### B01 · Artikel 4 na de Omnibus: wat moet je nog? ✓ (26/11: fiche online, kompas, doos en vragenbank verwijzen ernaar)
 - **Voor wie:** werkgevers, HR, directies, gemeenten, verenigingen met personeel. Dwarsvraag 7.
 - **Waarom:** de Omnibus paste artikel 4 in juli 2026 aan; werkgevers krijgen tegenstrijdige uitleg ("de plicht viel
   weg" tegenover "de plicht blijft, zonder vast niveau"). Ons kompas heeft het juist. Snel stuk met gezag.
@@ -74,7 +74,7 @@ buiten gaat niets voor 4 januari.
 - **Wie:** agents (elk antwoord nagekeken met bron).
 - **Klaar als:** 24 pagina's online, `/vragen` in het menu onder Leren, elke doelgroeppagina toont haar vragen.
 
-### B03 · De afsprakenkaart-maker
+### B03 · De afsprakenkaart-maker ✓ (26/11: tool v1.0.1 online, regels per context goedgekeurd door Duncan)
 - **Voor wie:** klas, werk, gemeente, vereniging, gezin. Dwarsvraag 3, de ruggengraat volgens het onderzoek.
 - **Waarom:** vijf doelgroepen vragen hetzelfde: een korte regeling van wat wel en niet mag. Eén gereedschap bedient ze
   allemaal. 62% van de scholieren ziet regels per leraar verschillen; 35% van de bediendes werkt zonder kader.
@@ -277,8 +277,8 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 ## Volgorde voor de komende bouwsessies
 
 1. ~~B02 · vragenbank, eerste 24 vragen, met B26~~ (klaar 25/11)
-2. B01 · fiche artikel 4 na de Omnibus
-3. B03 · afsprakenkaart-maker
+2. ~~B01 · fiche artikel 4 na de Omnibus~~ (klaar 26/11)
+3. ~~B03 · afsprakenkaart-maker~~ (klaar 26/11)
 4. B05 · fiches "Is dit echt?" en "AI-oplichting gericht op je zaak"
 5. B06 · twee fiches voor gemeenten
 6. B04 · waar AI Ontcijferd van afhangt
@@ -295,3 +295,5 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 | 25/11/2026 | - | Bouwplan opgesteld uit visie, verspreidingsplan en doelgroepenonderzoek | #47 |
 | 25/11/2026 | B12, B26 | Beslissingen Duncan: AI per job goedgekeurd, niet afhangen van anderen, B26 toegevoegd | #48 |
 | 25/11/2026 | B02, B26 | Vragenbank: 24 vragen (drie per dwarsvraag) op /vragen, elk met eigen pagina, FAQ-gegevens en bronnen; blok op elke doelgroeppagina; feedbackblok op vragen, fiches en Plakcheck | #49 |
+| 26/11/2026 | B01 | Fiche "Artikel 4 na de Omnibus" (één A4, bijsluiter, bronnen: Publicatieblad, Commissie 20/10, VRT); kader in het AI Act-kompas; doos en vraag artikel-4-werkgever verwijzen ernaar. Fiches tonen nu een bijsluiter en bronnen (huisstijl 1.0) | #50 |
+| 26/11/2026 | B03 | Afsprakenkaart v1.0.1 op /afsprakenkaart: vijf contexten (klas, werk, gemeente, vereniging, thuis), acht vragen, kaart van één A4, deellink #p=, testpaneel 42 van 42; in TOOLS, /gratis, /doen, privacy; doos, schoolpakket, schoolfiche en drie vragen verwijzen ernaar. Regels per context nagekeken en goedgekeurd door Duncan (v1.0.1) | #50 |

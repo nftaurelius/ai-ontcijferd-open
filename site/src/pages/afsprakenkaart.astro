@@ -1,0 +1,169 @@
+---
+// Landingspagina van de Afsprakenkaart (bouwplan B03). De tool zelf staat als één zelfstandig
+// bestand in public/afsprakenkaart/app/index.html (strenge Content Security Policy, geen netwerkverkeer)
+// en wordt hier in een kader getoond. Deellinks (#p=...) worden doorgegeven aan het kader.
+import Basis from "../layouts/Basis.astro";
+import Inschrijven from "../components/Inschrijven.astro";
+import WerkteDit from "../components/WerkteDit.astro";
+import { tool, leesConfig } from "../lib/tools";
+import { datumLeesbaar } from "../lib/edities";
+import { LICENTIE_URL, SITE_URL, uitgever } from "../lib/seo";
+
+const t = tool("afsprakenkaart");
+const cfg = leesConfig("afsprakenkaart");
+const regelsNagekeken: string | null = cfg?.regels?.nagekekenDoorEindredacteurOp ?? null;
+const gebouwdMet: string = cfg?.redactie?.gebouwdMet ?? "een AI-model";
+const url = `${SITE_URL}/afsprakenkaart`;
+const app = "/afsprakenkaart/app/";
+const insluitCode = `<iframe src="${SITE_URL}${app}?embed=1" title="Afsprakenkaart van AI Ontcijferd" style="width:100%;border:0" height="2600" loading="lazy"></iframe>`;
+const insluitScript = `<script>
+window.addEventListener("message", function (e) {
+  if (!e.data || e.data.type !== "ao-afsprakenkaart-hoogte") return;
+  var kaders = document.querySelectorAll("iframe");
+  for (var i = 0; i < kaders.length; i++) {
+    if (kaders[i].contentWindow === e.source) kaders[i].height = e.data.hoogte;
+  }
+});
+<\/script>`;
+const bijsluiter = [
+  ["Voor wie", "Leraren, werkgevers en teams, lokale besturen, verenigingen en gezinnen"],
+  ["Niveau", "N0–N2 · Nieuwsgierig tot Gebruiker"],
+  ["Duur", "10 minuten om in te vullen, daarna samen bespreken"],
+  ["Versie", t.versie],
+  ["Nagekeken op", datumLeesbaar(t.bijgewerkt)],
+  ["Getest", "Door de redactie: elke context doorlopen, afgedrukt op A4 en als link gedeeld. Nog niet in de praktijk."],
+  ["Licentie", "CC BY 4.0, AI Ontcijferd"],
+];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": url,
+  url,
+  name: t.naam,
+  description: t.uitleg,
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "Elke recente browser",
+  browserRequirements: "JavaScript",
+  inLanguage: "nl-BE",
+  softwareVersion: t.versie,
+  dateModified: t.bijgewerkt,
+  isAccessibleForFree: true,
+  offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+  publisher: { "@id": uitgever["@id"], "@type": "NewsMediaOrganization", name: uitgever.name },
+  license: LICENTIE_URL,
+};
+---
+
+<Basis titel="Afsprakenkaart: welke afspraken over AI maken we?" beschrijving="Gratis tool van AI Ontcijferd. Kies klas, werk, gemeente, vereniging of thuis, beantwoord acht vragen en druk één pagina met jullie afspraken over AI af. Draait in je browser en verstuurt niets." schema={schema} bron="site/public/afsprakenkaart/app/index.html">
+  <section class="rij sectie">
+    <div class="kantlijn">
+      <p class="kantlijn-kop">Gratis tool</p>
+      <p>Versie {t.versie}<br />Bijgewerkt op {datumLeesbaar(t.bijgewerkt)}</p>
+    </div>
+    <div class="proza">
+      <h1 style="margin-top:0">Afsprakenkaart</h1>
+      <p class="lead">
+        <span class="markeer">Wat mag wel met AI, wat nooit, en bij wie kun je terecht? Zet het op één pagina.</span>{" "}
+        Voor de klas, het werk, de gemeente, de vereniging of thuis.
+      </p>
+      <table class="bijsluiter">
+        <tbody>{bijsluiter.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody>
+      </table>
+      <p>
+        Je kiest waar de afspraken voor zijn en loopt acht vragen door: welke tools, wat er nooit in mag, waarvoor wel en waarvoor niet,
+        hoe je nakijkt, wanneer je zegt dat AI meedeed, wat je doet bij een fout en wanneer je alles opnieuw bekijkt.
+        We vulden al in wat we aanraden; jij past aan. De tool draait volledig in je browser en verstuurt niets.
+      </p>
+    </div>
+  </section>
+
+  <section class="tool-kader" aria-label="De tool">
+    <iframe id="tool" src={`${app}?embed=1`} title="Afsprakenkaart" allow="clipboard-write" height="2600"></iframe>
+    <script is:inline>
+      // Een deellink (#p=...) meteen doorgeven aan het kader, voor het laadt.
+      (function () {
+        var kader = document.getElementById("tool");
+        if (kader && location.hash) kader.src = "/afsprakenkaart/app/?embed=1" + location.hash;
+      })();
+    </script>
+    <noscript><p class="meta">Deze tool heeft JavaScript nodig. <a href={app}>Open de tool apart</a>.</p></noscript>
+    <p class="meta tool-apart">Werkt het kader niet goed? <a href={app}>Open de tool op een aparte pagina</a>.</p>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Waarom</p></div>
+    <div class="proza">
+      <p>
+        Leraren, werkgevers, gemeenten, verenigingen en ouders vragen hetzelfde: een korte regeling van wat wel en niet mag met AI.
+        Een afsprakenkaart is geen beleidsplan. Ze is kort genoeg om op te hangen en concreet genoeg om te gebruiken.
+      </p>
+      <p>
+        Werkgevers en besturen ondersteunen er ook de AI-geletterdheid mee die artikel 4 van de AI Act vraagt;
+        wat dat precies inhoudt, staat in de fiche <a href="/fiches/artikel-4-na-de-omnibus">Artikel 4 na de Omnibus</a>.
+        Wil je de afspraken samen opstellen in een sessie van een uur? Gebruik dan <a href="/materiaal/ai-geletterdheid-in-een-doos">AI-geletterdheid in een doos</a>
+        of, op school, <a href="/materiaal/ai-afspraken-op-school">AI-afspraken op school</a>.
+      </p>
+      <p>Twijfel je of iets in een chatbot mag? De <a href="/plakcheck">Plakcheck</a> zegt het per soort gegeven en per tool.</p>
+    </div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Jouw ervaring</p></div>
+    <div class="proza"><WerkteDit titel={t.naam} versie={t.versie} pad="/afsprakenkaart" /></div>
+  </section>
+
+  <section class="rij sectie">
+    <div class="kantlijn"><p class="kantlijn-kop">Nieuwsbrief</p></div>
+    <div><Inschrijven variant="kort" /></div>
+  </section>
+
+  <section class="rij sectie" id="insluiten">
+    <div class="kantlijn"><p class="kantlijn-kop">Op je eigen site</p></div>
+    <div class="proza">
+      <h2>Zet de Afsprakenkaart op je eigen site</h2>
+      <p>Scholen, besturen, bibliotheken, bedrijven en verenigingen mogen de tool gratis op hun eigen site of intranet zetten. Ook ingesloten verstuurt hij niets. Kopieer deze code:</p>
+      <div class="codeblok">
+        <pre id="code-kader">{insluitCode}</pre>
+        <button type="button" class="knop knop-klein" data-kopieer="code-kader">Kopieer de code</button>
+      </div>
+      <p>Wil je dat het kader automatisch meegroeit met de inhoud? Zet dan ook dit stukje op dezelfde pagina. De tool geeft alleen zijn hoogte door, niets anders.</p>
+      <div class="codeblok">
+        <pre id="code-script">{insluitScript}</pre>
+        <button type="button" class="knop knop-klein" data-kopieer="code-script">Kopieer het script</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="rij sectie klein">
+    <div class="kantlijn"><p>Hoe dit gemaakt is</p></div>
+    <div class="proza">
+      <p>
+        De tool is ontworpen en geschreven door een AI-model, {gebouwdMet}, in opdracht van de eindredacteur.
+        Hij vertrekt van de afsprakenkaart uit "AI-geletterdheid in een doos" en het werkblad uit "AI-afspraken op school".
+        {regelsNagekeken
+          ? ` De eindredacteur keek de afspraken per context na op ${datumLeesbaar(regelsNagekeken)}.`
+          : " De afspraken per context zijn keuzes van de redactie; de eindredacteur heeft ze nog niet nagekeken."}
+        Waar de kaart zegt wat de wet vraagt, staan de bron en de datum onderaan de tool. Meer over onze werkwijze lees je in <a href="/zo-werken-we">Zo werken we</a>.
+      </p>
+      <p>
+        De tool zelf doet geen enkel netwerkverzoek: een beveiligingsinstelling in de pagina blokkeert elke verbinding naar buiten.
+        Deze pagina eromheen telt bezoeken zoals de rest van aiontcijferd.be. Dit is geen juridisch advies.
+      </p>
+    </div>
+  </section>
+</Basis>
+
+<script>
+  import { koppelKopieerknoppen } from "../scripts/kopieer";
+  // Het kader laten meegroeien met de inhoud van de tool.
+  const kader = document.getElementById("tool") as HTMLIFrameElement | null;
+  window.addEventListener("message", (e) => {
+    if (!kader || e.source !== kader.contentWindow) return;
+    if (e.data?.type === "ao-afsprakenkaart-hoogte" && typeof e.data.hoogte === "number") kader.height = String(Math.ceil(e.data.hoogte));
+  });
+  // Een nieuwe deellink in de adresbalk ook in het kader openen.
+  window.addEventListener("hashchange", () => {
+    if (kader && location.hash) kader.src = "/afsprakenkaart/app/?embed=1" + location.hash;
+  });
+  koppelKopieerknoppen();
+</script>

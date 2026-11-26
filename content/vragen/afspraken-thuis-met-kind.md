@@ -7,6 +7,8 @@ doelgroepen:
 dwarsvraag: 3
 niveau: N0
 verder:
+- tekst: 'Maak een afsprakenkaart voor thuis'
+  href: /afsprakenkaart
 - tekst: 'Vraag: Er circuleert een vals naaktbeeld. Wat nu?'
   href: /vragen/nepnaaktbeeld-wat-nu
 - tekst: 'Wegwijzer: Mediawijs'
@@ -14,8 +16,8 @@ verder:
 bronnen:
 - naam: 'Mediawijs: De kracht en keerzijde van AI'
   url: https://www.mediawijs.be/nl/dossiers/artificiele-intelligentie
-nagekeken: '2026-11-25'
-versie: '1.0'
+nagekeken: '2026-11-26'
+versie: '1.1'
 status: gecontroleerd
 getest: Antwoord nagekeken door de redactie; nog geen feedback van gebruikers.
 ---

@@ -9,6 +9,8 @@ doelgroepen:
 dwarsvraag: 7
 niveau: N1
 verder:
+- tekst: 'Fiche: Artikel 4 na de Omnibus'
+  href: /fiches/artikel-4-na-de-omnibus
 - tekst: 'Pakket: AI-geletterdheid in een doos'
   href: /materiaal/ai-geletterdheid-in-een-doos
 - tekst: AI Act-kompas
@@ -20,8 +22,8 @@ bronnen:
   url: https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32024R1689
 - naam: 'AI Ontcijferd: AI Act-kompas (nagekeken 23 november 2026)'
   url: https://aiontcijferd.be/ai-act
-nagekeken: '2026-11-25'
-versie: '1.0'
+nagekeken: '2026-11-26'
+versie: '1.1'
 status: gecontroleerd
 getest: Antwoord nagekeken door de redactie; nog geen feedback van gebruikers.
 ---
@@ -43,4 +45,5 @@ de tekst van de verordening.
 
 - "AI-geletterdheid in een doos" is daarvoor gemaakt: een afsprakenkaart, een sessie van een uur, een
   aanwezigheidslijst, een zelftest en een lijst van gebruikte tools.
+- Alles op één afdrukbare pagina: de fiche [Artikel 4 na de Omnibus](/fiches/artikel-4-na-de-omnibus).
 - Dit is geen juridisch advies. Bij twijfel over je eigen situatie: vraag een jurist.

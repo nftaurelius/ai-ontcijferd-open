@@ -2,7 +2,7 @@
 titel: "AI-afspraken op school: het kader op één pagina"
 samenvatting: "Een school hoeft geen dik AI-beleid te schrijven om te starten. Deze vijf vragen vormen de kern."
 voor: ["Onderwijs"]
-bijgewerkt: 2026-10-27
+bijgewerkt: 2026-11-26
 ---
 
 Leerlingen gebruiken AI, of de school dat nu regelt of niet. Met heldere afspraken maak je er een leerkans van in plaats van een bron van onzekerheid. Deze vijf vragen vormen samen een kader dat op één pagina past. Beantwoord ze samen met leraren, en liefst ook met leerlingen.
@@ -30,5 +30,7 @@ Afspraken alleen volstaan niet. Leer leerlingen dat AI fouten maakt ([hallucinat
 ## Goed om te weten
 
 De AI Act verbiedt AI die de emoties van leerlingen herkent op school, en systemen die bijvoorbeeld beslissen over toelating of het beoordelen van leerresultaten gelden als hoog risico. Meer in het [AI Act-kompas](/ai-act).
+
+De klasafspraken zelf zet je op één pagina met de [Afsprakenkaart](/afsprakenkaart): kies "In de klas".
 
 *Dit is geen juridisch advies en vervangt de richtlijnen van je onderwijsnet niet.*

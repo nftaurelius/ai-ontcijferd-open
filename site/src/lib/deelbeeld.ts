@@ -14,6 +14,7 @@ export type Deelbeeld = { pad: string; soort: string; titel: string; onder: stri
 
 const VAST: Deelbeeld[] = [
   { pad: "/plakcheck", soort: "Gratis tool", titel: "Mag dit in een chatbot? En loont het dan nog?", onder: "Plakcheck en Urenrekening · draait in je browser" },
+  { pad: "/afsprakenkaart", soort: "Gratis tool", titel: "Welke afspraken over AI maken we?", onder: "Klas · werk · gemeente · vereniging · thuis" },
   { pad: "/bijsluiters", soort: "Bijsluiters", titel: "Wat doen AI-tools met wat je intypt, en wat kosten ze?", onder: "ChatGPT · Claude · Gemini · Copilot · Mistral" },
   { pad: "/niveaucheck", soort: "Niveaucheck", titel: "Op welk niveau sta je met AI?", onder: "Vijf vragen · N0 tot N4 · anoniem" },
   { pad: "/vragen", soort: "Vragen over AI", titel: "Echte vragen, nagekeken antwoorden", onder: "Privacy · nepbeelden · afspraken · de wet · je job" },

@@ -6,6 +6,8 @@ doelgroepen:
 dwarsvraag: 3
 niveau: N1
 verder:
+- tekst: 'Maak een afsprakenkaart voor de klas'
+  href: /afsprakenkaart
 - tekst: 'Fiche: AI-afspraken op school'
   href: /fiches/ai-afspraken-op-school
 - tekst: 'Pakket: AI-afspraken op school'
@@ -17,8 +19,8 @@ bronnen:
   url: https://www.vrt.be/vrtnws/nl/2026/04/28/scholieren-en-ai/
 - naam: 'Kenniscentrum Digisprong: Artificiële intelligentie'
   url: https://www.vlaanderen.be/kenniscentrum-digisprong/themas/innovatie/artificiele-intelligentie
-nagekeken: '2026-11-25'
-versie: '1.0'
+nagekeken: '2026-11-26'
+versie: '1.1'
 status: gecontroleerd
 getest: Antwoord nagekeken door de redactie; nog geen feedback van gebruikers.
 ---

@@ -103,7 +103,7 @@ const aantalPakketten = beschikbarePakketten().length;
         <p class="aanbod-soort">{gratisTool.naam}</p>
         <h2><a href={`/${gratisTool.slug}`} style="color:inherit;text-decoration:none">{gratisTool.vraag}</a></h2>
         <p>{gratisTool.uitleg}</p>
-        <p><a class="knop" href={`/${gratisTool.slug}`}>Doe de {gratisTool.korteNaam}</a></p>
+        <p><a class="knop" href={`/${gratisTool.slug}`}>{gratisTool.knop}</a></p>
         <p class="meta">
           {aantalPakketten > 0
             ? <>Ook gratis: <a href="/materiaal">{aantalPakketten} open {aantalPakketten === 1 ? "lespakket" : "lespakketten"}</a> om zelf te geven.</>

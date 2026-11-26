@@ -8,8 +8,8 @@ voor: ["Werk", "Zelfstandigen", "Lokale overheden", "Onderwijs", "Bibliotheken"]
 deelnemers: "Medewerkers en vrijwilligers die AI gebruiken of gaan gebruiken voor hun werk, zonder voorkennis"
 niveau: "N0–N2 · Nieuwsgierig tot Gebruiker"
 duur: "1 uur (plus een halfuur voorbereiding)"
-versie: "1.1.1"
-bijgewerkt: 2026-11-23
+versie: "1.1.2"
+bijgewerkt: 2026-11-26
 licentie: "CC BY 4.0"
 maker: "Duncan Panis"
 bestanden:
@@ -42,7 +42,7 @@ Je hoeft geen AI-expert te zijn. Het draaiboek zegt wat je doet en zegt, en geef
 
 Sinds 2 februari 2025 vraagt artikel 4 van de Europese AI Act aan organisaties die AI-systemen gebruiken voor hun werk, dat ze werk maken van de AI-geletterdheid van hun mensen. Sinds de aanpassing van juli 2026 gaat het om maatregelen die de ontwikkeling van AI-geletterdheid ondersteunen, op maat van wat je mensen al weten en waarvoor ze AI gebruiken. Een bepaald niveau garanderen of kennis meten is niet nodig, een certificaat ook niet. Wel houd je intern bij wat je deed.
 
-Een sessie met afspraken, een aanspreekpunt en een register is zo'n maatregel. Het pakket is geen juridisch advies: kijk de stand na in het [AI Act-kompas](/ai-act) voor je de sessie geeft.
+Een sessie met afspraken, een aanspreekpunt en een register is zo'n maatregel. Het pakket is geen juridisch advies: kijk de stand na in het [AI Act-kompas](/ai-act) voor je de sessie geeft. Wat artikel 4 na de Omnibus nog vraagt, staat op één pagina in de fiche [Artikel 4 na de Omnibus](/fiches/artikel-4-na-de-omnibus).
 
 ## Hoe de sessie verloopt
 
@@ -61,6 +61,6 @@ Een halfuur: draaiboek en dia's doorlopen, het toolregister invullen met wat je 
 
 ## Wat je achteraf doet
 
-Werk de afsprakenkaart af en bezorg ze aan iedereen. Bewaar de aanwezigheidslijst en het toolregister bij elkaar. Bekijk de afspraken minstens één keer per jaar opnieuw: AI-tools en hun voorwaarden veranderen snel.
+Werk de afsprakenkaart af en bezorg ze aan iedereen. Liever online? Met de [Afsprakenkaart](/afsprakenkaart) zet je jullie afspraken in tien minuten op één pagina, om af te drukken of als link te delen. Bewaar de aanwezigheidslijst en het toolregister bij elkaar. Bekijk de afspraken minstens één keer per jaar opnieuw: AI-tools en hun voorwaarden veranderen snel.
 
 Gaf je de sessie? Laat het weten via [redactie@aiontcijferd.be](mailto:redactie@aiontcijferd.be): wanneer, waar, voor hoeveel mensen en wat werkte. Met je toestemming krijgt het pakket dan het label "Getest in de praktijk".

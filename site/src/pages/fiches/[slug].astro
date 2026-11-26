@@ -9,6 +9,19 @@ export function getStaticPaths() {
   return alleFiches().map((f) => ({ params: { slug: f.slug }, props: { f } }));
 }
 const { f } = Astro.props as { f: Fiche };
+// Bijsluiter in de vaste volgorde van huisstijl 1.0; velden die een fiche niet heeft, vallen weg.
+const bijsluiter = [
+  ["Voor wie", f.voor.join(", ")],
+  ["Niveau", f.niveau],
+  ["Duur", f.duur],
+  ["Versie", f.versie],
+  ["Nagekeken op", f.nagekeken ? datumLeesbaar(f.nagekeken) : `bijgewerkt ${datumLeesbaar(f.bijgewerkt)}`],
+  ["Getest", f.getest],
+  ["Licentie", "CC BY 4.0, AI Ontcijferd"],
+].filter(([, v]) => v);
+const voetregel = ["AI Ontcijferd", "aiontcijferd.be", "CC BY 4.0", f.versie && `versie ${f.versie}`, `nagekeken op ${datumLeesbaar(f.nagekeken || f.bijgewerkt)}`]
+  .filter(Boolean)
+  .join(" · ");
 const schema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -33,9 +46,19 @@ const schema = {
     <div class="proza">
       <h1 style="margin-top:0">{f.titel}</h1>
       <p class="lead">{f.samenvatting}</p>
+      <table class="bijsluiter">
+        <tbody>{bijsluiter.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody>
+      </table>
       <Fragment set:html={f.html} />
-      <p class="meta">Bron: AI Ontcijferd, aiontcijferd.be/fiches/{f.slug}. Vrij te gebruiken onder CC BY 4.0.</p>
-      <WerkteDit titel={f.titel} versie={`bijgewerkt ${f.bijgewerkt}`} pad={`/fiches/${f.slug}`} />
+      {f.bronnen.length > 0 && (
+        <>
+          <h2>Bronnen</h2>
+          <ul class="fiche-bronnen">{f.bronnen.map((b) => <li><a href={b.url}>{b.naam}</a></li>)}</ul>
+        </>
+      )}
+      <p class="meta">{voetregel}</p>
+      <p class="meta niet-printen">Bron: AI Ontcijferd (aiontcijferd.be/fiches/{f.slug}), door Duncan Panis. Vrij over te nemen onder CC BY 4.0.</p>
+      <WerkteDit titel={f.titel} versie={f.versie || `bijgewerkt ${f.bijgewerkt}`} pad={`/fiches/${f.slug}`} />
     </div>
   </article>
 </Basis>

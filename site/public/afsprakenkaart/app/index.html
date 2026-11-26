@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="nl-BE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://aiontcijferd.be/afsprakenkaart">
+<title>Afsprakenkaart AI | AI Ontcijferd</title>
+<meta name="description" content="Maak in tien minuten één pagina met jullie afspraken over AI: voor de klas, het werk, de gemeente, de vereniging of thuis. Gratis, draait in je browser en verstuurt niets.">
+<style>
+:root{
+  /* Huisstijl AI Ontcijferd 1.0: inkt op papier, geel alleen voor de markering en de blokjes, alles hoekig */
+  --papier:#F2F3EF;
+  --blad:#FFFFFF;
+  --inkt:#20262B;
+  --inkt-zacht:#5C6368;
+  --lijn:#CFD3CC;
+  --stift:#FFD400;
+  --vlak:#E8EAE4;
+  --serif:"Literata","Literata Variable",Georgia,serif;
+  --sans:"Atkinson Hyperlegible Next",Arial,Helvetica,sans-serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--papier);color:var(--inkt);font-family:var(--serif);font-size:1.0625rem;line-height:1.6}
+a{color:var(--inkt);text-underline-offset:.15em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--inkt);outline-offset:2px}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.15;margin:0;font-weight:700}
+p{margin:0 0 1rem}
+ul,ol{margin:0 0 1rem;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.alleen-lezer{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--inkt);color:#fff;padding:.6rem 1rem;font-family:var(--sans);z-index:10}
+.skip:focus{top:0}
+.smal{max-width:70rem;margin-inline:auto;padding-inline:1rem}
+.smal > *{max-width:46rem}
+
+.kop{padding-top:2rem;padding-bottom:1rem}
+.merk{font-family:var(--sans);font-weight:700;font-size:1rem;margin:0 0 1.5rem}
+.merk a{text-decoration:none}
+.kop h1{font-size:clamp(2rem,6.2vw,3.4rem);letter-spacing:-.015em;max-width:18ch;margin-bottom:1rem}
+.lede{font-size:1.2rem;line-height:1.5;max-width:38rem}
+.privacy{font-family:var(--sans);font-size:1rem;line-height:1.5;background:var(--vlak);padding:.9rem 1rem;margin:1.5rem 0 0}
+.stand{font-family:var(--sans);font-size:.9rem;color:var(--inkt-zacht);margin:.75rem 0 0}
+
+section{padding-top:2.25rem}
+h2{font-size:clamp(1.6rem,4.2vw,2.2rem);margin-bottom:.75rem}
+.intro{max-width:38rem}
+.klein{font-family:var(--sans);font-size:.92rem;color:var(--inkt-zacht);line-height:1.5}
+
+/* Keuze van de context */
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.contexten{display:grid;gap:.5rem;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));max-width:none !important}
+.keuze{display:grid;grid-template-columns:auto 1fr;column-gap:.8rem;align-items:start;padding:.8rem .9rem;background:var(--blad);border:1px solid var(--lijn);cursor:pointer;font-family:var(--sans)}
+.keuze input{width:1.3rem;height:1.3rem;margin:.15rem 0 0;accent-color:var(--inkt)}
+.keuze .titel{display:block;font-weight:600;line-height:1.35}
+.keuze .vb{display:block;font-size:.93rem;color:var(--inkt-zacht);line-height:1.4;margin-top:.15rem}
+.keuze.gekozen{border-color:var(--inkt);box-shadow:inset 4px 0 0 var(--inkt);background:var(--vlak)}
+.keuze.gekozen .vb{color:var(--inkt)}
+
+/* Gegevens bovenaan de kaart */
+.velden{display:grid;gap:1rem;margin-top:1rem}
+@media (min-width:36rem){.velden{grid-template-columns:1fr 1fr}}
+.veld{display:flex;flex-direction:column;gap:.25rem;font-family:var(--sans)}
+.veld.vol{grid-column:1/-1}
+.veld label{font-weight:600;line-height:1.3}
+.veld input,.veld textarea{font:inherit;color:var(--inkt);background:var(--blad);padding:.6rem .7rem;border:1px solid var(--inkt-zacht);min-height:44px;width:100%;border-radius:0}
+.veld textarea{min-height:4.5rem;resize:vertical}
+.veld .hulp{font-size:.9rem;color:var(--inkt-zacht);line-height:1.4;margin:0}
+
+/* Vragen */
+.vraag{margin-top:2rem}
+.vraag > legend{font-family:var(--serif);font-weight:700;font-size:1.4rem;line-height:1.2;padding:0;margin-bottom:.35rem;display:flex;gap:.6rem;align-items:baseline}
+.nr{flex:none;display:inline-grid;place-items:center;width:1.9rem;height:1.9rem;background:var(--stift);color:var(--inkt);font-family:var(--sans);font-size:1rem;font-weight:700;transform:translateY(-.1rem)}
+.hint{font-family:var(--sans);font-size:.95rem;color:var(--inkt-zacht);margin:0 0 .8rem}
+.keuzes{display:grid;gap:.45rem}
+.keuzes .keuze{padding:.65rem .85rem}
+.vast{font-family:var(--sans);font-size:.95rem;background:var(--vlak);padding:.7rem .9rem;margin:0 0 .6rem}
+
+/* Knoppen */
+.knoppen{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+.knop{font:inherit;font-family:var(--sans);font-weight:700;font-size:1rem;padding:.7rem 1.1rem;min-height:44px;border:0;background:var(--stift);color:var(--inkt);cursor:pointer;border-radius:0}
+.knop.licht{background:var(--blad);font-weight:600;box-shadow:inset 0 0 0 1px var(--inkt)}
+.uitvoer{font-family:var(--sans);background:var(--blad);border:1px solid var(--lijn);padding:.8rem;margin:0 0 1rem;overflow-wrap:anywhere}
+.uitvoer textarea{width:100%;min-height:6rem;font:inherit;font-size:.9rem;border:1px solid var(--lijn);padding:.5rem}
+
+/* De kaart: één pagina */
+.kaart{background:var(--blad);border:1px solid var(--lijn);padding:2rem 2rem 1.25rem;max-width:46rem;margin-top:1rem}
+.kaart h3{font-size:clamp(1.6rem,4.5vw,2.1rem);margin:0 0 .35rem;letter-spacing:-.01em}
+.kaart .sub{font-family:var(--sans);font-size:.95rem;color:var(--inkt-zacht);margin:0 0 .3rem}
+.kaart .wie{font-family:var(--sans);font-size:.95rem;margin:0 0 1rem;padding-bottom:.9rem;border-bottom:1px solid var(--lijn)}
+.kaart ol.afspraken{list-style:none;padding:0;margin:0;counter-reset:afspraak}
+.kaart ol.afspraken > li{display:grid;grid-template-columns:1.7rem 1fr;column-gap:.75rem;margin:0 0 .85rem;break-inside:avoid}
+.kaart .blokje{display:inline-grid;place-items:center;width:1.7rem;height:1.7rem;background:var(--stift);font-family:var(--sans);font-weight:700;font-size:.95rem}
+.kaart h4{font-size:1.05rem;margin:.15rem 0 .25rem}
+.kaart ul{margin:0;padding-left:1.1rem;font-size:.97rem;line-height:1.45;list-style:disc}
+.kaart ul li{margin-bottom:.15rem}
+.kaart .extra{grid-column:2}
+.kaart .voetregel{font-family:var(--sans);font-size:.78rem;color:var(--inkt-zacht);margin:1rem 0 0;padding-top:.6rem;border-top:1px solid var(--lijn)}
+
+/* Bronnen en transparantie */
+.bron{font-family:var(--sans);font-size:.95rem;border-top:1px solid var(--lijn);padding:.7rem 0}
+.bron p{margin:0 0 .3rem}
+.label{display:inline-block;font-family:var(--sans);font-size:.8rem;font-weight:700;padding:.05rem .45rem;border:1px solid var(--inkt);margin-right:.4rem}
+.label.vol{background:var(--inkt);color:#fff}
+.transparantie{background:var(--vlak);padding:1.2rem 1.2rem .4rem}
+details summary{cursor:pointer;font-family:var(--sans);font-weight:600}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem;background:var(--blad);border:1px solid var(--lijn);padding:.7rem}
+.voet{padding:2rem 1rem 3rem;font-family:var(--sans);font-size:.9rem;color:var(--inkt-zacht)}
+
+/* Testpaneel */
+#testpaneel{position:fixed;inset:0;z-index:50;background:rgba(32,38,43,.55);padding:1rem;overflow:auto}
+#testpaneel[hidden]{display:none}
+.testblad{background:var(--blad);max-width:46rem;margin:2rem auto;padding:1.5rem}
+.testlijst{list-style:none;padding:0;font-family:var(--sans);font-size:.92rem}
+.testlijst li{border-top:1px solid var(--lijn);padding:.35rem 0;margin:0}
+.testlijst .ok,.testlijst .fout{font-weight:700}
+
+.ingesloten .kop{padding-top:1rem}
+.ingesloten .kop h1{font-size:clamp(1.6rem,5vw,2.3rem)}
+.ingesloten #insluiten{display:none}
+
+@media print{
+  @page{size:A4;margin:12mm 14mm}
+  body{background:#fff;font-size:10pt;line-height:1.35}
+  body > *:not(main),main > section:not(#kaart-deel),#kaart-deel > *:not(.kaart),#testpaneel{display:none !important}
+  section{padding:0}
+  .kaart{border:0;padding:0;max-width:none;margin:0}
+  .kaart h3{font-size:18pt}
+  .kaart .wie{margin-bottom:3mm;padding-bottom:2.5mm}
+  .kaart ol.afspraken > li{margin-bottom:1.8mm;grid-template-columns:6.5mm 1fr;column-gap:3mm}
+  .kaart .blokje{width:6.5mm;height:6.5mm;font-size:9.5pt}
+  .kaart h4{font-size:10.5pt;margin:.4mm 0 .6mm}
+  .kaart ul{font-size:9.5pt;line-height:1.32}
+  .kaart ul li{margin-bottom:0}
+  .kaart .voetregel{margin-top:2mm;padding-top:1.5mm;font-size:7.5pt}
+  .kaart .blokje{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#start">Naar de eerste vraag</a>
+
+<header class="kop smal">
+  <p class="merk"><a href="https://aiontcijferd.be/" target="_top" rel="noopener">AI Ontcijferd</a></p>
+  <h1>Maak jullie afsprakenkaart over AI</h1>
+  <p class="lede">Kies waar de afspraken voor zijn, loop acht vragen door en je krijgt één pagina om af te drukken, op te hangen of te delen.</p>
+  <p class="privacy"><strong>Deze tool verstuurt niets en bewaart niets.</strong> Alles gebeurt in je eigen browser. Wat je intikt, staat alleen op de kaart en, als je daarvoor kiest, in een link die je zelf deelt.</p>
+  <p class="stand" id="stand"></p>
+</header>
+
+<main id="start">
+  <noscript><p class="smal"><strong>Deze tool heeft JavaScript nodig.</strong> Alles gebeurt in je browser; zonder JavaScript kan dat niet.</p></noscript>
+
+  <section id="context-deel" class="smal" aria-labelledby="h-context">
+    <h2 id="h-context">Voor wie zijn de afspraken?</h2>
+    <fieldset>
+      <legend class="alleen-lezer">Kies de context</legend>
+      <div class="contexten" id="contexten"></div>
+    </fieldset>
+    <div class="velden" id="velden"></div>
+  </section>
+
+  <section id="vragen-deel" class="smal" aria-labelledby="h-vragen">
+    <h2 id="h-vragen">Acht vragen</h2>
+    <p class="intro">We vulden al in wat we aanraden. Pas aan wat bij jullie niet past; de kaart onderaan verandert mee.</p>
+    <form id="f-vragen" novalidate></form>
+  </section>
+
+  <section id="kaart-deel" class="smal" aria-labelledby="h-kaart">
+    <h2 id="h-kaart">Jullie kaart</h2>
+    <p class="intro">Bespreek ze samen voor ze geldt: afspraken werken pas als iedereen ze kent.</p>
+    <div class="knoppen">
+      <button type="button" class="knop" id="k-print">Afdrukken of bewaren als pdf</button>
+      <button type="button" class="knop licht" id="k-link">Maak een link met deze kaart</button>
+      <button type="button" class="knop licht" id="k-tekst">Kopieer als tekst</button>
+    </div>
+    <p class="klein">De link bevat je keuzes en wat je intikte (zoals de naam van het aanspreekpunt), in het stuk na het hekje. Je browser stuurt dat stuk niet naar een server. De link wordt pas gemaakt als je op de knop drukt.</p>
+    <div class="uitvoer" id="uitvoer" hidden></div>
+    <p class="alleen-lezer" role="status" aria-live="polite" id="kopie-live"></p>
+    <article class="kaart" id="kaart" aria-label="De afsprakenkaart"></article>
+  </section>
+
+  <section id="bronnen" class="smal" aria-labelledby="h-bronnen">
+    <h2 id="h-bronnen">Feiten en bronnen</h2>
+    <p class="intro">De meeste afspraken zijn keuzes die je zelf maakt. Waar de kaart zegt wat de wet vraagt, staat hier de bron en wanneer we die nakeken.</p>
+    <div id="bron-inhoud"></div>
+  </section>
+
+  <section id="transparantie-blok" class="smal" aria-labelledby="h-trans">
+    <div class="transparantie">
+      <h2 id="h-trans">Wie maakte dit, en hoe</h2>
+      <div id="trans-inhoud"></div>
+    </div>
+  </section>
+
+  <section id="insluiten" class="smal" aria-labelledby="h-insluiten">
+    <h2 id="h-insluiten" class="alleen-lezer">Insluiten</h2>
+    <details>
+      <summary>Zet deze tool op je eigen site</summary>
+      <p>Scholen, besturen, bibliotheken en verenigingen mogen deze tool gratis insluiten. Ook ingesloten verstuurt hij niets.</p>
+      <pre id="insluit-code"></pre>
+    </details>
+  </section>
+</main>
+
+<footer class="voet smal"><p id="voet-tekst"></p></footer>
+
+<section id="testpaneel" hidden aria-labelledby="h-test">
+  <div class="testblad">
+    <h2 id="h-test" tabindex="-1">Testpaneel</h2>
+    <p class="klein">Verborgen paneel voor de redactie. Openen en sluiten: Ctrl+Shift+T, Alt+Shift+T of #test achter het adres. Sluiten kan ook met Escape.</p>
+    <div class="knoppen">
+      <button type="button" class="knop" id="k-test-opnieuw">Tests opnieuw uitvoeren</button>
+      <button type="button" class="knop licht" id="k-test-sluit">Sluiten</button>
+    </div>
+    <div id="test-uit"></div>
+  </div>
+</section>
+
+<!--
+  CONFIGURATIE. Alles wat kan veranderen staat in dit blok.
+  Elk feit heeft een bron, een datum "laatstGecontroleerd" en een status:
+  "gecontroleerd"  = op die datum nagekeken; "gecontroleerdDoor" zegt door wie ("model" of "eindredacteur").
+  "TE CONTROLEREN" = alleen secundaire bronnen gezien, of niet nagekeken.
+  De afspraken zelf zijn redactionele keuzes; ze staan in de code (REGELS) en hun stand staat onder "regels".
+  Bij een wijziging: meta.versie en meta.configBijgewerktOp ophogen.
+-->
+<script type="application/json" id="ao-config">
+{
+  "meta": {
+    "tool": "Afsprakenkaart",
+    "versie": "1.0.1",
+    "configBijgewerktOp": "2026-11-26",
+    "canonicalUrl": "https://aiontcijferd.be/afsprakenkaart",
+    "insluitUrl": "https://aiontcijferd.be/afsprakenkaart/app/",
+    "houdbaarheidDagen": { "feiten": 180 },
+    "toegestaneStatussen": ["gecontroleerd", "TE CONTROLEREN"],
+    "toegestaneControleurs": ["model", "eindredacteur"]
+  },
+  "redactie": {
+    "uitgever": "AI Ontcijferd",
+    "site": "https://aiontcijferd.be/",
+    "eindredacteur": "Duncan Panis",
+    "nagekekenDoorEindredacteurOp": "2026-11-26",
+    "gebouwdMet": "Claude Opus 5.5 van Anthropic",
+    "gebouwdOp": "2026-11-26"
+  },
+  "regels": {
+    "uitleg": "De afspraken per context (klas, werk, gemeente, vereniging, gezin) zijn keuzes van de redactie, vertrokken van de afsprakenkaart uit het pakket AI-geletterdheid in een doos en het werkblad uit AI-afspraken op school.",
+    "status": "gecontroleerd",
+    "nagekekenDoorEindredacteurOp": "2026-11-26"
+  },
+  "feiten": [
+    {
+      "id": "deepfake",
+      "wat": "Wie als organisatie of beroepshalve AI gebruikt om beeld, geluid of video te maken of te veranderen die echt lijkt (een deepfake), moet zeggen dat het door AI gemaakt of veranderd is (AI Act, artikel 50, lid 4). Dat geldt sinds 2 augustus 2026.",
+      "bron": "AI Act Service Desk, Europese Commissie: artikel 50",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+      "laatstGecontroleerd": "2026-11-26",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "prive",
+      "wat": "Wie AI gebruikt voor een zuiver persoonlijke activiteit, niet beroepshalve, valt niet onder de plichten van een gebruiksverantwoordelijke uit de AI Act. Voor het gezin is vermelden dus een afspraak, geen wettelijke plicht.",
+      "bron": "Europese Commissie, vragen en antwoorden over de AI Act (gebruiksverantwoordelijken)",
+      "url": "https://digital-strategy.ec.europa.eu/en/node/17084",
+      "laatstGecontroleerd": "2026-11-26",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model"
+    },
+    {
+      "id": "artikel4",
+      "wat": "Organisaties die AI inzetten, moeten maatregelen nemen die de AI-geletterdheid van hun mensen ondersteunen, rekening houdend met hun kennis, ervaring en waarvoor ze AI gebruiken. Een bepaald niveau garanderen of een attest is niet nodig (AI Act, artikel 4, sinds de Omnibus van 27 juli 2026).",
+      "bron": "AI Literacy: Questions & Answers, Europese Commissie (bijgewerkt 20 oktober 2026)",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+      "laatstGecontroleerd": "2026-11-26",
+      "status": "gecontroleerd",
+      "gecontroleerdDoor": "model",
+      "meerBronnen": [
+        { "naam": "Fiche: Artikel 4 na de Omnibus", "url": "https://aiontcijferd.be/fiches/artikel-4-na-de-omnibus" }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function () {
+'use strict';
+var AO = window.AO = {};
+
+/* =====================================================================
+   REGELS PER CONTEXT. Redactionele keuzes, na te kijken door de eindredacteur.
+   Elke context heeft acht vragen in dezelfde volgorde:
+   tools, erin (nooit erin), wel, nooit (nooit voor), nakijken, vermelden, fout, herbekijken.
+   type "een" = één keuze, type "meer" = meerdere keuzes. "aan" = standaard gekozen.
+   In de kaarttekst wordt {tools} vervangen door wat je intikte bij de tools,
+   {wie} door het aanspreekpunt en {termijn} door de termijn van vraag 8.
+   ===================================================================== */
+var DEEPFAKE_WERK = 'Beelden, geluid of video die echt lijken maar door AI gemaakt of veranderd zijn, krijgen altijd een vermelding. Dat vraagt de AI Act.';
+var BIJLEREN_WERK = 'Wie AI gebruikt voor zijn werk, krijgt een korte uitleg op maat van hoe hij het gebruikt. Zo ondersteunen we de AI-geletterdheid die artikel 4 van de AI Act vraagt.';
+var NAKIJKEN_WERK = [
+  { id: 'alles', label: 'Alles wat AI maakt, kijken we na', aan: true, tekst: 'We kijken alles na wat AI maakt voor we het gebruiken: feiten, cijfers, namen, datums en bronnen.' },
+  { id: 'buiten', label: 'Wat naar buiten gaat, kijken we altijd na', tekst: 'Wat naar buiten gaat, kijken we altijd na: feiten, cijfers, namen, datums en bronnen.' }
+];
+var FOUT_WERK = [
+  { id: 'melden', label: 'Melden aan het aanspreekpunt, zonder schuldvraag', aan: true, tekst: 'Twijfel je of liep er iets mis? Meld het aan {wie}. Een fout melden is geen schuld bekennen: zo leren we allemaal.' },
+  { id: 'meteen', label: 'Dezelfde dag melden als er gegevens in een tool terechtkwamen', tekst: 'Kwamen er gegevens in een AI-tool terecht die er niet in hoorden? Meld het dezelfde dag aan {wie}. Een fout melden is geen schuld bekennen.' }
+];
+function termijnen(lijst, standaard) {
+  return lijst.map(function (m) {
+    return { id: String(m), label: m === 12 ? 'Na een jaar' : 'Na ' + m + (m === 1 ? ' maand' : ' maanden'), aan: m === standaard, maanden: m };
+  });
+}
+
+var REGELS = {
+  werk: {
+    naam: 'Op het werk',
+    uitleg: 'Een bedrijf, organisatie, school als werkgever of zelfstandige met personeel',
+    titel: 'Onze afspraken over AI',
+    naamLabel: 'Naam van de organisatie of het team',
+    nieuw: 'Elke nieuwe collega krijgt deze kaart.',
+    vragen: [
+      { id: 'tools', type: 'een', vraag: 'Welke AI-tools gebruiken we?', kop: 'Deze AI-tools gebruiken we', opties: [
+        { id: 'lijst', label: 'Alleen de tools die we samen kozen', aan: true, tekst: 'We gebruiken alleen deze tools: {tools}. Een andere tool? Eerst vragen aan {wie}.' },
+        { id: 'zakelijk', label: 'Alleen tools met een zakelijk account van de organisatie', tekst: 'We gebruiken alleen AI-tools met een zakelijk account van de organisatie, niet onze persoonlijke accounts. Nu zijn dat: {tools}.' },
+        { id: 'vrij', label: 'Gratis tools mogen, maar alleen zonder gegevens van anderen', tekst: 'Gratis of persoonlijke AI-tools mogen, maar alleen voor taken zonder gegevens van klanten, collega\'s of de organisatie.' }
+      ] },
+      { id: 'erin', type: 'meer', vraag: 'Wat zetten we nooit in een AI-tool?', kop: 'Dit zetten we nooit in een AI-tool', opties: [
+        { id: 'personen', label: 'Persoonsgegevens van klanten of collega\'s', aan: true, tekst: 'Persoonsgegevens van klanten of collega\'s: namen, adressen, telefoonnummers, rijksregisternummers.' },
+        { id: 'gevoelig', label: 'Gegevens over gezondheid, geld of afkomst', aan: true, tekst: 'Gegevens over gezondheid, geld of afkomst van wie dan ook.' },
+        { id: 'vertrouwelijk', label: 'Vertrouwelijke documenten', aan: true, tekst: 'Vertrouwelijke documenten: contracten, offertes, personeelsdossiers.' },
+        { id: 'intern', label: 'Cijfers en plannen die nog niet openbaar zijn', aan: true, tekst: 'Interne cijfers en plannen die nog niet openbaar zijn.' },
+        { id: 'wachtwoord', label: 'Wachtwoorden en toegangscodes', aan: true, tekst: 'Wachtwoorden, toegangscodes en sleutels.' }
+      ] },
+      { id: 'wel', type: 'meer', vraag: 'Waarvoor gebruiken we AI wel?', kop: 'Hiervoor gebruiken we AI wel', opties: [
+        { id: 'schrijven', label: 'Een eerste versie van een tekst of mail', aan: true, tekst: 'Een eerste versie van een tekst of mail.' },
+        { id: 'samenvatten', label: 'Openbare of eigen teksten samenvatten', aan: true, tekst: 'Openbare of eigen teksten samenvatten.' },
+        { id: 'eenvoudig', label: 'Een tekst eenvoudiger of korter maken', aan: true, tekst: 'Een tekst eenvoudiger of korter maken.' },
+        { id: 'ideeen', label: 'Ideeën verzamelen en brainstormen', aan: true, tekst: 'Ideeën verzamelen en brainstormen.' },
+        { id: 'vertalen', label: 'Teksten zonder persoonsgegevens vertalen', aan: true, tekst: 'Teksten zonder persoonsgegevens vertalen.' },
+        { id: 'formules', label: 'Formules, scripts of macro\'s laten voorstellen', tekst: 'Formules, scripts of macro\'s laten voorstellen, die we zelf testen.' }
+      ] },
+      { id: 'nooit', type: 'meer', vraag: 'Waarvoor gebruiken we AI nooit?', kop: 'Hiervoor gebruiken we geen AI', opties: [
+        { id: 'beslissen', label: 'Beslissingen over mensen zonder dat een mens beslist', aan: true, tekst: 'Beslissingen over mensen (aanwerving, beoordeling, ontslag) zonder dat een mens beslist.' },
+        { id: 'advies', label: 'Juridisch, medisch of financieel advies zonder nazicht', aan: true, tekst: 'Juridisch, medisch of financieel advies dat niemand met kennis van zaken naleest.' },
+        { id: 'moeilijk', label: 'Gesprekken met mensen in een moeilijke situatie', aan: true, tekst: 'Gesprekken met mensen in een moeilijke situatie.' },
+        { id: 'doenalsof', label: 'Doen alsof een mens antwoordt terwijl het AI is', aan: true, tekst: 'Doen alsof een mens antwoordt terwijl het AI is.' }
+      ] },
+      { id: 'nakijken', type: 'een', vraag: 'Hoe kijken we na wat AI maakt?', kop: 'Dit doen we altijd', slot: 'Wie iets verstuurt of publiceert, is er verantwoordelijk voor, niet de tool.', opties: NAKIJKEN_WERK },
+      { id: 'vermelden', type: 'een', vraag: 'Wanneer zeggen we dat AI meedeed?', kop: 'Hier zeggen we dat AI meedeed', vast: DEEPFAKE_WERK, opties: [
+        { id: 'altijd', label: 'Bij teksten voor klanten of publiek: altijd', tekst: 'Bij teksten voor klanten of publiek vermelden we het altijd.' },
+        { id: 'groot', label: 'Bij teksten: als AI een groot deel schreef', aan: true, tekst: 'Bij teksten voor klanten of publiek vermelden we het als AI een groot deel schreef.' },
+        { id: 'nagelezen', label: 'Bij teksten: niet apart, een mens leest alles na', tekst: 'Bij teksten vermelden we het niet apart: een mens leest alles na en neemt er de verantwoordelijkheid voor.' }
+      ] },
+      { id: 'fout', type: 'een', vraag: 'Wat doen we bij twijfel of een fout?', kop: 'Twijfel of een fout?', opties: FOUT_WERK },
+      { id: 'herbekijken', type: 'een', vraag: 'Wanneer bekijken we de afspraken opnieuw?', kop: 'Bijleren en opnieuw bekijken', slot: BIJLEREN_WERK, opties: termijnen([3, 6, 12], 6) }
+    ]
+  },
+
+  gemeente: {
+    naam: 'In de gemeente',
+    uitleg: 'Medewerkers van een gemeente, OCMW of ander lokaal bestuur',
+    titel: 'Onze afspraken over AI',
+    naamLabel: 'Naam van het bestuur of de dienst',
+    nieuw: 'Elke nieuwe collega krijgt deze kaart.',
+    vragen: [
+      { id: 'tools', type: 'een', vraag: 'Welke AI-tools gebruiken we?', kop: 'Deze AI-tools gebruiken we', opties: [
+        { id: 'lijst', label: 'Alleen de tools die het bestuur koos', aan: true, tekst: 'We gebruiken alleen deze tools: {tools}. Een andere tool? Eerst vragen aan {wie}.' },
+        { id: 'overeenkomst', label: 'Alleen tools waarvoor het bestuur een overeenkomst heeft', tekst: 'We gebruiken alleen AI-tools waarvoor het bestuur een overeenkomst heeft, met ons werkaccount. Nu zijn dat: {tools}.' },
+        { id: 'openbaar', label: 'Gratis publieke tools alleen met openbare informatie', tekst: 'Gratis publieke AI-tools gebruiken we alleen met informatie die al openbaar is: de website, publicaties, openbare besluiten.' }
+      ] },
+      { id: 'erin', type: 'meer', vraag: 'Wat zetten we nooit in een AI-tool?', kop: 'Dit zetten we nooit in een AI-tool', opties: [
+        { id: 'inwoners', label: 'Gegevens van inwoners', aan: true, tekst: 'Gegevens van inwoners: namen, adressen, rijksregisternummers, dossiernummers.' },
+        { id: 'dossiers', label: 'Sociale dossiers en gegevens van burgerzaken', aan: true, tekst: 'Alles uit sociale dossiers en van de dienst burgerzaken.' },
+        { id: 'nietopenbaar', label: 'Niet-openbare stukken van college of raad', aan: true, tekst: 'Niet-openbare stukken van college of raad, en stukken in voorbereiding.' },
+        { id: 'personeel', label: 'Gegevens van collega\'s en personeelsdossiers', aan: true, tekst: 'Gegevens van collega\'s en personeelsdossiers.' },
+        { id: 'wachtwoord', label: 'Wachtwoorden en toegangscodes', aan: true, tekst: 'Wachtwoorden en toegangscodes.' }
+      ] },
+      { id: 'wel', type: 'meer', vraag: 'Waarvoor gebruiken we AI wel?', kop: 'Hiervoor gebruiken we AI wel', opties: [
+        { id: 'klaretaal', label: 'Een tekst in klare taal herschrijven', aan: true, tekst: 'Een tekst in klare taal herschrijven.' },
+        { id: 'eersteversie', label: 'Een eerste versie van een bericht of brief zonder persoonsgegevens', aan: true, tekst: 'Een eerste versie van een nieuwsbericht of brief, zonder persoonsgegevens.' },
+        { id: 'samenvatten', label: 'Openbare documenten samenvatten', aan: true, tekst: 'Openbare documenten samenvatten.' },
+        { id: 'vertalen', label: 'Algemene informatie vertalen voor anderstalige inwoners', aan: true, tekst: 'Algemene informatie vertalen voor anderstalige inwoners, nagelezen voor we ze publiceren.' },
+        { id: 'ideeen', label: 'Ideeën voor een campagne of activiteit', aan: true, tekst: 'Ideeën verzamelen voor een campagne of activiteit.' }
+      ] },
+      { id: 'nooit', type: 'meer', vraag: 'Waarvoor gebruiken we AI nooit?', kop: 'Hiervoor gebruiken we geen AI', opties: [
+        { id: 'beslissen', label: 'Beslissen over aanvragen, steun, vergunningen of boetes', aan: true, tekst: 'Beslissen over aanvragen, steun, vergunningen of boetes.' },
+        { id: 'chatbot', label: 'Een chatbot laten antwoorden zonder te zeggen dat het een chatbot is', aan: true, tekst: 'Een inwoner laten antwoorden door een chatbot zonder te zeggen dat het een chatbot is.' },
+        { id: 'juridisch', label: 'Juridische adviezen zonder nazicht door de juridische dienst', aan: true, tekst: 'Juridische adviezen die de juridische dienst niet naleest.' },
+        { id: 'kwetsbaar', label: 'Gesprekken met inwoners in een kwetsbare situatie', aan: true, tekst: 'Gesprekken met inwoners in een kwetsbare situatie.' }
+      ] },
+      { id: 'nakijken', type: 'een', vraag: 'Hoe kijken we na wat AI maakt?', kop: 'Dit doen we altijd', slot: 'Wie iets verstuurt of publiceert, is er verantwoordelijk voor, niet de tool.', opties: [
+        { id: 'alles', label: 'Alles wat AI maakt, kijken we na', aan: true, tekst: 'We kijken alles na wat AI maakt voor we het gebruiken: feiten, cijfers, namen, datums, regels en bronnen.' },
+        { id: 'buiten', label: 'Wat naar inwoners of de raad gaat, kijken we altijd na', tekst: 'Wat naar inwoners, partners of de raad gaat, kijken we altijd na: feiten, cijfers, namen, datums, regels en bronnen.' }
+      ] },
+      { id: 'vermelden', type: 'een', vraag: 'Wanneer zeggen we dat AI meedeed?', kop: 'Hier zeggen we dat AI meedeed', vast: DEEPFAKE_WERK, opties: [
+        { id: 'altijd', label: 'Bij teksten voor inwoners: altijd', tekst: 'Bij teksten voor inwoners vermelden we het altijd.' },
+        { id: 'groot', label: 'Bij teksten: als AI een groot deel schreef', aan: true, tekst: 'Bij teksten voor inwoners vermelden we het als AI een groot deel schreef.' },
+        { id: 'nagelezen', label: 'Bij teksten: niet apart, een mens leest alles na', tekst: 'Bij teksten vermelden we het niet apart: een mens leest alles na en neemt er de verantwoordelijkheid voor.' }
+      ] },
+      { id: 'fout', type: 'een', vraag: 'Wat doen we bij twijfel of een fout?', kop: 'Twijfel of een fout?', opties: [
+        { id: 'melden', label: 'Melden aan het aanspreekpunt, zonder schuldvraag', aan: true, tekst: 'Twijfel je of liep er iets mis? Meld het aan {wie}. Een fout melden is geen schuld bekennen: zo leren we allemaal.' },
+        { id: 'dpo', label: 'Bij gegevens van inwoners: meteen ook de DPO verwittigen', tekst: 'Twijfel je of liep er iets mis? Meld het aan {wie}. Kwamen er gegevens van inwoners in een AI-tool terecht? Verwittig dan dezelfde dag ook de functionaris voor gegevensbescherming (DPO). Een fout melden is geen schuld bekennen.' }
+      ] },
+      { id: 'herbekijken', type: 'een', vraag: 'Wanneer bekijken we de afspraken opnieuw?', kop: 'Bijleren en opnieuw bekijken', slot: BIJLEREN_WERK, opties: termijnen([3, 6, 12], 6) }
+    ]
+  },
+
+  vereniging: {
+    naam: 'In de vereniging',
+    uitleg: 'Bestuur en vrijwilligers van een club, jeugdbeweging of vzw',
+    titel: 'Onze afspraken over AI',
+    naamLabel: 'Naam van de vereniging',
+    nieuw: 'Elke nieuwe bestuurder of vrijwilliger krijgt deze kaart.',
+    vragen: [
+      { id: 'tools', type: 'een', vraag: 'Welke AI-tools gebruiken we?', kop: 'Deze AI-tools gebruiken we', opties: [
+        { id: 'lijst', label: 'Alleen de tools die we samen kozen', aan: true, tekst: 'Voor de vereniging gebruiken we alleen deze tools: {tools}. Een andere tool? Eerst vragen aan {wie}.' },
+        { id: 'vrij', label: 'Ieder zijn eigen tools, maar zonder gegevens van leden', tekst: 'Iedereen mag zijn eigen AI-tools gebruiken voor de vereniging, maar nooit met gegevens van leden.' },
+        { id: 'pertaak', label: 'We spreken per taak af welke tool', tekst: 'We spreken per taak af welke AI-tool we gebruiken. {wie} beslist bij twijfel.' }
+      ] },
+      { id: 'erin', type: 'meer', vraag: 'Wat zetten we nooit in een AI-tool?', kop: 'Dit zetten we nooit in een AI-tool', opties: [
+        { id: 'leden', label: 'Ledenlijsten en gegevens van leden', aan: true, tekst: 'Ledenlijsten en gegevens van leden: namen, adressen, telefoonnummers, geboortedatums.' },
+        { id: 'fotos', label: 'Foto\'s van leden, zeker van kinderen', aan: true, tekst: 'Foto\'s van leden, zeker van kinderen.' },
+        { id: 'gevoelig', label: 'Gegevens over gezondheid of geld van leden', aan: true, tekst: 'Gegevens over gezondheid of geld van leden.' },
+        { id: 'wachtwoord', label: 'Wachtwoorden van website, sociale media of bank', aan: true, tekst: 'Wachtwoorden van de website, sociale media of de bank.' },
+        { id: 'intern', label: 'Verslagen en financiën die nog niet gedeeld mogen worden', aan: true, tekst: 'Verslagen en financiën die nog niet gedeeld mogen worden.' }
+      ] },
+      { id: 'wel', type: 'meer', vraag: 'Waarvoor gebruiken we AI wel?', kop: 'Hiervoor gebruiken we AI wel', opties: [
+        { id: 'uitnodiging', label: 'Een uitnodiging, affiche of bericht voor sociale media', aan: true, tekst: 'Een uitnodiging, affiche of bericht voor sociale media.' },
+        { id: 'verslag', label: 'Een verslag uitschrijven uit eigen notities', aan: true, tekst: 'Een verslag uitschrijven uit eigen notities, zonder gegevens van leden.' },
+        { id: 'ideeen', label: 'Ideeën voor activiteiten', aan: true, tekst: 'Ideeën verzamelen voor activiteiten.' },
+        { id: 'subsidie', label: 'Een eerste versie van een subsidieaanvraag', aan: true, tekst: 'Een eerste versie van een subsidieaanvraag, die het bestuur naleest.' },
+        { id: 'vertalen', label: 'Teksten vertalen', tekst: 'Teksten vertalen.' }
+      ] },
+      { id: 'nooit', type: 'meer', vraag: 'Waarvoor gebruiken we AI nooit?', kop: 'Hiervoor gebruiken we geen AI', opties: [
+        { id: 'beslissen', label: 'Beslissen wie lid wordt of steun krijgt', aan: true, tekst: 'Beslissen wie lid wordt, meedoet of steun krijgt.' },
+        { id: 'beelden', label: 'Beelden van echte mensen maken of aanpassen zonder toestemming', aan: true, tekst: 'Beelden of stemmen van echte mensen maken of aanpassen zonder hun toestemming.' },
+        { id: 'naam', label: 'Berichten sturen in naam van iemand die het niet weet', aan: true, tekst: 'Berichten sturen in naam van iemand die het niet weet.' },
+        { id: 'persoonlijk', label: 'Gesprekken over persoonlijke problemen van leden', aan: true, tekst: 'Gesprekken over persoonlijke problemen van leden.' }
+      ] },
+      { id: 'nakijken', type: 'een', vraag: 'Hoe kijken we na wat AI maakt?', kop: 'Dit doen we altijd', slot: 'Wie iets verstuurt of publiceert, is er verantwoordelijk voor, niet de tool.', opties: [
+        { id: 'alles', label: 'Alles wat AI maakt, kijken we na', aan: true, tekst: 'We kijken alles na wat AI maakt voor we het gebruiken: data, uren, plaatsen, namen en bedragen.' },
+        { id: 'buiten', label: 'Wat naar leden of publiek gaat, kijken we altijd na', tekst: 'Wat naar leden, ouders of publiek gaat, kijken we altijd na: data, uren, plaatsen, namen en bedragen.' }
+      ] },
+      { id: 'vermelden', type: 'een', vraag: 'Wanneer zeggen we dat AI meedeed?', kop: 'Hier zeggen we dat AI meedeed', vast: DEEPFAKE_WERK, opties: [
+        { id: 'altijd', label: 'Bij teksten en affiches: altijd', tekst: 'Bij teksten en affiches vermelden we het altijd.' },
+        { id: 'groot', label: 'Bij teksten: als AI een groot deel maakte', aan: true, tekst: 'Bij teksten en affiches vermelden we het als AI een groot deel maakte.' },
+        { id: 'nagelezen', label: 'Bij teksten: niet apart, een mens leest alles na', tekst: 'Bij teksten vermelden we het niet apart: iemand van het bestuur leest alles na.' }
+      ] },
+      { id: 'fout', type: 'een', vraag: 'Wat doen we bij twijfel of een fout?', kop: 'Twijfel of een fout?', opties: [
+        { id: 'melden', label: 'Melden aan het aanspreekpunt, zonder schuldvraag', aan: true, tekst: 'Twijfel je of liep er iets mis? Meld het aan {wie}. Een fout melden is geen schuld bekennen: zo leren we allemaal.' },
+        { id: 'meteen', label: 'Meteen melden als er gegevens van leden in een tool terechtkwamen', tekst: 'Kwamen er gegevens van leden in een AI-tool terecht? Meld het meteen aan {wie}. Een fout melden is geen schuld bekennen.' }
+      ] },
+      { id: 'herbekijken', type: 'een', vraag: 'Wanneer bekijken we de afspraken opnieuw?', kop: 'Bijleren en opnieuw bekijken', slot: 'Wie voor de vereniging AI gebruikt, krijgt een korte uitleg op maat van hoe hij het gebruikt.', opties: termijnen([3, 6, 12], 12) }
+    ]
+  },
+
+  klas: {
+    naam: 'In de klas',
+    uitleg: 'Een leraar met een klas, lager of secundair onderwijs',
+    titel: 'Onze klasafspraken over AI',
+    naamLabel: 'Klas, vak of school',
+    wieLabel: 'Bij wie kunnen leerlingen terecht?',
+    wieHulp: 'Bijvoorbeeld: meester Tom, juf Sara of de leerlingbegeleiding.',
+    nieuw: 'Een nieuwe leerling krijgt deze kaart.',
+    vragen: [
+      { id: 'tools', type: 'een', vraag: 'Welke AI-tools gebruiken we in de klas?', kop: 'Deze AI-tools gebruiken we', opties: [
+        { id: 'school', label: 'Alleen de tools die de school aanbiedt', aan: true, tekst: 'We gebruiken alleen de AI-tools die de school aanbiedt: {tools}.' },
+        { id: 'opdracht', label: 'Alleen de tools die de leraar bij een opdracht noemt', tekst: 'We gebruiken alleen de AI-tools die de leraar bij een opdracht noemt.' },
+        { id: 'geen', label: 'Geen AI-tools, tenzij de leraar het anders zegt', tekst: 'In deze klas gebruiken we geen AI-tools, tenzij de leraar het bij een opdracht anders zegt.' }
+      ] },
+      { id: 'erin', type: 'meer', vraag: 'Wat zet je nooit in een AI-tool?', kop: 'Dit zet je nooit in een AI-tool', opties: [
+        { id: 'jezelf', label: 'Je naam, adres, telefoonnummer of school', aan: true, tekst: 'Je volledige naam, adres, telefoonnummer of school.' },
+        { id: 'fotos', label: 'Foto\'s van jezelf, klasgenoten of leraren', aan: true, tekst: 'Foto\'s van jezelf, klasgenoten of leraren.' },
+        { id: 'vertrouwen', label: 'Wat iemand je in vertrouwen vertelde', aan: true, tekst: 'Wat een klasgenoot of vriend je in vertrouwen vertelde.' },
+        { id: 'punten', label: 'Punten, rapporten of toetsen van anderen', aan: true, tekst: 'Punten, rapporten of toetsen van anderen.' },
+        { id: 'wachtwoord', label: 'Wachtwoorden', aan: true, tekst: 'Wachtwoorden en codes.' }
+      ] },
+      { id: 'wel', type: 'meer', vraag: 'Waarvoor mag AI?', kop: 'Hiervoor mag AI, als de opdracht het toelaat', vast: 'De leraar zegt bij elke opdracht hoeveel AI mag: geen AI, AI voor ideeën, AI als hulp met vermelding, of AI vrij.', opties: [
+        { id: 'uitleg', label: 'Uitleg vragen over iets wat je niet begrijpt', aan: true, tekst: 'Uitleg vragen over iets wat je niet begrijpt.' },
+        { id: 'oefenen', label: 'Oefenvragen maken om te leren', aan: true, tekst: 'Oefenvragen laten maken om mee te leren.' },
+        { id: 'ideeen', label: 'Ideeën zoeken om mee te starten', aan: true, tekst: 'Ideeën zoeken om mee te starten.' },
+        { id: 'taal', label: 'Je eigen tekst laten nakijken op taalfouten', aan: true, tekst: 'Je eigen tekst laten nakijken op taalfouten.' },
+        { id: 'bron', label: 'Een bron zoeken, die je zelf nakijkt', tekst: 'Een bron zoeken, die je daarna zelf nakijkt.' }
+      ] },
+      { id: 'nooit', type: 'meer', vraag: 'Waarvoor gebruik je AI nooit?', kop: 'Hiervoor gebruik je geen AI', opties: [
+        { id: 'indienen', label: 'Een taak of toets laten maken en indienen als eigen werk', aan: true, tekst: 'Een taak of toets laten maken en indienen als je eigen werk.' },
+        { id: 'beelden', label: 'Beelden of filmpjes maken van echte mensen', aan: true, tekst: 'Beelden, stemmen of filmpjes maken van echte mensen, ook niet voor de grap.' },
+        { id: 'pesten', label: 'Pesten, beledigen of iemand nadoen', aan: true, tekst: 'Iemand pesten, beledigen of nadoen.' },
+        { id: 'zorgen', label: 'Als enige gesprekspartner bij zorgen of verdriet', aan: true, tekst: 'Als enige gesprekspartner bij zorgen of verdriet: daarvoor ga je naar een mens, op school of thuis.' }
+      ] },
+      { id: 'nakijken', type: 'een', vraag: 'Hoe kijk je na wat AI zegt?', kop: 'Dit doe je altijd', opties: [
+        { id: 'tweede', label: 'Feiten nakijken in een tweede bron', aan: true, tekst: 'AI kan heel zeker klinken en toch fout zijn. Feiten kijk je na in een tweede bron, en je kunt uitleggen wat je indient.' },
+        { id: 'mondeling', label: 'Feiten nakijken, en je werk mondeling kunnen uitleggen', tekst: 'AI kan heel zeker klinken en toch fout zijn. Feiten kijk je na in een tweede bron. De leraar kan je vragen je werk mondeling uit te leggen.' }
+      ] },
+      { id: 'vermelden', type: 'een', vraag: 'Hoe zeg je dat je AI gebruikte?', kop: 'Zo zeg je dat je AI gebruikte', vast: 'De leraar gebruikt een AI-detector nooit als enig bewijs.', opties: [
+        { id: 'zin', label: 'Een zin onderaan de taak', aan: true, tekst: 'Onderaan je taak schrijf je: "Ik gebruikte [tool] om [waarvoor]."' },
+        { id: 'gesprek', label: 'Je bewaart het gesprek met de chatbot', tekst: 'Je bewaart je gesprek met de chatbot en toont het als de leraar erom vraagt.' },
+        { id: 'allebei', label: 'Allebei', tekst: 'Onderaan je taak schrijf je: "Ik gebruikte [tool] om [waarvoor]." En je bewaart je gesprek met de chatbot, om te tonen als de leraar erom vraagt.' }
+      ] },
+      { id: 'fout', type: 'een', vraag: 'Wat doe je bij twijfel of als het misliep?', kop: 'Twijfel, of liep het mis?', opties: [
+        { id: 'tweedekans', label: 'Eerlijk zeggen geeft een nieuwe kans', aan: true, tekst: 'Twijfel je of iets mag? Vraag het aan {wie}. Wie eerlijk zegt dat het misliep, krijgt een nieuwe kans.' },
+        { id: 'voorindienen', label: 'Vragen voor je indient', tekst: 'Twijfel je of iets mag? Vraag het aan {wie} voor je de opdracht indient.' }
+      ] },
+      { id: 'herbekijken', type: 'een', vraag: 'Wanneer bekijken we de afspraken opnieuw?', kop: 'Opnieuw bekijken', slot: 'De leraar legt uit waarom deze afspraken er zijn; je mag altijd vragen waarom.', opties: termijnen([1, 3, 6], 3) }
+    ]
+  },
+
+  gezin: {
+    naam: 'Thuis',
+    uitleg: 'Ouders en kinderen, of iedereen die samenwoont',
+    titel: 'Onze afspraken thuis over AI',
+    naamLabel: 'Naam van het gezin (mag leeg blijven)',
+    wieLabel: 'Bij wie kun je terecht?',
+    wieHulp: 'Bijvoorbeeld: mama, papa of oma.',
+    nieuw: '',
+    vragen: [
+      { id: 'tools', type: 'een', vraag: 'Welke AI-apps gebruiken we?', kop: 'Deze AI-apps gebruiken we', opties: [
+        { id: 'samen', label: 'Alleen apps die we samen kozen', aan: true, tekst: 'We gebruiken alleen deze AI-apps: {tools}. Een nieuwe app vragen we eerst.' },
+        { id: 'vragen', label: 'Een nieuwe AI-app vragen we eerst', tekst: 'Voor je een nieuwe AI-app gebruikt, vraag je het eerst aan {wie}.' },
+        { id: 'begeleid', label: 'AI gebruiken we samen met een volwassene', tekst: 'AI gebruiken we samen met een volwassene erbij.' }
+      ] },
+      { id: 'erin', type: 'meer', vraag: 'Wat zet je nooit in een AI-app?', kop: 'Dit zet je nooit in een AI-app', opties: [
+        { id: 'jezelf', label: 'Je volledige naam, adres, school of telefoonnummer', aan: true, tekst: 'Je volledige naam, adres, school of telefoonnummer.' },
+        { id: 'fotos', label: 'Foto\'s of filmpjes van jezelf of anderen', aan: true, tekst: 'Foto\'s of filmpjes van jezelf of anderen.' },
+        { id: 'geheimen', label: 'Geheimen van vrienden of familie', aan: true, tekst: 'Geheimen van vrienden of familie.' },
+        { id: 'wachtwoord', label: 'Wachtwoorden en codes', aan: true, tekst: 'Wachtwoorden en codes.' },
+        { id: 'bank', label: 'Gegevens van een bankkaart', aan: true, tekst: 'Gegevens van een bankkaart.' }
+      ] },
+      { id: 'wel', type: 'meer', vraag: 'Waarvoor gebruiken we AI wel?', kop: 'Hiervoor gebruiken we AI wel', opties: [
+        { id: 'huiswerk', label: 'Uitleg vragen bij huiswerk', aan: true, tekst: 'Uitleg vragen bij huiswerk. Het huiswerk zelf maak je zelf.' },
+        { id: 'ontdekken', label: 'Samen iets leren of ontdekken', aan: true, tekst: 'Samen iets leren of ontdekken.' },
+        { id: 'fun', label: 'Een verhaal of tekening maken voor de fun', aan: true, tekst: 'Een verhaal of tekening maken voor de fun.' },
+        { id: 'taal', label: 'Oefenen in een andere taal', tekst: 'Oefenen in een andere taal.' },
+        { id: 'plannen', label: 'Ideeën voor een uitstap, recept of cadeau', tekst: 'Ideeën zoeken voor een uitstap, recept of cadeau.' }
+      ] },
+      { id: 'nooit', type: 'meer', vraag: 'Waarvoor gebruiken we AI nooit?', kop: 'Hiervoor gebruiken we geen AI', opties: [
+        { id: 'huiswerk', label: 'Huiswerk laten maken en indienen als eigen werk', aan: true, tekst: 'Huiswerk laten maken en indienen als je eigen werk.' },
+        { id: 'beelden', label: 'Beelden van echte mensen maken of veranderen', aan: true, tekst: 'Beelden of stemmen van echte mensen maken of veranderen, ook niet voor de grap.' },
+        { id: 'zorgen', label: 'Met zorgen of verdriet alleen naar een chatbot gaan', aan: true, tekst: 'Met zorgen of verdriet alleen naar een chatbot gaan. Daarvoor praat je met {wie} of een andere volwassene die je vertrouwt.' },
+        { id: 'kopen', label: 'Iets kopen of je ergens inschrijven zonder te vragen', aan: true, tekst: 'Iets kopen of je ergens voor inschrijven zonder het te vragen.' }
+      ] },
+      { id: 'nakijken', type: 'een', vraag: 'Hoe kijken we na wat AI zegt?', kop: 'Dit doen we altijd', opties: [
+        { id: 'tweede', label: 'Wat belangrijk is, vragen we na', aan: true, tekst: 'AI kan heel zeker klinken en toch fout zijn. Wat belangrijk is, kijken we na in een tweede bron of vragen we aan een volwassene.' },
+        { id: 'samen', label: 'Bij twijfel zoeken we het samen op', tekst: 'AI kan heel zeker klinken en toch fout zijn. Twijfel je of iets klopt, dan zoeken we het samen op.' }
+      ] },
+      { id: 'vermelden', type: 'een', vraag: 'Wanneer zeggen we dat AI meedeed?', kop: 'Hier zeggen we dat AI meedeed', vast: 'Lijkt een beeld, stem of filmpje echt maar maakte AI het? Dan zeggen we dat altijd als we het delen.', opties: [
+        { id: 'altijd', label: 'Op school zeg je altijd dat je AI gebruikte', aan: true, tekst: 'Op school zeg je altijd wanneer je AI gebruikte, ook als het mocht.' },
+        { id: 'leraar', label: 'Op school volg je de afspraken van de leraar', tekst: 'Op school volg je de afspraken van de leraar, en je zegt eerlijk wanneer je AI gebruikte.' }
+      ] },
+      { id: 'fout', type: 'een', vraag: 'Iets raars gezien of misgelopen?', kop: 'Iets raars gezien of misgelopen?', opties: [
+        { id: 'vertellen', label: 'Vertellen, zonder straf', aan: true, tekst: 'Vertel het aan {wie}. Je krijgt daar geen straf voor.' },
+        { id: 'meteen', label: 'Meteen vertellen, ook \'s avonds', tekst: 'Vertel het meteen aan {wie}, ook als het \'s avonds is. Samen zoeken we een oplossing, en je krijgt geen straf.' }
+      ] },
+      { id: 'herbekijken', type: 'een', vraag: 'Wanneer bekijken we de afspraken opnieuw?', kop: 'Opnieuw bekijken', slot: 'Ook de volwassenen vertellen eerlijk waarvoor zij AI gebruiken.', opties: termijnen([1, 3, 6], 3) }
+    ]
+  }
+};
+AO.REGELS = REGELS;
+AO.VOLGORDE = ['klas', 'werk', 'gemeente', 'vereniging', 'gezin'];
+AO.VRAAG_IDS = ['tools', 'erin', 'wel', 'nooit', 'nakijken', 'vermelden', 'fout', 'herbekijken'];
+AO.MAX = { n: 80, a: 120, t: 200, x: 300 };
+
+/* =====================================================================
+   LOGICA (zonder pagina, testbaar)
+   ===================================================================== */
+AO.vandaagIso = function () {
+  var d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+};
+AO.standaardKeuzes = function (ctx) {
+  var k = {};
+  REGELS[ctx].vragen.forEach(function (v) {
+    var aan = v.opties.filter(function (o) { return o.aan; }).map(function (o) { return o.id; });
+    k[v.id] = v.type === 'een' ? (aan[0] || v.opties[0].id) : aan;
+  });
+  return k;
+};
+AO.standaardStaat = function (ctx) {
+  ctx = REGELS[ctx] ? ctx : 'werk';
+  return { c: ctx, n: '', d: AO.vandaagIso(), a: '', t: '', x: '', k: AO.standaardKeuzes(ctx) };
+};
+AO.kort = function (s, max) {
+  return String(s == null ? '' : s).replace(/[\u0000-\u001f]/g, ' ').slice(0, max);
+};
+// Houdt alleen geldige keuzes over; ontbrekende vragen krijgen hun standaard.
+AO.zuiver = function (ruw) {
+  if (!ruw || typeof ruw !== 'object' || !REGELS[ruw.c]) return null;
+  var uit = AO.standaardStaat(ruw.c);
+  uit.n = AO.kort(ruw.n, AO.MAX.n);
+  uit.a = AO.kort(ruw.a, AO.MAX.a);
+  uit.t = AO.kort(ruw.t, AO.MAX.t);
+  uit.x = AO.kort(ruw.x, AO.MAX.x);
+  if (/^\d{4}-\d{2}-\d{2}$/.test(ruw.d || '')) uit.d = ruw.d;
+  var k = ruw.k && typeof ruw.k === 'object' ? ruw.k : {};
+  REGELS[ruw.c].vragen.forEach(function (v) {
+    var ids = v.opties.map(function (o) { return o.id; });
+    if (v.type === 'een') {
+      if (ids.indexOf(k[v.id]) >= 0) uit.k[v.id] = k[v.id];
+    } else if (Array.isArray(k[v.id])) {
+      uit.k[v.id] = ids.filter(function (id) { return k[v.id].indexOf(id) >= 0; });
+    }
+  });
+  return uit;
+};
+function naarB64(tekst) {
+  var bytes = new TextEncoder().encode(tekst), bin = '';
+  for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+function vanB64(code) {
+  var s = code.replace(/-/g, '+').replace(/_/g, '/');
+  while (s.length % 4) s += '=';
+  var bin = atob(s), bytes = new Uint8Array(bin.length);
+  for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+AO.codeerStaat = function (staat) {
+  return naarB64(JSON.stringify({ v: 1, c: staat.c, n: staat.n, d: staat.d, a: staat.a, t: staat.t, x: staat.x, k: staat.k }));
+};
+AO.decodeerStaat = function (code) {
+  try {
+    var ruw = JSON.parse(vanB64(code));
+    if (!ruw || ruw.v !== 1) return null;
+    return AO.zuiver(ruw);
+  } catch (fout) { return null; }
+};
+AO.plusMaanden = function (iso, maanden) {
+  var p = iso.split('-').map(Number), j = p[0], m = p[1] - 1 + maanden, d = p[2];
+  j += Math.floor(m / 12); m = m % 12;
+  var laatste = new Date(Date.UTC(j, m + 1, 0)).getUTCDate();
+  return j + '-' + String(m + 1).padStart(2, '0') + '-' + String(Math.min(d, laatste)).padStart(2, '0');
+};
+var MAANDEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+AO.datumLeesbaar = function (iso) {
+  var p = String(iso || '').split('-').map(Number);
+  if (p.length !== 3 || !p[0]) return '';
+  return p[2] + ' ' + MAANDEN[p[1] - 1] + ' ' + p[0];
+};
+function invullen(tekst, staat, ctx) {
+  var wie = staat.a.trim() || (ctx === 'klas' ? 'de leraar' : ctx === 'gezin' ? 'een ouder' : 'het aanspreekpunt');
+  var tools = staat.t.trim() || '[nog in te vullen]';
+  return tekst.replace(/\{wie\}/g, wie).replace(/\{tools\}/g, tools);
+}
+// De kaart als gegevens: titel, ondertitel, aanspreekpunt en acht blokken met regels.
+AO.maakKaart = function (staat) {
+  var r = REGELS[staat.c];
+  var herOptie = null;
+  var blokken = r.vragen.map(function (v) {
+    var gekozen = v.type === 'een' ? [staat.k[v.id]] : staat.k[v.id];
+    var regels = [];
+    if (v.vast) regels.push(v.vast);
+    v.opties.forEach(function (o) {
+      if (gekozen.indexOf(o.id) >= 0) {
+        if (v.id === 'herbekijken') herOptie = o;
+        else regels.push(invullen(o.tekst, staat, staat.c));
+      }
+    });
+    if (v.id === 'herbekijken') {
+      var m = herOptie ? herOptie.maanden : 6;
+      if (r.nieuw) regels.push(r.nieuw);
+      regels.push('We bekijken deze afspraken opnieuw op ' + AO.datumLeesbaar(AO.plusMaanden(staat.d, m)) + ', of eerder als er een nieuwe tool bijkomt.');
+    }
+    if (v.slot) regels.push(invullen(v.slot, staat, staat.c));
+    if (v.type === 'meer' && gekozen.length === 0) regels.push(v.id === 'wel' ? 'Nog niets afgesproken.' : 'Geen afspraak gekozen.');
+    return { kop: v.kop, regels: regels };
+  });
+  var sub = [staat.n.trim(), staat.d ? 'besproken op ' + AO.datumLeesbaar(staat.d) : ''].filter(Boolean).join(' · ');
+  var wieLabel = staat.c === 'klas' || staat.c === 'gezin' ? 'Vragen of twijfels? Je kunt terecht bij: ' : 'Aanspreekpunt voor vragen, twijfels en fouten: ';
+  return {
+    titel: r.titel,
+    sub: sub,
+    wie: staat.a.trim() ? wieLabel + staat.a.trim() : '',
+    blokken: blokken,
+    extra: staat.x.trim(),
+    voet: 'Gemaakt met de Afsprakenkaart van AI Ontcijferd (aiontcijferd.be/afsprakenkaart) · CC BY 4.0 · geen juridisch advies'
+  };
+};
+AO.kaartAlsTekst = function (kaart) {
+  var regels = [kaart.titel.toUpperCase()];
+  if (kaart.sub) regels.push(kaart.sub);
+  if (kaart.wie) regels.push(kaart.wie);
+  kaart.blokken.forEach(function (b, i) {
+    regels.push('', (i + 1) + '. ' + b.kop);
+    b.regels.forEach(function (t) { regels.push('- ' + t); });
+  });
+  if (kaart.extra) regels.push('', 'Ook afgesproken', '- ' + kaart.extra);
+  regels.push('', kaart.voet);
+  return regels.join('\n');
+};
+
+/* =====================================================================
+   INTERFACE
+   ===================================================================== */
+var cfg;
+try { cfg = JSON.parse(document.getElementById('ao-config').textContent); }
+catch (fout) {
+  var kapot = document.createElement('p');
+  kapot.className = 'smal';
+  kapot.textContent = 'De configuratie van deze tool kon niet gelezen worden. Meld dit aan de redactie van AI Ontcijferd.';
+  document.getElementById('start').insertBefore(kapot, document.getElementById('start').firstChild);
+  return;
+}
+AO.cfg = cfg;
+
+var staat = AO.standaardStaat('werk');
+var ingesloten = false;
+try { ingesloten = window.self !== window.top; } catch (f) { ingesloten = true; }
+if (/[?&]embed=1\b/.test(location.search)) ingesloten = true;
+if (ingesloten) document.documentElement.className += ' ingesloten';
+
+function $(id) { return document.getElementById(id); }
+function el(tag, attrs, kinderen) {
+  var n = document.createElement(tag);
+  if (attrs) Object.keys(attrs).forEach(function (k) {
+    var v = attrs[k];
+    if (v == null || v === false) return;
+    if (k === 'tekst') n.textContent = v;
+    else if (k === 'klasse') n.className = v;
+    else if (k.slice(0, 2) === 'on') n.addEventListener(k.slice(2), v);
+    else n.setAttribute(k, v === true ? '' : v);
+  });
+  (kinderen || []).forEach(function (c) { if (c != null) n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+  return n;
+}
+function leeg(n) { while (n.firstChild) n.removeChild(n.firstChild); }
+
+function bouwContexten() {
+  var doos = $('contexten');
+  leeg(doos);
+  AO.VOLGORDE.forEach(function (id) {
+    var r = REGELS[id];
+    var input = el('input', { type: 'radio', name: 'context', value: id, checked: staat.c === id, onchange: function () { kiesContext(id); } });
+    doos.appendChild(el('label', { klasse: 'keuze' + (staat.c === id ? ' gekozen' : '') }, [
+      input, el('span', null, [el('span', { klasse: 'titel', tekst: r.naam }), el('span', { klasse: 'vb', tekst: r.uitleg })])
+    ]));
+  });
+}
+function veld(id, label, waarde, max, hulp, soort, vol) {
+  var invoer = el(soort === 'textarea' ? 'textarea' : 'input', { id: 'v-' + id, maxlength: max, autocomplete: 'off', spellcheck: 'true' });
+  if (soort && soort !== 'textarea') invoer.type = soort;
+  invoer.value = waarde;
+  invoer.addEventListener('input', function () {
+    if (id === 'd') { if (/^\d{4}-\d{2}-\d{2}$/.test(invoer.value)) staat.d = invoer.value; else return; }
+    else staat[id] = AO.kort(invoer.value, max);
+    toonKaart();
+  });
+  return el('div', { klasse: 'veld' + (vol ? ' vol' : '') }, [
+    el('label', { for: 'v-' + id, tekst: label }), invoer, hulp ? el('p', { klasse: 'hulp', tekst: hulp }) : null
+  ]);
+}
+function bouwVelden() {
+  var r = REGELS[staat.c], doos = $('velden');
+  leeg(doos);
+  doos.appendChild(veld('n', r.naamLabel, staat.n, AO.MAX.n, null));
+  doos.appendChild(veld('d', 'Besproken op', staat.d, 10, null, 'date'));
+  doos.appendChild(veld('a', r.wieLabel || 'Aanspreekpunt voor vragen en fouten', staat.a, AO.MAX.a, r.wieHulp || 'Naam en functie, eventueel een mailadres.'));
+  doos.appendChild(veld('t', staat.c === 'gezin' ? 'Welke AI-apps?' : 'Welke AI-tools?', staat.t, AO.MAX.t, 'Komt op de kaart bij vraag 1. Bijvoorbeeld de naam van de chatbot en het soort account.', null));
+  doos.appendChild(veld('x', 'Nog een eigen afspraak (mag leeg blijven)', staat.x, AO.MAX.x, null, 'textarea', true));
+}
+function bouwVragen() {
+  var r = REGELS[staat.c], form = $('f-vragen');
+  leeg(form);
+  r.vragen.forEach(function (v, i) {
+    var fs = el('fieldset', { klasse: 'vraag' }, [
+      el('legend', null, [el('span', { klasse: 'nr', 'aria-hidden': 'true', tekst: String(i + 1) }), v.vraag]),
+      el('p', { klasse: 'hint', tekst: v.type === 'een' ? 'Kies er één.' : 'Kies wat voor jullie geldt.' })
+    ]);
+    if (v.vast) fs.appendChild(el('p', { klasse: 'vast', tekst: 'Staat altijd op de kaart: ' + v.vast }));
+    var keuzes = el('div', { klasse: 'keuzes' });
+    v.opties.forEach(function (o) {
+      var aan = v.type === 'een' ? staat.k[v.id] === o.id : staat.k[v.id].indexOf(o.id) >= 0;
+      var input = el('input', { type: v.type === 'een' ? 'radio' : 'checkbox', name: 'q-' + v.id, value: o.id, checked: aan });
+      var label = el('label', { klasse: 'keuze' + (aan ? ' gekozen' : '') }, [input, el('span', null, [el('span', { klasse: 'titel', tekst: o.label })])]);
+      input.addEventListener('change', function () {
+        if (v.type === 'een') staat.k[v.id] = o.id;
+        else {
+          var lijst = staat.k[v.id].filter(function (x) { return x !== o.id; });
+          if (input.checked) lijst.push(o.id);
+          staat.k[v.id] = v.opties.map(function (x) { return x.id; }).filter(function (x) { return lijst.indexOf(x) >= 0; });
+        }
+        keuzes.querySelectorAll('.keuze').forEach(function (l) { l.classList.toggle('gekozen', l.querySelector('input').checked); });
+        toonKaart();
+      });
+      keuzes.appendChild(label);
+    });
+    fs.appendChild(keuzes);
+    form.appendChild(fs);
+  });
+}
+function toonKaart() {
+  var k = AO.maakKaart(staat), doos = $('kaart');
+  leeg(doos);
+  doos.appendChild(el('h3', { tekst: k.titel }));
+  if (k.sub) doos.appendChild(el('p', { klasse: 'sub', tekst: k.sub }));
+  doos.appendChild(el('p', { klasse: 'wie', tekst: k.wie || ' ' }));
+  var ol = el('ol', { klasse: 'afspraken' });
+  k.blokken.forEach(function (b, i) {
+    ol.appendChild(el('li', null, [
+      el('span', { klasse: 'blokje', 'aria-hidden': 'true', tekst: String(i + 1) }),
+      el('div', null, [el('h4', { tekst: b.kop }), el('ul', null, b.regels.map(function (t) { return el('li', { tekst: t }); }))])
+    ]));
+  });
+  if (k.extra) ol.appendChild(el('li', null, [el('span'), el('div', null, [el('h4', { tekst: 'Ook afgesproken' }), el('ul', null, [el('li', { tekst: k.extra })])])]));
+  doos.appendChild(ol);
+  doos.appendChild(el('p', { klasse: 'voetregel', tekst: k.voet + ' · versie ' + cfg.meta.versie }));
+  meldHoogte();
+}
+function kiesContext(id) {
+  var oud = staat;
+  staat = AO.standaardStaat(id);
+  staat.n = oud.n; staat.d = oud.d; staat.a = oud.a; staat.t = oud.t; staat.x = oud.x;
+  bouwAlles();
+}
+function bouwAlles() {
+  bouwContexten();
+  bouwVelden();
+  bouwVragen();
+  toonKaart();
+}
+
+function basisAdres() {
+  return cfg.meta.canonicalUrl || (location.origin + location.pathname);
+}
+function kopieer(tekst, wat) {
+  var uit = $('uitvoer');
+  uit.hidden = false;
+  leeg(uit);
+  var vak = el('textarea', { readonly: true, 'aria-label': wat });
+  vak.value = tekst;
+  uit.appendChild(el('p', { tekst: wat + ':' }));
+  uit.appendChild(vak);
+  var gelukt = function () { $('kopie-live').textContent = wat + ' gekopieerd.'; uit.appendChild(el('p', { klasse: 'klein', tekst: 'Gekopieerd naar je klembord.' })); meldHoogte(); };
+  var mislukt = function () { vak.focus(); vak.select(); $('kopie-live').textContent = 'Selecteer de tekst en kopieer hem zelf.'; meldHoogte(); };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(tekst).then(gelukt, mislukt);
+  else mislukt();
+}
+function bouwDelen() {
+  $('k-print').addEventListener('click', function () { window.print(); });
+  $('k-link').addEventListener('click', function () { kopieer(basisAdres() + '#p=' + AO.codeerStaat(staat), 'Link met deze kaart'); });
+  $('k-tekst').addEventListener('click', function () { kopieer(AO.kaartAlsTekst(AO.maakKaart(staat)), 'De kaart als tekst'); });
+  $('insluit-code').textContent = '<iframe src="' + (cfg.meta.insluitUrl || basisAdres()) + '?embed=1" title="Afsprakenkaart van AI Ontcijferd" style="width:100%;border:0" height="2600" loading="lazy"></iframe>';
+}
+function bouwBronnen() {
+  var doos = $('bron-inhoud'), vandaag = AO.vandaagIso();
+  leeg(doos);
+  cfg.feiten.forEach(function (f) {
+    var oud = f.laatstGecontroleerd && AO.plusMaanden(f.laatstGecontroleerd, Math.round((cfg.meta.houdbaarheidDagen.feiten || 180) / 30)) < vandaag;
+    var label = f.status !== 'gecontroleerd' ? el('span', { klasse: 'label', tekst: 'Te controleren' })
+      : oud ? el('span', { klasse: 'label', tekst: 'Verouderd' }) : el('span', { klasse: 'label vol', tekst: 'Nagekeken' });
+    var meer = (f.meerBronnen || []).map(function (b) { return el('a', { href: b.url, target: '_blank', rel: 'noopener', tekst: b.naam }); });
+    doos.appendChild(el('div', { klasse: 'bron' }, [
+      el('p', null, [label, f.wat]),
+      el('p', { klasse: 'klein' }, [el('a', { href: f.url, target: '_blank', rel: 'noopener', tekst: f.bron }),
+        ' · nagekeken op ' + AO.datumLeesbaar(f.laatstGecontroleerd) + (f.gecontroleerdDoor === 'model' ? ' door het AI-model, in de bron zelf' : f.gecontroleerdDoor === 'eindredacteur' ? ' door de eindredacteur' : '')]
+        .concat(meer.length ? [' · zie ook: '].concat(meer) : []))
+    ]));
+  });
+  var r = cfg.regels;
+  doos.appendChild(el('div', { klasse: 'bron' }, [
+    el('p', null, [el('span', { klasse: r.status === 'gecontroleerd' ? 'label vol' : 'label', tekst: r.status === 'gecontroleerd' ? 'Nagekeken' : 'Te controleren' }),
+      'De afspraken die je kunt kiezen. ' + r.uitleg + (r.nagekekenDoorEindredacteurOp ? ' Nagekeken door de eindredacteur op ' + AO.datumLeesbaar(r.nagekekenDoorEindredacteurOp) + '.' : ' De eindredacteur heeft ze nog niet nagekeken.')])
+  ]));
+}
+function bouwTransparantie() {
+  var red = cfg.redactie;
+  leeg($('trans-inhoud'));
+  $('trans-inhoud').appendChild(el('p', { tekst: 'Deze tool is ontworpen en geschreven door een AI-model, ' + red.gebouwdMet + ', op ' + AO.datumLeesbaar(red.gebouwdOp) + ', in opdracht van de eindredacteur van AI Ontcijferd, ' + red.eindredacteur + '. ' +
+    (red.nagekekenDoorEindredacteurOp ? 'Hij keek deze versie na op ' + AO.datumLeesbaar(red.nagekekenDoorEindredacteurOp) + '.' : 'Hij heeft deze versie nog niet nagekeken.') }));
+  $('trans-inhoud').appendChild(el('p', { tekst: 'Getest door de redactie: elke context doorlopen, afgedrukt en als link gedeeld. Nog geen feedback van gebruikers. De tool doet geen enkel netwerkverzoek: een beveiligingsinstelling in de pagina blokkeert elke verbinding naar buiten.' }));
+  $('stand').textContent = 'Versie ' + cfg.meta.versie + ' · bijgewerkt op ' + AO.datumLeesbaar(cfg.meta.configBijgewerktOp) + ' · CC BY 4.0';
+  $('voet-tekst').textContent = 'AI Ontcijferd · aiontcijferd.be · CC BY 4.0 · versie ' + cfg.meta.versie + ' · bijgewerkt op ' + AO.datumLeesbaar(cfg.meta.configBijgewerktOp) + ' · geen juridisch advies';
+}
+function leesHash() {
+  var m = /[#&]p=([A-Za-z0-9_-]+)/.exec(location.hash);
+  if (!m) return false;
+  var gelezen = AO.decodeerStaat(m[1]);
+  if (!gelezen) return false;
+  staat = gelezen;
+  return true;
+}
+function meldHoogte() {
+  if (!ingesloten || !window.parent || window.parent === window) return;
+  try { window.parent.postMessage({ type: 'ao-afsprakenkaart-hoogte', hoogte: document.documentElement.scrollHeight }, '*'); } catch (f) { /* geen ouder */ }
+}
+
+/* =====================================================================
+   TESTS. Draaien in het verborgen testpaneel (Ctrl+Shift+T of #test).
+   ===================================================================== */
+AO.tests = function () {
+  var uit = [];
+  function test(naam, fn) {
+    var ok = false, uitleg = '';
+    try { var r = fn(); ok = r === true; if (!ok) uitleg = String(r); } catch (f) { uitleg = f.message; }
+    uit.push({ naam: naam, ok: ok, uitleg: uitleg });
+  }
+  test('De configuratie heeft een versie en een datum', function () { return !!(cfg.meta.versie && /^\d{4}-\d{2}-\d{2}$/.test(cfg.meta.configBijgewerktOp)); });
+  test('Elk feit heeft een bron, url, datum en geldige status', function () {
+    return cfg.feiten.every(function (f) {
+      return f.bron && /^https:\/\//.test(f.url) && /^\d{4}-\d{2}-\d{2}$/.test(f.laatstGecontroleerd) && cfg.meta.toegestaneStatussen.indexOf(f.status) >= 0 &&
+        (f.status !== 'gecontroleerd' || cfg.meta.toegestaneControleurs.indexOf(f.gecontroleerdDoor) >= 0);
+    }) || 'een feit mist iets';
+  });
+  test('Er zijn vijf contexten', function () { return AO.VOLGORDE.length === 5 && AO.VOLGORDE.every(function (c) { return !!REGELS[c]; }); });
+  AO.VOLGORDE.forEach(function (c) {
+    test(c + ': acht vragen in de vaste volgorde', function () { return REGELS[c].vragen.map(function (v) { return v.id; }).join() === AO.VRAAG_IDS.join() || REGELS[c].vragen.map(function (v) { return v.id; }).join(); });
+    test(c + ': elke optie heeft een uniek id, een label en een kaarttekst', function () {
+      return REGELS[c].vragen.every(function (v) {
+        var ids = v.opties.map(function (o) { return o.id; });
+        return ids.length >= 2 && ids.length === new Set(ids).size && v.opties.every(function (o) { return o.label && (o.tekst || o.maanden); });
+      });
+    });
+    test(c + ': elke vraag met één keuze heeft precies één standaard', function () {
+      return REGELS[c].vragen.filter(function (v) { return v.type === 'een'; }).every(function (v) { return v.opties.filter(function (o) { return o.aan; }).length === 1; });
+    });
+    test(c + ': de kaart heeft acht blokken en niets is leeg', function () {
+      var k = AO.maakKaart(AO.standaardStaat(c));
+      return k.blokken.length === 8 && k.blokken.every(function (b) { return b.kop && b.regels.length > 0 && b.regels.every(function (t) { return t && t.indexOf('{') < 0; }); });
+    });
+    test(c + ': de kaart zegt wanneer ze opnieuw bekeken wordt', function () {
+      return AO.maakKaart(AO.standaardStaat(c)).blokken[7].regels.some(function (t) { return /opnieuw op \d+ \w+ \d{4}/.test(t); });
+    });
+  });
+  test('Werk, gemeente en vereniging noemen de AI Act bij deepfakes; klas en gezin niet als plicht', function () {
+    var ok = ['werk', 'gemeente', 'vereniging'].every(function (c) { return /AI Act/.test(AO.maakKaart(AO.standaardStaat(c)).blokken[5].regels[0]); });
+    var nee = ['klas', 'gezin'].every(function (c) { return !/AI Act/.test(AO.maakKaart(AO.standaardStaat(c)).blokken[5].regels.join(' ')); });
+    return ok && nee;
+  });
+  test('Een deellink overleeft heen en terug, ook met accenten', function () {
+    var s = AO.standaardStaat('gemeente');
+    s.n = 'Gemeente Geraardsbergen, dienst Burgerzaken'; s.a = 'Hélène Dubois (DPO), één mail'; s.t = 'Copilot (werkaccount)'; s.x = 'Café-afspraak: ë, ç, € en "aanhalingstekens"';
+    s.k.erin = ['inwoners', 'wachtwoord']; s.k.tools = 'openbaar'; s.d = '2027-01-04';
+    var terug = AO.decodeerStaat(AO.codeerStaat(s));
+    return JSON.stringify(terug) === JSON.stringify(s) || JSON.stringify(terug);
+  });
+  test('Een kapotte link geeft geen kaart', function () { return AO.decodeerStaat('dit-is-geen-kaart') === null && AO.decodeerStaat('') === null; });
+  test('Onbekende keuzes in een link vallen weg', function () {
+    var s = AO.standaardStaat('klas'); s.k.tools = 'bestaatniet'; s.k.erin = ['fotos', 'hack']; s.c = 'klas';
+    var t = AO.decodeerStaat(AO.codeerStaat(s));
+    return t.k.tools === 'school' && t.k.erin.join() === 'fotos';
+  });
+  test('Een onbekende context in een link wordt geweigerd', function () { var s = AO.standaardStaat('werk'); s.c = 'kantoor'; return AO.decodeerStaat(AO.codeerStaat(s)) === null; });
+  test('Te lange tekst wordt ingekort', function () {
+    var s = AO.standaardStaat('werk'); s.n = new Array(500).join('x'); s.x = new Array(900).join('y');
+    var t = AO.decodeerStaat(AO.codeerStaat(s));
+    return t.n.length === AO.MAX.n && t.x.length === AO.MAX.x;
+  });
+  test('Tekst van de gebruiker komt nooit als HTML op de kaart', function () {
+    var oud = staat;
+    staat = AO.standaardStaat('werk'); staat.n = '<img src=x onerror=alert(1)>'; staat.a = '<b>vet</b>';
+    toonKaart();
+    var ok = $('kaart').querySelector('img,b') === null && $('kaart').textContent.indexOf('<b>vet</b>') >= 0;
+    staat = oud; toonKaart();
+    return ok;
+  });
+  test('Datum plus maanden: 26/11/2026 + 6 = 26/5/2027', function () { return AO.plusMaanden('2026-11-26', 6) === '2027-05-26'; });
+  test('Datum plus maanden: 31/8/2026 + 6 = 28/2/2027', function () { return AO.plusMaanden('2026-08-31', 6) === '2027-02-28'; });
+  test('Datum plus maanden: 30/11/2026 + 3 = 28/2/2027', function () { return AO.plusMaanden('2026-11-30', 3) === '2027-02-28'; });
+  test('Zonder aanspreekpunt staat er een gewone omschrijving', function () {
+    var k = AO.maakKaart(AO.standaardStaat('klas'));
+    return k.blokken[6].regels[0].indexOf('de leraar') >= 0 && AO.maakKaart(AO.standaardStaat('gezin')).blokken[6].regels[0].indexOf('een ouder') >= 0;
+  });
+  test('Alles uitgevinkt geeft toch een volledige kaart', function () {
+    var s = AO.standaardStaat('werk'); s.k.erin = []; s.k.wel = []; s.k.nooit = [];
+    var k = AO.maakKaart(s);
+    return k.blokken[1].regels.length === 1 && k.blokken[2].regels[0] === 'Nog niets afgesproken.';
+  });
+  test('De kaart als tekst bevat acht genummerde blokken', function () {
+    var t = AO.kaartAlsTekst(AO.maakKaart(AO.standaardStaat('vereniging')));
+    return [1, 2, 3, 4, 5, 6, 7, 8].every(function (n) { return t.indexOf('\n' + n + '. ') >= 0; });
+  });
+  test('De pagina laadt niets van buiten', function () {
+    var csp = document.querySelector('meta[http-equiv="Content-Security-Policy"]');
+    return !!csp && /default-src 'none'/.test(csp.content) && document.querySelectorAll('script[src],link[rel="stylesheet"],img[src^="http"]').length === 0;
+  });
+  return uit;
+};
+function draaiTests() {
+  var r = AO.tests(), goed = r.filter(function (t) { return t.ok; }).length, doos = $('test-uit');
+  leeg(doos);
+  doos.appendChild(el('p', null, [el('strong', { tekst: goed + ' van ' + r.length + ' tests geslaagd' })]));
+  doos.appendChild(el('ul', { klasse: 'testlijst' }, r.map(function (t) {
+    return el('li', null, [el('span', { klasse: t.ok ? 'ok' : 'fout', tekst: t.ok ? 'OK ' : 'FOUT ' }), t.naam, t.uitleg ? ' (' + t.uitleg + ')' : '']);
+  })));
+}
+function wisselTestpaneel(open) {
+  var p = $('testpaneel');
+  p.hidden = !open;
+  if (open) { draaiTests(); $('h-test').focus(); }
+}
+function bouwTestpaneel() {
+  $('k-test-opnieuw').addEventListener('click', draaiTests);
+  $('k-test-sluit').addEventListener('click', function () { wisselTestpaneel(false); });
+  document.addEventListener('keydown', function (e) {
+    var toets = (e.key || '').toLowerCase();
+    if ((e.ctrlKey || e.altKey) && e.shiftKey && toets === 't') { e.preventDefault(); wisselTestpaneel($('testpaneel').hidden); }
+    if (toets === 'escape' && !$('testpaneel').hidden) wisselTestpaneel(false);
+  });
+  if (/(^#|&)test\b/.test(location.hash)) wisselTestpaneel(true);
+}
+
+leesHash();
+bouwAlles();
+bouwDelen();
+bouwBronnen();
+bouwTransparantie();
+bouwTestpaneel();
+window.addEventListener('hashchange', function () { if (leesHash()) bouwAlles(); if (/(^#|&)test\b/.test(location.hash)) wisselTestpaneel(true); });
+window.addEventListener('resize', meldHoogte);
+window.addEventListener('load', meldHoogte);
+setTimeout(meldHoogte, 400);
+setTimeout(meldHoogte, 1500);
+})();
+</script>
+</body>
+</html>

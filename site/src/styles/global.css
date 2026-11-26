@@ -508,6 +508,48 @@ details > *:not(summary) {
   vertical-align: -0.15rem;
   accent-color: var(--inkt);
 }
+/* Tabellen in fiches (huisstijl 1.0): Atkinson, koprij in grijs, lijnen tussen de rijen */
+.fiche .proza table:not(.bijsluiter) {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--ui);
+  font-size: 0.92rem;
+  margin: 0.5rem 0 1rem;
+}
+.fiche .proza table:not(.bijsluiter) th,
+.fiche .proza table:not(.bijsluiter) td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.45rem 0.6rem 0.45rem 0;
+  border-bottom: 1px solid var(--lijn);
+}
+.fiche .proza table:not(.bijsluiter) thead th {
+  color: var(--grijs);
+  font-weight: 400;
+}
+/* Een fiche past op één A4: compacter afdrukken */
+@media print {
+  @page { size: A4; margin: 12mm 14mm; }
+  .fiche .proza { font-size: 10.5pt; line-height: 1.32; }
+  .fiche h1 { font-size: 17pt; margin-bottom: 1mm; }
+  .fiche h2 { font-size: 11.5pt; margin: 2.2mm 0 0.8mm; }
+  .fiche p, .fiche ul, .fiche ol { margin-bottom: 1.6mm; }
+  .fiche li { margin-bottom: 0.4mm; }
+  .fiche .lead { font-size: 10.5pt; margin-bottom: 1.5mm; }
+  .fiche .bijsluiter { font-size: 8pt; margin: 1mm 0 2mm; }
+  .fiche .bijsluiter tbody { display: grid; grid-template-columns: 1fr 1fr; column-gap: 3mm; }
+  .fiche .bijsluiter tr { display: flex; }
+  .fiche .bijsluiter th { width: 22mm; flex: none; }
+  .fiche .bijsluiter th, .fiche .bijsluiter td { padding: 0.5mm 1.5mm; }
+  .fiche .proza table:not(.bijsluiter) { font-size: 8.5pt; margin: 1mm 0 2mm; }
+  .fiche .proza table:not(.bijsluiter) th, .fiche .proza table:not(.bijsluiter) td { padding: 0.8mm 2mm 0.8mm 0; }
+  .fiche h2:has(+ .fiche-bronnen) { display: none; }
+  .fiche .fiche-bronnen { font-size: 7.5pt; line-height: 1.3; list-style: none; padding: 0; margin: 1.5mm 0 0; }
+  .fiche .fiche-bronnen::before { content: "Bronnen: "; font-weight: 700; }
+  .fiche .fiche-bronnen li { display: inline; }
+  .fiche .fiche-bronnen li + li::before { content: " · "; }
+  .fiche .meta { font-size: 7.5pt; margin: 1mm 0 0; }
+}
 
 @media print {
   .kop,
