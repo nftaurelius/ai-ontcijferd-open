@@ -1,0 +1,92 @@
+[
+  {
+    "passage": "De oorzaak was vooral een slecht beveiligde server van een dienstverlener.",
+    "beslissing": "verwerkt",
+    "toelichting": "'Vooral' geschrapt; de samenvatting noemt nu alleen de toegangsweg en dat de rol van AI van beveiligingsbedrijven komt."
+  },
+  {
+    "passage": "**Status:** Bevestigd",
+    "beslissing": "verwerkt",
+    "toelichting": "Status en samenvatting scheiden nu de bevestigde omvang van de ongetoetste technische toedracht."
+  },
+  {
+    "passage": "Gebruik per website een ander wachtwoord, zeker voor je e-mail",
+    "beslissing": "verwerkt",
+    "toelichting": "Toegevoegd dat Verheyden zegt dat je dit lek niet zelf kon voorkomen en dat de tips alleen helpen tegen vervolgmisbruik."
+  },
+  {
+    "passage": "Meta Muse, een persoonlijke AI-agent die zelf mails verstuurt, reizen boeken en aankopen doet",
+    "beslissing": "verwerkt",
+    "toelichting": "Functies zijn nu toegeschreven aan Meta's Britse aankondiging en als onafhankelijk niet getest bestempeld."
+  },
+  {
+    "passage": "Volgens De Tijd, via de blog, bouwt het Gentse bureau Get in Touch koppelingen",
+    "beslissing": "verwerkt",
+    "toelichting": "De Tijd-inhoud (bedrijfsnamen, koppelingen) is geschrapt en de zelfstandigen-tip vervangen door een tip zonder die claim."
+  },
+  {
+    "passage": "want met één klik krijgt een agent van Meta toegang tot klantgegevens",
+    "beslissing": "verwerkt",
+    "toelichting": "'Met één klik' geschrapt en herformuleerd als risico bij het koppelen van werkaccounts."
+  },
+  {
+    "passage": "Volgens VRT NWS kan Meta de veiligheid van de gegevens nog niet volledig garanderen.",
+    "beslissing": "verwerkt",
+    "toelichting": "Het Signal-incident, het Android/iPhone-verschil en Meta's reactie zijn toegevoegd met volledige attributie via de blog, plus een nakijkopmerking."
+  },
+  {
+    "passage": "De Volvo-fabriek in Gent test als eerste humanoïde robots voor autoproductie",
+    "beslissing": "verwerkt",
+    "toelichting": "'Als eerste' geschrapt omdat reikwijdte en onderbouwing ontbreken."
+  },
+  {
+    "passage": "De robot is 1,65 meter groot, weegt 60 kilogram, rijdt op wielen en draagt tot 10 kilogram.",
+    "beslissing": "verwerkt",
+    "toelichting": "Specificaties staan nu als opgave in het bericht, niet onafhankelijk gemeten; de uitbreiding en inzet zijn als plan beschreven."
+  },
+  {
+    "passage": "Voor het personeel in Gent verandert er voorlopig weinig, want het bericht zegt niets over banen of taakverdeling.",
+    "beslissing": "verwerkt",
+    "toelichting": "Conclusie vervangen door de vaststelling dat het bericht de gevolgen voor banen en taakverdeling niet duidelijk maakt."
+  },
+  {
+    "passage": "Het bericht geeft geen steekproef, landen of vraagstelling",
+    "beslissing": "verwerkt",
+    "toelichting": "Stellige uitspraak geschrapt; de tekst zegt nu dat die gegevens nog onbekend zijn, met controleopdracht in HTML-commentaar."
+  },
+  {
+    "passage": "dus neem de percentages als een richting, niet als een exact cijfer",
+    "beslissing": "verwerkt",
+    "toelichting": "Percentages zijn beperkt tot claims van Signicat en de webshopadvisering is voorwaardelijk gemaakt."
+  },
+  {
+    "passage": "bij ARTEX lopen de nummers zelden netjes op",
+    "beslissing": "verwerkt",
+    "toelichting": "Gecorrigeerd: de teller loopt op maar met gaten omdat andere objecten dezelfde teller delen."
+  },
+  {
+    "passage": "Verdedigers kunnen met die nummers activiteit koppelen, ook als de aanvaller steeds van IP-adres wisselt.",
+    "beslissing": "verwerkt",
+    "toelichting": "Koppeling beperkt tot ARTEX, met vermelding van andere sporen en dat Cairn per project herstart."
+  },
+  {
+    "passage": "acht dagen vóór het datalek",
+    "beslissing": "verwerkt",
+    "toelichting": "Relatieve tijdsaanduiding geschrapt en erbij gezet dat een verband met het datalek niet is aangetoond."
+  },
+  {
+    "passage": "aan zijn universiteit officieel niet mag",
+    "beslissing": "verwerkt",
+    "toelichting": "Hersteld naar Wenseleers' eigen woorden ('zogezegd') zonder officieel verbod te beweren."
+  },
+  {
+    "passage": "## Vandaag in het kort",
+    "beslissing": "verwerkt",
+    "toelichting": "Hype-meter met één van de vijf standen en één zin uitleg toegevoegd bij elk hoofdonderwerp."
+  },
+  {
+    "passage": "IP-beperkingen en serverkant-controle van invoer",
+    "beslissing": "verwerkt",
+    "toelichting": "Vaktermen kort uitgelegd bij eerste gebruik en User-Agent-detail geschrapt."
+  }
+]

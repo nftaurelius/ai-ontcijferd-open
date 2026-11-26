@@ -1,0 +1,110 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "De oorzaak was vooral een slecht beveiligde server van een dienstverlener.",
+    "probleem": "Belga beschrijft gebrekkige beveiliging en de inzet van AI, maar weegt hun relatieve bijdrage niet. 'Vooral' voegt een causale rangschikking toe.",
+    "voorstel": "Schrap 'vooral' en beperk de samenvatting tot de vastgestelde toegangsweg: een slecht beveiligde server bij een dienstverlener."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Bevestigd",
+    "probleem": "Deze status slaat ogenschijnlijk ook op de technische toedracht met DeepSeek. Twee nieuwsmerken berichten over de aanval, maar het bronmateriaal toont niet dat zij die toedracht onafhankelijk van dezelfde beveiligingsonderzoekers bevestigen.",
+    "voorstel": "Maak onderscheid tussen de door Belga en VRT gemelde omvang en de technische reconstructie van de beveiligingsbedrijven. Zet die beperking ook bij de status en de openingssamenvatting."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Gebruik per website een ander wachtwoord, zeker voor je e-mail",
+    "probleem": "Het advies komt uit VRT, maar de belangrijkste bijbehorende kanttekening ontbreekt: burgers konden deze diefstal bij de dienstverlener niet zelf voorkomen. Zonder dat onderscheid lijkt wachtwoordhygiëne een bescherming tegen dit specifieke lek.",
+    "voorstel": "Vermeld expliciet dat deze tips je eigen accounts beschermen en vervolgmisbruik kunnen bemoeilijken, maar de diefstal bij deze dienstverlener niet hadden voorkomen."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Meta Muse, een persoonlijke AI-agent die zelf mails verstuurt, reizen boekt en aankopen doet",
+    "probleem": "De functies worden als vaststaande eigenschappen gepresenteerd. De blog ontleent ze aan Meta's eigen aankondiging voor het Verenigd Koninkrijk; onafhankelijke bevestiging staat er niet bij.",
+    "voorstel": "Label de mogelijkheden als claims van de maker en vermeld meteen dat het om de Britse aankondiging gaat."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Volgens De Tijd, via de blog, bouwt het Gentse bureau Get in Touch koppelingen voor onder meer JBC, Just Russel, Wondr, Kinepolis en Callant",
+    "probleem": "Dit is inhoud uit een betalend medium, doorgegeven via ITdaily en de blog. De bronregels staan alleen het gebruik van de kop als signaal toe. De indirecte route maakt deze inhoud niet bruikbaar.",
+    "voorstel": "Schrap de bedrijfsnamen en de claim over de koppelingen, tenzij een rechtstreeks toegankelijke, toegestane bron ze bevestigt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "want met één klik krijgt een agent van Meta toegang tot klantgegevens",
+    "probleem": "De tekst neemt een stellige formulering van de blogger over als algemeen technisch feit. Welke toegang wordt verleend, hangt in deze beschrijving samen met het koppelen van accounts; een universele éénklikprocedure wordt niet aangetoond.",
+    "voorstel": "Schrap 'met één klik' en formuleer het als een risico bij het verlenen van toegang tot werkaccounts, niet als een onvermijdelijk gevolg."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Volgens VRT NWS kan Meta de veiligheid van de gegevens nog niet volledig garanderen.",
+    "probleem": "De concrete veiligheidskanttekening uit de blog ontbreekt. Die verwijst naar Reuters over het lezen van Signal-berichten bij Meta-medewerkers, naar een verschil tussen Android en iPhone en naar Meta's reactie dat het geïsoleerde incidenten waren. De algemene garantieformulering maakt niet duidelijk waarop de bezorgdheid berust.",
+    "voorstel": "Controleer de oorspronkelijke berichtgeving en neem het incident met de platformbeperking en Meta's reactie op. Behoud bij uitsluitend indirecte onderbouwing de volledige bronattributie."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De Volvo-fabriek in Gent test als eerste humanoïde robots voor autoproductie",
+    "probleem": "De 'eerste'-claim staat alleen in de Belga-kop en heeft geen afgebakend vergelijkingsgebied: binnen Volvo, België of wereldwijd. De latere waarschuwing dat de claim niet onafhankelijk is nagegaan, maakt de stellige opening niet verantwoord.",
+    "voorstel": "Schrap 'als eerste' zolang reikwijdte en onderbouwing ontbreken."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De robot is 1,65 meter groot, weegt 60 kilogram, rijdt op wielen en draagt tot 10 kilogram. In de eerste helft van 2027 volgen extra robots met meer taken.",
+    "probleem": "De technische draagcapaciteit krijgt geen makerslabel. De uitbreiding wordt bovendien als vaststaande toekomst beschreven, terwijl het om een projectplanning gaat.",
+    "voorstel": "Schrijf de capaciteit toe aan de maker en presenteer de uitbreiding als een aangekondigd plan. Houd de voorgenomen productie-inzet duidelijk gescheiden van bewezen inzetbaarheid."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Voor het personeel in Gent verandert er voorlopig weinig, want het bericht zegt niets over banen of taakverdeling.",
+    "probleem": "Dat de bron niets over personeel meldt, bewijst niet dat er weinig verandert. De Vlaamse vertaalslag trekt hier een ongefundeerde conclusie uit ontbrekende informatie.",
+    "voorstel": "Beperk de conclusie tot wat onbekend is: het bericht maakt niet duidelijk welke gevolgen de proef heeft voor banen of taakverdeling in Gent."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Het bericht geeft geen steekproef, landen of vraagstelling",
+    "probleem": "De beschikbare tekst van Data News is onvolledig. Daarmee is niet vast te stellen dat het volledige bericht deze informatie niet geeft. Het HTML-commentaar erkent die onzekerheid, maar de zichtbare tekst doet dat niet.",
+    "voorstel": "Controleer het volledige artikel of het oorspronkelijke onderzoek vóór publicatie. Zet de controleopdracht in een HTML-commentaar en doe intussen geen stellige uitspraak over wat het volledige bericht niet bevat."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "dus neem de percentages als een richting, niet als een exact cijfer",
+    "probleem": "Zonder steekproef, landen, onderzoeksperiode en vraagstelling is ook niet vastgesteld dat de percentages een betrouwbare richting voor Europeanen, laat staan Vlaamse klanten, aangeven. De daaropvolgende webshopconclusie gaat daardoor verder dan de onderbouwing.",
+    "voorstel": "Beperk de percentages tot de door Data News weergegeven onderzoeksclaim. Trek pas conclusies voor Vlaamse webshops nadat populatie, methode en vraagstelling zijn gecontroleerd."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "bij ARTEX lopen de nummers zelden netjes op",
+    "probleem": "Dit verwart oplopen met opeenvolgend zijn. Wiz zegt dat de teller oploopt, maar dat intent-ID's doorgaans niet direct op elkaar volgen doordat andere objecten dezelfde teller gebruiken. Juist de stijgende reeks maakt koppeling mogelijk.",
+    "voorstel": "Leg uit dat er gaten tussen de intent-ID's zitten. Presenteer die gaten niet als bewijs dat de teller onregelmatig stijgt of als de genoemde reden waarom het signaal faalt."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Verdedigers kunnen met die nummers activiteit koppelen, ook als de aanvaller steeds van IP-adres wisselt.",
+    "probleem": "De conclusie wordt algemeen gemaakt voor ARTEX en Cairn. De beschreven koppeling over incidenten berust specifiek op ARTEX' doorlopende teller; Cairn begint per project opnieuw. Wiz gebruikte daarnaast andere kenmerken om activiteiten te verbinden.",
+    "voorstel": "Beperk deze toepassing tot ARTEX en vermeld dat de nummers samen met tijdstippen en andere sporen worden beoordeeld. Voeg toe dat Cairn zijn teller per project herstart."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "acht dagen vóór het datalek",
+    "probleem": "De radarpost plaatst de uitspraak op 17 november, terwijl Belga de aanval dateert van 6 tot 15 november. De overgenomen tijdsaanduiding botst dus met de chronologie elders in het concept. 'Nog niet bevestigd' lost dat niet op.",
+    "voorstel": "Schrap de relatieve tijdsaanduiding en controleer of de post de bekendmaking van het lek bedoelt. Leg bovendien geen verband tussen de auditbevindingen en deze aanval zonder aanvullende onderbouwing."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "aan zijn universiteit officieel niet mag",
+    "probleem": "De radarsamenvatting schrijft dat Wenseleers spreekt over 'zogezegd' niet mogen. Het concept maakt daarvan een officieel verbod, zonder universiteitsrichtlijn als bron.",
+    "voorstel": "Behoud de onzekerheid in zijn bewering en vermijd 'officieel'. Controleer de daadwerkelijke KU Leuven-richtlijn voordat je een formeel verbod beschrijft."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## Vandaag in het kort",
+    "probleem": "In het hele concept ontbreekt de voorgeschreven hype-meter. De statuslabels geven bronzekerheid aan, niet de verhouding tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg bij de hoofdonderwerpen telkens één van de vijf toegestane standen toe, met één zin uitleg over aandacht tegenover verwachte Vlaamse impact. Gebruik de numerieke triagescores niet als vervanging."
+  },
+  {
+    "ernst": "klein",
+    "passage": "IP-beperkingen en serverkant-controle van invoer",
+    "probleem": "Deze vaktermen worden niet uitgelegd. Hetzelfde geldt onder meer voor 'humanoïde robots', 'logbestanden', 'open-source' en 'User-Agent-teksten'. Daardoor blijft een deel van de uitleg ontoegankelijk voor de geïnteresseerde leek.",
+    "voorstel": "Leg noodzakelijke termen bij het eerste gebruik kort uit en schrap technische details die de Vlaamse lezer niet helpen bij de kernconclusie."
+  }
+]

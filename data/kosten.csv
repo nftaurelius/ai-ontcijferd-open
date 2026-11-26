@@ -196,3 +196,10 @@ tijd,rol,leverancier,model,tokens_in,tokens_uit,proefdraai
 2026-11-25T16:46:56+01:00,triage,anthropic,claude-haiku-5-5,7692,4387,nee
 2026-11-25T16:47:11+01:00,triage,anthropic,claude-haiku-5-5,8225,3381,nee
 2026-11-25T16:47:27+01:00,triage,anthropic,claude-haiku-5-5,5037,3712,nee
+2026-11-26T16:18:28+01:00,xradar,xai,grok-4.7,123215,10854,nee
+2026-11-26T16:20:19+01:00,xradar,xai,grok-4.7,270658,9835,nee
+2026-11-26T16:21:08+01:00,xradar,xai,grok-4.7,59118,3947,nee
+2026-11-26T16:24:15+01:00,xradar,xai,grok-4.7,351618,17376,nee
+2026-11-26T16:24:35+01:00,triage,anthropic,claude-haiku-5-5,8355,4303,nee
+2026-11-26T16:24:54+01:00,triage,anthropic,claude-haiku-5-5,7948,4475,nee
+2026-11-26T16:25:14+01:00,triage,anthropic,claude-haiku-5-5,5905,4722,nee
