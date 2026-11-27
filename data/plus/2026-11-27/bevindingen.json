@@ -1,0 +1,104 @@
+[
+  {
+    "ernst": "belangrijk",
+    "passage": "Wallonië legde een bouwwerf van Google bij Charleroi stil, omdat daar zonder vergunning een datacenter-gebouw verrees.",
+    "probleem": "De vaststelling dat zonder vergunning werd gebouwd, komt van de Waalse administratie. De samenvatting presenteert die juridische kwalificatie zonder toeschrijving. Er was wel een oorspronkelijke vergunning; het geschil betreft de uitbreiding.",
+    "voorstel": "Schrijf dat de werf werd stilgelegd omdat Google volgens de Waalse administratie buiten de oorspronkelijke vergunning bouwde."
+  },
+  {
+    "ernst": "klein",
+    "passage": "De rrel draait om een aangepaste vergunning.",
+    "probleem": "‘rrel’ is een tikfout.",
+    "voorstel": "Vervang ‘rrel’ door ‘rel’ of het neutralere ‘geschil’."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Google wilde meer bouwen en de servers koelen met water uit de Sambre in plaats van met lucht.",
+    "probleem": "De belangrijkste context voor het verzet tegen watergebruik ontbreekt. De bron vermeldt dat tegenstanders wezen op de aanhoudende droogte sinds het voorjaar.",
+    "voorstel": "Voeg toe dat tegenstanders volgens het AFP-artikel vanwege de droogte het water van de Sambre wilden beschermen. Presenteer dit als hun argument, niet als een onafhankelijk vastgestelde impact."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Volgens de maker",
+    "probleem": "De uitspraken over het Volvo-project komen van Volvo, de fabriek die de robots test. ‘De maker’ suggereert hier ten onrechte dat robotleverancier Hexagon de aangehaalde bron is. Bovendien stelt de tekst dat alles via Barbara Blomme komt, terwijl VRT niet ieder gegeven expliciet aan haar toeschrijft.",
+    "voorstel": "Gebruik ‘Volgens Volvo’ en maak onderscheid tussen uitspraken van de woordvoerder en technische gegevens die VRT vermeldt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Dat is dus licht werk.",
+    "probleem": "Een draagvermogen van maximaal 10 kilogram bewijst niet dat het werk lichamelijk licht is. De bron noemt juist repetitieve en ergonomisch belastende taken. De conclusie wordt niet door de bron gedragen.",
+    "voorstel": "Schrap deze conclusie. Maak hoogstens duidelijk dat het opgegeven draagvermogen niets bewijst over de lichamelijke belasting van de volledige taak."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "Midden 2027 moeten ze in de productie worden ingezet, en in de eerste helft van 2027 volgen er meer voor een proefproject.",
+    "probleem": "Dit zijn plannen van Volvo, geen vaststaande toekomstige gebeurtenissen. Ook ontbreekt de kanttekening dat verdere geleidelijke uitbreiding volgens de bron afhangt van het succes van het project.",
+    "voorstel": "Schrijf dat Volvo deze inzet plant en vermeld de succesvoorwaarde voor verdere uitbreiding."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "## Gegevens van 1,2 miljoen Vlamingen in handen van hackers",
+    "probleem": "De kop presenteert de kernclaim als vaststaand, terwijl de tekst terecht zegt dat het cijfer slechts van één medium komt en niet onafhankelijk is bevestigd.",
+    "voorstel": "Schrijf de claim ook in de kop toe aan Data News."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "het dark web, een deel van internet dat niet via gewone zoekmachines vindbaar is",
+    "probleem": "Deze definitie staat niet in de bron en is onvoldoende onderscheidend: niet vindbaar zijn via gewone zoekmachines maakt iets nog niet tot het dark web.",
+    "voorstel": "Voeg een betrouwbare bron toe voor een precieze uitleg, met het onderscheid tussen het dark web en andere niet-geïndexeerde internetinhoud."
+  },
+  {
+    "ernst": "klein",
+    "passage": "Zolang de aangeleverde tekst niet meer geeft, is voorzichtigheid geboden.",
+    "probleem": "Dit beschrijft de redactionele werkwijze in plaats van de beperkingen van de berichtgeving. Dat is expliciet uitgesloten door de stijlafspraken.",
+    "voorstel": "Schrap de zin; de voorgaande zinnen benoemen de ontbrekende informatie al. Zet eventuele aanvullende controlepunten uitsluitend in het HTML-commentaar."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "zoals bij elk datalek is alertheid voor phishing met je naam, adres of rekeningnummer verstandig.",
+    "probleem": "Dit veiligheidsadvies en de veronderstelde toepassing van de gelekte gegevens worden niet onderbouwd door de beschikbare bron. Ook wordt ‘phishing’ niet uitgelegd.",
+    "voorstel": "Voeg een concrete, toegankelijke bron voor dit advies toe en leg phishing bij het eerste gebruik uit. Schrap het advies zolang die bron ontbreekt."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "onderzoekers en studenten van beide instellingen krijgen een kader om rond AI en mariene robotica samen te werken.",
+    "probleem": "De bron noemt samenwerking tussen onderzoekers, maar zegt niets over studenten. Ook maakt ‘krijgen’ een beoogd effect van de overeenkomst stelliger dan de bron.",
+    "voorstel": "Beperk dit tot de ambitie om onderzoekers nauwer te laten samenwerken en schrap studenten, tenzij daarvoor een aanvullende bron beschikbaar is."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Oostende, waar VLIZ zit, ligt dichtbij dit onderzoek naar kust en klimaat.",
+    "probleem": "De vestigingsplaats van VLIZ wordt niet vermeld in de beschikbare bron. Daarnaast is geografische nabijheid geen concrete uitleg van het belang voor lokale overheden; de bron noemt geen gemeentelijke toepassing.",
+    "voorstel": "Schrap deze vertaalslag en eventueel het label Lokale overheden. Behoud ze alleen met een bron voor een concrete gemeentelijke betrokkenheid of toepassing."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "hun samenwerkingsovereenkomst op 27 november 2026 vernieuwd",
+    "probleem": "De datum klopt met de bron, maar valt buiten het opgegeven nieuwsvenster: het etmaal vóór 27 november 2026.",
+    "voorstel": "Verplaats dit onderwerp naar de volgende editie of laat de eindredactie het nieuwsvenster aanpassen. Noteer deze controle zo nodig in een HTML-commentaar."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "De assistent werkt dan door tot die controle slaagt.",
+    "probleem": "Dit neemt de resultaatbelofte van de videomaker over als feit. De beschikbare beschrijving bevat geen onafhankelijke test en de inhoud van de gelinkte Anthropic-handleiding is niet beschikbaar als onderbouwing.",
+    "voorstel": "Schrijf ook deze belofte expliciet toe aan de videomaker en vermeld dat niet onafhankelijk is aangetoond dat de aanpak dit resultaat garandeert."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "de video toont niet hoe je zo'n test opstelt, wat het kost of welke code of gegevens je daarbij naar een Amerikaanse aanbieder stuurt.",
+    "probleem": "Alleen de beschrijving van de maker is beschikbaar. Daarmee kun je niet vaststellen wat de video zelf wel of niet toont. De passage suggereert bovendien gegevensoverdracht zonder bron voor de concrete werking of instellingen.",
+    "voorstel": "Beperk de constatering tot wat de videobeschrijving niet uitlegt. Laat de video, kosten en gegevensverwerking controleren en zet die opdracht in een HTML-commentaar."
+  },
+  {
+    "ernst": "kritiek",
+    "passage": "Volgens berichtgeving in 7sur7 zou een journalist van Le Soir zijn opgestapt na oneigenlijk gebruik van AI; de details zijn niet bekend",
+    "probleem": "De inhoud van het 7sur7-artikel is niet beschikbaar. Er is alleen een verwijzende X-post en een bruikbare kop van De Standaard. ‘Volgens berichtgeving in 7sur7’ suggereert dat die berichtgeving is gecontroleerd; ‘de details zijn niet bekend’ maakt van een redactioneel kennistekort een algemene vaststelling.",
+    "voorstel": "Gebruik uitsluitend de kop van De Standaard als expliciet benoemd signaal, met de bijbehorende link, of schrap het item tot het 7sur7-artikel gecontroleerd is."
+  },
+  {
+    "ernst": "belangrijk",
+    "passage": "**Status:** Eén bron",
+    "probleem": "Het concept bevat bronstatussen, maar nergens de vereiste hype-meter. Een bronstatus beoordeelt de bewijskracht, niet de verhouding tussen aandacht en verwachte impact voor Vlaanderen.",
+    "voorstel": "Voeg per uitgewerkt onderwerp één van de vijf voorgeschreven standen toe, met één zin uitleg. Leid die stand niet automatisch af uit het aantal bronnen of uit de triagescore."
+  }
+]
