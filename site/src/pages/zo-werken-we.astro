@@ -13,6 +13,18 @@ const rollen = [
   { rol: "Tegenspreker", wanneer: "Elke week", taak: "Een AI-model van een ándere maker controleert elke bewering tegen haar bron en zoekt overdrijving. Modellen van dezelfde maker delen vaak dezelfde blinde vlekken." },
   { rol: "Eindredacteur", wanneer: "Elke week", taak: "Duncan Panis leest alles na, corrigeert, schrijft zelf \"Mijn inschatting\" en beslist of de editie verschijnt." },
 ];
+
+// Waar AI Ontcijferd zelf van afhangt (bouwplan B04). Bij een nieuwe dienst of model: rij toevoegen en AFHANKELIJK_OP bijwerken.
+const AFHANKELIJK_OP = "2026-11-26";
+const afhankelijk = [
+  { wie: "Vercel", waar: "Verenigde Staten", wat: "Zet de site online en telt bezoeken (zonder cookies).", weg: "De site is onbereikbaar. Wat al gepubliceerd is, blijft wel bestaan in de code.", uitweg: "De site is een map gewone HTML-bestanden. Elke webhost kan ze tonen; dan wijzen we het domein naar de nieuwe host." },
+  { wie: "GitHub (Microsoft)", waar: "Verenigde Staten", wat: "Bewaart de code, de teksten en hun geschiedenis, en laat de keten elke dag en elke week draaien.", weg: "Er komen geen nieuwe dagbrieven en edities. De site zelf blijft online.", uitweg: "De keten is een reeks Python-scripts die op elke computer draaien. Alles staat ook in een publieke kopie en onder open licenties; een andere codeopslag kan het overnemen." },
+  { wie: "Combell", waar: "België", wat: "Beheert het domein aiontcijferd.be en stuurt mail aan de redactie door.", weg: "Het adres aiontcijferd.be en het mailadres van de redactie werken niet meer.", uitweg: "Een .be-domein kan naar een andere registrar verhuizen. De doorsturing van mail kan elke maildienst overnemen." },
+  { wie: "Brevo", waar: "Frankrijk", wat: "Bewaart de lijst met inschrijvingen en verstuurt de nieuwsbrieven.", weg: "Er gaan geen nieuwsbrieven meer uit. De site en de RSS-feeds blijven werken.", uitweg: "De site maakt de nieuwsbriefmail zelf; elke maildienst kan hem versturen. De lijst met inschrijvingen kunnen we exporteren." },
+  { wie: "Anthropic (Claude)", waar: "Verenigde Staten", wat: "De modellen die het nieuws sorteren en de edities, dagbrieven en dossiers schrijven. Ook de tools, fiches en pakketten maken we met Claude.", weg: "Er komen geen nieuwe edities, dagbrieven of dossiers tot we overschakelen. Alles wat al verscheen, blijft staan.", uitweg: "Welk model welke rol doet, staat in één instellingenbestand. Een model van een andere maker kan de rol overnemen; de instructies zijn gewone tekst." },
+  { wie: "OpenAI (GPT)", waar: "Verenigde Staten", wat: "De tegenspreker: controleert elke bewering tegen haar bron.", weg: "De dagbrief verschijnt niet meer vanzelf, en de eindredacteur moet elke bewering zelf nakijken.", uitweg: "Een ander model kan tegenspreker worden, op voorwaarde dat het van een andere maker is dan de schrijver." },
+  { wie: "xAI (Grok)", waar: "Verenigde Staten", wat: "Zoekt dagelijks signalen op X, de radar.", weg: "We missen signalen van X. Dat raakt de inhoud nauwelijks: X is radar, nooit bron.", uitweg: "De radar weglaten, of signalen zoeken via de bronnen die we al volgen." },
+];
 ---
 
 <Basis titel="Zo werken we" beschrijving="Hoe AI Ontcijferd gemaakt wordt: AI-agents doen het meeste werk, een mens beslist. Volledig transparant.">
@@ -108,6 +120,39 @@ const rollen = [
       </div>
     </section>
   )}
+
+  <section class="rij sectie" id="afhankelijkheden">
+    <div class="kantlijn"><p>Waar we van afhangen</p><p>Stand op {datumLeesbaar(AFHANKELIJK_OP)}</p></div>
+    <div class="proza">
+      <h2>Waar AI Ontcijferd zelf van afhangt</h2>
+      <p>
+        We vragen organisaties om te weten van welke diensten ze afhangen. Dan tonen we ook de onze: wat elke dienst doet,
+        wat er gebeurt als ze wegvalt, en hoe we verder kunnen.
+      </p>
+      <div class="tabelrol">
+        <table class="cijfertabel">
+          <thead>
+            <tr><th scope="col">Dienst</th><th scope="col">Wat het doet</th><th scope="col">Als het wegvalt</th><th scope="col">De uitweg</th></tr>
+          </thead>
+          <tbody>
+            {afhankelijk.map((a) => (
+              <tr><th scope="row">{a.wie}<br /><span class="meta">{a.waar}</span></th><td>{a.wat}</td><td>{a.weg}</td><td>{a.uitweg}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>
+        <strong>De sterkste uitweg is dat alles open is.</strong> De code staat onder de MIT-licentie, de teksten onder CC BY 4.0,
+        en een <a href="https://github.com/nftaurelius/ai-ontcijferd-open">publieke kopie</a> wordt bij elke wijziging bijgewerkt.
+        Valt alles tegelijk weg, dan kan iedereen de site opnieuw opbouwen.
+      </p>
+      <p>
+        <strong>Wat nog zwak is.</strong> De drie modelmakers en de twee diensten die de site en de keten laten draaien, zijn
+        Amerikaans. Alleen het domein en de nieuwsbrief zitten in Europa. Dat zeggen we liever zelf dan dat iemand het moet ontdekken.
+      </p>
+      <p class="meta">Voor organisaties hoort dit bij digitale soevereiniteit, een thema dat we verder uitwerken.</p>
+    </div>
+  </section>
 
   <section class="rij sectie">
     <div class="kantlijn"><p>Fouten</p></div>

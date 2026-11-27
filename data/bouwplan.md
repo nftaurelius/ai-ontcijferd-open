@@ -85,7 +85,7 @@ buiten gaat niets voor 4 januari.
 - **Klaar als:** tool op `/afsprakenkaart`, in `TOOLS`, op `/gratis` en `/doen`, testpaneel groen, doos en pakket
   "AI-afspraken op school" verwijzen ernaar.
 
-### B04 · Waar AI Ontcijferd zelf van afhangt
+### B04 · Waar AI Ontcijferd zelf van afhangt ✓ (26/11: blok op /zo-werken-we#afhankelijkheden)
 - **Voor wie:** iedereen; eigen voorbeeld voor het thema digitale soevereiniteit (B17).
 - **Waarom:** open en transparant zijn onze kernwaarden. We vragen organisaties hun afhankelijkheid te kennen; dan
   tonen we de onze.
@@ -281,7 +281,7 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 3. ~~B03 · afsprakenkaart-maker~~ (klaar 26/11)
 4. ~~B05 · fiches "Is dit echt?" en "AI-oplichting gericht op je zaak"~~ (klaar 26/11)
 5. ~~B06 · twee fiches voor gemeenten~~ (klaar 26/11)
-6. B04 · waar AI Ontcijferd van afhangt
+6. ~~B04 · waar AI Ontcijferd van afhangt~~ (klaar 26/11)
 7. B08 · pakket zesde leerjaar, getest door de redactie
 8. B11 · vragenlijsten klaarzetten
 9. B13 · AI thuis
@@ -299,3 +299,4 @@ Beslist op 25/11: akkoord op AI per job (B12); geen externe testers als voorwaar
 | 26/11/2026 | B03 | Afsprakenkaart v1.0.1 op /afsprakenkaart: vijf contexten (klas, werk, gemeente, vereniging, thuis), acht vragen, kaart van één A4, deellink #p=, testpaneel 42 van 42; in TOOLS, /gratis, /doen, privacy; doos, schoolpakket, schoolfiche en drie vragen verwijzen ernaar. Regels per context nagekeken en goedgekeurd door Duncan (v1.0.1) | #50 |
 | 26/11/2026 | B05 | Fiches "Is dit echt? Wat je doet bij twijfel" (klare taal, met invulregel voor een vertrouwenspersoon) en "AI-oplichting gericht op je zaak" (gewijzigd rekeningnummer, CEO-fraude, valse bankhelpdesk, phishing; naamcontrole van de bank), elk één A4. Drie nieuwe vragen (nieuw rekeningnummer, CEO-fraude, bank belt); twee vragen, het pakket "Echt of nep?" (v1.0.2) en de wegwijzer verwijzen naar de fiches. Het federale fraudeplan (12/11) noemt AI niet, de fiches vullen dat aan | #52 |
 | 26/11/2026 | B06 | Fiches "Tien vragen bij een AI-voorstel in de raad" (de tien vragen uit de briefing, met wat vanaf 2 december 2027 geldt als AI meebeslist over mensen: artikel 26, 27 en 49) en "AI aan het loket" (wat mag, wat nooit, zes stappen voor een inwoner die een brief of bericht niet vertrouwt), elk één A4. De briefing voor raadsleden (v1.0.2) verwijst ernaar; het portaal Lokale overheden toont ze | #53 |
+| 26/11/2026 | B04 | Blok "Waar AI Ontcijferd zelf van afhangt" op /zo-werken-we#afhankelijkheden: Vercel, GitHub, Combell, Brevo, Anthropic, OpenAI en xAI, met wat elk doet, wat er gebeurt als het wegvalt en de uitweg; open licenties en publieke kopie als sterkste uitweg; eerlijk over wat nog zwak is (vijf van de zeven diensten Amerikaans). Stand op 26/11 | #54 |
